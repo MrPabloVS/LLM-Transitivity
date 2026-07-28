@@ -1,4 +1,4 @@
 # LLM-Transitivity
 
 Contributors:
-Pablo
+Pablo Vazquez Soldano
