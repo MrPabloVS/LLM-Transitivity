@@ -1,6 +1,12 @@
 {
-    "user_prompt": "If I was born on Caballito, then I was born on Argentina; and if I was born on Argentina then I am Argentinian; therefore, if I was born on Caballito, then I am Argentinian",
+    "user_prompt": "If I was born in Caballito, then I was born in Argentina. And if I was born in Argentina, then I am Argentinian. Therefore, if I was born in Caballito, then I am Argentinian",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "consecuencia NECESARIA - hiperonimos",
+        "tag4": "pass"
+    },
     "responses": "yes"
 }

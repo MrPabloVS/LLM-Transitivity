@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If a piano is tuned, then a flute is broken', together with 'If a flute is broken, then a guitar is plugged in', can we infer 'If a piano is tuned, then a guitar is plugged in'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "instrumentos musicales",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

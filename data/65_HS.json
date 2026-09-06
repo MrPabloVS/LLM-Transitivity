@@ -1,0 +1,12 @@
+{
+    "user_prompt": "If natural selection was important, then evolution theory was a breakthrough. And if evolution theory was a breakthrough,then biology was a gigantic field. Therefore, if natural selection was important, then biology was a gigantic field",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "ciencia",
+        "tag4": "pass"
+    },
+    "responses": "yes"
+}

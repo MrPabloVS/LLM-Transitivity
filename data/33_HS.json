@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If a door is locked, then a garden is flourishing' together with 'If a garden is flourishing, then a chair is comfortable', can we infer 'If a door is locked, then a chair is comfortable'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "random",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

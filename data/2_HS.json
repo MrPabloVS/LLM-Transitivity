@@ -1,6 +1,12 @@
 {
-    "user_prompt": "From 'If today is Monday, then tomorrow is Tuesday' together with 'If tomorrow is Tuesday, then the day after tomorrow is Wednesday', can we infer 'if today is Monday, then the day after tomorrow is Wednesday'?",
+    "user_prompt": "From 'If today is Monday, then tomorrow is Tuesday' together with 'If tomorrow is Tuesday, then the day after tomorrow is Wednesday', can we infer 'If today is Monday, then the day after tomorrow is Wednesday'?",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "consecuencia NECESARIA - dias",
+        "tag4": "present"
+    },
     "responses": "yes"
 }

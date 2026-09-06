@@ -1,0 +1,12 @@
+{
+    "user_prompt": "If hockey is hard, then a referee is just. And if a referee is just,then the game is fun. Therefore, if hockey is hard, then the game is fun",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "deporte",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

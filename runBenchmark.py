@@ -19,18 +19,25 @@ USER_PROMPT_FILES = {
 
 }
 
-load_dotenv()
+#! Hay que decidir modelos a evaluar 
+MODEL_LIST = {
+     
+}
 
+#* Funciones
+load_dotenv()
 api_key = os.getenv("OPENROUTER_API_KEY")
 if not api_key:
     raise ValueError("Set OPENROUTER_API_KEY before running this script.")
 
-def load_system_prompt(name: str) -> str:
+def loadSystemPrompt(name: str) -> str:
     path = SYSTEM_PROMPT_FILES[name]
     data = json.loads(path.read_text(encoding="utf-8-sig"))
     return data["system_prompt"]
 
-#def load_user_prompts(name: str) -> str:
+
+#? En desuso, revisar si conviene usar
+def load_user_prompts(name: str) -> str:
     path = SYSTEM_PROMPT_FILES[name]
     data = json.loads(path.read_text(encoding="utf-8-sig"))
     prompts = []
@@ -43,15 +50,17 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 
-
+#? En uso como alternativa a load_user_prompts
 with open( USER_PROMPTS_DIR / "HS.json") as file:
     promts = json.load(file)
 
 #print(data)
 
-for prompt in promts:
-    #print(prompt)
 
+#* Input
+for p in promts:
+    #print(prompt)
+    #! Hacer llamdas genericas, buscar alternativa a la libreria de OpenAI y revisar que usa Holiday
     client = OpenAI(
         api_key=api_key,
         base_url="https://openrouter.ai/api/v1",
@@ -62,16 +71,18 @@ for prompt in promts:
         messages=[
             {
                 "role": "system",
-                "content": load_system_prompt("zeroShot"),
+                "content": loadSystemPrompt("zeroShot"),
             },
             {
                 "role": "user",
-                "content": prompt[2],
+                "content": p[2],
             },
         ],
         max_completion_tokens=300,
     )
 
+
+#* Output
     answer = response.choices[0].message.content
     print(answer)
     #print(load_system_prompt("zeroShot"))
@@ -80,14 +91,22 @@ for prompt in promts:
     #print(USER_PROMPT_FILES["HS"])
 
     data = {
-                    "user_prompt": prompt[2],
-                    "system_prompt": load_system_prompt("zeroShot"),
+                    "user_prompt": p[2],
+                    "system_prompt": loadSystemPrompt("zeroShot"),
                     "model": "openai/gpt-5.4-mini",
+
+                        "tags":{
+                             "tag1": p[3], #! Seleccionar etiquetas y decidir estructura de respuesta
+                             "tag2": p[4],
+                             "tag3": p[5],
+                             "tag4": p[6],
+                        },
+
                     "responses": answer
                 }
     
 
-    out_file = DATA_DIR / f"{prompt[1]}_{prompt[0]}.json"
+    out_file = DATA_DIR / f"{p[1]}_{p[0]}.json"
     with open(out_file, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
 

@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If an ice-cream is tasty, then a steak is salty', together with 'If a steak is salty, then a tomato is fresh', can we infer 'If an ice-cream is tasty, then a tomato is fresh'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "comida",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

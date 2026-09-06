@@ -1,0 +1,12 @@
+{
+    "user_prompt": "If one puppy was brown, then a dog was tired. And if a dog was tired,then the cat was under the table. Therefore, if one puppy was brown, then the cat was under the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "animales",
+        "tag4": "pass"
+    },
+    "responses": "yes"
+}

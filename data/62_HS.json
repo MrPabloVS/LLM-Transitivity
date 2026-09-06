@@ -1,0 +1,12 @@
+{
+    "user_prompt": "If the waterfalls is impressive, then a forest is dark. And if a forest is dark,then the soil is fertile. Therefore, if the waterfalls is impressive, then the soil is fertile",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "naturaleza",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

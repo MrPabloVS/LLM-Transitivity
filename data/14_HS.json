@@ -1,6 +1,12 @@
 {
-    "user_prompt": "If its daytime, then the vampire sleeps; and if the vampire sleeps, then the coffin is closed; therefore id its daytime, then the coffin is closed",
+    "user_prompt": "If it's daytime, then the vampire sleeps. And if the vampire sleeps, then the coffin is closed. Therefore if it's daytime, then the coffin is closed",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "vampiros",
+        "tag4": "present"
+    },
     "responses": "yes"
 }

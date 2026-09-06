@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If the knight is armed, then the king is safe', together with 'If the king is safe, then the kingdom is prosperous', can we infer 'If the knight is armed them the kingdom is prosperous'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "reinos",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,12 @@
+{
+    "user_prompt": "If the soil was fertile, then the waterfalls was impressive. And if the waterfalls was impressive,then a forest was dark. Therefore, if the soil was fertile, then a forest was dark",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "naturaleza",
+        "tag4": "pass"
+    },
+    "responses": "yes"
+}

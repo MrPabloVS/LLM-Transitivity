@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If a painting is unfinished, then the building is abandoned' together with 'If the building is abandoned, then a bridge is unstable', can we infer 'If a painting is unfinished, then a bridge is unstable'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "random",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

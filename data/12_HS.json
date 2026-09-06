@@ -1,6 +1,12 @@
 {
-    "user_prompt": "If I was born on Buenos then I was born on Argentina; and if I was born on Argentina then I was born on Planet Earth; therefore, if I was born on Argentina, then I was born on Planet Earth",
+    "user_prompt": "If I was born in Buenos Aires, then I was born in Argentina. And if I was born in Argentina, then I was born in Planet Earth. Therefore, if I was born in Buenos Aires, then I was born in Planet Earth",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "consecuencia NECESARIA - hiperonimos",
+        "tag4": "pass"
+    },
     "responses": "yes"
 }

@@ -1,6 +1,12 @@
 {
-    "user_prompt": "If I was born on Buenos then I was born on Argentina; and if I was born on Argentina then I was born in North America; therefore, if I was born on Argentina, then I was born on North America",
+    "user_prompt": "If I was born in Buenos Aires, then I was born in Argentina. And if I was born in Argentina, then I was born in North America. Therefore, if I was born in Buenos Aires, then I was born in North America",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
-    "responses": "no"
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "consecuencia y segunda premisa FALSA - hiperonimos",
+        "tag4": "pass"
+    },
+    "responses": "yes"
 }

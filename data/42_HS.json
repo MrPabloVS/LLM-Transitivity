@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If a tree was cut, then the leaves have fallen', together with 'If the leaves have fallen, then autumn has come', can we infer 'If a tree was cut, then autumn has come'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "semi-random",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

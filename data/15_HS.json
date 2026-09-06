@@ -1,6 +1,12 @@
 {
-    "user_prompt": "If its nigthtime, then the vampire roams; and if the vampire roams, then the coffin is open; therefore id its nigthtime, then the coffin is open",
+    "user_prompt": "If it's nighttime, then the vampire roams. And if the vampire roams, then the coffin is open. Therefore if it's nighttime, then the coffin is open",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "vampiros",
+        "tag4": "present"
+    },
     "responses": "yes"
 }

@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If the sky is red, then an asteroid is coming', together with 'If an asteroid is coming, then the world is destroyed', can we infer 'If the sky is red, then the world is destroyed'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "asteroide",
+        "tag4": "present"
+    },
+    "responses": "yes"
+}

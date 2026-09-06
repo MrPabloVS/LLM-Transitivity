@@ -1,6 +1,12 @@
 {
-    "user_prompt": "If John has a son, then MarÃ­a has a son; and if maria has a son, then he is named Bruno; therefore, if John has a son, then he is named Bruno",
+    "user_prompt": "If John has a son, then Maria has a son. And if Maria has a son, then his name is Bruno. Therefore, if John has a son, then his name is Bruno",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "use",
+        "tag2": "valid",
+        "tag3": "pronombre his equivoco",
+        "tag4": "present"
+    },
     "responses": "no"
 }

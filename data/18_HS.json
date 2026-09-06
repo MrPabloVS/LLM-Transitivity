@@ -1,6 +1,12 @@
 {
-    "user_prompt": "From 'If two plus two equals four, then one plus ten equals six' together with 'one plus ten equals six then four plus five equals nine', can we infer 'If two plus two equals four, then four plus five equals nine'?",
+    "user_prompt": "From 'If two plus two equals four, then one plus ten equals six' together with 'If one plus ten equals six, then four plus five equals nine', can we infer 'If two plus two equals four, then four plus five equals nine'?",
     "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
     "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "consecuencia NECESARIA pero segunda premisa FALSA - math",
+        "tag4": "present"
+    },
     "responses": "yes"
 }

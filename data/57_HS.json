@@ -1,0 +1,12 @@
+{
+    "user_prompt": "From 'If the sky is clear, you will see the stars', together with 'If you see the stars, you will see constellations', can we infer 'If the sky is clear, you will see constellations.'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-5.4-mini",
+    "tags": {
+        "tag1": "mention",
+        "tag2": "valid",
+        "tag3": "estrellas",
+        "tag4": "combined: present and future"
+    },
+    "responses": "yes"
+}
