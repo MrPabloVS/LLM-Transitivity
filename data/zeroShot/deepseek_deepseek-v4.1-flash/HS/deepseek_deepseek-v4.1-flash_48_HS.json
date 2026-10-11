@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a piano is tuned, then a flute is broken', together with 'If a flute is broken, then a guitar is plugged in', can we infer 'If a piano is tuned, then a guitar is plugged in'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "responses": "Yes"
+}

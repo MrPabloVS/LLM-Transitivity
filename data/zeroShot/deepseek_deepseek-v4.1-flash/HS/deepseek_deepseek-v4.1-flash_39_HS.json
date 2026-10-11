@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a mountain is snow-covered, then a vehicle is parked' together with 'If a vehicle is parked, then a flower is withered', can we infer 'If a mountain is snow-covered, then a flower is withered'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "responses": "yes"
+}

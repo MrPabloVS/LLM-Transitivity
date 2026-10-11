@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a tree is tall, then a room is crowded' together with 'If a room is crowded, then a field is barren', can we infer 'If a tree is tall, then a field is barren'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "responses": "yes"
+}

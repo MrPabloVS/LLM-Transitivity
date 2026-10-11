@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a trial ends, then the culprit is determined', together with 'If the culprit is determined, then the victim is relieved', can we infer 'If a trial ends, then the victim is relieved'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "responses": "yes"
+}

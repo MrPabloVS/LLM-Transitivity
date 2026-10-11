@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If an ice-cream is tasty, then a steak is salty', together with 'If a steak is salty, then a tomato is fresh', can we infer 'If an ice-cream is tasty, then a tomato is fresh'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "responses": "yes"
+}

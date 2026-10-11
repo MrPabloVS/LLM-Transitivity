@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If the sky is red, then an asteroid is coming', together with 'If an asteroid is coming, then the world is destroyed', can we infer 'If the sky is red, then the world is destroyed'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "responses": "yes"
+}

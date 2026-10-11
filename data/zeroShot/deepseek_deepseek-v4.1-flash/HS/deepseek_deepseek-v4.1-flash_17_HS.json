@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If four plus five equals nine, then seven plus five equals twelve' together with 'If seven plus five equals twelve, then zero plus zero equals zero', can we infer 'If four plus five equals nine, then zero plus zero equals zero'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "responses": "yes"
+}
