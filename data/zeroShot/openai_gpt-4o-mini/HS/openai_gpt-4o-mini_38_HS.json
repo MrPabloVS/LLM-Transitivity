@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If the avenue is busy, then a river is polluted' together with 'If a river is polluted, then a machine is operational', can we infer 'If the avenue is busy, then a machine is operational'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes"
+}

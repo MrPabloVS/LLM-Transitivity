@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If Mary was crying, then John was dead', together with 'If John was dead, then the substance was poisonous', can we infer 'If Mary was crying, then the substance was poisonous'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes."
+}

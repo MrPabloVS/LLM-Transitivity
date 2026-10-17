@@ -4,11 +4,12 @@ import argparse
 import requests
 from dotenv import load_dotenv
 from pathlib import Path
+from datetime import datetime
 
 #-------------------------------------------------------------------------------------------------------------------
 
 # PARSER
-p = argparse.ArgumentParser() #! Queda pendiente agregar el system prompt
+p = argparse.ArgumentParser() 
 p.add_argument("promptFile") 
 p.add_argument("--system", default="zeroShot")
 p.add_argument("--model", default="openai/gpt-4o-mini")
@@ -34,8 +35,13 @@ with open( USER_PROMPTS_DIR / f"{args.promptFile}.json", encoding="utf-8") as fi
     #print(promts)
 
 with open( SYSTEM_PROMPTS_DIR / f"{args.system}.json", encoding="utf-8") as file: 
-    systemPromt = json.load(file)
+    systemPrompt = json.load(file)
     #print(systemPromt)
+
+# CREATE LOG
+date = datetime.now().strftime("%Y-%m-%d_%H-%M")
+log = PROJECT_ROOT / "logs" / f"{args.promptFile}_{modelName}_{date}.json"
+results = []
 
 #-------------------------------------------------------------------------------------------------------------------
 
@@ -46,7 +52,7 @@ for p in promts:
     headers={"Authorization": f"Bearer {apiKey}"},
     json={"model": args.model,
            "messages": [
-               {"role": "system", "content": systemPromt[0]},
+               {"role": "system", "content": systemPrompt[0]},
                {"role": "user", "content": p[2]}
                ]},
 )
@@ -55,7 +61,7 @@ for p in promts:
 
     data = {
                     "userPrompt": p[2],
-                    "system_prompt": systemPromt[0],
+                    "system_prompt": systemPrompt[0],
                     "model": args.model,
 
                         #"tags":{
@@ -72,3 +78,7 @@ for p in promts:
     outFile = OUT_DIR / f"{modelName}_{p[1]}_{p[0]}.json"
     with open(outFile, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
+
+    results.append(r.json())
+    with open(log, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=4, ensure_ascii=False)

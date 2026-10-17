@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If the train is ultramodern, then a book is damaged' together with 'If a book is damaged, then a vehicle is parked', can we infer 'If the train is ultramodern, then a vehicle is parked'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes"
+}

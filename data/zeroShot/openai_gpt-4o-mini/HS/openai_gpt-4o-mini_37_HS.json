@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a bridge is unstable, then a village is isolated' together with 'If a village is isolated, then the piece is broken', can we infer 'If a bridge is unstable, then the piece is broken'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes"
+}

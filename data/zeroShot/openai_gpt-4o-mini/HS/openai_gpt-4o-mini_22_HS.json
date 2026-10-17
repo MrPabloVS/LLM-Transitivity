@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If the avenue is busy, then the train is ultramodern' together with 'If the train is ultramodern, then the window is open', can we infer 'If the avenue is busy, then the window is open'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes"
+}

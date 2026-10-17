@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a beach is deserted, then a cat is asleep' together with 'If a cat is asleep, then the avenue is busy', can we infer 'If a beach is deserted, then the avenue is busy'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes"
+}

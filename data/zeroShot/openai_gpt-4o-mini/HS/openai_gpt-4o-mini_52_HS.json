@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a screen is on, then a video is playing', together with 'If a video is playing, then the speakers are on', can we infer 'If a screen is on, then the speakers are on'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "yes"
+}

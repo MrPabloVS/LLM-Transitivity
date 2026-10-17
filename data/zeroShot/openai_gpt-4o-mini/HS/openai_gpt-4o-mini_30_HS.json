@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a flower is withered, then the window is open' together with 'If the window is open, then a mountain is snow-covered', can we infer 'If a flower is withered, then a mountain is snow-covered'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes"
+}

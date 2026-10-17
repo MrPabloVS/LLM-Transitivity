@@ -1,0 +1,6 @@
+{
+    "userPrompt": "From 'If a cat is asleep, then a flower is withered' together with 'If a flower is withered, then the piece is broken', can we infer 'If a cat is asleep, then the piece is broken'?",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "responses": "Yes."
+}
