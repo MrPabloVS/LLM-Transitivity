@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican intellectualizes the semiology then the clerkship sasses the pugilist, if the clerkship sasses the pugilist then the bibliophile overrates the aesthetician, therefore if the corsican intellectualizes the semiology then the bibliophile overrates the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O20"
+        ],
+        [
+            "S3",
+            "V7",
+            "O8"
+        ],
+        [
+            "S10",
+            "V9",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

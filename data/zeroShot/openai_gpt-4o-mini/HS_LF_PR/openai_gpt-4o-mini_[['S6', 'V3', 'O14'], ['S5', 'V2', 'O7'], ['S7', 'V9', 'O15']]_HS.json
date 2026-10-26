@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist prepays the trimaran then the audiophile indemnifies the aesthetician, if the audiophile indemnifies the aesthetician then the hypnotherapist overrates the metalurgist, therefore if the alpinist prepays the trimaran then the hypnotherapist overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O14"
+        ],
+        [
+            "S5",
+            "V2",
+            "O7"
+        ],
+        [
+            "S7",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

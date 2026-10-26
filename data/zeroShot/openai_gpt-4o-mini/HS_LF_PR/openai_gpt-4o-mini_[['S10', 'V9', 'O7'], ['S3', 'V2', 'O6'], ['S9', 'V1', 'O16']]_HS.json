@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the polytheism then the clerkship indemnifies the metalurgist, if the clerkship indemnifies the metalurgist then the embryologist reappraises the rebelliousness, therefore if the bibliophile overrates the polytheism then the embryologist reappraises the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O7"
+        ],
+        [
+            "S3",
+            "V2",
+            "O6"
+        ],
+        [
+            "S9",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

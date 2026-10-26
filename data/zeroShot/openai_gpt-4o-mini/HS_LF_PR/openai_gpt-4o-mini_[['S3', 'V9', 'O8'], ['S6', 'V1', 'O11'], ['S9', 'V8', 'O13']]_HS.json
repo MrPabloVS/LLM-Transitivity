@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship overrates the conventionalism then the alpinist reappraises the polytheism, if the alpinist reappraises the polytheism then the embryologist intellectualizes the rocketry, therefore if the clerkship overrates the conventionalism then the embryologist intellectualizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V9",
+            "O8"
+        ],
+        [
+            "S6",
+            "V1",
+            "O11"
+        ],
+        [
+            "S9",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

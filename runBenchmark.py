@@ -63,13 +63,15 @@ for p in promts:
                     "userPrompt": p[2],
                     "system_prompt": systemPrompt[0],
                     "model": args.model,
+                    "id": p[1],
 
-                        #"tags":{
-                         #    "tag1": p[3], #! Seleccionar etiquetas y decidir estructura de respuesta
-                          #   "tag2": p[4],
-                           #  "tag3": p[5],
-                            # "tag4": p[6],
-                        #},
+                        "tags":{
+                             "frecuency": p[3], #! Tiempo verbal y frecuencia en el nombre de archivo
+                             "verbal time": p[4],
+                             "conectors": p[5],
+                             "validity": p[6],
+                             "cononic": p[7],
+                        },
 
                     "responses": answer
                 }
@@ -82,3 +84,5 @@ for p in promts:
     results.append(r.json())
     with open(log, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4, ensure_ascii=False)
+
+print("Finished calls")

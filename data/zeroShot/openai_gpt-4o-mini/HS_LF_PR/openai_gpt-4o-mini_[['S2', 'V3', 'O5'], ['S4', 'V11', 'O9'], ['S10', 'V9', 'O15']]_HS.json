@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian prepays the fumigation then the herpetologist marinates the ceviche, if the herpetologist marinates the ceviche then the bibliophile overrates the metalurgist, therefore if the sumerian prepays the fumigation then the bibliophile overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O5"
+        ],
+        [
+            "S4",
+            "V11",
+            "O9"
+        ],
+        [
+            "S10",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Yes"
+}
