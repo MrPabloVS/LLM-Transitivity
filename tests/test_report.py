@@ -98,6 +98,42 @@ class ReportIntegrationTests(unittest.TestCase):
         self.assertNotIn('</script', match[1])
         self.assertEqual(json.loads(match[1]), payload)
 
+    def test_markdown_uses_same_metrics(self):
+        markdown = report.render_markdown(self.data)
+        self.assertIn('13.500 registros; 13.493 decisiones extraíbles; 7 filtros', markdown)
+        self.assertIn('1258 / 1500 | 83,87 %', markdown)
+        self.assertIn('1493 / 1500 | 99,53 %', markdown)
+        self.assertIn('USD 14,65106', markdown)
+        self.assertIn('[Abrir la versión HTML interactiva](presentes-2026-11-04.html)', markdown)
+        self.assertEqual(sum(line.startswith('| `HS_') for line in markdown.splitlines()), 90)
+        self.assertIn('241/1000 · 24,10 %', markdown)
+
+    def test_confusion_matrices_and_reference_switch(self):
+        for dataset, expected in {
+            'HS_HF_PR_500': (498, 18, 2, 982),
+            'HS_LF_PR': (499, 241, 1, 759),
+            'HS_NS_PR_500': (484, 2, 16, 998),
+        }.items():
+            v = report.case_confusion(self.data, dataset, 0)
+            self.assertEqual(tuple(v[key] for key in ('tp', 'fp', 'fn', 'tn')), expected)
+            self.assertEqual(v['positiveTotal'], 500)
+            self.assertEqual(v['negativeTotal'], 1000)
+        original = report.case_confusion(self.data, 'HS_LF_PR', 0, reference='original')
+        self.assertEqual(tuple(original[key] for key in ('tp', 'fp', 'fn', 'tn')), (673, 67, 327, 433))
+        canonical = report.case_confusion(self.data, 'HS_LF_PR', 0, variant='invalid')
+        noncanonical = report.case_confusion(self.data, 'HS_LF_PR', 0, variant='noncanonic')
+        self.assertEqual((canonical['fp'], noncanonical['fp']), (67, 174))
+
+    def test_filtered_and_unresolved_do_not_enter_confusion_cells(self):
+        v = report.case_confusion(self.data, 'HS_LF_PR', 2)
+        self.assertEqual(tuple(v[key] for key in ('tp', 'fp', 'fn', 'tn', 'filtered')), (497, 0, 0, 996, 7))
+        self.assertEqual(v['tp'] + v['fn'], 497)
+        self.assertEqual(v['fp'] + v['tn'], 996)
+        empty = report.confusion_matrix([(True, {'answer': None, 'status': 'conflict'}),
+                                         (False, {'answer': None, 'status': 'filtered'})])
+        self.assertEqual(sum(empty[key] for key in ('tp', 'fp', 'fn', 'tn')), 0)
+        self.assertEqual((empty['filtered'], empty['unresolved']), (1, 1))
+
     def test_stale_audit_fails_before_building(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

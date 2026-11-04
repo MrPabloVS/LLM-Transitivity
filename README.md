@@ -34,6 +34,30 @@ uv run auditBenchmark.py HS_HF_PR_500 --model openai/gpt-4o-mini --output summar
 ```
 Both evaluators only recognize normalized `yes`/`no` responses. Additional explanation text is counted separately as unrecognized; it is not a semantic judgment of that explanation. See `CORRIDAS.md` and `PENDIENTES.md` for the actual runs and dataset/format issues.
 
+## Informe de resultados (HTML y Markdown)
+
+Generar ambas versiones desde los datos ya guardados, sin llamadas a la API:
+
+```bash
+uv run --locked buildReport.py
+```
+
+Archivos: [HTML interactivo](reports/presentes-2026-11-04.html) y [Markdown](reports/presentes-2026-11-04.md). El HTML incorpora todos los datos y funciona sin conexión. Para revisarlo con un servidor local:
+
+```bash
+uv run --locked serveReport.py
+```
+
+Abrir <http://127.0.0.1:8765/>. El servidor escucha solo en localhost y sirve exclusivamente el HTML, sin exponer el resto del repositorio. Se detiene con Ctrl+C; el puerto se puede cambiar con `--port`.
+
+El informe distingue validez auditada, etiqueta original, decisión extraída, cumplimiento de formato y filtros del proveedor. La comparación principal mantiene todos los casos en el denominador; los costos nuevos e históricos se muestran por separado. Los 211 resultados históricos de GPT/LF están identificados.
+
+Para otras rutas de salida, usar `--output` y opcionalmente `--markdown-output`. Pruebas:
+
+```bash
+uv run --locked python -m unittest discover -s tests -v
+```
+
 ## Contributors:  
 Eduardo Barrio  
 Bruno Da Ré  
