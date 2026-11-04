@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the brettent trelfs the ploodnum then the glemtor prants the blorrack, if the glemtor prants the blorrack then the bruggant glashes the flendop, therefore if the brettent trelfs the ploodnum then the bruggant glashes the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O3"
+        ],
+        [
+            "S4",
+            "V3",
+            "O4"
+        ],
+        [
+            "S5",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven:\n1. If the brettent trelfs the ploodnum → the glemtor prants the blorrack\n2. If the glemtor prants the blorrack → the bruggant glashes the flendop\n\nConclusion: If the brettent trelfs the ploodnum → the bruggant glashes the flendop\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

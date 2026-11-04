@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family buys the chair then the kid loses the book, if the kid loses the book then the man loves the paper, therefore if the family buys the chair then the man loves the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V1",
+            "O6"
+        ],
+        [
+            "S1",
+            "V7",
+            "O4"
+        ],
+        [
+            "S2",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the family buys the chair → the kid loses the book\nPremise 2: If the kid loses the book → the man loves the paper\nConclusion: If the family buys the chair → the man loves the paper\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A then B\n- If B then C\n- Therefore, if A then C\n\nyes"
+}

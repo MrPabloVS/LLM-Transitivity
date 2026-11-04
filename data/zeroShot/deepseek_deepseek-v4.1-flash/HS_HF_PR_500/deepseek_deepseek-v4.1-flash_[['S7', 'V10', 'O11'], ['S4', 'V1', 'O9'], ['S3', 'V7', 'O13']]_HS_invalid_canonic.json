@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the car then the family buys the building, if the family buys the building then the woman loses the paper, therefore if the woman loses the paper then the doctor hates the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O11"
+        ],
+        [
+            "S4",
+            "V1",
+            "O9"
+        ],
+        [
+            "S3",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

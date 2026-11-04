@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family buys the table then the kid hates the college,if the officer loves the money then the family buys the table therefore if the kid hates the college then the officer loves the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O3"
+        ],
+        [
+            "S4",
+            "V1",
+            "O5"
+        ],
+        [
+            "S1",
+            "V10",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

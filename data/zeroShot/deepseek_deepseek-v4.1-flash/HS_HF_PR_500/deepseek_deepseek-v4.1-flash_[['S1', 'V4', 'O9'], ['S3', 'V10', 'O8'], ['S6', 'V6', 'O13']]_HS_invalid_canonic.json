@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid sees the building then the woman hates the school, if the woman hates the school then the teacher reads the paper, therefore if the teacher reads the paper then the kid sees the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V4",
+            "O9"
+        ],
+        [
+            "S3",
+            "V10",
+            "O8"
+        ],
+        [
+            "S6",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

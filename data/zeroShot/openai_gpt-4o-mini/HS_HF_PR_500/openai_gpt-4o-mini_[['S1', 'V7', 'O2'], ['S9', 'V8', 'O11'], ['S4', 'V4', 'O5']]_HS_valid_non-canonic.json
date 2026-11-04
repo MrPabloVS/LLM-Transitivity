@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loves the car then the family sees the table,if the kid loses the case then the manager loves the car therefore if the family sees the table then the kid loses the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V7",
+            "O2"
+        ],
+        [
+            "S9",
+            "V8",
+            "O11"
+        ],
+        [
+            "S4",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

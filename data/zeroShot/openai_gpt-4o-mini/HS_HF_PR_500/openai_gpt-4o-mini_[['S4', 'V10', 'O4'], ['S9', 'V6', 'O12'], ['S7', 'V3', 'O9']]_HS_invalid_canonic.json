@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the book then the manager reads the newspaper, if the manager reads the newspaper then the doctor finds the building, therefore if the doctor finds the building then the family hates the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O4"
+        ],
+        [
+            "S9",
+            "V6",
+            "O12"
+        ],
+        [
+            "S7",
+            "V3",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

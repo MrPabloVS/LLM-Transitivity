@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loves the newspaper then the kid pays the food, if the kid pays the food then the woman finds the newspaper, therefore if the woman finds the newspaper then the doctor loves the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O12"
+        ],
+        [
+            "S1",
+            "V2",
+            "O16"
+        ],
+        [
+            "S3",
+            "V3",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The logical structure is:\n\n1. If A then B (doctor loves newspaper → kid pays food)\n2. If B then C (kid pays food → woman finds newspaper)\n3. Therefore: If C then A (woman finds newspaper → doctor loves newspaper)\n\nThis conclusion doesn't follow. From the premises, we can validly conclude: If A then C (if doctor loves newspaper, then woman finds newspaper), but not the reverse."
+}

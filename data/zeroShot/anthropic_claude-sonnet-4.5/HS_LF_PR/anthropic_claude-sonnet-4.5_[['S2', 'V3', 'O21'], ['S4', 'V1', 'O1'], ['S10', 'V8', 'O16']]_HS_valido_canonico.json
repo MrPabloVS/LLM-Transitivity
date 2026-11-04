@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian prepays the coronograph then the herpetologist reappraises the renewable-energy, if the herpetologist reappraises the renewable-energy then the bibliophile intellectualizes the rebelliousness, therefore if the sumerian prepays the coronograph then the bibliophile intellectualizes the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O21"
+        ],
+        [
+            "S4",
+            "V1",
+            "O1"
+        ],
+        [
+            "S10",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If sumerian prepays coronograph → herpetologist reappraises renewable-energy)\nPremise 2: If B then C (If herpetologist reappraises renewable-energy → bibliophile intellectualizes rebelliousness)\nConclusion: If A then C (If sumerian prepays coronograph → bibliophile intellectualizes rebelliousness)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid loses the money then the teacher finds the food, if the teacher finds the food then the student pays the paper, therefore if the kid loses the money then the student pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V7",
+            "O3"
+        ],
+        [
+            "S6",
+            "V3",
+            "O16"
+        ],
+        [
+            "S5",
+            "V2",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

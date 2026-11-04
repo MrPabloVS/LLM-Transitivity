@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican upbraids the taxman then the clerkship indemnifies the pugilist, if the clerkship indemnifies the pugilist then the herpetologist federalizes the rocketry, therefore if the corsican upbraids the taxman then the herpetologist federalizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O19"
+        ],
+        [
+            "S3",
+            "V2",
+            "O8"
+        ],
+        [
+            "S4",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the corsican upbraids the taxman → the clerkship indemnifies the pugilist\nPremise 2: If the clerkship indemnifies the pugilist → the herpetologist federalizes the rocketry\nConclusion: If the corsican upbraids the taxman → the herpetologist federalizes the rocketry\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

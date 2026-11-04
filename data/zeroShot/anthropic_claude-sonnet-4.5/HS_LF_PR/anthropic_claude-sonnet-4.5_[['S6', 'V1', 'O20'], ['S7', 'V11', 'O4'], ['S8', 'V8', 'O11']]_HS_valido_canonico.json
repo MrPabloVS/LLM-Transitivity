@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist reappraises the semiology then the hypnotherapist marinates the monkfish, if the hypnotherapist marinates the monkfish then the corsican intellectualizes the polytheism, therefore if the alpinist reappraises the semiology then the corsican intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O20"
+        ],
+        [
+            "S7",
+            "V11",
+            "O4"
+        ],
+        [
+            "S8",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If the alpinist reappraises the semiology, then the hypnotherapist marinates the monkfish)\n\nPremise 2: If B then C (If the hypnotherapist marinates the monkfish, then the corsican intellectualizes the polytheism)\n\nConclusion: If A then C (If the alpinist reappraises the semiology, then the corsican intellectualizes the polytheism)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

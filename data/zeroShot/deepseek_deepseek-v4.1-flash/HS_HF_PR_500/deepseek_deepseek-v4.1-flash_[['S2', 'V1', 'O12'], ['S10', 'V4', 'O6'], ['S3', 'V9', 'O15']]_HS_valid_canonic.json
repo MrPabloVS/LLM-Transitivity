@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man buys the newspaper then the girl sees the chair, if the girl sees the chair then the woman wins the game, therefore if the man buys the newspaper then the woman wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O12"
+        ],
+        [
+            "S10",
+            "V4",
+            "O6"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

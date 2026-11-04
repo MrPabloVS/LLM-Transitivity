@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family pays the computer then the teacher reads the book, if the teacher reads the book then the kid hates the food, therefore if the family pays the computer then the kid hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O14"
+        ],
+        [
+            "S6",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the family pays the computer → the teacher reads the book\nPremise 2: If the teacher reads the book → the kid hates the food\nConclusion: If the family pays the computer → the kid hates the food\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

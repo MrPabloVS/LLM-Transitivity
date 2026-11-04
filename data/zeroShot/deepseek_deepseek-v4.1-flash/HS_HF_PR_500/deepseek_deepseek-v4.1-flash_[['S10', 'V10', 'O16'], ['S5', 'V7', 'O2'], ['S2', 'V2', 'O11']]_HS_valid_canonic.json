@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl hates the food then the student loses the case, if the student loses the case then the man pays the car, therefore if the girl hates the food then the man pays the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O16"
+        ],
+        [
+            "S5",
+            "V7",
+            "O2"
+        ],
+        [
+            "S2",
+            "V2",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

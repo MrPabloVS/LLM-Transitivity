@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman sees the computer then the officer loves the program, if the officer loves the program then the man hates the sugar, therefore if the woman sees the computer then the man hates the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O14"
+        ],
+        [
+            "S8",
+            "V8",
+            "O1"
+        ],
+        [
+            "S2",
+            "V10",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the woman sees the computer → the officer loves the program\n**Premise 2:** If the officer loves the program → the man hates the sugar\n**Conclusion:** If the woman sees the computer → the man hates the sugar\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the woman sees the computer\n- B = the officer loves the program\n- C = the man hates the sugar\n\n**yes**"
+}

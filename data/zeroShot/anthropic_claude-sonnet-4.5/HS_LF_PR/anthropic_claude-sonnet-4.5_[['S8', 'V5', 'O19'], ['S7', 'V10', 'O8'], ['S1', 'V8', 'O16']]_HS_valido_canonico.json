@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican piggybacks the taxman then the hypnotherapist upbraids the pugilist, if the hypnotherapist upbraids the pugilist then the plutocrat intellectualizes the rebelliousness, therefore if the corsican piggybacks the taxman then the plutocrat intellectualizes the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V5",
+            "O19"
+        ],
+        [
+            "S7",
+            "V10",
+            "O8"
+        ],
+        [
+            "S1",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the corsican piggybacks the taxman → the hypnotherapist upbraids the pugilist\n\nPremise 2: If the hypnotherapist upbraids the pugilist → the plutocrat intellectualizes the rebelliousness\n\nConclusion: If the corsican piggybacks the taxman → the plutocrat intellectualizes the rebelliousness\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

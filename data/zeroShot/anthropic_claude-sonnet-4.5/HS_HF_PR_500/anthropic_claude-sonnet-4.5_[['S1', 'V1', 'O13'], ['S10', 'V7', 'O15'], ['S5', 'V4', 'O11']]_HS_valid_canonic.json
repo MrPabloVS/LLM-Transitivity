@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid buys the paper then the girl loses the game, if the girl loses the game then the student sees the car, therefore if the kid buys the paper then the student sees the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O13"
+        ],
+        [
+            "S10",
+            "V7",
+            "O15"
+        ],
+        [
+            "S5",
+            "V4",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid buys the paper → the girl loses the game\nPremise 2: If the girl loses the game → the student sees the car\nConclusion: If the kid buys the paper → the student sees the car\n\nThis is a valid application of hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

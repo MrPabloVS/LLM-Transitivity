@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man pays the book then the girl eats the sugar, if the girl eats the sugar then the student hates the food, therefore if the man pays the book then the student hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V2",
+            "O4"
+        ],
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S5",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship federalizes the lightsaber then the corsican intellectualizes the polytheism, if the corsican intellectualizes the polytheism then the sumerian upbraids the metalurgist, therefore if the clerkship federalizes the lightsaber then the sumerian upbraids the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O3"
+        ],
+        [
+            "S8",
+            "V8",
+            "O11"
+        ],
+        [
+            "S2",
+            "V10",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If clerkship federalizes lightsaber, then corsican intellectualizes polytheism)\nPremise 2: If B then C (If corsican intellectualizes polytheism, then sumerian upbraids metalurgist)\nConclusion: If A then C (If clerkship federalizes lightsaber, then sumerian upbraids metalurgist)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the sugar then the teacher hates the program, if the teacher hates the program then the woman loses the book, therefore if the officer loves the sugar then the woman loses the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O7"
+        ],
+        [
+            "S6",
+            "V10",
+            "O1"
+        ],
+        [
+            "S3",
+            "V7",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

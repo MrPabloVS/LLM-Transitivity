@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the sugar then the man loses the money, if the man loses the money then the manager hates the school, therefore if the family loves the sugar then the manager hates the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O7"
+        ],
+        [
+            "S2",
+            "V7",
+            "O3"
+        ],
+        [
+            "S9",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the family loves the sugar → the man loses the money\n**Premise 2:** If the man loses the money → the manager hates the school\n**Conclusion:** If the family loves the sugar → the manager hates the school\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nThe conclusion follows necessarily from the premises.\n\n**yes**"
+}

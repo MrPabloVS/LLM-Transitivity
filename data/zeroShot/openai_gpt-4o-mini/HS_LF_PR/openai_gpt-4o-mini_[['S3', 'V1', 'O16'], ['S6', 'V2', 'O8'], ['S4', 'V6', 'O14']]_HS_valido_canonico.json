@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship reappraises the rebelliousness then the alpinist indemnifies the pugilist, if the alpinist indemnifies the pugilist then the herpetologist federalizes the trimaran, therefore if the clerkship reappraises the rebelliousness then the herpetologist federalizes the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O16"
+        ],
+        [
+            "S6",
+            "V2",
+            "O8"
+        ],
+        [
+            "S4",
+            "V6",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

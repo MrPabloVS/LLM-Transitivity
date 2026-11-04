@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian overrates the taxman then the hypnotherapist unfreezes the monkfish, if the hypnotherapist unfreezes the monkfish then the bibliophile federalizes the renewable-energy, therefore if the sumerian overrates the taxman then the bibliophile federalizes the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V9",
+            "O20"
+        ],
+        [
+            "S7",
+            "V4",
+            "O3"
+        ],
+        [
+            "S10",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nGiven premises:\n1. If the sumerian overrates the taxman → the hypnotherapist unfreezes the monkfish\n2. If the hypnotherapist unfreezes the monkfish → the bibliophile federalizes the renewable-energy\n\nConclusion:\n- If the sumerian overrates the taxman → the bibliophile federalizes the renewable-energy\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore: If A → C\n\nyes"
+}

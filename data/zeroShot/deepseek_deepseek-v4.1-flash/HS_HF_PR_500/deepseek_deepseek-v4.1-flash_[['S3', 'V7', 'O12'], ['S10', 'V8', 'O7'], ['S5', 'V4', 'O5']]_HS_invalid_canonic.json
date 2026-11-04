@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loses the newspaper then the girl loves the sugar, if the girl loves the sugar then the student sees the table, therefore if the student sees the table then the woman loses the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V7",
+            "O12"
+        ],
+        [
+            "S10",
+            "V8",
+            "O7"
+        ],
+        [
+            "S5",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

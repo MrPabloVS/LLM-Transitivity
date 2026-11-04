@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist indemnifies the metalurgist then the hypnotherapist overrates the semiology, if the hypnotherapist overrates the semiology then the alpinist intellectualizes the fairyland, therefore if the herpetologist indemnifies the metalurgist then the alpinist intellectualizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O6"
+        ],
+        [
+            "S7",
+            "V9",
+            "O11"
+        ],
+        [
+            "S6",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the herpetologist indemnifies the metalurgist → the hypnotherapist overrates the semiology\n\n**Premise 2:** If the hypnotherapist overrates the semiology → the alpinist intellectualizes the fairyland\n\n**Conclusion:** If the herpetologist indemnifies the metalurgist → the alpinist intellectualizes the fairyland\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, If A → C\n\n**yes**"
+}

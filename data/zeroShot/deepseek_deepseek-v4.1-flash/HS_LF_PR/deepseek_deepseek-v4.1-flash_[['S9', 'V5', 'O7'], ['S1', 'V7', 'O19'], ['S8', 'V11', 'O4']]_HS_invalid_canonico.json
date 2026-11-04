@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist piggybacks the aesthetician then the plutocrat sasses the taxman, if the plutocrat sasses the taxman then the corsican marinates the monkfish, therefore if the corsican marinates the monkfish then the embryologist piggybacks the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V5",
+            "O7"
+        ],
+        [
+            "S1",
+            "V7",
+            "O19"
+        ],
+        [
+            "S8",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

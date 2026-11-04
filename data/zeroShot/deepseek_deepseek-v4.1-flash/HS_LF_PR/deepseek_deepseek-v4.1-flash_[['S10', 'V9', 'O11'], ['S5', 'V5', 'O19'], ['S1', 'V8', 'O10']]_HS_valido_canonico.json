@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the semiology then the audiophile piggybacks the taxman, if the audiophile piggybacks the taxman then the plutocrat intellectualizes the solipsism, therefore if the bibliophile overrates the semiology then the plutocrat intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O11"
+        ],
+        [
+            "S5",
+            "V5",
+            "O19"
+        ],
+        [
+            "S1",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat upbraids the aesthetician then the audiophile piggybacks the metalurgist,if the hypnotherapist reappraises the conventionalism then the plutocrat upbraids the aesthetician therefore if the audiophile piggybacks the metalurgist then the hypnotherapist reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O15"
+        ],
+        [
+            "S1",
+            "V10",
+            "O7"
+        ],
+        [
+            "S5",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "Yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the school then the officer wins the case, if the officer wins the case then the girl pays the computer, therefore if the family loves the school then the girl pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O8"
+        ],
+        [
+            "S8",
+            "V9",
+            "O2"
+        ],
+        [
+            "S10",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the family loves the school → the officer wins the case\nPremise 2: If the officer wins the case → the girl pays the computer\nConclusion: If the family loves the school → the girl pays the computer\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\n**yes**"
+}

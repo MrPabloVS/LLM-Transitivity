@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller frikes the flendop then the glemtor prants the prebart, if the glemtor prants the prebart then the prackler blemps the snabrik, therefore if the probeller frikes the flendop then the prackler blemps the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V4",
+            "O6"
+        ],
+        [
+            "S4",
+            "V3",
+            "O1"
+        ],
+        [
+            "S6",
+            "V2",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the probeller frikes the flendop → the glemtor prants the prebart\nPremise 2: If the glemtor prants the prebart → the prackler blemps the snabrik\nConclusion: If the probeller frikes the flendop → the prackler blemps the snabrik\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

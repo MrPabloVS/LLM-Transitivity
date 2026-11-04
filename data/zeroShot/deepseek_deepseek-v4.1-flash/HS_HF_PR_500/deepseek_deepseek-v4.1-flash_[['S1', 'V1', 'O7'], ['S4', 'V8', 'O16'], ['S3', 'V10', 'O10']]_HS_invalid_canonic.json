@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid buys the sugar then the family loves the food, if the family loves the food then the woman hates the college, therefore if the woman hates the college then the kid buys the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O7"
+        ],
+        [
+            "S4",
+            "V8",
+            "O16"
+        ],
+        [
+            "S3",
+            "V10",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

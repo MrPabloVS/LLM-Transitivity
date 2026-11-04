@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager buys the food then the teacher hates the computer,if the man loses the game then the manager buys the food therefore if the teacher hates the computer then the man loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V7",
+            "O15"
+        ],
+        [
+            "S9",
+            "V1",
+            "O16"
+        ],
+        [
+            "S6",
+            "V10",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No"
+}

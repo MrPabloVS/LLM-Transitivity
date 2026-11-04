@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist reappraises the fumigation then the hypnotherapist overrates the pugilist, if the hypnotherapist overrates the pugilist then the sumerian piggybacks the aesthetician, therefore if the sumerian piggybacks the aesthetician then the embryologist reappraises the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V1",
+            "O5"
+        ],
+        [
+            "S7",
+            "V9",
+            "O19"
+        ],
+        [
+            "S2",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

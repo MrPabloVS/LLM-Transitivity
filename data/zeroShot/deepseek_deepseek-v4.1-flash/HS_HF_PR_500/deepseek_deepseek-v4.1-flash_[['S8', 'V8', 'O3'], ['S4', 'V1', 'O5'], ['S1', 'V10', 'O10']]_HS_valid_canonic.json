@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the money then the family buys the table, if the family buys the table then the kid hates the college, therefore if the officer loves the money then the kid hates the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O3"
+        ],
+        [
+            "S4",
+            "V1",
+            "O5"
+        ],
+        [
+            "S1",
+            "V10",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

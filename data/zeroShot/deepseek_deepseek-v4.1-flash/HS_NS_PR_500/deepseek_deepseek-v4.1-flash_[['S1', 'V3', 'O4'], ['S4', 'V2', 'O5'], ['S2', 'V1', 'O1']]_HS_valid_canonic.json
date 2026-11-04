@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller prants the blorrack then the glemtor blemps the snabrik, if the glemtor blemps the snabrik then the preggar glashes the prebart, therefore if the probeller prants the blorrack then the preggar glashes the prebart",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O4"
+        ],
+        [
+            "S4",
+            "V2",
+            "O5"
+        ],
+        [
+            "S2",
+            "V1",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

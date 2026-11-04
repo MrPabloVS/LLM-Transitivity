@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist upbraids the aesthetician then the bibliophile intellectualizes the fairyland, if the bibliophile intellectualizes the fairyland then the herpetologist reappraises the polytheism, therefore if the alpinist upbraids the aesthetician then the herpetologist reappraises the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O7"
+        ],
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S4",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If alpinist upbraids aesthetician, then bibliophile intellectualizes fairyland)\nPremise 2: If B then C (If bibliophile intellectualizes fairyland, then herpetologist reappraises polytheism)\nConclusion: If A then C (If alpinist upbraids aesthetician, then herpetologist reappraises polytheism)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

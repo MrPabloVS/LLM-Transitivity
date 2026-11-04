@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor reads the paper then the teacher sees the computer, if the teacher sees the computer then the manager pays the chair, therefore if the doctor reads the paper then the manager pays the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V6",
+            "O13"
+        ],
+        [
+            "S6",
+            "V4",
+            "O14"
+        ],
+        [
+            "S9",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this step-by-step using logical reasoning.\n\nGiven premises:\n1. If the doctor reads the paper → the teacher sees the computer\n2. If the teacher sees the computer → the manager pays the chair\n\nConclusion to evaluate:\nIf the doctor reads the paper → the manager pays the chair\n\nUsing hypothetical syllogism (chain rule):\n- From premise 1: doctor reads the paper → teacher sees the computer\n- From premise 2: teacher sees the computer → manager pays the chair\n- Therefore: doctor reads the paper → manager pays the chair\n\nThis is a valid logical inference.\n\nyes"
+}

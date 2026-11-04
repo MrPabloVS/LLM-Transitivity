@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman sees the paper then the doctor pays the sugar, if the doctor pays the sugar then the girl wins the case, therefore if the woman sees the paper then the girl wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O13"
+        ],
+        [
+            "S7",
+            "V2",
+            "O7"
+        ],
+        [
+            "S10",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this argument:\n\nPremise 1: If the woman sees the paper → the doctor pays the sugar\nPremise 2: If the doctor pays the sugar → the girl wins the case\nConclusion: If the woman sees the paper → the girl wins the case\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, If A → C\n\n**yes**"
+}

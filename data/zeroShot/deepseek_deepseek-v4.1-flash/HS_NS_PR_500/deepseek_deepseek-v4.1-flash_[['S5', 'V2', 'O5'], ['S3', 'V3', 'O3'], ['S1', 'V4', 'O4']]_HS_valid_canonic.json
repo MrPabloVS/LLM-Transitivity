@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bruggant blemps the snabrik then the brettent prants the ploodnum, if the brettent prants the ploodnum then the probeller frikes the blorrack, therefore if the bruggant blemps the snabrik then the probeller frikes the blorrack",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O5"
+        ],
+        [
+            "S3",
+            "V3",
+            "O3"
+        ],
+        [
+            "S1",
+            "V4",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

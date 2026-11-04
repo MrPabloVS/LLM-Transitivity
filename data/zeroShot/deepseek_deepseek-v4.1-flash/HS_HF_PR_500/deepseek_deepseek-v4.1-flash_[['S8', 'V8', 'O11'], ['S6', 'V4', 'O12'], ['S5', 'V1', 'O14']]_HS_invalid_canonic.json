@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the car then the teacher sees the newspaper, if the teacher sees the newspaper then the student buys the computer, therefore if the student buys the computer then the officer loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O11"
+        ],
+        [
+            "S6",
+            "V4",
+            "O12"
+        ],
+        [
+            "S5",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

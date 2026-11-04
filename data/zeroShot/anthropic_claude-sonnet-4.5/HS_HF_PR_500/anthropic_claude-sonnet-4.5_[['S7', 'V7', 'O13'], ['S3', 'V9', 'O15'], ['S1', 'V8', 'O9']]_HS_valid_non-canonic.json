@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman wins the game then the kid loves the building,if the doctor loses the paper then the woman wins the game therefore if the kid loves the building then the doctor loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ],
+        [
+            "S1",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven:\n1. If the woman wins the game → the kid loves the building\n2. If the doctor loses the paper → the woman wins the game\n\nConclusion to test: If the kid loves the building → the doctor loses the paper\n\nLet me check if this follows logically:\n\nFrom the premises:\n- Premise 2: doctor loses paper → woman wins game\n- Premise 1: woman wins game → kid loves building\n- By hypothetical syllogism: doctor loses paper → kid loves building\n\nThis gives us: If the doctor loses the paper, then the kid loves the building.\n\nThe conclusion claims: If the kid loves the building, then the doctor loses the paper.\n\nThis is the converse of what we derived. The converse of a conditional statement doesn't logically follow from the original statement. Just because A→B doesn't mean B→A.\n\nThe kid could love the building for reasons other than the doctor losing the paper.\n\nno"
+}

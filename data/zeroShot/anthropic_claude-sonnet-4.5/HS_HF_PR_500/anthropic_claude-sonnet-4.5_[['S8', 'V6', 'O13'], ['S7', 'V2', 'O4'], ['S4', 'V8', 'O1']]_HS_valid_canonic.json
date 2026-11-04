@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer reads the paper then the doctor pays the book, if the doctor pays the book then the family loves the program, therefore if the officer reads the paper then the family loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V6",
+            "O13"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ],
+        [
+            "S4",
+            "V8",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the officer reads the paper → the doctor pays the book\nPremise 2: If the doctor pays the book → the family loves the program\nConclusion: If the officer reads the paper → the family loves the program\n\nThis is a valid application of hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

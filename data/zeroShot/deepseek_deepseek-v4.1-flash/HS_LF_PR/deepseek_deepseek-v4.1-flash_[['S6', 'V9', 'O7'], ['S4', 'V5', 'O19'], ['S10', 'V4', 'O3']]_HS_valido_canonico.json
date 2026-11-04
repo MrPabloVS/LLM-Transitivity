@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist overrates the polytheism then the herpetologist piggybacks the taxman, if the herpetologist piggybacks the taxman then the bibliophile unfreezes the monkfish, therefore if the alpinist overrates the polytheism then the bibliophile unfreezes the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V9",
+            "O7"
+        ],
+        [
+            "S4",
+            "V5",
+            "O19"
+        ],
+        [
+            "S10",
+            "V4",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man pays the newspaper then the officer finds the book, if the officer finds the book then the teacher buys the paper, therefore if the man pays the newspaper then the teacher buys the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V2",
+            "O12"
+        ],
+        [
+            "S8",
+            "V3",
+            "O4"
+        ],
+        [
+            "S6",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

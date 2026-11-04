@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican marinates the ceviche then the sumerian federalizes the trimaran, if the sumerian federalizes the trimaran then the bibliophile reappraises the semiology, therefore if the corsican marinates the ceviche then the bibliophile reappraises the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V11",
+            "O9"
+        ],
+        [
+            "S2",
+            "V6",
+            "O14"
+        ],
+        [
+            "S10",
+            "V1",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the corsican marinates the ceviche → the sumerian federalizes the trimaran\nPremise 2: If the sumerian federalizes the trimaran → the bibliophile reappraises the semiology\nConclusion: If the corsican marinates the ceviche → the bibliophile reappraises the semiology\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

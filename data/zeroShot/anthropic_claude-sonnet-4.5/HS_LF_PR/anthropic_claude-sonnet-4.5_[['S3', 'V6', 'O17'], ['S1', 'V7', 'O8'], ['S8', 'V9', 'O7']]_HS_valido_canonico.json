@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship federalizes the magnetometer then the plutocrat sasses the pugilist, if the plutocrat sasses the pugilist then the corsican overrates the polytheism, therefore if the clerkship federalizes the magnetometer then the corsican overrates the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O17"
+        ],
+        [
+            "S1",
+            "V7",
+            "O8"
+        ],
+        [
+            "S8",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me analyze this logical argument step by step.\n\nGiven premises:\n1. If the clerkship federalizes the magnetometer → the plutocrat sasses the pugilist\n2. If the plutocrat sasses the pugilist → the corsican overrates the polytheism\n\nConclusion:\nIf the clerkship federalizes the magnetometer → the corsican overrates the polytheism\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

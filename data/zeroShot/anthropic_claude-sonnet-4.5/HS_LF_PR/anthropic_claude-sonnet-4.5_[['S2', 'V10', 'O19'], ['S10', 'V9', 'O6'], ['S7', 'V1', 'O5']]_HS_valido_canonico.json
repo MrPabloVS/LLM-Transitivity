@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian upbraids the taxman then the bibliophile overrates the solipsism, if the bibliophile overrates the solipsism then the hypnotherapist reappraises the fumigation, therefore if the sumerian upbraids the taxman then the hypnotherapist reappraises the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V10",
+            "O19"
+        ],
+        [
+            "S10",
+            "V9",
+            "O6"
+        ],
+        [
+            "S7",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the Sumerian upbraids the taxman → the bibliophile overrates the solipsism\nPremise 2: If the bibliophile overrates the solipsism → the hypnotherapist reappraises the fumigation\nConclusion: If the Sumerian upbraids the taxman → the hypnotherapist reappraises the fumigation\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

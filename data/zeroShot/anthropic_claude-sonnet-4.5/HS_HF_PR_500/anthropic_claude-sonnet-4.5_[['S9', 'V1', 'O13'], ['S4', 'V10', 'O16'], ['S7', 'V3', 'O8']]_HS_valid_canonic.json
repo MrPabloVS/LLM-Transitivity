@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager buys the paper then the family hates the food, if the family hates the food then the doctor finds the school, therefore if the manager buys the paper then the doctor finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V1",
+            "O13"
+        ],
+        [
+            "S4",
+            "V10",
+            "O16"
+        ],
+        [
+            "S7",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the manager buys the paper → the family hates the food\n2. If the family hates the food → the doctor finds the school\n\nConclusion to evaluate:\n- If the manager buys the paper → the doctor finds the school\n\nThis is a hypothetical syllogism (chain reasoning):\n- If A → B (manager buys paper → family hates food)\n- If B → C (family hates food → doctor finds school)\n- Therefore: If A → C (manager buys paper → doctor finds school)\n\nThis is a valid logical form.\n\nyes"
+}

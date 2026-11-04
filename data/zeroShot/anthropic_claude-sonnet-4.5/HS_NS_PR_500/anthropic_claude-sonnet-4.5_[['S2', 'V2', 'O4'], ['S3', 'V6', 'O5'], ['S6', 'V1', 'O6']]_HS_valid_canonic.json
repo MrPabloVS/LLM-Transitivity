@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar blemps the blorrack then the brettent trelfs the snabrik, if the brettent trelfs the snabrik then the prackler glashes the flendop, therefore if the preggar blemps the blorrack then the prackler glashes the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V2",
+            "O4"
+        ],
+        [
+            "S3",
+            "V6",
+            "O5"
+        ],
+        [
+            "S6",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If P then Q (if preggar blemps blorrack → brettent trelfs snabrik)\nPremise 2: If Q then R (if brettent trelfs snabrik → prackler glashes flendop)\nConclusion: If P then R (if preggar blemps blorrack → prackler glashes flendop)\n\nThis is a valid application of hypothetical syllogism (chain reasoning).\n\nyes"
+}

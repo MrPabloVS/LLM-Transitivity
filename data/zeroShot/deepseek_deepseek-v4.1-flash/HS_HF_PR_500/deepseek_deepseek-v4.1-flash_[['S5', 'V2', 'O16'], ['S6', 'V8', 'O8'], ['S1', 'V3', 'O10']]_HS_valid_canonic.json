@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the food then the teacher loves the school, if the teacher loves the school then the kid finds the college, therefore if the student pays the food then the kid finds the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O16"
+        ],
+        [
+            "S6",
+            "V8",
+            "O8"
+        ],
+        [
+            "S1",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

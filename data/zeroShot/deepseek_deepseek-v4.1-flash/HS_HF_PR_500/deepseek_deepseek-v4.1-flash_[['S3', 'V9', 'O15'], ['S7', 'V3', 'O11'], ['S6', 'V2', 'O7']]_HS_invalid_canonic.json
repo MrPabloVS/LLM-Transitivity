@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman wins the game then the doctor finds the newspaper, if the doctor finds the newspaper then the teacher pays the sugar, therefore if the teacher pays the sugar then the woman wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V9",
+            "O15"
+        ],
+        [
+            "S7",
+            "V3",
+            "O11"
+        ],
+        [
+            "S6",
+            "V2",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

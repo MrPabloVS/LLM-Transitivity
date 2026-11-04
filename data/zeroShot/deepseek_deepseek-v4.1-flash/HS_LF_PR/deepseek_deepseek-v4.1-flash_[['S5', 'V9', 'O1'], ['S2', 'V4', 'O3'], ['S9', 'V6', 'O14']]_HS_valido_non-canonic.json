@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian unfreezes the monkfish then the embryologist federalizes the trimaran,if the audiophile overrates the renewable-energy then the sumerian unfreezes the monkfish therefore if the embryologist federalizes the trimaran then the audiophile overrates the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V9",
+            "O1"
+        ],
+        [
+            "S2",
+            "V4",
+            "O3"
+        ],
+        [
+            "S9",
+            "V6",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

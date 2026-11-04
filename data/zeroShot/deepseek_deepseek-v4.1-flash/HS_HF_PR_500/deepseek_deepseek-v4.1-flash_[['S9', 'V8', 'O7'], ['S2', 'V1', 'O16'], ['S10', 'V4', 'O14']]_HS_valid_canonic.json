@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loves the sugar then the man buys the food, if the man buys the food then the girl sees the computer, therefore if the manager loves the sugar then the girl sees the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O7"
+        ],
+        [
+            "S2",
+            "V1",
+            "O16"
+        ],
+        [
+            "S10",
+            "V4",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

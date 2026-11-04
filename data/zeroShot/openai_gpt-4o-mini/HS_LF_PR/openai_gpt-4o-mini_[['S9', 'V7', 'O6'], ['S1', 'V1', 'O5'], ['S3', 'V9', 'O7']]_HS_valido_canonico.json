@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist sasses the metalurgist then the plutocrat reappraises the fumigation, if the plutocrat reappraises the fumigation then the clerkship overrates the polytheism, therefore if the embryologist sasses the metalurgist then the clerkship overrates the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O6"
+        ],
+        [
+            "S1",
+            "V1",
+            "O5"
+        ],
+        [
+            "S3",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

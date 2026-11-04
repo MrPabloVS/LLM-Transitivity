@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman buys the table then the girl loses the game, if the girl loses the game then the family finds the paper, therefore if the woman buys the table then the family finds the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O5"
+        ],
+        [
+            "S10",
+            "V7",
+            "O15"
+        ],
+        [
+            "S4",
+            "V3",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the woman buys the table → the girl loses the game\nPremise 2: If the girl loses the game → the family finds the paper\nConclusion: If the woman buys the table → the family finds the paper\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

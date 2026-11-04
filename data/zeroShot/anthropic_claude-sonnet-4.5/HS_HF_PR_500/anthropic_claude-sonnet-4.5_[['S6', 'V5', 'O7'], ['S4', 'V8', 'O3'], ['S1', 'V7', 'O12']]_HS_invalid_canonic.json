@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher eats the sugar then the family loves the money, if the family loves the money then the kid loses the newspaper, therefore if the kid loses the newspaper then the teacher eats the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V5",
+            "O7"
+        ],
+        [
+            "S4",
+            "V8",
+            "O3"
+        ],
+        [
+            "S1",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

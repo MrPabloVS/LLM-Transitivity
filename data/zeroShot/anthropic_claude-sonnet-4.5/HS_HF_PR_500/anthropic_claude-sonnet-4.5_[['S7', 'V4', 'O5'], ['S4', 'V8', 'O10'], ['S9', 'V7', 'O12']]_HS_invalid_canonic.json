@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor sees the table then the family loves the college, if the family loves the college then the manager loses the newspaper, therefore if the manager loses the newspaper then the doctor sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V4",
+            "O5"
+        ],
+        [
+            "S4",
+            "V8",
+            "O10"
+        ],
+        [
+            "S9",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loses the paper then the teacher wins the game, if the teacher wins the game then the officer loves the sugar, therefore if the officer loves the sugar then the doctor loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S6",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid logical inference. The argument has the form:\n\n1. If A then B (doctor loses paper → teacher wins)\n2. If B then C (teacher wins → officer loves sugar)\n3. Therefore: If C then A (officer loves sugar → doctor loses paper)\n\nThis is the fallacy of affirming the consequent. The correct conclusion from premises 1 and 2 would be: \"If the doctor loses the paper, then the officer loves the sugar\" (If A then C), not \"If C then A.\""
+}

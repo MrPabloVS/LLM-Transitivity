@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loses the game then the manager hates the college, if the manager hates the college then the woman reads the book, therefore if the girl loses the game then the woman reads the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V7",
+            "O15"
+        ],
+        [
+            "S9",
+            "V10",
+            "O10"
+        ],
+        [
+            "S3",
+            "V6",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the girl loses the game → the manager hates the college\nPremise 2: If the manager hates the college → the woman reads the book\nConclusion: If the girl loses the game → the woman reads the book\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

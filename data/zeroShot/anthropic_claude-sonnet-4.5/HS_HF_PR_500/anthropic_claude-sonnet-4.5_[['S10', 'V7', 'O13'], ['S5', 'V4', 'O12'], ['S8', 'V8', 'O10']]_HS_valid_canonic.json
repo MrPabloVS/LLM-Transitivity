@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loses the paper then the student sees the newspaper, if the student sees the newspaper then the officer loves the college, therefore if the girl loses the paper then the officer loves the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V7",
+            "O13"
+        ],
+        [
+            "S5",
+            "V4",
+            "O12"
+        ],
+        [
+            "S8",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the girl loses the paper → the student sees the newspaper\n**Premise 2:** If the student sees the newspaper → the officer loves the college\n**Conclusion:** If the girl loses the paper → the officer loves the college\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the girl loses the paper\n- B = the student sees the newspaper\n- C = the officer loves the college\n\nyes"
+}

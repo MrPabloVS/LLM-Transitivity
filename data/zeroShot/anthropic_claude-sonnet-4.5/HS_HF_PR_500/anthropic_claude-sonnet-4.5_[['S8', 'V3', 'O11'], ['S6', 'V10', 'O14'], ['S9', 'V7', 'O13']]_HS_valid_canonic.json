@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the newspaper then the teacher hates the computer, if the teacher hates the computer then the manager loses the paper, therefore if the officer finds the newspaper then the manager loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O11"
+        ],
+        [
+            "S6",
+            "V10",
+            "O14"
+        ],
+        [
+            "S9",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the officer finds the newspaper → the teacher hates the computer\nPremise 2: If the teacher hates the computer → the manager loses the paper\nConclusion: If the officer finds the newspaper → the manager loses the paper\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

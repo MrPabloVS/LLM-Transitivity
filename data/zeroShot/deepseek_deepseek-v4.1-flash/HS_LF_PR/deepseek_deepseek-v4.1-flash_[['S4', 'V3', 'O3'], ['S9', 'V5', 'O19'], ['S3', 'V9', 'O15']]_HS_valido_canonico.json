@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist prepays the lightsaber then the embryologist piggybacks the taxman, if the embryologist piggybacks the taxman then the clerkship overrates the metalurgist, therefore if the herpetologist prepays the lightsaber then the clerkship overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O3"
+        ],
+        [
+            "S9",
+            "V5",
+            "O19"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

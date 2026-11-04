@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar trelfs the drambet then the bruggant prants the ploodnum, if the bruggant prants the ploodnum then the brettent frikes the flendop, therefore if the preggar trelfs the drambet then the brettent frikes the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O2"
+        ],
+        [
+            "S5",
+            "V3",
+            "O3"
+        ],
+        [
+            "S3",
+            "V4",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor finds the money then the officer loves the car,if the manager wins the case then the doctor finds the money therefore if the officer loves the car then the manager wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V9",
+            "O2"
+        ],
+        [
+            "S7",
+            "V3",
+            "O3"
+        ],
+        [
+            "S8",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. Here's why:\n\nGiven:\n1. If doctor finds money → officer loves car\n2. If manager wins case → doctor finds money\n\nThese give us: If manager wins case → officer loves car\n\nBut the conclusion states: If officer loves car → manager wins case\n\nThis reverses the logical direction, which is invalid."
+}

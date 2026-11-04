@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student buys the chair then the girl pays the table, if the girl pays the table then the doctor finds the paper, therefore if the student buys the chair then the doctor finds the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V1",
+            "O6"
+        ],
+        [
+            "S10",
+            "V2",
+            "O5"
+        ],
+        [
+            "S7",
+            "V3",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

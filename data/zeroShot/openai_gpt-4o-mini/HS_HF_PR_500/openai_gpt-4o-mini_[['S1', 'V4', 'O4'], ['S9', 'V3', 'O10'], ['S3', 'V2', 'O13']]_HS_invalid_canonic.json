@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid sees the book then the manager finds the college, if the manager finds the college then the woman pays the paper, therefore if the woman pays the paper then the kid sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V4",
+            "O4"
+        ],
+        [
+            "S9",
+            "V3",
+            "O10"
+        ],
+        [
+            "S3",
+            "V2",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

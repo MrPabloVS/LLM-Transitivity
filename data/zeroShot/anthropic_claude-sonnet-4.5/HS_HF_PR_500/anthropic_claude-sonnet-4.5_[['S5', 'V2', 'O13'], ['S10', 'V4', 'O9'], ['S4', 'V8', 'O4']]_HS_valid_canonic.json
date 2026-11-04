@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the paper then the girl sees the building, if the girl sees the building then the family loves the book, therefore if the student pays the paper then the family loves the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O13"
+        ],
+        [
+            "S10",
+            "V4",
+            "O9"
+        ],
+        [
+            "S4",
+            "V8",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the student pays the paper → the girl sees the building\nPremise 2: If the girl sees the building → the family loves the book\nConclusion: If the student pays the paper → the family loves the book\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

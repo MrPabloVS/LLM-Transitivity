@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist intellectualizes the rebelliousness then the sumerian prepays the trimaran, if the sumerian prepays the trimaran then the hypnotherapist upbraids the taxman, therefore if the alpinist intellectualizes the rebelliousness then the hypnotherapist upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V8",
+            "O16"
+        ],
+        [
+            "S2",
+            "V3",
+            "O14"
+        ],
+        [
+            "S7",
+            "V10",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Yes"
+}

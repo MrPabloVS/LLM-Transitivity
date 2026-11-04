@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist sasses the aesthetician then the sumerian federalizes the lightsaber, if the sumerian federalizes the lightsaber then the alpinist prepays the fumigation, therefore if the hypnotherapist sasses the aesthetician then the alpinist prepays the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O7"
+        ],
+        [
+            "S2",
+            "V6",
+            "O3"
+        ],
+        [
+            "S6",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the hypnotherapist sasses the aesthetician → the sumerian federalizes the lightsaber\n\nPremise 2: If the sumerian federalizes the lightsaber → the alpinist prepays the fumigation\n\nConclusion: If the hypnotherapist sasses the aesthetician → the alpinist prepays the fumigation\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

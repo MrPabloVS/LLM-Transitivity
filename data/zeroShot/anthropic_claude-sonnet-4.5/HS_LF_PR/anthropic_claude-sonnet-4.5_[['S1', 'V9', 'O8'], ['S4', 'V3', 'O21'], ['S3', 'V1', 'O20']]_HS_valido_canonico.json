@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat overrates the conventionalism then the herpetologist prepays the coronograph, if the herpetologist prepays the coronograph then the clerkship reappraises the semiology, therefore if the plutocrat overrates the conventionalism then the clerkship reappraises the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O8"
+        ],
+        [
+            "S4",
+            "V3",
+            "O21"
+        ],
+        [
+            "S3",
+            "V1",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the plutocrat overrates the conventionalism → the herpetologist prepays the coronograph\n\nPremise 2: If the herpetologist prepays the coronograph → the clerkship reappraises the semiology\n\nConclusion: If the plutocrat overrates the conventionalism → the clerkship reappraises the semiology\n\nThis is a valid application of hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

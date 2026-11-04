@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat indemnifies the pugilist then the herpetologist piggybacks the taxman,if the sumerian federalizes the fairyland then the plutocrat indemnifies the pugilist therefore if the herpetologist piggybacks the taxman then the sumerian federalizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O12"
+        ],
+        [
+            "S1",
+            "V2",
+            "O8"
+        ],
+        [
+            "S4",
+            "V5",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

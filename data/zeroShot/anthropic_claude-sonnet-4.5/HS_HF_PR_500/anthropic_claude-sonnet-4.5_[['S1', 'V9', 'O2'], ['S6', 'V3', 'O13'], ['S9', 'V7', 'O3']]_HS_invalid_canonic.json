@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid wins the case then the teacher finds the game, if the teacher finds the game then the manager loses the money, therefore if the manager loses the money then the kid wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O2"
+        ],
+        [
+            "S6",
+            "V3",
+            "O13"
+        ],
+        [
+            "S9",
+            "V7",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The premises establish:\n1. Kid wins → Teacher finds game\n2. Teacher finds game → Manager loses money\n\nThis validly leads to: Kid wins → Manager loses money\n\nBut the conclusion tries to reverse this to: Manager loses money → Kid wins, which doesn't logically follow."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid finds the school then the manager loses the newspaper,if the family loves the sugar then the kid finds the school therefore if the manager loses the newspaper then the family loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O7"
+        ],
+        [
+            "S1",
+            "V3",
+            "O8"
+        ],
+        [
+            "S9",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

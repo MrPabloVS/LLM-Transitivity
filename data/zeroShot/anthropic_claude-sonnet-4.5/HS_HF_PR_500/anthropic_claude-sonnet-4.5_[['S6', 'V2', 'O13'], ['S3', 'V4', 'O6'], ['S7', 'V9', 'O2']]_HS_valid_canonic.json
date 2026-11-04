@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher pays the paper then the woman sees the chair, if the woman sees the chair then the doctor wins the case, therefore if the teacher pays the paper then the doctor wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V2",
+            "O13"
+        ],
+        [
+            "S3",
+            "V4",
+            "O6"
+        ],
+        [
+            "S7",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument.\n\nGiven:\n1. If the teacher pays the paper → the woman sees the chair\n2. If the woman sees the chair → the doctor wins the case\n\nConclusion: If the teacher pays the paper → the doctor wins the case\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the teacher pays the paper\n- B = the woman sees the chair\n- C = the doctor wins the case\n\nThe logic is valid.\n\nyes"
+}

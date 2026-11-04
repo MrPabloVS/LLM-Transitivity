@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist federalizes the trimaran then the hypnotherapist reappraises the rebelliousness, if the hypnotherapist reappraises the rebelliousness then the corsican intellectualizes the semiology, therefore if the herpetologist federalizes the trimaran then the corsican intellectualizes the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V6",
+            "O14"
+        ],
+        [
+            "S7",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V8",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If herpetologist federalizes trimaran → hypnotherapist reappraises rebelliousness)\n\nPremise 2: If B then C (If hypnotherapist reappraises rebelliousness → corsican intellectualizes semiology)\n\nConclusion: If A then C (If herpetologist federalizes trimaran → corsican intellectualizes semiology)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\n**yes**"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist marinates the ceviche then the audiophile prepays the fumigation, if the audiophile prepays the fumigation then the hypnotherapist federalizes the coronograph, therefore if the hypnotherapist federalizes the coronograph then the alpinist marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V11",
+            "O9"
+        ],
+        [
+            "S5",
+            "V3",
+            "O5"
+        ],
+        [
+            "S7",
+            "V6",
+            "O21"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

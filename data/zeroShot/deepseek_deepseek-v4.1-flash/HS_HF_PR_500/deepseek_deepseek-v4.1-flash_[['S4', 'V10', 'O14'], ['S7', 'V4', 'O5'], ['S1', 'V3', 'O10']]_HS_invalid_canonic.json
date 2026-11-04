@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the computer then the doctor sees the table, if the doctor sees the table then the kid finds the college, therefore if the kid finds the college then the family hates the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O14"
+        ],
+        [
+            "S7",
+            "V4",
+            "O5"
+        ],
+        [
+            "S1",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bruggant blemps the drambet then the probeller frikes the ploodnum, if the probeller frikes the ploodnum then the prackler prants the snabrik, therefore if the prackler prants the snabrik then the bruggant blemps the drambet",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O2"
+        ],
+        [
+            "S1",
+            "V4",
+            "O3"
+        ],
+        [
+            "S6",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (bruggant blemps drambet → probeller frikes ploodnum)\nPremise 2: If B then C (probeller frikes ploodnum → prackler prants snabrik)\nConclusion: If C then A (prackler prants snabrik → bruggant blemps drambet)\n\nThe premises give us: A → B → C\n\nThe conclusion claims: C → A\n\nThis is attempting to conclude the converse/reverse direction, which is not logically valid. Just because A leads to B leads to C does not mean C leads back to A. This would be affirming the consequent.\n\n**no**"
+}

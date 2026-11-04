@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student sees the building then the doctor pays the chair, if the doctor pays the chair then the kid loses the money, therefore if the student sees the building then the kid loses the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O9"
+        ],
+        [
+            "S7",
+            "V2",
+            "O6"
+        ],
+        [
+            "S1",
+            "V7",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

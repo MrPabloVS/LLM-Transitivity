@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian upbraids the aesthetician then the embryologist overrates the metalurgist, if the embryologist overrates the metalurgist then the bibliophile sasses the taxman, therefore if the bibliophile sasses the taxman then the sumerian upbraids the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V10",
+            "O7"
+        ],
+        [
+            "S9",
+            "V9",
+            "O15"
+        ],
+        [
+            "S10",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

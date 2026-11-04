@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the book then the family pays the building, if the family pays the building then the girl loves the college, therefore if the officer hates the book then the girl loves the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O4"
+        ],
+        [
+            "S4",
+            "V2",
+            "O9"
+        ],
+        [
+            "S10",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

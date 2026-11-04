@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile piggybacks the aesthetician then the plutocrat reappraises the polytheism, if the plutocrat reappraises the polytheism then the clerkship overrates the metalurgist, therefore if the bibliophile piggybacks the aesthetician then the clerkship overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S1",
+            "V1",
+            "O11"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the bibliophile piggybacks the aesthetician → the plutocrat reappraises the polytheism\n\n**Premise 2:** If the plutocrat reappraises the polytheism → the clerkship overrates the metalurgist\n\n**Conclusion:** If the bibliophile piggybacks the aesthetician → the clerkship overrates the metalurgist\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

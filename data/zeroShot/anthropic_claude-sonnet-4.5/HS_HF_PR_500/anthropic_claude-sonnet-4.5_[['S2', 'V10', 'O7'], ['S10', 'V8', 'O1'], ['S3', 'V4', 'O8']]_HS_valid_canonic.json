@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man hates the sugar then the girl loves the program, if the girl loves the program then the woman sees the school, therefore if the man hates the sugar then the woman sees the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V10",
+            "O7"
+        ],
+        [
+            "S10",
+            "V8",
+            "O1"
+        ],
+        [
+            "S3",
+            "V4",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the man hates the sugar → the girl loves the program\n**Premise 2:** If the girl loves the program → the woman sees the school\n**Conclusion:** If the man hates the sugar → the woman sees the school\n\nThis is a valid application of **hypothetical syllogism** (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the man hates the sugar\n- B = the girl loves the program\n- C = the woman sees the school\n\n**yes**"
+}

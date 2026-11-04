@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the sugar then the kid finds the school, if the kid finds the school then the manager loses the newspaper, therefore if the manager loses the newspaper then the family loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O7"
+        ],
+        [
+            "S1",
+            "V3",
+            "O8"
+        ],
+        [
+            "S9",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. \n\nGiven:\n1. If family loves sugar → kid finds school\n2. If kid finds school → manager loses newspaper\n\nWe can conclude: If family loves sugar → manager loses newspaper\n\nBut the conclusion claims: If manager loses newspaper → family loves sugar\n\nThis reverses the logical direction and is invalid."
+}

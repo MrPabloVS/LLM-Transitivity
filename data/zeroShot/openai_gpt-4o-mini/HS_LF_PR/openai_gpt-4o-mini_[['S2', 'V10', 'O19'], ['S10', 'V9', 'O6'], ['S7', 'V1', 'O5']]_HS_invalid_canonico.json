@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian upbraids the taxman then the bibliophile overrates the solipsism, if the bibliophile overrates the solipsism then the hypnotherapist reappraises the fumigation, therefore if the hypnotherapist reappraises the fumigation then the sumerian upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V10",
+            "O19"
+        ],
+        [
+            "S10",
+            "V9",
+            "O6"
+        ],
+        [
+            "S7",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

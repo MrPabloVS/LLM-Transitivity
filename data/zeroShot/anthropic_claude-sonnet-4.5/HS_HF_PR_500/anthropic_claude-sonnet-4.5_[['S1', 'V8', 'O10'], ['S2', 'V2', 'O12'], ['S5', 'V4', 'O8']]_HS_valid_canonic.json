@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid loves the college then the man pays the newspaper, if the man pays the newspaper then the student sees the school, therefore if the kid loves the college then the student sees the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V8",
+            "O10"
+        ],
+        [
+            "S2",
+            "V2",
+            "O12"
+        ],
+        [
+            "S5",
+            "V4",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the kid loves the college → the man pays the newspaper\n**Premise 2:** If the man pays the newspaper → the student sees the school\n**Conclusion:** If the kid loves the college → the student sees the school\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the kid loves the college\n- B = the man pays the newspaper\n- C = the student sees the school\n\n**yes**"
+}

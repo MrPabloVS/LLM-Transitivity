@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loves the program then the manager reads the paper, if the manager reads the paper then the woman buys the book, therefore if the woman buys the book then the girl loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O1"
+        ],
+        [
+            "S9",
+            "V6",
+            "O13"
+        ],
+        [
+            "S3",
+            "V1",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

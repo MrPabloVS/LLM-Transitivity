@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile upbraids the metalurgist then the clerkship reappraises the rebelliousness, if the clerkship reappraises the rebelliousness then the herpetologist intellectualizes the polytheism, therefore if the bibliophile upbraids the metalurgist then the herpetologist intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O6"
+        ],
+        [
+            "S3",
+            "V1",
+            "O16"
+        ],
+        [
+            "S4",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the bibliophile upbraids the metalurgist → the clerkship reappraises the rebelliousness\n\n**Premise 2:** If the clerkship reappraises the rebelliousness → the herpetologist intellectualizes the polytheism\n\n**Conclusion:** If the bibliophile upbraids the metalurgist → the herpetologist intellectualizes the polytheism\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

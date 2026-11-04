@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the computer then the family finds the money, if the family finds the money then the student loses the paper, therefore if the doctor hates the computer then the student loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O14"
+        ],
+        [
+            "S4",
+            "V3",
+            "O3"
+        ],
+        [
+            "S5",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the doctor hates the computer → the family finds the money\n**Premise 2:** If the family finds the money → the student loses the paper\n**Conclusion:** If the doctor hates the computer → the student loses the paper\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the doctor hates the computer\n- B = the family finds the money\n- C = the student loses the paper\n\n**yes**"
+}

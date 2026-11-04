@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican overrates the metalurgist then the alpinist reappraises the polytheism, if the alpinist reappraises the polytheism then the sumerian indemnifies the metalurgist, therefore if the corsican overrates the metalurgist then the sumerian indemnifies the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O15"
+        ],
+        [
+            "S6",
+            "V1",
+            "O11"
+        ],
+        [
+            "S2",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

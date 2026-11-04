@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat prepays the trimaran then the corsican intellectualizes the rocketry, if the corsican intellectualizes the rocketry then the herpetologist reappraises the polytheism, therefore if the herpetologist reappraises the polytheism then the plutocrat prepays the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O14"
+        ],
+        [
+            "S8",
+            "V8",
+            "O13"
+        ],
+        [
+            "S4",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

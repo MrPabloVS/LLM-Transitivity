@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid sees the money then the woman loses the newspaper, if the woman loses the newspaper then the man hates the car, therefore if the man hates the car then the kid sees the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V4",
+            "O3"
+        ],
+        [
+            "S3",
+            "V7",
+            "O12"
+        ],
+        [
+            "S2",
+            "V10",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

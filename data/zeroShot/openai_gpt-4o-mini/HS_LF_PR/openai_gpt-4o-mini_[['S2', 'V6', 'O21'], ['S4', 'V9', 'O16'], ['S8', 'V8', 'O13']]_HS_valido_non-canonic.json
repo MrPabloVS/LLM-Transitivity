@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist overrates the aesthetician then the corsican intellectualizes the rocketry,if the sumerian federalizes the coronograph then the herpetologist overrates the aesthetician therefore if the corsican intellectualizes the rocketry then the sumerian federalizes the coronograph",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O21"
+        ],
+        [
+            "S4",
+            "V9",
+            "O16"
+        ],
+        [
+            "S8",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loses the money then the doctor sees the school, if the doctor sees the school then the student buys the table, therefore if the student buys the table then the officer loses the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O3"
+        ],
+        [
+            "S7",
+            "V4",
+            "O8"
+        ],
+        [
+            "S5",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

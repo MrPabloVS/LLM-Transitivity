@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist prepays the lightsaber then the clerkship federalizes the renewable-energy, if the clerkship federalizes the renewable-energy then the plutocrat upbraids the metalurgist, therefore if the herpetologist prepays the lightsaber then the plutocrat upbraids the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O3"
+        ],
+        [
+            "S3",
+            "V6",
+            "O1"
+        ],
+        [
+            "S1",
+            "V10",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If herpetologist prepays lightsaber → clerkship federalizes renewable-energy)\nPremise 2: If B then C (If clerkship federalizes renewable-energy → plutocrat upbraids metalurgist)\nConclusion: If A then C (If herpetologist prepays lightsaber → plutocrat upbraids metalurgist)\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\n**yes**"
+}

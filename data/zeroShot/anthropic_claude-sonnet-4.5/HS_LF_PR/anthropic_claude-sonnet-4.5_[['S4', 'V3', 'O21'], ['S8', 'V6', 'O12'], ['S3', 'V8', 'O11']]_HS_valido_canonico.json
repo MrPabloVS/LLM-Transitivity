@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist prepays the coronograph then the corsican federalizes the fairyland, if the corsican federalizes the fairyland then the clerkship intellectualizes the polytheism, therefore if the herpetologist prepays the coronograph then the clerkship intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O21"
+        ],
+        [
+            "S8",
+            "V6",
+            "O12"
+        ],
+        [
+            "S3",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument:\n\nPremise 1: If A then B (If herpetologist prepays coronograph, then corsican federalizes fairyland)\nPremise 2: If B then C (If corsican federalizes fairyland, then clerkship intellectualizes polytheism)\nConclusion: If A then C (If herpetologist prepays coronograph, then clerkship intellectualizes polytheism)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

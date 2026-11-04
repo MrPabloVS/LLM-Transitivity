@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family pays the food then the doctor sees the table, if the doctor sees the table then the woman loses the paper, therefore if the family pays the food then the woman loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O16"
+        ],
+        [
+            "S7",
+            "V4",
+            "O5"
+        ],
+        [
+            "S3",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

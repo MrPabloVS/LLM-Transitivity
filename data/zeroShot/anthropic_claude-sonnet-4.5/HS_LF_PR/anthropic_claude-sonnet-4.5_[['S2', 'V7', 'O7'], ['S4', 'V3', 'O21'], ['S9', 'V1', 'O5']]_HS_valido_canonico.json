@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian sasses the aesthetician then the herpetologist prepays the coronograph, if the herpetologist prepays the coronograph then the embryologist reappraises the fumigation, therefore if the sumerian sasses the aesthetician then the embryologist reappraises the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V7",
+            "O7"
+        ],
+        [
+            "S4",
+            "V3",
+            "O21"
+        ],
+        [
+            "S9",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the Sumerian sasses the aesthetician → the herpetologist prepays the coronograph\nPremise 2: If the herpetologist prepays the coronograph → the embryologist reappraises the fumigation\nConclusion: If the Sumerian sasses the aesthetician → the embryologist reappraises the fumigation\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

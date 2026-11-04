@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the prackler prants the drambet then the bruggant trelfs the blorrack, if the bruggant trelfs the blorrack then the brettent gresks the flendop, therefore if the prackler prants the drambet then the brettent gresks the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O2"
+        ],
+        [
+            "S5",
+            "V6",
+            "O4"
+        ],
+        [
+            "S3",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

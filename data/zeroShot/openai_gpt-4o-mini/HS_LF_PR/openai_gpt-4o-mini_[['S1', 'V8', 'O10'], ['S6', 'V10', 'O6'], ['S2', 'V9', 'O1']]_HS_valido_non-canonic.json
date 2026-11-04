@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist upbraids the metalurgist then the sumerian overrates the renewable-energy,if the plutocrat intellectualizes the solipsism then the alpinist upbraids the metalurgist therefore if the sumerian overrates the renewable-energy then the plutocrat intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V8",
+            "O10"
+        ],
+        [
+            "S6",
+            "V10",
+            "O6"
+        ],
+        [
+            "S2",
+            "V9",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

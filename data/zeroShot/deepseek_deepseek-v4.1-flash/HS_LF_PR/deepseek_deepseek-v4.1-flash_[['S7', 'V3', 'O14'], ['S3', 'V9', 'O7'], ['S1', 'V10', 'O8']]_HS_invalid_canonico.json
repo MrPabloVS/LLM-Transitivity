@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist prepays the trimaran then the clerkship overrates the polytheism, if the clerkship overrates the polytheism then the plutocrat upbraids the pugilist, therefore if the plutocrat upbraids the pugilist then the hypnotherapist prepays the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V3",
+            "O14"
+        ],
+        [
+            "S3",
+            "V9",
+            "O7"
+        ],
+        [
+            "S1",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loves the newspaper then the kid pays the food, if the kid pays the food then the woman finds the newspaper, therefore if the doctor loves the newspaper then the woman finds the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O12"
+        ],
+        [
+            "S1",
+            "V2",
+            "O16"
+        ],
+        [
+            "S3",
+            "V3",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

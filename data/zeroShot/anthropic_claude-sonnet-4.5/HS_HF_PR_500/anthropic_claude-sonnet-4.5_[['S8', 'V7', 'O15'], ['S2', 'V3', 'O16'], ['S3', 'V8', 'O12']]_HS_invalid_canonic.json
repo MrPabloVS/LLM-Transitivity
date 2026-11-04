@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loses the game then the man finds the food, if the man finds the food then the woman loves the newspaper, therefore if the woman loves the newspaper then the officer loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O15"
+        ],
+        [
+            "S2",
+            "V3",
+            "O16"
+        ],
+        [
+            "S3",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

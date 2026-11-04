@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl hates the food then the student pays the book, if the student pays the book then the kid loves the sugar, therefore if the kid loves the sugar then the girl hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O16"
+        ],
+        [
+            "S5",
+            "V2",
+            "O4"
+        ],
+        [
+            "S1",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile intellectualizes the fairyland then the corsican unfreezes the ceviche, if the corsican unfreezes the ceviche then the hypnotherapist overrates the conventionalism, therefore if the bibliophile intellectualizes the fairyland then the hypnotherapist overrates the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V4",
+            "O9"
+        ],
+        [
+            "S7",
+            "V9",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the bibliophile intellectualizes the fairyland → the corsican unfreezes the ceviche\nPremise 2: If the corsican unfreezes the ceviche → the hypnotherapist overrates the conventionalism\nConclusion: If the bibliophile intellectualizes the fairyland → the hypnotherapist overrates the conventionalism\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, If A → C\n\nyes"
+}

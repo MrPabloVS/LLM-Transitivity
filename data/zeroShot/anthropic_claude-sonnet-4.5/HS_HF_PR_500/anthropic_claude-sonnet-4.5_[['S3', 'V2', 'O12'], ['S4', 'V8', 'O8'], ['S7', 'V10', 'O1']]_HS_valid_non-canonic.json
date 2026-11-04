@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the school then the doctor hates the program,if the woman pays the newspaper then the family loves the school therefore if the doctor hates the program then the woman pays the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V2",
+            "O12"
+        ],
+        [
+            "S4",
+            "V8",
+            "O8"
+        ],
+        [
+            "S7",
+            "V10",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent.\n\nGiven:\n1. If family loves school → doctor hates program\n2. If woman pays newspaper → family loves school\n\nWe can conclude: If woman pays newspaper → doctor hates program\n\nBut the conclusion states: If doctor hates program → woman pays newspaper\n\nThis reverses the conditional and is invalid."
+}

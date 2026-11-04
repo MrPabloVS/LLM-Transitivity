@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager pays the computer then the kid sees the college, if the kid sees the college then the doctor hates the program, therefore if the manager pays the computer then the doctor hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V2",
+            "O14"
+        ],
+        [
+            "S1",
+            "V4",
+            "O10"
+        ],
+        [
+            "S7",
+            "V10",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

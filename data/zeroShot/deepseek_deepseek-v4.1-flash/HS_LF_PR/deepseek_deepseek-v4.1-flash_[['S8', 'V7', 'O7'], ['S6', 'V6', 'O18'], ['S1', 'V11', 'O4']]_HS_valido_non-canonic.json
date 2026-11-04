@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist federalizes the databank then the plutocrat marinates the monkfish,if the corsican sasses the aesthetician then the alpinist federalizes the databank therefore if the plutocrat marinates the monkfish then the corsican sasses the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O7"
+        ],
+        [
+            "S6",
+            "V6",
+            "O18"
+        ],
+        [
+            "S1",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

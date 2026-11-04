@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the metalurgist then the hypnotherapist intellectualizes the solipsism, if the hypnotherapist intellectualizes the solipsism then the herpetologist piggybacks the aesthetician, therefore if the herpetologist piggybacks the aesthetician then the bibliophile overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O15"
+        ],
+        [
+            "S7",
+            "V8",
+            "O10"
+        ],
+        [
+            "S4",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

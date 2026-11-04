@@ -1,0 +1,114 @@
+{
+    "userPrompt": "if the clerkship federalizes the rocketry then the embryologist prepays the fumigation,if the hypnotherapist intellectualizes the rebelliousness then the clerkship federalizes the rocketry therefore if the embryologist prepays the fumigation then the hypnotherapist intellectualizes the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O16"
+        ],
+        [
+            "S3",
+            "V6",
+            "O13"
+        ],
+        [
+            "S9",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": null,
+    "response_status": "content_filter",
+    "api_response": {
+        "id": "gen-1793809113-qEY2u0hGkRPsx7mFXU5A",
+        "object": "chat.completion",
+        "created": 1793809113,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 93,
+            "completion_tokens": 0,
+            "total_tokens": 93,
+            "cost": 0.000279,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.000279,
+                "upstream_inference_prompt_cost": 0.000279,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 1054,
+            "userPrompt": "if the clerkship federalizes the rocketry then the embryologist prepays the fumigation,if the hypnotherapist intellectualizes the rebelliousness then the clerkship federalizes the rocketry therefore if the embryologist prepays the fumigation then the hypnotherapist intellectualizes the rebelliousness",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S7",
+                    "V8",
+                    "O16"
+                ],
+                [
+                    "S3",
+                    "V6",
+                    "O13"
+                ],
+                [
+                    "S9",
+                    "V3",
+                    "O5"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "valido",
+                "cononic": "non-canonic"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_1054.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_1054.json"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the prackler prants the prebart then the brettent frikes the snabrik, if the brettent frikes the snabrik then the glemtor gresks the ploodnum, therefore if the glemtor gresks the ploodnum then the prackler prants the prebart",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O1"
+        ],
+        [
+            "S3",
+            "V4",
+            "O5"
+        ],
+        [
+            "S4",
+            "V5",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

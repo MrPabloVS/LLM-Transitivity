@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman pays the paper then the family buys the sugar,if the officer finds the money then the woman pays the paper therefore if the family buys the sugar then the officer finds the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O3"
+        ],
+        [
+            "S3",
+            "V2",
+            "O13"
+        ],
+        [
+            "S4",
+            "V1",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

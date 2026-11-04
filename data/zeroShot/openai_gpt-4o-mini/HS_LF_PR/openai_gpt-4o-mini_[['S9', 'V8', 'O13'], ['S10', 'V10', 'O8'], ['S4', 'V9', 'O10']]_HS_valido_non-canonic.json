@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile upbraids the pugilist then the herpetologist overrates the rebelliousness,if the embryologist intellectualizes the rocketry then the bibliophile upbraids the pugilist therefore if the herpetologist overrates the rebelliousness then the embryologist intellectualizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O13"
+        ],
+        [
+            "S10",
+            "V10",
+            "O8"
+        ],
+        [
+            "S4",
+            "V9",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

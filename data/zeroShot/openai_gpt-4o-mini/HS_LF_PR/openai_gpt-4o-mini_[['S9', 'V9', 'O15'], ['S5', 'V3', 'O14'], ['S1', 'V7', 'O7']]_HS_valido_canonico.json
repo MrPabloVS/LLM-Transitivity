@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist overrates the metalurgist then the audiophile prepays the trimaran, if the audiophile prepays the trimaran then the plutocrat sasses the aesthetician, therefore if the embryologist overrates the metalurgist then the plutocrat sasses the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V9",
+            "O15"
+        ],
+        [
+            "S5",
+            "V3",
+            "O14"
+        ],
+        [
+            "S1",
+            "V7",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

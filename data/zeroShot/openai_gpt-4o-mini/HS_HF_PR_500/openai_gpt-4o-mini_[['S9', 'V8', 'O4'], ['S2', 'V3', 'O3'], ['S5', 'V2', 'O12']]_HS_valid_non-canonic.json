@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man finds the money then the student pays the newspaper,if the manager loves the book then the man finds the money therefore if the student pays the newspaper then the manager loves the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O4"
+        ],
+        [
+            "S2",
+            "V3",
+            "O3"
+        ],
+        [
+            "S5",
+            "V2",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

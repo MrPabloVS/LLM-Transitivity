@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist overrates the semiology then the corsican unfreezes the monkfish, if the corsican unfreezes the monkfish then the herpetologist piggybacks the metalurgist, therefore if the hypnotherapist overrates the semiology then the herpetologist piggybacks the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O11"
+        ],
+        [
+            "S8",
+            "V4",
+            "O3"
+        ],
+        [
+            "S4",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

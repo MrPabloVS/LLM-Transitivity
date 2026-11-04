@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist overrates the pugilist then the hypnotherapist upbraids the aesthetician, if the hypnotherapist upbraids the aesthetician then the corsican intellectualizes the polytheism, therefore if the alpinist overrates the pugilist then the corsican intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V9",
+            "O19"
+        ],
+        [
+            "S7",
+            "V10",
+            "O7"
+        ],
+        [
+            "S8",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

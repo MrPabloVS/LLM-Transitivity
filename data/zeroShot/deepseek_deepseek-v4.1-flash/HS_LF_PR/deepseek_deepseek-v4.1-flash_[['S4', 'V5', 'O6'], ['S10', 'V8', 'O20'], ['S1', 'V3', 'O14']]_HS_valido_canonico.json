@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist piggybacks the metalurgist then the bibliophile intellectualizes the semiology, if the bibliophile intellectualizes the semiology then the plutocrat prepays the trimaran, therefore if the herpetologist piggybacks the metalurgist then the plutocrat prepays the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V5",
+            "O6"
+        ],
+        [
+            "S10",
+            "V8",
+            "O20"
+        ],
+        [
+            "S1",
+            "V3",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

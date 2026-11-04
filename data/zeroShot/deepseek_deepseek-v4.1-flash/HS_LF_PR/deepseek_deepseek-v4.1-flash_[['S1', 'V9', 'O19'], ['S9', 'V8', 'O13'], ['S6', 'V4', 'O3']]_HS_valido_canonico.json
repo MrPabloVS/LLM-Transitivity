@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat overrates the pugilist then the embryologist intellectualizes the rocketry, if the embryologist intellectualizes the rocketry then the alpinist unfreezes the monkfish, therefore if the plutocrat overrates the pugilist then the alpinist unfreezes the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O19"
+        ],
+        [
+            "S9",
+            "V8",
+            "O13"
+        ],
+        [
+            "S6",
+            "V4",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

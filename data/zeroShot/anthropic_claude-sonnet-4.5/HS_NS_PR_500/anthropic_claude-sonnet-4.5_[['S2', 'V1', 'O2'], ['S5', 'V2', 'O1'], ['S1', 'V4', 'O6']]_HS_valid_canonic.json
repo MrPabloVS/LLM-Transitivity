@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar glashes the drambet then the bruggant blemps the prebart, if the bruggant blemps the prebart then the probeller frikes the flendop, therefore if the preggar glashes the drambet then the probeller frikes the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O2"
+        ],
+        [
+            "S5",
+            "V2",
+            "O1"
+        ],
+        [
+            "S1",
+            "V4",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the preggar glashes the drambet → the bruggant blemps the prebart\nPremise 2: If the bruggant blemps the prebart → the probeller frikes the flendop\nConclusion: Therefore, if the preggar glashes the drambet → the probeller frikes the flendop\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

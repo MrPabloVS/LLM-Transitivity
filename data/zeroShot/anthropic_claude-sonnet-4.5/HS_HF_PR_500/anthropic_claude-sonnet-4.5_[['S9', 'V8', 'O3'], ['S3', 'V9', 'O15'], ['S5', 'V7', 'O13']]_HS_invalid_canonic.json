@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loves the money then the woman wins the game, if the woman wins the game then the student loses the paper, therefore if the student loses the paper then the manager loves the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O3"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ],
+        [
+            "S5",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid inference. The argument commits the fallacy of affirming the consequent.\n\nGiven:\n1. Manager loves money → Woman wins game\n2. Woman wins game → Student loses paper\n\nThe conclusion claims: Student loses paper → Manager loves money\n\nBut this reverses the logical chain. The premises only allow us to conclude:\nManager loves money → Student loses paper\n\nNot the reverse."
+}

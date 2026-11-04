@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid finds the food then the officer buys the building,if the man loves the school then the kid finds the food therefore if the officer buys the building then the man loves the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O8"
+        ],
+        [
+            "S1",
+            "V3",
+            "O16"
+        ],
+        [
+            "S8",
+            "V1",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

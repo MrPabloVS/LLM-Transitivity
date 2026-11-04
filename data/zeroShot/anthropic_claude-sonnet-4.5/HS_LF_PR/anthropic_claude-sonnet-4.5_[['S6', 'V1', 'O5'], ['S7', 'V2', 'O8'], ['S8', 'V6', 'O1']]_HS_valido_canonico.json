@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist reappraises the fumigation then the hypnotherapist indemnifies the pugilist, if the hypnotherapist indemnifies the pugilist then the corsican federalizes the renewable-energy, therefore if the alpinist reappraises the fumigation then the corsican federalizes the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O5"
+        ],
+        [
+            "S7",
+            "V2",
+            "O8"
+        ],
+        [
+            "S8",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If alpinist reappraises fumigation, then hypnotherapist indemnifies pugilist)\nPremise 2: If B then C (If hypnotherapist indemnifies pugilist, then corsican federalizes renewable-energy)\nConclusion: If A then C (If alpinist reappraises fumigation, then corsican federalizes renewable-energy)\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, A → C\n\nyes"
+}

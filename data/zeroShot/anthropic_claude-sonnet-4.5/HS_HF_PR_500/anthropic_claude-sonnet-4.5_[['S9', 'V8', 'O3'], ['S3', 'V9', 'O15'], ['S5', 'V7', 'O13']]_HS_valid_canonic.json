@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loves the money then the woman wins the game, if the woman wins the game then the student loses the paper, therefore if the manager loves the money then the student loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O3"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ],
+        [
+            "S5",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager loves the money → the woman wins the game\nPremise 2: If the woman wins the game → the student loses the paper\nConclusion: If the manager loves the money → the student loses the paper\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, If A → C\n\nyes"
+}

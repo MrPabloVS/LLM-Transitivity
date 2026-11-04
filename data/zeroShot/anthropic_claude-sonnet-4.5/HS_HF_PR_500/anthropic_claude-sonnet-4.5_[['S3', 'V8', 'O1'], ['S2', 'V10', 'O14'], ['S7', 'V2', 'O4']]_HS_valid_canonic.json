@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loves the program then the man hates the computer, if the man hates the computer then the doctor pays the book, therefore if the woman loves the program then the doctor pays the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O1"
+        ],
+        [
+            "S2",
+            "V10",
+            "O14"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the woman loves the program → the man hates the computer\n2. If the man hates the computer → the doctor pays the book\n\nConclusion to evaluate:\nIf the woman loves the program → the doctor pays the book\n\nUsing hypothetical syllogism (chain rule):\n- From premise 1: woman loves program → man hates computer\n- From premise 2: man hates computer → doctor pays book\n- Therefore: woman loves program → doctor pays book\n\nThis is a valid logical inference.\n\nyes"
+}

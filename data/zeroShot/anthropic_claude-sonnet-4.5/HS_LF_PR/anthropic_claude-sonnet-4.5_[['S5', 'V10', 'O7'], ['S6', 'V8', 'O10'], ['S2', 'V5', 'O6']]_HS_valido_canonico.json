@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile upbraids the aesthetician then the alpinist intellectualizes the solipsism, if the alpinist intellectualizes the solipsism then the sumerian piggybacks the metalurgist, therefore if the audiophile upbraids the aesthetician then the sumerian piggybacks the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V10",
+            "O7"
+        ],
+        [
+            "S6",
+            "V8",
+            "O10"
+        ],
+        [
+            "S2",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If A then B (If audiophile upbraids aesthetician, then alpinist intellectualizes solipsism)\n\n**Premise 2:** If B then C (If alpinist intellectualizes solipsism, then sumerian piggybacks metalurgist)\n\n**Conclusion:** If A then C (If audiophile upbraids aesthetician, then sumerian piggybacks metalurgist)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\n**yes**"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile piggybacks the aesthetician then the clerkship intellectualizes the solipsism,if the embryologist unfreezes the monkfish then the bibliophile piggybacks the aesthetician therefore if the clerkship intellectualizes the solipsism then the embryologist unfreezes the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V4",
+            "O3"
+        ],
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S3",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

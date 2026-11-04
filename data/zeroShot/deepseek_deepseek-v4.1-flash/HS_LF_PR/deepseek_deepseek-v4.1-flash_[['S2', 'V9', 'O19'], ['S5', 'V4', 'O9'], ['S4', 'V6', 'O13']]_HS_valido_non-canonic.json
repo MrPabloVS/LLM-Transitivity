@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile unfreezes the ceviche then the herpetologist federalizes the rocketry,if the sumerian overrates the pugilist then the audiophile unfreezes the ceviche therefore if the herpetologist federalizes the rocketry then the sumerian overrates the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V9",
+            "O19"
+        ],
+        [
+            "S5",
+            "V4",
+            "O9"
+        ],
+        [
+            "S4",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

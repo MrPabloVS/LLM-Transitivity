@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer buys the paper then the man hates the newspaper,if the manager finds the college then the officer buys the paper therefore if the man hates the newspaper then the manager finds the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V3",
+            "O10"
+        ],
+        [
+            "S8",
+            "V1",
+            "O13"
+        ],
+        [
+            "S2",
+            "V10",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No"
+}

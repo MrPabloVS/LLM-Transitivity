@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student eats the food then the man loves the paper, if the man loves the paper then the doctor sees the book, therefore if the doctor sees the book then the student eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V5",
+            "O16"
+        ],
+        [
+            "S2",
+            "V8",
+            "O13"
+        ],
+        [
+            "S7",
+            "V4",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

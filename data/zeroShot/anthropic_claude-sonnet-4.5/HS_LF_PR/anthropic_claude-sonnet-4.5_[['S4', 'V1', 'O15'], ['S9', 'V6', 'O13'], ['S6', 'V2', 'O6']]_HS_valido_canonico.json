@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist reappraises the conventionalism then the embryologist federalizes the rocketry, if the embryologist federalizes the rocketry then the alpinist indemnifies the metalurgist, therefore if the herpetologist reappraises the conventionalism then the alpinist indemnifies the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V1",
+            "O15"
+        ],
+        [
+            "S9",
+            "V6",
+            "O13"
+        ],
+        [
+            "S6",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument structure:\n\nPremise 1: If A then B (If herpetologist reappraises conventionalism, then embryologist federalizes rocketry)\n\nPremise 2: If B then C (If embryologist federalizes rocketry, then alpinist indemnifies metalurgist)\n\nConclusion: If A then C (If herpetologist reappraises conventionalism, then alpinist indemnifies metalurgist)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A must lead to C.\n\nyes"
+}

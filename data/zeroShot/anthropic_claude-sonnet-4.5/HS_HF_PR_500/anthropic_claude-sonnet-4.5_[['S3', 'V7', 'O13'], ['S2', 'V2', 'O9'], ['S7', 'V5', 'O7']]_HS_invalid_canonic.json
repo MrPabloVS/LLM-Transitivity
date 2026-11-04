@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loses the paper then the man pays the building, if the man pays the building then the doctor eats the sugar, therefore if the doctor eats the sugar then the woman loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V7",
+            "O13"
+        ],
+        [
+            "S2",
+            "V2",
+            "O9"
+        ],
+        [
+            "S7",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

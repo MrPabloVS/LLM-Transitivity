@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist reappraises the fumigation then the hypnotherapist federalizes the coronograph, if the hypnotherapist federalizes the coronograph then the alpinist piggybacks the metalurgist, therefore if the embryologist reappraises the fumigation then the alpinist piggybacks the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V1",
+            "O5"
+        ],
+        [
+            "S7",
+            "V6",
+            "O21"
+        ],
+        [
+            "S6",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

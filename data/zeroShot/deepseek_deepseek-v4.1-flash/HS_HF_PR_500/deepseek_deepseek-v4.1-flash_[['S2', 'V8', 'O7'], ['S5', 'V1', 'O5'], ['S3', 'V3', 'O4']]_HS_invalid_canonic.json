@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loves the sugar then the student buys the table, if the student buys the table then the woman finds the book, therefore if the woman finds the book then the man loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O7"
+        ],
+        [
+            "S5",
+            "V1",
+            "O5"
+        ],
+        [
+            "S3",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loses the game then the student eats the food, if the student eats the food then the teacher pays the sugar, therefore if the officer loses the game then the teacher pays the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O15"
+        ],
+        [
+            "S5",
+            "V5",
+            "O16"
+        ],
+        [
+            "S6",
+            "V2",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

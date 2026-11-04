@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loses the paper then the woman wins the game, if the woman wins the game then the kid loves the building, therefore if the kid loves the building then the doctor loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ],
+        [
+            "S1",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

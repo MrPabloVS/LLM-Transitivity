@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist prepays the fumigation then the alpinist overrates the solipsism, if the alpinist overrates the solipsism then the herpetologist federalizes the trimaran, therefore if the hypnotherapist prepays the fumigation then the herpetologist federalizes the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V3",
+            "O5"
+        ],
+        [
+            "S6",
+            "V9",
+            "O6"
+        ],
+        [
+            "S4",
+            "V6",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the hypnotherapist prepays the fumigation → the alpinist overrates the solipsism\n\nPremise 2: If the alpinist overrates the solipsism → the herpetologist federalizes the trimaran\n\nConclusion: If the hypnotherapist prepays the fumigation → the herpetologist federalizes the trimaran\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\n**yes**"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the table then the doctor buys the building, if the doctor buys the building then the girl reads the newspaper, therefore if the student pays the table then the girl reads the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O5"
+        ],
+        [
+            "S7",
+            "V1",
+            "O9"
+        ],
+        [
+            "S10",
+            "V6",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the student pays the table → the doctor buys the building\nPremise 2: If the doctor buys the building → the girl reads the newspaper\nConclusion: If the student pays the table → the girl reads the newspaper\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

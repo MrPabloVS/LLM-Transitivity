@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist upbraids the taxman then the clerkship intellectualizes the semiology, if the clerkship intellectualizes the semiology then the sumerian reappraises the polytheism, therefore if the herpetologist upbraids the taxman then the sumerian reappraises the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O19"
+        ],
+        [
+            "S3",
+            "V8",
+            "O20"
+        ],
+        [
+            "S2",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

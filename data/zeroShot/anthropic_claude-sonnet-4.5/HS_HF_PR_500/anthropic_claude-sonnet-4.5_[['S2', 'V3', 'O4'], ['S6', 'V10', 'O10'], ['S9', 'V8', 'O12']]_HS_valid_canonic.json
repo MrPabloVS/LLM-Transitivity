@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man finds the book then the teacher hates the college, if the teacher hates the college then the manager loves the newspaper, therefore if the man finds the book then the manager loves the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O4"
+        ],
+        [
+            "S6",
+            "V10",
+            "O10"
+        ],
+        [
+            "S9",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the man finds the book → the teacher hates the college\nPremise 2: If the teacher hates the college → the manager loves the newspaper\nConclusion: If the man finds the book → the manager loves the newspaper\n\nThis is a valid application of hypothetical syllogism (chain rule). If A→B and B→C, then A→C.\n\nyes"
+}

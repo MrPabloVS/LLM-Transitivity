@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid finds the money then the manager sees the college, if the manager sees the college then the student reads the paper, therefore if the kid finds the money then the student reads the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O3"
+        ],
+        [
+            "S9",
+            "V4",
+            "O10"
+        ],
+        [
+            "S5",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

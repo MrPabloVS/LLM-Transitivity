@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship piggybacks the taxman then the hypnotherapist federalizes the trimaran, if the hypnotherapist federalizes the trimaran then the embryologist intellectualizes the solipsism, therefore if the clerkship piggybacks the taxman then the embryologist intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V5",
+            "O19"
+        ],
+        [
+            "S7",
+            "V6",
+            "O14"
+        ],
+        [
+            "S9",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the clerkship piggybacks the taxman → the hypnotherapist federalizes the trimaran\n\nPremise 2: If the hypnotherapist federalizes the trimaran → the embryologist intellectualizes the solipsism\n\nConclusion: If the clerkship piggybacks the taxman → the embryologist intellectualizes the solipsism\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

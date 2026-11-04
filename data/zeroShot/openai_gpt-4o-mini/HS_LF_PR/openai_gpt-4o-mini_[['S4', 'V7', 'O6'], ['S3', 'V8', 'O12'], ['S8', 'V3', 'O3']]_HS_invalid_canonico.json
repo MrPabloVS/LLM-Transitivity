@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist sasses the metalurgist then the clerkship intellectualizes the fairyland, if the clerkship intellectualizes the fairyland then the corsican prepays the lightsaber, therefore if the corsican prepays the lightsaber then the herpetologist sasses the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V7",
+            "O6"
+        ],
+        [
+            "S3",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V3",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

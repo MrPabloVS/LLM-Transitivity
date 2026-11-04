@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid loves the program then the manager sees the car, if the manager sees the car then the girl buys the food, therefore if the girl buys the food then the kid loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V8",
+            "O1"
+        ],
+        [
+            "S9",
+            "V4",
+            "O11"
+        ],
+        [
+            "S10",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid inference. The argument has the form:\n- If A then B\n- If B then C\n- Therefore, if C then A\n\nThis is the fallacy of affirming the consequent. The conclusion reverses the direction of the logical chain. The premises allow us to conclude \"if A then C\" (if the kid loves the program, then the girl buys the food), not \"if C then A.\""
+}

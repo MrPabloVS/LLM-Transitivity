@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the car then the girl finds the food, if the girl finds the food then the family pays the chair, therefore if the doctor hates the car then the family pays the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O11"
+        ],
+        [
+            "S10",
+            "V3",
+            "O16"
+        ],
+        [
+            "S4",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the doctor hates the car → the girl finds the food\n**Premise 2:** If the girl finds the food → the family pays the chair\n**Conclusion:** If the doctor hates the car → the family pays the chair\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the doctor hates the car\n- B = the girl finds the food\n- C = the family pays the chair\n\nyes"
+}

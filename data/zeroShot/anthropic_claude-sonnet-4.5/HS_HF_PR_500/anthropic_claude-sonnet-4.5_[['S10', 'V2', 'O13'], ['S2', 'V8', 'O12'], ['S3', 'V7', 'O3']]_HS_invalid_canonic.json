@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl pays the paper then the man loves the newspaper, if the man loves the newspaper then the woman loses the money, therefore if the woman loses the money then the girl pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V2",
+            "O13"
+        ],
+        [
+            "S2",
+            "V8",
+            "O12"
+        ],
+        [
+            "S3",
+            "V7",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

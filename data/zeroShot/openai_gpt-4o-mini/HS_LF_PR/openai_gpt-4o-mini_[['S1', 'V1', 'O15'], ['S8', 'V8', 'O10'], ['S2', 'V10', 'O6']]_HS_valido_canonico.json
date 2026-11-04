@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat reappraises the conventionalism then the corsican intellectualizes the solipsism, if the corsican intellectualizes the solipsism then the sumerian upbraids the metalurgist, therefore if the plutocrat reappraises the conventionalism then the sumerian upbraids the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O15"
+        ],
+        [
+            "S8",
+            "V8",
+            "O10"
+        ],
+        [
+            "S2",
+            "V10",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

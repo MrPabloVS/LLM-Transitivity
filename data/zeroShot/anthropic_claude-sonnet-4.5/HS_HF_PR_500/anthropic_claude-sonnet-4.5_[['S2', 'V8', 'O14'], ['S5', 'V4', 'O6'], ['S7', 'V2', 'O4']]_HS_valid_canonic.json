@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loves the computer then the student sees the chair, if the student sees the chair then the doctor pays the book, therefore if the man loves the computer then the doctor pays the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O14"
+        ],
+        [
+            "S5",
+            "V4",
+            "O6"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the man loves the computer → the student sees the chair\n**Premise 2:** If the student sees the chair → the doctor pays the book\n**Conclusion:** If the man loves the computer → the doctor pays the book\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the man loves the computer\n- B = the student sees the chair\n- C = the doctor pays the book\n\n**yes**"
+}

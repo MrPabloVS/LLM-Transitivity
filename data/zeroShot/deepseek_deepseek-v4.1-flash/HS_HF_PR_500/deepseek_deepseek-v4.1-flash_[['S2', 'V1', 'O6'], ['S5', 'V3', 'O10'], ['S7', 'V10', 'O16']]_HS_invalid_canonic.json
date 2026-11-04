@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man buys the chair then the student finds the college, if the student finds the college then the doctor hates the food, therefore if the doctor hates the food then the man buys the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O6"
+        ],
+        [
+            "S5",
+            "V3",
+            "O10"
+        ],
+        [
+            "S7",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

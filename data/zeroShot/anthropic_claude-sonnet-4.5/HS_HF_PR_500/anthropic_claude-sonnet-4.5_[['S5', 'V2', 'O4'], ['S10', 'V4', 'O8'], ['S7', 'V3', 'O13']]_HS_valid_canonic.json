@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the book then the girl sees the school, if the girl sees the school then the doctor finds the game, therefore if the student pays the book then the doctor finds the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O4"
+        ],
+        [
+            "S10",
+            "V4",
+            "O8"
+        ],
+        [
+            "S7",
+            "V3",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premises:**\n1. If the student pays the book → the girl sees the school\n2. If the girl sees the school → the doctor finds the game\n\n**Conclusion:**\nIf the student pays the book → the doctor finds the game\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the student pays the book\n- B = the girl sees the school\n- C = the doctor finds the game\n\n**yes**"
+}

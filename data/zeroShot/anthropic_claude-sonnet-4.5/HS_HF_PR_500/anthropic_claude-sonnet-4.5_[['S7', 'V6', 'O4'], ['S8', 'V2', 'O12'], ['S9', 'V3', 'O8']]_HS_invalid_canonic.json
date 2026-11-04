@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor reads the book then the officer pays the newspaper, if the officer pays the newspaper then the manager finds the school, therefore if the manager finds the school then the doctor reads the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V6",
+            "O4"
+        ],
+        [
+            "S8",
+            "V2",
+            "O12"
+        ],
+        [
+            "S9",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The premises establish:\n- Doctor reads book → Officer pays newspaper\n- Officer pays newspaper → Manager finds school\n\nThis gives us: Doctor reads book → Manager finds school\n\nBut the conclusion tries to reverse this to: Manager finds school → Doctor reads book\n\nThis reversal is not logically valid."
+}

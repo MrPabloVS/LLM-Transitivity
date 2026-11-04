@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist reappraises the conventionalism then the herpetologist federalizes the rocketry, if the herpetologist federalizes the rocketry then the hypnotherapist intellectualizes the solipsism, therefore if the embryologist reappraises the conventionalism then the hypnotherapist intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V1",
+            "O15"
+        ],
+        [
+            "S4",
+            "V6",
+            "O13"
+        ],
+        [
+            "S7",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument structure:\n\nPremise 1: If A then B\nPremise 2: If B then C\nConclusion: Therefore, if A then C\n\nThis is a valid form of hypothetical syllogism (chain reasoning). If the first condition leads to the second, and the second leads to the third, then the first condition leads to the third.\n\nThe argument is logically valid.\n\nyes"
+}

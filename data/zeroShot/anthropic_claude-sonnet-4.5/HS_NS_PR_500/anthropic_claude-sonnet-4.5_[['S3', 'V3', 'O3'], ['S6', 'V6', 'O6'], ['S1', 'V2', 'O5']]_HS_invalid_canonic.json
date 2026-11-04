@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the brettent prants the ploodnum then the prackler trelfs the flendop, if the prackler trelfs the flendop then the probeller blemps the snabrik, therefore if the probeller blemps the snabrik then the brettent prants the ploodnum",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V3",
+            "O3"
+        ],
+        [
+            "S6",
+            "V6",
+            "O6"
+        ],
+        [
+            "S1",
+            "V2",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

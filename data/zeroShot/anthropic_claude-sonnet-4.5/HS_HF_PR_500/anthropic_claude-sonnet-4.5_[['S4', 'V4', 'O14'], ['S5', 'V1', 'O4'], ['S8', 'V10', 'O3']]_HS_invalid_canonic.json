@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family sees the computer then the student buys the book, if the student buys the book then the officer hates the money, therefore if the officer hates the money then the family sees the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V4",
+            "O14"
+        ],
+        [
+            "S5",
+            "V1",
+            "O4"
+        ],
+        [
+            "S8",
+            "V10",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

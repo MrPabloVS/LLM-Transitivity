@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid eats the sugar then the teacher loses the case, if the teacher loses the case then the doctor buys the paper, therefore if the doctor buys the paper then the kid eats the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V5",
+            "O7"
+        ],
+        [
+            "S6",
+            "V7",
+            "O2"
+        ],
+        [
+            "S7",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis commits the fallacy of affirming the consequent. The argument gives us:\n- Kid eats sugar → Teacher loses case\n- Teacher loses case → Doctor buys paper\n\nThis allows us to conclude: Kid eats sugar → Doctor buys paper\n\nBut the argument incorrectly reverses this to claim: Doctor buys paper → Kid eats sugar, which is not logically valid."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family pays the computer then the teacher reads the book, if the teacher reads the book then the kid hates the food, therefore if the kid hates the food then the family pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O14"
+        ],
+        [
+            "S6",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

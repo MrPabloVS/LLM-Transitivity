@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loses the game then the officer sees the car, if the officer sees the car then the kid hates the computer, therefore if the kid hates the computer then the girl loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V7",
+            "O15"
+        ],
+        [
+            "S8",
+            "V4",
+            "O11"
+        ],
+        [
+            "S1",
+            "V10",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

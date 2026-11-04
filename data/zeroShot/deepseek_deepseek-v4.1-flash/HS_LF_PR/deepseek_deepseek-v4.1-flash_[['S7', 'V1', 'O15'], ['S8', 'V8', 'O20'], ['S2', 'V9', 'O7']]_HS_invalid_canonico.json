@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist reappraises the conventionalism then the corsican intellectualizes the semiology, if the corsican intellectualizes the semiology then the sumerian overrates the polytheism, therefore if the sumerian overrates the polytheism then the hypnotherapist reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O15"
+        ],
+        [
+            "S8",
+            "V8",
+            "O20"
+        ],
+        [
+            "S2",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

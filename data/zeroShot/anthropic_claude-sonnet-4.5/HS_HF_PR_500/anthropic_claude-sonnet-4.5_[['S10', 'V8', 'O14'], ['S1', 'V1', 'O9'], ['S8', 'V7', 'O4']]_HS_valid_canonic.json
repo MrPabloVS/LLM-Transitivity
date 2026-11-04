@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loves the computer then the kid buys the building, if the kid buys the building then the officer loses the book, therefore if the girl loves the computer then the officer loses the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O14"
+        ],
+        [
+            "S1",
+            "V1",
+            "O9"
+        ],
+        [
+            "S8",
+            "V7",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the girl loves the computer → the kid buys the building\n**Premise 2:** If the kid buys the building → the officer loses the book\n**Conclusion:** If the girl loves the computer → the officer loses the book\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the girl loves the computer\n- B = the kid buys the building\n- C = the officer loses the book\n\nyes"
+}

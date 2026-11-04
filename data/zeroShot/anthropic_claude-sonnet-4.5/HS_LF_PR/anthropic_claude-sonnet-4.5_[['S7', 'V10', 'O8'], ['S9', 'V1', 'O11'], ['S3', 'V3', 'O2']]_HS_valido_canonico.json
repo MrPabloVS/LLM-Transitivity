@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist upbraids the pugilist then the embryologist reappraises the polytheism, if the embryologist reappraises the polytheism then the clerkship prepays the rental-car, therefore if the hypnotherapist upbraids the pugilist then the clerkship prepays the rental-car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O8"
+        ],
+        [
+            "S9",
+            "V1",
+            "O11"
+        ],
+        [
+            "S3",
+            "V3",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If hypnotherapist upbraids pugilist → embryologist reappraises polytheism)\nPremise 2: If B then C (If embryologist reappraises polytheism → clerkship prepays rental-car)\nConclusion: If A then C (If hypnotherapist upbraids pugilist → clerkship prepays rental-car)\n\nThis is a valid application of hypothetical syllogism (chain reasoning): If A→B and B→C, then A→C.\n\nyes"
+}

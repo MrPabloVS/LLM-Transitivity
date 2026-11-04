@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist unfreezes the ceviche then the alpinist federalizes the magnetometer, if the alpinist federalizes the magnetometer then the herpetologist intellectualizes the rebelliousness, therefore if the herpetologist intellectualizes the rebelliousness then the embryologist unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V4",
+            "O9"
+        ],
+        [
+            "S6",
+            "V6",
+            "O17"
+        ],
+        [
+            "S4",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer pays the food then the manager loses the game, if the manager loses the game then the teacher sees the car, therefore if the teacher sees the car then the officer pays the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V2",
+            "O16"
+        ],
+        [
+            "S9",
+            "V7",
+            "O15"
+        ],
+        [
+            "S6",
+            "V4",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

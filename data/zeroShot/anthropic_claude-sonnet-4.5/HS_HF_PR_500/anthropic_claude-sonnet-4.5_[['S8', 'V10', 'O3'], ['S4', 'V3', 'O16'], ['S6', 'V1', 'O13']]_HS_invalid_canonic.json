@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the money then the family finds the food, if the family finds the food then the teacher buys the paper, therefore if the teacher buys the paper then the officer hates the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O3"
+        ],
+        [
+            "S4",
+            "V3",
+            "O16"
+        ],
+        [
+            "S6",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid argument. It attempts to reason backwards (affirming the consequent). The premises tell us:\n- Officer hates money → Family finds food → Teacher buys paper\n\nBut the conclusion tries to reverse this: Teacher buys paper → Officer hates money, which doesn't logically follow."
+}

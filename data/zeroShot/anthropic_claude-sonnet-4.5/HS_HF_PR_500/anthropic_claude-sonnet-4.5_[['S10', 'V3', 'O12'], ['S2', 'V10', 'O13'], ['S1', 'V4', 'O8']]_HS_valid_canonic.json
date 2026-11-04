@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the paper then the man hates the paper, if the man hates the paper then the kid sees the school, therefore if the girl finds the paper then the kid sees the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O12"
+        ],
+        [
+            "S2",
+            "V10",
+            "O13"
+        ],
+        [
+            "S1",
+            "V4",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the girl finds the paper → the man hates the paper\nPremise 2: If the man hates the paper → the kid sees the school\nConclusion: If the girl finds the paper → the kid sees the school\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile reappraises the conventionalism then the clerkship overrates the taxman, if the clerkship overrates the taxman then the hypnotherapist upbraids the aesthetician, therefore if the hypnotherapist upbraids the aesthetician then the audiophile reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V1",
+            "O15"
+        ],
+        [
+            "S3",
+            "V9",
+            "O20"
+        ],
+        [
+            "S7",
+            "V10",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor finds the money then the officer loves the car,if the manager wins the case then the doctor finds the money therefore if the officer loves the car then the manager wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V9",
+            "O2"
+        ],
+        [
+            "S7",
+            "V3",
+            "O3"
+        ],
+        [
+            "S8",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

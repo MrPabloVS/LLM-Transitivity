@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the prackler frikes the prebart then the probeller prants the drambet,if the glemtor gresks the flendop then the prackler frikes the prebart therefore if the probeller prants the drambet then the glemtor gresks the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V5",
+            "O6"
+        ],
+        [
+            "S6",
+            "V4",
+            "O1"
+        ],
+        [
+            "S1",
+            "V3",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

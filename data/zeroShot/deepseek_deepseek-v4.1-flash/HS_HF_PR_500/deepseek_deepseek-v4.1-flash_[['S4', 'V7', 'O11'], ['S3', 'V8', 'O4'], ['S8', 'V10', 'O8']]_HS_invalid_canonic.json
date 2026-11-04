@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loses the car then the woman loves the book, if the woman loves the book then the officer hates the school, therefore if the officer hates the school then the family loses the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V7",
+            "O11"
+        ],
+        [
+            "S3",
+            "V8",
+            "O4"
+        ],
+        [
+            "S8",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

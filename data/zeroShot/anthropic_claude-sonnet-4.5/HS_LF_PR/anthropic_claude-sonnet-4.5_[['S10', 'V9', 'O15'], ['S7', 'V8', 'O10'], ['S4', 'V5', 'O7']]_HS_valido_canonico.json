@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the metalurgist then the hypnotherapist intellectualizes the solipsism, if the hypnotherapist intellectualizes the solipsism then the herpetologist piggybacks the aesthetician, therefore if the bibliophile overrates the metalurgist then the herpetologist piggybacks the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O15"
+        ],
+        [
+            "S7",
+            "V8",
+            "O10"
+        ],
+        [
+            "S4",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If bibliophile overrates metalurgist → hypnotherapist intellectualizes solipsism)\n\nPremise 2: If B then C (If hypnotherapist intellectualizes solipsism → herpetologist piggybacks aesthetician)\n\nConclusion: If A then C (If bibliophile overrates metalurgist → herpetologist piggybacks aesthetician)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

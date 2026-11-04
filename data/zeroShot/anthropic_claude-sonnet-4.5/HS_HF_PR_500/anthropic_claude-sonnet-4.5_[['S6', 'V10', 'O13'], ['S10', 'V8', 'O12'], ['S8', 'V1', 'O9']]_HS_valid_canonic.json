@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher hates the paper then the girl loves the newspaper, if the girl loves the newspaper then the officer buys the building, therefore if the teacher hates the paper then the officer buys the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O13"
+        ],
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V1",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this argument:\n\nPremise 1: If the teacher hates the paper → the girl loves the newspaper\nPremise 2: If the girl loves the newspaper → the officer buys the building\nConclusion: If the teacher hates the paper → the officer buys the building\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

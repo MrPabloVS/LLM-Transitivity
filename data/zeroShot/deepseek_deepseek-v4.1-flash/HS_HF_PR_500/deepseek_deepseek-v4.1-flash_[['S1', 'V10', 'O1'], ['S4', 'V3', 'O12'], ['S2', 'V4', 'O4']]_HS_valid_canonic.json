@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid hates the program then the family finds the paper, if the family finds the paper then the man sees the book, therefore if the kid hates the program then the man sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O1"
+        ],
+        [
+            "S4",
+            "V3",
+            "O12"
+        ],
+        [
+            "S2",
+            "V4",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

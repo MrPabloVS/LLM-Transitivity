@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loves the program then the student hates the computer, if the student hates the computer then the doctor sees the table, therefore if the doctor sees the table then the manager loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O1"
+        ],
+        [
+            "S5",
+            "V10",
+            "O14"
+        ],
+        [
+            "S7",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

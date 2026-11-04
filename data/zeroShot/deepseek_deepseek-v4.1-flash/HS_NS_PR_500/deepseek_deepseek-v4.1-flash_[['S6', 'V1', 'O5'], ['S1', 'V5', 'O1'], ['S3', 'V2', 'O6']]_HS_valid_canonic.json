@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the prackler glashes the snabrik then the probeller gresks the prebart, if the probeller gresks the prebart then the brettent blemps the flendop, therefore if the prackler glashes the snabrik then the brettent blemps the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O5"
+        ],
+        [
+            "S1",
+            "V5",
+            "O1"
+        ],
+        [
+            "S3",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

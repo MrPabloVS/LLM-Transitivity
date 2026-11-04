@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman reads the paper then the manager finds the paper, if the manager finds the paper then the doctor loses the book, therefore if the woman reads the paper then the doctor loses the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O13"
+        ],
+        [
+            "S9",
+            "V3",
+            "O12"
+        ],
+        [
+            "S7",
+            "V7",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the woman reads the paper → the manager finds the paper\nPremise 2: If the manager finds the paper → the doctor loses the book\nConclusion: If the woman reads the paper → the doctor loses the book\n\nThis is a valid application of hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

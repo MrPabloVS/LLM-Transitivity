@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the paper then the man pays the food, if the man pays the food then the girl loses the case, therefore if the doctor hates the paper then the girl loses the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O13"
+        ],
+        [
+            "S2",
+            "V2",
+            "O16"
+        ],
+        [
+            "S10",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

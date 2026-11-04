@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loves the sugar then the teacher buys the computer,if the manager finds the paper then the woman loves the sugar therefore if the teacher buys the computer then the manager finds the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V3",
+            "O12"
+        ],
+        [
+            "S3",
+            "V8",
+            "O7"
+        ],
+        [
+            "S6",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

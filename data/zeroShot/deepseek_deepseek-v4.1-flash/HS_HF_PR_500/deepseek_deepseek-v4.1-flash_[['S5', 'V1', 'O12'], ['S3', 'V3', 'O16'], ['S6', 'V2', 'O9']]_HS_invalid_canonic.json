@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student buys the newspaper then the woman finds the food, if the woman finds the food then the teacher pays the building, therefore if the teacher pays the building then the student buys the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V1",
+            "O12"
+        ],
+        [
+            "S3",
+            "V3",
+            "O16"
+        ],
+        [
+            "S6",
+            "V2",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

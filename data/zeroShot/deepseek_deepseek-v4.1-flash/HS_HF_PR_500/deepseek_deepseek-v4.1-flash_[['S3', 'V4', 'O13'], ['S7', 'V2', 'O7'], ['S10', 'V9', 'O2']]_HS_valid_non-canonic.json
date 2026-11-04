@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor pays the sugar then the girl wins the case,if the woman sees the paper then the doctor pays the sugar therefore if the girl wins the case then the woman sees the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O13"
+        ],
+        [
+            "S7",
+            "V2",
+            "O7"
+        ],
+        [
+            "S10",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

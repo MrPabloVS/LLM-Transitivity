@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller glashes the flendop then the prackler prants the blorrack, if the prackler prants the blorrack then the glemtor gresks the drambet, therefore if the probeller glashes the flendop then the glemtor gresks the drambet",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O6"
+        ],
+        [
+            "S6",
+            "V3",
+            "O4"
+        ],
+        [
+            "S4",
+            "V5",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the probeller glashes the flendop → then the prackler prants the blorrack\nPremise 2: If the prackler prants the blorrack → then the glemtor gresks the drambet\nConclusion: Therefore, if the probeller glashes the flendop → then the glemtor gresks the drambet\n\nThis follows the form of hypothetical syllogism:\n- If P then Q\n- If Q then R\n- Therefore, if P then R\n\nThis is a valid logical inference.\n\nyes"
+}

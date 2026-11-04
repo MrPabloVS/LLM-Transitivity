@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman buys the table then the girl loses the game, if the girl loses the game then the family finds the paper, therefore if the family finds the paper then the woman buys the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O5"
+        ],
+        [
+            "S10",
+            "V7",
+            "O15"
+        ],
+        [
+            "S4",
+            "V3",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

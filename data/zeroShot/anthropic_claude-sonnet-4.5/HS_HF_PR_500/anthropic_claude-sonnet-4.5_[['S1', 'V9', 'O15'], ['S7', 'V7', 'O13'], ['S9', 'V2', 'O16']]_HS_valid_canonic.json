@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid wins the game then the doctor loses the paper, if the doctor loses the paper then the manager pays the food, therefore if the kid wins the game then the manager pays the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O15"
+        ],
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S9",
+            "V2",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid wins the game → the doctor loses the paper\nPremise 2: If the doctor loses the paper → the manager pays the food\nConclusion: If the kid wins the game → the manager pays the food\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

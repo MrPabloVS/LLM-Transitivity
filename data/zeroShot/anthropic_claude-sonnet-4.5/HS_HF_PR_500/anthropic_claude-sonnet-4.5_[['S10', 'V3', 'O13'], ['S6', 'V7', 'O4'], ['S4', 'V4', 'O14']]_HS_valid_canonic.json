@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the game then the teacher loses the book, if the teacher loses the book then the family sees the computer, therefore if the girl finds the game then the family sees the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O13"
+        ],
+        [
+            "S6",
+            "V7",
+            "O4"
+        ],
+        [
+            "S4",
+            "V4",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the girl finds the game → the teacher loses the book\n2. If the teacher loses the book → the family sees the computer\n\nConclusion to evaluate:\n- If the girl finds the game → the family sees the computer\n\nThis is a hypothetical syllogism (chain reasoning):\n- If A → B (girl finds game → teacher loses book)\n- If B → C (teacher loses book → family sees computer)\n- Therefore: If A → C (girl finds game → family sees computer)\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

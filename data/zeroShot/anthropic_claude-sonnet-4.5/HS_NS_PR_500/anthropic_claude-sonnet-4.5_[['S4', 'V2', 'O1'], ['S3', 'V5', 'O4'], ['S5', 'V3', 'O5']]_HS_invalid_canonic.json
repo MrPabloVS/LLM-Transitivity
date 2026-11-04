@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the glemtor blemps the prebart then the brettent gresks the blorrack, if the brettent gresks the blorrack then the bruggant prants the snabrik, therefore if the bruggant prants the snabrik then the glemtor blemps the prebart",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O1"
+        ],
+        [
+            "S3",
+            "V5",
+            "O4"
+        ],
+        [
+            "S5",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The logical structure is:\n\n1. If A then B\n2. If B then C\n3. Therefore, if C then A\n\nThis is invalid. The premises only establish a forward chain (A→B→C), not that C implies A in reverse."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family finds the school then the girl pays the car, if the girl pays the car then the officer buys the table, therefore if the family finds the school then the officer buys the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O8"
+        ],
+        [
+            "S10",
+            "V2",
+            "O11"
+        ],
+        [
+            "S8",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the family finds the school → the girl pays the car\nPremise 2: If the girl pays the car → the officer buys the table\nConclusion: If the family finds the school → the officer buys the table\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

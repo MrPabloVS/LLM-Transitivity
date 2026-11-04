@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican upbraids the metalurgist then the bibliophile intellectualizes the polytheism, if the bibliophile intellectualizes the polytheism then the clerkship marinates the monkfish, therefore if the corsican upbraids the metalurgist then the clerkship marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O6"
+        ],
+        [
+            "S10",
+            "V8",
+            "O11"
+        ],
+        [
+            "S3",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the corsican upbraids the metalurgist → the bibliophile intellectualizes the polytheism\n\nPremise 2: If the bibliophile intellectualizes the polytheism → the clerkship marinates the monkfish\n\nConclusion: If the corsican upbraids the metalurgist → the clerkship marinates the monkfish\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

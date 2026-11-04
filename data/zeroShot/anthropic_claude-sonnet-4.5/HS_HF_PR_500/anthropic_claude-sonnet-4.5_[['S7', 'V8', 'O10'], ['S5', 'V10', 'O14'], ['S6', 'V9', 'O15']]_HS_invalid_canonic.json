@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loves the college then the student hates the computer, if the student hates the computer then the teacher wins the game, therefore if the teacher wins the game then the doctor loves the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O10"
+        ],
+        [
+            "S5",
+            "V10",
+            "O14"
+        ],
+        [
+            "S6",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid inference. The argument commits the fallacy of affirming the consequent.\n\nThe logical structure is:\n1. If A then B (doctor loves college → student hates computer)\n2. If B then C (student hates computer → teacher wins game)\n3. Therefore: If C then A (teacher wins game → doctor loves college)\n\nThis is invalid. From A→B→C, we can only conclude A→C, not C→A."
+}

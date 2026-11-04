@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the car then the family loves the program, if the family loves the program then the kid hates the book, therefore if the manager loses the car then the kid hates the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O11"
+        ],
+        [
+            "S4",
+            "V8",
+            "O1"
+        ],
+        [
+            "S1",
+            "V10",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loves the sugar then the man hates the computer, if the man hates the computer then the teacher loses the paper, therefore if the teacher loses the paper then the girl loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O7"
+        ],
+        [
+            "S2",
+            "V10",
+            "O14"
+        ],
+        [
+            "S6",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

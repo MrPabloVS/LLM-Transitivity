@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian piggybacks the pugilist then the bibliophile upbraids the taxman, if the bibliophile upbraids the taxman then the corsican intellectualizes the solipsism, therefore if the sumerian piggybacks the pugilist then the corsican intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O8"
+        ],
+        [
+            "S10",
+            "V10",
+            "O19"
+        ],
+        [
+            "S8",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

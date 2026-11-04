@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist intellectualizes the polytheism then the audiophile sasses the taxman, if the audiophile sasses the taxman then the corsican prepays the lightsaber, therefore if the corsican prepays the lightsaber then the hypnotherapist intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O11"
+        ],
+        [
+            "S5",
+            "V7",
+            "O19"
+        ],
+        [
+            "S8",
+            "V3",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

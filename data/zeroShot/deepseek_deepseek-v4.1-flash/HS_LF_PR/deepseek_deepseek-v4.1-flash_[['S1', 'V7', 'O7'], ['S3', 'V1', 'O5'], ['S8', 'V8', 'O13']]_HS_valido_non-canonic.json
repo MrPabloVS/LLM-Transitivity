@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship reappraises the fumigation then the corsican intellectualizes the rocketry,if the plutocrat sasses the aesthetician then the clerkship reappraises the fumigation therefore if the corsican intellectualizes the rocketry then the plutocrat sasses the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V7",
+            "O7"
+        ],
+        [
+            "S3",
+            "V1",
+            "O5"
+        ],
+        [
+            "S8",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile federalizes the rocketry then the embryologist prepays the fumigation, if the embryologist prepays the fumigation then the alpinist sasses the taxman, therefore if the audiophile federalizes the rocketry then the alpinist sasses the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V6",
+            "O13"
+        ],
+        [
+            "S9",
+            "V3",
+            "O5"
+        ],
+        [
+            "S6",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (audiophile federalizes → embryologist prepays)\nPremise 2: If B then C (embryologist prepays → alpinist sasses)\nConclusion: If A then C (audiophile federalizes → alpinist sasses)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nYes"
+}

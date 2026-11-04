@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid sees the money then the woman pays the food, if the woman pays the food then the manager wins the case, therefore if the kid sees the money then the manager wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V4",
+            "O3"
+        ],
+        [
+            "S3",
+            "V2",
+            "O16"
+        ],
+        [
+            "S9",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid sees the money → the woman pays the food\nPremise 2: If the woman pays the food → the manager wins the case\nConclusion: If the kid sees the money → the manager wins the case\n\nThis is a valid hypothetical syllogism (chain argument). If A→B and B→C, then A→C.\n\nyes"
+}

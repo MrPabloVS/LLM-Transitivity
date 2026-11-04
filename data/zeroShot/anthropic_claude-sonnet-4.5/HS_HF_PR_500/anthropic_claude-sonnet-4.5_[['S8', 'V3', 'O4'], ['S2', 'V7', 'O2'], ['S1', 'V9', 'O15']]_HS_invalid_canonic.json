@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the book then the man loses the case, if the man loses the case then the kid wins the game, therefore if the kid wins the game then the officer finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O4"
+        ],
+        [
+            "S2",
+            "V7",
+            "O2"
+        ],
+        [
+            "S1",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe reasoning commits the fallacy of affirming the consequent. The argument establishes:\n- Officer finds book → Man loses case → Kid wins game\n\nBut it incorrectly concludes:\n- Kid wins game → Officer finds book\n\nThis reverses the direction of logical implication, which is invalid."
+}

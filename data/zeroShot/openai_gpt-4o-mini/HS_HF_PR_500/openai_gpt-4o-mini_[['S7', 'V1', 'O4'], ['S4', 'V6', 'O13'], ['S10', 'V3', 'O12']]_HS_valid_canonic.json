@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor buys the book then the family reads the paper, if the family reads the paper then the girl finds the paper, therefore if the doctor buys the book then the girl finds the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O4"
+        ],
+        [
+            "S4",
+            "V6",
+            "O13"
+        ],
+        [
+            "S10",
+            "V3",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

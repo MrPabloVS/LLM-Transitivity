@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist reappraises the polytheism then the audiophile unfreezes the ceviche, if the audiophile unfreezes the ceviche then the clerkship upbraids the taxman, therefore if the clerkship upbraids the taxman then the hypnotherapist reappraises the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O11"
+        ],
+        [
+            "S5",
+            "V4",
+            "O9"
+        ],
+        [
+            "S3",
+            "V10",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

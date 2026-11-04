@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the sugar then the manager pays the computer, if the manager pays the computer then the man buys the paper, therefore if the man buys the paper then the officer hates the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O7"
+        ],
+        [
+            "S9",
+            "V2",
+            "O14"
+        ],
+        [
+            "S2",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

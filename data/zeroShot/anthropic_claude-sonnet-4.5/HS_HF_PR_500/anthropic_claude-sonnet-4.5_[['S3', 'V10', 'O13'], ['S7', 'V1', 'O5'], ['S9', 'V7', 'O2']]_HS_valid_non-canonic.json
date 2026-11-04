@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor buys the table then the manager loses the case,if the woman hates the paper then the doctor buys the table therefore if the manager loses the case then the woman hates the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O13"
+        ],
+        [
+            "S7",
+            "V1",
+            "O5"
+        ],
+        [
+            "S9",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "I need to analyze this logical argument.\n\nLet me define:\n- D: the doctor buys the table\n- M: the manager loses the case\n- W: the woman hates the paper\n\nGiven premises:\n1. If D then M (if the doctor buys the table then the manager loses the case)\n2. If W then D (if the woman hates the paper then the doctor buys the table)\n\nConclusion to evaluate:\nIf M then W (if the manager loses the case then the woman hates the paper)\n\nFrom the premises:\n- Premise 2: W → D\n- Premise 1: D → M\n- By hypothetical syllogism: W → M\n\nThis gives us: If W then M (if the woman hates the paper, then the manager loses the case)\n\nThe conclusion asks for: If M then W (if the manager loses the case, then the woman hates the paper)\n\nThis is asking if M → W follows from W → M, which would be the converse. The converse is not logically valid. Just because W → M doesn't mean M → W.\n\nno"
+}

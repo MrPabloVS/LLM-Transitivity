@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman hates the school then the teacher pays the food, if the teacher pays the food then the student loves the car, therefore if the woman hates the school then the student loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O8"
+        ],
+        [
+            "S6",
+            "V2",
+            "O16"
+        ],
+        [
+            "S5",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me analyze this logical argument step by step.\n\nGiven premises:\n1. If the woman hates the school → the teacher pays the food\n2. If the teacher pays the food → the student loves the car\n\nConclusion to evaluate:\nIf the woman hates the school → the student loves the car\n\nThis is a hypothetical syllogism (chain reasoning):\n- If P → Q (woman hates school → teacher pays food)\n- If Q → R (teacher pays food → student loves car)\n- Therefore: If P → R (woman hates school → student loves car)\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

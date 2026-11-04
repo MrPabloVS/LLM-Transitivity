@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the money then the student finds the game, if the student finds the game then the teacher hates the sugar, therefore if the teacher hates the sugar then the officer loves the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O3"
+        ],
+        [
+            "S5",
+            "V3",
+            "O13"
+        ],
+        [
+            "S6",
+            "V10",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The structure is:\n\n1. If A then B\n2. If B then C\n3. Therefore, if C then A\n\nThis is invalid. The premises only allow us to conclude \"If A then C\" (if the officer loves the money, then the teacher hates the sugar), not \"If C then A.\""
+}

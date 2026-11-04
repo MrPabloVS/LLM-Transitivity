@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist prepays the lightsaber then the embryologist piggybacks the taxman, if the embryologist piggybacks the taxman then the clerkship overrates the metalurgist, therefore if the herpetologist prepays the lightsaber then the clerkship overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O3"
+        ],
+        [
+            "S9",
+            "V5",
+            "O19"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the herpetologist prepays the lightsaber → the embryologist piggybacks the taxman\n\nPremise 2: If the embryologist piggybacks the taxman → the clerkship overrates the metalurgist\n\nConclusion: If the herpetologist prepays the lightsaber → the clerkship overrates the metalurgist\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

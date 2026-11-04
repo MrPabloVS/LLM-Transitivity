@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist marinates the ceviche then the plutocrat overrates the renewable-energy, if the plutocrat overrates the renewable-energy then the bibliophile intellectualizes the conventionalism, therefore if the bibliophile intellectualizes the conventionalism then the alpinist marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V11",
+            "O9"
+        ],
+        [
+            "S1",
+            "V9",
+            "O1"
+        ],
+        [
+            "S10",
+            "V8",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile unfreezes the ceviche then the herpetologist sasses the taxman, if the herpetologist sasses the taxman then the corsican indemnifies the aesthetician, therefore if the bibliophile unfreezes the ceviche then the corsican indemnifies the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V4",
+            "O9"
+        ],
+        [
+            "S4",
+            "V7",
+            "O19"
+        ],
+        [
+            "S8",
+            "V2",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the bibliophile unfreezes the ceviche → the herpetologist sasses the taxman\n\n**Premise 2:** If the herpetologist sasses the taxman → the corsican indemnifies the aesthetician\n\n**Conclusion:** If the bibliophile unfreezes the ceviche → the corsican indemnifies the aesthetician\n\nThis is a valid application of the hypothetical syllogism (chain rule) in logic:\n- If A → B\n- If B → C\n- Therefore, A → C\n\nyes"
+}

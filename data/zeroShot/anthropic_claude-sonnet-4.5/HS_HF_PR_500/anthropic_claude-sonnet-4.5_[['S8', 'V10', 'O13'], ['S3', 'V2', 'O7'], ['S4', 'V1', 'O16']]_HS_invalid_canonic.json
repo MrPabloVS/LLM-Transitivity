@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the paper then the woman pays the sugar, if the woman pays the sugar then the family buys the food, therefore if the family buys the food then the officer hates the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O13"
+        ],
+        [
+            "S3",
+            "V2",
+            "O7"
+        ],
+        [
+            "S4",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid argument. It attempts to conclude the converse of the original conditional chain. The premises establish: officer hates paper → woman pays sugar → family buys food. The conclusion tries to reverse this to: family buys food → officer hates paper, which is a logical fallacy (affirming the consequent)."
+}

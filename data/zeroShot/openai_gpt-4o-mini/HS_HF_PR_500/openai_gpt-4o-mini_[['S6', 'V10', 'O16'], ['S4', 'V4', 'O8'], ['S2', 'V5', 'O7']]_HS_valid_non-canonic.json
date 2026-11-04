@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family sees the school then the man eats the sugar,if the teacher hates the food then the family sees the school therefore if the man eats the sugar then the teacher hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O16"
+        ],
+        [
+            "S4",
+            "V4",
+            "O8"
+        ],
+        [
+            "S2",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

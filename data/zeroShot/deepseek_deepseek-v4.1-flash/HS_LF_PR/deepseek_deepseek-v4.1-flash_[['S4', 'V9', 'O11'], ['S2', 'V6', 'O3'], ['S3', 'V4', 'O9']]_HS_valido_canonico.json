@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist overrates the semiology then the sumerian federalizes the lightsaber, if the sumerian federalizes the lightsaber then the clerkship unfreezes the ceviche, therefore if the herpetologist overrates the semiology then the clerkship unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V9",
+            "O11"
+        ],
+        [
+            "S2",
+            "V6",
+            "O3"
+        ],
+        [
+            "S3",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

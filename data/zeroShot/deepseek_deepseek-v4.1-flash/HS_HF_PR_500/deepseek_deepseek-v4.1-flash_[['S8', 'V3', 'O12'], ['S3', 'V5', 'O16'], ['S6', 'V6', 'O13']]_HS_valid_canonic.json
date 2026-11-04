@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the paper then the woman eats the food, if the woman eats the food then the teacher reads the paper, therefore if the officer finds the paper then the teacher reads the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O12"
+        ],
+        [
+            "S3",
+            "V5",
+            "O16"
+        ],
+        [
+            "S6",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

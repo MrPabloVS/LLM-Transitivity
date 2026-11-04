@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist reappraises the fumigation then the herpetologist prepays the coronograph, if the herpetologist prepays the coronograph then the alpinist federalizes the rocketry, therefore if the hypnotherapist reappraises the fumigation then the alpinist federalizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O5"
+        ],
+        [
+            "S4",
+            "V3",
+            "O21"
+        ],
+        [
+            "S6",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the hypnotherapist reappraises the fumigation → the herpetologist prepays the coronograph\n\nPremise 2: If the herpetologist prepays the coronograph → the alpinist federalizes the rocketry\n\nConclusion: If the hypnotherapist reappraises the fumigation → the alpinist federalizes the rocketry\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

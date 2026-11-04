@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist indemnifies the pugilist then the hypnotherapist sasses the aesthetician, if the hypnotherapist sasses the aesthetician then the audiophile federalizes the databank, therefore if the audiophile federalizes the databank then the embryologist indemnifies the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V2",
+            "O8"
+        ],
+        [
+            "S7",
+            "V7",
+            "O7"
+        ],
+        [
+            "S5",
+            "V6",
+            "O18"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

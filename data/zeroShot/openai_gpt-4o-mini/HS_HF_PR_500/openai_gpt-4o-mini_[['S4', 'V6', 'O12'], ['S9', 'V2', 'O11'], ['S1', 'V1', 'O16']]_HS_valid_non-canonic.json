@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager pays the car then the kid buys the food,if the family reads the newspaper then the manager pays the car therefore if the kid buys the food then the family reads the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V6",
+            "O12"
+        ],
+        [
+            "S9",
+            "V2",
+            "O11"
+        ],
+        [
+            "S1",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist upbraids the taxman then the audiophile intellectualizes the conventionalism, if the audiophile intellectualizes the conventionalism then the plutocrat marinates the ceviche, therefore if the alpinist upbraids the taxman then the plutocrat marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O19"
+        ],
+        [
+            "S5",
+            "V8",
+            "O15"
+        ],
+        [
+            "S1",
+            "V11",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B\nPremise 2: If B then C\nConclusion: If A then C\n\nThis is a valid form of reasoning called hypothetical syllogism (chain reasoning).\n\nIf the alpinist upbraids the taxman (A) → the audiophile intellectualizes the conventionalism (B)\nIf the audiophile intellectualizes the conventionalism (B) → the plutocrat marinates the ceviche (C)\nTherefore: If the alpinist upbraids the taxman (A) → the plutocrat marinates the ceviche (C)\n\nyes"
+}

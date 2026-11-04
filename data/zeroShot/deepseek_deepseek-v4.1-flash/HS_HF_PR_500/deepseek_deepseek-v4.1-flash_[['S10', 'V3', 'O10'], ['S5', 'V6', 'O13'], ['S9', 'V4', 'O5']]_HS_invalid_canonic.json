@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the college then the student reads the paper, if the student reads the paper then the manager sees the table, therefore if the manager sees the table then the girl finds the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O10"
+        ],
+        [
+            "S5",
+            "V6",
+            "O13"
+        ],
+        [
+            "S9",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

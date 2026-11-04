@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family pays the paper then the manager wins the case,if the student loves the computer then the family pays the paper therefore if the manager wins the case then the student loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O14"
+        ],
+        [
+            "S4",
+            "V2",
+            "O13"
+        ],
+        [
+            "S9",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. Here's why:\n\nGiven:\n1. If family pays paper → manager wins case\n2. If student loves computer → family pays paper\n\nConclusion claimed: If manager wins case → student loves computer\n\nThis is invalid. The manager could win the case for reasons other than the family paying the paper, and the family could pay the paper for reasons other than the student loving the computer. The logical chain only works in one direction, not in reverse."
+}

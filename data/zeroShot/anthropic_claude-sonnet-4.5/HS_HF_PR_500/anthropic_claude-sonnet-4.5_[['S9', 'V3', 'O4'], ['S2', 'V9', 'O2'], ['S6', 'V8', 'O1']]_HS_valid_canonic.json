@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager finds the book then the man wins the case, if the man wins the case then the teacher loves the program, therefore if the manager finds the book then the teacher loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V3",
+            "O4"
+        ],
+        [
+            "S2",
+            "V9",
+            "O2"
+        ],
+        [
+            "S6",
+            "V8",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager finds the book → the man wins the case\nPremise 2: If the man wins the case → the teacher loves the program\nConclusion: If the manager finds the book → the teacher loves the program\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

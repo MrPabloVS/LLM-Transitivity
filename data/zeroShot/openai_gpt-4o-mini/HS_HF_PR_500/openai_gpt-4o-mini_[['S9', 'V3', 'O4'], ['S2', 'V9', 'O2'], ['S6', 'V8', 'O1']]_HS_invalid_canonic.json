@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager finds the book then the man wins the case, if the man wins the case then the teacher loves the program, therefore if the teacher loves the program then the manager finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V3",
+            "O4"
+        ],
+        [
+            "S2",
+            "V9",
+            "O2"
+        ],
+        [
+            "S6",
+            "V8",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

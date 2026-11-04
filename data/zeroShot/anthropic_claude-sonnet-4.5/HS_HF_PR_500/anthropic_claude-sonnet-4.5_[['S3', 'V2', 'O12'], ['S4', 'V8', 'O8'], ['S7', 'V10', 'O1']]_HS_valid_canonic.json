@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman pays the newspaper then the family loves the school, if the family loves the school then the doctor hates the program, therefore if the woman pays the newspaper then the doctor hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V2",
+            "O12"
+        ],
+        [
+            "S4",
+            "V8",
+            "O8"
+        ],
+        [
+            "S7",
+            "V10",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the woman pays the newspaper → the family loves the school\nPremise 2: If the family loves the school → the doctor hates the program\nConclusion: If the woman pays the newspaper → the doctor hates the program\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

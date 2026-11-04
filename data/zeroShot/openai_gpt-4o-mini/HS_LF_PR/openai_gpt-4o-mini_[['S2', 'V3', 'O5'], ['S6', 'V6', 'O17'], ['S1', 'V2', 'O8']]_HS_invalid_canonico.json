@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian prepays the fumigation then the alpinist federalizes the magnetometer, if the alpinist federalizes the magnetometer then the plutocrat indemnifies the pugilist, therefore if the plutocrat indemnifies the pugilist then the sumerian prepays the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O5"
+        ],
+        [
+            "S6",
+            "V6",
+            "O17"
+        ],
+        [
+            "S1",
+            "V2",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

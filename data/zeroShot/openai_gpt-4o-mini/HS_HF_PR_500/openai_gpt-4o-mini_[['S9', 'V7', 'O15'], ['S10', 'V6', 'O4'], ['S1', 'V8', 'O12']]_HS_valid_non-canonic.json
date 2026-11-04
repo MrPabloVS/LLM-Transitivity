@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl reads the book then the kid loves the newspaper,if the manager loses the game then the girl reads the book therefore if the kid loves the newspaper then the manager loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O15"
+        ],
+        [
+            "S10",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

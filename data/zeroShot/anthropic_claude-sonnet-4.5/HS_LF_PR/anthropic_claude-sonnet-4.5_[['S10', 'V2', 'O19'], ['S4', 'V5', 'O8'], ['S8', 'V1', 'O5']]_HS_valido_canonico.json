@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile indemnifies the taxman then the herpetologist piggybacks the pugilist, if the herpetologist piggybacks the pugilist then the corsican reappraises the fumigation, therefore if the bibliophile indemnifies the taxman then the corsican reappraises the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V2",
+            "O19"
+        ],
+        [
+            "S4",
+            "V5",
+            "O8"
+        ],
+        [
+            "S8",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the bibliophile indemnifies the taxman → the herpetologist piggybacks the pugilist\n\n**Premise 2:** If the herpetologist piggybacks the pugilist → the corsican reappraises the fumigation\n\n**Conclusion:** If the bibliophile indemnifies the taxman → the corsican reappraises the fumigation\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

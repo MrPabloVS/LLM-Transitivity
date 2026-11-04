@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor sees the building then the man finds the school, if the man finds the school then the teacher loses the newspaper, therefore if the doctor sees the building then the teacher loses the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V4",
+            "O9"
+        ],
+        [
+            "S2",
+            "V3",
+            "O8"
+        ],
+        [
+            "S6",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist overrates the renewable-energy then the clerkship federalizes the lightsaber, if the clerkship federalizes the lightsaber then the herpetologist intellectualizes the solipsism, therefore if the herpetologist intellectualizes the solipsism then the alpinist overrates the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V9",
+            "O1"
+        ],
+        [
+            "S3",
+            "V6",
+            "O3"
+        ],
+        [
+            "S4",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

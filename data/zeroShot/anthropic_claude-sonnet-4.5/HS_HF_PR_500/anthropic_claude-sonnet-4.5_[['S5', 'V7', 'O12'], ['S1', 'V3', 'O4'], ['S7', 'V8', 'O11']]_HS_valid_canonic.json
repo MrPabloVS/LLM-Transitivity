@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student loses the newspaper then the kid finds the book, if the kid finds the book then the doctor loves the car, therefore if the student loses the newspaper then the doctor loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V7",
+            "O12"
+        ],
+        [
+            "S1",
+            "V3",
+            "O4"
+        ],
+        [
+            "S7",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the student loses the newspaper → the kid finds the book\nPremise 2: If the kid finds the book → the doctor loves the car\nConclusion: If the student loses the newspaper → the doctor loves the car\n\nThis is a valid application of hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

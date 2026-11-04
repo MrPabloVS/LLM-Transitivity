@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman buys the building then the student finds the college,if the family hates the car then the woman buys the building therefore if the student finds the college then the family hates the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O11"
+        ],
+        [
+            "S3",
+            "V1",
+            "O9"
+        ],
+        [
+            "S5",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

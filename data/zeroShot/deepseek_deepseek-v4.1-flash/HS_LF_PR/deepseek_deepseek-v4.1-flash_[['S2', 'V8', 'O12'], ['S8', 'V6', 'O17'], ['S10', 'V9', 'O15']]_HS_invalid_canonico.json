@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian intellectualizes the fairyland then the corsican federalizes the magnetometer, if the corsican federalizes the magnetometer then the bibliophile overrates the metalurgist, therefore if the bibliophile overrates the metalurgist then the sumerian intellectualizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V6",
+            "O17"
+        ],
+        [
+            "S10",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the conventionalism then the clerkship prepays the lightsaber, if the clerkship prepays the lightsaber then the audiophile sasses the taxman, therefore if the audiophile sasses the taxman then the bibliophile overrates the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O8"
+        ],
+        [
+            "S3",
+            "V3",
+            "O3"
+        ],
+        [
+            "S5",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

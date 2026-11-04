@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the book then the manager eats the sugar, if the manager eats the sugar then the teacher hates the school, therefore if the teacher hates the school then the girl finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O4"
+        ],
+        [
+            "S9",
+            "V5",
+            "O7"
+        ],
+        [
+            "S6",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

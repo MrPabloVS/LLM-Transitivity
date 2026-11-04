@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the college then the student reads the paper, if the student reads the paper then the manager sees the table, therefore if the girl finds the college then the manager sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O10"
+        ],
+        [
+            "S5",
+            "V6",
+            "O13"
+        ],
+        [
+            "S9",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

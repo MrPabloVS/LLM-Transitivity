@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the money then the teacher loses the game,if the woman hates the sugar then the officer finds the money therefore if the teacher loses the game then the woman hates the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O7"
+        ],
+        [
+            "S8",
+            "V3",
+            "O3"
+        ],
+        [
+            "S6",
+            "V7",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

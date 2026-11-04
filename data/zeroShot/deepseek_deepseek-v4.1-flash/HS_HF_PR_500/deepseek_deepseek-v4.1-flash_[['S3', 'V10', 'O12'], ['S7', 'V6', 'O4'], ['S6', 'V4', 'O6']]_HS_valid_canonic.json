@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman hates the newspaper then the doctor reads the book, if the doctor reads the book then the teacher sees the chair, therefore if the woman hates the newspaper then the teacher sees the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O12"
+        ],
+        [
+            "S7",
+            "V6",
+            "O4"
+        ],
+        [
+            "S6",
+            "V4",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

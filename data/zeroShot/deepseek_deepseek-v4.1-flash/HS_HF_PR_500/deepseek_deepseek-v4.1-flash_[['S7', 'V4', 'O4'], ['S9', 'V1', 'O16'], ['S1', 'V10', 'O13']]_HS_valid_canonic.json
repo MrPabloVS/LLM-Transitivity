@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor sees the book then the manager buys the food, if the manager buys the food then the kid hates the paper, therefore if the doctor sees the book then the kid hates the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V4",
+            "O4"
+        ],
+        [
+            "S9",
+            "V1",
+            "O16"
+        ],
+        [
+            "S1",
+            "V10",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

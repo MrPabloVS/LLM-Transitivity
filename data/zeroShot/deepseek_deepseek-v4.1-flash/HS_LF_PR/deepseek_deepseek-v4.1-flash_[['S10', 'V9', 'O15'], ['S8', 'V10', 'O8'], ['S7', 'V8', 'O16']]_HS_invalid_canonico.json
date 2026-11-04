@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the metalurgist then the corsican upbraids the pugilist, if the corsican upbraids the pugilist then the hypnotherapist intellectualizes the rebelliousness, therefore if the hypnotherapist intellectualizes the rebelliousness then the bibliophile overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V10",
+            "O8"
+        ],
+        [
+            "S7",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

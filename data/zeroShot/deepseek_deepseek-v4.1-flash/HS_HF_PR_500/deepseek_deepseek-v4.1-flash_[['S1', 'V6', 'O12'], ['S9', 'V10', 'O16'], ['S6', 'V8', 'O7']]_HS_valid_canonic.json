@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid reads the newspaper then the manager hates the food, if the manager hates the food then the teacher loves the sugar, therefore if the kid reads the newspaper then the teacher loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O12"
+        ],
+        [
+            "S9",
+            "V10",
+            "O16"
+        ],
+        [
+            "S6",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

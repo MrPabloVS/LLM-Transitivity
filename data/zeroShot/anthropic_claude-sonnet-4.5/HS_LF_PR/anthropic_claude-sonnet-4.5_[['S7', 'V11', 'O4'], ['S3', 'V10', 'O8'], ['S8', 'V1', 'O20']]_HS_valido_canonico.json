@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist marinates the monkfish then the clerkship upbraids the pugilist, if the clerkship upbraids the pugilist then the corsican reappraises the semiology, therefore if the hypnotherapist marinates the monkfish then the corsican reappraises the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V11",
+            "O4"
+        ],
+        [
+            "S3",
+            "V10",
+            "O8"
+        ],
+        [
+            "S8",
+            "V1",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the hypnotherapist marinates the monkfish → the clerkship upbraids the pugilist\n2. If the clerkship upbraids the pugilist → the corsican reappraises the semiology\n\nConclusion to verify:\nIf the hypnotherapist marinates the monkfish → the corsican reappraises the semiology\n\nThis is a hypothetical syllogism (chain reasoning):\n- Let A = \"the hypnotherapist marinates the monkfish\"\n- Let B = \"the clerkship upbraids the pugilist\"\n- Let C = \"the corsican reappraises the semiology\"\n\nPremise 1: A → B\nPremise 2: B → C\nConclusion: A → C\n\nThis is a valid form of reasoning. If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

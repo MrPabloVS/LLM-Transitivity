@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat reappraises the fumigation then the sumerian prepays the coronograph, if the sumerian prepays the coronograph then the audiophile overrates the polytheism, therefore if the audiophile overrates the polytheism then the plutocrat reappraises the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O5"
+        ],
+        [
+            "S2",
+            "V3",
+            "O21"
+        ],
+        [
+            "S5",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

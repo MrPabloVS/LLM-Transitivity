@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the game then the family buys the food, if the family buys the food then the officer finds the game, therefore if the manager loses the game then the officer finds the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O15"
+        ],
+        [
+            "S4",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V3",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager loses the game → the family buys the food\nPremise 2: If the family buys the food → the officer finds the game\nConclusion: If the manager loses the game → the officer finds the game\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

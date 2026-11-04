@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist unfreezes the monkfish then the hypnotherapist federalizes the trimaran,if the clerkship upbraids the taxman then the alpinist unfreezes the monkfish therefore if the hypnotherapist federalizes the trimaran then the clerkship upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O19"
+        ],
+        [
+            "S6",
+            "V4",
+            "O3"
+        ],
+        [
+            "S7",
+            "V6",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

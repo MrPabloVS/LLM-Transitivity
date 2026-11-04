@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the glemtor trelfs the ploodnum then the preggar blemps the snabrik, if the preggar blemps the snabrik then the bruggant frikes the prebart, therefore if the glemtor trelfs the ploodnum then the bruggant frikes the prebart",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V6",
+            "O3"
+        ],
+        [
+            "S2",
+            "V2",
+            "O5"
+        ],
+        [
+            "S5",
+            "V4",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (if glemtor trelfs ploodnum → preggar blemps snabrik)\nPremise 2: If B then C (if preggar blemps snabrik → bruggant frikes prebart)\nConclusion: If A then C (if glemtor trelfs ploodnum → bruggant frikes prebart)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

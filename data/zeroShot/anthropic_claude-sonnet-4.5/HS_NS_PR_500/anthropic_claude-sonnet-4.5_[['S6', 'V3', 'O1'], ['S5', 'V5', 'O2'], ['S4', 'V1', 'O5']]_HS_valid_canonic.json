@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the prackler prants the prebart then the bruggant gresks the drambet, if the bruggant gresks the drambet then the glemtor glashes the snabrik, therefore if the prackler prants the prebart then the glemtor glashes the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O1"
+        ],
+        [
+            "S5",
+            "V5",
+            "O2"
+        ],
+        [
+            "S4",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the prackler prants the prebart → then the bruggant gresks the drambet\n2. If the bruggant gresks the drambet → then the glemtor glashes the snabrik\n\nConclusion:\nTherefore, if the prackler prants the prebart → then the glemtor glashes the snabrik\n\nThis is a hypothetical syllogism (chain argument):\n- If P → Q (premise 1)\n- If Q → R (premise 2)\n- Therefore, if P → R (conclusion)\n\nThe logical form is valid.\n\nyes"
+}

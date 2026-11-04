@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loses the money then the student hates the book, if the student hates the book then the manager buys the car, therefore if the manager buys the car then the family loses the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V7",
+            "O3"
+        ],
+        [
+            "S5",
+            "V10",
+            "O4"
+        ],
+        [
+            "S9",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

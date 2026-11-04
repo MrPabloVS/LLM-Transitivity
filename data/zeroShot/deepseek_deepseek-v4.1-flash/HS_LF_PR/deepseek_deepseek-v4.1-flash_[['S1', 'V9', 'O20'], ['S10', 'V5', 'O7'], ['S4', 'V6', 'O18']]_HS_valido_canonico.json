@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat overrates the taxman then the bibliophile piggybacks the aesthetician, if the bibliophile piggybacks the aesthetician then the herpetologist federalizes the databank, therefore if the plutocrat overrates the taxman then the herpetologist federalizes the databank",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O20"
+        ],
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S4",
+            "V6",
+            "O18"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat marinates the monkfish then the corsican intellectualizes the conventionalism, if the corsican intellectualizes the conventionalism then the audiophile reappraises the semiology, therefore if the plutocrat marinates the monkfish then the audiophile reappraises the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V11",
+            "O4"
+        ],
+        [
+            "S8",
+            "V8",
+            "O15"
+        ],
+        [
+            "S5",
+            "V1",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If P then C (If plutocrat marinates monkfish, then corsican intellectualizes conventionalism)\nPremise 2: If C then A (If corsican intellectualizes conventionalism, then audiophile reappraises semiology)\nConclusion: If P then A (If plutocrat marinates monkfish, then audiophile reappraises semiology)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If P→C and C→A, then P→A.\n\nyes"
+}

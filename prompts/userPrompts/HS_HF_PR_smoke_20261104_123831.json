@@ -1,0 +1,80 @@
+[
+  [
+    "HS",
+    [
+      [
+        "S2",
+        "V7",
+        "O3"
+      ],
+      [
+        "S5",
+        "V4",
+        "O11"
+      ],
+      [
+        "S4",
+        "V8",
+        "O8"
+      ]
+    ],
+    "if the man loses the money then the student sees the car, if the student sees the car then the family loves the school, therefore if the man loses the money then the family loves the school",
+    "HF",
+    "PR",
+    "if then / therefore",
+    "valid",
+    "canonic"
+  ],
+  [
+    "HS",
+    [
+      [
+        "S4",
+        "V1",
+        "O5"
+      ],
+      [
+        "S6",
+        "V5",
+        "O7"
+      ],
+      [
+        "S9",
+        "V4",
+        "O6"
+      ]
+    ],
+    "if the family buys the table then the teacher eats the sugar, if the teacher eats the sugar then the manager sees the chair, therefore if the manager sees the chair then the family buys the table",
+    "HF",
+    "PR",
+    "if then / therefore",
+    "invalid",
+    "canonic"
+  ],
+  [
+    "HS",
+    [
+      [
+        "S6",
+        "V5",
+        "O7"
+      ],
+      [
+        "S4",
+        "V8",
+        "O3"
+      ],
+      [
+        "S1",
+        "V7",
+        "O12"
+      ]
+    ],
+    "if the family loves the money then the kid loses the newspaper,if the teacher eats the sugar then the family loves the money therefore if the kid loses the newspaper then the teacher eats the sugar",
+    "HF",
+    "PR",
+    "if then / therefore",
+    "valid",
+    "non-canonic"
+  ]
+]

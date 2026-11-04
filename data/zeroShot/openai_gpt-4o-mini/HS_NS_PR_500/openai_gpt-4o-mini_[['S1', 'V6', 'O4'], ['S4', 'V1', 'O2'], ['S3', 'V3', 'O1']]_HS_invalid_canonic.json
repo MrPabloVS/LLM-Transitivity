@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller trelfs the blorrack then the glemtor glashes the drambet, if the glemtor glashes the drambet then the brettent prants the prebart, therefore if the brettent prants the prebart then the probeller trelfs the blorrack",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O4"
+        ],
+        [
+            "S4",
+            "V1",
+            "O2"
+        ],
+        [
+            "S3",
+            "V3",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

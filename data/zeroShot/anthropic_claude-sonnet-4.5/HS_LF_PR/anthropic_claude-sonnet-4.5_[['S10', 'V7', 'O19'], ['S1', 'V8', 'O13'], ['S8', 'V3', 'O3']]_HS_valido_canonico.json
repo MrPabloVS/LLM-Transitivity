@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile sasses the taxman then the plutocrat intellectualizes the rocketry, if the plutocrat intellectualizes the rocketry then the corsican prepays the lightsaber, therefore if the bibliophile sasses the taxman then the corsican prepays the lightsaber",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V7",
+            "O19"
+        ],
+        [
+            "S1",
+            "V8",
+            "O13"
+        ],
+        [
+            "S8",
+            "V3",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the bibliophile sasses the taxman → then the plutocrat intellectualizes the rocketry\n\nPremise 2: If the plutocrat intellectualizes the rocketry → then the corsican prepays the lightsaber\n\nConclusion: If the bibliophile sasses the taxman → then the corsican prepays the lightsaber\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

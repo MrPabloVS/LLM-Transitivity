@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the brettent blemps the drambet then the probeller glashes the ploodnum, if the probeller glashes the ploodnum then the bruggant trelfs the snabrik, therefore if the brettent blemps the drambet then the bruggant trelfs the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V2",
+            "O2"
+        ],
+        [
+            "S1",
+            "V1",
+            "O3"
+        ],
+        [
+            "S5",
+            "V6",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

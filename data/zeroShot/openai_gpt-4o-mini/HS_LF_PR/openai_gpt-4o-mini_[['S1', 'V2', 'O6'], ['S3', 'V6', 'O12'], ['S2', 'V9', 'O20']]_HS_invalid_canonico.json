@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat indemnifies the metalurgist then the clerkship federalizes the fairyland, if the clerkship federalizes the fairyland then the sumerian overrates the taxman, therefore if the sumerian overrates the taxman then the plutocrat indemnifies the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O6"
+        ],
+        [
+            "S3",
+            "V6",
+            "O12"
+        ],
+        [
+            "S2",
+            "V9",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

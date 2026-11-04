@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist marinates the ceviche then the sumerian intellectualizes the solipsism, if the sumerian intellectualizes the solipsism then the hypnotherapist indemnifies the aesthetician, therefore if the herpetologist marinates the ceviche then the hypnotherapist indemnifies the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V11",
+            "O9"
+        ],
+        [
+            "S2",
+            "V8",
+            "O10"
+        ],
+        [
+            "S7",
+            "V2",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the herpetologist marinates the ceviche → the sumerian intellectualizes the solipsism\n\nPremise 2: If the sumerian intellectualizes the solipsism → the hypnotherapist indemnifies the aesthetician\n\nConclusion: If the herpetologist marinates the ceviche → the hypnotherapist indemnifies the aesthetician\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, If A → C\n\nyes"
+}

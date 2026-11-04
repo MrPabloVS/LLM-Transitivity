@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid finds the book then the family hates the school, if the family hates the school then the girl wins the case, therefore if the kid finds the book then the girl wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O4"
+        ],
+        [
+            "S4",
+            "V10",
+            "O8"
+        ],
+        [
+            "S10",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid finds the book → the family hates the school\nPremise 2: If the family hates the school → the girl wins the case\nConclusion: If the kid finds the book → the girl wins the case\n\nThis is a valid hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

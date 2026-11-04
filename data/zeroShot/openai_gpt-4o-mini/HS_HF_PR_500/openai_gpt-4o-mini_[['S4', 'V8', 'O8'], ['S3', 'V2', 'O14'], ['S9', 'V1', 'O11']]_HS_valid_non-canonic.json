@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman pays the computer then the manager buys the car,if the family loves the school then the woman pays the computer therefore if the manager buys the car then the family loves the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O8"
+        ],
+        [
+            "S3",
+            "V2",
+            "O14"
+        ],
+        [
+            "S9",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

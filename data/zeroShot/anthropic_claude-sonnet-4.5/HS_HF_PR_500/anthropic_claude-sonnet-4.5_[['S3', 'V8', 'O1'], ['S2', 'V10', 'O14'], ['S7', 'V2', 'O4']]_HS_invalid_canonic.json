@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loves the program then the man hates the computer, if the man hates the computer then the doctor pays the book, therefore if the doctor pays the book then the woman loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O1"
+        ],
+        [
+            "S2",
+            "V10",
+            "O14"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

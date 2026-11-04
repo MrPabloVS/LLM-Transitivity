@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat federalizes the trimaran then the embryologist indemnifies the metalurgist, if the embryologist indemnifies the metalurgist then the hypnotherapist reappraises the renewable-energy, therefore if the plutocrat federalizes the trimaran then the hypnotherapist reappraises the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O14"
+        ],
+        [
+            "S9",
+            "V2",
+            "O6"
+        ],
+        [
+            "S7",
+            "V1",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If P then E indemnifies M\nPremise 2: If E indemnifies M then H reappraises R\nConclusion: If P then H reappraises R\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- P → (E indemnifies M)\n- (E indemnifies M) → (H reappraises R)\n- Therefore: P → (H reappraises R)\n\nyes"
+}

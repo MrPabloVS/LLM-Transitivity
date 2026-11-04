@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile prepays the lightsaber then the sumerian indemnifies the aesthetician, if the sumerian indemnifies the aesthetician then the corsican sasses the pugilist, therefore if the audiophile prepays the lightsaber then the corsican sasses the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V3",
+            "O3"
+        ],
+        [
+            "S2",
+            "V2",
+            "O7"
+        ],
+        [
+            "S8",
+            "V7",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

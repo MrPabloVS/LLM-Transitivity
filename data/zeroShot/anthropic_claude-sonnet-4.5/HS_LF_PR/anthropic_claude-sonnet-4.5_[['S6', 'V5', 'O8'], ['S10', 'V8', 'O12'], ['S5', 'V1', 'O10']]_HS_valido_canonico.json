@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist piggybacks the pugilist then the bibliophile intellectualizes the fairyland, if the bibliophile intellectualizes the fairyland then the audiophile reappraises the solipsism, therefore if the alpinist piggybacks the pugilist then the audiophile reappraises the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V5",
+            "O8"
+        ],
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S5",
+            "V1",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If alpinist piggybacks pugilist → bibliophile intellectualizes fairyland)\nPremise 2: If B then C (If bibliophile intellectualizes fairyland → audiophile reappraises solipsism)\nConclusion: If A then C (If alpinist piggybacks pugilist → audiophile reappraises solipsism)\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

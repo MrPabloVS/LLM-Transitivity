@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor eats the sugar then the girl pays the building, if the girl pays the building then the kid finds the money, therefore if the doctor eats the sugar then the kid finds the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V5",
+            "O7"
+        ],
+        [
+            "S10",
+            "V2",
+            "O9"
+        ],
+        [
+            "S1",
+            "V3",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven:\n1. If the doctor eats the sugar → the girl pays the building\n2. If the girl pays the building → the kid finds the money\n\nConclusion: If the doctor eats the sugar → the kid finds the money\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the doctor eats the sugar\n- B = the girl pays the building\n- C = the kid finds the money\n\nyes"
+}

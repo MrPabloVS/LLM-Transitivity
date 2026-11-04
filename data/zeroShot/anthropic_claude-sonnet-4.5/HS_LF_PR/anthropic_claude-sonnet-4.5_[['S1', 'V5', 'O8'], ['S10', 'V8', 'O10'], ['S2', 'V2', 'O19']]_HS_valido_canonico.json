@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat piggybacks the pugilist then the bibliophile intellectualizes the solipsism, if the bibliophile intellectualizes the solipsism then the sumerian indemnifies the taxman, therefore if the plutocrat piggybacks the pugilist then the sumerian indemnifies the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V5",
+            "O8"
+        ],
+        [
+            "S10",
+            "V8",
+            "O10"
+        ],
+        [
+            "S2",
+            "V2",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the plutocrat piggybacks the pugilist → the bibliophile intellectualizes the solipsism\n\nPremise 2: If the bibliophile intellectualizes the solipsism → the sumerian indemnifies the taxman\n\nConclusion: If the plutocrat piggybacks the pugilist → the sumerian indemnifies the taxman\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist reappraises the conventionalism then the alpinist overrates the aesthetician, if the alpinist overrates the aesthetician then the hypnotherapist sasses the pugilist, therefore if the hypnotherapist sasses the pugilist then the herpetologist reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V1",
+            "O15"
+        ],
+        [
+            "S6",
+            "V9",
+            "O16"
+        ],
+        [
+            "S7",
+            "V7",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

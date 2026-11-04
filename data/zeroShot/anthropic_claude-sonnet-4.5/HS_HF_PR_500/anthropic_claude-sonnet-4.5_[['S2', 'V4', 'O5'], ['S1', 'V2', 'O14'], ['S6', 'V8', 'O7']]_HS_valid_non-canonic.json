@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid pays the computer then the teacher loves the sugar,if the man sees the table then the kid pays the computer therefore if the teacher loves the sugar then the man sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O5"
+        ],
+        [
+            "S1",
+            "V2",
+            "O14"
+        ],
+        [
+            "S6",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No"
+}

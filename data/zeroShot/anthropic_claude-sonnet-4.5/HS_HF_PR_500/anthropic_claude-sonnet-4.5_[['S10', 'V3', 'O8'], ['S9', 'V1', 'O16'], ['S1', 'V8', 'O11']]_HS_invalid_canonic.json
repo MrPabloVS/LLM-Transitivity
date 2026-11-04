@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the school then the manager buys the food, if the manager buys the food then the kid loves the car, therefore if the kid loves the car then the girl finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O8"
+        ],
+        [
+            "S9",
+            "V1",
+            "O16"
+        ],
+        [
+            "S1",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

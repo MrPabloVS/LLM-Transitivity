@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist sasses the taxman then the clerkship overrates the rebelliousness, if the clerkship overrates the rebelliousness then the hypnotherapist reappraises the conventionalism, therefore if the hypnotherapist reappraises the conventionalism then the alpinist sasses the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V7",
+            "O19"
+        ],
+        [
+            "S3",
+            "V9",
+            "O10"
+        ],
+        [
+            "S7",
+            "V1",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

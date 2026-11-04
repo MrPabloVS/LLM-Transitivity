@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer sees the college then the girl pays the sugar, if the girl pays the sugar then the student hates the school, therefore if the officer sees the college then the student hates the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V4",
+            "O10"
+        ],
+        [
+            "S10",
+            "V2",
+            "O7"
+        ],
+        [
+            "S5",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

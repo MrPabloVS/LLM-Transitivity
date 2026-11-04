@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the school then the doctor loses the car, if the doctor loses the car then the officer buys the sugar, therefore if the family hates the school then the officer buys the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O8"
+        ],
+        [
+            "S7",
+            "V7",
+            "O11"
+        ],
+        [
+            "S8",
+            "V1",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the family hates the school → the doctor loses the car\nPremise 2: If the doctor loses the car → the officer buys the sugar\nConclusion: If the family hates the school → the officer buys the sugar\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A then B\n- If B then C\n- Therefore, if A then C\n\nyes"
+}

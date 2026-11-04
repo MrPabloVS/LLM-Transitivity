@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist sasses the aesthetician then the sumerian federalizes the lightsaber, if the sumerian federalizes the lightsaber then the alpinist prepays the fumigation, therefore if the alpinist prepays the fumigation then the hypnotherapist sasses the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O7"
+        ],
+        [
+            "S2",
+            "V6",
+            "O3"
+        ],
+        [
+            "S6",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

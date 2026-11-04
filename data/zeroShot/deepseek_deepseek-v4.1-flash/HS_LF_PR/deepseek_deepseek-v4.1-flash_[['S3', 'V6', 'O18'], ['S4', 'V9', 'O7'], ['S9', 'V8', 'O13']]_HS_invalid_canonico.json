@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship federalizes the databank then the herpetologist overrates the polytheism, if the herpetologist overrates the polytheism then the embryologist intellectualizes the rocketry, therefore if the embryologist intellectualizes the rocketry then the clerkship federalizes the databank",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O18"
+        ],
+        [
+            "S4",
+            "V9",
+            "O7"
+        ],
+        [
+            "S9",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

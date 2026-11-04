@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship federalizes the databank then the herpetologist overrates the polytheism, if the herpetologist overrates the polytheism then the embryologist intellectualizes the rocketry, therefore if the clerkship federalizes the databank then the embryologist intellectualizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O18"
+        ],
+        [
+            "S4",
+            "V9",
+            "O7"
+        ],
+        [
+            "S9",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If clerkship federalizes databank, then herpetologist overrates polytheism)\nPremise 2: If B then C (If herpetologist overrates polytheism, then embryologist intellectualizes rocketry)\nConclusion: If A then C (If clerkship federalizes databank, then embryologist intellectualizes rocketry)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

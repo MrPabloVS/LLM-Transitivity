@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the school then the officer wins the case, if the officer wins the case then the girl pays the computer, therefore if the girl pays the computer then the family loves the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O8"
+        ],
+        [
+            "S8",
+            "V9",
+            "O2"
+        ],
+        [
+            "S10",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The logic flows:\n- Family loves school → Officer wins case\n- Officer wins case → Girl pays computer\n\nThis means: Family loves school → Girl pays computer\n\nBut the conclusion tries to reverse this to: Girl pays computer → Family loves school, which doesn't follow."
+}

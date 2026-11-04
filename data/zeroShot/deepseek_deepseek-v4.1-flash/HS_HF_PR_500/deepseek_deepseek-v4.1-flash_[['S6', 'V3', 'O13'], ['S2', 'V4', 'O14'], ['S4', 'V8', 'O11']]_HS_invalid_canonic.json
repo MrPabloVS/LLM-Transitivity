@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the game then the man sees the computer, if the man sees the computer then the family loves the car, therefore if the family loves the car then the teacher finds the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O13"
+        ],
+        [
+            "S2",
+            "V4",
+            "O14"
+        ],
+        [
+            "S4",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

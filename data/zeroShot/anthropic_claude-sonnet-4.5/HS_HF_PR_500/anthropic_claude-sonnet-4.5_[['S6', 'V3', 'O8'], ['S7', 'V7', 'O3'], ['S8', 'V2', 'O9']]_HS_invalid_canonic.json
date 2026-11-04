@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the school then the doctor loses the money, if the doctor loses the money then the officer pays the building, therefore if the officer pays the building then the teacher finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O8"
+        ],
+        [
+            "S7",
+            "V7",
+            "O3"
+        ],
+        [
+            "S8",
+            "V2",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

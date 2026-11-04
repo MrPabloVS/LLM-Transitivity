@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist reappraises the solipsism then the sumerian overrates the conventionalism,if the audiophile intellectualizes the rocketry then the alpinist reappraises the solipsism therefore if the sumerian overrates the conventionalism then the audiophile intellectualizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O13"
+        ],
+        [
+            "S6",
+            "V1",
+            "O10"
+        ],
+        [
+            "S2",
+            "V9",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

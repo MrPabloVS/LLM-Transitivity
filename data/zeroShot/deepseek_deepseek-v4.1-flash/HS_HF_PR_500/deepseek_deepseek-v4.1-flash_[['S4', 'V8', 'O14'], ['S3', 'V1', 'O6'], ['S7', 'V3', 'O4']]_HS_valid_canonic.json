@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the computer then the woman buys the chair, if the woman buys the chair then the doctor finds the book, therefore if the family loves the computer then the doctor finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O14"
+        ],
+        [
+            "S3",
+            "V1",
+            "O6"
+        ],
+        [
+            "S7",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

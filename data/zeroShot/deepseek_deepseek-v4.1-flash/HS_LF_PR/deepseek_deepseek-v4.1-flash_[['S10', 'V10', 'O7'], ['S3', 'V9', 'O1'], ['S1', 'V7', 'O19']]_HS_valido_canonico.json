@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile upbraids the aesthetician then the clerkship overrates the renewable-energy, if the clerkship overrates the renewable-energy then the plutocrat sasses the taxman, therefore if the bibliophile upbraids the aesthetician then the plutocrat sasses the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O7"
+        ],
+        [
+            "S3",
+            "V9",
+            "O1"
+        ],
+        [
+            "S1",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

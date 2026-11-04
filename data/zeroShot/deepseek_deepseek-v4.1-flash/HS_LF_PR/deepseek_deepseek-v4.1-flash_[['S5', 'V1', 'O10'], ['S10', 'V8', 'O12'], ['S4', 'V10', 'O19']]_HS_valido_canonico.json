@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile reappraises the solipsism then the bibliophile intellectualizes the fairyland, if the bibliophile intellectualizes the fairyland then the herpetologist upbraids the taxman, therefore if the audiophile reappraises the solipsism then the herpetologist upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V1",
+            "O10"
+        ],
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S4",
+            "V10",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Yes"
+}

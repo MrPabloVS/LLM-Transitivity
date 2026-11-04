@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loses the game then the family sees the college, if the family sees the college then the man loves the book, therefore if the man loves the book then the woman loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V7",
+            "O15"
+        ],
+        [
+            "S4",
+            "V4",
+            "O10"
+        ],
+        [
+            "S2",
+            "V8",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

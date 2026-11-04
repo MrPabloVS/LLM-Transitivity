@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian prepays the coronograph then the herpetologist federalizes the databank, if the herpetologist federalizes the databank then the clerkship reappraises the solipsism, therefore if the sumerian prepays the coronograph then the clerkship reappraises the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O21"
+        ],
+        [
+            "S4",
+            "V6",
+            "O18"
+        ],
+        [
+            "S3",
+            "V1",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument, I need to check if it follows the logical form of hypothetical syllogism (chain reasoning).\n\nGiven:\n1. If the sumerian prepays the coronograph → the herpetologist federalizes the databank\n2. If the herpetologist federalizes the databank → the clerkship reappraises the solipsism\n\nConclusion: If the sumerian prepays the coronograph → the clerkship reappraises the solipsism\n\nThis is a valid application of hypothetical syllogism:\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

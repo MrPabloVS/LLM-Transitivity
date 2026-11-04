@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor buys the building then the woman hates the school,if the kid sees the newspaper then the doctor buys the building therefore if the woman hates the school then the kid sees the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V4",
+            "O12"
+        ],
+        [
+            "S7",
+            "V1",
+            "O9"
+        ],
+        [
+            "S3",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

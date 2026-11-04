@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile federalizes the databank then the hypnotherapist upbraids the taxman, if the hypnotherapist upbraids the taxman then the herpetologist intellectualizes the semiology, therefore if the audiophile federalizes the databank then the herpetologist intellectualizes the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V6",
+            "O18"
+        ],
+        [
+            "S7",
+            "V10",
+            "O19"
+        ],
+        [
+            "S4",
+            "V8",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If audiophile federalizes databank, then hypnotherapist upbraids taxman)\nPremise 2: If B then C (If hypnotherapist upbraids taxman, then herpetologist intellectualizes semiology)\nConclusion: If A then C (If audiophile federalizes databank, then herpetologist intellectualizes semiology)\n\nThis is a valid application of the hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

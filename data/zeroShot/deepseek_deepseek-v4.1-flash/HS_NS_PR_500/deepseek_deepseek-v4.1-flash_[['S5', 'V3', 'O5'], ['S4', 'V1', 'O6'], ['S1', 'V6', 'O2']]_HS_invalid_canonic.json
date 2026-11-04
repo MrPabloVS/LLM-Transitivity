@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bruggant prants the snabrik then the glemtor glashes the flendop, if the glemtor glashes the flendop then the probeller trelfs the drambet, therefore if the probeller trelfs the drambet then the bruggant prants the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V3",
+            "O5"
+        ],
+        [
+            "S4",
+            "V1",
+            "O6"
+        ],
+        [
+            "S1",
+            "V6",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

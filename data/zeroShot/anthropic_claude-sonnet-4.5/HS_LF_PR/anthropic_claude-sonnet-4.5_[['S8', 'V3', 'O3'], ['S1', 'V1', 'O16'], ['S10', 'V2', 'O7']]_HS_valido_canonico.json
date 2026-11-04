@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican prepays the lightsaber then the plutocrat reappraises the rebelliousness, if the plutocrat reappraises the rebelliousness then the bibliophile indemnifies the aesthetician, therefore if the corsican prepays the lightsaber then the bibliophile indemnifies the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O3"
+        ],
+        [
+            "S1",
+            "V1",
+            "O16"
+        ],
+        [
+            "S10",
+            "V2",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the corsican prepays the lightsaber → the plutocrat reappraises the rebelliousness\n\n**Premise 2:** If the plutocrat reappraises the rebelliousness → the bibliophile indemnifies the aesthetician\n\n**Conclusion:** If the corsican prepays the lightsaber → the bibliophile indemnifies the aesthetician\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nThe logical structure is sound.\n\n**yes**"
+}

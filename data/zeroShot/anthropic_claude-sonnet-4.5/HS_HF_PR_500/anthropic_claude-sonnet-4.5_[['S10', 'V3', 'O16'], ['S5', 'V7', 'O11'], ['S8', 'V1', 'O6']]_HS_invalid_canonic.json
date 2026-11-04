@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the food then the student loses the car, if the student loses the car then the officer buys the chair, therefore if the officer buys the chair then the girl finds the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O16"
+        ],
+        [
+            "S5",
+            "V7",
+            "O11"
+        ],
+        [
+            "S8",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid argument. It attempts to conclude the converse of the logical chain. The premises establish:\n- Girl finds food → Student loses car → Officer buys chair\n\nBut the conclusion tries to claim: Officer buys chair → Girl finds food\n\nThis reverses the direction of causation, which is a logical fallacy."
+}

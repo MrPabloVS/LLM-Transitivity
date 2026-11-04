@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist marinates the monkfish then the herpetologist indemnifies the pugilist,if the plutocrat federalizes the fairyland then the hypnotherapist marinates the monkfish therefore if the herpetologist indemnifies the pugilist then the plutocrat federalizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O12"
+        ],
+        [
+            "S7",
+            "V11",
+            "O4"
+        ],
+        [
+            "S4",
+            "V2",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

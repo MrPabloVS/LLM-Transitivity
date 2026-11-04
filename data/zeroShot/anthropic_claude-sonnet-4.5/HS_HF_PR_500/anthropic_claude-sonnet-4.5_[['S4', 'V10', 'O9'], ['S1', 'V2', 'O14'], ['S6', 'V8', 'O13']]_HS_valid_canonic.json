@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the building then the kid pays the computer, if the kid pays the computer then the teacher loves the paper, therefore if the family hates the building then the teacher loves the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O9"
+        ],
+        [
+            "S1",
+            "V2",
+            "O14"
+        ],
+        [
+            "S6",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the family hates the building → the kid pays the computer\n2. If the kid pays the computer → the teacher loves the paper\n\nConclusion to evaluate:\nIf the family hates the building → the teacher loves the paper\n\nThis is a hypothetical syllogism (chain reasoning):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nWhere:\n- A = the family hates the building\n- B = the kid pays the computer\n- C = the teacher loves the paper\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

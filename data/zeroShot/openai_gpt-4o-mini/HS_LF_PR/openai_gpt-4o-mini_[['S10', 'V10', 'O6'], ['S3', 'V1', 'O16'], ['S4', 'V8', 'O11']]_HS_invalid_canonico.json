@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile upbraids the metalurgist then the clerkship reappraises the rebelliousness, if the clerkship reappraises the rebelliousness then the herpetologist intellectualizes the polytheism, therefore if the herpetologist intellectualizes the polytheism then the bibliophile upbraids the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O6"
+        ],
+        [
+            "S3",
+            "V1",
+            "O16"
+        ],
+        [
+            "S4",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

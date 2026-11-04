@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl hates the school then the student buys the chair, if the student buys the chair then the kid finds the newspaper, therefore if the kid finds the newspaper then the girl hates the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O8"
+        ],
+        [
+            "S5",
+            "V1",
+            "O6"
+        ],
+        [
+            "S1",
+            "V3",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

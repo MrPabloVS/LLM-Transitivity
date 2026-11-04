@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist upbraids the aesthetician then the embryologist reappraises the fumigation,if the sumerian federalizes the databank then the herpetologist upbraids the aesthetician therefore if the embryologist reappraises the fumigation then the sumerian federalizes the databank",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O18"
+        ],
+        [
+            "S4",
+            "V10",
+            "O7"
+        ],
+        [
+            "S9",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

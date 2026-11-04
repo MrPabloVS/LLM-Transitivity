@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student finds the book then the doctor loves the newspaper, if the doctor loves the newspaper then the girl hates the car, therefore if the girl hates the car then the student finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V3",
+            "O4"
+        ],
+        [
+            "S7",
+            "V8",
+            "O12"
+        ],
+        [
+            "S10",
+            "V10",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

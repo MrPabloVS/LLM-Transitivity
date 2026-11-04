@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loves the money then the family eats the sugar, if the family eats the sugar then the man loses the paper, therefore if the doctor loves the money then the man loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O3"
+        ],
+        [
+            "S4",
+            "V5",
+            "O7"
+        ],
+        [
+            "S2",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the doctor loves the money → the family eats the sugar\n**Premise 2:** If the family eats the sugar → the man loses the paper\n**Conclusion:** If the doctor loves the money → the man loses the paper\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, If A → C\n\nyes"
+}

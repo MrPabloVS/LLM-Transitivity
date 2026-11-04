@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile piggybacks the aesthetician then the plutocrat reappraises the polytheism, if the plutocrat reappraises the polytheism then the clerkship overrates the metalurgist, therefore if the bibliophile piggybacks the aesthetician then the clerkship overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S1",
+            "V1",
+            "O11"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

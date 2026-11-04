@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship prepays the rental-car then the embryologist overrates the pugilist, if the embryologist overrates the pugilist then the bibliophile reappraises the solipsism, therefore if the clerkship prepays the rental-car then the bibliophile reappraises the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V3",
+            "O2"
+        ],
+        [
+            "S9",
+            "V9",
+            "O19"
+        ],
+        [
+            "S10",
+            "V1",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the clerkship prepays the rental-car → the embryologist overrates the pugilist\nPremise 2: If the embryologist overrates the pugilist → the bibliophile reappraises the solipsism\nConclusion: If the clerkship prepays the rental-car → the bibliophile reappraises the solipsism\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

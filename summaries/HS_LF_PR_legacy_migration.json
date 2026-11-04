@@ -1,0 +1,1276 @@
+{
+  "migrated_at": "2026-11-04T13:04:31.578710-03:00",
+  "model": "openai/gpt-4o-mini",
+  "dataset": "HS_LF_PR",
+  "system": "zeroShot",
+  "reused": 211,
+  "method": "Copy legacy result only if prompt, instructions, model, ID, tags and nonempty response match; originals retained",
+  "records": [
+    {
+      "row": 1,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V3', 'O3'], ['S6', 'V8', 'O20'], ['S5', 'V6', 'O18']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V3', 'O3'], ['S6', 'V8', 'O20'], ['S5', 'V6', 'O18']]_HS_valido_canonico.json",
+      "source_sha256": "61a7171d152f0a725f9f1dd3ac3fc4f08931851301da7a44e122580935f75965"
+    },
+    {
+      "row": 2,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V8', 'O12'], ['S7', 'V1', 'O5'], ['S5', 'V2', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V8', 'O12'], ['S7', 'V1', 'O5'], ['S5', 'V2', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "ea7261695f8e978f5e2dff6a502987681fca715ff3e63e8c292c964da97d5c0c"
+    },
+    {
+      "row": 3,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S4', 'V3', 'O2'], ['S3', 'V2', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S4', 'V3', 'O2'], ['S3', 'V2', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "e6d83dcdeacb41456c7c5a0c6c708873f3dd36a2b259bbc96b180eec454df1bc"
+    },
+    {
+      "row": 4,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O21'], ['S4', 'V1', 'O1'], ['S10', 'V8', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O21'], ['S4', 'V1', 'O1'], ['S10', 'V8', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "91db1f7c8bb5cb102de9ae91280eb952b73cfa71794727a9b60a01e8c41a00c6"
+    },
+    {
+      "row": 5,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V8', 'O20'], ['S6', 'V6', 'O14'], ['S9', 'V7', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V8', 'O20'], ['S6', 'V6', 'O14'], ['S9', 'V7', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "fa5e48314e1a037360bb9103afcad81e22aa8f8988784f143936fe81a204a37a"
+    },
+    {
+      "row": 6,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O16'], ['S5', 'V1', 'O11'], ['S9', 'V6', 'O13']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O16'], ['S5', 'V1', 'O11'], ['S9', 'V6', 'O13']]_HS_valido_canonico.json",
+      "source_sha256": "c2ec3e36365b280418be0604a1f58ee9ca9c4d2f1e633c9d8b1950bb62fce74a"
+    },
+    {
+      "row": 7,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V5', 'O8'], ['S1', 'V9', 'O19'], ['S4', 'V1', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V5', 'O8'], ['S1', 'V9', 'O19'], ['S4', 'V1', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "93f504861ef38df6e85bd169f6882e87ce0d39283c6d1b1fb38125406a58b9f2"
+    },
+    {
+      "row": 8,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O5'], ['S2', 'V3', 'O21'], ['S5', 'V9', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O5'], ['S2', 'V3', 'O21'], ['S5', 'V9', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "b7c941b243db28d28ef2ef237c8ec4965f287e42be80eba835b90d5d15c93fb8"
+    },
+    {
+      "row": 9,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V6', 'O12'], ['S7', 'V9', 'O1'], ['S1', 'V10', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V6', 'O12'], ['S7', 'V9', 'O1'], ['S1', 'V10', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "3c9f75c8ae72bad930bdcd3c9dcaf51b194e90a798491aa00c8e0ea4c2c4c6b7"
+    },
+    {
+      "row": 10,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V1', 'O20'], ['S7', 'V11', 'O4'], ['S8', 'V8', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V1', 'O20'], ['S7', 'V11', 'O4'], ['S8', 'V8', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "e24163c56b08f58b55724151f00112174011b5f04b6b804dcda8aa6159faf482"
+    },
+    {
+      "row": 11,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V7', 'O8'], ['S9', 'V6', 'O12'], ['S8', 'V9', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V7', 'O8'], ['S9', 'V6', 'O12'], ['S8', 'V9', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "e2f9d82bdd834e8ea76aa1a5448cf6d2482b19f8a32e1385cd6d8c15cf210750"
+    },
+    {
+      "row": 12,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O7'], ['S6', 'V1', 'O16'], ['S2', 'V6', 'O13']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O7'], ['S6', 'V1', 'O16'], ['S2', 'V6', 'O13']]_HS_valido_canonico.json",
+      "source_sha256": "9b04694f3201222743516aa496b8d6d0571f2b961ab2a3f8d14240bbb83833aa"
+    },
+    {
+      "row": 13,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V10', 'O19'], ['S6', 'V2', 'O8'], ['S5', 'V1', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V10', 'O19'], ['S6', 'V2', 'O8'], ['S5', 'V1', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "a26d26771b0d292c25199745f34a60b028d172abf536adfb6d7daf9a39ae2be8"
+    },
+    {
+      "row": 14,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V1', 'O5'], ['S5', 'V6', 'O21'], ['S9', 'V2', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V1', 'O5'], ['S5', 'V6', 'O21'], ['S9', 'V2', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "6bf3bce4b43bdf23b9b06c04f8fe3daa1bf3506b607ac44661a9a4f5c5ec58cf"
+    },
+    {
+      "row": 15,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O8'], ['S3', 'V3', 'O3'], ['S5', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O8'], ['S3', 'V3', 'O3'], ['S5', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "5b3e637180732129926d0a1e9847680cf4c762a3cd1b69c426c8cdfd2c32b474"
+    },
+    {
+      "row": 16,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O16'], ['S5', 'V6', 'O3'], ['S10', 'V1', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O16'], ['S5', 'V6', 'O3'], ['S10', 'V1', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "6a836a340dd672c6952cac7b348f4980af3f170f316f55745faeea608d4cfb6e"
+    },
+    {
+      "row": 17,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V6', 'O14'], ['S7', 'V1', 'O16'], ['S8', 'V8', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V6', 'O14'], ['S7', 'V1', 'O16'], ['S8', 'V8', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "a2b0563dfd1ff15f4431b7a86ca88b998d87dd1291b5a298b8cc42d07299412a"
+    },
+    {
+      "row": 18,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O6'], ['S1', 'V8', 'O12'], ['S10', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O6'], ['S1', 'V8', 'O12'], ['S10', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "3007938d23516c8f0cd58b06a1912ca705b9fa542a85956f47896fb0a7301f54"
+    },
+    {
+      "row": 19,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O5'], ['S6', 'V10', 'O7'], ['S2', 'V3', 'O14']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O5'], ['S6', 'V10', 'O7'], ['S2', 'V3', 'O14']]_HS_valido_canonico.json",
+      "source_sha256": "cc50ead173d9e5cb44b4c7058115f608ad04d02b93e9ef78f04de8f4a2cf07a8"
+    },
+    {
+      "row": 20,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O20'], ['S10', 'V2', 'O6'], ['S4', 'V9', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O20'], ['S10', 'V2', 'O6'], ['S4', 'V9', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "dc5ac98e57bbeb6d273eddf5bd109c968e8394bc781d5dc5b242dfac555cbafe"
+    },
+    {
+      "row": 21,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V10', 'O6'], ['S2', 'V9', 'O7'], ['S10', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V10', 'O6'], ['S2', 'V9', 'O7'], ['S10', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "2e4470303c5f3320943f15ebe1ec8333f7d76d19e4a4ce72d536a2f0adf8c59c"
+    },
+    {
+      "row": 22,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V3', 'O2'], ['S5', 'V4', 'O9'], ['S1', 'V8', 'O13']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V3', 'O2'], ['S5', 'V4', 'O9'], ['S1', 'V8', 'O13']]_HS_valido_canonico.json",
+      "source_sha256": "ade2cac65d99555fc55ebc10db2088a374f316377147cc8c59b0338aefc4f3f3"
+    },
+    {
+      "row": 23,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O15'], ['S8', 'V9', 'O7'], ['S1', 'V1', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O15'], ['S8', 'V9', 'O7'], ['S1', 'V1', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "17c9d8c101c6f5fb620b3302f49686d842a6de360174b3f2433e0266a83d11c5"
+    },
+    {
+      "row": 24,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O16'], ['S6', 'V11', 'O4'], ['S5', 'V6', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O16'], ['S6', 'V11', 'O4'], ['S5', 'V6', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "64d4eb24733a8a22dba1e68abe1648e33bce0f8b0078cd48532dfd233dcb442e"
+    },
+    {
+      "row": 25,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V3', 'O2'], ['S5', 'V6', 'O17'], ['S4', 'V1', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V3', 'O2'], ['S5', 'V6', 'O17'], ['S4', 'V1', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "e10c887be2e43842b4f9d4bd7c17737d89136e23f8ed564e3092f10e7fb8db2a"
+    },
+    {
+      "row": 26,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V2', 'O6'], ['S10', 'V6', 'O12'], ['S2', 'V3', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V2', 'O6'], ['S10', 'V6', 'O12'], ['S2', 'V3', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "66821dea64c6e14046478f335d3fa19d823d4539a6c6450ec58bcd7b7e35153f"
+    },
+    {
+      "row": 27,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V3', 'O5'], ['S6', 'V6', 'O14'], ['S1', 'V5', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V3', 'O5'], ['S6', 'V6', 'O14'], ['S1', 'V5', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "9153592433caef91958cf3559c7fe4b445c54ba91ee6cef8148c5385e6dea881"
+    },
+    {
+      "row": 28,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O14'], ['S6', 'V4', 'O9'], ['S2', 'V9', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O14'], ['S6', 'V4', 'O9'], ['S2', 'V9', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "6f59d5f63085d9861eb02786f97b69d38f724587a33e786098f61d14ce959d7f"
+    },
+    {
+      "row": 29,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V11', 'O9'], ['S9', 'V5', 'O19'], ['S2', 'V9', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V11', 'O9'], ['S9', 'V5', 'O19'], ['S2', 'V9', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "925fc5caa86ef1a65e30df768f4b655845179ffcd29fd0613b8f5034064b262a"
+    },
+    {
+      "row": 30,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V6', 'O13'], ['S9', 'V3', 'O5'], ['S6', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V6', 'O13'], ['S9', 'V3', 'O5'], ['S6', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "31058b1a0e5186218795347dcf6d904ec4a00dba28bff5aecb2b00e846159612"
+    },
+    {
+      "row": 31,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V3', 'O21'], ['S3', 'V6', 'O3'], ['S8', 'V5', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V3', 'O21'], ['S3', 'V6', 'O3'], ['S8', 'V5', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "3f859745f1d4272157e6030158dfeeb880d427f24f661b7e76f65b3db461e476"
+    },
+    {
+      "row": 32,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O18'], ['S10', 'V4', 'O9'], ['S1', 'V10', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O18'], ['S10', 'V4', 'O9'], ['S1', 'V10', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "1577ad3e7d761208370b3cc1344cb5b2c78c160be567a66dbd4f10fd3a329353"
+    },
+    {
+      "row": 33,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O16'], ['S5', 'V5', 'O8'], ['S2', 'V2', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O16'], ['S5', 'V5', 'O8'], ['S2', 'V2', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "738ee911ea0804bc1781f8496023deaa07f346dbb7598c544be971017b2ce9f1"
+    },
+    {
+      "row": 34,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O21'], ['S8', 'V6', 'O12'], ['S3', 'V8', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O21'], ['S8', 'V6', 'O12'], ['S3', 'V8', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "5bba9ff1af43afcaff23b75ce490e5008d3fc0ce0db532b59f512389c5e51cf0"
+    },
+    {
+      "row": 35,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V1', 'O15'], ['S6', 'V9', 'O16'], ['S7', 'V7', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V1', 'O15'], ['S6', 'V9', 'O16'], ['S7', 'V7', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "8069b2849dcd27f1d08bc1a927aba0975d1391b37425a9e49c6b0e3de4e0e5e7"
+    },
+    {
+      "row": 36,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V11', 'O9'], ['S10', 'V6', 'O1'], ['S7', 'V9', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V11', 'O9'], ['S10', 'V6', 'O1'], ['S7', 'V9', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "01d2ce1504d8764ea1bc7fd6d327132f42dcbb9ab9af3f4968be4c7b412a27ea"
+    },
+    {
+      "row": 37,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O15'], ['S8', 'V10', 'O8'], ['S7', 'V8', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O15'], ['S8', 'V10', 'O8'], ['S7', 'V8', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "a6b3b88b1788c9dd972826d5830eeb7d2301f8d6be8a9759f34438d1546d311f"
+    },
+    {
+      "row": 38,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O8'], ['S7', 'V1', 'O11'], ['S8', 'V3', 'O17']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O8'], ['S7', 'V1', 'O11'], ['S8', 'V3', 'O17']]_HS_valido_canonico.json",
+      "source_sha256": "47610736b38e01715b0a296c81b834f066f12d61c0637d1b2004de0ddea75b73"
+    },
+    {
+      "row": 39,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V6', 'O14'], ['S5', 'V7', 'O8'], ['S8', 'V10', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V6', 'O14'], ['S5', 'V7', 'O8'], ['S8', 'V10', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "4ee3416412e0d10d88f8557a28c8a281df8bd59fd4e496e61fe20f5e3f4acb51"
+    },
+    {
+      "row": 40,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V7', 'O8'], ['S8', 'V1', 'O11'], ['S10', 'V10', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V7', 'O8'], ['S8', 'V1', 'O11'], ['S10', 'V10', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "b79a3fdf95b52eca6460c1b82969bb747e85f04977dbec2508453940e34f1c1e"
+    },
+    {
+      "row": 41,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V9', 'O7'], ['S6', 'V6', 'O12'], ['S8', 'V5', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V9', 'O7'], ['S6', 'V6', 'O12'], ['S8', 'V5', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "1755b4d17967c4a10eaed277ebe7d0a7bf151409f7fc3dda11f8a1fde34e692b"
+    },
+    {
+      "row": 42,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V1', 'O1'], ['S6', 'V11', 'O4'], ['S4', 'V10', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V1', 'O1'], ['S6', 'V11', 'O4'], ['S4', 'V10', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "e7af4617d90c674f6e39bedc9c3a8979926e055ebd58717588116c3c0350c454"
+    },
+    {
+      "row": 43,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O6'], ['S7', 'V8', 'O10'], ['S3', 'V6', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O6'], ['S7', 'V8', 'O10'], ['S3', 'V6', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "af01462a68295ba5692eeb17179448e3804143da6d3b2147c189cbb9e57760ed"
+    },
+    {
+      "row": 44,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V4', 'O3'], ['S1', 'V7', 'O7'], ['S8', 'V9', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V4', 'O3'], ['S1', 'V7', 'O7'], ['S8', 'V9', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "27475f1fbc8925cebc14e801a6060467547d01eff476bda17e8e63c387dd506a"
+    },
+    {
+      "row": 45,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V1', 'O15'], ['S9', 'V6', 'O13'], ['S6', 'V2', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V1', 'O15'], ['S9', 'V6', 'O13'], ['S6', 'V2', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "caf228c69bedf0dd9a02e6fedc9fb5d8754bf07cb859837c2c9c4c696d531d5c"
+    },
+    {
+      "row": 46,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O6'], ['S3', 'V1', 'O16'], ['S4', 'V8', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O6'], ['S3', 'V1', 'O16'], ['S4', 'V8', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "677c8e10b2346c9cfc349ccdb9cd4e93ebba7e6947d9d3d0c02cb7905c24c062"
+    },
+    {
+      "row": 47,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S3', 'V3', 'O21'], ['S10', 'V2', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S3', 'V3', 'O21'], ['S10', 'V2', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "2eecc1e3e26e2e2a9225d21a03aa7709dff1ee7e045e86ad45884d63a4eee03b"
+    },
+    {
+      "row": 48,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V10', 'O7'], ['S4', 'V6', 'O21'], ['S5', 'V8', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V10', 'O7'], ['S4', 'V6', 'O21'], ['S5', 'V8', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "8ef272d4641420495b001755a4e1d74ad62da2e056b7f00a86141be1fffc6bf2"
+    },
+    {
+      "row": 49,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O10'], ['S4', 'V6', 'O3'], ['S6', 'V2', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O10'], ['S4', 'V6', 'O3'], ['S6', 'V2', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "656c5c752f0074d14a80e48d9c07c23156e6c6388b23807578fcedeb2b596938"
+    },
+    {
+      "row": 50,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V3', 'O14'], ['S5', 'V2', 'O7'], ['S7', 'V9', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V3', 'O14'], ['S5', 'V2', 'O7'], ['S7', 'V9', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "46a5fe1ca3d4fe18aa2e405e1c785525b0684958cc521ba1c72d4c6be48a5fa7"
+    },
+    {
+      "row": 51,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O11'], ['S2', 'V6', 'O3'], ['S3', 'V4', 'O9']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O11'], ['S2', 'V6', 'O3'], ['S3', 'V4', 'O9']]_HS_valido_canonico.json",
+      "source_sha256": "7cce570230af45cb0024720a81e21bc5d778aeaca214fdbbcca1e874b8860a1f"
+    },
+    {
+      "row": 52,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V3', 'O2'], ['S1', 'V5', 'O7'], ['S3', 'V1', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V3', 'O2'], ['S1', 'V5', 'O7'], ['S3', 'V1', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "5cfb4dd079f7ccc734290d2bdd59ac92562dd363b07a0754cbaf57ad1036c5e8"
+    },
+    {
+      "row": 53,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V3', 'O3'], ['S2', 'V6', 'O12'], ['S3', 'V1', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V3', 'O3'], ['S2', 'V6', 'O12'], ['S3', 'V1', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "4b288586ae8503d97d20e1120cde1eb6256913c21729a1866ea930916588b39e"
+    },
+    {
+      "row": 54,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O16'], ['S3', 'V6', 'O13'], ['S9', 'V3', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O16'], ['S3', 'V6', 'O13'], ['S9', 'V3', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "7bb7cae70cd6a653fa586fcf7af0db8238b6a69f36dc9257b1f8c00d0db5a1a5"
+    },
+    {
+      "row": 55,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V10', 'O6'], ['S3', 'V1', 'O16'], ['S1', 'V4', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V10', 'O6'], ['S3', 'V1', 'O16'], ['S1', 'V4', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "59b0880eead1b3a98076352029c2f6aa2b0b2aa7e4d0278f05eeca0c0987efbd"
+    },
+    {
+      "row": 56,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V6', 'O17'], ['S8', 'V9', 'O6'], ['S1', 'V5', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V6', 'O17'], ['S8', 'V9', 'O6'], ['S1', 'V5', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "8ca4a5dccf4d4f19d6691c0a411006df2b3d4a65ef32ed706719018f274791ac"
+    },
+    {
+      "row": 57,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O17'], ['S7', 'V11', 'O4'], ['S3', 'V6', 'O14']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O17'], ['S7', 'V11', 'O4'], ['S3', 'V6', 'O14']]_HS_valido_canonico.json",
+      "source_sha256": "580d37f5c0d5e3936e72bb4a3d042ec3ee698e679057709c342cd3b6f6a2e6b8"
+    },
+    {
+      "row": 58,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V2', 'O7'], ['S10', 'V3', 'O17'], ['S4', 'V1', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V2', 'O7'], ['S10', 'V3', 'O17'], ['S4', 'V1', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "bb193fe2316d21ff7a64f8ebea2e6abbfee52058f3312b7db85be98eba50789c"
+    },
+    {
+      "row": 59,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O3'], ['S9', 'V5', 'O19'], ['S3', 'V9', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O3'], ['S9', 'V5', 'O19'], ['S3', 'V9', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "a9d49f881d9d481d19041840d80a7825f29caecbae2c708c2bf56eaa7f85abfd"
+    },
+    {
+      "row": 60,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O1'], ['S8', 'V9', 'O11'], ['S2', 'V7', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O1'], ['S8', 'V9', 'O11'], ['S2', 'V7', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "93167f23abcc72036f1e11e00c763c4c8de796c716036e9113fe31b50f8e3182"
+    },
+    {
+      "row": 61,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O15'], ['S6', 'V1', 'O11'], ['S2', 'V2', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O15'], ['S6', 'V1', 'O11'], ['S2', 'V2', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "fc3613164070e120b2516c845ea61fc0fc2ed2439032aeff67d2cbabe8539e12"
+    },
+    {
+      "row": 62,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V5', 'O6'], ['S10', 'V8', 'O20'], ['S1', 'V3', 'O14']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V5', 'O6'], ['S10', 'V8', 'O20'], ['S1', 'V3', 'O14']]_HS_valido_canonico.json",
+      "source_sha256": "2210725aa385391ce1d67255de9dc892d5c362a29a243c82ea5a9cab8a0494be"
+    },
+    {
+      "row": 63,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O14'], ['S5', 'V8', 'O15'], ['S7', 'V5', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O14'], ['S5', 'V8', 'O15'], ['S7', 'V5', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "8ab5fe71262c43474448ea36c03d4e5cf425549e8927a37d40a79fa73c8fb169"
+    },
+    {
+      "row": 64,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V6', 'O3'], ['S8', 'V10', 'O8'], ['S10', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V6', 'O3'], ['S8', 'V10', 'O8'], ['S10', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "66cc40a5545760dab39bb1a1184328740876c9abb348015af9dbe9a2f2a4b840"
+    },
+    {
+      "row": 65,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S7', 'V6', 'O21'], ['S10', 'V9', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S7', 'V6', 'O21'], ['S10', 'V9', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "71bd547755ce957b5a7894c345ca5a227a9ac58c0ce3ab31366a589fc4854095"
+    },
+    {
+      "row": 66,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O21'], ['S10', 'V8', 'O12'], ['S5', 'V9', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O21'], ['S10', 'V8', 'O12'], ['S5', 'V9', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "303eaa84373c7200a94cb5de4ac8ccddd06133d95f042bf3d62e1b398230916f"
+    },
+    {
+      "row": 67,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V5', 'O19'], ['S5', 'V10', 'O6'], ['S4', 'V9', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V5', 'O19'], ['S5', 'V10', 'O6'], ['S4', 'V9', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "0f2f3b5a5bce60b21d506022e5ff2f65ad3cc186d93129c695135b7a24d7d46d"
+    },
+    {
+      "row": 68,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V1', 'O1'], ['S8', 'V4', 'O9'], ['S7', 'V6', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V1', 'O1'], ['S8', 'V4', 'O9'], ['S7', 'V6', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "1781b70ebc4c783b96310d80ec3bada2f620bbcd963ff8908c86f4014b2d4a8a"
+    },
+    {
+      "row": 69,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V5', 'O19'], ['S6', 'V6', 'O17'], ['S4', 'V8', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V5', 'O19'], ['S6', 'V6', 'O17'], ['S4', 'V8', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "554f84c6ad0a81e81bd123dd3a6d958cef40142ea844d02379e640bd85f7ccef"
+    },
+    {
+      "row": 70,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O20'], ['S9', 'V1', 'O5'], ['S6', 'V9', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O20'], ['S9', 'V1', 'O5'], ['S6', 'V9', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "ec292d94dc63259b2062c8e5df269e2039b043246aadce377837e0c46d6ee4af"
+    },
+    {
+      "row": 71,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O16'], ['S6', 'V4', 'O3'], ['S10', 'V5', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O16'], ['S6', 'V4', 'O3'], ['S10', 'V5', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "ebfbf92fcd2856c40650f05de293563b179c175f9e7cc73f96356cd7f3d206d7"
+    },
+    {
+      "row": 72,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V10', 'O19'], ['S6', 'V4', 'O3'], ['S7', 'V6', 'O14']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V10', 'O19'], ['S6', 'V4', 'O3'], ['S7', 'V6', 'O14']]_HS_valido_canonico.json",
+      "source_sha256": "bcae1a2f84c09e4782917eb2bcd0808043e7d03dd0900863da0eeadbc49b78e6"
+    },
+    {
+      "row": 73,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O7'], ['S5', 'V1', 'O16'], ['S4', 'V9', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O7'], ['S5', 'V1', 'O16'], ['S4', 'V9', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "64f66e4da2da97c3a44c9b961f1f2319c539da8865284d5a3965b39de88b012a"
+    },
+    {
+      "row": 74,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O5'], ['S4', 'V11', 'O9'], ['S10', 'V9', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O5'], ['S4', 'V11', 'O9'], ['S10', 'V9', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "e9ff59167381a61373f534904c40ef48996d1cb0120fe70dae423ad77f3c2b0f"
+    },
+    {
+      "row": 75,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V5', 'O8'], ['S10', 'V9', 'O20'], ['S3', 'V2', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V5', 'O8'], ['S10', 'V9', 'O20'], ['S3', 'V2', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "9b9943bc77bd5e304148e64dc59b2111d7721cd774efa578d4be35cf15db9d06"
+    },
+    {
+      "row": 76,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V11', 'O4'], ['S8', 'V8', 'O12'], ['S4', 'V3', 'O17']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V11', 'O4'], ['S8', 'V8', 'O12'], ['S4', 'V3', 'O17']]_HS_valido_canonico.json",
+      "source_sha256": "0b4582278ca59fd2d161b9c2fc5d9ea40dc25fe859f0d3ce12e388b18e8bc279"
+    },
+    {
+      "row": 77,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V10', 'O19'], ['S3', 'V8', 'O20'], ['S2', 'V1', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V10', 'O19'], ['S3', 'V8', 'O20'], ['S2', 'V1', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "72f0c6679e260aba1be564c6ed88b22c17a4f12db2f56d9a318ea97a06f130ff"
+    },
+    {
+      "row": 78,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V7', 'O8'], ['S2', 'V8', 'O16'], ['S6', 'V1', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V7', 'O8'], ['S2', 'V8', 'O16'], ['S6', 'V1', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "c7bedbe22883afbc9a48c2b280077c2761cdade1389d130c0cdf387e9bd75e59"
+    },
+    {
+      "row": 79,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O5'], ['S8', 'V2', 'O7'], ['S2', 'V4', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O5'], ['S8', 'V2', 'O7'], ['S2', 'V4', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "a25ca386df31f05fb39e76b681a4d4f0c64290d885d5b6541944023f945cfbd6"
+    },
+    {
+      "row": 80,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V1', 'O11'], ['S5', 'V10', 'O7'], ['S2', 'V8', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V1', 'O11'], ['S5', 'V10', 'O7'], ['S2', 'V8', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "d170f1d5259d77ae3193e8852c8cafe23c246e337eb50861b633cd7453a046d9"
+    },
+    {
+      "row": 81,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V5', 'O8'], ['S10', 'V8', 'O12'], ['S5', 'V1', 'O10']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V5', 'O8'], ['S10', 'V8', 'O12'], ['S5', 'V1', 'O10']]_HS_valido_canonico.json",
+      "source_sha256": "c3d509cf0947dc7a44921a81b223f30b158ce3d2dbc754859eb79aef557577bd"
+    },
+    {
+      "row": 82,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V2', 'O8'], ['S8', 'V5', 'O19'], ['S3', 'V10', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V2', 'O8'], ['S8', 'V5', 'O19'], ['S3', 'V10', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "aff9a61d9350c4a4a315c5418efa9d14e43aaec2892d849611ceab661f924513"
+    },
+    {
+      "row": 83,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O8'], ['S7', 'V7', 'O6'], ['S1', 'V1', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O8'], ['S7', 'V7', 'O6'], ['S1', 'V1', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "bca92b87df8d898870e54f2d4313b7bfca6c9c2dc977ae1a6b9283cea5c97fbc"
+    },
+    {
+      "row": 84,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V5', 'O7'], ['S1', 'V1', 'O11'], ['S3', 'V9', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V5', 'O7'], ['S1', 'V1', 'O11'], ['S3', 'V9', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "b083b8006a2b0d2431d44e34af4ab094bb9ca7ad090ab5467c3fbd8ba548f9eb"
+    },
+    {
+      "row": 85,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V1', 'O16'], ['S1', 'V3', 'O21'], ['S7', 'V9', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V1', 'O16'], ['S1', 'V3', 'O21'], ['S7', 'V9', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "1ae381e488afef74857e0063a633c8a8cbbdead304dca6d56db58e0850d0c385"
+    },
+    {
+      "row": 86,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O7'], ['S5', 'V10', 'O8'], ['S6', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O7'], ['S5', 'V10', 'O8'], ['S6', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "4ae4e31662b69fa0f8a280025bafbade9155c0d8a06330ca2fda0f59f5f288c2"
+    },
+    {
+      "row": 87,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S5', 'V9', 'O16'], ['S7', 'V2', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O11'], ['S5', 'V9', 'O16'], ['S7', 'V2', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "30e541c5f74501c667e3af0362d764964efbb78cb61457a5a758d21763219156"
+    },
+    {
+      "row": 88,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V2', 'O6'], ['S9', 'V5', 'O8'], ['S3', 'V1', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V2', 'O6'], ['S9', 'V5', 'O8'], ['S3', 'V1', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "c5281d1fca8fd323cdcf00bed1e572a81ed50bfb67886a5d1732cdb0d8a07f5a"
+    },
+    {
+      "row": 89,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V8', 'O20'], ['S9', 'V9', 'O15'], ['S1', 'V2', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V8', 'O20'], ['S9', 'V9', 'O15'], ['S1', 'V2', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "01f657202f305b75e4b16af96f29b076c6cb091658ff319132efd68ad175a03a"
+    },
+    {
+      "row": 90,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O3'], ['S10', 'V1', 'O1'], ['S5', 'V2', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O3'], ['S10', 'V1', 'O1'], ['S5', 'V2', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "26b42c3f3cc43977d76ca98c448e74d221636e9d4f63f3aeb77b59c53e1976c6"
+    },
+    {
+      "row": 91,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O19'], ['S3', 'V2', 'O8'], ['S4', 'V6', 'O13']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O19'], ['S3', 'V2', 'O8'], ['S4', 'V6', 'O13']]_HS_valido_canonico.json",
+      "source_sha256": "dc408bb2ace40d76077fba4647fefacd6a8fb1566d7337a796e057f834fabd3d"
+    },
+    {
+      "row": 92,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V8', 'O11'], ['S7', 'V7', 'O6'], ['S5', 'V9', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V8', 'O11'], ['S7', 'V7', 'O6'], ['S5', 'V9', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "509299bde837b5babb5d96accb3aecf390298faeb1aeb24316997ccd802f3e14"
+    },
+    {
+      "row": 93,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V2', 'O6'], ['S10', 'V9', 'O11'], ['S9', 'V1', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V2', 'O6'], ['S10', 'V9', 'O11'], ['S9', 'V1', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "cd1867a05661eaef4951af4e9592b72089be153dd3a1ea69e58fc8d7240d0b26"
+    },
+    {
+      "row": 94,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V2', 'O6'], ['S3', 'V1', 'O20'], ['S5', 'V8', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V2', 'O6'], ['S3', 'V1', 'O20'], ['S5', 'V8', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "ed67ecf6ca27df53f4221622ec4c776ed6c0865800cc9ed5fbfffe0096453142"
+    },
+    {
+      "row": 95,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V7', 'O19'], ['S1', 'V6', 'O13'], ['S8', 'V8', 'O10']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V7', 'O19'], ['S1', 'V6', 'O13'], ['S8', 'V8', 'O10']]_HS_valido_canonico.json",
+      "source_sha256": "3dec137e208ad010650652d219331f1d700b5b97032a8e0fe539dd652bc07d77"
+    },
+    {
+      "row": 96,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V10', 'O6'], ['S4', 'V8', 'O16'], ['S5', 'V1', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V10', 'O6'], ['S4', 'V8', 'O16'], ['S5', 'V1', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "31c7e6412d686c260ca42b9b3a084abc0995c72b89b036a4be7cb8c449c0f22b"
+    },
+    {
+      "row": 97,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V2', 'O6'], ['S9', 'V10', 'O7'], ['S2', 'V8', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V2', 'O6'], ['S9', 'V10', 'O7'], ['S2', 'V8', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "c73859a387d49d5397df7953ab68ee52620281acda5d42573a76a4ec3104f6b7"
+    },
+    {
+      "row": 98,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V7', 'O6'], ['S10', 'V10', 'O8'], ['S4', 'V6', 'O21']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V7', 'O6'], ['S10', 'V10', 'O8'], ['S4', 'V6', 'O21']]_HS_valido_canonico.json",
+      "source_sha256": "bb62bb74c66ad8d8e0ca7f0b61bb6856da774d6ec7a0820c9f12b248b8ad52f0"
+    },
+    {
+      "row": 99,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V1', 'O10'], ['S4', 'V7', 'O6'], ['S7', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V1', 'O10'], ['S4', 'V7', 'O6'], ['S7', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "e341b389518432cf478dee3b5a7d534f69ab58438afa8f8cebfe28aebda1fd23"
+    },
+    {
+      "row": 100,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O11'], ['S5', 'V5', 'O19'], ['S1', 'V8', 'O10']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O11'], ['S5', 'V5', 'O19'], ['S1', 'V8', 'O10']]_HS_valido_canonico.json",
+      "source_sha256": "f0d070b56ad946736f8c2f0e75911b29bef6caed7a53daeedd688758fa4ad9cd"
+    },
+    {
+      "row": 101,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V6', 'O12'], ['S2', 'V2', 'O6'], ['S1', 'V5', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V6', 'O12'], ['S2', 'V2', 'O6'], ['S1', 'V5', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "2069b1927d8af57db4f43fde51eadc0211d30a4ea0b2dc9e6267d9587aa8bb85"
+    },
+    {
+      "row": 102,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O17'], ['S10', 'V8', 'O10'], ['S7', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V3', 'O17'], ['S10', 'V8', 'O10'], ['S7', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "fc9b52a6d73891151d566f3a8f0c76dcc10aa08c5e0434dacde68e5a0c580a3e"
+    },
+    {
+      "row": 103,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O12'], ['S9', 'V4', 'O3'], ['S6', 'V9', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O12'], ['S9', 'V4', 'O3'], ['S6', 'V9', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "218084e68f793311de64941f797dcfd608b05c2207471fbe9f66afd89b464a4e"
+    },
+    {
+      "row": 104,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V2', 'O8'], ['S5', 'V1', 'O20'], ['S9', 'V9', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V2', 'O8'], ['S5', 'V1', 'O20'], ['S9', 'V9', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "505f603c572076a6b68dba0f3b76394b57d0fca0948145e7594d4ec9ec75d9c0"
+    },
+    {
+      "row": 105,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O16'], ['S5', 'V6', 'O21'], ['S4', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O16'], ['S5', 'V6', 'O21'], ['S4', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "995979920eec643559e200691e50b3d9def2a7d4097e49ec4cae62e3a5467f55"
+    },
+    {
+      "row": 106,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O16'], ['S10', 'V6', 'O21'], ['S3', 'V10', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O16'], ['S10', 'V6', 'O21'], ['S3', 'V10', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "f96b76b43f5ee743c91abba037997eaa8f366111d0f58b4d272edbbcf765b73e"
+    },
+    {
+      "row": 107,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V11', 'O4'], ['S9', 'V6', 'O1'], ['S7', 'V5', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V11', 'O4'], ['S9', 'V6', 'O1'], ['S7', 'V5', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "83083db05e77307b3200e62527bed9253cea5577b80e8dc359e5d3dc997c5707"
+    },
+    {
+      "row": 108,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V8', 'O13'], ['S2', 'V3', 'O21'], ['S1', 'V5', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V8', 'O13'], ['S2', 'V3', 'O21'], ['S1', 'V5', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "4c575d670d69c974c381dca21d9810eb6df7a1d063b29ae17f919acaa2c4810e"
+    },
+    {
+      "row": 109,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V10', 'O19'], ['S4', 'V3', 'O17'], ['S6', 'V4', 'O9']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V10', 'O19'], ['S4', 'V3', 'O17'], ['S6', 'V4', 'O9']]_HS_valido_canonico.json",
+      "source_sha256": "ee52acdfbdc3bbf660e93e80f028426ce9e9fa91cad173d476f77f747f4f29c7"
+    },
+    {
+      "row": 110,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O3'], ['S1', 'V1', 'O10'], ['S2', 'V6', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O3'], ['S1', 'V1', 'O10'], ['S2', 'V6', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "2464f5665335be1d629488b56a3bf79dcef16497aa03a8dcc58aa294a619d7f4"
+    },
+    {
+      "row": 111,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O11'], ['S9', 'V8', 'O16'], ['S10', 'V2', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O11'], ['S9', 'V8', 'O16'], ['S10', 'V2', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "a6cd81ccd0f68c5b600691f407a86c70baa746df4e16853d5cf1ec3159066fc4"
+    },
+    {
+      "row": 112,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O15'], ['S7', 'V9', 'O11'], ['S6', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O15'], ['S7', 'V9', 'O11'], ['S6', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "2bee9b6bbe898389de7f5728618855527ea39931a1bbb47c1e327dbf9e30bd36"
+    },
+    {
+      "row": 113,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V10', 'O6'], ['S9', 'V9', 'O5'], ['S4', 'V3', 'O21']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V10', 'O6'], ['S9', 'V9', 'O5'], ['S4', 'V3', 'O21']]_HS_valido_canonico.json",
+      "source_sha256": "30ef3932ab226ce262e6d0443d93bc342d7e679171b6efe7bd539e64b039bba3"
+    },
+    {
+      "row": 114,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V1', 'O1'], ['S2', 'V6', 'O13'], ['S5', 'V2', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V1', 'O1'], ['S2', 'V6', 'O13'], ['S5', 'V2', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "f9760b0fabdb5320f8ad628b4e65b07097c0187198b3cd3d5cd57a40add1c031"
+    },
+    {
+      "row": 115,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V6', 'O12'], ['S7', 'V11', 'O4'], ['S4', 'V2', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V6', 'O12'], ['S7', 'V11', 'O4'], ['S4', 'V2', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "7b11e0381a5e0262287e6b99b485aea399cf109794f46f6594551816e2a8023c"
+    },
+    {
+      "row": 116,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V2', 'O7'], ['S8', 'V9', 'O20'], ['S10', 'V6', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V2', 'O7'], ['S8', 'V9', 'O20'], ['S10', 'V6', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "091ed0b465e560c39add1b24f8f9a0b1f914aa6b079ac25fbd6cd72864f586b4"
+    },
+    {
+      "row": 117,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V11', 'O9'], ['S2', 'V6', 'O14'], ['S10', 'V1', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V11', 'O9'], ['S2', 'V6', 'O14'], ['S10', 'V1', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "949823cb8d19529d96eac9a422f693f276fcf86000d65bb79e66ab5dd518bb83"
+    },
+    {
+      "row": 118,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S6', 'V7', 'O8'], ['S2', 'V9', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S6', 'V7', 'O8'], ['S2', 'V9', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "2a26271ed5d4e71873205284ae84782f68fd29ce59e9ec9e06783bac8ee552bf"
+    },
+    {
+      "row": 119,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O12'], ['S3', 'V1', 'O10'], ['S2', 'V10', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V8', 'O12'], ['S3', 'V1', 'O10'], ['S2', 'V10', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "0b6795b51c93d9200fed2581ea121db136ed1ccffee1534ff10ed069da2e62fd"
+    },
+    {
+      "row": 120,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V5', 'O7'], ['S2', 'V7', 'O8'], ['S7', 'V6', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V5', 'O7'], ['S2', 'V7', 'O8'], ['S7', 'V6', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "061ec787d2f4ffb171e479a071ef1672727f63a047794127446d4e453aa40112"
+    },
+    {
+      "row": 121,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V2', 'O8'], ['S10', 'V9', 'O6'], ['S8', 'V1', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V2', 'O8'], ['S10', 'V9', 'O6'], ['S8', 'V1', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "b64be9c3f02c842c1c2f707de6ddaf288556c10c2c3ec0ee05d4adbf0efbb78e"
+    },
+    {
+      "row": 122,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O6'], ['S10', 'V8', 'O11'], ['S3', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V10', 'O6'], ['S10', 'V8', 'O11'], ['S3', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "a0a36a467983c9a065fa425059c2e3728b735246f14472f2518ffdc269980f04"
+    },
+    {
+      "row": 123,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O2'], ['S8', 'V5', 'O8'], ['S2', 'V9', 'O10']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O2'], ['S8', 'V5', 'O8'], ['S2', 'V9', 'O10']]_HS_valido_canonico.json",
+      "source_sha256": "ab8f89f2e333fa78a53b9c096ed38cd2d945c801dbfc613e6d6cd34575cc5258"
+    },
+    {
+      "row": 124,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O5'], ['S5', 'V9', 'O20'], ['S2', 'V10', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V3', 'O5'], ['S5', 'V9', 'O20'], ['S2', 'V10', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "36e92e302cd1a0e66581dc24a9099ad210ca061d8b6f171e60728fadf7281e86"
+    },
+    {
+      "row": 125,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V3', 'O2'], ['S10', 'V6', 'O14'], ['S3', 'V2', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V3', 'O2'], ['S10', 'V6', 'O14'], ['S3', 'V2', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "35802577cd40d090ac78739d3e4fe168532a3fbde954b5fbd472fc2e00d91127"
+    },
+    {
+      "row": 126,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V10', 'O8'], ['S2', 'V1', 'O15'], ['S3', 'V5', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V10', 'O8'], ['S2', 'V1', 'O15'], ['S3', 'V5', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "d63a206a42d0d312c13a4928c8c6f051d4d9e4f81cc0c5d0a961b8038b83aee6"
+    },
+    {
+      "row": 127,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O7'], ['S3', 'V9', 'O1'], ['S1', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O7'], ['S3', 'V9', 'O1'], ['S1', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "91c631bc037a66b9c7daabe07f2d68a6d624deb6ca36f1f94ae8a6882e8c56b1"
+    },
+    {
+      "row": 128,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V11', 'O9'], ['S1', 'V8', 'O13'], ['S2', 'V3', 'O2']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V11', 'O9'], ['S1', 'V8', 'O13'], ['S2', 'V3', 'O2']]_HS_valido_canonico.json",
+      "source_sha256": "e4e04209428106c050680c0a222c3866446e50872c9f0597d0a2f78cbbbfcf53"
+    },
+    {
+      "row": 129,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V2', 'O8'], ['S1', 'V1', 'O16'], ['S10', 'V6', 'O12']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V2', 'O8'], ['S1', 'V1', 'O16'], ['S10', 'V6', 'O12']]_HS_valido_canonico.json",
+      "source_sha256": "b0aa3ee6b25de39408f73f4378850cbd6b331273c899a4e1c3272607c97978f6"
+    },
+    {
+      "row": 130,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V1', 'O11'], ['S5', 'V4', 'O9'], ['S3', 'V10', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V1', 'O11'], ['S5', 'V4', 'O9'], ['S3', 'V10', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "a5448bb75af2e94df6d55d3cc15f9104b3ab622da01eeef576e27e903a49eb43"
+    },
+    {
+      "row": 131,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V9', 'O5'], ['S8', 'V3', 'O21'], ['S1', 'V1', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V9', 'O5'], ['S8', 'V3', 'O21'], ['S1', 'V1', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "f2159b1cea0c2c1f6ba1bbf1690a5ea67d82f0b382395bc8e1717ea452d4121a"
+    },
+    {
+      "row": 132,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V10', 'O7'], ['S10', 'V9', 'O19'], ['S9', 'V6', 'O17']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V10', 'O7'], ['S10', 'V9', 'O19'], ['S9', 'V6', 'O17']]_HS_valido_canonico.json",
+      "source_sha256": "2580b449983be99317f0311fa4133a50ad998fedba6f5b7842362de55c1a2c89"
+    },
+    {
+      "row": 133,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V6', 'O12'], ['S3', 'V1', 'O11'], ['S10', 'V8', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V6', 'O12'], ['S3', 'V1', 'O11'], ['S10', 'V8', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "9aa02b303f1eed887705117c8aa7988dbad3f247195699b475797e7ffcb15599"
+    },
+    {
+      "row": 134,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V7', 'O7'], ['S9', 'V6', 'O3'], ['S2', 'V8', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V7', 'O7'], ['S9', 'V6', 'O3'], ['S2', 'V8', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "3057c40f603ed39b083d52931b983a8d7cebdcf217ae1d5e5325869581232e4f"
+    },
+    {
+      "row": 135,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O10'], ['S5', 'V9', 'O6'], ['S6', 'V6', 'O12']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V1', 'O10'], ['S5', 'V9', 'O6'], ['S6', 'V6', 'O12']]_HS_valido_canonico.json",
+      "source_sha256": "ca87b77c10d72f249c157c6cd9dc63e02f4e2f3f74818f6c3a641e32f63cfdbd"
+    },
+    {
+      "row": 136,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O20'], ['S3', 'V7', 'O8'], ['S7', 'V3', 'O17']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O20'], ['S3', 'V7', 'O8'], ['S7', 'V3', 'O17']]_HS_valido_canonico.json",
+      "source_sha256": "a0bdb4ca1aa6580c0d7c55b6ff2e474af5dc9a1890aa562add19cbb33f3501c3"
+    },
+    {
+      "row": 137,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V3', 'O2'], ['S9', 'V10', 'O8'], ['S10', 'V9', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V3', 'O2'], ['S9', 'V10', 'O8'], ['S10', 'V9', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "d49a27606a1eb1e17ab73585a0f080761b3a3f0e52681c8882cce0ac2e9bb5c4"
+    },
+    {
+      "row": 138,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O10'], ['S4', 'V3', 'O2'], ['S5', 'V10', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O10'], ['S4', 'V3', 'O2'], ['S5', 'V10', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "557a714fab57137bce7b4b5ea4601fe8faadf6f478a9ffb6d7259db1d14aaacc"
+    },
+    {
+      "row": 139,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V1', 'O15'], ['S5', 'V11', 'O9'], ['S2', 'V8', 'O12']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V1', 'O15'], ['S5', 'V11', 'O9'], ['S2', 'V8', 'O12']]_HS_valido_canonico.json",
+      "source_sha256": "f809276c9082c1d9c6af55c917e01bd4c3bc6f082324b1e35437af6066af4dcf"
+    },
+    {
+      "row": 140,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V3', 'O5'], ['S6', 'V9', 'O6'], ['S4', 'V6', 'O14']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V3', 'O5'], ['S6', 'V9', 'O6'], ['S4', 'V6', 'O14']]_HS_valido_canonico.json",
+      "source_sha256": "9983b6bccdfe8d00bad254bf72d4ad02bdb7ccbdd366d83f065759b5a649486e"
+    },
+    {
+      "row": 141,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O12'], ['S2', 'V9', 'O15'], ['S10', 'V2', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O12'], ['S2', 'V9', 'O15'], ['S10', 'V2', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "90b85c28474be67791bc7c8df2aae953bc1f555a436d132d7b1547b1591119ce"
+    },
+    {
+      "row": 142,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V4', 'O9'], ['S10', 'V1', 'O15'], ['S7', 'V9', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V4', 'O9'], ['S10', 'V1', 'O15'], ['S7', 'V9', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "0dc65fe620f7c6a4196b9347ef0f8933a32249e4d250f66f35cca6b48d19528d"
+    },
+    {
+      "row": 143,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V5', 'O19'], ['S4', 'V2', 'O6'], ['S6', 'V11', 'O9']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V5', 'O19'], ['S4', 'V2', 'O6'], ['S6', 'V11', 'O9']]_HS_valido_canonico.json",
+      "source_sha256": "c37367f08a7bc738054d104ac3f5ab6147647ab7de19b2cf77383182b5f09275"
+    },
+    {
+      "row": 144,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V5', 'O19'], ['S7', 'V10', 'O8'], ['S1', 'V8', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V5', 'O19'], ['S7', 'V10', 'O8'], ['S1', 'V8', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "9b60eeea4220961093ecb48f2708ff06fd72e6e99a08aabf1d07a249d09bc1eb"
+    },
+    {
+      "row": 145,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V11', 'O4'], ['S3', 'V3', 'O14'], ['S5', 'V4', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V11', 'O4'], ['S3', 'V3', 'O14'], ['S5', 'V4', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "23d9dafa245e8be155c017498267792aae9a49de4e6d3d9e7ed5c05a686e675a"
+    },
+    {
+      "row": 146,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V6', 'O1'], ['S10', 'V5', 'O8'], ['S5', 'V7', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V6', 'O1'], ['S10', 'V5', 'O8'], ['S5', 'V7', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "a5f6167f062eb92fd447d4709c29f1386c0a6b88c7f5f11151e2da9db1855434"
+    },
+    {
+      "row": 147,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V10', 'O8'], ['S2', 'V3', 'O5'], ['S5', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V10', 'O8'], ['S2', 'V3', 'O5'], ['S5', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "57b7f876158231c68cfe2c33b7256232640b882c27e6370c2e13a1cc9e6586b7"
+    },
+    {
+      "row": 148,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O5'], ['S1', 'V5', 'O7'], ['S4', 'V11', 'O9']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O5'], ['S1', 'V5', 'O7'], ['S4', 'V11', 'O9']]_HS_valido_canonico.json",
+      "source_sha256": "bfc94b427dd14baafc6cec5b92edf0fb20a0011a1097aeff0478f2bdb50a1a4f"
+    },
+    {
+      "row": 149,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O11'], ['S10', 'V9', 'O8'], ['S8', 'V7', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O11'], ['S10', 'V9', 'O8'], ['S8', 'V7', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "8607dd4f8f2765af57c05536c0dadfb91c7f9e34f6621cf837b12dff60abe58f"
+    },
+    {
+      "row": 150,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O20'], ['S9', 'V6', 'O17'], ['S2', 'V4', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O20'], ['S9', 'V6', 'O17'], ['S2', 'V4', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "01b67ca6f02f927b064cf7bcc0474144cccb864e9804ee12270f03b5246b6794"
+    },
+    {
+      "row": 151,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O11'], ['S2', 'V9', 'O8'], ['S1', 'V6', 'O12']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V8', 'O11'], ['S2', 'V9', 'O8'], ['S1', 'V6', 'O12']]_HS_valido_canonico.json",
+      "source_sha256": "53373d6902d7ccf21b0aaceb75982ced0bb847330970bc89ef48ca0fd7743d09"
+    },
+    {
+      "row": 152,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V5', 'O19'], ['S7', 'V6', 'O14'], ['S9', 'V8', 'O10']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V5', 'O19'], ['S7', 'V6', 'O14'], ['S9', 'V8', 'O10']]_HS_valido_canonico.json",
+      "source_sha256": "4885e6371bdba9372ad17d6958dc2b98719e03ab69eb818afc08ecf87288f4c1"
+    },
+    {
+      "row": 153,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O1'], ['S4', 'V9', 'O6'], ['S10', 'V1', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O1'], ['S4', 'V9', 'O6'], ['S10', 'V1', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "82882e5afe2eeccfcc9e53d758b40cf6dc9837391625357ce07353aea814de7a"
+    },
+    {
+      "row": 154,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O13'], ['S3', 'V7', 'O19'], ['S9', 'V5', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O13'], ['S3', 'V7', 'O19'], ['S9', 'V5', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "03b6762c3917bab14f5258a05a392c5f283dbd47ac3f1925c83777f3532babe0"
+    },
+    {
+      "row": 155,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V5', 'O8'], ['S6', 'V2', 'O7'], ['S5', 'V9', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V5', 'O8'], ['S6', 'V2', 'O7'], ['S5', 'V9', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "e17f38782fda6559445d64d1750b723ee0cbe148d78ccf801f942de94bd60ea0"
+    },
+    {
+      "row": 156,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V5', 'O7'], ['S3', 'V1', 'O16'], ['S6', 'V6', 'O18']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V5', 'O7'], ['S3', 'V1', 'O16'], ['S6', 'V6', 'O18']]_HS_valido_canonico.json",
+      "source_sha256": "6a647588941f270bae271531733b57b3eea3b98fdcf2dfdf4d36ee752385c3e7"
+    },
+    {
+      "row": 157,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V9', 'O20'], ['S8', 'V10', 'O7'], ['S1', 'V5', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V9', 'O20'], ['S8', 'V10', 'O7'], ['S1', 'V5', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "a5647b27b172119a7e39426ed1ef7a056c4880d30996c91e24f0013151b36bbd"
+    },
+    {
+      "row": 158,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V6', 'O17'], ['S1', 'V8', 'O13'], ['S9', 'V4', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V6', 'O17'], ['S1', 'V8', 'O13'], ['S9', 'V4', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "43c5869f47fa006ac4392e5777b7610eaf9bd25eca8aecb6b7025bb0f5c31b7d"
+    },
+    {
+      "row": 159,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O10'], ['S6', 'V8', 'O15'], ['S5', 'V10', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O10'], ['S6', 'V8', 'O15'], ['S5', 'V10', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "bbb374510661a0cc085d430c6afdd5078f4e079fc94cda3e877bcac292d4b9a7"
+    },
+    {
+      "row": 160,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V1', 'O5'], ['S9', 'V3', 'O3'], ['S2', 'V2', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V1', 'O5'], ['S9', 'V3', 'O3'], ['S2', 'V2', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "aaff78f1a28948f598dfca14c220e668764a1b13a7c3279e00675e6c16b1de81"
+    },
+    {
+      "row": 161,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O7'], ['S3', 'V2', 'O6'], ['S9', 'V1', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V9', 'O7'], ['S3', 'V2', 'O6'], ['S9', 'V1', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "9350172e2a0b368693f01f9efb4e7e76869276ccf3bb69845537908474ea5f39"
+    },
+    {
+      "row": 162,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O19'], ['S4', 'V4', 'O3'], ['S10', 'V11', 'O9']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O19'], ['S4', 'V4', 'O3'], ['S10', 'V11', 'O9']]_HS_valido_canonico.json",
+      "source_sha256": "88513644ed20e3d1e138fe6de97091ca212274de6d4751ac1e3bd28dc2ed8b0e"
+    },
+    {
+      "row": 163,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O12'], ['S8', 'V6', 'O17'], ['S10', 'V9', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O12'], ['S8', 'V6', 'O17'], ['S10', 'V9', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "b741a1875f4177e87911a5aaa739b5f934c4d465c35573ae0d773df4e8d95c04"
+    },
+    {
+      "row": 164,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O13'], ['S9', 'V2', 'O7'], ['S8', 'V9', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O13'], ['S9', 'V2', 'O7'], ['S8', 'V9', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "ca99223019dae16462de3531fd189d63815791f279ad5e20c2da5d71b68301cd"
+    },
+    {
+      "row": 165,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O8'], ['S6', 'V1', 'O11'], ['S9', 'V8', 'O13']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O8'], ['S6', 'V1', 'O11'], ['S9', 'V8', 'O13']]_HS_valido_canonico.json",
+      "source_sha256": "6e146d4e231927a14a6de73167a70a95108c1692324de5f3aaecd33f58226263"
+    },
+    {
+      "row": 166,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V7', 'O8'], ['S2', 'V4', 'O3'], ['S10', 'V1', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V7', 'O8'], ['S2', 'V4', 'O3'], ['S10', 'V1', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "747bf47ded6d38667f55c3d149385ff9e2a87b36ed16d213f7e5f440c5a6852b"
+    },
+    {
+      "row": 167,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V7', 'O7'], ['S10', 'V9', 'O19'], ['S6', 'V8', 'O20']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V7', 'O7'], ['S10', 'V9', 'O19'], ['S6', 'V8', 'O20']]_HS_valido_canonico.json",
+      "source_sha256": "74d50600706793798df68d1f9c6d8251180abd8eb23da2629584149fa10da374"
+    },
+    {
+      "row": 168,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V4', 'O3'], ['S5', 'V7', 'O8'], ['S10', 'V3', 'O2']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V4', 'O3'], ['S5', 'V7', 'O8'], ['S10', 'V3', 'O2']]_HS_valido_canonico.json",
+      "source_sha256": "f91fb9ca83dae0a6dec32797fa7d77ea1b81e2cdec21907cd2234874c97509c4"
+    },
+    {
+      "row": 169,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V4', 'O9'], ['S4', 'V7', 'O19'], ['S8', 'V2', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V4', 'O9'], ['S4', 'V7', 'O19'], ['S8', 'V2', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "f7f869f46972b58ddd50c32422d6093cda5bbfd391bfa5717650c99213e15ab9"
+    },
+    {
+      "row": 170,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V8', 'O20'], ['S5', 'V6', 'O17'], ['S7', 'V7', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V8', 'O20'], ['S5', 'V6', 'O17'], ['S7', 'V7', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "ed1f3a529c98d42daabf3bbea50687c1323a4da13d619d10610cb59624ef3c6e"
+    },
+    {
+      "row": 171,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O1'], ['S4', 'V3', 'O14'], ['S10', 'V1', 'O15']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O1'], ['S4', 'V3', 'O14'], ['S10', 'V1', 'O15']]_HS_valido_canonico.json",
+      "source_sha256": "ae25e60a0a976566efc72268c580bb767bb4a5e2410b3f55aedb2897a241d5b7"
+    },
+    {
+      "row": 172,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O20'], ['S9', 'V6', 'O3'], ['S10', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V9', 'O20'], ['S9', 'V6', 'O3'], ['S10', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "416e237834178303b8e68fdc2f3635719c61a139ef587298cf90420315fe9572"
+    },
+    {
+      "row": 173,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V2', 'O8'], ['S7', 'V7', 'O7'], ['S5', 'V6', 'O18']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V2', 'O8'], ['S7', 'V7', 'O7'], ['S5', 'V6', 'O18']]_HS_valido_canonico.json",
+      "source_sha256": "df734d036224393eddf2a701038e35d360b63840ae98228dfa569b71d7d51351"
+    },
+    {
+      "row": 174,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S6', 'V10', 'O8'], ['S4', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S6', 'V10', 'O8'], ['S4', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "9e1c88bbffcc2a3c5a6c47e74c7e8c9e72b6b030286f3bdac4230e6a343d48b7"
+    },
+    {
+      "row": 175,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V4', 'O9'], ['S1', 'V8', 'O16'], ['S5', 'V10', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V4', 'O9'], ['S1', 'V8', 'O16'], ['S5', 'V10', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "26a5b3b8bdc1e79c582913e603e092ebdc77f355dc6e305da625af9da592da60"
+    },
+    {
+      "row": 176,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O20'], ['S7', 'V10', 'O8'], ['S5', 'V7', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V8', 'O20'], ['S7', 'V10', 'O8'], ['S5', 'V7', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "353fb2c73553e12bbc97920f88deec1b77dceea45af1d80a36f28e1eb91cf8de"
+    },
+    {
+      "row": 177,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O10'], ['S6', 'V5', 'O6'], ['S7', 'V6', 'O12']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O10'], ['S6', 'V5', 'O6'], ['S7', 'V6', 'O12']]_HS_valido_canonico.json",
+      "source_sha256": "8a0193bc7c2278990ca7b7f0047676c34f30bdbd4355f0269af5a41bc1e412c4"
+    },
+    {
+      "row": 178,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S4', 'V9', 'O7'], ['S9', 'V8', 'O13']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S4', 'V9', 'O7'], ['S9', 'V8', 'O13']]_HS_valido_canonico.json",
+      "source_sha256": "b30c7e7e5296b12c1d2e10c8c22c6a083e556352b0ba5b47d92b50a3c80f2659"
+    },
+    {
+      "row": 179,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O20'], ['S10', 'V7', 'O7'], ['S7', 'V11', 'O4']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V1', 'O20'], ['S10', 'V7', 'O7'], ['S7', 'V11', 'O4']]_HS_valido_canonico.json",
+      "source_sha256": "53b48d4ff909540f6566a454bccf13768d2592dda6ae6454c0b779ad3d513d66"
+    },
+    {
+      "row": 180,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V8', 'O12'], ['S9', 'V4', 'O9'], ['S2', 'V5', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V8', 'O12'], ['S9', 'V4', 'O9'], ['S2', 'V5', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "44cd32470aa604f2e70b0c6193788d6a4e24a24aeeaf62c62e4e5fab277130b5"
+    },
+    {
+      "row": 181,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S2', 'V9', 'O15'], ['S6', 'V1', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V6', 'O18'], ['S2', 'V9', 'O15'], ['S6', 'V1', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "b378f639a78e312fb2a109ba98813d51e08a0d3b92c3476153ebe6acbe8fc202"
+    },
+    {
+      "row": 182,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O8'], ['S10', 'V10', 'O7'], ['S4', 'V7', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O8'], ['S10', 'V10', 'O7'], ['S4', 'V7', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "b3442498059505c47c286ca49a778a7f2c23b19e02f42fac6a5059e8f10d271d"
+    },
+    {
+      "row": 183,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V2', 'O19'], ['S8', 'V6', 'O18'], ['S5', 'V9', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V2', 'O19'], ['S8', 'V6', 'O18'], ['S5', 'V9', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "c38d3df260f1a3d5cf8a0fbedef7eeb09a97f45b15660017e9c6c4d0bdce71fb"
+    },
+    {
+      "row": 184,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V3', 'O21'], ['S8', 'V8', 'O10'], ['S10', 'V6', 'O14']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V3', 'O21'], ['S8', 'V8', 'O10'], ['S10', 'V6', 'O14']]_HS_valido_canonico.json",
+      "source_sha256": "682710e6407dcc54492fd6ef19010ea85ed8de0c0d7769b9d2ad6a605636ae33"
+    },
+    {
+      "row": 185,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V1', 'O5'], ['S7', 'V5', 'O19'], ['S1', 'V9', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V1', 'O5'], ['S7', 'V5', 'O19'], ['S1', 'V9', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "9e168107a9cade4ab7cec6d441d4bc10208a1d19412458993e40bca86f49de54"
+    },
+    {
+      "row": 186,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O12'], ['S3', 'V2', 'O19'], ['S7', 'V8', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V6', 'O12'], ['S3', 'V2', 'O19'], ['S7', 'V8', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "18ed1e568525cd758e52381cb294ee16be3365873284e60f10c41af0223528ce"
+    },
+    {
+      "row": 187,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O3'], ['S2', 'V9', 'O20'], ['S7', 'V5', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V3', 'O3'], ['S2', 'V9', 'O20'], ['S7', 'V5', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "762c159f451c6a442aff03a84df820c001532acb56b90c7d22dfa49e1b8530c3"
+    },
+    {
+      "row": 188,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V5', 'O6'], ['S5', 'V6', 'O13'], ['S1', 'V9', 'O5']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V5', 'O6'], ['S5', 'V6', 'O13'], ['S1', 'V9', 'O5']]_HS_valido_canonico.json",
+      "source_sha256": "1f7b9d45058510d69ec88296e9e5e9fa5e9c7e69e4cc8b3be84d704fec40d6aa"
+    },
+    {
+      "row": 189,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O7'], ['S5', 'V9', 'O5'], ['S3', 'V6', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O7'], ['S5', 'V9', 'O5'], ['S3', 'V6', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "7478a2fa3b762896dec78e7d83a98f59bdf093d50fde9c9aaed17b01c3dd31bd"
+    },
+    {
+      "row": 190,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V4', 'O9'], ['S1', 'V1', 'O1'], ['S8', 'V2', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V4', 'O9'], ['S1', 'V1', 'O1'], ['S8', 'V2', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "3076c5883a3e3a01f3beb92e6f1a598e4d7f132b3d076dc31a52067c81b70886"
+    },
+    {
+      "row": 191,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O16'], ['S5', 'V3', 'O17'], ['S9', 'V7', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O16'], ['S5', 'V3', 'O17'], ['S9', 'V7', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "2c7f42b919e211f9ddc288ea6fe66c1a9cef4ff1009e73089dedf53f984089e0"
+    },
+    {
+      "row": 192,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V9', 'O10'], ['S10', 'V1', 'O16'], ['S1', 'V2', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S9', 'V9', 'O10'], ['S10', 'V1', 'O16'], ['S1', 'V2', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "c49d478686eaa84586bbab69c0e67168470a746ed7519a5f64086a302a0f1ee5"
+    },
+    {
+      "row": 193,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V1', 'O20'], ['S9', 'V6', 'O13'], ['S4', 'V10', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V1', 'O20'], ['S9', 'V6', 'O13'], ['S4', 'V10', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "65661a292a8c649c8d542c2984d287c06a892369d07f6f3f71d61fcc751642b2"
+    },
+    {
+      "row": 194,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O13'], ['S8', 'V3', 'O3'], ['S3', 'V1', 'O11']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V8', 'O13'], ['S8', 'V3', 'O3'], ['S3', 'V1', 'O11']]_HS_valido_canonico.json",
+      "source_sha256": "e4124a4d656ffc627d29adac869e34a37355f6be19c2be035efb507361a98651"
+    },
+    {
+      "row": 195,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V2', 'O19'], ['S1', 'V5', 'O8'], ['S9', 'V6', 'O17']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V2', 'O19'], ['S1', 'V5', 'O8'], ['S9', 'V6', 'O17']]_HS_valido_canonico.json",
+      "source_sha256": "9284d9bb803926a20d02af695b75b3dfa32ea6774bf3d92d9b3b435a1d070c91"
+    },
+    {
+      "row": 196,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V3', 'O14'], ['S6', 'V10', 'O8'], ['S10', 'V5', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V3', 'O14'], ['S6', 'V10', 'O8'], ['S10', 'V5', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "010d97ddeb286c69144d789d0101ded97d78ab29753c8bfc5519ae376b894783"
+    },
+    {
+      "row": 197,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O11'], ['S8', 'V4', 'O3'], ['S4', 'V5', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S7', 'V9', 'O11'], ['S8', 'V4', 'O3'], ['S4', 'V5', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "6517faeb8ae70b5553981a602462f6f9c7081b4386aa1daeddfd73b26e7dc1dc"
+    },
+    {
+      "row": 198,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V7', 'O8'], ['S4', 'V6', 'O21'], ['S9', 'V9', 'O6']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V7', 'O8'], ['S4', 'V6', 'O21'], ['S9', 'V9', 'O6']]_HS_valido_canonico.json",
+      "source_sha256": "63355fbea87bec5f461651d74f2eefcce38240e3b25c005231fad06776cf9ea1"
+    },
+    {
+      "row": 199,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V1', 'O20'], ['S8', 'V6', 'O17'], ['S9', 'V10', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S6', 'V1', 'O20'], ['S8', 'V6', 'O17'], ['S9', 'V10', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "ef9d6f9023a85dbe80c2a4e1564d4abc1f39c9564376cdddadb9d1262e2341ff"
+    },
+    {
+      "row": 200,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V5', 'O8'], ['S7', 'V9', 'O20'], ['S1', 'V4', 'O3']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V5', 'O8'], ['S7', 'V9', 'O20'], ['S1', 'V4', 'O3']]_HS_valido_canonico.json",
+      "source_sha256": "cd53bdca9291b4826b05c08a5648d4c2fa15474b976509f7a927537d1dc3181a"
+    },
+    {
+      "row": 201,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V4', 'O9'], ['S6', 'V8', 'O12'], ['S8', 'V10', 'O7']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S3', 'V4', 'O9'], ['S6', 'V8', 'O12'], ['S8', 'V10', 'O7']]_HS_valido_canonico.json",
+      "source_sha256": "c08f82e89166bcaae1fd2e37d00a7548e8ea68c167bab02b3c4f10158a6990fe"
+    },
+    {
+      "row": 202,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O19'], ['S3', 'V3', 'O3'], ['S9', 'V8', 'O10']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V9', 'O19'], ['S3', 'V3', 'O3'], ['S9', 'V8', 'O10']]_HS_valido_canonico.json",
+      "source_sha256": "46ca5be6141cb85ba0f030ea3fdc7241e2359a5d39a72860caf3e01599a5b3ee"
+    },
+    {
+      "row": 203,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V7', 'O7'], ['S3', 'V1', 'O20'], ['S9', 'V9', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V7', 'O7'], ['S3', 'V1', 'O20'], ['S9', 'V9', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "a65a1b3abbac864a6c3e51600c05de4a6312fd3071e5a906830468da82dba53b"
+    },
+    {
+      "row": 204,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V1', 'O1'], ['S10', 'V9', 'O5'], ['S1', 'V2', 'O19']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S5', 'V1', 'O1'], ['S10', 'V9', 'O5'], ['S1', 'V2', 'O19']]_HS_valido_canonico.json",
+      "source_sha256": "663c1999966d3f2589264c8e04615e31e0b81917295df645cdaf91dc426f4872"
+    },
+    {
+      "row": 205,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V1', 'O15'], ['S5', 'V8', 'O20'], ['S7', 'V6', 'O14']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V1', 'O15'], ['S5', 'V8', 'O20'], ['S7', 'V6', 'O14']]_HS_valido_canonico.json",
+      "source_sha256": "e7ccaffe7b44972959c227282f6cf01c6664ee52fbd5bb020392ca9e52f35497"
+    },
+    {
+      "row": 206,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V7', 'O7'], ['S3', 'V1', 'O5'], ['S8', 'V8', 'O13']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V7', 'O7'], ['S3', 'V1', 'O5'], ['S8', 'V8', 'O13']]_HS_valido_canonico.json",
+      "source_sha256": "23abea02296f5125e2376f0109861933977a44711298b1d3436c0676100d4128"
+    },
+    {
+      "row": 207,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O11'], ['S8', 'V1', 'O5'], ['S4', 'V5', 'O8']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S2', 'V9', 'O11'], ['S8', 'V1', 'O5'], ['S4', 'V5', 'O8']]_HS_valido_canonico.json",
+      "source_sha256": "38ad8f4aaf3cf6ad3a309d9f90a32d1a68bbc48dde777f88da70c72b97970a1a"
+    },
+    {
+      "row": 208,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O6'], ['S8', 'V2', 'O7'], ['S5', 'V3', 'O21']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S10', 'V10', 'O6'], ['S8', 'V2', 'O7'], ['S5', 'V3', 'O21']]_HS_valido_canonico.json",
+      "source_sha256": "6777c0f76400abeb1b0317298427efe669bc8a2866376141394383486e313c6d"
+    },
+    {
+      "row": 209,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O15'], ['S10', 'V8', 'O13'], ['S3', 'V6', 'O1']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S4', 'V9', 'O15'], ['S10', 'V8', 'O13'], ['S3', 'V6', 'O1']]_HS_valido_canonico.json",
+      "source_sha256": "358a00c0602101af4d7a351bf9284e0129aadba56ff82703efbdfc25260ae59c"
+    },
+    {
+      "row": 210,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V2', 'O19'], ['S9', 'V9', 'O11'], ['S5', 'V3', 'O2']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S1', 'V2', 'O19'], ['S9', 'V9', 'O11'], ['S5', 'V3', 'O2']]_HS_valido_canonico.json",
+      "source_sha256": "f6069f37bf8b82b6ce26ea46897df6e3cfb7b687a5aa55eb73d5fab41eae4dc8"
+    },
+    {
+      "row": 211,
+      "source": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V8', 'O20'], ['S3', 'V7', 'O8'], ['S10', 'V9', 'O16']]_HS.json",
+      "destination": "data/zeroShot/openai_gpt-4o-mini/HS_LF_PR/openai_gpt-4o-mini_[['S8', 'V8', 'O20'], ['S3', 'V7', 'O8'], ['S10', 'V9', 'O16']]_HS_valido_canonico.json",
+      "source_sha256": "a0f6f92ca111b7963537f3f63dc91769639e7636f9246a121aa42fb80c673382"
+    }
+  ]
+}

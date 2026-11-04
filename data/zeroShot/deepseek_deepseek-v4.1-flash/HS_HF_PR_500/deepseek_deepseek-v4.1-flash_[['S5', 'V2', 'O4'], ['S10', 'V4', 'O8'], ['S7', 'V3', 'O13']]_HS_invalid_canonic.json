@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the book then the girl sees the school, if the girl sees the school then the doctor finds the game, therefore if the doctor finds the game then the student pays the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O4"
+        ],
+        [
+            "S10",
+            "V4",
+            "O8"
+        ],
+        [
+            "S7",
+            "V3",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

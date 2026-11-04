@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl sees the computer then the doctor pays the food, if the doctor pays the food then the teacher loves the car, therefore if the girl sees the computer then the teacher loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V4",
+            "O14"
+        ],
+        [
+            "S7",
+            "V2",
+            "O16"
+        ],
+        [
+            "S6",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premises:**\n1. If the girl sees the computer → the doctor pays the food\n2. If the doctor pays the food → the teacher loves the car\n\n**Conclusion:**\nIf the girl sees the computer → the teacher loves the car\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the girl sees the computer\n- B = the doctor pays the food\n- C = the teacher loves the car\n\n**yes**"
+}

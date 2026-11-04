@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian intellectualizes the semiology then the alpinist federalizes the rocketry, if the alpinist federalizes the rocketry then the herpetologist overrates the pugilist, therefore if the herpetologist overrates the pugilist then the sumerian intellectualizes the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O20"
+        ],
+        [
+            "S6",
+            "V6",
+            "O13"
+        ],
+        [
+            "S4",
+            "V9",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

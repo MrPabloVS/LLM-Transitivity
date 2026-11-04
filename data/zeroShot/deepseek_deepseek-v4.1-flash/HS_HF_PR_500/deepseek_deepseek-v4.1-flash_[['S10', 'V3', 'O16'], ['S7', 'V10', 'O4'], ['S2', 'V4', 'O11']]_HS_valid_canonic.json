@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the food then the doctor hates the book, if the doctor hates the book then the man sees the car, therefore if the girl finds the food then the man sees the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O16"
+        ],
+        [
+            "S7",
+            "V10",
+            "O4"
+        ],
+        [
+            "S2",
+            "V4",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

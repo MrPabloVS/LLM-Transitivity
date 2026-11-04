@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl hates the program then the teacher pays the food, if the teacher pays the food then the officer finds the school, therefore if the girl hates the program then the officer finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O1"
+        ],
+        [
+            "S6",
+            "V2",
+            "O16"
+        ],
+        [
+            "S8",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

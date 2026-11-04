@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship prepays the fumigation then the bibliophile piggybacks the taxman, if the bibliophile piggybacks the taxman then the plutocrat federalizes the fairyland, therefore if the clerkship prepays the fumigation then the plutocrat federalizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V3",
+            "O5"
+        ],
+        [
+            "S10",
+            "V5",
+            "O19"
+        ],
+        [
+            "S1",
+            "V6",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the clerkship prepays the fumigation → the bibliophile piggybacks the taxman\n\n**Premise 2:** If the bibliophile piggybacks the taxman → the plutocrat federalizes the fairyland\n\n**Conclusion:** If the clerkship prepays the fumigation → the plutocrat federalizes the fairyland\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

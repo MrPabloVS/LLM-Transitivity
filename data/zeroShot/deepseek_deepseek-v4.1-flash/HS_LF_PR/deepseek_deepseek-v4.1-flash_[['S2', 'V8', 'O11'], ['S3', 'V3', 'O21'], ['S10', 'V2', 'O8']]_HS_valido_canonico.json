@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian intellectualizes the polytheism then the clerkship prepays the coronograph, if the clerkship prepays the coronograph then the bibliophile indemnifies the pugilist, therefore if the sumerian intellectualizes the polytheism then the bibliophile indemnifies the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O11"
+        ],
+        [
+            "S3",
+            "V3",
+            "O21"
+        ],
+        [
+            "S10",
+            "V2",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

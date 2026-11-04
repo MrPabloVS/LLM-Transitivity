@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian federalizes the trimaran then the hypnotherapist intellectualizes the fairyland, if the hypnotherapist intellectualizes the fairyland then the corsican indemnifies the metalurgist, therefore if the sumerian federalizes the trimaran then the corsican indemnifies the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O14"
+        ],
+        [
+            "S7",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If sumerian federalizes trimaran → hypnotherapist intellectualizes fairyland)\nPremise 2: If B then C (If hypnotherapist intellectualizes fairyland → corsican indemnifies metalurgist)\nConclusion: If A then C (If sumerian federalizes trimaran → corsican indemnifies metalurgist)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

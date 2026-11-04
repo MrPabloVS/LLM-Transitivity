@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the fumigation then the embryologist marinates the ceviche, if the embryologist marinates the ceviche then the corsican federalizes the databank, therefore if the corsican federalizes the databank then the bibliophile overrates the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O5"
+        ],
+        [
+            "S9",
+            "V11",
+            "O9"
+        ],
+        [
+            "S8",
+            "V6",
+            "O18"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

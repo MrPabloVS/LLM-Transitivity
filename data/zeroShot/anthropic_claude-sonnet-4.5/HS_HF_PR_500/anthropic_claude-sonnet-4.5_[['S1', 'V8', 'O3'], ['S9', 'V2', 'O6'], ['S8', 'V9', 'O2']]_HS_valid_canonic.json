@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid loves the money then the manager pays the chair, if the manager pays the chair then the officer wins the case, therefore if the kid loves the money then the officer wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V8",
+            "O3"
+        ],
+        [
+            "S9",
+            "V2",
+            "O6"
+        ],
+        [
+            "S8",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid loves the money → the manager pays the chair\nPremise 2: If the manager pays the chair → the officer wins the case\nConclusion: If the kid loves the money → the officer wins the case\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

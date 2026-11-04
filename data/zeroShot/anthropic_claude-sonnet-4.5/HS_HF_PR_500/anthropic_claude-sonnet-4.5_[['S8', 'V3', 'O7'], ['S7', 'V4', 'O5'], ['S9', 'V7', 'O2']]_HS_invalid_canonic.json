@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the sugar then the doctor sees the table, if the doctor sees the table then the manager loses the case, therefore if the manager loses the case then the officer finds the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O7"
+        ],
+        [
+            "S7",
+            "V4",
+            "O5"
+        ],
+        [
+            "S9",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

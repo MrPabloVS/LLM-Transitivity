@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the money then the family sees the school,if the manager pays the sugar then the doctor hates the money therefore if the family sees the school then the manager pays the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V2",
+            "O7"
+        ],
+        [
+            "S7",
+            "V10",
+            "O3"
+        ],
+        [
+            "S4",
+            "V4",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

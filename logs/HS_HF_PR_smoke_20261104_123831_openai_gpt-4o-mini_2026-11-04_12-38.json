@@ -1,0 +1,140 @@
+[
+    {
+        "id": "gen-1793806711-aLP32s3N7M6UOQ0ec8Nb",
+        "object": "chat.completion",
+        "created": 1793806711,
+        "model": "openai/gpt-4o-mini",
+        "provider": "Azure",
+        "system_fingerprint": "fp_4b2adf74ff",
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop",
+                "native_finish_reason": "stop",
+                "message": {
+                    "role": "assistant",
+                    "content": "yes",
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 64,
+            "completion_tokens": 1,
+            "total_tokens": 65,
+            "cost": 1.02e-05,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 1.02e-05,
+                "upstream_inference_prompt_cost": 9.6e-06,
+                "upstream_inference_completions_cost": 6e-07
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        }
+    },
+    {
+        "id": "gen-1793806714-6pVtW4ZrC6c46ixO0RnQ",
+        "object": "chat.completion",
+        "created": 1793806714,
+        "model": "openai/gpt-4o-mini",
+        "provider": "Azure",
+        "system_fingerprint": "fp_4b2adf74ff",
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop",
+                "native_finish_reason": "stop",
+                "message": {
+                    "role": "assistant",
+                    "content": "no",
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 64,
+            "completion_tokens": 1,
+            "total_tokens": 65,
+            "cost": 1.02e-05,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 1.02e-05,
+                "upstream_inference_prompt_cost": 9.6e-06,
+                "upstream_inference_completions_cost": 6e-07
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        }
+    },
+    {
+        "id": "gen-1793806715-LO54o3NKO13uDwfqTKth",
+        "object": "chat.completion",
+        "created": 1793806715,
+        "model": "openai/gpt-4o-mini",
+        "provider": "Azure",
+        "system_fingerprint": "fp_4b2adf74ff",
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop",
+                "native_finish_reason": "stop",
+                "message": {
+                    "role": "assistant",
+                    "content": "no",
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 63,
+            "completion_tokens": 1,
+            "total_tokens": 64,
+            "cost": 1.005e-05,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 1.005e-05,
+                "upstream_inference_prompt_cost": 9.45e-06,
+                "upstream_inference_completions_cost": 6e-07
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        }
+    }
+]

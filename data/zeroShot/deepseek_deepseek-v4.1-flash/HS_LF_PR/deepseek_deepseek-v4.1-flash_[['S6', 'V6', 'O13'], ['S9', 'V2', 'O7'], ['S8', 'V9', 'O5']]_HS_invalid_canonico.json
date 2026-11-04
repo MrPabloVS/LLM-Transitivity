@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist federalizes the rocketry then the embryologist indemnifies the aesthetician, if the embryologist indemnifies the aesthetician then the corsican overrates the fumigation, therefore if the corsican overrates the fumigation then the alpinist federalizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V6",
+            "O13"
+        ],
+        [
+            "S9",
+            "V2",
+            "O7"
+        ],
+        [
+            "S8",
+            "V9",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile unfreezes the monkfish then the herpetologist upbraids the taxman, if the herpetologist upbraids the taxman then the corsican reappraises the solipsism, therefore if the bibliophile unfreezes the monkfish then the corsican reappraises the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V4",
+            "O3"
+        ],
+        [
+            "S4",
+            "V10",
+            "O19"
+        ],
+        [
+            "S8",
+            "V1",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

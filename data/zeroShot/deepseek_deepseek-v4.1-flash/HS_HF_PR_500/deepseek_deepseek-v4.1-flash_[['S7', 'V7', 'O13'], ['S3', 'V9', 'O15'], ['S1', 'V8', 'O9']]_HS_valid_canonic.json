@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loses the paper then the woman wins the game, if the woman wins the game then the kid loves the building, therefore if the doctor loses the paper then the kid loves the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ],
+        [
+            "S1",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid loves the sugar then the girl finds the school,if the man reads the book then the kid loves the sugar therefore if the girl finds the school then the man reads the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V8",
+            "O7"
+        ],
+        [
+            "S10",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

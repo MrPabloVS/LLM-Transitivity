@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the sugar then the teacher hates the program, if the teacher hates the program then the woman loses the book, therefore if the officer loves the sugar then the woman loses the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O7"
+        ],
+        [
+            "S6",
+            "V10",
+            "O1"
+        ],
+        [
+            "S3",
+            "V7",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the officer loves the sugar → the teacher hates the program\nPremise 2: If the teacher hates the program → the woman loses the book\nConclusion: If the officer loves the sugar → the woman loses the book\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

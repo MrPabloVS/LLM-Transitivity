@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher pays the food then the student buys the paper, if the student buys the paper then the manager sees the car, therefore if the manager sees the car then the teacher pays the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V2",
+            "O16"
+        ],
+        [
+            "S5",
+            "V1",
+            "O13"
+        ],
+        [
+            "S9",
+            "V4",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

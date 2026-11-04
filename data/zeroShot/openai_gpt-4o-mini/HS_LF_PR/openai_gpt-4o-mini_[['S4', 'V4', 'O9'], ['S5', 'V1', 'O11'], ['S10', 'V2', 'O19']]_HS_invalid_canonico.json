@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist unfreezes the ceviche then the audiophile reappraises the polytheism, if the audiophile reappraises the polytheism then the bibliophile indemnifies the taxman, therefore if the bibliophile indemnifies the taxman then the herpetologist unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V4",
+            "O9"
+        ],
+        [
+            "S5",
+            "V1",
+            "O11"
+        ],
+        [
+            "S10",
+            "V2",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loses the game then the woman hates the school,if the family pays the computer then the man loses the game therefore if the woman hates the school then the family pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O14"
+        ],
+        [
+            "S2",
+            "V7",
+            "O15"
+        ],
+        [
+            "S3",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. \n\nGiven:\n1. If man loses game → woman hates school\n2. If family pays computer → man loses game\n\nThe conclusion claims: If woman hates school → family pays computer\n\nThis reverses the logical chain. The woman hating the school could result from the man losing the game for other reasons besides the family paying the computer."
+}

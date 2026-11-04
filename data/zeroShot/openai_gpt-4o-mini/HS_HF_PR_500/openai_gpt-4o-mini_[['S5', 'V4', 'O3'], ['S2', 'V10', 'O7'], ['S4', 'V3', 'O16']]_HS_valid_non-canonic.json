@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man hates the sugar then the family finds the food,if the student sees the money then the man hates the sugar therefore if the family finds the food then the student sees the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O3"
+        ],
+        [
+            "S2",
+            "V10",
+            "O7"
+        ],
+        [
+            "S4",
+            "V3",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

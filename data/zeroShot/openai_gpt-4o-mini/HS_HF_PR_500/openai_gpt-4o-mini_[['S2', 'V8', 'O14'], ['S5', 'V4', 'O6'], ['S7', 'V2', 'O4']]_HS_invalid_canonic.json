@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loves the computer then the student sees the chair, if the student sees the chair then the doctor pays the book, therefore if the doctor pays the book then the man loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O14"
+        ],
+        [
+            "S5",
+            "V4",
+            "O6"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

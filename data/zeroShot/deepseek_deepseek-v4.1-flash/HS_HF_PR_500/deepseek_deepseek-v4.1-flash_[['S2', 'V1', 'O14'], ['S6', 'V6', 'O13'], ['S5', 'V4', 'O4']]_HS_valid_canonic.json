@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man buys the computer then the teacher reads the paper, if the teacher reads the paper then the student sees the book, therefore if the man buys the computer then the student sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O14"
+        ],
+        [
+            "S6",
+            "V6",
+            "O13"
+        ],
+        [
+            "S5",
+            "V4",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

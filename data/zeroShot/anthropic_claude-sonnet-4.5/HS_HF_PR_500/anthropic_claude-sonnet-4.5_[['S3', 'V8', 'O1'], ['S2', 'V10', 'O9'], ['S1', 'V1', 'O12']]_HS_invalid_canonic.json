@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loves the program then the man hates the building, if the man hates the building then the kid buys the newspaper, therefore if the kid buys the newspaper then the woman loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O1"
+        ],
+        [
+            "S2",
+            "V10",
+            "O9"
+        ],
+        [
+            "S1",
+            "V1",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid argument. It attempts to conclude the converse of a conditional chain.\n\nGiven:\n1. Woman loves program → Man hates building\n2. Man hates building → Kid buys newspaper\n\nWe can validly conclude: Woman loves program → Kid buys newspaper\n\nBut the argument tries to conclude: Kid buys newspaper → Woman loves program\n\nThis is the logical fallacy of affirming the consequent."
+}

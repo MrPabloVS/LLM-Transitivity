@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family buys the car then the man finds the paper, if the man finds the paper then the woman sees the table, therefore if the woman sees the table then the family buys the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V1",
+            "O11"
+        ],
+        [
+            "S2",
+            "V3",
+            "O12"
+        ],
+        [
+            "S3",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

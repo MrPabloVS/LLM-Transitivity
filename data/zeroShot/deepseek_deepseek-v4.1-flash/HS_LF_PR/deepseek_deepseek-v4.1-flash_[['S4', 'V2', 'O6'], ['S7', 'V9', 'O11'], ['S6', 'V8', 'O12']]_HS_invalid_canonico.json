@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist indemnifies the metalurgist then the hypnotherapist overrates the semiology, if the hypnotherapist overrates the semiology then the alpinist intellectualizes the fairyland, therefore if the alpinist intellectualizes the fairyland then the herpetologist indemnifies the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O6"
+        ],
+        [
+            "S7",
+            "V9",
+            "O11"
+        ],
+        [
+            "S6",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

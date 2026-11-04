@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship federalizes the magnetometer then the bibliophile indemnifies the metalurgist, if the bibliophile indemnifies the metalurgist then the alpinist overrates the polytheism, therefore if the alpinist overrates the polytheism then the clerkship federalizes the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O17"
+        ],
+        [
+            "S10",
+            "V2",
+            "O6"
+        ],
+        [
+            "S6",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

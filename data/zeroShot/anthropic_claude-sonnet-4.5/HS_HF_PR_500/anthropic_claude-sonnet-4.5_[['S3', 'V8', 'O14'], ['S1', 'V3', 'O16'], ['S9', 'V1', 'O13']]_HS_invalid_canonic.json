@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loves the computer then the kid finds the food, if the kid finds the food then the manager buys the paper, therefore if the manager buys the paper then the woman loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O14"
+        ],
+        [
+            "S1",
+            "V3",
+            "O16"
+        ],
+        [
+            "S9",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The premises establish:\n- Woman loves computer → Kid finds food → Manager buys paper\n\nBut the conclusion tries to reverse this chain. From these premises alone, we cannot validly conclude that if the manager buys the paper, then the woman loves the computer."
+}

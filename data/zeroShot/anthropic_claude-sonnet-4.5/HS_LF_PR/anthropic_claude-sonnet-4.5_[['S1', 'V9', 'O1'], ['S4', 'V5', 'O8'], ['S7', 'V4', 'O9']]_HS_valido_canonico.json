@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat overrates the renewable-energy then the herpetologist piggybacks the pugilist, if the herpetologist piggybacks the pugilist then the hypnotherapist unfreezes the ceviche, therefore if the plutocrat overrates the renewable-energy then the hypnotherapist unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O1"
+        ],
+        [
+            "S4",
+            "V5",
+            "O8"
+        ],
+        [
+            "S7",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If plutocrat overrates renewable-energy, then herpetologist piggybacks pugilist)\nPremise 2: If B then C (If herpetologist piggybacks pugilist, then hypnotherapist unfreezes ceviche)\nConclusion: If A then C (If plutocrat overrates renewable-energy, then hypnotherapist unfreezes ceviche)\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, A → C\n\nyes"
+}

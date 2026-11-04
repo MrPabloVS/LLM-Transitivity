@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist indemnifies the metalurgist then the clerkship reappraises the semiology, if the clerkship reappraises the semiology then the audiophile intellectualizes the rebelliousness, therefore if the audiophile intellectualizes the rebelliousness then the herpetologist indemnifies the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O6"
+        ],
+        [
+            "S3",
+            "V1",
+            "O20"
+        ],
+        [
+            "S5",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

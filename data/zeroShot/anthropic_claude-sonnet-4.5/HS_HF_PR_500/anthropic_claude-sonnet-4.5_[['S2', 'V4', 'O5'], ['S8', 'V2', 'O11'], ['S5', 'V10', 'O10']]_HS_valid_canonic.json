@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man sees the table then the officer pays the car, if the officer pays the car then the student hates the college, therefore if the man sees the table then the student hates the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O5"
+        ],
+        [
+            "S8",
+            "V2",
+            "O11"
+        ],
+        [
+            "S5",
+            "V10",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the man sees the table → the officer pays the car\n**Premise 2:** If the officer pays the car → the student hates the college\n**Conclusion:** If the man sees the table → the student hates the college\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nThe reasoning is sound.\n\n**yes**"
+}

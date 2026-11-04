@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship overrates the solipsism then the herpetologist prepays the rental-car, if the herpetologist prepays the rental-car then the bibliophile marinates the ceviche, therefore if the bibliophile marinates the ceviche then the clerkship overrates the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V9",
+            "O6"
+        ],
+        [
+            "S4",
+            "V3",
+            "O2"
+        ],
+        [
+            "S10",
+            "V11",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat piggybacks the pugilist then the bibliophile intellectualizes the solipsism, if the bibliophile intellectualizes the solipsism then the sumerian indemnifies the taxman, therefore if the sumerian indemnifies the taxman then the plutocrat piggybacks the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V5",
+            "O8"
+        ],
+        [
+            "S10",
+            "V8",
+            "O10"
+        ],
+        [
+            "S2",
+            "V2",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loses the case then the kid wins the game,if the officer finds the book then the man loses the case therefore if the kid wins the game then the officer finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O4"
+        ],
+        [
+            "S2",
+            "V7",
+            "O2"
+        ],
+        [
+            "S1",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

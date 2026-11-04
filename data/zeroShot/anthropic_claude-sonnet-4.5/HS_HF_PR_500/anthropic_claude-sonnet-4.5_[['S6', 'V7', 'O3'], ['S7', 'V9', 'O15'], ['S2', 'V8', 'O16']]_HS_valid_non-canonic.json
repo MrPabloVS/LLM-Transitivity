@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor wins the game then the man loves the food,if the teacher loses the money then the doctor wins the game therefore if the man loves the food then the teacher loses the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V7",
+            "O3"
+        ],
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S2",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. \n\nGiven:\n1. If doctor wins → man loves food\n2. If teacher loses money → doctor wins\n\nThese give us: If teacher loses money → doctor wins → man loves food\n\nBut the conclusion states: If man loves food → teacher loses money\n\nThis is the converse and doesn't logically follow. The man could love the food for other reasons besides the teacher losing money."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the prackler glashes the prebart then the glemtor frikes the snabrik, if the glemtor frikes the snabrik then the probeller gresks the ploodnum, therefore if the prackler glashes the prebart then the probeller gresks the ploodnum",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O1"
+        ],
+        [
+            "S4",
+            "V4",
+            "O5"
+        ],
+        [
+            "S1",
+            "V5",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

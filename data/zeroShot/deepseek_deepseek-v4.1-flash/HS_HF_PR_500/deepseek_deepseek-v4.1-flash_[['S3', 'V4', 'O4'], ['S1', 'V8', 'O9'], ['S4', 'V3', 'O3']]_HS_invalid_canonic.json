@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman sees the book then the kid loves the building, if the kid loves the building then the family finds the money, therefore if the family finds the money then the woman sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O4"
+        ],
+        [
+            "S1",
+            "V8",
+            "O9"
+        ],
+        [
+            "S4",
+            "V3",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

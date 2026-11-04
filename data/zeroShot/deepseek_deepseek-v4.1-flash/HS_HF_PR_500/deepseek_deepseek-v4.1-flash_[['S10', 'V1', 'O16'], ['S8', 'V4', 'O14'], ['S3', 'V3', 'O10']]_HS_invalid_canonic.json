@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl buys the food then the officer sees the computer, if the officer sees the computer then the woman finds the college, therefore if the woman finds the college then the girl buys the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V4",
+            "O14"
+        ],
+        [
+            "S3",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

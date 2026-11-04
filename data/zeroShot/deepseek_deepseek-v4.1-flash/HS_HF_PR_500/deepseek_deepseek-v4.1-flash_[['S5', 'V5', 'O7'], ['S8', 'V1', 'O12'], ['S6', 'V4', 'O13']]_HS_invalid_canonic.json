@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student eats the sugar then the officer buys the newspaper, if the officer buys the newspaper then the teacher sees the paper, therefore if the teacher sees the paper then the student eats the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V5",
+            "O7"
+        ],
+        [
+            "S8",
+            "V1",
+            "O12"
+        ],
+        [
+            "S6",
+            "V4",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

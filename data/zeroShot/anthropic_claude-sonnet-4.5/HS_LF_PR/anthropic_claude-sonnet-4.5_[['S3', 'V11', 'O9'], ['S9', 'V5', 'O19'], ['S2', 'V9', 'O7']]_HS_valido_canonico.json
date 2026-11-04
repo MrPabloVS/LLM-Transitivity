@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship marinates the ceviche then the embryologist piggybacks the taxman, if the embryologist piggybacks the taxman then the sumerian overrates the polytheism, therefore if the clerkship marinates the ceviche then the sumerian overrates the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V11",
+            "O9"
+        ],
+        [
+            "S9",
+            "V5",
+            "O19"
+        ],
+        [
+            "S2",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument structure:\n\nPremise 1: If A then B\nPremise 2: If B then C\nConclusion: Therefore, if A then C\n\nThis is a valid form of hypothetical syllogism (chain reasoning). If the clerkship marinates the ceviche (A), then by premise 1 the embryologist piggybacks the taxman (B), and by premise 2 the sumerian overrates the polytheism (C).\n\nyes"
+}

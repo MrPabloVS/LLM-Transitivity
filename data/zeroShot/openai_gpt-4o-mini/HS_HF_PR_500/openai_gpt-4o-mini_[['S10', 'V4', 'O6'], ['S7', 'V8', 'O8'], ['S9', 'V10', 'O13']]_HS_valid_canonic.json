@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl sees the chair then the doctor loves the school, if the doctor loves the school then the manager hates the paper, therefore if the girl sees the chair then the manager hates the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V4",
+            "O6"
+        ],
+        [
+            "S7",
+            "V8",
+            "O8"
+        ],
+        [
+            "S9",
+            "V10",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican marinates the ceviche then the sumerian federalizes the trimaran, if the sumerian federalizes the trimaran then the bibliophile reappraises the semiology, therefore if the bibliophile reappraises the semiology then the corsican marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V11",
+            "O9"
+        ],
+        [
+            "S2",
+            "V6",
+            "O14"
+        ],
+        [
+            "S10",
+            "V1",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

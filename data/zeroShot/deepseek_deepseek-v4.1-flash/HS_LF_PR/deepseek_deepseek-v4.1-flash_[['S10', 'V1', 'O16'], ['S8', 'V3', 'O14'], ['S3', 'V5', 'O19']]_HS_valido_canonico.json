@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile reappraises the rebelliousness then the corsican prepays the trimaran, if the corsican prepays the trimaran then the clerkship piggybacks the taxman, therefore if the bibliophile reappraises the rebelliousness then the clerkship piggybacks the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V3",
+            "O14"
+        ],
+        [
+            "S3",
+            "V5",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

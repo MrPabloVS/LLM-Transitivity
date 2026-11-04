@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man hates the money then the teacher finds the college, if the teacher finds the college then the student pays the chair, therefore if the man hates the money then the student pays the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V10",
+            "O3"
+        ],
+        [
+            "S6",
+            "V3",
+            "O10"
+        ],
+        [
+            "S5",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the man hates the money → the teacher finds the college\nPremise 2: If the teacher finds the college → the student pays the chair\nConclusion: If the man hates the money → the student pays the chair\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the man hates the money\n- B = the teacher finds the college\n- C = the student pays the chair\n\n**yes**"
+}

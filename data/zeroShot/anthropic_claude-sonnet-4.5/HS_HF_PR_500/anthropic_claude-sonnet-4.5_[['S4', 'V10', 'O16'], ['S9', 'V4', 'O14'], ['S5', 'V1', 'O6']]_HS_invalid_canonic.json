@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the food then the manager sees the computer, if the manager sees the computer then the student buys the chair, therefore if the student buys the chair then the family hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O16"
+        ],
+        [
+            "S9",
+            "V4",
+            "O14"
+        ],
+        [
+            "S5",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

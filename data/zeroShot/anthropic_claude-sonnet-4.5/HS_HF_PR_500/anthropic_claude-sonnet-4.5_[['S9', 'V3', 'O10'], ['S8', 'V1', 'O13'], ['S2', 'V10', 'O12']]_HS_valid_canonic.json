@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager finds the college then the officer buys the paper, if the officer buys the paper then the man hates the newspaper, therefore if the manager finds the college then the man hates the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V3",
+            "O10"
+        ],
+        [
+            "S8",
+            "V1",
+            "O13"
+        ],
+        [
+            "S2",
+            "V10",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager finds the college → the officer buys the paper\nPremise 2: If the officer buys the paper → the man hates the newspaper\nConclusion: If the manager finds the college → the man hates the newspaper\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist intellectualizes the rocketry then the bibliophile prepays the coronograph, if the bibliophile prepays the coronograph then the plutocrat upbraids the metalurgist, therefore if the herpetologist intellectualizes the rocketry then the plutocrat upbraids the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O13"
+        ],
+        [
+            "S10",
+            "V3",
+            "O21"
+        ],
+        [
+            "S1",
+            "V10",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the herpetologist intellectualizes the rocketry → the bibliophile prepays the coronograph\n\n**Premise 2:** If the bibliophile prepays the coronograph → the plutocrat upbraids the metalurgist\n\n**Conclusion:** If the herpetologist intellectualizes the rocketry → the plutocrat upbraids the metalurgist\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

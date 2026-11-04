@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the college then the manager loses the newspaper,if the doctor sees the table then the family loves the college therefore if the manager loses the newspaper then the doctor sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V4",
+            "O5"
+        ],
+        [
+            "S4",
+            "V8",
+            "O10"
+        ],
+        [
+            "S9",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no\n\nThe argument commits the fallacy of affirming the consequent. Here's the logical structure:\n\n1. If (doctor sees table) → (family loves college)\n2. If (family loves college) → (manager loses newspaper)\n3. Therefore: If (manager loses newspaper) → (doctor sees table)\n\nThis is invalid. From A→B and B→C, we can conclude A→C, but we cannot conclude C→A."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the money then the doctor buys the sugar, if the doctor buys the sugar then the kid hates the book, therefore if the kid hates the book then the family loves the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O3"
+        ],
+        [
+            "S7",
+            "V1",
+            "O7"
+        ],
+        [
+            "S1",
+            "V10",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

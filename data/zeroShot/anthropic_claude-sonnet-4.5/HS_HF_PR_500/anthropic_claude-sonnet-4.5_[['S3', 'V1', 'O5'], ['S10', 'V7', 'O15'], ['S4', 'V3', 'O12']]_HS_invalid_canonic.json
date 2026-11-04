@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman buys the table then the girl loses the game, if the girl loses the game then the family finds the paper, therefore if the family finds the paper then the woman buys the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O5"
+        ],
+        [
+            "S10",
+            "V7",
+            "O15"
+        ],
+        [
+            "S4",
+            "V3",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe conclusion commits the fallacy of affirming the consequent. The premises show:\n- Woman buys table → Girl loses game → Family finds paper\n\nBut the conclusion incorrectly reverses this to claim:\n- Family finds paper → Woman buys table\n\nThis reversal is not logically valid."
+}

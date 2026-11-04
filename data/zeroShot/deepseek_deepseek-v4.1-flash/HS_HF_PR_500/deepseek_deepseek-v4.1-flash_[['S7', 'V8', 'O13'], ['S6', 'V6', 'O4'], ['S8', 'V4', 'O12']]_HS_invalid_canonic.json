@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loves the paper then the teacher reads the book, if the teacher reads the book then the officer sees the newspaper, therefore if the officer sees the newspaper then the doctor loves the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O13"
+        ],
+        [
+            "S6",
+            "V6",
+            "O4"
+        ],
+        [
+            "S8",
+            "V4",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the brettent prants the blorrack then the glemtor blemps the snabrik, if the glemtor blemps the snabrik then the prackler gresks the ploodnum, therefore if the prackler gresks the ploodnum then the brettent prants the blorrack",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V3",
+            "O4"
+        ],
+        [
+            "S4",
+            "V2",
+            "O5"
+        ],
+        [
+            "S6",
+            "V5",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

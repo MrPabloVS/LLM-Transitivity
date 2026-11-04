@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist indemnifies the aesthetician then the corsican reappraises the renewable-energy,if the herpetologist overrates the aesthetician then the hypnotherapist indemnifies the aesthetician therefore if the corsican reappraises the renewable-energy then the herpetologist overrates the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V9",
+            "O16"
+        ],
+        [
+            "S7",
+            "V2",
+            "O7"
+        ],
+        [
+            "S8",
+            "V1",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

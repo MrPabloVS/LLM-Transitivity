@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man reads the newspaper then the teacher sees the college,if the student finds the sugar then the man reads the newspaper therefore if the teacher sees the college then the student finds the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V3",
+            "O7"
+        ],
+        [
+            "S2",
+            "V6",
+            "O12"
+        ],
+        [
+            "S6",
+            "V4",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

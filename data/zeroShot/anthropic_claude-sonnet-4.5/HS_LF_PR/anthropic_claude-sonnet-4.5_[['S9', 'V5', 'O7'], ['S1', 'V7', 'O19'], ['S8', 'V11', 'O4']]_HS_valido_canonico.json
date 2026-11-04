@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist piggybacks the aesthetician then the plutocrat sasses the taxman, if the plutocrat sasses the taxman then the corsican marinates the monkfish, therefore if the embryologist piggybacks the aesthetician then the corsican marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V5",
+            "O7"
+        ],
+        [
+            "S1",
+            "V7",
+            "O19"
+        ],
+        [
+            "S8",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the embryologist piggybacks the aesthetician → the plutocrat sasses the taxman\n\nPremise 2: If the plutocrat sasses the taxman → the corsican marinates the monkfish\n\nConclusion: If the embryologist piggybacks the aesthetician → the corsican marinates the monkfish\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

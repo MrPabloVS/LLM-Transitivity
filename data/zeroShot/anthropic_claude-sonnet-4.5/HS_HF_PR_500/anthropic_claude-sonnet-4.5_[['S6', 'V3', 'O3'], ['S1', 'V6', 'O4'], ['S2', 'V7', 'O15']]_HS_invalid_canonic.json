@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the money then the kid reads the book, if the kid reads the book then the man loses the game, therefore if the man loses the game then the teacher finds the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O3"
+        ],
+        [
+            "S1",
+            "V6",
+            "O4"
+        ],
+        [
+            "S2",
+            "V7",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

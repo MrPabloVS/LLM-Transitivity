@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl buys the newspaper then the teacher hates the program,if the man eats the food then the girl buys the newspaper therefore if the teacher hates the program then the man eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O16"
+        ],
+        [
+            "S10",
+            "V1",
+            "O12"
+        ],
+        [
+            "S6",
+            "V10",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. \n\nGiven:\n1. If girl buys newspaper → teacher hates program\n2. If man eats food → girl buys newspaper\n\nThese give us: If man eats food → girl buys newspaper → teacher hates program\n\nThis means: If man eats food → teacher hates program\n\nBut the conclusion claims the reverse: If teacher hates program → man eats food\n\nThis reverse direction is not logically valid."
+}

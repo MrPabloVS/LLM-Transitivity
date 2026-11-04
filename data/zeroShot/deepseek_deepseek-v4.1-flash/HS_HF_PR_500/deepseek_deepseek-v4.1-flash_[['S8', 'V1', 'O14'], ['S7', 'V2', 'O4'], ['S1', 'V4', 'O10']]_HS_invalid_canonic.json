@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer buys the computer then the doctor pays the book, if the doctor pays the book then the kid sees the college, therefore if the kid sees the college then the officer buys the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V1",
+            "O14"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ],
+        [
+            "S1",
+            "V4",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

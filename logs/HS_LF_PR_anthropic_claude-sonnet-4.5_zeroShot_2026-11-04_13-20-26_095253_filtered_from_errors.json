@@ -1,0 +1,576 @@
+[
+    {
+        "id": "gen-1793809113-qEY2u0hGkRPsx7mFXU5A",
+        "object": "chat.completion",
+        "created": 1793809113,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 93,
+            "completion_tokens": 0,
+            "total_tokens": 93,
+            "cost": 0.000279,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.000279,
+                "upstream_inference_prompt_cost": 0.000279,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 1054,
+            "userPrompt": "if the clerkship federalizes the rocketry then the embryologist prepays the fumigation,if the hypnotherapist intellectualizes the rebelliousness then the clerkship federalizes the rocketry therefore if the embryologist prepays the fumigation then the hypnotherapist intellectualizes the rebelliousness",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S7",
+                    "V8",
+                    "O16"
+                ],
+                [
+                    "S3",
+                    "V6",
+                    "O13"
+                ],
+                [
+                    "S9",
+                    "V3",
+                    "O5"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "valido",
+                "cononic": "non-canonic"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_1054.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    {
+        "id": "gen-1793809076-6jeoexhdjJ0FNJuZyxan",
+        "object": "chat.completion",
+        "created": 1793809076,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 88,
+            "completion_tokens": 0,
+            "total_tokens": 88,
+            "cost": 0.000264,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.000264,
+                "upstream_inference_prompt_cost": 0.000264,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 131,
+            "userPrompt": "if the embryologist overrates the fumigation then the corsican prepays the coronograph, if the corsican prepays the coronograph then the plutocrat reappraises the conventionalism, therefore if the embryologist overrates the fumigation then the plutocrat reappraises the conventionalism",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S9",
+                    "V9",
+                    "O5"
+                ],
+                [
+                    "S8",
+                    "V3",
+                    "O21"
+                ],
+                [
+                    "S1",
+                    "V1",
+                    "O15"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "valido",
+                "cononic": "canonico"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_131.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    {
+        "id": "gen-1793809074-Ga4L65utr3KljTQIbFNv",
+        "object": "chat.completion",
+        "created": 1793809074,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 90,
+            "completion_tokens": 0,
+            "total_tokens": 90,
+            "cost": 0.00027,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.00027,
+                "upstream_inference_prompt_cost": 0.00027,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 148,
+            "userPrompt": "if the embryologist prepays the fumigation then the plutocrat piggybacks the aesthetician, if the plutocrat piggybacks the aesthetician then the herpetologist marinates the ceviche, therefore if the embryologist prepays the fumigation then the herpetologist marinates the ceviche",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S9",
+                    "V3",
+                    "O5"
+                ],
+                [
+                    "S1",
+                    "V5",
+                    "O7"
+                ],
+                [
+                    "S4",
+                    "V11",
+                    "O9"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "valido",
+                "cononic": "canonico"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_148.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    {
+        "id": "gen-1793809087-rHhDBfISIZfVdBu3fTyU",
+        "object": "chat.completion",
+        "created": 1793809087,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 94,
+            "completion_tokens": 0,
+            "total_tokens": 94,
+            "cost": 0.000282,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.000282,
+                "upstream_inference_prompt_cost": 0.000282,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 407,
+            "userPrompt": "if the embryologist unfreezes the ceviche then the alpinist federalizes the magnetometer, if the alpinist federalizes the magnetometer then the herpetologist intellectualizes the rebelliousness, therefore if the embryologist unfreezes the ceviche then the herpetologist intellectualizes the rebelliousness",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S9",
+                    "V4",
+                    "O9"
+                ],
+                [
+                    "S6",
+                    "V6",
+                    "O17"
+                ],
+                [
+                    "S4",
+                    "V8",
+                    "O16"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "valido",
+                "cononic": "canonico"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_407.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    {
+        "id": "gen-1793809089-9FLdXjy16ZBXXh2DYwZr",
+        "object": "chat.completion",
+        "created": 1793809089,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 88,
+            "completion_tokens": 0,
+            "total_tokens": 88,
+            "cost": 0.000264,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.000264,
+                "upstream_inference_prompt_cost": 0.000264,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 631,
+            "userPrompt": "if the embryologist overrates the fumigation then the corsican prepays the coronograph, if the corsican prepays the coronograph then the plutocrat reappraises the conventionalism, therefore if the plutocrat reappraises the conventionalism then the embryologist overrates the fumigation",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S9",
+                    "V9",
+                    "O5"
+                ],
+                [
+                    "S8",
+                    "V3",
+                    "O21"
+                ],
+                [
+                    "S1",
+                    "V1",
+                    "O15"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "invalid",
+                "cononic": "canonico"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_631.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    {
+        "id": "gen-1793809099-PCQKUTKBO7pD1TrZT6K7",
+        "object": "chat.completion",
+        "created": 1793809099,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Amazon Bedrock",
+        "system_fingerprint": null,
+        "service_tier": null,
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 90,
+            "completion_tokens": 1,
+            "total_tokens": 91,
+            "cost": 0.000285,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.000285,
+                "upstream_inference_prompt_cost": 0.00027,
+                "upstream_inference_completions_cost": 1.5e-05
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 648,
+            "userPrompt": "if the embryologist prepays the fumigation then the plutocrat piggybacks the aesthetician, if the plutocrat piggybacks the aesthetician then the herpetologist marinates the ceviche, therefore if the herpetologist marinates the ceviche then the embryologist prepays the fumigation",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S9",
+                    "V3",
+                    "O5"
+                ],
+                [
+                    "S1",
+                    "V5",
+                    "O7"
+                ],
+                [
+                    "S4",
+                    "V11",
+                    "O9"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "invalid",
+                "cononic": "canonico"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_648.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    {
+        "id": "gen-1793809102-dtn3vbpeZlhdaJr2zjWu",
+        "object": "chat.completion",
+        "created": 1793809102,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 90,
+            "completion_tokens": 0,
+            "total_tokens": 90,
+            "cost": 0.00027,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.00027,
+                "upstream_inference_prompt_cost": 0.00027,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 725,
+            "userPrompt": "if the embryologist prepays the fumigation then the sumerian reappraises the semiology, if the sumerian reappraises the semiology then the hypnotherapist overrates the rebelliousness, therefore if the hypnotherapist overrates the rebelliousness then the embryologist prepays the fumigation",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S9",
+                    "V3",
+                    "O5"
+                ],
+                [
+                    "S2",
+                    "V1",
+                    "O20"
+                ],
+                [
+                    "S7",
+                    "V9",
+                    "O10"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "invalid",
+                "cononic": "canonico"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_725.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    }
+]

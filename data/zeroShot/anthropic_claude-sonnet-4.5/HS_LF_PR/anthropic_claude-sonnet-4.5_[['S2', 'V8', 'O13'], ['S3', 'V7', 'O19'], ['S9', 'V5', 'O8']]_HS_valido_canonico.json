@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian intellectualizes the rocketry then the clerkship sasses the taxman, if the clerkship sasses the taxman then the embryologist piggybacks the pugilist, therefore if the sumerian intellectualizes the rocketry then the embryologist piggybacks the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O13"
+        ],
+        [
+            "S3",
+            "V7",
+            "O19"
+        ],
+        [
+            "S9",
+            "V5",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the Sumerian intellectualizes the rocketry → the clerkship sasses the taxman\n\n**Premise 2:** If the clerkship sasses the taxman → the embryologist piggybacks the pugilist\n\n**Conclusion:** If the Sumerian intellectualizes the rocketry → the embryologist piggybacks the pugilist\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

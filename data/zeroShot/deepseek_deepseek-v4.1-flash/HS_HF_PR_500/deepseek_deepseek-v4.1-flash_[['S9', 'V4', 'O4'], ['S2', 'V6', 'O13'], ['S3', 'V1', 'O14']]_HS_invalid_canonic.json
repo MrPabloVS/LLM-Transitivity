@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager sees the book then the man reads the paper, if the man reads the paper then the woman buys the computer, therefore if the woman buys the computer then the manager sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V4",
+            "O4"
+        ],
+        [
+            "S2",
+            "V6",
+            "O13"
+        ],
+        [
+            "S3",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

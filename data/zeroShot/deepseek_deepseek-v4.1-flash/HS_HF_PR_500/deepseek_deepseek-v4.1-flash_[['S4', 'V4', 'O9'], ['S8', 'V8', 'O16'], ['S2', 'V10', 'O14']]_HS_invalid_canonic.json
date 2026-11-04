@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family sees the building then the officer loves the food, if the officer loves the food then the man hates the computer, therefore if the man hates the computer then the family sees the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V4",
+            "O9"
+        ],
+        [
+            "S8",
+            "V8",
+            "O16"
+        ],
+        [
+            "S2",
+            "V10",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

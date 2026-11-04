@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loses the game then the kid hates the computer,if the man reads the book then the doctor loses the game therefore if the kid hates the computer then the man reads the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O4"
+        ],
+        [
+            "S7",
+            "V7",
+            "O15"
+        ],
+        [
+            "S1",
+            "V10",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

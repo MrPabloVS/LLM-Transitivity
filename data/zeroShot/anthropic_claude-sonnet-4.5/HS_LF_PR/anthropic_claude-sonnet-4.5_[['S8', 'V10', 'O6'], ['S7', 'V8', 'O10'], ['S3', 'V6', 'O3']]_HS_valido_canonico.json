@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican upbraids the metalurgist then the hypnotherapist intellectualizes the solipsism, if the hypnotherapist intellectualizes the solipsism then the clerkship federalizes the lightsaber, therefore if the corsican upbraids the metalurgist then the clerkship federalizes the lightsaber",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O6"
+        ],
+        [
+            "S7",
+            "V8",
+            "O10"
+        ],
+        [
+            "S3",
+            "V6",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the corsican upbraids the metalurgist → the hypnotherapist intellectualizes the solipsism\n\nPremise 2: If the hypnotherapist intellectualizes the solipsism → the clerkship federalizes the lightsaber\n\nConclusion: If the corsican upbraids the metalurgist → the clerkship federalizes the lightsaber\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship upbraids the pugilist then the embryologist overrates the taxman, if the embryologist overrates the taxman then the audiophile prepays the fumigation, therefore if the clerkship upbraids the pugilist then the audiophile prepays the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O8"
+        ],
+        [
+            "S9",
+            "V9",
+            "O20"
+        ],
+        [
+            "S5",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

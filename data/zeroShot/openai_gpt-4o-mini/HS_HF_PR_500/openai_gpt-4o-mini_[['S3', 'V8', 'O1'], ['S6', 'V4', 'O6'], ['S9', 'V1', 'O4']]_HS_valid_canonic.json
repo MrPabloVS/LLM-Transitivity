@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loves the program then the teacher sees the chair, if the teacher sees the chair then the manager buys the book, therefore if the woman loves the program then the manager buys the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O1"
+        ],
+        [
+            "S6",
+            "V4",
+            "O6"
+        ],
+        [
+            "S9",
+            "V1",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman eats the food then the family pays the car, if the family pays the car then the girl reads the paper, therefore if the girl reads the paper then the woman eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V5",
+            "O16"
+        ],
+        [
+            "S4",
+            "V2",
+            "O11"
+        ],
+        [
+            "S10",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

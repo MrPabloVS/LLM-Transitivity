@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager pays the computer then the doctor wins the game, if the doctor wins the game then the officer loves the paper, therefore if the officer loves the paper then the manager pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V2",
+            "O14"
+        ],
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

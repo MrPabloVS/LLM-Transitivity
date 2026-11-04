@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist intellectualizes the fairyland then the embryologist unfreezes the ceviche, if the embryologist unfreezes the ceviche then the sumerian piggybacks the metalurgist, therefore if the sumerian piggybacks the metalurgist then the herpetologist intellectualizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O12"
+        ],
+        [
+            "S9",
+            "V4",
+            "O9"
+        ],
+        [
+            "S2",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

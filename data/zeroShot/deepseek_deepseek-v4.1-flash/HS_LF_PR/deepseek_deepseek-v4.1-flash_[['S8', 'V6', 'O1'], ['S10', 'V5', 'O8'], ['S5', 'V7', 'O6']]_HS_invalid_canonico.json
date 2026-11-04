@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican federalizes the renewable-energy then the bibliophile piggybacks the pugilist, if the bibliophile piggybacks the pugilist then the audiophile sasses the metalurgist, therefore if the audiophile sasses the metalurgist then the corsican federalizes the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V6",
+            "O1"
+        ],
+        [
+            "S10",
+            "V5",
+            "O8"
+        ],
+        [
+            "S5",
+            "V7",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

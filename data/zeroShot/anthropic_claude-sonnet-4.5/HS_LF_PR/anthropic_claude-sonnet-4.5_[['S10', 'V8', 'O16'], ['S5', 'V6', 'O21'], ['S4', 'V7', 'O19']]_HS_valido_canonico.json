@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile intellectualizes the rebelliousness then the audiophile federalizes the coronograph, if the audiophile federalizes the coronograph then the herpetologist sasses the taxman, therefore if the bibliophile intellectualizes the rebelliousness then the herpetologist sasses the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O16"
+        ],
+        [
+            "S5",
+            "V6",
+            "O21"
+        ],
+        [
+            "S4",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument structure:\n\n**Premise 1:** If A then B\n**Premise 2:** If B then C\n**Conclusion:** Therefore, if A then C\n\nThis is a valid form of hypothetical syllogism (chain reasoning).\n\nWhere:\n- A = the bibliophile intellectualizes the rebelliousness\n- B = the audiophile federalizes the coronograph  \n- C = the herpetologist sasses the taxman\n\nThe argument follows the valid logical form:\n- If A → B (given)\n- If B → C (given)\n- Therefore: If A → C (conclusion)\n\n**yes**"
+}

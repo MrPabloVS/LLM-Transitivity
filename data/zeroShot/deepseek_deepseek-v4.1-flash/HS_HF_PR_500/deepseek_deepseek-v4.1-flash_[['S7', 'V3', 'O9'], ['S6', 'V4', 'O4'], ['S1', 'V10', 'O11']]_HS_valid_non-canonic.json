@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher sees the book then the kid hates the car,if the doctor finds the building then the teacher sees the book therefore if the kid hates the car then the doctor finds the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V3",
+            "O9"
+        ],
+        [
+            "S6",
+            "V4",
+            "O4"
+        ],
+        [
+            "S1",
+            "V10",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

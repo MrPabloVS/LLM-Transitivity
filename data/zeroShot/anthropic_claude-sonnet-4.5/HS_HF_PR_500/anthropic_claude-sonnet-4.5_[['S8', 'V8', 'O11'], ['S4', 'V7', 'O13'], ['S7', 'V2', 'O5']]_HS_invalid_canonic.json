@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the car then the family loses the paper, if the family loses the paper then the doctor pays the table, therefore if the doctor pays the table then the officer loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O11"
+        ],
+        [
+            "S4",
+            "V7",
+            "O13"
+        ],
+        [
+            "S7",
+            "V2",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The logic flows in one direction:\n- Officer loves car → Family loses paper → Doctor pays table\n\nBut you cannot validly reverse this to conclude:\n- Doctor pays table → Officer loves car\n\nThe doctor paying the table could occur for reasons other than the officer loving the car."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship reappraises the conventionalism then the hypnotherapist overrates the semiology, if the hypnotherapist overrates the semiology then the alpinist sasses the taxman, therefore if the clerkship reappraises the conventionalism then the alpinist sasses the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O15"
+        ],
+        [
+            "S7",
+            "V9",
+            "O11"
+        ],
+        [
+            "S6",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument:\n\nPremise 1: If the clerkship reappraises the conventionalism, then the hypnotherapist overrates the semiology.\nPremise 2: If the hypnotherapist overrates the semiology, then the alpinist sasses the taxman.\nConclusion: Therefore, if the clerkship reappraises the conventionalism, then the alpinist sasses the taxman.\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A then B\n- If B then C\n- Therefore, if A then C\n\nyes"
+}

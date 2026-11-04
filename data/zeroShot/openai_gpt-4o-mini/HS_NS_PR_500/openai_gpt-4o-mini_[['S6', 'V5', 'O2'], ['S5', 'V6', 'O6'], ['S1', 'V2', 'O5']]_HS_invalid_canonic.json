@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the prackler gresks the drambet then the bruggant trelfs the flendop, if the bruggant trelfs the flendop then the probeller blemps the snabrik, therefore if the probeller blemps the snabrik then the prackler gresks the drambet",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V5",
+            "O2"
+        ],
+        [
+            "S5",
+            "V6",
+            "O6"
+        ],
+        [
+            "S1",
+            "V2",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

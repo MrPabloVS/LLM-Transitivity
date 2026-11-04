@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile reappraises the conventionalism then the herpetologist federalizes the databank, if the herpetologist federalizes the databank then the corsican overrates the fumigation, therefore if the bibliophile reappraises the conventionalism then the corsican overrates the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O15"
+        ],
+        [
+            "S4",
+            "V6",
+            "O18"
+        ],
+        [
+            "S8",
+            "V9",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the bibliophile reappraises the conventionalism → the herpetologist federalizes the databank\n\n**Premise 2:** If the herpetologist federalizes the databank → the corsican overrates the fumigation\n\n**Conclusion:** If the bibliophile reappraises the conventionalism → the corsican overrates the fumigation\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

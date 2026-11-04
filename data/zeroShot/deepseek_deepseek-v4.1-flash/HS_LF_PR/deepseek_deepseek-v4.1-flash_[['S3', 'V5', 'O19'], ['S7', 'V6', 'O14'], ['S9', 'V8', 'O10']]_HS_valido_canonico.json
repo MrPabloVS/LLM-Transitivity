@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship piggybacks the taxman then the hypnotherapist federalizes the trimaran, if the hypnotherapist federalizes the trimaran then the embryologist intellectualizes the solipsism, therefore if the clerkship piggybacks the taxman then the embryologist intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V5",
+            "O19"
+        ],
+        [
+            "S7",
+            "V6",
+            "O14"
+        ],
+        [
+            "S9",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

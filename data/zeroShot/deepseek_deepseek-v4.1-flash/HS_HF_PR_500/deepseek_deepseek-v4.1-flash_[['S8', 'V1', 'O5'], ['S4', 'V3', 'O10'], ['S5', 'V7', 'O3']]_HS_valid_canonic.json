@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer buys the table then the family finds the college, if the family finds the college then the student loses the money, therefore if the officer buys the table then the student loses the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V1",
+            "O5"
+        ],
+        [
+            "S4",
+            "V3",
+            "O10"
+        ],
+        [
+            "S5",
+            "V7",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

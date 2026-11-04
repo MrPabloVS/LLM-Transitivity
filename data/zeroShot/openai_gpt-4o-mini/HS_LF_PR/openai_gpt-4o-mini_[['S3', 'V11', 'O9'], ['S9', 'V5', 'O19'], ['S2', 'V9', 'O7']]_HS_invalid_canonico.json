@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship marinates the ceviche then the embryologist piggybacks the taxman, if the embryologist piggybacks the taxman then the sumerian overrates the polytheism, therefore if the sumerian overrates the polytheism then the clerkship marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V11",
+            "O9"
+        ],
+        [
+            "S9",
+            "V5",
+            "O19"
+        ],
+        [
+            "S2",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship upbraids the taxman then the alpinist unfreezes the monkfish, if the alpinist unfreezes the monkfish then the hypnotherapist federalizes the trimaran, therefore if the clerkship upbraids the taxman then the hypnotherapist federalizes the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O19"
+        ],
+        [
+            "S6",
+            "V4",
+            "O3"
+        ],
+        [
+            "S7",
+            "V6",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the clerkship upbraids the taxman → the alpinist unfreezes the monkfish\nPremise 2: If the alpinist unfreezes the monkfish → the hypnotherapist federalizes the trimaran\nConclusion: If the clerkship upbraids the taxman → the hypnotherapist federalizes the trimaran\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

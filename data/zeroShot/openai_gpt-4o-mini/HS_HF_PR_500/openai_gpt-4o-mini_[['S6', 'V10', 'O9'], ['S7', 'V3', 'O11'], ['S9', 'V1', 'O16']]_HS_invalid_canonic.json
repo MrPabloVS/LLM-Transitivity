@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher hates the building then the doctor finds the newspaper, if the doctor finds the newspaper then the manager buys the food, therefore if the manager buys the food then the teacher hates the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O9"
+        ],
+        [
+            "S7",
+            "V3",
+            "O11"
+        ],
+        [
+            "S9",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

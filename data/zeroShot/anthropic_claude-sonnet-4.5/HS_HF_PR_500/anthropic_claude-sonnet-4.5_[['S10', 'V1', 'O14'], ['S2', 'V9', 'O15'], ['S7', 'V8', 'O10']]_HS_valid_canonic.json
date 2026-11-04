@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl buys the computer then the man wins the game, if the man wins the game then the doctor loves the college, therefore if the girl buys the computer then the doctor loves the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O14"
+        ],
+        [
+            "S2",
+            "V9",
+            "O15"
+        ],
+        [
+            "S7",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "To evaluate this argument, I need to check if the conclusion follows logically from the premises.\n\nPremises:\n1. If the girl buys the computer → the man wins the game\n2. If the man wins the game → the doctor loves the college\n\nConclusion:\nIf the girl buys the computer → the doctor loves the college\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B (girl buys computer → man wins game)\n- If B → C (man wins game → doctor loves college)\n- Therefore, if A → C (girl buys computer → doctor loves college)\n\nyes"
+}

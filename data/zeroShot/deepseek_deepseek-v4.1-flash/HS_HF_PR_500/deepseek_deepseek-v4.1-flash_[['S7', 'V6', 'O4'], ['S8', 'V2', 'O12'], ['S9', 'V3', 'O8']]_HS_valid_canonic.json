@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor reads the book then the officer pays the newspaper, if the officer pays the newspaper then the manager finds the school, therefore if the doctor reads the book then the manager finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V6",
+            "O4"
+        ],
+        [
+            "S8",
+            "V2",
+            "O12"
+        ],
+        [
+            "S9",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

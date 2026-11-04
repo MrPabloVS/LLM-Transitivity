@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor wins the game then the officer sees the college, if the officer sees the college then the teacher pays the computer, therefore if the doctor wins the game then the teacher pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V4",
+            "O10"
+        ],
+        [
+            "S6",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the doctor wins the game → the officer sees the college\nPremise 2: If the officer sees the college → the teacher pays the computer\nConclusion: If the doctor wins the game → the teacher pays the computer\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

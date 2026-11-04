@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller prants the ploodnum then the brettent blemps the snabrik, if the brettent blemps the snabrik then the preggar gresks the flendop, therefore if the preggar gresks the flendop then the probeller prants the ploodnum",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O3"
+        ],
+        [
+            "S3",
+            "V2",
+            "O5"
+        ],
+        [
+            "S2",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument.\n\nGiven:\n1. If the probeller prants the ploodnum → the brettent blemps the snabrik\n2. If the brettent blemps the snabrik → the preggar gresks the flendop\n\nConclusion: If the preggar gresks the flendop → the probeller prants the ploodnum\n\nFrom premises 1 and 2, we can derive:\nIf the probeller prants the ploodnum → the preggar gresks the flendop\n\nHowever, the conclusion tries to reverse this chain of reasoning. Just because A→B and B→C (giving us A→C), we cannot conclude that C→A. This would be affirming the consequent, which is a logical fallacy.\n\nno"
+}

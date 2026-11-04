@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loses the book then the manager finds the food, if the manager finds the food then the kid pays the building, therefore if the officer loses the book then the kid pays the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O4"
+        ],
+        [
+            "S9",
+            "V3",
+            "O16"
+        ],
+        [
+            "S1",
+            "V2",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

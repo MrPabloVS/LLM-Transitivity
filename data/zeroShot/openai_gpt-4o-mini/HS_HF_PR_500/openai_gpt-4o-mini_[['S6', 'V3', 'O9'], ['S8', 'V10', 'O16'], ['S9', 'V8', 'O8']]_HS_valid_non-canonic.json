@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the food then the manager loves the school,if the teacher finds the building then the officer hates the food therefore if the manager loves the school then the teacher finds the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O9"
+        ],
+        [
+            "S8",
+            "V10",
+            "O16"
+        ],
+        [
+            "S9",
+            "V8",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

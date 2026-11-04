@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian overrates the aesthetician then the bibliophile federalizes the coronograph, if the bibliophile federalizes the coronograph then the clerkship upbraids the metalurgist, therefore if the clerkship upbraids the metalurgist then the sumerian overrates the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V9",
+            "O16"
+        ],
+        [
+            "S10",
+            "V6",
+            "O21"
+        ],
+        [
+            "S3",
+            "V10",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

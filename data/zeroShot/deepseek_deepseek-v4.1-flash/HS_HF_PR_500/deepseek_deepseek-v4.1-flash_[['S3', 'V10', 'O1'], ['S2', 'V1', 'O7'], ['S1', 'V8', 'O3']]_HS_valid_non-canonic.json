@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man buys the sugar then the kid loves the money,if the woman hates the program then the man buys the sugar therefore if the kid loves the money then the woman hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O1"
+        ],
+        [
+            "S2",
+            "V1",
+            "O7"
+        ],
+        [
+            "S1",
+            "V8",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

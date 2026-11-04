@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller blemps the blorrack then the preggar trelfs the drambet, if the preggar trelfs the drambet then the bruggant gresks the flendop, therefore if the bruggant gresks the flendop then the probeller blemps the blorrack",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O4"
+        ],
+        [
+            "S2",
+            "V6",
+            "O2"
+        ],
+        [
+            "S5",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

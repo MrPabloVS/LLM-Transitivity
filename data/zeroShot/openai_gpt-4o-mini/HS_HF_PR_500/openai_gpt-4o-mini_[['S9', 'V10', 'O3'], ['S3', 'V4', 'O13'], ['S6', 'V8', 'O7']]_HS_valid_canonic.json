@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager hates the money then the woman sees the paper, if the woman sees the paper then the teacher loves the sugar, therefore if the manager hates the money then the teacher loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V10",
+            "O3"
+        ],
+        [
+            "S3",
+            "V4",
+            "O13"
+        ],
+        [
+            "S6",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

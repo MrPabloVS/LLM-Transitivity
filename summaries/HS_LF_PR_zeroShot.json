@@ -1,0 +1,222 @@
+[
+  {
+    "dataset": "HS_LF_PR",
+    "dataset_sha256": "3c3d0e9e746f3ba32204f86df7f124c7aa118b09ab0b3e3985facc9a351b175e",
+    "system": "zeroShot",
+    "model": "openai/gpt-4o-mini",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 1106,
+    "accuracy": 0.7373333333333333,
+    "unrecognized": 0,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valido / canonico": {
+        "saved": 500,
+        "correct": 499,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "yes": 499,
+          "no": 1
+        }
+      },
+      "invalid / canonico": {
+        "saved": 500,
+        "correct": 433,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 433,
+          "yes": 67
+        }
+      },
+      "valido / non-canonic": {
+        "saved": 500,
+        "correct": 174,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "yes": 174,
+          "no": 326
+        }
+      }
+    },
+    "logged_responses": 1555,
+    "logged_cost_usd": 0.0212379,
+    "logged_total_tokens": 136906,
+    "logs": [
+      "logs/HS_LF_PR_openai_gpt-4o-mini_2026-10-26_19-03.json",
+      "logs/HS_LF_PR_openai_gpt-4o-mini_2026-10-26_19-14.json",
+      "logs/HS_LF_PR_openai_gpt-4o-mini_zeroShot_2026-11-04_13-04-38_885700.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_LF_PR_openai_gpt-4o-mini_2026-10-26_19-03.json",
+        "responses": 55,
+        "cost_usd": 0.0007545,
+        "total_tokens": 4862,
+        "first_created_utc": "2026-10-26T22:03:26+00:00",
+        "last_created_utc": "2026-10-26T22:04:50+00:00"
+      },
+      {
+        "path": "logs/HS_LF_PR_openai_gpt-4o-mini_2026-10-26_19-14.json",
+        "responses": 211,
+        "cost_usd": 0.0028914,
+        "total_tokens": 18640,
+        "first_created_utc": "2026-10-26T22:14:15+00:00",
+        "last_created_utc": "2026-10-26T22:18:50+00:00"
+      },
+      {
+        "path": "logs/HS_LF_PR_openai_gpt-4o-mini_zeroShot_2026-11-04_13-04-38_885700.json",
+        "responses": 1289,
+        "cost_usd": 0.017592,
+        "total_tokens": 113404,
+        "first_created_utc": "2026-11-04T16:04:38+00:00",
+        "last_created_utc": "2026-11-04T16:06:49+00:00"
+      }
+    ]
+  },
+  {
+    "dataset": "HS_LF_PR",
+    "dataset_sha256": "3c3d0e9e746f3ba32204f86df7f124c7aa118b09ab0b3e3985facc9a351b175e",
+    "system": "zeroShot",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 1000,
+    "accuracy": 0.6666666666666666,
+    "unrecognized": 0,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valido / canonico": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "yes": 500
+        }
+      },
+      "invalid / canonico": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      },
+      "valido / non-canonic": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 0.1583320744,
+    "logged_total_tokens": 405941,
+    "logs": [
+      "logs/HS_LF_PR_deepseek_deepseek-v4.1-flash_zeroShot_2026-11-04_13-04-38_954555.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_LF_PR_deepseek_deepseek-v4.1-flash_zeroShot_2026-11-04_13-04-38_954555.json",
+        "responses": 1500,
+        "cost_usd": 0.1583320744,
+        "total_tokens": 405941,
+        "first_created_utc": "2026-11-04T16:04:39+00:00",
+        "last_created_utc": "2026-11-04T16:08:22+00:00"
+      }
+    ]
+  },
+  {
+    "dataset": "HS_LF_PR",
+    "dataset_sha256": "3c3d0e9e746f3ba32204f86df7f124c7aa118b09ab0b3e3985facc9a351b175e",
+    "system": "zeroShot",
+    "model": "anthropic/claude-sonnet-4.5",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 4,
+    "accuracy": 0.0026666666666666666,
+    "unrecognized": 1489,
+    "filtered": 7,
+    "text_responses": 1493,
+    "groups": {
+      "valido / canonico": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 497,
+        "filtered": 3,
+        "answers": {
+          "other": 497,
+          "content_filter": 3
+        }
+      },
+      "invalid / canonico": {
+        "saved": 500,
+        "correct": 4,
+        "unrecognized": 493,
+        "filtered": 3,
+        "answers": {
+          "other": 493,
+          "no": 4,
+          "content_filter": 3
+        }
+      },
+      "valido / non-canonic": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 499,
+        "filtered": 1,
+        "answers": {
+          "other": 499,
+          "content_filter": 1
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 5.561514,
+    "logged_total_tokens": 482006,
+    "logs": [
+      "logs/HS_LF_PR_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-04-39_069548.json",
+      "logs/HS_LF_PR_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-17-42_948364.json",
+      "logs/HS_LF_PR_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-20-26_095253_filtered_from_errors.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_LF_PR_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-04-39_069548.json",
+        "responses": 1473,
+        "cost_usd": 5.464461,
+        "total_tokens": 473575,
+        "first_created_utc": "2026-11-04T16:04:39+00:00",
+        "last_created_utc": "2026-11-04T16:17:11+00:00"
+      },
+      {
+        "path": "logs/HS_LF_PR_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-17-42_948364.json",
+        "responses": 20,
+        "cost_usd": 0.095139,
+        "total_tokens": 7797,
+        "first_created_utc": "2026-11-04T16:18:23+00:00",
+        "last_created_utc": "2026-11-04T16:19:26+00:00"
+      },
+      {
+        "path": "logs/HS_LF_PR_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-20-26_095253_filtered_from_errors.json",
+        "responses": 7,
+        "cost_usd": 0.0019140000000000001,
+        "total_tokens": 634,
+        "first_created_utc": "2026-11-04T16:17:54+00:00",
+        "last_created_utc": "2026-11-04T16:18:33+00:00"
+      }
+    ]
+  }
+]

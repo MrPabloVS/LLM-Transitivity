@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bruggant prants the drambet then the glemtor trelfs the prebart, if the glemtor trelfs the prebart then the brettent gresks the snabrik, therefore if the bruggant prants the drambet then the brettent gresks the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V3",
+            "O2"
+        ],
+        [
+            "S4",
+            "V6",
+            "O1"
+        ],
+        [
+            "S3",
+            "V5",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If bruggant prants drambet → glemtor trelfs prebart)\nPremise 2: If B then C (If glemtor trelfs prebart → brettent gresks snabrik)\nConclusion: If A then C (If bruggant prants drambet → brettent gresks snabrik)\n\nThis is a valid application of hypothetical syllogism (chain reasoning).\n\nyes"
+}

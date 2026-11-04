@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the glemtor trelfs the snabrik then the brettent glashes the ploodnum, if the brettent glashes the ploodnum then the bruggant prants the blorrack, therefore if the bruggant prants the blorrack then the glemtor trelfs the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V6",
+            "O5"
+        ],
+        [
+            "S3",
+            "V1",
+            "O3"
+        ],
+        [
+            "S5",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

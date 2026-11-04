@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar frikes the flendop then the probeller blemps the ploodnum, if the probeller blemps the ploodnum then the prackler trelfs the prebart, therefore if the preggar frikes the flendop then the prackler trelfs the prebart",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O6"
+        ],
+        [
+            "S1",
+            "V2",
+            "O3"
+        ],
+        [
+            "S6",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the preggar frikes the flendop → then the probeller blemps the ploodnum\nPremise 2: If the probeller blemps the ploodnum → then the prackler trelfs the prebart\nConclusion: Therefore, if the preggar frikes the flendop → then the prackler trelfs the prebart\n\nThis is a valid hypothetical syllogism (chain argument) of the form:\n- If A then B\n- If B then C\n- Therefore, if A then C\n\nyes"
+}

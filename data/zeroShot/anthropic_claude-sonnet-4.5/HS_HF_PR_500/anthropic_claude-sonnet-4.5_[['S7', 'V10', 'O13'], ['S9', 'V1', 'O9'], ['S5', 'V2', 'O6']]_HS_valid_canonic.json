@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the paper then the manager buys the building, if the manager buys the building then the student pays the chair, therefore if the doctor hates the paper then the student pays the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O13"
+        ],
+        [
+            "S9",
+            "V1",
+            "O9"
+        ],
+        [
+            "S5",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the doctor hates the paper → the manager buys the building\nPremise 2: If the manager buys the building → the student pays the chair\nConclusion: If the doctor hates the paper → the student pays the chair\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

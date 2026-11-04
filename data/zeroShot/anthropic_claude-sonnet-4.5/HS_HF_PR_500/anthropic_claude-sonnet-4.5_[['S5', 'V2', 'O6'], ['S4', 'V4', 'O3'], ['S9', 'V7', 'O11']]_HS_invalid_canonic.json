@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the chair then the family sees the money, if the family sees the money then the manager loses the car, therefore if the manager loses the car then the student pays the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O6"
+        ],
+        [
+            "S4",
+            "V4",
+            "O3"
+        ],
+        [
+            "S9",
+            "V7",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis commits the logical fallacy of affirming the consequent. The argument structure is:\n- If A then B\n- If B then C\n- Therefore if C then A\n\nThis is invalid. The premises only allow us to conclude \"if A then C\" (if the student pays the chair, then the manager loses the car), not the reverse direction stated in the conclusion."
+}

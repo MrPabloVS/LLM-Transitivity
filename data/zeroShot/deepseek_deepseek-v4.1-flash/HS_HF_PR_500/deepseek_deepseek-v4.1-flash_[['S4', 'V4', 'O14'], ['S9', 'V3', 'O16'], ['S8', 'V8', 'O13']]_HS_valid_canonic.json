@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family sees the computer then the manager finds the food, if the manager finds the food then the officer loves the paper, therefore if the family sees the computer then the officer loves the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V4",
+            "O14"
+        ],
+        [
+            "S9",
+            "V3",
+            "O16"
+        ],
+        [
+            "S8",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

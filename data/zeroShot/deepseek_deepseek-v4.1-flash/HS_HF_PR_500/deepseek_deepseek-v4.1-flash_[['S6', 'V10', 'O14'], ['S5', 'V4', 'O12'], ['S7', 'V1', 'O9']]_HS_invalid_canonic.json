@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher hates the computer then the student sees the newspaper, if the student sees the newspaper then the doctor buys the building, therefore if the doctor buys the building then the teacher hates the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O14"
+        ],
+        [
+            "S5",
+            "V4",
+            "O12"
+        ],
+        [
+            "S7",
+            "V1",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

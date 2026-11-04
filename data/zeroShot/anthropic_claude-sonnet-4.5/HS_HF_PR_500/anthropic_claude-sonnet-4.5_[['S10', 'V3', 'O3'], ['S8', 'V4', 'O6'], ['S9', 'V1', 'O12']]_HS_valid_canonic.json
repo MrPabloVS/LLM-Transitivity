@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the money then the officer sees the chair, if the officer sees the chair then the manager buys the newspaper, therefore if the girl finds the money then the manager buys the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O3"
+        ],
+        [
+            "S8",
+            "V4",
+            "O6"
+        ],
+        [
+            "S9",
+            "V1",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the girl finds the money → the officer sees the chair\n**Premise 2:** If the officer sees the chair → the manager buys the newspaper\n**Conclusion:** If the girl finds the money → the manager buys the newspaper\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

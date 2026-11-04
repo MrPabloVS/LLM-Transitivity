@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the paper then the man hates the paper, if the man hates the paper then the kid sees the school, therefore if the girl finds the paper then the kid sees the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O12"
+        ],
+        [
+            "S2",
+            "V10",
+            "O13"
+        ],
+        [
+            "S1",
+            "V4",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

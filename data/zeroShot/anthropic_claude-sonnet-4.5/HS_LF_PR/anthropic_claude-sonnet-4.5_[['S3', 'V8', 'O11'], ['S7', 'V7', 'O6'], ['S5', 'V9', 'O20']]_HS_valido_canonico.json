@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship intellectualizes the polytheism then the hypnotherapist sasses the metalurgist, if the hypnotherapist sasses the metalurgist then the audiophile overrates the taxman, therefore if the clerkship intellectualizes the polytheism then the audiophile overrates the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O11"
+        ],
+        [
+            "S7",
+            "V7",
+            "O6"
+        ],
+        [
+            "S5",
+            "V9",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the clerkship intellectualizes the polytheism → the hypnotherapist sasses the metalurgist\n\n**Premise 2:** If the hypnotherapist sasses the metalurgist → the audiophile overrates the taxman\n\n**Conclusion:** If the clerkship intellectualizes the polytheism → the audiophile overrates the taxman\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

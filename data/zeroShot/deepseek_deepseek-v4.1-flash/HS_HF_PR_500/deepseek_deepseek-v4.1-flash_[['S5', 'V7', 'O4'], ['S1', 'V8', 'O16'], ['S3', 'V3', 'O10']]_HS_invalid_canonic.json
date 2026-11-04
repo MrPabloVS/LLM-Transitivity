@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student loses the book then the kid loves the food, if the kid loves the food then the woman finds the college, therefore if the woman finds the college then the student loses the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V7",
+            "O4"
+        ],
+        [
+            "S1",
+            "V8",
+            "O16"
+        ],
+        [
+            "S3",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

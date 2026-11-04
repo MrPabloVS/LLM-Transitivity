@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl hates the food then the student loses the case, if the student loses the case then the man pays the car, therefore if the girl hates the food then the man pays the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O16"
+        ],
+        [
+            "S5",
+            "V7",
+            "O2"
+        ],
+        [
+            "S2",
+            "V2",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the girl hates the food → the student loses the case\nPremise 2: If the student loses the case → the man pays the car\nConclusion: If the girl hates the food → the man pays the car\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

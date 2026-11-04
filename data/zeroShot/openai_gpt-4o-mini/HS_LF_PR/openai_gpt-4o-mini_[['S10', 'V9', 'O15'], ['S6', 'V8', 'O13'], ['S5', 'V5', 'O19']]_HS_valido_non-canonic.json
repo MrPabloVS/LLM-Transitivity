@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist intellectualizes the rocketry then the audiophile piggybacks the taxman,if the bibliophile overrates the metalurgist then the alpinist intellectualizes the rocketry therefore if the audiophile piggybacks the taxman then the bibliophile overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O15"
+        ],
+        [
+            "S6",
+            "V8",
+            "O13"
+        ],
+        [
+            "S5",
+            "V5",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher sees the newspaper then the girl finds the school, if the girl finds the school then the man loses the case, therefore if the man loses the case then the teacher sees the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V4",
+            "O12"
+        ],
+        [
+            "S10",
+            "V3",
+            "O8"
+        ],
+        [
+            "S2",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

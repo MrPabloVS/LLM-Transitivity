@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family reads the paper then the student loves the computer, if the student loves the computer then the woman hates the school, therefore if the woman hates the school then the family reads the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V6",
+            "O13"
+        ],
+        [
+            "S5",
+            "V8",
+            "O14"
+        ],
+        [
+            "S3",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

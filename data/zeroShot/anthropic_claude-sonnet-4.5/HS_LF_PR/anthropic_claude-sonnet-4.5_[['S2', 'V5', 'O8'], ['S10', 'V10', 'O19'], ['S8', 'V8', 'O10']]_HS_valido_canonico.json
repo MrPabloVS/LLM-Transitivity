@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian piggybacks the pugilist then the bibliophile upbraids the taxman, if the bibliophile upbraids the taxman then the corsican intellectualizes the solipsism, therefore if the sumerian piggybacks the pugilist then the corsican intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O8"
+        ],
+        [
+            "S10",
+            "V10",
+            "O19"
+        ],
+        [
+            "S8",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the sumerian piggybacks the pugilist → the bibliophile upbraids the taxman\n\n**Premise 2:** If the bibliophile upbraids the taxman → the corsican intellectualizes the solipsism\n\n**Conclusion:** If the sumerian piggybacks the pugilist → the corsican intellectualizes the solipsism\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

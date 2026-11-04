@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid hates the sugar then the teacher loses the car, if the teacher loses the car then the manager finds the building, therefore if the kid hates the sugar then the manager finds the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O7"
+        ],
+        [
+            "S6",
+            "V7",
+            "O11"
+        ],
+        [
+            "S9",
+            "V3",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid hates the sugar → the teacher loses the car\nPremise 2: If the teacher loses the car → the manager finds the building\nConclusion: If the kid hates the sugar → the manager finds the building\n\nThis is a valid application of hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

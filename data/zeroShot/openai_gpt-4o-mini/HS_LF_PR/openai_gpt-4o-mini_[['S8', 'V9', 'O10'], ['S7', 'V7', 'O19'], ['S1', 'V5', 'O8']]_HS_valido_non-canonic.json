@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist sasses the taxman then the plutocrat piggybacks the pugilist,if the corsican overrates the rebelliousness then the hypnotherapist sasses the taxman therefore if the plutocrat piggybacks the pugilist then the corsican overrates the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O10"
+        ],
+        [
+            "S7",
+            "V7",
+            "O19"
+        ],
+        [
+            "S1",
+            "V5",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

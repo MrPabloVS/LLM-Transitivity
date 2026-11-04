@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loves the money then the family eats the sugar, if the family eats the sugar then the man loses the paper, therefore if the doctor loves the money then the man loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O3"
+        ],
+        [
+            "S4",
+            "V5",
+            "O7"
+        ],
+        [
+            "S2",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

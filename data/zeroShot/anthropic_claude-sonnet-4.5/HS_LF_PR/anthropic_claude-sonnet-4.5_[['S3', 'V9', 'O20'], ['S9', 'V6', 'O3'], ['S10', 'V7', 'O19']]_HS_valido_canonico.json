@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship overrates the taxman then the embryologist federalizes the lightsaber, if the embryologist federalizes the lightsaber then the bibliophile sasses the taxman, therefore if the clerkship overrates the taxman then the bibliophile sasses the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V9",
+            "O20"
+        ],
+        [
+            "S9",
+            "V6",
+            "O3"
+        ],
+        [
+            "S10",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the clerkship overrates the taxman → the embryologist federalizes the lightsaber\n\nPremise 2: If the embryologist federalizes the lightsaber → the bibliophile sasses the taxman\n\nConclusion: If the clerkship overrates the taxman → the bibliophile sasses the taxman\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

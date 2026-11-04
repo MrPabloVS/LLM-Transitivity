@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the book then the girl loves the newspaper, if the girl loves the newspaper then the manager sees the computer, therefore if the manager sees the computer then the student pays the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O4"
+        ],
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S9",
+            "V4",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man wins the case then the teacher pays the computer, if the teacher pays the computer then the family loses the game, therefore if the man wins the case then the family loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V9",
+            "O2"
+        ],
+        [
+            "S6",
+            "V2",
+            "O14"
+        ],
+        [
+            "S4",
+            "V7",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the man wins the case → the teacher pays the computer\nPremise 2: If the teacher pays the computer → the family loses the game\nConclusion: If the man wins the case → the family loses the game\n\nThis is a valid hypothetical syllogism (chain argument). If A→B and B→C, then A→C.\n\nyes"
+}

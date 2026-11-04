@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist piggybacks the taxman then the embryologist reappraises the solipsism, if the embryologist reappraises the solipsism then the alpinist federalizes the magnetometer, therefore if the hypnotherapist piggybacks the taxman then the alpinist federalizes the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V5",
+            "O19"
+        ],
+        [
+            "S9",
+            "V1",
+            "O10"
+        ],
+        [
+            "S6",
+            "V6",
+            "O17"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

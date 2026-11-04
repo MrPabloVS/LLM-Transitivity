@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian federalizes the trimaran then the audiophile sasses the pugilist, if the audiophile sasses the pugilist then the corsican upbraids the metalurgist, therefore if the sumerian federalizes the trimaran then the corsican upbraids the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O14"
+        ],
+        [
+            "S5",
+            "V7",
+            "O8"
+        ],
+        [
+            "S8",
+            "V10",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

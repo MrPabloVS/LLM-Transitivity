@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat piggybacks the pugilist then the bibliophile overrates the taxman, if the bibliophile overrates the taxman then the clerkship indemnifies the aesthetician, therefore if the plutocrat piggybacks the pugilist then the clerkship indemnifies the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V5",
+            "O8"
+        ],
+        [
+            "S10",
+            "V9",
+            "O20"
+        ],
+        [
+            "S3",
+            "V2",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

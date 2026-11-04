@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid reads the paper then the officer finds the money, if the officer finds the money then the man pays the newspaper, therefore if the man pays the newspaper then the kid reads the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O13"
+        ],
+        [
+            "S8",
+            "V3",
+            "O3"
+        ],
+        [
+            "S2",
+            "V2",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

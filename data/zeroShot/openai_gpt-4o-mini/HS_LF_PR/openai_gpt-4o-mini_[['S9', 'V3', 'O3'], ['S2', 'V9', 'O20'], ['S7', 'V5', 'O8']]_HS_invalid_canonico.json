@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist prepays the lightsaber then the sumerian overrates the taxman, if the sumerian overrates the taxman then the hypnotherapist piggybacks the pugilist, therefore if the hypnotherapist piggybacks the pugilist then the embryologist prepays the lightsaber",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V3",
+            "O3"
+        ],
+        [
+            "S2",
+            "V9",
+            "O20"
+        ],
+        [
+            "S7",
+            "V5",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

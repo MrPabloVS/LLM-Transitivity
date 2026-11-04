@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher hates the program then the woman wins the case, if the woman wins the case then the student sees the newspaper, therefore if the teacher hates the program then the student sees the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O1"
+        ],
+        [
+            "S3",
+            "V9",
+            "O2"
+        ],
+        [
+            "S5",
+            "V4",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the teacher hates the program → the woman wins the case\nPremise 2: If the woman wins the case → the student sees the newspaper\nConclusion: If the teacher hates the program → the student sees the newspaper\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

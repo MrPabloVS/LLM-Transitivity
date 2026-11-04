@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat upbraids the taxman then the alpinist indemnifies the pugilist, if the alpinist indemnifies the pugilist then the audiophile reappraises the rebelliousness, therefore if the audiophile reappraises the rebelliousness then the plutocrat upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O19"
+        ],
+        [
+            "S6",
+            "V2",
+            "O8"
+        ],
+        [
+            "S5",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

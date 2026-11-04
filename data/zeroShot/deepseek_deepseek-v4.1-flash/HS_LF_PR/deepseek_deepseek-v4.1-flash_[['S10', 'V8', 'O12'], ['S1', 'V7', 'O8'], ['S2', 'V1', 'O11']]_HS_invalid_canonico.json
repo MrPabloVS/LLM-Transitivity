@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile intellectualizes the fairyland then the plutocrat sasses the pugilist, if the plutocrat sasses the pugilist then the sumerian reappraises the polytheism, therefore if the sumerian reappraises the polytheism then the bibliophile intellectualizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S1",
+            "V7",
+            "O8"
+        ],
+        [
+            "S2",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

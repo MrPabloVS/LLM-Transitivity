@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar blemps the prebart then the prackler trelfs the ploodnum, if the prackler trelfs the ploodnum then the brettent gresks the drambet, therefore if the preggar blemps the prebart then the brettent gresks the drambet",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V2",
+            "O1"
+        ],
+        [
+            "S6",
+            "V6",
+            "O3"
+        ],
+        [
+            "S3",
+            "V5",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "This is a logical argument that follows the hypothetical syllogism form:\n\n1. If P then Q (If the preggar blemps the prebart, then the prackler trelfs the ploodnum)\n2. If Q then R (If the prackler trelfs the ploodnum, then the brettent gresks the drambet)\n3. Therefore, if P then R (If the preggar blemps the prebart, then the brettent gresks the drambet)\n\nThis is a valid logical structure.\n\nyes"
+}

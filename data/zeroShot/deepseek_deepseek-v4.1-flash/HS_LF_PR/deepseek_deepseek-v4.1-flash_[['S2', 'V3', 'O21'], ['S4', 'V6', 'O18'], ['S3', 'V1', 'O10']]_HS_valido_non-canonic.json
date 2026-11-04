@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist federalizes the databank then the clerkship reappraises the solipsism,if the sumerian prepays the coronograph then the herpetologist federalizes the databank therefore if the clerkship reappraises the solipsism then the sumerian prepays the coronograph",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O21"
+        ],
+        [
+            "S4",
+            "V6",
+            "O18"
+        ],
+        [
+            "S3",
+            "V1",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

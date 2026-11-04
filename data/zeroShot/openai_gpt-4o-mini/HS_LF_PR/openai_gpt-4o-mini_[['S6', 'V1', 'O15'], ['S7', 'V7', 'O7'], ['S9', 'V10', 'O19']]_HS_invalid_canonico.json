@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist reappraises the conventionalism then the hypnotherapist sasses the aesthetician, if the hypnotherapist sasses the aesthetician then the embryologist upbraids the taxman, therefore if the embryologist upbraids the taxman then the alpinist reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O15"
+        ],
+        [
+            "S7",
+            "V7",
+            "O7"
+        ],
+        [
+            "S9",
+            "V10",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

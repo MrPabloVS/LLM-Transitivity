@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist sasses the taxman then the plutocrat federalizes the rocketry, if the plutocrat federalizes the rocketry then the corsican intellectualizes the solipsism, therefore if the hypnotherapist sasses the taxman then the corsican intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O19"
+        ],
+        [
+            "S1",
+            "V6",
+            "O13"
+        ],
+        [
+            "S8",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the hypnotherapist sasses the taxman → the plutocrat federalizes the rocketry\nPremise 2: If the plutocrat federalizes the rocketry → the corsican intellectualizes the solipsism\nConclusion: If the hypnotherapist sasses the taxman → the corsican intellectualizes the solipsism\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

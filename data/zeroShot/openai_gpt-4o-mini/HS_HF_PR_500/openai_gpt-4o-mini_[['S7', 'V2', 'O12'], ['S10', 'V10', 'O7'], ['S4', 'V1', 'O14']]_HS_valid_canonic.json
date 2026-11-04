@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor pays the newspaper then the girl hates the sugar, if the girl hates the sugar then the family buys the computer, therefore if the doctor pays the newspaper then the family buys the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V2",
+            "O12"
+        ],
+        [
+            "S10",
+            "V10",
+            "O7"
+        ],
+        [
+            "S4",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

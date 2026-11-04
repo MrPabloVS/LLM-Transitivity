@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the game then the girl reads the book, if the girl reads the book then the kid loves the newspaper, therefore if the manager loses the game then the kid loves the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O15"
+        ],
+        [
+            "S10",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

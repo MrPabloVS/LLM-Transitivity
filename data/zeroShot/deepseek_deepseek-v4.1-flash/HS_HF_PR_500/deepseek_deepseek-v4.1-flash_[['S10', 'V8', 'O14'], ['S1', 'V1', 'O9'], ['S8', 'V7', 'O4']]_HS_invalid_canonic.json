@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loves the computer then the kid buys the building, if the kid buys the building then the officer loses the book, therefore if the officer loses the book then the girl loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O14"
+        ],
+        [
+            "S1",
+            "V1",
+            "O9"
+        ],
+        [
+            "S8",
+            "V7",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

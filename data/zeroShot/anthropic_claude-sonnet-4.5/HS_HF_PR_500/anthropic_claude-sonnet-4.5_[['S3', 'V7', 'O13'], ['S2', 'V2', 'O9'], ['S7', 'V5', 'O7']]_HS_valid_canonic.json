@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loses the paper then the man pays the building, if the man pays the building then the doctor eats the sugar, therefore if the woman loses the paper then the doctor eats the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V7",
+            "O13"
+        ],
+        [
+            "S2",
+            "V2",
+            "O9"
+        ],
+        [
+            "S7",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the woman loses the paper → the man pays the building\nPremise 2: If the man pays the building → the doctor eats the sugar\nConclusion: If the woman loses the paper → the doctor eats the sugar\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

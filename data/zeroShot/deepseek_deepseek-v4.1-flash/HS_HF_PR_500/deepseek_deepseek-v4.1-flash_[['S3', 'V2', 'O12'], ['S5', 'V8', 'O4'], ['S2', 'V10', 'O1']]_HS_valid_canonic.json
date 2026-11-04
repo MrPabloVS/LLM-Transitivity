@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman pays the newspaper then the student loves the book, if the student loves the book then the man hates the program, therefore if the woman pays the newspaper then the man hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V2",
+            "O12"
+        ],
+        [
+            "S5",
+            "V8",
+            "O4"
+        ],
+        [
+            "S2",
+            "V10",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian indemnifies the taxman then the audiophile intellectualizes the polytheism, if the audiophile intellectualizes the polytheism then the bibliophile sasses the metalurgist, therefore if the bibliophile sasses the metalurgist then the sumerian indemnifies the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V2",
+            "O19"
+        ],
+        [
+            "S5",
+            "V8",
+            "O11"
+        ],
+        [
+            "S10",
+            "V7",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

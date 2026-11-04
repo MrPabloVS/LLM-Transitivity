@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman hates the school then the officer pays the sugar, if the officer pays the sugar then the manager wins the game, therefore if the manager wins the game then the woman hates the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O8"
+        ],
+        [
+            "S8",
+            "V2",
+            "O7"
+        ],
+        [
+            "S9",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

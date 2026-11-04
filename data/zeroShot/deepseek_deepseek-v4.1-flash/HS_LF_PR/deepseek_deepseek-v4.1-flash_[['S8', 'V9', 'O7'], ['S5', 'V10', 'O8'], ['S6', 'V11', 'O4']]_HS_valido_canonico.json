@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican overrates the polytheism then the audiophile upbraids the pugilist, if the audiophile upbraids the pugilist then the alpinist marinates the monkfish, therefore if the corsican overrates the polytheism then the alpinist marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O7"
+        ],
+        [
+            "S5",
+            "V10",
+            "O8"
+        ],
+        [
+            "S6",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

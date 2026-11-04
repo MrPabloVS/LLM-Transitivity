@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican overrates the polytheism then the herpetologist indemnifies the taxman, if the herpetologist indemnifies the taxman then the sumerian intellectualizes the fairyland, therefore if the corsican overrates the polytheism then the sumerian intellectualizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O7"
+        ],
+        [
+            "S4",
+            "V2",
+            "O19"
+        ],
+        [
+            "S2",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the Corsican overrates the polytheism → the herpetologist indemnifies the taxman\nPremise 2: If the herpetologist indemnifies the taxman → the Sumerian intellectualizes the fairyland\nConclusion: If the Corsican overrates the polytheism → the Sumerian intellectualizes the fairyland\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

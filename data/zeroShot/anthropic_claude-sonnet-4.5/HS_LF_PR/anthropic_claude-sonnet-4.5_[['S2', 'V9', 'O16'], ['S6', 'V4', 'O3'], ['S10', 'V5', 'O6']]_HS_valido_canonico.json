@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian overrates the aesthetician then the alpinist unfreezes the monkfish, if the alpinist unfreezes the monkfish then the bibliophile piggybacks the metalurgist, therefore if the sumerian overrates the aesthetician then the bibliophile piggybacks the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V9",
+            "O16"
+        ],
+        [
+            "S6",
+            "V4",
+            "O3"
+        ],
+        [
+            "S10",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the sumerian overrates the aesthetician → the alpinist unfreezes the monkfish\nPremise 2: If the alpinist unfreezes the monkfish → the bibliophile piggybacks the metalurgist\nConclusion: If the sumerian overrates the aesthetician → the bibliophile piggybacks the metalurgist\n\nThis is a valid application of hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

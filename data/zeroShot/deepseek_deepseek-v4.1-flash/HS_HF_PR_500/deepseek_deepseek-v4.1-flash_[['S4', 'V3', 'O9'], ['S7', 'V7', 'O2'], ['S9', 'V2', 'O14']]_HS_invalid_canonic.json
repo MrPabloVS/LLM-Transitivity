@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family finds the building then the doctor loses the case, if the doctor loses the case then the manager pays the computer, therefore if the manager pays the computer then the family finds the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O9"
+        ],
+        [
+            "S7",
+            "V7",
+            "O2"
+        ],
+        [
+            "S9",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager eats the sugar then the doctor wins the case, if the doctor wins the case then the family buys the paper, therefore if the manager eats the sugar then the family buys the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V5",
+            "O7"
+        ],
+        [
+            "S7",
+            "V9",
+            "O2"
+        ],
+        [
+            "S4",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

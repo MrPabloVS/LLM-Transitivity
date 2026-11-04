@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the program then the kid finds the paper, if the kid finds the paper then the teacher loves the school, therefore if the officer hates the program then the teacher loves the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O1"
+        ],
+        [
+            "S1",
+            "V3",
+            "O12"
+        ],
+        [
+            "S6",
+            "V8",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

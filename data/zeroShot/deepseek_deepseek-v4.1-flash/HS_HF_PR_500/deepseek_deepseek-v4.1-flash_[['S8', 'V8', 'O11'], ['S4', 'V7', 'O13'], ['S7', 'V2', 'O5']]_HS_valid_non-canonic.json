@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loses the paper then the doctor pays the table,if the officer loves the car then the family loses the paper therefore if the doctor pays the table then the officer loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O11"
+        ],
+        [
+            "S4",
+            "V7",
+            "O13"
+        ],
+        [
+            "S7",
+            "V2",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

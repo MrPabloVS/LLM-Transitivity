@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the paper then the kid pays the computer,if the teacher finds the food then the doctor hates the paper therefore if the kid pays the computer then the teacher finds the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O16"
+        ],
+        [
+            "S7",
+            "V10",
+            "O13"
+        ],
+        [
+            "S1",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

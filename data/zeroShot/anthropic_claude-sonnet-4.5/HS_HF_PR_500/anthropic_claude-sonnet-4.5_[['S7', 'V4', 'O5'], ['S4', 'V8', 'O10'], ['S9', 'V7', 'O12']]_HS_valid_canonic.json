@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor sees the table then the family loves the college, if the family loves the college then the manager loses the newspaper, therefore if the doctor sees the table then the manager loses the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V4",
+            "O5"
+        ],
+        [
+            "S4",
+            "V8",
+            "O10"
+        ],
+        [
+            "S9",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the doctor sees the table → the family loves the college\n**Premise 2:** If the family loves the college → the manager loses the newspaper\n**Conclusion:** If the doctor sees the table → the manager loses the newspaper\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the doctor sees the table\n- B = the family loves the college\n- C = the manager loses the newspaper\n\n**yes**"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student hates the building then the teacher buys the table, if the teacher buys the table then the officer loves the school, therefore if the officer loves the school then the student hates the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V10",
+            "O9"
+        ],
+        [
+            "S6",
+            "V1",
+            "O5"
+        ],
+        [
+            "S8",
+            "V8",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

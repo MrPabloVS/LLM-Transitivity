@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the paper then the teacher sees the car, if the teacher sees the car then the man wins the game, therefore if the man wins the game then the manager loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O13"
+        ],
+        [
+            "S6",
+            "V4",
+            "O11"
+        ],
+        [
+            "S2",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

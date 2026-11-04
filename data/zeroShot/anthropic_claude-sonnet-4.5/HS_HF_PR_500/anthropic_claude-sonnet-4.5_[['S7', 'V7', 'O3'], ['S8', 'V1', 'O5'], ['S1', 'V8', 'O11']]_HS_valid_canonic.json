@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loses the money then the officer buys the table, if the officer buys the table then the kid loves the car, therefore if the doctor loses the money then the kid loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O3"
+        ],
+        [
+            "S8",
+            "V1",
+            "O5"
+        ],
+        [
+            "S1",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the doctor loses the money → the officer buys the table\nPremise 2: If the officer buys the table → the kid loves the car\nConclusion: If the doctor loses the money → the kid loves the car\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A then B\n- If B then C\n- Therefore, if A then C\n\nyes"
+}

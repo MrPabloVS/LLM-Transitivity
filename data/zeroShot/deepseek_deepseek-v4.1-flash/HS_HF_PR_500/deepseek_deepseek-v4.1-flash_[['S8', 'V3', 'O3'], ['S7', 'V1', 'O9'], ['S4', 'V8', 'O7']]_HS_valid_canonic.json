@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the money then the doctor buys the building, if the doctor buys the building then the family loves the sugar, therefore if the officer finds the money then the family loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O3"
+        ],
+        [
+            "S7",
+            "V1",
+            "O9"
+        ],
+        [
+            "S4",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

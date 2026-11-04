@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loses the money then the manager hates the building, if the manager hates the building then the kid sees the table, therefore if the girl loses the money then the kid sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V7",
+            "O3"
+        ],
+        [
+            "S9",
+            "V10",
+            "O9"
+        ],
+        [
+            "S1",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

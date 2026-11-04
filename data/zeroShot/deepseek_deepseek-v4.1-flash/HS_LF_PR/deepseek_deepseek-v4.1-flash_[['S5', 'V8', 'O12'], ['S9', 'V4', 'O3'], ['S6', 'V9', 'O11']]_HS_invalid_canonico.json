@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile intellectualizes the fairyland then the embryologist unfreezes the monkfish, if the embryologist unfreezes the monkfish then the alpinist overrates the semiology, therefore if the alpinist overrates the semiology then the audiophile intellectualizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O12"
+        ],
+        [
+            "S9",
+            "V4",
+            "O3"
+        ],
+        [
+            "S6",
+            "V9",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

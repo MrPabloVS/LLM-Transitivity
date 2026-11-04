@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile intellectualizes the fairyland then the sumerian overrates the metalurgist, if the sumerian overrates the metalurgist then the bibliophile indemnifies the taxman, therefore if the audiophile intellectualizes the fairyland then the bibliophile indemnifies the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O12"
+        ],
+        [
+            "S2",
+            "V9",
+            "O15"
+        ],
+        [
+            "S10",
+            "V2",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the audiophile intellectualizes the fairyland → the sumerian overrates the metalurgist\n\n**Premise 2:** If the sumerian overrates the metalurgist → the bibliophile indemnifies the taxman\n\n**Conclusion:** If the audiophile intellectualizes the fairyland → the bibliophile indemnifies the taxman\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\n**yes**"
+}

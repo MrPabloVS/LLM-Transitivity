@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loses the newspaper then the kid hates the school, if the kid hates the school then the teacher sees the money, therefore if the man loses the newspaper then the teacher sees the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V7",
+            "O12"
+        ],
+        [
+            "S1",
+            "V10",
+            "O8"
+        ],
+        [
+            "S6",
+            "V4",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the man loses the newspaper → the kid hates the school\nPremise 2: If the kid hates the school → the teacher sees the money\nConclusion: If the man loses the newspaper → the teacher sees the money\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

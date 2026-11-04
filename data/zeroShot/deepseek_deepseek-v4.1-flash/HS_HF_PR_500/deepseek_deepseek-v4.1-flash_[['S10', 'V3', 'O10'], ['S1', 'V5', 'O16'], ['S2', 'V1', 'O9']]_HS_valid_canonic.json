@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the college then the kid eats the food, if the kid eats the food then the man buys the building, therefore if the girl finds the college then the man buys the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O10"
+        ],
+        [
+            "S1",
+            "V5",
+            "O16"
+        ],
+        [
+            "S2",
+            "V1",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

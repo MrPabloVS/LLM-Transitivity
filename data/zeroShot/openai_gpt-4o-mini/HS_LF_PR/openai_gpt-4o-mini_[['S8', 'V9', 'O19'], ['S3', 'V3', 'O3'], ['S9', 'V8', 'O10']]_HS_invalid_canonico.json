@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican overrates the pugilist then the clerkship prepays the lightsaber, if the clerkship prepays the lightsaber then the embryologist intellectualizes the solipsism, therefore if the embryologist intellectualizes the solipsism then the corsican overrates the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O19"
+        ],
+        [
+            "S3",
+            "V3",
+            "O3"
+        ],
+        [
+            "S9",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist reappraises the renewable-energy then the corsican unfreezes the ceviche, if the corsican unfreezes the ceviche then the hypnotherapist federalizes the lightsaber, therefore if the hypnotherapist federalizes the lightsaber then the embryologist reappraises the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V1",
+            "O1"
+        ],
+        [
+            "S8",
+            "V4",
+            "O9"
+        ],
+        [
+            "S7",
+            "V6",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

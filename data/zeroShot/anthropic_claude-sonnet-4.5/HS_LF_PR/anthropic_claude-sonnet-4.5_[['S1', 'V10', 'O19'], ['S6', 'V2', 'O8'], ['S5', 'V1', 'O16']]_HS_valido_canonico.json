@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat upbraids the taxman then the alpinist indemnifies the pugilist, if the alpinist indemnifies the pugilist then the audiophile reappraises the rebelliousness, therefore if the plutocrat upbraids the taxman then the audiophile reappraises the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O19"
+        ],
+        [
+            "S6",
+            "V2",
+            "O8"
+        ],
+        [
+            "S5",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the plutocrat upbraids the taxman → the alpinist indemnifies the pugilist\n\n**Premise 2:** If the alpinist indemnifies the pugilist → the audiophile reappraises the rebelliousness\n\n**Conclusion:** If the plutocrat upbraids the taxman → the audiophile reappraises the rebelliousness\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If P → Q\n- If Q → R\n- Therefore, If P → R\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist reappraises the fumigation then the hypnotherapist indemnifies the pugilist, if the hypnotherapist indemnifies the pugilist then the corsican federalizes the renewable-energy, therefore if the corsican federalizes the renewable-energy then the alpinist reappraises the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O5"
+        ],
+        [
+            "S7",
+            "V2",
+            "O8"
+        ],
+        [
+            "S8",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

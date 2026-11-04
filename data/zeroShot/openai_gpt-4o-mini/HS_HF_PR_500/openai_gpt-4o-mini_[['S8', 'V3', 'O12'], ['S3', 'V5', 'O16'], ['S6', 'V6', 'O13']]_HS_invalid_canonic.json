@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the paper then the woman eats the food, if the woman eats the food then the teacher reads the paper, therefore if the teacher reads the paper then the officer finds the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O12"
+        ],
+        [
+            "S3",
+            "V5",
+            "O16"
+        ],
+        [
+            "S6",
+            "V6",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor buys the table then the girl loves the building, if the girl loves the building then the student loses the newspaper, therefore if the student loses the newspaper then the doctor buys the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O5"
+        ],
+        [
+            "S10",
+            "V8",
+            "O9"
+        ],
+        [
+            "S5",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

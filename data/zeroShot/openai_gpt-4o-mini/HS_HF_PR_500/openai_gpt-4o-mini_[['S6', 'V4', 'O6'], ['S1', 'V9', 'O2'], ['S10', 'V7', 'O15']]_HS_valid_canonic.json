@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher sees the chair then the kid wins the case, if the kid wins the case then the girl loses the game, therefore if the teacher sees the chair then the girl loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V4",
+            "O6"
+        ],
+        [
+            "S1",
+            "V9",
+            "O2"
+        ],
+        [
+            "S10",
+            "V7",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

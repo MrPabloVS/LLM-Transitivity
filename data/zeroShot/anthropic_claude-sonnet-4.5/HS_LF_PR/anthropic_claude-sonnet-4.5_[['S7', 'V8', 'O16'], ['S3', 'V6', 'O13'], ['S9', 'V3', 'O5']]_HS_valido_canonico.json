@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist intellectualizes the rebelliousness then the clerkship federalizes the rocketry, if the clerkship federalizes the rocketry then the embryologist prepays the fumigation, therefore if the hypnotherapist intellectualizes the rebelliousness then the embryologist prepays the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O16"
+        ],
+        [
+            "S3",
+            "V6",
+            "O13"
+        ],
+        [
+            "S9",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If hypnotherapist intellectualizes rebelliousness, then clerkship federalizes rocketry)\nPremise 2: If B then C (If clerkship federalizes rocketry, then embryologist prepays fumigation)\nConclusion: If A then C (If hypnotherapist intellectualizes rebelliousness, then embryologist prepays fumigation)\n\nThis is a valid application of the hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

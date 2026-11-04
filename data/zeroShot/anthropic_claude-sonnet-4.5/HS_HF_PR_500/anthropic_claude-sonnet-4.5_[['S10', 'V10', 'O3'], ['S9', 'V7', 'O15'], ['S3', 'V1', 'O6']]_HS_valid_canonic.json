@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl hates the money then the manager loses the game, if the manager loses the game then the woman buys the chair, therefore if the girl hates the money then the woman buys the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O3"
+        ],
+        [
+            "S9",
+            "V7",
+            "O15"
+        ],
+        [
+            "S3",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the girl hates the money → the manager loses the game\nPremise 2: If the manager loses the game → the woman buys the chair\nConclusion: If the girl hates the money → the woman buys the chair\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

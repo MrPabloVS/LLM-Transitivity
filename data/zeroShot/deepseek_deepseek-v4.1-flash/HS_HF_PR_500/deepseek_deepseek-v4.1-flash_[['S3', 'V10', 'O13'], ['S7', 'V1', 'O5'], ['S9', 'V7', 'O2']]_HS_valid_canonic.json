@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman hates the paper then the doctor buys the table, if the doctor buys the table then the manager loses the case, therefore if the woman hates the paper then the manager loses the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O13"
+        ],
+        [
+            "S7",
+            "V1",
+            "O5"
+        ],
+        [
+            "S9",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

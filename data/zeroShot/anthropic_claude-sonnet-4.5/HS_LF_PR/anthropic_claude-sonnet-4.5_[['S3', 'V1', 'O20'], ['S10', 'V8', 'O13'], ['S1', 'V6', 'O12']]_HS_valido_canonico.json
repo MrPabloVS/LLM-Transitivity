@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship reappraises the semiology then the bibliophile intellectualizes the rocketry, if the bibliophile intellectualizes the rocketry then the plutocrat federalizes the fairyland, therefore if the clerkship reappraises the semiology then the plutocrat federalizes the fairyland",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O20"
+        ],
+        [
+            "S10",
+            "V8",
+            "O13"
+        ],
+        [
+            "S1",
+            "V6",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If A then B (If clerkship reappraises semiology → bibliophile intellectualizes rocketry)\n\n**Premise 2:** If B then C (If bibliophile intellectualizes rocketry → plutocrat federalizes fairyland)\n\n**Conclusion:** If A then C (If clerkship reappraises semiology → plutocrat federalizes fairyland)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\n**yes**"
+}

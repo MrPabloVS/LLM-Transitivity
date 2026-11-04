@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man eats the sugar then the manager pays the table, if the manager pays the table then the family loses the case, therefore if the man eats the sugar then the family loses the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O7"
+        ],
+        [
+            "S9",
+            "V2",
+            "O5"
+        ],
+        [
+            "S4",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the man eats the sugar → the manager pays the table\nPremise 2: If the manager pays the table → the family loses the case\nConclusion: If the man eats the sugar → the family loses the case\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

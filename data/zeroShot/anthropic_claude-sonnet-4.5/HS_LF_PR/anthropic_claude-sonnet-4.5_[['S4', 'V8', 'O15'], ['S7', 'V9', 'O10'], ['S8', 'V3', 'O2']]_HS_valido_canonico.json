@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist intellectualizes the conventionalism then the hypnotherapist overrates the rebelliousness, if the hypnotherapist overrates the rebelliousness then the corsican prepays the rental-car, therefore if the herpetologist intellectualizes the conventionalism then the corsican prepays the rental-car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O15"
+        ],
+        [
+            "S7",
+            "V9",
+            "O10"
+        ],
+        [
+            "S8",
+            "V3",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If herpetologist intellectualizes the conventionalism, then hypnotherapist overrates the rebelliousness)\n\nPremise 2: If B then C (If hypnotherapist overrates the rebelliousness, then corsican prepays the rental-car)\n\nConclusion: If A then C (If herpetologist intellectualizes the conventionalism, then corsican prepays the rental-car)\n\nThis is a valid application of hypothetical syllogism (chain reasoning): If A→B and B→C, then A→C.\n\nyes"
+}

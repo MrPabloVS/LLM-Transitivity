@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian unfreezes the ceviche then the clerkship upbraids the aesthetician, if the clerkship upbraids the aesthetician then the embryologist sasses the pugilist, therefore if the sumerian unfreezes the ceviche then the embryologist sasses the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O9"
+        ],
+        [
+            "S3",
+            "V10",
+            "O7"
+        ],
+        [
+            "S9",
+            "V7",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the sumerian unfreezes the ceviche → the clerkship upbraids the aesthetician\n\nPremise 2: If the clerkship upbraids the aesthetician → the embryologist sasses the pugilist\n\nConclusion: If the sumerian unfreezes the ceviche → the embryologist sasses the pugilist\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

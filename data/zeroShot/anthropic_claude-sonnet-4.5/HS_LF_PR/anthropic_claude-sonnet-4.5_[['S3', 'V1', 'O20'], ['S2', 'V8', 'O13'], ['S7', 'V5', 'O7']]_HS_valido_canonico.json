@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship reappraises the semiology then the sumerian intellectualizes the rocketry, if the sumerian intellectualizes the rocketry then the hypnotherapist piggybacks the aesthetician, therefore if the clerkship reappraises the semiology then the hypnotherapist piggybacks the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O20"
+        ],
+        [
+            "S2",
+            "V8",
+            "O13"
+        ],
+        [
+            "S7",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (clerkship reappraises semiology → sumerian intellectualizes rocketry)\nPremise 2: If B then C (sumerian intellectualizes rocketry → hypnotherapist piggybacks aesthetician)\nConclusion: If A then C (clerkship reappraises semiology → hypnotherapist piggybacks aesthetician)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

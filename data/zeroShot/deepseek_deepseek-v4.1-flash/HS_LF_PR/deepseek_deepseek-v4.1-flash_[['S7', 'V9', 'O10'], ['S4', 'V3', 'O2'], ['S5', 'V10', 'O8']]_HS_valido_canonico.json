@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist overrates the rebelliousness then the herpetologist prepays the rental-car, if the herpetologist prepays the rental-car then the audiophile upbraids the pugilist, therefore if the hypnotherapist overrates the rebelliousness then the audiophile upbraids the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O10"
+        ],
+        [
+            "S4",
+            "V3",
+            "O2"
+        ],
+        [
+            "S5",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

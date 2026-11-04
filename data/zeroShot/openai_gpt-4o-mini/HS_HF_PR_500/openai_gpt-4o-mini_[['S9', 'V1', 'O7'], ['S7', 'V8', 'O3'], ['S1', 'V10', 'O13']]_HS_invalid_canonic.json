@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager buys the sugar then the doctor loves the money, if the doctor loves the money then the kid hates the paper, therefore if the kid hates the paper then the manager buys the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V1",
+            "O7"
+        ],
+        [
+            "S7",
+            "V8",
+            "O3"
+        ],
+        [
+            "S1",
+            "V10",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

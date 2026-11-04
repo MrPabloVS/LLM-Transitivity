@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor buys the building then the manager pays the book, if the manager pays the book then the student loves the college, therefore if the doctor buys the building then the student loves the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O9"
+        ],
+        [
+            "S9",
+            "V2",
+            "O4"
+        ],
+        [
+            "S5",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher hates the building then the doctor finds the newspaper, if the doctor finds the newspaper then the manager buys the food, therefore if the teacher hates the building then the manager buys the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O9"
+        ],
+        [
+            "S7",
+            "V3",
+            "O11"
+        ],
+        [
+            "S9",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

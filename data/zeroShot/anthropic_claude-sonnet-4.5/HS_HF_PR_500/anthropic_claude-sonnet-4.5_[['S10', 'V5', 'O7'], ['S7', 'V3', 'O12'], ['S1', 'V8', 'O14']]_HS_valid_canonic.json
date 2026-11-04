@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl eats the sugar then the doctor finds the paper, if the doctor finds the paper then the kid loves the computer, therefore if the girl eats the sugar then the kid loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S7",
+            "V3",
+            "O12"
+        ],
+        [
+            "S1",
+            "V8",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this argument structure:\n\nPremise 1: If the girl eats the sugar → the doctor finds the paper\nPremise 2: If the doctor finds the paper → the kid loves the computer\nConclusion: If the girl eats the sugar → the kid loves the computer\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

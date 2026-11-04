@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile piggybacks the aesthetician then the sumerian sasses the pugilist, if the sumerian sasses the pugilist then the hypnotherapist federalizes the renewable-energy, therefore if the bibliophile piggybacks the aesthetician then the hypnotherapist federalizes the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S2",
+            "V7",
+            "O8"
+        ],
+        [
+            "S7",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If bibliophile piggybacks aesthetician, then sumerian sasses pugilist)\nPremise 2: If B then C (If sumerian sasses pugilist, then hypnotherapist federalizes renewable-energy)\nConclusion: If A then C (If bibliophile piggybacks aesthetician, then hypnotherapist federalizes renewable-energy)\n\nThis is a valid application of hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

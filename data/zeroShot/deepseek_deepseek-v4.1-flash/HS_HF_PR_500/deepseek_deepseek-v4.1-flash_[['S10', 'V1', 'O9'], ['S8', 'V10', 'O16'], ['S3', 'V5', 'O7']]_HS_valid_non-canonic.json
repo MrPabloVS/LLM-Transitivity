@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the food then the woman eats the sugar,if the girl buys the building then the officer hates the food therefore if the woman eats the sugar then the girl buys the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O9"
+        ],
+        [
+            "S8",
+            "V10",
+            "O16"
+        ],
+        [
+            "S3",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

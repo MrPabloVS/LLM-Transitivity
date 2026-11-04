@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the food then the doctor hates the book, if the doctor hates the book then the man sees the car, therefore if the girl finds the food then the man sees the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O16"
+        ],
+        [
+            "S7",
+            "V10",
+            "O4"
+        ],
+        [
+            "S2",
+            "V4",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the girl finds the food → the doctor hates the book\n**Premise 2:** If the doctor hates the book → the man sees the car\n**Conclusion:** If the girl finds the food → the man sees the car\n\nThis is a valid application of the hypothetical syllogism (chain rule). If A→B and B→C, then A→C.\n\nHere:\n- A = the girl finds the food\n- B = the doctor hates the book  \n- C = the man sees the car\n\nThe reasoning is valid.\n\n**yes**"
+}

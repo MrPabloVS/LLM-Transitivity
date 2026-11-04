@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the book then the manager reads the newspaper, if the manager reads the newspaper then the doctor finds the building, therefore if the family hates the book then the doctor finds the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O4"
+        ],
+        [
+            "S9",
+            "V6",
+            "O12"
+        ],
+        [
+            "S7",
+            "V3",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the family hates the book → the manager reads the newspaper\n**Premise 2:** If the manager reads the newspaper → the doctor finds the building\n**Conclusion:** If the family hates the book → the doctor finds the building\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the family hates the book\n- B = the manager reads the newspaper\n- C = the doctor finds the building\n\n**yes**"
+}

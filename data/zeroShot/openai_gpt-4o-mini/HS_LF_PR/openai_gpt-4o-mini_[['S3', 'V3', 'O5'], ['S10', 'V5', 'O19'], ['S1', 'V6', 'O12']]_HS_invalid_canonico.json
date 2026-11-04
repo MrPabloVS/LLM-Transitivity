@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship prepays the fumigation then the bibliophile piggybacks the taxman, if the bibliophile piggybacks the taxman then the plutocrat federalizes the fairyland, therefore if the plutocrat federalizes the fairyland then the clerkship prepays the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V3",
+            "O5"
+        ],
+        [
+            "S10",
+            "V5",
+            "O19"
+        ],
+        [
+            "S1",
+            "V6",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

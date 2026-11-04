@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher hates the program then the kid sees the chair, if the kid sees the chair then the doctor buys the computer, therefore if the teacher hates the program then the doctor buys the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V10",
+            "O1"
+        ],
+        [
+            "S1",
+            "V4",
+            "O6"
+        ],
+        [
+            "S7",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the teacher hates the program → the kid sees the chair\nPremise 2: If the kid sees the chair → the doctor buys the computer\nConclusion: If the teacher hates the program → the doctor buys the computer\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

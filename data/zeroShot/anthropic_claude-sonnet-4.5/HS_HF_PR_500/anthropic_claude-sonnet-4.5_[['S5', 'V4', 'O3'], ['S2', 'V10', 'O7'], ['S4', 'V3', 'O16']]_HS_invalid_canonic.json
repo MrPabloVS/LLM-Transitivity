@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student sees the money then the man hates the sugar, if the man hates the sugar then the family finds the food, therefore if the family finds the food then the student sees the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O3"
+        ],
+        [
+            "S2",
+            "V10",
+            "O7"
+        ],
+        [
+            "S4",
+            "V3",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The premises establish:\n1. Student sees money → Man hates sugar\n2. Man hates sugar → Family finds food\n\nThis gives us: Student sees money → Family finds food\n\nBut the conclusion claims: Family finds food → Student sees money\n\nThis reverses the logical direction, which is invalid."
+}

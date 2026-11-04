@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the car then the family loves the program, if the family loves the program then the kid hates the book, therefore if the manager loses the car then the kid hates the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O11"
+        ],
+        [
+            "S4",
+            "V8",
+            "O1"
+        ],
+        [
+            "S1",
+            "V10",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager loses the car → the family loves the program\nPremise 2: If the family loves the program → the kid hates the book\nConclusion: If the manager loses the car → the kid hates the book\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

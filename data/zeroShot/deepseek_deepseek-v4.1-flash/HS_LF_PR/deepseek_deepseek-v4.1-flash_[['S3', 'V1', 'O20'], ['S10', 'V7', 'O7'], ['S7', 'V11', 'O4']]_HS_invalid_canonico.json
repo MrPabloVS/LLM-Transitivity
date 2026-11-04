@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship reappraises the semiology then the bibliophile sasses the aesthetician, if the bibliophile sasses the aesthetician then the hypnotherapist marinates the monkfish, therefore if the hypnotherapist marinates the monkfish then the clerkship reappraises the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O20"
+        ],
+        [
+            "S10",
+            "V7",
+            "O7"
+        ],
+        [
+            "S7",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

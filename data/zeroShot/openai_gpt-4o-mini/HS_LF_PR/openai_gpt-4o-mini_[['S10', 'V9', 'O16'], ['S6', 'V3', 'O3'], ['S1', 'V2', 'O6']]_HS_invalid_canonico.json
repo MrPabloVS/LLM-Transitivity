@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the aesthetician then the alpinist prepays the lightsaber, if the alpinist prepays the lightsaber then the plutocrat indemnifies the metalurgist, therefore if the plutocrat indemnifies the metalurgist then the bibliophile overrates the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O16"
+        ],
+        [
+            "S6",
+            "V3",
+            "O3"
+        ],
+        [
+            "S1",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

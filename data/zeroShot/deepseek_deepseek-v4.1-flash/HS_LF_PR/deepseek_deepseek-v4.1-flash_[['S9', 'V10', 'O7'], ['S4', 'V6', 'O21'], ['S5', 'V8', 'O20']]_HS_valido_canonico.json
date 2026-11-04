@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist upbraids the aesthetician then the herpetologist federalizes the coronograph, if the herpetologist federalizes the coronograph then the audiophile intellectualizes the semiology, therefore if the embryologist upbraids the aesthetician then the audiophile intellectualizes the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V10",
+            "O7"
+        ],
+        [
+            "S4",
+            "V6",
+            "O21"
+        ],
+        [
+            "S5",
+            "V8",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

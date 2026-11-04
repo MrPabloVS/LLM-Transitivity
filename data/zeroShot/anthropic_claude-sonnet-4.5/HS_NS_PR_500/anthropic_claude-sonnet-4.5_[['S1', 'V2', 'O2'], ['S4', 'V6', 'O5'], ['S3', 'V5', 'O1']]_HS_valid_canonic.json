@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller blemps the drambet then the glemtor trelfs the snabrik, if the glemtor trelfs the snabrik then the brettent gresks the prebart, therefore if the probeller blemps the drambet then the brettent gresks the prebart",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O2"
+        ],
+        [
+            "S4",
+            "V6",
+            "O5"
+        ],
+        [
+            "S3",
+            "V5",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If P then Q (if probeller blemps drambet, then glemtor trelfs snabrik)\nPremise 2: If Q then R (if glemtor trelfs snabrik, then brettent gresks prebart)\nConclusion: If P then R (if probeller blemps drambet, then brettent gresks prebart)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If P→Q and Q→R, then P→R.\n\nyes"
+}

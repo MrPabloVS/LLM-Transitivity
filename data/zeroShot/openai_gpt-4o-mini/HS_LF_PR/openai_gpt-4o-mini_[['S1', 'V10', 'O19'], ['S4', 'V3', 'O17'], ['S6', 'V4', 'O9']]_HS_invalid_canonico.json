@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat upbraids the taxman then the herpetologist prepays the magnetometer, if the herpetologist prepays the magnetometer then the alpinist unfreezes the ceviche, therefore if the alpinist unfreezes the ceviche then the plutocrat upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O19"
+        ],
+        [
+            "S4",
+            "V3",
+            "O17"
+        ],
+        [
+            "S6",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

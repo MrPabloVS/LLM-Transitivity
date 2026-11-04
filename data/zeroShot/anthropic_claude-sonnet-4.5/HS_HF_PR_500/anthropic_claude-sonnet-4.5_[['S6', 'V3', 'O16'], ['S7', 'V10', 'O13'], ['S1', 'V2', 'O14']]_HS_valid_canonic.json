@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the food then the doctor hates the paper, if the doctor hates the paper then the kid pays the computer, therefore if the teacher finds the food then the kid pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O16"
+        ],
+        [
+            "S7",
+            "V10",
+            "O13"
+        ],
+        [
+            "S1",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the teacher finds the food → the doctor hates the paper\nPremise 2: If the doctor hates the paper → the kid pays the computer\nConclusion: If the teacher finds the food → the kid pays the computer\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

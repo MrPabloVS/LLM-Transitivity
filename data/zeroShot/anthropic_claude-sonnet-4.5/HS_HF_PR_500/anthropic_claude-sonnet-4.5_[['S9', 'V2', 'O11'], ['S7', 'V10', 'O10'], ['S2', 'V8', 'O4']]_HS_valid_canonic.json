@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager pays the car then the doctor hates the college, if the doctor hates the college then the man loves the book, therefore if the manager pays the car then the man loves the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V2",
+            "O11"
+        ],
+        [
+            "S7",
+            "V10",
+            "O10"
+        ],
+        [
+            "S2",
+            "V8",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager pays the car → the doctor hates the college\nPremise 2: If the doctor hates the college → the man loves the book\nConclusion: If the manager pays the car → the man loves the book\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, If A → C\n\nyes"
+}

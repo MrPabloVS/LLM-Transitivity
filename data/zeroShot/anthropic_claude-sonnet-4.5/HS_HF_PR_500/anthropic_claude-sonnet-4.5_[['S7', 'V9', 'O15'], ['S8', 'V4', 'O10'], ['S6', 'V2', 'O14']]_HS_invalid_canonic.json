@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor wins the game then the officer sees the college, if the officer sees the college then the teacher pays the computer, therefore if the teacher pays the computer then the doctor wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V4",
+            "O10"
+        ],
+        [
+            "S6",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

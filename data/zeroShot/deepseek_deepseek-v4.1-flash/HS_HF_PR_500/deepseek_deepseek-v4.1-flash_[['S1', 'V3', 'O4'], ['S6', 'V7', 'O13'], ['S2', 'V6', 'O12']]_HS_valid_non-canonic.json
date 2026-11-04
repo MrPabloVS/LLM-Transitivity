@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher loses the paper then the man reads the newspaper,if the kid finds the book then the teacher loses the paper therefore if the man reads the newspaper then the kid finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O4"
+        ],
+        [
+            "S6",
+            "V7",
+            "O13"
+        ],
+        [
+            "S2",
+            "V6",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

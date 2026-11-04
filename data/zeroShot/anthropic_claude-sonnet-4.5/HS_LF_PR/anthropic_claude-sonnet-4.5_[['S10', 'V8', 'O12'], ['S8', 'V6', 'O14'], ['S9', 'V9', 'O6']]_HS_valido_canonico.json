@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile intellectualizes the fairyland then the corsican federalizes the trimaran, if the corsican federalizes the trimaran then the embryologist overrates the solipsism, therefore if the bibliophile intellectualizes the fairyland then the embryologist overrates the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V6",
+            "O14"
+        ],
+        [
+            "S9",
+            "V9",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument, I need to check if it's valid.\n\nGiven premises:\n1. If the bibliophile intellectualizes the fairyland → the corsican federalizes the trimaran\n2. If the corsican federalizes the trimaran → the embryologist overrates the solipsism\n\nConclusion:\n- If the bibliophile intellectualizes the fairyland → the embryologist overrates the solipsism\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

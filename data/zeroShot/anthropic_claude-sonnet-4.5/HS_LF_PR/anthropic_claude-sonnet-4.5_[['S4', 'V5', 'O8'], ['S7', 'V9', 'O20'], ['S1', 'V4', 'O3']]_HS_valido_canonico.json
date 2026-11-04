@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist piggybacks the pugilist then the hypnotherapist overrates the taxman, if the hypnotherapist overrates the taxman then the plutocrat unfreezes the monkfish, therefore if the herpetologist piggybacks the pugilist then the plutocrat unfreezes the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V5",
+            "O8"
+        ],
+        [
+            "S7",
+            "V9",
+            "O20"
+        ],
+        [
+            "S1",
+            "V4",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the herpetologist piggybacks the pugilist → the hypnotherapist overrates the taxman\n\n**Premise 2:** If the hypnotherapist overrates the taxman → the plutocrat unfreezes the monkfish\n\n**Conclusion:** If the herpetologist piggybacks the pugilist → the plutocrat unfreezes the monkfish\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

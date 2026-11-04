@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer sees the table then the man finds the newspaper, if the man finds the newspaper then the teacher buys the building, therefore if the officer sees the table then the teacher buys the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V4",
+            "O5"
+        ],
+        [
+            "S2",
+            "V3",
+            "O11"
+        ],
+        [
+            "S6",
+            "V1",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

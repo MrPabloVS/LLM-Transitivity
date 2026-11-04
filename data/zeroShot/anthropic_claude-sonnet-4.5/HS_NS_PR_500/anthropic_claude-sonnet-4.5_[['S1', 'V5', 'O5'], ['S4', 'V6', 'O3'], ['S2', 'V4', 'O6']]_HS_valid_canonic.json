@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller gresks the snabrik then the glemtor trelfs the ploodnum, if the glemtor trelfs the ploodnum then the preggar frikes the flendop, therefore if the probeller gresks the snabrik then the preggar frikes the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V5",
+            "O5"
+        ],
+        [
+            "S4",
+            "V6",
+            "O3"
+        ],
+        [
+            "S2",
+            "V4",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the probeller gresks the snabrik → the glemtor trelfs the ploodnum\nPremise 2: If the glemtor trelfs the ploodnum → the preggar frikes the flendop\nConclusion: If the probeller gresks the snabrik → the preggar frikes the flendop\n\nThis is a valid application of hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

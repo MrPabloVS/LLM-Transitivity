@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man buys the chair then the student finds the college, if the student finds the college then the doctor hates the food, therefore if the man buys the chair then the doctor hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O6"
+        ],
+        [
+            "S5",
+            "V3",
+            "O10"
+        ],
+        [
+            "S7",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premises:**\n1. If the man buys the chair → the student finds the college\n2. If the student finds the college → the doctor hates the food\n\n**Conclusion:**\nIf the man buys the chair → the doctor hates the food\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B, and B → C, then A → C\n\nWhere:\n- A = the man buys the chair\n- B = the student finds the college  \n- C = the doctor hates the food\n\n**yes**"
+}

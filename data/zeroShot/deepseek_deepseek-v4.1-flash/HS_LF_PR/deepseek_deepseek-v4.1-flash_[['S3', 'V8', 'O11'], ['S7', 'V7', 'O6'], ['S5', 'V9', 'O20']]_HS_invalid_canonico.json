@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship intellectualizes the polytheism then the hypnotherapist sasses the metalurgist, if the hypnotherapist sasses the metalurgist then the audiophile overrates the taxman, therefore if the audiophile overrates the taxman then the clerkship intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O11"
+        ],
+        [
+            "S7",
+            "V7",
+            "O6"
+        ],
+        [
+            "S5",
+            "V9",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

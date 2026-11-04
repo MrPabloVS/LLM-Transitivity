@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the program then the family sees the car, if the family sees the car then the woman loves the building, therefore if the doctor hates the program then the woman loves the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O1"
+        ],
+        [
+            "S4",
+            "V4",
+            "O11"
+        ],
+        [
+            "S3",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the doctor hates the program → the family sees the car\n**Premise 2:** If the family sees the car → the woman loves the building\n**Conclusion:** If the doctor hates the program → the woman loves the building\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If P → Q\n- If Q → R\n- Therefore, if P → R\n\nWhere:\n- P = the doctor hates the program\n- Q = the family sees the car\n- R = the woman loves the building\n\n**yes**"
+}

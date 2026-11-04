@@ -1,0 +1,193 @@
+[
+  {
+    "dataset": "HS_HF_PR_500",
+    "dataset_sha256": "4179b37ee0679559e134eb27037f8dde2cbdf4b14317b267eda8142e86a98620",
+    "system": "zeroShot",
+    "model": "openai/gpt-4o-mini",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 1016,
+    "accuracy": 0.6773333333333333,
+    "unrecognized": 0,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valid / canonic": {
+        "saved": 500,
+        "correct": 498,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "yes": 498,
+          "no": 2
+        }
+      },
+      "invalid / canonic": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      },
+      "valid / non-canonic": {
+        "saved": 500,
+        "correct": 18,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 482,
+          "yes": 18
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 0.0152304,
+    "logged_total_tokens": 97009,
+    "logs": [
+      "logs/HS_HF_PR_500_openai_gpt-4o-mini_2026-11-04_12-42.json",
+      "logs/HS_HF_PR_500_openai_gpt-4o-mini_zeroShot_2026-11-04_12-45-26_217901.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_HF_PR_500_openai_gpt-4o-mini_2026-11-04_12-42.json",
+        "responses": 73,
+        "cost_usd": 0.0007446,
+        "total_tokens": 4745,
+        "first_created_utc": "2026-11-04T15:42:03+00:00",
+        "last_created_utc": "2026-11-04T15:43:46+00:00"
+      },
+      {
+        "path": "logs/HS_HF_PR_500_openai_gpt-4o-mini_zeroShot_2026-11-04_12-45-26_217901.json",
+        "responses": 1427,
+        "cost_usd": 0.0144858,
+        "total_tokens": 92264,
+        "first_created_utc": "2026-11-04T15:45:26+00:00",
+        "last_created_utc": "2026-11-04T15:51:41+00:00"
+      }
+    ]
+  },
+  {
+    "dataset": "HS_HF_PR_500",
+    "dataset_sha256": "4179b37ee0679559e134eb27037f8dde2cbdf4b14317b267eda8142e86a98620",
+    "system": "zeroShot",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 1000,
+    "accuracy": 0.6666666666666666,
+    "unrecognized": 0,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valid / canonic": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "yes": 500
+        }
+      },
+      "invalid / canonic": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      },
+      "valid / non-canonic": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 0.1218963435,
+    "logged_total_tokens": 310933,
+    "logs": [
+      "logs/HS_HF_PR_500_deepseek_deepseek-v4.1-flash_zeroShot_2026-11-04_12-51-42_135179.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_HF_PR_500_deepseek_deepseek-v4.1-flash_zeroShot_2026-11-04_12-51-42_135179.json",
+        "responses": 1500,
+        "cost_usd": 0.1218963435,
+        "total_tokens": 310933,
+        "first_created_utc": "2026-11-04T15:51:42+00:00",
+        "last_created_utc": "2026-11-04T15:55:04+00:00"
+      }
+    ]
+  },
+  {
+    "dataset": "HS_HF_PR_500",
+    "dataset_sha256": "4179b37ee0679559e134eb27037f8dde2cbdf4b14317b267eda8142e86a98620",
+    "system": "zeroShot",
+    "model": "anthropic/claude-sonnet-4.5",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 286,
+    "accuracy": 0.19066666666666668,
+    "unrecognized": 1178,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valid / canonic": {
+        "saved": 500,
+        "correct": 1,
+        "unrecognized": 499,
+        "filtered": 0,
+        "answers": {
+          "other": 499,
+          "yes": 1
+        }
+      },
+      "invalid / canonic": {
+        "saved": 500,
+        "correct": 285,
+        "unrecognized": 215,
+        "filtered": 0,
+        "answers": {
+          "no": 285,
+          "other": 215
+        }
+      },
+      "valid / non-canonic": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 464,
+        "filtered": 0,
+        "answers": {
+          "other": 464,
+          "no": 36
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 3.708729,
+    "logged_total_tokens": 323423,
+    "logs": [
+      "logs/HS_HF_PR_500_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_12-55-21_065222.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_HF_PR_500_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_12-55-21_065222.json",
+        "responses": 1500,
+        "cost_usd": 3.708729,
+        "total_tokens": 323423,
+        "first_created_utc": "2026-11-04T15:55:21+00:00",
+        "last_created_utc": "2026-11-04T16:06:07+00:00"
+      }
+    ]
+  }
+]

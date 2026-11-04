@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the school then the girl loves the money, if the girl loves the money then the doctor sees the computer, therefore if the doctor sees the computer then the family hates the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O8"
+        ],
+        [
+            "S10",
+            "V8",
+            "O3"
+        ],
+        [
+            "S7",
+            "V4",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "I need to analyze this logical argument.\n\nLet me define:\n- F: the family hates the school\n- G: the girl loves the money\n- D: the doctor sees the computer\n\nThe premises are:\n1. F → G (if the family hates the school then the girl loves the money)\n2. G → D (if the girl loves the money then the doctor sees the computer)\n\nThe conclusion is:\nD → F (if the doctor sees the computer then the family hates the school)\n\nFrom premises 1 and 2, I can derive:\nF → G → D, which means F → D (if the family hates the school then the doctor sees the computer)\n\nHowever, the conclusion claims D → F (if the doctor sees the computer then the family hates the school).\n\nThis is claiming the converse of what can be derived. The fact that F → D does not mean that D → F. This would be affirming the consequent, which is a logical fallacy.\n\nno"
+}

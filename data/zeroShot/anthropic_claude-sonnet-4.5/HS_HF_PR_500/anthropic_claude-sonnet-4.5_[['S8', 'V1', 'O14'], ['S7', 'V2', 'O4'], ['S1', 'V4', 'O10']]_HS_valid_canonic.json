@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer buys the computer then the doctor pays the book, if the doctor pays the book then the kid sees the college, therefore if the officer buys the computer then the kid sees the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V1",
+            "O14"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ],
+        [
+            "S1",
+            "V4",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the officer buys the computer → the doctor pays the book\n**Premise 2:** If the doctor pays the book → the kid sees the college\n**Conclusion:** If the officer buys the computer → the kid sees the college\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

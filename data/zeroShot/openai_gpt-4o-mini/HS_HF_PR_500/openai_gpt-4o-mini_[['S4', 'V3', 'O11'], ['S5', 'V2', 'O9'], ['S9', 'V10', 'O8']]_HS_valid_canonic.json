@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family finds the newspaper then the student pays the building, if the student pays the building then the manager hates the school, therefore if the family finds the newspaper then the manager hates the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O11"
+        ],
+        [
+            "S5",
+            "V2",
+            "O9"
+        ],
+        [
+            "S9",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loves the newspaper then the teacher loses the book, if the teacher loses the book then the family hates the program, therefore if the girl loves the newspaper then the family hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S6",
+            "V7",
+            "O4"
+        ],
+        [
+            "S4",
+            "V10",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

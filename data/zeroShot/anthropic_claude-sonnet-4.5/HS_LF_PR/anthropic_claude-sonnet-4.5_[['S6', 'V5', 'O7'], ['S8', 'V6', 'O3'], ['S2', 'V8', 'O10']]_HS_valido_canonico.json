@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist piggybacks the aesthetician then the corsican federalizes the lightsaber, if the corsican federalizes the lightsaber then the sumerian intellectualizes the solipsism, therefore if the alpinist piggybacks the aesthetician then the sumerian intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V5",
+            "O7"
+        ],
+        [
+            "S8",
+            "V6",
+            "O3"
+        ],
+        [
+            "S2",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the alpinist piggybacks the aesthetician → the corsican federalizes the lightsaber\n\nPremise 2: If the corsican federalizes the lightsaber → the sumerian intellectualizes the solipsism\n\nConclusion: If the alpinist piggybacks the aesthetician → the sumerian intellectualizes the solipsism\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist marinates the monkfish then the embryologist federalizes the renewable-energy, if the embryologist federalizes the renewable-energy then the hypnotherapist piggybacks the metalurgist, therefore if the herpetologist marinates the monkfish then the hypnotherapist piggybacks the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V11",
+            "O4"
+        ],
+        [
+            "S9",
+            "V6",
+            "O1"
+        ],
+        [
+            "S7",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (herpetologist marinates monkfish → embryologist federalizes renewable-energy)\nPremise 2: If B then C (embryologist federalizes renewable-energy → hypnotherapist piggybacks metalurgist)\nConclusion: If A then C (herpetologist marinates monkfish → hypnotherapist piggybacks metalurgist)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

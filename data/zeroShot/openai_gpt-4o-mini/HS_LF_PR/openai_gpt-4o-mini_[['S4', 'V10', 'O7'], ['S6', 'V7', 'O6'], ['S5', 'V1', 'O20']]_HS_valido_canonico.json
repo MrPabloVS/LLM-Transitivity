@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist upbraids the aesthetician then the alpinist sasses the metalurgist, if the alpinist sasses the metalurgist then the audiophile reappraises the semiology, therefore if the herpetologist upbraids the aesthetician then the audiophile reappraises the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O7"
+        ],
+        [
+            "S6",
+            "V7",
+            "O6"
+        ],
+        [
+            "S5",
+            "V1",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

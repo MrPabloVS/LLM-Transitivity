@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile intellectualizes the fairyland then the corsican federalizes the trimaran, if the corsican federalizes the trimaran then the embryologist overrates the solipsism, therefore if the bibliophile intellectualizes the fairyland then the embryologist overrates the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V6",
+            "O14"
+        ],
+        [
+            "S9",
+            "V9",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

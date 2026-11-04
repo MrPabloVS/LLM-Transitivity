@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist prepays the trimaran then the alpinist upbraids the pugilist, if the alpinist upbraids the pugilist then the bibliophile piggybacks the aesthetician, therefore if the hypnotherapist prepays the trimaran then the bibliophile piggybacks the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V3",
+            "O14"
+        ],
+        [
+            "S6",
+            "V10",
+            "O8"
+        ],
+        [
+            "S10",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

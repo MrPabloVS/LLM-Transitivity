@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loses the case then the teacher buys the computer,if the girl hates the money then the family loses the case therefore if the teacher buys the computer then the girl hates the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O3"
+        ],
+        [
+            "S4",
+            "V7",
+            "O2"
+        ],
+        [
+            "S6",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

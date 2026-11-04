@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman hates the paper then the man buys the food, if the man buys the food then the girl loses the money, therefore if the girl loses the money then the woman hates the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O13"
+        ],
+        [
+            "S2",
+            "V1",
+            "O16"
+        ],
+        [
+            "S10",
+            "V7",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis commits the fallacy of affirming the consequent. The argument gives us:\n1. Woman hates paper → Man buys food\n2. Man buys food → Girl loses money\n\nWe can conclude: Woman hates paper → Girl loses money\n\nBut the conclusion tries to reverse this to: Girl loses money → Woman hates paper\n\nThis reversal is not logically valid."
+}

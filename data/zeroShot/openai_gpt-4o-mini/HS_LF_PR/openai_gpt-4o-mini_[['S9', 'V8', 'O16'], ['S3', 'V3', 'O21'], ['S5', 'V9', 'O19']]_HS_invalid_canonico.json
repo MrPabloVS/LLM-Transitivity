@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist intellectualizes the rebelliousness then the clerkship prepays the coronograph, if the clerkship prepays the coronograph then the audiophile overrates the pugilist, therefore if the audiophile overrates the pugilist then the embryologist intellectualizes the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O16"
+        ],
+        [
+            "S3",
+            "V3",
+            "O21"
+        ],
+        [
+            "S5",
+            "V9",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

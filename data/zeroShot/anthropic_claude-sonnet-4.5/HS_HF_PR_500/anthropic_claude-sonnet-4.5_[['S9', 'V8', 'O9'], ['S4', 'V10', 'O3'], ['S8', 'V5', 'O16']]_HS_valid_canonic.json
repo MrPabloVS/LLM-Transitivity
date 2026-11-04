@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loves the building then the family hates the money, if the family hates the money then the officer eats the food, therefore if the manager loves the building then the officer eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O9"
+        ],
+        [
+            "S4",
+            "V10",
+            "O3"
+        ],
+        [
+            "S8",
+            "V5",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager loves the building → the family hates the money\nPremise 2: If the family hates the money → the officer eats the food\nConclusion: If the manager loves the building → the officer eats the food\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the manager loves the building\n- B = the family hates the money\n- C = the officer eats the food\n\nyes"
+}

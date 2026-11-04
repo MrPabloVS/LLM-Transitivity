@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the school then the woman buys the sugar, if the woman buys the sugar then the girl pays the paper, therefore if the family loves the school then the girl pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O8"
+        ],
+        [
+            "S3",
+            "V1",
+            "O7"
+        ],
+        [
+            "S10",
+            "V2",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the family loves the school → the woman buys the sugar\n**Premise 2:** If the woman buys the sugar → the girl pays the paper\n**Conclusion:** If the family loves the school → the girl pays the paper\n\nThis is a valid application of hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

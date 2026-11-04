@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican unfreezes the monkfish then the embryologist intellectualizes the semiology, if the embryologist intellectualizes the semiology then the bibliophile sasses the pugilist, therefore if the corsican unfreezes the monkfish then the bibliophile sasses the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V4",
+            "O3"
+        ],
+        [
+            "S9",
+            "V8",
+            "O20"
+        ],
+        [
+            "S10",
+            "V7",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

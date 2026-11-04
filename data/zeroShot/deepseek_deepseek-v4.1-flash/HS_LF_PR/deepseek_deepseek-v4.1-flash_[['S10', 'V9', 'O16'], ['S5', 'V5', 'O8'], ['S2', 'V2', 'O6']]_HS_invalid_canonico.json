@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile overrates the aesthetician then the audiophile piggybacks the pugilist, if the audiophile piggybacks the pugilist then the sumerian indemnifies the metalurgist, therefore if the sumerian indemnifies the metalurgist then the bibliophile overrates the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O16"
+        ],
+        [
+            "S5",
+            "V5",
+            "O8"
+        ],
+        [
+            "S2",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

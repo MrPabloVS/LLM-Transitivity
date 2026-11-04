@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar glashes the ploodnum then the glemtor blemps the snabrik, if the glemtor blemps the snabrik then the brettent frikes the blorrack, therefore if the preggar glashes the ploodnum then the brettent frikes the blorrack",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O3"
+        ],
+        [
+            "S4",
+            "V2",
+            "O5"
+        ],
+        [
+            "S3",
+            "V4",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

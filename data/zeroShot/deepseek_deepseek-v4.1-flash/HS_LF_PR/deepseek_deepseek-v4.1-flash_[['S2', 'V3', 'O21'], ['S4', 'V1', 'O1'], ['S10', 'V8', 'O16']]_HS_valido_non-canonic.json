@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist reappraises the renewable-energy then the bibliophile intellectualizes the rebelliousness,if the sumerian prepays the coronograph then the herpetologist reappraises the renewable-energy therefore if the bibliophile intellectualizes the rebelliousness then the sumerian prepays the coronograph",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O21"
+        ],
+        [
+            "S4",
+            "V1",
+            "O1"
+        ],
+        [
+            "S10",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

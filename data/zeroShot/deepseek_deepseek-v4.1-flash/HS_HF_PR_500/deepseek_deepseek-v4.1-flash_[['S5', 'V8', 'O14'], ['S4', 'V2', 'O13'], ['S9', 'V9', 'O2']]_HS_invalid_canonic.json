@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student loves the computer then the family pays the paper, if the family pays the paper then the manager wins the case, therefore if the manager wins the case then the student loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O14"
+        ],
+        [
+            "S4",
+            "V2",
+            "O13"
+        ],
+        [
+            "S9",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

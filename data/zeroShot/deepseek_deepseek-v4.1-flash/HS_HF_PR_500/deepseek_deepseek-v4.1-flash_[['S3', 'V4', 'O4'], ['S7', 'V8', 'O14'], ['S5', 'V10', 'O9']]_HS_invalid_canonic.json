@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman sees the book then the doctor loves the computer, if the doctor loves the computer then the student hates the building, therefore if the student hates the building then the woman sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O4"
+        ],
+        [
+            "S7",
+            "V8",
+            "O14"
+        ],
+        [
+            "S5",
+            "V10",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

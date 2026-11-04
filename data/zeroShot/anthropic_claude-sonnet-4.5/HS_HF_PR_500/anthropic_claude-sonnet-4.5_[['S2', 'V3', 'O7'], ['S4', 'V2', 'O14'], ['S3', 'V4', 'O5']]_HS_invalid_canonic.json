@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man finds the sugar then the family pays the computer, if the family pays the computer then the woman sees the table, therefore if the woman sees the table then the man finds the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O7"
+        ],
+        [
+            "S4",
+            "V2",
+            "O14"
+        ],
+        [
+            "S3",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

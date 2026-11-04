@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman buys the food then the officer loves the book, if the officer loves the book then the kid wins the game, therefore if the kid wins the game then the woman buys the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V8",
+            "O4"
+        ],
+        [
+            "S1",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an example of affirming the consequent fallacy. The argument establishes:\n1. Woman buys food → Officer loves book\n2. Officer loves book → Kid wins game\n\nThis allows us to conclude: Woman buys food → Kid wins game\n\nHowever, the conclusion tries to reverse this to: Kid wins game → Woman buys food, which doesn't logically follow."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man pays the sugar then the family sees the computer,if the kid wins the case then the man pays the sugar therefore if the family sees the computer then the kid wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O2"
+        ],
+        [
+            "S2",
+            "V2",
+            "O7"
+        ],
+        [
+            "S4",
+            "V4",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

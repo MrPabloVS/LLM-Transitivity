@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager wins the case then the doctor finds the money, if the doctor finds the money then the officer loves the car, therefore if the manager wins the case then the officer loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V9",
+            "O2"
+        ],
+        [
+            "S7",
+            "V3",
+            "O3"
+        ],
+        [
+            "S8",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager wins the case → the doctor finds the money\nPremise 2: If the doctor finds the money → the officer loves the car\nConclusion: If the manager wins the case → the officer loves the car\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

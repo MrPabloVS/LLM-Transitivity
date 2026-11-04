@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the glemtor glashes the ploodnum then the prackler trelfs the flendop, if the prackler trelfs the flendop then the bruggant frikes the snabrik, therefore if the glemtor glashes the ploodnum then the bruggant frikes the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V1",
+            "O3"
+        ],
+        [
+            "S6",
+            "V6",
+            "O6"
+        ],
+        [
+            "S5",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

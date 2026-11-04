@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist upbraids the taxman then the hypnotherapist indemnifies the pugilist, if the hypnotherapist indemnifies the pugilist then the sumerian prepays the coronograph, therefore if the embryologist upbraids the taxman then the sumerian prepays the coronograph",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V10",
+            "O19"
+        ],
+        [
+            "S7",
+            "V2",
+            "O8"
+        ],
+        [
+            "S2",
+            "V3",
+            "O21"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

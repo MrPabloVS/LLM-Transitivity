@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loses the book then the teacher buys the paper,if the officer hates the money then the man loses the book therefore if the teacher buys the paper then the officer hates the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O3"
+        ],
+        [
+            "S2",
+            "V7",
+            "O4"
+        ],
+        [
+            "S6",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

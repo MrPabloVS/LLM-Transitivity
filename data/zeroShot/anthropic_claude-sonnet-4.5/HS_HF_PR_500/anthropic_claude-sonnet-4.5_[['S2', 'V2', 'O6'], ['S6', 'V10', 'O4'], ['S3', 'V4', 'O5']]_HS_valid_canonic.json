@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man pays the chair then the teacher hates the book, if the teacher hates the book then the woman sees the table, therefore if the man pays the chair then the woman sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V2",
+            "O6"
+        ],
+        [
+            "S6",
+            "V10",
+            "O4"
+        ],
+        [
+            "S3",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the man pays the chair → the teacher hates the book\nPremise 2: If the teacher hates the book → the woman sees the table\nConclusion: If the man pays the chair → the woman sees the table\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

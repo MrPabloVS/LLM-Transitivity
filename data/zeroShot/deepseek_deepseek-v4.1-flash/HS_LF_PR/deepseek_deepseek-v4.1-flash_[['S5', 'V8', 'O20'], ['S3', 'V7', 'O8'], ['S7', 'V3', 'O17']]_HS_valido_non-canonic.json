@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship sasses the pugilist then the hypnotherapist prepays the magnetometer,if the audiophile intellectualizes the semiology then the clerkship sasses the pugilist therefore if the hypnotherapist prepays the magnetometer then the audiophile intellectualizes the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O20"
+        ],
+        [
+            "S3",
+            "V7",
+            "O8"
+        ],
+        [
+            "S7",
+            "V3",
+            "O17"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

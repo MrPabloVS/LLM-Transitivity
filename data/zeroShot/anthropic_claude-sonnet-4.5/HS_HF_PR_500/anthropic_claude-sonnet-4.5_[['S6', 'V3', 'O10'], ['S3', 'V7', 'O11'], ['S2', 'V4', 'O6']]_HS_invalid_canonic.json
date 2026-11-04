@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the college then the woman loses the car, if the woman loses the car then the man sees the chair, therefore if the man sees the chair then the teacher finds the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O10"
+        ],
+        [
+            "S3",
+            "V7",
+            "O11"
+        ],
+        [
+            "S2",
+            "V4",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

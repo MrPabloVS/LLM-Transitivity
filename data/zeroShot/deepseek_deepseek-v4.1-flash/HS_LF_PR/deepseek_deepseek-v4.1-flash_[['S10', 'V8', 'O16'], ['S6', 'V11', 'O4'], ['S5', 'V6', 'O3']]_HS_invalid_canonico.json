@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile intellectualizes the rebelliousness then the alpinist marinates the monkfish, if the alpinist marinates the monkfish then the audiophile federalizes the lightsaber, therefore if the audiophile federalizes the lightsaber then the bibliophile intellectualizes the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O16"
+        ],
+        [
+            "S6",
+            "V11",
+            "O4"
+        ],
+        [
+            "S5",
+            "V6",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

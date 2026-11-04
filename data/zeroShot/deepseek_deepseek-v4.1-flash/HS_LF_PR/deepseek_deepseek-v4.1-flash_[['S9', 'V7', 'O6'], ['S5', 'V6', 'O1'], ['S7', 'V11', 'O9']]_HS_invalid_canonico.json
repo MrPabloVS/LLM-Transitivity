@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist sasses the metalurgist then the audiophile federalizes the renewable-energy, if the audiophile federalizes the renewable-energy then the hypnotherapist marinates the ceviche, therefore if the hypnotherapist marinates the ceviche then the embryologist sasses the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O6"
+        ],
+        [
+            "S5",
+            "V6",
+            "O1"
+        ],
+        [
+            "S7",
+            "V11",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat prepays the trimaran then the corsican intellectualizes the rocketry, if the corsican intellectualizes the rocketry then the herpetologist reappraises the polytheism, therefore if the plutocrat prepays the trimaran then the herpetologist reappraises the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O14"
+        ],
+        [
+            "S8",
+            "V8",
+            "O13"
+        ],
+        [
+            "S4",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the plutocrat prepays the trimaran → the corsican intellectualizes the rocketry\n\n**Premise 2:** If the corsican intellectualizes the rocketry → the herpetologist reappraises the polytheism\n\n**Conclusion:** If the plutocrat prepays the trimaran → the herpetologist reappraises the polytheism\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

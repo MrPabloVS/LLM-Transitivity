@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the book then the kid wins the game,if the woman buys the food then the officer loves the book therefore if the kid wins the game then the woman buys the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V8",
+            "O4"
+        ],
+        [
+            "S1",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe reasoning commits the fallacy of affirming the consequent. The premises establish:\n1. Woman buys food → Officer loves book → Kid wins game\n\nThis means \"woman buys food\" is sufficient for \"kid wins game,\" but not necessary. The kid could win the game through other means (the officer could love the book for other reasons). Therefore, we cannot conclude that \"kid wins game → woman buys food.\""
+}

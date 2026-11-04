@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the glemtor frikes the prebart then the brettent gresks the blorrack,if the bruggant glashes the flendop then the glemtor frikes the prebart therefore if the brettent gresks the blorrack then the bruggant glashes the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V1",
+            "O6"
+        ],
+        [
+            "S4",
+            "V4",
+            "O1"
+        ],
+        [
+            "S3",
+            "V5",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

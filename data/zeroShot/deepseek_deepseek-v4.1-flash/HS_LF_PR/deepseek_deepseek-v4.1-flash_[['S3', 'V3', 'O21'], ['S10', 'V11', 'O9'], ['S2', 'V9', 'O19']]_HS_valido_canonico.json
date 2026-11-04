@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship prepays the coronograph then the bibliophile marinates the ceviche, if the bibliophile marinates the ceviche then the sumerian overrates the pugilist, therefore if the clerkship prepays the coronograph then the sumerian overrates the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V3",
+            "O21"
+        ],
+        [
+            "S10",
+            "V11",
+            "O9"
+        ],
+        [
+            "S2",
+            "V9",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

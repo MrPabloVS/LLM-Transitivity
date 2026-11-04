@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer reads the paper then the doctor pays the book, if the doctor pays the book then the family loves the program, therefore if the family loves the program then the officer reads the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V6",
+            "O13"
+        ],
+        [
+            "S7",
+            "V2",
+            "O4"
+        ],
+        [
+            "S4",
+            "V8",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

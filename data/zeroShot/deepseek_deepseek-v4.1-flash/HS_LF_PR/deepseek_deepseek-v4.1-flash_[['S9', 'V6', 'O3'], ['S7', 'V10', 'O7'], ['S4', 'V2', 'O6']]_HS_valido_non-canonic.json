@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist upbraids the aesthetician then the herpetologist indemnifies the metalurgist,if the embryologist federalizes the lightsaber then the hypnotherapist upbraids the aesthetician therefore if the herpetologist indemnifies the metalurgist then the embryologist federalizes the lightsaber",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V6",
+            "O3"
+        ],
+        [
+            "S7",
+            "V10",
+            "O7"
+        ],
+        [
+            "S4",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

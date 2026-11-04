@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the money then the officer sees the chair, if the officer sees the chair then the manager buys the newspaper, therefore if the manager buys the newspaper then the girl finds the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O3"
+        ],
+        [
+            "S8",
+            "V4",
+            "O6"
+        ],
+        [
+            "S9",
+            "V1",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

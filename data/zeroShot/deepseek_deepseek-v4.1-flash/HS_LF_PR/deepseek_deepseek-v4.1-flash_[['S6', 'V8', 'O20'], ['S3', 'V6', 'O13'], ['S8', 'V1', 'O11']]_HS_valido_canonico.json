@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist intellectualizes the semiology then the clerkship federalizes the rocketry, if the clerkship federalizes the rocketry then the corsican reappraises the polytheism, therefore if the alpinist intellectualizes the semiology then the corsican reappraises the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V8",
+            "O20"
+        ],
+        [
+            "S3",
+            "V6",
+            "O13"
+        ],
+        [
+            "S8",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian indemnifies the taxman then the bibliophile sasses the metalurgist, if the bibliophile sasses the metalurgist then the corsican intellectualizes the fairyland, therefore if the corsican intellectualizes the fairyland then the sumerian indemnifies the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V2",
+            "O19"
+        ],
+        [
+            "S10",
+            "V7",
+            "O6"
+        ],
+        [
+            "S8",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loses the game then the student hates the money, if the student hates the money then the teacher loves the newspaper, therefore if the teacher loves the newspaper then the family loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V7",
+            "O15"
+        ],
+        [
+            "S5",
+            "V10",
+            "O3"
+        ],
+        [
+            "S6",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist upbraids the metalurgist then the sumerian overrates the polytheism, if the sumerian overrates the polytheism then the bibliophile marinates the monkfish, therefore if the embryologist upbraids the metalurgist then the bibliophile marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V10",
+            "O6"
+        ],
+        [
+            "S2",
+            "V9",
+            "O7"
+        ],
+        [
+            "S10",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the embryologist upbraids the metalurgist → the sumerian overrates the polytheism\n\nPremise 2: If the sumerian overrates the polytheism → the bibliophile marinates the monkfish\n\nConclusion: If the embryologist upbraids the metalurgist → the bibliophile marinates the monkfish\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

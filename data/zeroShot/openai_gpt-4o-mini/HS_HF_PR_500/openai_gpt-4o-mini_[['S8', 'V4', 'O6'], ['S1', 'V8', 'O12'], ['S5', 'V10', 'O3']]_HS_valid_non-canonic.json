@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid loves the newspaper then the student hates the money,if the officer sees the chair then the kid loves the newspaper therefore if the student hates the money then the officer sees the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V4",
+            "O6"
+        ],
+        [
+            "S1",
+            "V8",
+            "O12"
+        ],
+        [
+            "S5",
+            "V10",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

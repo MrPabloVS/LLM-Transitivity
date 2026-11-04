@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the food then the kid loses the game, if the kid loses the game then the woman hates the book, therefore if the teacher finds the food then the woman hates the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O16"
+        ],
+        [
+            "S1",
+            "V7",
+            "O15"
+        ],
+        [
+            "S3",
+            "V10",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the teacher finds the food → the kid loses the game\nPremise 2: If the kid loses the game → the woman hates the book\nConclusion: If the teacher finds the food → the woman hates the book\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

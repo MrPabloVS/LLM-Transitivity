@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid pays the paper then the teacher finds the sugar, if the teacher finds the sugar then the woman hates the book, therefore if the kid pays the paper then the woman hates the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O13"
+        ],
+        [
+            "S6",
+            "V3",
+            "O7"
+        ],
+        [
+            "S3",
+            "V10",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the kid pays the paper → the teacher finds the sugar\n**Premise 2:** If the teacher finds the sugar → the woman hates the book\n**Conclusion:** If the kid pays the paper → the woman hates the book\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

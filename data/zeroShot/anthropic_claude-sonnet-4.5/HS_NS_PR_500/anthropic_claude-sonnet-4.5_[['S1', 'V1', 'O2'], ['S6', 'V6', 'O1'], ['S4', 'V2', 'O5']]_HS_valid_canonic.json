@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller glashes the drambet then the prackler trelfs the prebart, if the prackler trelfs the prebart then the glemtor blemps the snabrik, therefore if the probeller glashes the drambet then the glemtor blemps the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O2"
+        ],
+        [
+            "S6",
+            "V6",
+            "O1"
+        ],
+        [
+            "S4",
+            "V2",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the probeller glashes the drambet → the prackler trelfs the prebart\nPremise 2: If the prackler trelfs the prebart → the glemtor blemps the snabrik\nConclusion: If the probeller glashes the drambet → the glemtor blemps the snabrik\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

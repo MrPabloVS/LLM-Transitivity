@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist sasses the metalurgist then the clerkship intellectualizes the conventionalism, if the clerkship intellectualizes the conventionalism then the bibliophile federalizes the trimaran, therefore if the embryologist sasses the metalurgist then the bibliophile federalizes the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O6"
+        ],
+        [
+            "S3",
+            "V8",
+            "O15"
+        ],
+        [
+            "S10",
+            "V6",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

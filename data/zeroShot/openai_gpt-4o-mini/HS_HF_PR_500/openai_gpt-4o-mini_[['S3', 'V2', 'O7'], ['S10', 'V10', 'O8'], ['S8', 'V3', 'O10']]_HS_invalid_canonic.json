@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman pays the sugar then the girl hates the school, if the girl hates the school then the officer finds the college, therefore if the officer finds the college then the woman pays the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V2",
+            "O7"
+        ],
+        [
+            "S10",
+            "V10",
+            "O8"
+        ],
+        [
+            "S8",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

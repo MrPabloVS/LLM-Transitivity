@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile reappraises the solipsism then the herpetologist sasses the metalurgist, if the herpetologist sasses the metalurgist then the hypnotherapist marinates the monkfish, therefore if the hypnotherapist marinates the monkfish then the bibliophile reappraises the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O10"
+        ],
+        [
+            "S4",
+            "V7",
+            "O6"
+        ],
+        [
+            "S7",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

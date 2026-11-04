@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist marinates the monkfish then the herpetologist upbraids the aesthetician,if the corsican reappraises the renewable-energy then the alpinist marinates the monkfish therefore if the herpetologist upbraids the aesthetician then the corsican reappraises the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V1",
+            "O1"
+        ],
+        [
+            "S6",
+            "V11",
+            "O4"
+        ],
+        [
+            "S4",
+            "V10",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

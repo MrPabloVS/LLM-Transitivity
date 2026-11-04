@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher pays the car then the kid sees the chair, if the kid sees the chair then the girl finds the college, therefore if the girl finds the college then the teacher pays the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V2",
+            "O11"
+        ],
+        [
+            "S1",
+            "V4",
+            "O6"
+        ],
+        [
+            "S10",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

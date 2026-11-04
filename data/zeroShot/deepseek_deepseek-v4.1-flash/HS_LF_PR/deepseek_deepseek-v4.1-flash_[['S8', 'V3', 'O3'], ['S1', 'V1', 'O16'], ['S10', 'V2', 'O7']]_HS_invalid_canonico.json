@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican prepays the lightsaber then the plutocrat reappraises the rebelliousness, if the plutocrat reappraises the rebelliousness then the bibliophile indemnifies the aesthetician, therefore if the bibliophile indemnifies the aesthetician then the corsican prepays the lightsaber",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O3"
+        ],
+        [
+            "S1",
+            "V1",
+            "O16"
+        ],
+        [
+            "S10",
+            "V2",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

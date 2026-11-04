@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loses the paper then the kid hates the college, if the kid hates the college then the teacher loves the building, therefore if the officer loses the paper then the teacher loves the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O13"
+        ],
+        [
+            "S1",
+            "V10",
+            "O10"
+        ],
+        [
+            "S6",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

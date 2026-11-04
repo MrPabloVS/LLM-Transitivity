@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the game then the teacher loses the book, if the teacher loses the book then the family sees the computer, therefore if the family sees the computer then the girl finds the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O13"
+        ],
+        [
+            "S6",
+            "V7",
+            "O4"
+        ],
+        [
+            "S4",
+            "V4",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The logical structure is:\n\n1. If A then B (girl finds game → teacher loses book)\n2. If B then C (teacher loses book → family sees computer)\n3. Therefore: If C then A (family sees computer → girl finds game)\n\nThis is invalid. From the premises, we can correctly conclude \"If the girl finds the game, then the family sees the computer\" (A→C), but we cannot conclude \"If the family sees the computer, then the girl finds the game\" (C→A). That would be reversing the direction of causation."
+}

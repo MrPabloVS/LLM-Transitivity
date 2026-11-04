@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the brettent glashes the prebart then the glemtor frikes the ploodnum,if the probeller trelfs the snabrik then the brettent glashes the prebart therefore if the glemtor frikes the ploodnum then the probeller trelfs the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O5"
+        ],
+        [
+            "S3",
+            "V1",
+            "O1"
+        ],
+        [
+            "S4",
+            "V4",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile overrates the aesthetician then the hypnotherapist indemnifies the pugilist,if the sumerian intellectualizes the polytheism then the audiophile overrates the aesthetician therefore if the hypnotherapist indemnifies the pugilist then the sumerian intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O11"
+        ],
+        [
+            "S5",
+            "V9",
+            "O16"
+        ],
+        [
+            "S7",
+            "V2",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

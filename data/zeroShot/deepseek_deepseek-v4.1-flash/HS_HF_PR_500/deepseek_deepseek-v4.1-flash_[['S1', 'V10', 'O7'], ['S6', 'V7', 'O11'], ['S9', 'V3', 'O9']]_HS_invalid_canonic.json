@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid hates the sugar then the teacher loses the car, if the teacher loses the car then the manager finds the building, therefore if the manager finds the building then the kid hates the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O7"
+        ],
+        [
+            "S6",
+            "V7",
+            "O11"
+        ],
+        [
+            "S9",
+            "V3",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher buys the sugar then the manager hates the school, if the manager hates the school then the student pays the newspaper, therefore if the student pays the newspaper then the teacher buys the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O7"
+        ],
+        [
+            "S9",
+            "V10",
+            "O8"
+        ],
+        [
+            "S5",
+            "V2",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

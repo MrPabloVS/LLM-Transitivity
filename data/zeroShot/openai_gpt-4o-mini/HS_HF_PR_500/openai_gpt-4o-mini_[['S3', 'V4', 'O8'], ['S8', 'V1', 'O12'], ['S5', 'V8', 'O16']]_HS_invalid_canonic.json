@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman sees the school then the officer buys the newspaper, if the officer buys the newspaper then the student loves the food, therefore if the student loves the food then the woman sees the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O8"
+        ],
+        [
+            "S8",
+            "V1",
+            "O12"
+        ],
+        [
+            "S5",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

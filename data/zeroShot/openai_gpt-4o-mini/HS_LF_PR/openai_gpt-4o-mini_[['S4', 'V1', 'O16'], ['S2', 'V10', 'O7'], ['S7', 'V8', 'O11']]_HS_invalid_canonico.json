@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist reappraises the rebelliousness then the sumerian upbraids the aesthetician, if the sumerian upbraids the aesthetician then the hypnotherapist intellectualizes the polytheism, therefore if the hypnotherapist intellectualizes the polytheism then the herpetologist reappraises the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V1",
+            "O16"
+        ],
+        [
+            "S2",
+            "V10",
+            "O7"
+        ],
+        [
+            "S7",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

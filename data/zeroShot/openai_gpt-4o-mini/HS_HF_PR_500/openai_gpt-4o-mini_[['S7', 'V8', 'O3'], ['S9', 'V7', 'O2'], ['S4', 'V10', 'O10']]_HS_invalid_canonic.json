@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loves the money then the manager loses the case, if the manager loses the case then the family hates the college, therefore if the family hates the college then the doctor loves the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O3"
+        ],
+        [
+            "S9",
+            "V7",
+            "O2"
+        ],
+        [
+            "S4",
+            "V10",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor reads the newspaper then the family pays the paper, if the family pays the paper then the woman buys the building, therefore if the woman buys the building then the doctor reads the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V6",
+            "O12"
+        ],
+        [
+            "S4",
+            "V2",
+            "O13"
+        ],
+        [
+            "S3",
+            "V1",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

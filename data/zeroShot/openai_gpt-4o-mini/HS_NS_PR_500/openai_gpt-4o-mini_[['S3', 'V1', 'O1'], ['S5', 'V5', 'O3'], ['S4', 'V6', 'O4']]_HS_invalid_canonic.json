@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the brettent glashes the prebart then the bruggant gresks the ploodnum, if the bruggant gresks the ploodnum then the glemtor trelfs the blorrack, therefore if the glemtor trelfs the blorrack then the brettent glashes the prebart",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O1"
+        ],
+        [
+            "S5",
+            "V5",
+            "O3"
+        ],
+        [
+            "S4",
+            "V6",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

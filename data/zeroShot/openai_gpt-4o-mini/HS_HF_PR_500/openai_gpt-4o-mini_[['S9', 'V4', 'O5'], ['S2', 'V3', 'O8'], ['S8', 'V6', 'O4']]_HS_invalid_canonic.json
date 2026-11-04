@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager sees the table then the man finds the school, if the man finds the school then the officer reads the book, therefore if the officer reads the book then the manager sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V4",
+            "O5"
+        ],
+        [
+            "S2",
+            "V3",
+            "O8"
+        ],
+        [
+            "S8",
+            "V6",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

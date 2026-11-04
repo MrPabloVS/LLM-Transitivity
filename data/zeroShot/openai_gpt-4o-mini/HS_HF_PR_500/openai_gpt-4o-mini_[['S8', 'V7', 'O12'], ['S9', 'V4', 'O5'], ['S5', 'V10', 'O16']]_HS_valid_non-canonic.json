@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager sees the table then the student hates the food,if the officer loses the newspaper then the manager sees the table therefore if the student hates the food then the officer loses the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O12"
+        ],
+        [
+            "S9",
+            "V4",
+            "O5"
+        ],
+        [
+            "S5",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "Yes."
+}

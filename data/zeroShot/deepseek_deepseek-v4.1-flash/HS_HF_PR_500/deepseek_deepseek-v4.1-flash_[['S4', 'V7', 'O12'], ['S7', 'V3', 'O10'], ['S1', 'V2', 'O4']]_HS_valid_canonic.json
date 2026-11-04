@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loses the newspaper then the doctor finds the college, if the doctor finds the college then the kid pays the book, therefore if the family loses the newspaper then the kid pays the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V7",
+            "O12"
+        ],
+        [
+            "S7",
+            "V3",
+            "O10"
+        ],
+        [
+            "S1",
+            "V2",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

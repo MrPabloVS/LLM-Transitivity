@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the program then the family sees the car, if the family sees the car then the woman loves the building, therefore if the woman loves the building then the doctor hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O1"
+        ],
+        [
+            "S4",
+            "V4",
+            "O11"
+        ],
+        [
+            "S3",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

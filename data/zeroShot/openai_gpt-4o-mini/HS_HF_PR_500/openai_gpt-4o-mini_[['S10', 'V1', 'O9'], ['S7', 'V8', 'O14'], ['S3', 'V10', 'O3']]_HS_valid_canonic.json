@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl buys the building then the doctor loves the computer, if the doctor loves the computer then the woman hates the money, therefore if the girl buys the building then the woman hates the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O9"
+        ],
+        [
+            "S7",
+            "V8",
+            "O14"
+        ],
+        [
+            "S3",
+            "V10",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

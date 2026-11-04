@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid hates the book then the woman eats the sugar, if the woman eats the sugar then the doctor loves the computer, therefore if the kid hates the book then the doctor loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O4"
+        ],
+        [
+            "S3",
+            "V5",
+            "O7"
+        ],
+        [
+            "S7",
+            "V8",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid hates the book → the woman eats the sugar\nPremise 2: If the woman eats the sugar → the doctor loves the computer\nConclusion: If the kid hates the book → the doctor loves the computer\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

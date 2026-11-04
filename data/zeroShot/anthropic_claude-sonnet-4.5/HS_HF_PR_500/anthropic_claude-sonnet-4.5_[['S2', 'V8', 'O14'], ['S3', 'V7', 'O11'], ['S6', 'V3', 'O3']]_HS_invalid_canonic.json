@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loves the computer then the woman loses the car, if the woman loses the car then the teacher finds the money, therefore if the teacher finds the money then the man loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O14"
+        ],
+        [
+            "S3",
+            "V7",
+            "O11"
+        ],
+        [
+            "S6",
+            "V3",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

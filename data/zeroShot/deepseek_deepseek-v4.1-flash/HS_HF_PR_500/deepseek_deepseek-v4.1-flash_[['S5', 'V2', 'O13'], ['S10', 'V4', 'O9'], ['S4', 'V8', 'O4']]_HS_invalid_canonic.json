@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the paper then the girl sees the building, if the girl sees the building then the family loves the book, therefore if the family loves the book then the student pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O13"
+        ],
+        [
+            "S10",
+            "V4",
+            "O9"
+        ],
+        [
+            "S4",
+            "V8",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

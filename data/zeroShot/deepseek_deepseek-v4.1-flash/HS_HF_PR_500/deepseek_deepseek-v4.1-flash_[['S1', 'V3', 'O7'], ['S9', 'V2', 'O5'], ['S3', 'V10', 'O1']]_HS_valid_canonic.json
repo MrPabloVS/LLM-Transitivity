@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid finds the sugar then the manager pays the table, if the manager pays the table then the woman hates the program, therefore if the kid finds the sugar then the woman hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O7"
+        ],
+        [
+            "S9",
+            "V2",
+            "O5"
+        ],
+        [
+            "S3",
+            "V10",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

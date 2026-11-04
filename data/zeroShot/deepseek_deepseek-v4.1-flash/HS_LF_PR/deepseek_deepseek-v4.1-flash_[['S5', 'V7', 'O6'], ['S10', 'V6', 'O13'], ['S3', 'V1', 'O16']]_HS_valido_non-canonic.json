@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile federalizes the rocketry then the clerkship reappraises the rebelliousness,if the audiophile sasses the metalurgist then the bibliophile federalizes the rocketry therefore if the clerkship reappraises the rebelliousness then the audiophile sasses the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V7",
+            "O6"
+        ],
+        [
+            "S10",
+            "V6",
+            "O13"
+        ],
+        [
+            "S3",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

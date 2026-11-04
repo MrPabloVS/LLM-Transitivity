@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer pays the building then the girl loves the newspaper, if the girl loves the newspaper then the manager sees the college, therefore if the officer pays the building then the manager sees the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V2",
+            "O9"
+        ],
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S9",
+            "V4",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the officer pays the building → the girl loves the newspaper\nPremise 2: If the girl loves the newspaper → the manager sees the college\nConclusion: If the officer pays the building → the manager sees the college\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

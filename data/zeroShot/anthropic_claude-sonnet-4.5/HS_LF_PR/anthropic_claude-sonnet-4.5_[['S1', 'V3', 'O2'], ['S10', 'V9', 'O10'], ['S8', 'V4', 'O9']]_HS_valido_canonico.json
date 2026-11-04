@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat prepays the rental-car then the bibliophile overrates the rebelliousness, if the bibliophile overrates the rebelliousness then the corsican unfreezes the ceviche, therefore if the plutocrat prepays the rental-car then the corsican unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O2"
+        ],
+        [
+            "S10",
+            "V9",
+            "O10"
+        ],
+        [
+            "S8",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the plutocrat prepays the rental-car → the bibliophile overrates the rebelliousness\n\nPremise 2: If the bibliophile overrates the rebelliousness → the corsican unfreezes the ceviche\n\nConclusion: If the plutocrat prepays the rental-car → the corsican unfreezes the ceviche\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

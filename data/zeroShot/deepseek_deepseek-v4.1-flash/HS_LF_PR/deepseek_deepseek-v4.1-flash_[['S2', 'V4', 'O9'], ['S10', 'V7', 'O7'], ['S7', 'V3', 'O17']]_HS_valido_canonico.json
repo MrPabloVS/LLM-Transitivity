@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian unfreezes the ceviche then the bibliophile sasses the aesthetician, if the bibliophile sasses the aesthetician then the hypnotherapist prepays the magnetometer, therefore if the sumerian unfreezes the ceviche then the hypnotherapist prepays the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O9"
+        ],
+        [
+            "S10",
+            "V7",
+            "O7"
+        ],
+        [
+            "S7",
+            "V3",
+            "O17"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

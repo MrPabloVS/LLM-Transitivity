@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican sasses the aesthetician then the alpinist federalizes the databank, if the alpinist federalizes the databank then the plutocrat marinates the monkfish, therefore if the corsican sasses the aesthetician then the plutocrat marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O7"
+        ],
+        [
+            "S6",
+            "V6",
+            "O18"
+        ],
+        [
+            "S1",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the corsican sasses the aesthetician → the alpinist federalizes the databank\n2. If the alpinist federalizes the databank → the plutocrat marinates the monkfish\n\nConclusion to evaluate:\n- If the corsican sasses the aesthetician → the plutocrat marinates the monkfish\n\nThis is a hypothetical syllogism (chain reasoning):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nWhere:\n- A = the corsican sasses the aesthetician\n- B = the alpinist federalizes the databank\n- C = the plutocrat marinates the monkfish\n\nThis is a valid logical form. If A leads to B, and B leads to C, then A must lead to C.\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man buys the sugar then the girl pays the table, if the girl pays the table then the teacher finds the book, therefore if the man buys the sugar then the teacher finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O7"
+        ],
+        [
+            "S10",
+            "V2",
+            "O5"
+        ],
+        [
+            "S6",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the man buys the sugar → the girl pays the table\nPremise 2: If the girl pays the table → the teacher finds the book\nConclusion: If the man buys the sugar → the teacher finds the book\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat federalizes the trimaran then the hypnotherapist intellectualizes the rebelliousness, if the hypnotherapist intellectualizes the rebelliousness then the corsican overrates the rebelliousness, therefore if the plutocrat federalizes the trimaran then the corsican overrates the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O14"
+        ],
+        [
+            "S7",
+            "V8",
+            "O16"
+        ],
+        [
+            "S8",
+            "V9",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If P then H\nPremise 2: If H then C\nConclusion: If P then C\n\nWhere:\n- P = the plutocrat federalizes the trimaran\n- H = the hypnotherapist intellectualizes the rebelliousness\n- C = the corsican overrates the rebelliousness\n\nThis is a valid application of the hypothetical syllogism (chain reasoning):\n- From P → H and H → C, we can conclude P → C\n\nyes"
+}

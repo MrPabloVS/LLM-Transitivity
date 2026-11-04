@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist overrates the aesthetician then the audiophile upbraids the metalurgist, if the audiophile upbraids the metalurgist then the herpetologist federalizes the fairyland, therefore if the herpetologist federalizes the fairyland then the hypnotherapist overrates the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O16"
+        ],
+        [
+            "S5",
+            "V10",
+            "O6"
+        ],
+        [
+            "S4",
+            "V6",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship federalizes the databank then the sumerian overrates the metalurgist, if the sumerian overrates the metalurgist then the alpinist reappraises the renewable-energy, therefore if the clerkship federalizes the databank then the alpinist reappraises the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O18"
+        ],
+        [
+            "S2",
+            "V9",
+            "O15"
+        ],
+        [
+            "S6",
+            "V1",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

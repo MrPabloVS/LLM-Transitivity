@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid finds the paper then the teacher loves the school,if the officer hates the program then the kid finds the paper therefore if the teacher loves the school then the officer hates the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O1"
+        ],
+        [
+            "S1",
+            "V3",
+            "O12"
+        ],
+        [
+            "S6",
+            "V8",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

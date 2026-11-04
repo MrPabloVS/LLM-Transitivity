@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat reappraises the fumigation then the sumerian prepays the coronograph, if the sumerian prepays the coronograph then the audiophile overrates the polytheism, therefore if the plutocrat reappraises the fumigation then the audiophile overrates the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O5"
+        ],
+        [
+            "S2",
+            "V3",
+            "O21"
+        ],
+        [
+            "S5",
+            "V9",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument structure:\n\nPremise 1: If P then S\nPremise 2: If S then A\nConclusion: If P then A\n\nThis is a valid application of the hypothetical syllogism (chain reasoning). If the first condition leads to the second, and the second leads to the third, then the first condition leads to the third.\n\nyes"
+}

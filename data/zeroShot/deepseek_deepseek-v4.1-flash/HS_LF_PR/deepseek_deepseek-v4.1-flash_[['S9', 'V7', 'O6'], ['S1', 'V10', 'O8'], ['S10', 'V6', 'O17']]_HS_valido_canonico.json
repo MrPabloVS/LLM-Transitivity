@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist sasses the metalurgist then the plutocrat upbraids the pugilist, if the plutocrat upbraids the pugilist then the bibliophile federalizes the magnetometer, therefore if the embryologist sasses the metalurgist then the bibliophile federalizes the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O6"
+        ],
+        [
+            "S1",
+            "V10",
+            "O8"
+        ],
+        [
+            "S10",
+            "V6",
+            "O17"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

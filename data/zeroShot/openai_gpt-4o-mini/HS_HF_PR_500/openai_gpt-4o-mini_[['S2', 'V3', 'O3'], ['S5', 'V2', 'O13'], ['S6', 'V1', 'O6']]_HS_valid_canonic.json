@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man finds the money then the student pays the paper, if the student pays the paper then the teacher buys the chair, therefore if the man finds the money then the teacher buys the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O3"
+        ],
+        [
+            "S5",
+            "V2",
+            "O13"
+        ],
+        [
+            "S6",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

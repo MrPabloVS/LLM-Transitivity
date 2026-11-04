@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat sasses the pugilist then the embryologist federalizes the renewable-energy, if the embryologist federalizes the renewable-energy then the herpetologist prepays the rental-car, therefore if the plutocrat sasses the pugilist then the herpetologist prepays the rental-car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V7",
+            "O8"
+        ],
+        [
+            "S9",
+            "V6",
+            "O1"
+        ],
+        [
+            "S4",
+            "V3",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher buys the chair then the doctor hates the car, if the doctor hates the car then the student loves the newspaper, therefore if the student loves the newspaper then the teacher buys the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O6"
+        ],
+        [
+            "S7",
+            "V10",
+            "O11"
+        ],
+        [
+            "S5",
+            "V8",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

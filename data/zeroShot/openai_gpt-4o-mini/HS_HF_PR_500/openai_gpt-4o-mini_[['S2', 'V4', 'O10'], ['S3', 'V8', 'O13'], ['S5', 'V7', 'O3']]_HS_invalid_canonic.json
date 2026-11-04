@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man sees the college then the woman loves the paper, if the woman loves the paper then the student loses the money, therefore if the student loses the money then the man sees the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O10"
+        ],
+        [
+            "S3",
+            "V8",
+            "O13"
+        ],
+        [
+            "S5",
+            "V7",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

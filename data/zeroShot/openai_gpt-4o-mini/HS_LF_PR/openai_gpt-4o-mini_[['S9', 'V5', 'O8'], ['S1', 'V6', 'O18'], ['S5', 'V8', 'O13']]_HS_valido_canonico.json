@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist piggybacks the pugilist then the plutocrat federalizes the databank, if the plutocrat federalizes the databank then the audiophile intellectualizes the rocketry, therefore if the embryologist piggybacks the pugilist then the audiophile intellectualizes the rocketry",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V5",
+            "O8"
+        ],
+        [
+            "S1",
+            "V6",
+            "O18"
+        ],
+        [
+            "S5",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

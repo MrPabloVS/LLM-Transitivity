@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the book then the manager finds the food, if the manager finds the food then the man buys the car, therefore if the man buys the car then the officer hates the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O4"
+        ],
+        [
+            "S9",
+            "V3",
+            "O16"
+        ],
+        [
+            "S2",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an example of affirming the consequent fallacy. The argument states:\n1. If A then B\n2. If B then C\n3. Therefore, if C then A\n\nBut this doesn't follow logically. The premises only allow us to conclude \"if A then C\" (if the officer hates the book, then the man buys the car), not the reverse."
+}

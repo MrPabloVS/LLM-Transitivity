@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican overrates the rebelliousness then the alpinist intellectualizes the conventionalism, if the alpinist intellectualizes the conventionalism then the audiophile upbraids the aesthetician, therefore if the audiophile upbraids the aesthetician then the corsican overrates the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O10"
+        ],
+        [
+            "S6",
+            "V8",
+            "O15"
+        ],
+        [
+            "S5",
+            "V10",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

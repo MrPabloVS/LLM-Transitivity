@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer sees the car then the woman hates the building, if the woman hates the building then the man loves the computer, therefore if the man loves the computer then the officer sees the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V4",
+            "O11"
+        ],
+        [
+            "S3",
+            "V10",
+            "O9"
+        ],
+        [
+            "S2",
+            "V8",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

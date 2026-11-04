@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student hates the college then the teacher buys the food, if the teacher buys the food then the woman loves the computer, therefore if the student hates the college then the woman loves the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V10",
+            "O10"
+        ],
+        [
+            "S6",
+            "V1",
+            "O16"
+        ],
+        [
+            "S3",
+            "V8",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

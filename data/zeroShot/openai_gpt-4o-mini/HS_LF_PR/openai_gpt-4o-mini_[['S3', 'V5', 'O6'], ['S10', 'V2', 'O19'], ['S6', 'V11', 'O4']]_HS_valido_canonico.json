@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship piggybacks the metalurgist then the bibliophile indemnifies the taxman, if the bibliophile indemnifies the taxman then the alpinist marinates the monkfish, therefore if the clerkship piggybacks the metalurgist then the alpinist marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V5",
+            "O6"
+        ],
+        [
+            "S10",
+            "V2",
+            "O19"
+        ],
+        [
+            "S6",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

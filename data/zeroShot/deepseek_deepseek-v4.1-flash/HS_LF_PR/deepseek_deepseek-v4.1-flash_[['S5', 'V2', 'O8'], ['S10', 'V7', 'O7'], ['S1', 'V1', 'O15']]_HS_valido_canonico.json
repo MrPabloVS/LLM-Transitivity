@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile indemnifies the pugilist then the bibliophile sasses the aesthetician, if the bibliophile sasses the aesthetician then the plutocrat reappraises the conventionalism, therefore if the audiophile indemnifies the pugilist then the plutocrat reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O8"
+        ],
+        [
+            "S10",
+            "V7",
+            "O7"
+        ],
+        [
+            "S1",
+            "V1",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat intellectualizes the conventionalism then the embryologist unfreezes the monkfish, if the embryologist unfreezes the monkfish then the alpinist marinates the monkfish, therefore if the plutocrat intellectualizes the conventionalism then the alpinist marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V8",
+            "O15"
+        ],
+        [
+            "S9",
+            "V4",
+            "O3"
+        ],
+        [
+            "S6",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If P then E\nPremise 2: If E then A\nConclusion: If P then A\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If the first condition leads to the second, and the second leads to the third, then the first condition leads to the third.\n\nYes"
+}

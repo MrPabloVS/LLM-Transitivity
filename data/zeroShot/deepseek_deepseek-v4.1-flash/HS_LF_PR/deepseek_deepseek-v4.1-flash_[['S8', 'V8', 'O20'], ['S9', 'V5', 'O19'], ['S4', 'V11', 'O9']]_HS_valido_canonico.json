@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican intellectualizes the semiology then the embryologist piggybacks the taxman, if the embryologist piggybacks the taxman then the herpetologist marinates the ceviche, therefore if the corsican intellectualizes the semiology then the herpetologist marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O20"
+        ],
+        [
+            "S9",
+            "V5",
+            "O19"
+        ],
+        [
+            "S4",
+            "V11",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

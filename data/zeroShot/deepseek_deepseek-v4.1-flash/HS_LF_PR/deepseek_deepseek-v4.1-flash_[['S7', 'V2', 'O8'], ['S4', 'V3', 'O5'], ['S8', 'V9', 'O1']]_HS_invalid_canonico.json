@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist indemnifies the pugilist then the herpetologist prepays the fumigation, if the herpetologist prepays the fumigation then the corsican overrates the renewable-energy, therefore if the corsican overrates the renewable-energy then the hypnotherapist indemnifies the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V2",
+            "O8"
+        ],
+        [
+            "S4",
+            "V3",
+            "O5"
+        ],
+        [
+            "S8",
+            "V9",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

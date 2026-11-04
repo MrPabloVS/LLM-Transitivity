@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family sees the school then the teacher loves the newspaper, if the teacher loves the newspaper then the officer finds the building, therefore if the family sees the school then the officer finds the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V4",
+            "O8"
+        ],
+        [
+            "S6",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V3",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican sasses the aesthetician then the clerkship reappraises the semiology, if the clerkship reappraises the semiology then the embryologist overrates the pugilist, therefore if the embryologist overrates the pugilist then the corsican sasses the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O7"
+        ],
+        [
+            "S3",
+            "V1",
+            "O20"
+        ],
+        [
+            "S9",
+            "V9",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the glemtor prants the flendop then the preggar gresks the blorrack, if the preggar gresks the blorrack then the brettent blemps the drambet, therefore if the glemtor prants the flendop then the brettent blemps the drambet",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O6"
+        ],
+        [
+            "S2",
+            "V5",
+            "O4"
+        ],
+        [
+            "S3",
+            "V2",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the glemtor prants the flendop → then the preggar gresks the blorrack\nPremise 2: If the preggar gresks the blorrack → then the brettent blemps the drambet\nConclusion: Therefore, if the glemtor prants the flendop → then the brettent blemps the drambet\n\nThis is a valid hypothetical syllogism (chain argument) of the form:\n- If A then B\n- If B then C\n- Therefore, if A then C\n\nyes"
+}

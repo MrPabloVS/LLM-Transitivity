@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile intellectualizes the rocketry then the sumerian upbraids the metalurgist, if the sumerian upbraids the metalurgist then the corsican piggybacks the aesthetician, therefore if the audiophile intellectualizes the rocketry then the corsican piggybacks the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O13"
+        ],
+        [
+            "S2",
+            "V10",
+            "O6"
+        ],
+        [
+            "S8",
+            "V5",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If A then B (If audiophile intellectualizes the rocketry, then sumerian upbraids the metalurgist)\n\n**Premise 2:** If B then C (If sumerian upbraids the metalurgist, then corsican piggybacks the aesthetician)\n\n**Conclusion:** If A then C (If audiophile intellectualizes the rocketry, then corsican piggybacks the aesthetician)\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, A → C\n\n**yes**"
+}

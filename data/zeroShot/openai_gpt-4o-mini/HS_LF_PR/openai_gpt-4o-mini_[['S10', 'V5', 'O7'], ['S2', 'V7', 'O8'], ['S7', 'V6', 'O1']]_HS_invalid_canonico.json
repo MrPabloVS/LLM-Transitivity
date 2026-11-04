@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile piggybacks the aesthetician then the sumerian sasses the pugilist, if the sumerian sasses the pugilist then the hypnotherapist federalizes the renewable-energy, therefore if the hypnotherapist federalizes the renewable-energy then the bibliophile piggybacks the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S2",
+            "V7",
+            "O8"
+        ],
+        [
+            "S7",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

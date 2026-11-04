@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar frikes the ploodnum then the prackler gresks the snabrik, if the prackler gresks the snabrik then the bruggant glashes the flendop, therefore if the bruggant glashes the flendop then the preggar frikes the ploodnum",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O3"
+        ],
+        [
+            "S6",
+            "V5",
+            "O5"
+        ],
+        [
+            "S5",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "To evaluate this argument, I need to check if the conclusion follows logically from the premises.\n\nPremises:\n1. If preggar frikes ploodnum → prackler gresks snabrik\n2. If prackler gresks snabrik → bruggant glashes flendop\n\nConclusion:\nIf bruggant glashes flendop → preggar frikes ploodnum\n\nFrom the premises, I can derive:\n- If preggar frikes ploodnum → bruggant glashes flendop (by hypothetical syllogism)\n\nBut the conclusion claims the reverse: If bruggant glashes flendop → preggar frikes ploodnum\n\nThis is affirming the consequent, which is a logical fallacy. The conclusion attempts to reverse the direction of the conditional statement, which is not valid.\n\nno"
+}

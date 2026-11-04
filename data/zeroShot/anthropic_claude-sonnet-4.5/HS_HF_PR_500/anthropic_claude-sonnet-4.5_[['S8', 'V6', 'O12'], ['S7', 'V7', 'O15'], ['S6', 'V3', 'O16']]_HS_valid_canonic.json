@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer reads the newspaper then the doctor loses the game, if the doctor loses the game then the teacher finds the food, therefore if the officer reads the newspaper then the teacher finds the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V6",
+            "O12"
+        ],
+        [
+            "S7",
+            "V7",
+            "O15"
+        ],
+        [
+            "S6",
+            "V3",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the officer reads the newspaper → the doctor loses the game\nPremise 2: If the doctor loses the game → the teacher finds the food\nConclusion: If the officer reads the newspaper → the teacher finds the food\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

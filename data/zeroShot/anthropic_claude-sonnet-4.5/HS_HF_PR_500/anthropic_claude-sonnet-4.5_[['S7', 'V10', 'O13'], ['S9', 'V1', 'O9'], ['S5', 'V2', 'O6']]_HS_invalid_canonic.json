@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor hates the paper then the manager buys the building, if the manager buys the building then the student pays the chair, therefore if the student pays the chair then the doctor hates the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O13"
+        ],
+        [
+            "S9",
+            "V1",
+            "O9"
+        ],
+        [
+            "S5",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

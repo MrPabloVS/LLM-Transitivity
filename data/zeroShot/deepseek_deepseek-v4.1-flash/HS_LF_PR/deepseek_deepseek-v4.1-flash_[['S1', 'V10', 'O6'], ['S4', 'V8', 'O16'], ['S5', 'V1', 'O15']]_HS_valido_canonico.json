@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat upbraids the metalurgist then the herpetologist intellectualizes the rebelliousness, if the herpetologist intellectualizes the rebelliousness then the audiophile reappraises the conventionalism, therefore if the plutocrat upbraids the metalurgist then the audiophile reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O6"
+        ],
+        [
+            "S4",
+            "V8",
+            "O16"
+        ],
+        [
+            "S5",
+            "V1",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

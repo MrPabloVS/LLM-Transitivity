@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family sees the college then the man loves the book,if the woman loses the game then the family sees the college therefore if the man loves the book then the woman loses the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V7",
+            "O15"
+        ],
+        [
+            "S4",
+            "V4",
+            "O10"
+        ],
+        [
+            "S2",
+            "V8",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe reasoning commits the fallacy of affirming the consequent. Let me trace through the logic:\n\nGiven:\n1. If family sees college → man loves book\n2. If woman loses game → family sees college\n\nThese allow us to conclude: If woman loses game → man loves book (by hypothetical syllogism)\n\nHowever, the conclusion states: If man loves book → woman loses game\n\nThis reverses the direction of implication, which is not logically valid. The man loving the book could occur for other reasons besides the woman losing the game."
+}

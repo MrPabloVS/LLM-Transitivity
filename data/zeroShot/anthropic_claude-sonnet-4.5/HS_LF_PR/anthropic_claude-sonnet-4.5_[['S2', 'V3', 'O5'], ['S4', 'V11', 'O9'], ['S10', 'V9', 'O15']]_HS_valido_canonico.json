@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian prepays the fumigation then the herpetologist marinates the ceviche, if the herpetologist marinates the ceviche then the bibliophile overrates the metalurgist, therefore if the sumerian prepays the fumigation then the bibliophile overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O5"
+        ],
+        [
+            "S4",
+            "V11",
+            "O9"
+        ],
+        [
+            "S10",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the sumerian prepays the fumigation → the herpetologist marinates the ceviche\nPremise 2: If the herpetologist marinates the ceviche → the bibliophile overrates the metalurgist\nConclusion: If the sumerian prepays the fumigation → the bibliophile overrates the metalurgist\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

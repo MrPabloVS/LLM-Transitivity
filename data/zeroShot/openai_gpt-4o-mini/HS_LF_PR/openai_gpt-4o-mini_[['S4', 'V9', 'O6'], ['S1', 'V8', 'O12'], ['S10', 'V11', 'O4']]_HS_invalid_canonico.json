@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist overrates the solipsism then the plutocrat intellectualizes the fairyland, if the plutocrat intellectualizes the fairyland then the bibliophile marinates the monkfish, therefore if the bibliophile marinates the monkfish then the herpetologist overrates the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V9",
+            "O6"
+        ],
+        [
+            "S1",
+            "V8",
+            "O12"
+        ],
+        [
+            "S10",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

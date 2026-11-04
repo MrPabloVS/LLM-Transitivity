@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the paper then the man buys the newspaper, if the man buys the newspaper then the student wins the case, therefore if the officer hates the paper then the student wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O13"
+        ],
+        [
+            "S2",
+            "V1",
+            "O12"
+        ],
+        [
+            "S5",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

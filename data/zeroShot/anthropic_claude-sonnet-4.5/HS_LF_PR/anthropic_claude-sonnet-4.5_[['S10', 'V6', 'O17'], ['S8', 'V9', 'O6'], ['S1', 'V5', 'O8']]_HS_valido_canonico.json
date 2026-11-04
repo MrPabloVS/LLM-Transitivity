@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile federalizes the magnetometer then the corsican overrates the solipsism, if the corsican overrates the solipsism then the plutocrat piggybacks the pugilist, therefore if the bibliophile federalizes the magnetometer then the plutocrat piggybacks the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V6",
+            "O17"
+        ],
+        [
+            "S8",
+            "V9",
+            "O6"
+        ],
+        [
+            "S1",
+            "V5",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If bibliophile federalizes magnetometer, then corsican overrates solipsism)\nPremise 2: If B then C (If corsican overrates solipsism, then plutocrat piggybacks pugilist)\nConclusion: If A then C (If bibliophile federalizes magnetometer, then plutocrat piggybacks pugilist)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

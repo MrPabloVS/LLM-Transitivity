@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer eats the sugar then the man hates the program, if the man hates the program then the woman wins the game, therefore if the woman wins the game then the officer eats the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V5",
+            "O7"
+        ],
+        [
+            "S2",
+            "V10",
+            "O1"
+        ],
+        [
+            "S3",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

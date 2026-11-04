@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family pays the newspaper then the student loves the program, if the student loves the program then the woman buys the chair, therefore if the woman buys the chair then the family pays the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O12"
+        ],
+        [
+            "S5",
+            "V8",
+            "O1"
+        ],
+        [
+            "S3",
+            "V1",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

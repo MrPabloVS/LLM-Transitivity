@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship overrates the solipsism then the herpetologist prepays the rental-car, if the herpetologist prepays the rental-car then the bibliophile marinates the ceviche, therefore if the clerkship overrates the solipsism then the bibliophile marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V9",
+            "O6"
+        ],
+        [
+            "S4",
+            "V3",
+            "O2"
+        ],
+        [
+            "S10",
+            "V11",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven:\n1. If the clerkship overrates the solipsism → the herpetologist prepays the rental-car\n2. If the herpetologist prepays the rental-car → the bibliophile marinates the ceviche\n\nConclusion: If the clerkship overrates the solipsism → the bibliophile marinates the ceviche\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nThe logical form is valid.\n\nyes"
+}

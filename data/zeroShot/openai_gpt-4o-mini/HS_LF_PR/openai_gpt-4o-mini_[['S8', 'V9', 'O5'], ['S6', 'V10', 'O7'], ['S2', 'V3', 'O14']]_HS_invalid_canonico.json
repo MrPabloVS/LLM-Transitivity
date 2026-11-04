@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican overrates the fumigation then the alpinist upbraids the aesthetician, if the alpinist upbraids the aesthetician then the sumerian prepays the trimaran, therefore if the sumerian prepays the trimaran then the corsican overrates the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O5"
+        ],
+        [
+            "S6",
+            "V10",
+            "O7"
+        ],
+        [
+            "S2",
+            "V3",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

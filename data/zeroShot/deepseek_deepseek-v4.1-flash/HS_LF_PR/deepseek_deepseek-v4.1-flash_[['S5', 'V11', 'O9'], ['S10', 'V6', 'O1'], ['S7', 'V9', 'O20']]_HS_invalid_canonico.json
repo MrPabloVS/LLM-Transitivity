@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile marinates the ceviche then the bibliophile federalizes the renewable-energy, if the bibliophile federalizes the renewable-energy then the hypnotherapist overrates the taxman, therefore if the hypnotherapist overrates the taxman then the audiophile marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V11",
+            "O9"
+        ],
+        [
+            "S10",
+            "V6",
+            "O1"
+        ],
+        [
+            "S7",
+            "V9",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

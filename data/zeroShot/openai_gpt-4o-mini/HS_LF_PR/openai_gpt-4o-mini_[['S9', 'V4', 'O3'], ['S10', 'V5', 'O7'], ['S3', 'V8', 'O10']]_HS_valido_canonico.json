@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist unfreezes the monkfish then the bibliophile piggybacks the aesthetician, if the bibliophile piggybacks the aesthetician then the clerkship intellectualizes the solipsism, therefore if the embryologist unfreezes the monkfish then the clerkship intellectualizes the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V4",
+            "O3"
+        ],
+        [
+            "S10",
+            "V5",
+            "O7"
+        ],
+        [
+            "S3",
+            "V8",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

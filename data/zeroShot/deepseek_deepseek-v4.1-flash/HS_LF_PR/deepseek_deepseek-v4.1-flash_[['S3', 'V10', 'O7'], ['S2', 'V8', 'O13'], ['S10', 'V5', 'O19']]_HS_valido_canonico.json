@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship upbraids the aesthetician then the sumerian intellectualizes the rocketry, if the sumerian intellectualizes the rocketry then the bibliophile piggybacks the taxman, therefore if the clerkship upbraids the aesthetician then the bibliophile piggybacks the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O7"
+        ],
+        [
+            "S2",
+            "V8",
+            "O13"
+        ],
+        [
+            "S10",
+            "V5",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

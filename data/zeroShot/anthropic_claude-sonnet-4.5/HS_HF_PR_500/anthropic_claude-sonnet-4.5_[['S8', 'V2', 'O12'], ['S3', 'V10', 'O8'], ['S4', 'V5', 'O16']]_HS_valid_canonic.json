@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer pays the newspaper then the woman hates the school, if the woman hates the school then the family eats the food, therefore if the officer pays the newspaper then the family eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V2",
+            "O12"
+        ],
+        [
+            "S3",
+            "V10",
+            "O8"
+        ],
+        [
+            "S4",
+            "V5",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the officer pays the newspaper → the woman hates the school\n**Premise 2:** If the woman hates the school → the family eats the food\n**Conclusion:** If the officer pays the newspaper → the family eats the food\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

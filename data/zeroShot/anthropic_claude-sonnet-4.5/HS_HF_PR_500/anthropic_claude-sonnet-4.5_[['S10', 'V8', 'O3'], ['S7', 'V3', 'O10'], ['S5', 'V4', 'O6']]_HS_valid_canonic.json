@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loves the money then the doctor finds the college, if the doctor finds the college then the student sees the chair, therefore if the girl loves the money then the student sees the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O3"
+        ],
+        [
+            "S7",
+            "V3",
+            "O10"
+        ],
+        [
+            "S5",
+            "V4",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the girl loves the money → the doctor finds the college\nPremise 2: If the doctor finds the college → the student sees the chair\nConclusion: If the girl loves the money → the student sees the chair\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\n**yes**"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile unfreezes the ceviche then the bibliophile federalizes the magnetometer, if the bibliophile federalizes the magnetometer then the corsican upbraids the taxman, therefore if the audiophile unfreezes the ceviche then the corsican upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O9"
+        ],
+        [
+            "S10",
+            "V6",
+            "O17"
+        ],
+        [
+            "S8",
+            "V10",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument structure:\n\nPremise 1: If A then B\nPremise 2: If B then C\nConclusion: Therefore, if A then C\n\nThis is a valid form of hypothetical syllogism (chain reasoning). If the audiophile unfreezes the ceviche (A), then by premise 1, the bibliophile federalizes the magnetometer (B). If B occurs, then by premise 2, the corsican upbraids the taxman (C). Therefore, if A then C.\n\nyes"
+}

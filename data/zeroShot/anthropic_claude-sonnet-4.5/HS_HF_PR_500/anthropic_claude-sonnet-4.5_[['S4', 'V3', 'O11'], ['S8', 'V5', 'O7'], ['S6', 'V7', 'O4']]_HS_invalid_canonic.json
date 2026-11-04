@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family finds the newspaper then the officer eats the sugar, if the officer eats the sugar then the teacher loses the book, therefore if the teacher loses the book then the family finds the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O11"
+        ],
+        [
+            "S8",
+            "V5",
+            "O7"
+        ],
+        [
+            "S6",
+            "V7",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an example of affirming the consequent fallacy. The argument gives us:\n1. Family finds newspaper → Officer eats sugar\n2. Officer eats sugar → Teacher loses book\n\nFrom these, we can validly conclude: Family finds newspaper → Teacher loses book\n\nHowever, the conclusion tries to reverse this to: Teacher loses book → Family finds newspaper\n\nThis reversal is not logically valid."
+}

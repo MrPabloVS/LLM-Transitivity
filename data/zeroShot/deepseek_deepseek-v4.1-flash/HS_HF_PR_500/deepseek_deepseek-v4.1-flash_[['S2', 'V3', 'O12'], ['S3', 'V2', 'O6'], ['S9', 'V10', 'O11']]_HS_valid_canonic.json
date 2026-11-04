@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man finds the paper then the woman pays the chair, if the woman pays the chair then the manager hates the car, therefore if the man finds the paper then the manager hates the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V3",
+            "O12"
+        ],
+        [
+            "S3",
+            "V2",
+            "O6"
+        ],
+        [
+            "S9",
+            "V10",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

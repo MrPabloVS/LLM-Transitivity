@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat reappraises the renewable-energy then the corsican indemnifies the taxman,if the hypnotherapist unfreezes the ceviche then the plutocrat reappraises the renewable-energy therefore if the corsican indemnifies the taxman then the hypnotherapist unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V4",
+            "O9"
+        ],
+        [
+            "S1",
+            "V1",
+            "O1"
+        ],
+        [
+            "S8",
+            "V2",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile piggybacks the taxman then the herpetologist indemnifies the metalurgist, if the herpetologist indemnifies the metalurgist then the alpinist marinates the ceviche, therefore if the alpinist marinates the ceviche then the audiophile piggybacks the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V5",
+            "O19"
+        ],
+        [
+            "S4",
+            "V2",
+            "O6"
+        ],
+        [
+            "S6",
+            "V11",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

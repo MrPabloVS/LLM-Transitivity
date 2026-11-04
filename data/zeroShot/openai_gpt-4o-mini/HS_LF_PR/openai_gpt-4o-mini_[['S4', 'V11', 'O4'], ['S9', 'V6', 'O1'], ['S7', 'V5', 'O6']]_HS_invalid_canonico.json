@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist marinates the monkfish then the embryologist federalizes the renewable-energy, if the embryologist federalizes the renewable-energy then the hypnotherapist piggybacks the metalurgist, therefore if the hypnotherapist piggybacks the metalurgist then the herpetologist marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V11",
+            "O4"
+        ],
+        [
+            "S9",
+            "V6",
+            "O1"
+        ],
+        [
+            "S7",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

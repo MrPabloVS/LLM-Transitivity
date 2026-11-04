@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist overrates the pugilist then the clerkship reappraises the polytheism, if the clerkship reappraises the polytheism then the corsican prepays the trimaran, therefore if the hypnotherapist overrates the pugilist then the corsican prepays the trimaran",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O19"
+        ],
+        [
+            "S3",
+            "V1",
+            "O11"
+        ],
+        [
+            "S8",
+            "V3",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me analyze this logical argument step by step.\n\nGiven:\n1. If the hypnotherapist overrates the pugilist → the clerkship reappraises the polytheism\n2. If the clerkship reappraises the polytheism → the corsican prepays the trimaran\n\nConclusion:\nIf the hypnotherapist overrates the pugilist → the corsican prepays the trimaran\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the hypnotherapist overrates the pugilist\n- B = the clerkship reappraises the polytheism\n- C = the corsican prepays the trimaran\n\nThe reasoning is valid.\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager pays the computer then the doctor wins the game, if the doctor wins the game then the officer loves the paper, therefore if the manager pays the computer then the officer loves the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V2",
+            "O14"
+        ],
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the manager pays the computer → then the doctor wins the game\n2. If the doctor wins the game → then the officer loves the paper\n\nConclusion to evaluate:\n- If the manager pays the computer → then the officer loves the paper\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B (manager pays computer → doctor wins game)\n- If B → C (doctor wins game → officer loves paper)\n- Therefore: If A → C (manager pays computer → officer loves paper)\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

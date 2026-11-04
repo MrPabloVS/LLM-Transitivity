@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist upbraids the aesthetician then the sumerian intellectualizes the polytheism, if the sumerian intellectualizes the polytheism then the corsican federalizes the magnetometer, therefore if the embryologist upbraids the aesthetician then the corsican federalizes the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V10",
+            "O7"
+        ],
+        [
+            "S2",
+            "V8",
+            "O11"
+        ],
+        [
+            "S8",
+            "V6",
+            "O17"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If embryologist upbraids aesthetician → sumerian intellectualizes polytheism)\nPremise 2: If B then C (If sumerian intellectualizes polytheism → corsican federalizes magnetometer)\nConclusion: If A then C (If embryologist upbraids aesthetician → corsican federalizes magnetometer)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

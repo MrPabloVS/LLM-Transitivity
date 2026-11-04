@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile overrates the polytheism then the bibliophile prepays the magnetometer, if the bibliophile prepays the magnetometer then the alpinist unfreezes the ceviche, therefore if the audiophile overrates the polytheism then the alpinist unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V9",
+            "O7"
+        ],
+        [
+            "S10",
+            "V3",
+            "O17"
+        ],
+        [
+            "S6",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (audiophile overrates polytheism → bibliophile prepays magnetometer)\nPremise 2: If B then C (bibliophile prepays magnetometer → alpinist unfreezes ceviche)\nConclusion: If A then C (audiophile overrates polytheism → alpinist unfreezes ceviche)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

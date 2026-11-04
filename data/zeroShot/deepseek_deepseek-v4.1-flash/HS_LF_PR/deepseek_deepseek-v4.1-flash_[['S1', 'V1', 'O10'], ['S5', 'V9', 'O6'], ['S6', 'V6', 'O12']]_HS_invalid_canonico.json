@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat reappraises the solipsism then the audiophile overrates the solipsism, if the audiophile overrates the solipsism then the alpinist federalizes the fairyland, therefore if the alpinist federalizes the fairyland then the plutocrat reappraises the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O10"
+        ],
+        [
+            "S5",
+            "V9",
+            "O6"
+        ],
+        [
+            "S6",
+            "V6",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

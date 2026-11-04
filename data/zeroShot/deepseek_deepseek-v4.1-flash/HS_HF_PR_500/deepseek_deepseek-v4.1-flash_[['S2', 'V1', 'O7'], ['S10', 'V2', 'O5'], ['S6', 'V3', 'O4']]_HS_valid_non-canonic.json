@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl pays the table then the teacher finds the book,if the man buys the sugar then the girl pays the table therefore if the teacher finds the book then the man buys the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O7"
+        ],
+        [
+            "S10",
+            "V2",
+            "O5"
+        ],
+        [
+            "S6",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

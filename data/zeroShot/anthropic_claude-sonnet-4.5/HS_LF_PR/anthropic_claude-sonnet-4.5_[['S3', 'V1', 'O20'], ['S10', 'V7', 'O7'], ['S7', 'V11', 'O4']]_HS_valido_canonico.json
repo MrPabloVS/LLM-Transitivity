@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship reappraises the semiology then the bibliophile sasses the aesthetician, if the bibliophile sasses the aesthetician then the hypnotherapist marinates the monkfish, therefore if the clerkship reappraises the semiology then the hypnotherapist marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O20"
+        ],
+        [
+            "S10",
+            "V7",
+            "O7"
+        ],
+        [
+            "S7",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If clerkship reappraises semiology, then bibliophile sasses aesthetician)\nPremise 2: If B then C (If bibliophile sasses aesthetician, then hypnotherapist marinates monkfish)\nConclusion: If A then C (If clerkship reappraises semiology, then hypnotherapist marinates monkfish)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

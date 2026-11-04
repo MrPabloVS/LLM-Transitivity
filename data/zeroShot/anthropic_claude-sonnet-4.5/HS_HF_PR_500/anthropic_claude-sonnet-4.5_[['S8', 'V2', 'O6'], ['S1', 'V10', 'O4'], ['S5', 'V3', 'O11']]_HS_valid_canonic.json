@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer pays the chair then the kid hates the book, if the kid hates the book then the student finds the newspaper, therefore if the officer pays the chair then the student finds the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V2",
+            "O6"
+        ],
+        [
+            "S1",
+            "V10",
+            "O4"
+        ],
+        [
+            "S5",
+            "V3",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the officer pays the chair → the kid hates the book\n**Premise 2:** If the kid hates the book → the student finds the newspaper\n**Conclusion:** If the officer pays the chair → the student finds the newspaper\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the officer pays the chair\n- B = the kid hates the book\n- C = the student finds the newspaper\n\n**yes**"
+}

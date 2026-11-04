@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist overrates the fumigation then the sumerian federalizes the coronograph,if the hypnotherapist upbraids the pugilist then the herpetologist overrates the fumigation therefore if the sumerian federalizes the coronograph then the hypnotherapist upbraids the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V10",
+            "O8"
+        ],
+        [
+            "S4",
+            "V9",
+            "O5"
+        ],
+        [
+            "S2",
+            "V6",
+            "O21"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

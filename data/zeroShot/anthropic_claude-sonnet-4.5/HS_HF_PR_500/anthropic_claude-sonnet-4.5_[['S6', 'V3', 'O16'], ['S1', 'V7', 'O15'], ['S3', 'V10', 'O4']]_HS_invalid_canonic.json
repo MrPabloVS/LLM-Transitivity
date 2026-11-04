@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the food then the kid loses the game, if the kid loses the game then the woman hates the book, therefore if the woman hates the book then the teacher finds the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O16"
+        ],
+        [
+            "S1",
+            "V7",
+            "O15"
+        ],
+        [
+            "S3",
+            "V10",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The premises establish:\n1. Teacher finds food → Kid loses game\n2. Kid loses game → Woman hates book\n\nThis validly gives us: Teacher finds food → Woman hates book\n\nBut the conclusion tries to reverse this to: Woman hates book → Teacher finds food\n\nThis reversal is not logically valid."
+}

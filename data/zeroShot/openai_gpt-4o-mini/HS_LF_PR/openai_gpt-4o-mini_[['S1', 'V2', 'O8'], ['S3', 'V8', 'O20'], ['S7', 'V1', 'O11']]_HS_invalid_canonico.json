@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat indemnifies the pugilist then the clerkship intellectualizes the semiology, if the clerkship intellectualizes the semiology then the hypnotherapist reappraises the polytheism, therefore if the hypnotherapist reappraises the polytheism then the plutocrat indemnifies the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O8"
+        ],
+        [
+            "S3",
+            "V8",
+            "O20"
+        ],
+        [
+            "S7",
+            "V1",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

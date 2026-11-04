@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar frikes the flendop then the probeller blemps the ploodnum, if the probeller blemps the ploodnum then the prackler trelfs the prebart, therefore if the prackler trelfs the prebart then the preggar frikes the flendop",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O6"
+        ],
+        [
+            "S1",
+            "V2",
+            "O3"
+        ],
+        [
+            "S6",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (preggar frikes flendop → probeller blemps ploodnum)\nPremise 2: If B then C (probeller blemps ploodnum → prackler trelfs prebart)\nConclusion: If C then A (prackler trelfs prebart → preggar frikes flendop)\n\nThis is claiming: If A→B and B→C, then C→A\n\nThis is the logical fallacy of affirming the consequent. The premises give us A→B→C (a chain), but the conclusion claims C→A (the reverse direction), which doesn't follow.\n\nno"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer sees the building then the kid pays the food,if the girl wins the game then the officer sees the building therefore if the kid pays the food then the girl wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V4",
+            "O9"
+        ],
+        [
+            "S1",
+            "V2",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No"
+}

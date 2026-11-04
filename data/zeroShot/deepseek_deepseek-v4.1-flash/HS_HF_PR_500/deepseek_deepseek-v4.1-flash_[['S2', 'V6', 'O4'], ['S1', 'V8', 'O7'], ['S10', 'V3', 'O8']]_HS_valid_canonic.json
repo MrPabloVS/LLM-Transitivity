@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man reads the book then the kid loves the sugar, if the kid loves the sugar then the girl finds the school, therefore if the man reads the book then the girl finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V8",
+            "O7"
+        ],
+        [
+            "S10",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

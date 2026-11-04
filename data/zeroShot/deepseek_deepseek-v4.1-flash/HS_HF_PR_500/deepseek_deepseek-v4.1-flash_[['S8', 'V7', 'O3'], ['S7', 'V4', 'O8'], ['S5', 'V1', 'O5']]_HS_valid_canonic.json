@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loses the money then the doctor sees the school, if the doctor sees the school then the student buys the table, therefore if the officer loses the money then the student buys the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V7",
+            "O3"
+        ],
+        [
+            "S7",
+            "V4",
+            "O8"
+        ],
+        [
+            "S5",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

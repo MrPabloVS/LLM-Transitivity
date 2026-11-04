@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile intellectualizes the semiology then the clerkship sasses the pugilist, if the clerkship sasses the pugilist then the hypnotherapist prepays the magnetometer, therefore if the audiophile intellectualizes the semiology then the hypnotherapist prepays the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O20"
+        ],
+        [
+            "S3",
+            "V7",
+            "O8"
+        ],
+        [
+            "S7",
+            "V3",
+            "O17"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If A intellectualizes S → C sasses P\n**Premise 2:** If C sasses P → H prepays M\n**Conclusion:** If A intellectualizes S → H prepays M\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If P → Q\n- If Q → R\n- Therefore, if P → R\n\nThe argument is logically valid.\n\n**yes**"
+}

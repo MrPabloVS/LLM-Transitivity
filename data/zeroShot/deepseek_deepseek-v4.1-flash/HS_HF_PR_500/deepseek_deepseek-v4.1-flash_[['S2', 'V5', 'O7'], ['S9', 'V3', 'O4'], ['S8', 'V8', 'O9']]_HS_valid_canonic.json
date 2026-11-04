@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man eats the sugar then the manager finds the book, if the manager finds the book then the officer loves the building, therefore if the man eats the sugar then the officer loves the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O7"
+        ],
+        [
+            "S9",
+            "V3",
+            "O4"
+        ],
+        [
+            "S8",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

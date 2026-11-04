@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman pays the sugar then the girl hates the school, if the girl hates the school then the officer finds the college, therefore if the woman pays the sugar then the officer finds the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V2",
+            "O7"
+        ],
+        [
+            "S10",
+            "V10",
+            "O8"
+        ],
+        [
+            "S8",
+            "V3",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the woman pays the sugar → the girl hates the school\nPremise 2: If the girl hates the school → the officer finds the college\nConclusion: If the woman pays the sugar → the officer finds the college\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

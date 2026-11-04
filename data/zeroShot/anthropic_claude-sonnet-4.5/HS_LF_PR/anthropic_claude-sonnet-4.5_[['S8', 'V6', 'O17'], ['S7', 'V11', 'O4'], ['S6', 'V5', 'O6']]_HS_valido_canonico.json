@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican federalizes the magnetometer then the hypnotherapist marinates the monkfish, if the hypnotherapist marinates the monkfish then the alpinist piggybacks the metalurgist, therefore if the corsican federalizes the magnetometer then the alpinist piggybacks the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V6",
+            "O17"
+        ],
+        [
+            "S7",
+            "V11",
+            "O4"
+        ],
+        [
+            "S6",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the corsican federalizes the magnetometer → the hypnotherapist marinates the monkfish\n\nPremise 2: If the hypnotherapist marinates the monkfish → the alpinist piggybacks the metalurgist\n\nConclusion: If the corsican federalizes the magnetometer → the alpinist piggybacks the metalurgist\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

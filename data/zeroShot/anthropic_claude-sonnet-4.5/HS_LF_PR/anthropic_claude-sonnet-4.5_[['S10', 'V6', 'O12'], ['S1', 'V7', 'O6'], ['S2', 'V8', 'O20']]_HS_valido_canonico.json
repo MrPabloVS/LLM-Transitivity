@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile federalizes the fairyland then the plutocrat sasses the metalurgist, if the plutocrat sasses the metalurgist then the sumerian intellectualizes the semiology, therefore if the bibliophile federalizes the fairyland then the sumerian intellectualizes the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V6",
+            "O12"
+        ],
+        [
+            "S1",
+            "V7",
+            "O6"
+        ],
+        [
+            "S2",
+            "V8",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the bibliophile federalizes the fairyland → the plutocrat sasses the metalurgist\n\n**Premise 2:** If the plutocrat sasses the metalurgist → the sumerian intellectualizes the semiology\n\n**Conclusion:** If the bibliophile federalizes the fairyland → the sumerian intellectualizes the semiology\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C  \n- Therefore, if A → C\n\nyes"
+}

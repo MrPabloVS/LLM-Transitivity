@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar frikes the blorrack then the prackler glashes the drambet,if the brettent trelfs the snabrik then the preggar frikes the blorrack therefore if the prackler glashes the drambet then the brettent trelfs the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V6",
+            "O5"
+        ],
+        [
+            "S2",
+            "V4",
+            "O4"
+        ],
+        [
+            "S6",
+            "V1",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

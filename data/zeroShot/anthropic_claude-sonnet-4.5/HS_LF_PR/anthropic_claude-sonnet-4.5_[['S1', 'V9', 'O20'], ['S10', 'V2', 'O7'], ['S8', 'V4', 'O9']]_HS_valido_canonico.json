@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat overrates the taxman then the bibliophile indemnifies the aesthetician, if the bibliophile indemnifies the aesthetician then the corsican unfreezes the ceviche, therefore if the plutocrat overrates the taxman then the corsican unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O20"
+        ],
+        [
+            "S10",
+            "V2",
+            "O7"
+        ],
+        [
+            "S8",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the plutocrat overrates the taxman → the bibliophile indemnifies the aesthetician\n\nPremise 2: If the bibliophile indemnifies the aesthetician → the corsican unfreezes the ceviche\n\nConclusion: If the plutocrat overrates the taxman → the corsican unfreezes the ceviche\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If P → Q\n- If Q → R\n- Therefore, if P → R\n\nyes"
+}

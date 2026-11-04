@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher reads the book then the kid hates the food,if the family pays the computer then the teacher reads the book therefore if the kid hates the food then the family pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O14"
+        ],
+        [
+            "S6",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. Here's why:\n\nGiven:\n1. If teacher reads book → kid hates food\n2. If family pays computer → teacher reads book\n\nWe can validly conclude: If family pays computer → kid hates food\n\nHowever, the conclusion states: If kid hates food → family pays computer\n\nThis reverses the direction of causation, which is not logically valid. The kid hating food could occur for other reasons besides the family paying the computer."
+}

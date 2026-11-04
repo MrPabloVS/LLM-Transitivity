@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid wins the game then the family sees the building, if the family sees the building then the teacher loves the sugar, therefore if the teacher loves the sugar then the kid wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O15"
+        ],
+        [
+            "S4",
+            "V4",
+            "O9"
+        ],
+        [
+            "S6",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

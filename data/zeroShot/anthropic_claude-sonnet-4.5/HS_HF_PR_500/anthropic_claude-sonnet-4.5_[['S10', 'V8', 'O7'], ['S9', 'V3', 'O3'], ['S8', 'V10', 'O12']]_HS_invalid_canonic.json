@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl loves the sugar then the manager finds the money, if the manager finds the money then the officer hates the newspaper, therefore if the officer hates the newspaper then the girl loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O7"
+        ],
+        [
+            "S9",
+            "V3",
+            "O3"
+        ],
+        [
+            "S8",
+            "V10",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The premises establish:\n1. Girl loves sugar → Manager finds money\n2. Manager finds money → Officer hates newspaper\n\nThis allows us to conclude: Girl loves sugar → Officer hates newspaper\n\nHowever, the conclusion tries to reverse this to: Officer hates newspaper → Girl loves sugar\n\nThis reversal is not logically valid."
+}

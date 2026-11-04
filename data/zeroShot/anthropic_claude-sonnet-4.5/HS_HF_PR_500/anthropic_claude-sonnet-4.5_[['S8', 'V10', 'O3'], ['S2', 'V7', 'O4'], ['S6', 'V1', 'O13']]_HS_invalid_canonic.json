@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer hates the money then the man loses the book, if the man loses the book then the teacher buys the paper, therefore if the teacher buys the paper then the officer hates the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V10",
+            "O3"
+        ],
+        [
+            "S2",
+            "V7",
+            "O4"
+        ],
+        [
+            "S6",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid logical inference. The argument commits the fallacy of affirming the consequent.\n\nGiven:\n- If A (officer hates money) → B (man loses book)\n- If B (man loses book) → C (teacher buys paper)\n\nWe can conclude: If A → C (if officer hates money, then teacher buys paper)\n\nHowever, the argument tries to conclude: If C → A (if teacher buys paper, then officer hates money)\n\nThis reverses the logical direction and is invalid."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist overrates the metalurgist then the herpetologist indemnifies the metalurgist, if the herpetologist indemnifies the metalurgist then the clerkship sasses the taxman, therefore if the clerkship sasses the taxman then the hypnotherapist overrates the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S4",
+            "V2",
+            "O6"
+        ],
+        [
+            "S3",
+            "V7",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

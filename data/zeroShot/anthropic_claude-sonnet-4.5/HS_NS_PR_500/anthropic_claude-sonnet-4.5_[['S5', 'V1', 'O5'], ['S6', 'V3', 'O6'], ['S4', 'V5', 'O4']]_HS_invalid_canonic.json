@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bruggant glashes the snabrik then the prackler prants the flendop, if the prackler prants the flendop then the glemtor gresks the blorrack, therefore if the glemtor gresks the blorrack then the bruggant glashes the snabrik",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V1",
+            "O5"
+        ],
+        [
+            "S6",
+            "V3",
+            "O6"
+        ],
+        [
+            "S4",
+            "V5",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremises:\n1. If A then B (bruggant glashes snabrik → prackler prants flendop)\n2. If B then C (prackler prants flendop → glemtor gresks blorrack)\n\nConclusion:\nIf C then A (glemtor gresks blorrack → bruggant glashes snabrik)\n\nThis is attempting to conclude A→C from C→A, which is affirming the consequent - a logical fallacy. The premises give us A→B→C, but the conclusion tries to reverse this to C→A, which doesn't follow.\n\nno"
+}

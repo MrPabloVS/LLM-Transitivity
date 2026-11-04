@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bruggant frikes the drambet then the glemtor gresks the ploodnum, if the glemtor gresks the ploodnum then the prackler trelfs the snabrik, therefore if the prackler trelfs the snabrik then the bruggant frikes the drambet",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O2"
+        ],
+        [
+            "S4",
+            "V5",
+            "O3"
+        ],
+        [
+            "S6",
+            "V6",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (bruggant frikes drambet → glemtor gresks ploodnum)\nPremise 2: If B then C (glemtor gresks ploodnum → prackler trelfs snabrik)\nConclusion: If C then A (prackler trelfs snabrik → bruggant frikes drambet)\n\nThe premises give us: A → B → C\n\nThe conclusion claims: C → A\n\nThis is attempting to reverse the chain of implications, which is the logical fallacy of affirming the consequent. Just because A leads to C doesn't mean C leads back to A.\n\nno"
+}

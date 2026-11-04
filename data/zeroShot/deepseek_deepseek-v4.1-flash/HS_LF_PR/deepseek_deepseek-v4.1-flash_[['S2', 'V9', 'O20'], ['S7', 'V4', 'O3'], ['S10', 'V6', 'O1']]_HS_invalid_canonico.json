@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian overrates the taxman then the hypnotherapist unfreezes the monkfish, if the hypnotherapist unfreezes the monkfish then the bibliophile federalizes the renewable-energy, therefore if the bibliophile federalizes the renewable-energy then the sumerian overrates the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V9",
+            "O20"
+        ],
+        [
+            "S7",
+            "V4",
+            "O3"
+        ],
+        [
+            "S10",
+            "V6",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

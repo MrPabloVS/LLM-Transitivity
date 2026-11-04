@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist intellectualizes the rocketry then the sumerian prepays the coronograph, if the sumerian prepays the coronograph then the plutocrat piggybacks the metalurgist, therefore if the alpinist intellectualizes the rocketry then the plutocrat piggybacks the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V8",
+            "O13"
+        ],
+        [
+            "S2",
+            "V3",
+            "O21"
+        ],
+        [
+            "S1",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If alpinist intellectualizes rocketry → sumerian prepays coronograph)\nPremise 2: If B then C (If sumerian prepays coronograph → plutocrat piggybacks metalurgist)\nConclusion: If A then C (If alpinist intellectualizes rocketry → plutocrat piggybacks metalurgist)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

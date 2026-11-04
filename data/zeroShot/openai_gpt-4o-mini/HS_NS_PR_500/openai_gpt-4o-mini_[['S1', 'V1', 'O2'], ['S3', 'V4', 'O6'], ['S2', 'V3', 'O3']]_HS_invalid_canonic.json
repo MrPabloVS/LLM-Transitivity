@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller glashes the drambet then the brettent frikes the flendop, if the brettent frikes the flendop then the preggar prants the ploodnum, therefore if the preggar prants the ploodnum then the probeller glashes the drambet",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O2"
+        ],
+        [
+            "S3",
+            "V4",
+            "O6"
+        ],
+        [
+            "S2",
+            "V3",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

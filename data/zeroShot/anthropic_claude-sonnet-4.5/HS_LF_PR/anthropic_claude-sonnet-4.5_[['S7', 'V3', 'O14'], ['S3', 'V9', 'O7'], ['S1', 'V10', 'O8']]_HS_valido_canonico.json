@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist prepays the trimaran then the clerkship overrates the polytheism, if the clerkship overrates the polytheism then the plutocrat upbraids the pugilist, therefore if the hypnotherapist prepays the trimaran then the plutocrat upbraids the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V3",
+            "O14"
+        ],
+        [
+            "S3",
+            "V9",
+            "O7"
+        ],
+        [
+            "S1",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If hypnotherapist prepays trimaran, then clerkship overrates polytheism)\nPremise 2: If B then C (If clerkship overrates polytheism, then plutocrat upbraids pugilist)\nConclusion: If A then C (If hypnotherapist prepays trimaran, then plutocrat upbraids pugilist)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher loses the money then the officer buys the sugar,if the woman sees the building then the teacher loses the money therefore if the officer buys the sugar then the woman sees the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O9"
+        ],
+        [
+            "S6",
+            "V7",
+            "O3"
+        ],
+        [
+            "S8",
+            "V1",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

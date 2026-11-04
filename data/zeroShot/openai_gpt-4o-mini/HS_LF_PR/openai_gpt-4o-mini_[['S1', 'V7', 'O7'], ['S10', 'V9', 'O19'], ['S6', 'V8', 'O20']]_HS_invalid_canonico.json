@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat sasses the aesthetician then the bibliophile overrates the pugilist, if the bibliophile overrates the pugilist then the alpinist intellectualizes the semiology, therefore if the alpinist intellectualizes the semiology then the plutocrat sasses the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V7",
+            "O7"
+        ],
+        [
+            "S10",
+            "V9",
+            "O19"
+        ],
+        [
+            "S6",
+            "V8",
+            "O20"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

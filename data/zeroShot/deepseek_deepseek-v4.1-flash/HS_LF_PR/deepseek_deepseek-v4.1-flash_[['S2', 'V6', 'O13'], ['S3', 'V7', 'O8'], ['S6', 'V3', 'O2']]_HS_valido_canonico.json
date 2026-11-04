@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian federalizes the rocketry then the clerkship sasses the pugilist, if the clerkship sasses the pugilist then the alpinist prepays the rental-car, therefore if the sumerian federalizes the rocketry then the alpinist prepays the rental-car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V6",
+            "O13"
+        ],
+        [
+            "S3",
+            "V7",
+            "O8"
+        ],
+        [
+            "S6",
+            "V3",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

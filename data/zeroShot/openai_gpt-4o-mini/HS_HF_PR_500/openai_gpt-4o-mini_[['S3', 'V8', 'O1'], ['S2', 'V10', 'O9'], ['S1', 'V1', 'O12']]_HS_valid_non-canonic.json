@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man hates the building then the kid buys the newspaper,if the woman loves the program then the man hates the building therefore if the kid buys the newspaper then the woman loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O1"
+        ],
+        [
+            "S2",
+            "V10",
+            "O9"
+        ],
+        [
+            "S1",
+            "V1",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "dataset": "HS_NS_PR_500",
+    "dataset_sha256": "17265dfa25c958ee375bd39ba07aa17d4694e8c72426e9bc41657c2b281414b5",
+    "system": "zeroShot",
+    "model": "openai/gpt-4o-mini",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 986,
+    "accuracy": 0.6573333333333333,
+    "unrecognized": 0,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valid / canonic": {
+        "saved": 500,
+        "correct": 484,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "yes": 484,
+          "no": 16
+        }
+      },
+      "invalid / canonic": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      },
+      "valid / non-canonic": {
+        "saved": 500,
+        "correct": 2,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 498,
+          "yes": 2
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 0.0215169,
+    "logged_total_tokens": 138937,
+    "logs": [
+      "logs/HS_NS_PR_500_openai_gpt-4o-mini_zeroShot_2026-11-04_13-04-39_042859.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_NS_PR_500_openai_gpt-4o-mini_zeroShot_2026-11-04_13-04-39_042859.json",
+        "responses": 1500,
+        "cost_usd": 0.0215169,
+        "total_tokens": 138937,
+        "first_created_utc": "2026-11-04T16:04:39+00:00",
+        "last_created_utc": "2026-11-04T16:07:14+00:00"
+      }
+    ]
+  },
+  {
+    "dataset": "HS_NS_PR_500",
+    "dataset_sha256": "17265dfa25c958ee375bd39ba07aa17d4694e8c72426e9bc41657c2b281414b5",
+    "system": "zeroShot",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 1000,
+    "accuracy": 0.6666666666666666,
+    "unrecognized": 0,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valid / canonic": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "yes": 500
+        }
+      },
+      "invalid / canonic": {
+        "saved": 500,
+        "correct": 500,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      },
+      "valid / non-canonic": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 0,
+        "filtered": 0,
+        "answers": {
+          "no": 500
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 0.1496106357,
+    "logged_total_tokens": 398936,
+    "logs": [
+      "logs/HS_NS_PR_500_deepseek_deepseek-v4.1-flash_zeroShot_2026-11-04_13-04-39_024233.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_NS_PR_500_deepseek_deepseek-v4.1-flash_zeroShot_2026-11-04_13-04-39_024233.json",
+        "responses": 1500,
+        "cost_usd": 0.1496106357,
+        "total_tokens": 398936,
+        "first_created_utc": "2026-11-04T16:04:39+00:00",
+        "last_created_utc": "2026-11-04T16:08:22+00:00"
+      }
+    ]
+  },
+  {
+    "dataset": "HS_NS_PR_500",
+    "dataset_sha256": "17265dfa25c958ee375bd39ba07aa17d4694e8c72426e9bc41657c2b281414b5",
+    "system": "zeroShot",
+    "model": "anthropic/claude-sonnet-4.5",
+    "expected": 1500,
+    "saved": 1500,
+    "missing_or_mismatched_rows": [],
+    "correct": 66,
+    "accuracy": 0.044,
+    "unrecognized": 1434,
+    "filtered": 0,
+    "text_responses": 1500,
+    "groups": {
+      "valid / canonic": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 500,
+        "filtered": 0,
+        "answers": {
+          "other": 500
+        }
+      },
+      "invalid / canonic": {
+        "saved": 500,
+        "correct": 66,
+        "unrecognized": 434,
+        "filtered": 0,
+        "answers": {
+          "no": 66,
+          "other": 434
+        }
+      },
+      "valid / non-canonic": {
+        "saved": 500,
+        "correct": 0,
+        "unrecognized": 500,
+        "filtered": 0,
+        "answers": {
+          "other": 500
+        }
+      }
+    },
+    "logged_responses": 1500,
+    "logged_cost_usd": 4.896636,
+    "logged_total_tokens": 435156,
+    "logs": [
+      "logs/HS_NS_PR_500_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-04-39_003891.json",
+      "logs/HS_NS_PR_500_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-17-42_963362.json"
+    ],
+    "log_usage": [
+      {
+        "path": "logs/HS_NS_PR_500_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-04-39_003891.json",
+        "responses": 1477,
+        "cost_usd": 4.79892,
+        "total_tokens": 426988,
+        "first_created_utc": "2026-11-04T16:04:39+00:00",
+        "last_created_utc": "2026-11-04T16:15:51+00:00"
+      },
+      {
+        "path": "logs/HS_NS_PR_500_anthropic_claude-sonnet-4.5_zeroShot_2026-11-04_13-17-42_963362.json",
+        "responses": 23,
+        "cost_usd": 0.097716,
+        "total_tokens": 8168,
+        "first_created_utc": "2026-11-04T16:17:43+00:00",
+        "last_created_utc": "2026-11-04T16:18:47+00:00"
+      }
+    ]
+  }
+]

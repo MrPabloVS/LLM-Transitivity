@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship unfreezes the monkfish then the bibliophile upbraids the pugilist, if the bibliophile upbraids the pugilist then the plutocrat overrates the renewable-energy, therefore if the clerkship unfreezes the monkfish then the plutocrat overrates the renewable-energy",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O3"
+        ],
+        [
+            "S10",
+            "V10",
+            "O8"
+        ],
+        [
+            "S1",
+            "V9",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the clerkship unfreezes the monkfish → the bibliophile upbraids the pugilist\nPremise 2: If the bibliophile upbraids the pugilist → the plutocrat overrates the renewable-energy\nConclusion: If the clerkship unfreezes the monkfish → the plutocrat overrates the renewable-energy\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

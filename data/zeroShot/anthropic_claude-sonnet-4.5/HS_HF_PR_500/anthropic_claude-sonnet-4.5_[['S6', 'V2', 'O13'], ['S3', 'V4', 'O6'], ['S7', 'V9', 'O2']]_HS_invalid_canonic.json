@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher pays the paper then the woman sees the chair, if the woman sees the chair then the doctor wins the case, therefore if the doctor wins the case then the teacher pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V2",
+            "O13"
+        ],
+        [
+            "S3",
+            "V4",
+            "O6"
+        ],
+        [
+            "S7",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis commits the fallacy of affirming the consequent. The argument gives us:\n- If A then B\n- If B then C\n\nThis correctly allows us to conclude: If A then C.\n\nHowever, the conclusion states: If C then A, which reverses the logical direction and is invalid."
+}

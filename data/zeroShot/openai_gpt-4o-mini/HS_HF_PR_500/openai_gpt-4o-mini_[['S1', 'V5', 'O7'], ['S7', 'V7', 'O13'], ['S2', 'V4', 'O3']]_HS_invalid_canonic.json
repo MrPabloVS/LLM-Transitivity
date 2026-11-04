@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid eats the sugar then the doctor loses the paper, if the doctor loses the paper then the man sees the money, therefore if the man sees the money then the kid eats the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V5",
+            "O7"
+        ],
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S2",
+            "V4",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

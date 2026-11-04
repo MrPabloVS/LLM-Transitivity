@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid pays the paper then the teacher finds the sugar, if the teacher finds the sugar then the woman hates the book, therefore if the woman hates the book then the kid pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O13"
+        ],
+        [
+            "S6",
+            "V3",
+            "O7"
+        ],
+        [
+            "S3",
+            "V10",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The logical structure is:\n\n1. If A then B\n2. If B then C\n3. Therefore, if C then A\n\nThis is invalid. The chain only goes forward (A→B→C), not backward (C→A)."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer buys the chair then the girl finds the newspaper, if the girl finds the newspaper then the doctor sees the college, therefore if the officer buys the chair then the doctor sees the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V1",
+            "O6"
+        ],
+        [
+            "S10",
+            "V3",
+            "O11"
+        ],
+        [
+            "S7",
+            "V4",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nGiven:\n1. If the officer buys the chair → the girl finds the newspaper\n2. If the girl finds the newspaper → the doctor sees the college\n\nConclusion: If the officer buys the chair → the doctor sees the college\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

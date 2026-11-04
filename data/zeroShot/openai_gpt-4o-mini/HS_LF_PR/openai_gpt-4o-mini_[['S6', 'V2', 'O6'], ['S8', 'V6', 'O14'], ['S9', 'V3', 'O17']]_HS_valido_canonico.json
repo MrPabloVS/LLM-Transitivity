@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist indemnifies the metalurgist then the corsican federalizes the trimaran, if the corsican federalizes the trimaran then the embryologist prepays the magnetometer, therefore if the alpinist indemnifies the metalurgist then the embryologist prepays the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V2",
+            "O6"
+        ],
+        [
+            "S8",
+            "V6",
+            "O14"
+        ],
+        [
+            "S9",
+            "V3",
+            "O17"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

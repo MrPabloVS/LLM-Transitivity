@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family reads the newspaper then the man buys the sugar, if the man buys the sugar then the woman pays the paper, therefore if the woman pays the paper then the family reads the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V6",
+            "O12"
+        ],
+        [
+            "S2",
+            "V1",
+            "O7"
+        ],
+        [
+            "S3",
+            "V2",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

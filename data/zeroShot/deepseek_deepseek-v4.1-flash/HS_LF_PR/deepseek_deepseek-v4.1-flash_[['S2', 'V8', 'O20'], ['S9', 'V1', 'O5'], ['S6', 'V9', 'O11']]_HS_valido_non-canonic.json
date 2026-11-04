@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist reappraises the fumigation then the alpinist overrates the semiology,if the sumerian intellectualizes the semiology then the embryologist reappraises the fumigation therefore if the alpinist overrates the semiology then the sumerian intellectualizes the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O20"
+        ],
+        [
+            "S9",
+            "V1",
+            "O5"
+        ],
+        [
+            "S6",
+            "V9",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

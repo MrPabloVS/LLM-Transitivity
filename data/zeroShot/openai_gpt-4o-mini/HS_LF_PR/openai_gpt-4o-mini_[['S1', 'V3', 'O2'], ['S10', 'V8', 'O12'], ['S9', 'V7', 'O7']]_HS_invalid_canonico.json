@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the plutocrat prepays the rental-car then the bibliophile intellectualizes the fairyland, if the bibliophile intellectualizes the fairyland then the embryologist sasses the aesthetician, therefore if the embryologist sasses the aesthetician then the plutocrat prepays the rental-car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O2"
+        ],
+        [
+            "S10",
+            "V8",
+            "O12"
+        ],
+        [
+            "S9",
+            "V7",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

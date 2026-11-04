@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship upbraids the aesthetician then the sumerian intellectualizes the rocketry, if the sumerian intellectualizes the rocketry then the bibliophile piggybacks the taxman, therefore if the clerkship upbraids the aesthetician then the bibliophile piggybacks the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V10",
+            "O7"
+        ],
+        [
+            "S2",
+            "V8",
+            "O13"
+        ],
+        [
+            "S10",
+            "V5",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the clerkship upbraids the aesthetician → the sumerian intellectualizes the rocketry\n\n**Premise 2:** If the sumerian intellectualizes the rocketry → the bibliophile piggybacks the taxman\n\n**Conclusion:** If the clerkship upbraids the aesthetician → the bibliophile piggybacks the taxman\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager buys the sugar then the man loses the money, if the man loses the money then the family hates the food, therefore if the manager buys the sugar then the family hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V1",
+            "O7"
+        ],
+        [
+            "S2",
+            "V7",
+            "O3"
+        ],
+        [
+            "S4",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

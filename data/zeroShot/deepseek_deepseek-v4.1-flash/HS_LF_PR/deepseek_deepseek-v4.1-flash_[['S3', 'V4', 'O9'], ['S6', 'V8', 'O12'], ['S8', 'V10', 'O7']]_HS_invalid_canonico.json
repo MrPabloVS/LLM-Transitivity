@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship unfreezes the ceviche then the alpinist intellectualizes the fairyland, if the alpinist intellectualizes the fairyland then the corsican upbraids the aesthetician, therefore if the corsican upbraids the aesthetician then the clerkship unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S3",
+            "V4",
+            "O9"
+        ],
+        [
+            "S6",
+            "V8",
+            "O12"
+        ],
+        [
+            "S8",
+            "V10",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

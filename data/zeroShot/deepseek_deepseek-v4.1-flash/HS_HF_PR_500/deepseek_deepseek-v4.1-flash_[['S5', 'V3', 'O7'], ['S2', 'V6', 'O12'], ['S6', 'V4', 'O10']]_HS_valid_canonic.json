@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student finds the sugar then the man reads the newspaper, if the man reads the newspaper then the teacher sees the college, therefore if the student finds the sugar then the teacher sees the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V3",
+            "O7"
+        ],
+        [
+            "S2",
+            "V6",
+            "O12"
+        ],
+        [
+            "S6",
+            "V4",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man sees the newspaper then the kid wins the case, if the kid wins the case then the doctor buys the food, therefore if the doctor buys the food then the man sees the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O12"
+        ],
+        [
+            "S1",
+            "V9",
+            "O2"
+        ],
+        [
+            "S7",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis commits the fallacy of affirming the consequent. The argument gives us:\n1. Man sees newspaper → Kid wins case\n2. Kid wins case → Doctor buys food\n\nThis allows us to conclude: Man sees newspaper → Doctor buys food\n\nBut the argument tries to conclude the reverse: Doctor buys food → Man sees newspaper, which is invalid."
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student sees the computer then the family buys the food, if the family buys the food then the doctor loses the newspaper, therefore if the doctor loses the newspaper then the student sees the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O14"
+        ],
+        [
+            "S4",
+            "V1",
+            "O16"
+        ],
+        [
+            "S7",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist unfreezes the monkfish then the hypnotherapist reappraises the polytheism, if the hypnotherapist reappraises the polytheism then the clerkship prepays the coronograph, therefore if the alpinist unfreezes the monkfish then the clerkship prepays the coronograph",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V4",
+            "O3"
+        ],
+        [
+            "S7",
+            "V1",
+            "O11"
+        ],
+        [
+            "S3",
+            "V3",
+            "O21"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If alpinist unfreezes monkfish → hypnotherapist reappraises polytheism)\nPremise 2: If B then C (If hypnotherapist reappraises polytheism → clerkship prepays coronograph)\nConclusion: If A then C (If alpinist unfreezes monkfish → clerkship prepays coronograph)\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A must lead to C.\n\nyes"
+}

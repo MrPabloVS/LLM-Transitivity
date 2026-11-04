@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid reads the newspaper then the doctor sees the school, if the doctor sees the school then the student wins the game, therefore if the student wins the game then the kid reads the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S1",
+            "V6",
+            "O12"
+        ],
+        [
+            "S7",
+            "V4",
+            "O8"
+        ],
+        [
+            "S5",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

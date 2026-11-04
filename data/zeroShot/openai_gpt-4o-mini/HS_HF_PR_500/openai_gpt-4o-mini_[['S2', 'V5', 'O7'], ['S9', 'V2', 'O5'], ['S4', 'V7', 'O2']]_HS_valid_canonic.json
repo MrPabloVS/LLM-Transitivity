@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man eats the sugar then the manager pays the table, if the manager pays the table then the family loses the case, therefore if the man eats the sugar then the family loses the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O7"
+        ],
+        [
+            "S9",
+            "V2",
+            "O5"
+        ],
+        [
+            "S4",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

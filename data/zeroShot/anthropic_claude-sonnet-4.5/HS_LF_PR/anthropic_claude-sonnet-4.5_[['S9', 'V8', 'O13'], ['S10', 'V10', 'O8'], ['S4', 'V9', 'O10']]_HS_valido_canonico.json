@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist intellectualizes the rocketry then the bibliophile upbraids the pugilist, if the bibliophile upbraids the pugilist then the herpetologist overrates the rebelliousness, therefore if the embryologist intellectualizes the rocketry then the herpetologist overrates the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O13"
+        ],
+        [
+            "S10",
+            "V10",
+            "O8"
+        ],
+        [
+            "S4",
+            "V9",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the embryologist intellectualizes the rocketry → the bibliophile upbraids the pugilist\n2. If the bibliophile upbraids the pugilist → the herpetologist overrates the rebelliousness\n\nConclusion to verify:\nIf the embryologist intellectualizes the rocketry → the herpetologist overrates the rebelliousness\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nLet me verify:\n- Assume: the embryologist intellectualizes the rocketry (A)\n- From premise 1: then the bibliophile upbraids the pugilist (B)\n- From premise 2: then the herpetologist overrates the rebelliousness (C)\n- Therefore: if A, then C\n\nThe argument is logically valid.\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man sees the newspaper then the family buys the building, if the family buys the building then the doctor eats the food, therefore if the doctor eats the food then the man sees the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V4",
+            "O12"
+        ],
+        [
+            "S4",
+            "V1",
+            "O9"
+        ],
+        [
+            "S7",
+            "V5",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

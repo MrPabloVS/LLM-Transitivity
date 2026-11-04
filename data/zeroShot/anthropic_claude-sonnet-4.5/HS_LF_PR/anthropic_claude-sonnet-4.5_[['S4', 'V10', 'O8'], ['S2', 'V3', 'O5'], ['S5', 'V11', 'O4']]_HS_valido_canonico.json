@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist upbraids the pugilist then the sumerian prepays the fumigation, if the sumerian prepays the fumigation then the audiophile marinates the monkfish, therefore if the herpetologist upbraids the pugilist then the audiophile marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O8"
+        ],
+        [
+            "S2",
+            "V3",
+            "O5"
+        ],
+        [
+            "S5",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this argument structure:\n\nPremise 1: If A then B (If the herpetologist upbraids the pugilist then the sumerian prepays the fumigation)\n\nPremise 2: If B then C (If the sumerian prepays the fumigation then the audiophile marinates the monkfish)\n\nConclusion: If A then C (If the herpetologist upbraids the pugilist then the audiophile marinates the monkfish)\n\nThis is a valid application of the hypothetical syllogism (chain reasoning). If A leads to B, and B leads to C, then A leads to C.\n\nyes"
+}

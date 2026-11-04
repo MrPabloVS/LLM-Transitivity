@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist intellectualizes the polytheism then the sumerian upbraids the aesthetician, if the sumerian upbraids the aesthetician then the corsican overrates the metalurgist, therefore if the corsican overrates the metalurgist then the alpinist intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V8",
+            "O11"
+        ],
+        [
+            "S2",
+            "V10",
+            "O7"
+        ],
+        [
+            "S8",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

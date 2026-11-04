@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship piggybacks the metalurgist then the bibliophile indemnifies the taxman, if the bibliophile indemnifies the taxman then the alpinist marinates the monkfish, therefore if the clerkship piggybacks the metalurgist then the alpinist marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V5",
+            "O6"
+        ],
+        [
+            "S10",
+            "V2",
+            "O19"
+        ],
+        [
+            "S6",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the clerkship piggybacks the metalurgist → the bibliophile indemnifies the taxman\n2. If the bibliophile indemnifies the taxman → the alpinist marinates the monkfish\n\nConclusion to evaluate:\n- If the clerkship piggybacks the metalurgist → the alpinist marinates the monkfish\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nWhere:\n- A = the clerkship piggybacks the metalurgist\n- B = the bibliophile indemnifies the taxman\n- C = the alpinist marinates the monkfish\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

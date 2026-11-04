@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the embryologist upbraids the metalurgist then the sumerian overrates the polytheism, if the sumerian overrates the polytheism then the bibliophile marinates the monkfish, therefore if the embryologist upbraids the metalurgist then the bibliophile marinates the monkfish",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V10",
+            "O6"
+        ],
+        [
+            "S2",
+            "V9",
+            "O7"
+        ],
+        [
+            "S10",
+            "V11",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

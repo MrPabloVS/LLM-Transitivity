@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid loves the building then the teacher sees the book, if the teacher sees the book then the woman hates the paper, therefore if the kid loves the building then the woman hates the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V8",
+            "O9"
+        ],
+        [
+            "S6",
+            "V4",
+            "O4"
+        ],
+        [
+            "S3",
+            "V10",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the kid loves the building → the teacher sees the book\nPremise 2: If the teacher sees the book → the woman hates the paper\nConclusion: If the kid loves the building → the woman hates the paper\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the kid loves the building\n- B = the teacher sees the book\n- C = the woman hates the paper\n\nyes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman buys the food then the officer loves the book, if the officer loves the book then the kid wins the game, therefore if the woman buys the food then the kid wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V8",
+            "O4"
+        ],
+        [
+            "S1",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this argument:\n\nPremise 1: If the woman buys the food → the officer loves the book\nPremise 2: If the officer loves the book → the kid wins the game\nConclusion: If the woman buys the food → the kid wins the game\n\nThis is a valid application of hypothetical syllogism (chain reasoning). If A→B and B→C, then A→C.\n\nyes"
+}

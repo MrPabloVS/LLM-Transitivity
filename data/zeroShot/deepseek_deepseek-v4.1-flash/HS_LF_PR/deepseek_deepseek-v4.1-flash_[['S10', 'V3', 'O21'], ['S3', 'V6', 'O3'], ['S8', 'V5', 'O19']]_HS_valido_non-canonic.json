@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship federalizes the lightsaber then the corsican piggybacks the taxman,if the bibliophile prepays the coronograph then the clerkship federalizes the lightsaber therefore if the corsican piggybacks the taxman then the bibliophile prepays the coronograph",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O21"
+        ],
+        [
+            "S3",
+            "V6",
+            "O3"
+        ],
+        [
+            "S8",
+            "V5",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student loves the book then the doctor pays the food, if the doctor pays the food then the girl buys the computer, therefore if the student loves the book then the girl buys the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O4"
+        ],
+        [
+            "S7",
+            "V2",
+            "O16"
+        ],
+        [
+            "S10",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the student loves the book → the doctor pays the food\nPremise 2: If the doctor pays the food → the girl buys the computer\nConclusion: If the student loves the book → the girl buys the computer\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

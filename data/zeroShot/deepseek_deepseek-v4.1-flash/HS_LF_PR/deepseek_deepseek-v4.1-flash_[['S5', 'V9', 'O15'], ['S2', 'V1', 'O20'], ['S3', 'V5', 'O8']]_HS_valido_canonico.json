@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile overrates the metalurgist then the sumerian reappraises the semiology, if the sumerian reappraises the semiology then the clerkship piggybacks the pugilist, therefore if the audiophile overrates the metalurgist then the clerkship piggybacks the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V9",
+            "O15"
+        ],
+        [
+            "S2",
+            "V1",
+            "O20"
+        ],
+        [
+            "S3",
+            "V5",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

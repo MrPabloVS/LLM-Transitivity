@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl buys the book then the manager finds the game, if the manager finds the game then the officer loves the school, therefore if the officer loves the school then the girl buys the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V1",
+            "O4"
+        ],
+        [
+            "S9",
+            "V3",
+            "O13"
+        ],
+        [
+            "S8",
+            "V8",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist intellectualizes the rebelliousness then the hypnotherapist overrates the metalurgist, if the hypnotherapist overrates the metalurgist then the alpinist prepays the fumigation, therefore if the alpinist prepays the fumigation then the herpetologist intellectualizes the rebelliousness",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O16"
+        ],
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S6",
+            "V3",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

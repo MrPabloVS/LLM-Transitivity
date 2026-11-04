@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family pays the computer then the man loses the game, if the man loses the game then the woman hates the school, therefore if the woman hates the school then the family pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S4",
+            "V2",
+            "O14"
+        ],
+        [
+            "S2",
+            "V7",
+            "O15"
+        ],
+        [
+            "S3",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

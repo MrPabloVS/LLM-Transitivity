@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian upbraids the pugilist then the hypnotherapist federalizes the trimaran,if the alpinist reappraises the conventionalism then the sumerian upbraids the pugilist therefore if the hypnotherapist federalizes the trimaran then the alpinist reappraises the conventionalism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O15"
+        ],
+        [
+            "S2",
+            "V10",
+            "O8"
+        ],
+        [
+            "S7",
+            "V6",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

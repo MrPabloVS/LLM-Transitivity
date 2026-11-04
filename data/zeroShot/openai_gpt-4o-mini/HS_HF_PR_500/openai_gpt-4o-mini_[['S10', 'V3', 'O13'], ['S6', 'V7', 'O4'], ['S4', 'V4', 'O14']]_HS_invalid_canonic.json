@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl finds the game then the teacher loses the book, if the teacher loses the book then the family sees the computer, therefore if the family sees the computer then the girl finds the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O13"
+        ],
+        [
+            "S6",
+            "V7",
+            "O4"
+        ],
+        [
+            "S4",
+            "V4",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

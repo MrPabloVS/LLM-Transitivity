@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student loves the car then the girl hates the college, if the girl hates the college then the man buys the newspaper, therefore if the student loves the car then the man buys the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O11"
+        ],
+        [
+            "S10",
+            "V10",
+            "O10"
+        ],
+        [
+            "S2",
+            "V1",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

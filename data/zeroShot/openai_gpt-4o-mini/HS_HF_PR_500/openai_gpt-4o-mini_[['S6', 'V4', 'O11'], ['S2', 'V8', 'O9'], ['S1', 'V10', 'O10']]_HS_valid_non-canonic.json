@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loves the building then the kid hates the college,if the teacher sees the car then the man loves the building therefore if the kid hates the college then the teacher sees the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V4",
+            "O11"
+        ],
+        [
+            "S2",
+            "V8",
+            "O9"
+        ],
+        [
+            "S1",
+            "V10",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

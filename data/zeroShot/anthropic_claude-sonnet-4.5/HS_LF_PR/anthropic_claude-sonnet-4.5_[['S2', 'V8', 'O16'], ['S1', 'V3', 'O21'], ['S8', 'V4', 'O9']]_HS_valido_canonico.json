@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the sumerian intellectualizes the rebelliousness then the plutocrat prepays the coronograph, if the plutocrat prepays the coronograph then the corsican unfreezes the ceviche, therefore if the sumerian intellectualizes the rebelliousness then the corsican unfreezes the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V8",
+            "O16"
+        ],
+        [
+            "S1",
+            "V3",
+            "O21"
+        ],
+        [
+            "S8",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If A then B (If the sumerian intellectualizes the rebelliousness, then the plutocrat prepays the coronograph)\n\nPremise 2: If B then C (If the plutocrat prepays the coronograph, then the corsican unfreezes the ceviche)\n\nConclusion: If A then C (If the sumerian intellectualizes the rebelliousness, then the corsican unfreezes the ceviche)\n\nThis is a valid application of the hypothetical syllogism (chain rule): If A→B and B→C, then A→C.\n\nyes"
+}

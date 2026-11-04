@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican prepays the rental-car then the bibliophile federalizes the trimaran, if the bibliophile federalizes the trimaran then the clerkship indemnifies the metalurgist, therefore if the clerkship indemnifies the metalurgist then the corsican prepays the rental-car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O2"
+        ],
+        [
+            "S10",
+            "V6",
+            "O14"
+        ],
+        [
+            "S3",
+            "V2",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

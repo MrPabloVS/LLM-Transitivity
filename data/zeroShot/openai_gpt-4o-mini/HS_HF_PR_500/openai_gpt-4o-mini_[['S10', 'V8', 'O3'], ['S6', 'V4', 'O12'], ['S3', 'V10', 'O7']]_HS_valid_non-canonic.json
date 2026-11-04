@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher sees the newspaper then the woman hates the sugar,if the girl loves the money then the teacher sees the newspaper therefore if the woman hates the sugar then the girl loves the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V8",
+            "O3"
+        ],
+        [
+            "S6",
+            "V4",
+            "O12"
+        ],
+        [
+            "S3",
+            "V10",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

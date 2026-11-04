@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family finds the building then the doctor loses the case, if the doctor loses the case then the manager pays the computer, therefore if the family finds the building then the manager pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O9"
+        ],
+        [
+            "S7",
+            "V7",
+            "O2"
+        ],
+        [
+            "S9",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

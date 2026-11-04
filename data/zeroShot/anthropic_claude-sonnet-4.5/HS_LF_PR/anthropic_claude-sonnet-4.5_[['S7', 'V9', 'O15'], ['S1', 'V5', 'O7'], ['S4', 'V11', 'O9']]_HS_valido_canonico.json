@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist overrates the metalurgist then the plutocrat piggybacks the aesthetician, if the plutocrat piggybacks the aesthetician then the herpetologist marinates the ceviche, therefore if the hypnotherapist overrates the metalurgist then the herpetologist marinates the ceviche",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S1",
+            "V5",
+            "O7"
+        ],
+        [
+            "S4",
+            "V11",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the hypnotherapist overrates the metalurgist → the plutocrat piggybacks the aesthetician\n\n**Premise 2:** If the plutocrat piggybacks the aesthetician → the herpetologist marinates the ceviche\n\n**Conclusion:** If the hypnotherapist overrates the metalurgist → the herpetologist marinates the ceviche\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\n**yes**"
+}

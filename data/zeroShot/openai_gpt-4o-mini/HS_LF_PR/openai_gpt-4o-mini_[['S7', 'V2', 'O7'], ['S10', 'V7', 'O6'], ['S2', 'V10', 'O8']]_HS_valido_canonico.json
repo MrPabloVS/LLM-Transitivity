@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the hypnotherapist indemnifies the aesthetician then the bibliophile sasses the metalurgist, if the bibliophile sasses the metalurgist then the sumerian upbraids the pugilist, therefore if the hypnotherapist indemnifies the aesthetician then the sumerian upbraids the pugilist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V2",
+            "O7"
+        ],
+        [
+            "S10",
+            "V7",
+            "O6"
+        ],
+        [
+            "S2",
+            "V10",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

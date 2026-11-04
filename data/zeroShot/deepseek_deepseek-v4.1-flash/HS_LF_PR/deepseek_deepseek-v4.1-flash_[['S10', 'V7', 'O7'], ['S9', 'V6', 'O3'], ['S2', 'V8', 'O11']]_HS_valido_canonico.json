@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile sasses the aesthetician then the embryologist federalizes the lightsaber, if the embryologist federalizes the lightsaber then the sumerian intellectualizes the polytheism, therefore if the bibliophile sasses the aesthetician then the sumerian intellectualizes the polytheism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V7",
+            "O7"
+        ],
+        [
+            "S9",
+            "V6",
+            "O3"
+        ],
+        [
+            "S2",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

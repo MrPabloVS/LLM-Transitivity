@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor buys the table then the manager finds the sugar, if the manager finds the sugar then the family wins the case, therefore if the family wins the case then the doctor buys the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O5"
+        ],
+        [
+            "S9",
+            "V3",
+            "O7"
+        ],
+        [
+            "S4",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis is an invalid argument. It commits the fallacy of affirming the consequent. The premises establish:\n- Doctor buys table → Manager finds sugar → Family wins case\n\nBut this doesn't allow us to conclude that Family wins case → Doctor buys table. That would be reversing the direction of causation, which isn't logically valid."
+}

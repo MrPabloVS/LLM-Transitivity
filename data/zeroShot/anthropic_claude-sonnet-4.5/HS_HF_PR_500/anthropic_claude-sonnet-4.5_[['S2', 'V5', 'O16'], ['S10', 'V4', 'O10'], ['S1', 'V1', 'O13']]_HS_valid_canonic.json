@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man eats the food then the girl sees the college, if the girl sees the college then the kid buys the paper, therefore if the man eats the food then the kid buys the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O16"
+        ],
+        [
+            "S10",
+            "V4",
+            "O10"
+        ],
+        [
+            "S1",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the man eats the food → the girl sees the college\n**Premise 2:** If the girl sees the college → the kid buys the paper\n**Conclusion:** If the man eats the food → the kid buys the paper\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

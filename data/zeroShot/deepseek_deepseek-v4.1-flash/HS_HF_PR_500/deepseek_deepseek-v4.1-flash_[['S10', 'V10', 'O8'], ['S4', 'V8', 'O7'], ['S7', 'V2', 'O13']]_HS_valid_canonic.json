@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the girl hates the school then the family loves the sugar, if the family loves the sugar then the doctor pays the paper, therefore if the girl hates the school then the doctor pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S10",
+            "V10",
+            "O8"
+        ],
+        [
+            "S4",
+            "V8",
+            "O7"
+        ],
+        [
+            "S7",
+            "V2",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

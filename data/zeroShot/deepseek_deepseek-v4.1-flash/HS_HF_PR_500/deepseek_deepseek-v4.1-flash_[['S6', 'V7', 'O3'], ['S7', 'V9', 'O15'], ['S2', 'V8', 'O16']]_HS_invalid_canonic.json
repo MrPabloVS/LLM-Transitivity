@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher loses the money then the doctor wins the game, if the doctor wins the game then the man loves the food, therefore if the man loves the food then the teacher loses the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S6",
+            "V7",
+            "O3"
+        ],
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S2",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

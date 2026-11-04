@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the probeller glashes the snabrik then the brettent gresks the prebart, if the brettent gresks the prebart then the bruggant prants the blorrack, therefore if the probeller glashes the snabrik then the bruggant prants the blorrack",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O5"
+        ],
+        [
+            "S3",
+            "V5",
+            "O1"
+        ],
+        [
+            "S5",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the probeller glashes the snabrik → then the brettent gresks the prebart\nPremise 2: If the brettent gresks the prebart → then the bruggant prants the blorrack\nConclusion: Therefore, if the probeller glashes the snabrik → then the bruggant prants the blorrack\n\nThis is a valid hypothetical syllogism (chain argument) of the form:\n- If P → Q\n- If Q → R\n- Therefore, if P → R\n\nyes"
+}

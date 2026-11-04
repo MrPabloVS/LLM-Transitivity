@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the game then the girl sees the table, if the girl sees the table then the woman loves the sugar, therefore if the manager loses the game then the woman loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O15"
+        ],
+        [
+            "S10",
+            "V4",
+            "O5"
+        ],
+        [
+            "S3",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the manager loses the game → the girl sees the table\n2. If the girl sees the table → the woman loves the sugar\n\nConclusion to evaluate:\n- If the manager loses the game → the woman loves the sugar\n\nThis is a hypothetical syllogism (chain argument):\n- If P → Q (manager loses game → girl sees table)\n- If Q → R (girl sees table → woman loves sugar)\n- Therefore, P → R (manager loses game → woman loves sugar)\n\nThis is a valid form of logical reasoning.\n\nyes"
+}

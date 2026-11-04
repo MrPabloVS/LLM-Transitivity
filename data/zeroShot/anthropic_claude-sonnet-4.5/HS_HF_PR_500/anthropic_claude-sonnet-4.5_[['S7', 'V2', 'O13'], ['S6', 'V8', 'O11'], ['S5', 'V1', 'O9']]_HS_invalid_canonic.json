@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor pays the paper then the teacher loves the car, if the teacher loves the car then the student buys the building, therefore if the student buys the building then the doctor pays the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V2",
+            "O13"
+        ],
+        [
+            "S6",
+            "V8",
+            "O11"
+        ],
+        [
+            "S5",
+            "V1",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThis commits the fallacy of affirming the consequent. The argument gives us:\n1. If A then B (doctor pays paper → teacher loves car)\n2. If B then C (teacher loves car → student buys building)\n\nWe can validly conclude: If A then C (doctor pays paper → student buys building)\n\nBut the conclusion states: If C then A (student buys building → doctor pays paper)\n\nThis reverses the logical direction and is invalid."
+}

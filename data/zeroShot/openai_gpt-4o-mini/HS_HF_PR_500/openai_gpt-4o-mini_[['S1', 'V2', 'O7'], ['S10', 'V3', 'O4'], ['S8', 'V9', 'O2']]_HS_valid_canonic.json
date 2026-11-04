@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid pays the sugar then the girl finds the book, if the girl finds the book then the officer wins the case, therefore if the kid pays the sugar then the officer wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O7"
+        ],
+        [
+            "S10",
+            "V3",
+            "O4"
+        ],
+        [
+            "S8",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

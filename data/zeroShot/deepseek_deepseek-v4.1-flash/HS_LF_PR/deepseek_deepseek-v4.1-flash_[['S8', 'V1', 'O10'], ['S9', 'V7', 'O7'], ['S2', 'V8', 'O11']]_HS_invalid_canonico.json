@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican reappraises the solipsism then the embryologist sasses the aesthetician, if the embryologist sasses the aesthetician then the sumerian intellectualizes the polytheism, therefore if the sumerian intellectualizes the polytheism then the corsican reappraises the solipsism",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V1",
+            "O10"
+        ],
+        [
+            "S9",
+            "V7",
+            "O7"
+        ],
+        [
+            "S2",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

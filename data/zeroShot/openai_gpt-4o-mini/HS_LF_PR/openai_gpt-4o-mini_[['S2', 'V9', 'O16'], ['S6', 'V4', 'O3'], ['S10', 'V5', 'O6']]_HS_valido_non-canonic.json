@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist unfreezes the monkfish then the bibliophile piggybacks the metalurgist,if the sumerian overrates the aesthetician then the alpinist unfreezes the monkfish therefore if the bibliophile piggybacks the metalurgist then the sumerian overrates the aesthetician",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V9",
+            "O16"
+        ],
+        [
+            "S6",
+            "V4",
+            "O3"
+        ],
+        [
+            "S10",
+            "V5",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

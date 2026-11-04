@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the college then the manager buys the computer,if the student sees the book then the family hates the college therefore if the manager buys the computer then the student sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O4"
+        ],
+        [
+            "S4",
+            "V10",
+            "O10"
+        ],
+        [
+            "S9",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "no"
+}

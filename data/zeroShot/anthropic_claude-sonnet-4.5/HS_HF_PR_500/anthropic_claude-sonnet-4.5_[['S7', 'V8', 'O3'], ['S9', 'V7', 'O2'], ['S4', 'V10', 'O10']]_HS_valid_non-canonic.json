@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the case then the family hates the college,if the doctor loves the money then the manager loses the case therefore if the family hates the college then the doctor loves the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S7",
+            "V8",
+            "O3"
+        ],
+        [
+            "S9",
+            "V7",
+            "O2"
+        ],
+        [
+            "S4",
+            "V10",
+            "O10"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "I need to analyze whether the conclusion follows from the given premises.\n\nLet me define:\n- M: the manager loses the case\n- F: the family hates the college\n- D: the doctor loves the money\n\nPremises:\n1. M → F (if the manager loses the case then the family hates the college)\n2. D → M (if the doctor loves the money then the manager loses the case)\n\nConclusion to evaluate:\nF → D (if the family hates the college then the doctor loves the money)\n\nFrom the premises:\n- From premise 2: D → M\n- From premise 1: M → F\n- By hypothetical syllogism: D → F\n\nThis gives us: D → F (if the doctor loves the money, then the family hates the college)\n\nThe conclusion asks for: F → D (if the family hates the college, then the doctor loves the money)\n\nThis is the converse of what we derived. The converse of a conditional statement does not logically follow from the original statement.\n\nFor example, F could be true (family hates the college) for some other reason besides M, and M could be true for some other reason besides D.\n\nno"
+}

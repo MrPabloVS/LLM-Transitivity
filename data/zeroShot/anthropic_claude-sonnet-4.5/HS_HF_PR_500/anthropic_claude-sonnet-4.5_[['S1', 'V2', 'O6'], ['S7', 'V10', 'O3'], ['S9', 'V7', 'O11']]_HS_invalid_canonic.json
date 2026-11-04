@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid pays the chair then the doctor hates the money, if the doctor hates the money then the manager loses the car, therefore if the manager loses the car then the kid pays the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O6"
+        ],
+        [
+            "S7",
+            "V10",
+            "O3"
+        ],
+        [
+            "S9",
+            "V7",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No"
+}

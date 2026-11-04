@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the preggar gresks the drambet then the probeller trelfs the prebart, if the probeller trelfs the prebart then the bruggant prants the blorrack, therefore if the preggar gresks the drambet then the bruggant prants the blorrack",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S2",
+            "V5",
+            "O2"
+        ],
+        [
+            "S1",
+            "V6",
+            "O1"
+        ],
+        [
+            "S5",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "NS",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the preggar gresks the drambet → then the probeller trelfs the prebart\nPremise 2: If the probeller trelfs the prebart → then the bruggant prants the blorrack\nConclusion: Therefore, if the preggar gresks the drambet → then the bruggant prants the blorrack\n\nThis follows the form of hypothetical syllogism:\n- If A then B\n- If B then C\n- Therefore, if A then C\n\nThis is a valid logical inference.\n\nyes"
+}

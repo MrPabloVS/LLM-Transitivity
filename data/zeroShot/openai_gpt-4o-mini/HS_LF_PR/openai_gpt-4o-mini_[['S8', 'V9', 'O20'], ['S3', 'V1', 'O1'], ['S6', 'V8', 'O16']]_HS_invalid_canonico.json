@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican overrates the taxman then the clerkship reappraises the renewable-energy, if the clerkship reappraises the renewable-energy then the alpinist intellectualizes the rebelliousness, therefore if the alpinist intellectualizes the rebelliousness then the corsican overrates the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O20"
+        ],
+        [
+            "S3",
+            "V1",
+            "O1"
+        ],
+        [
+            "S6",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}

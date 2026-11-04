@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student pays the car then the manager loses the newspaper, if the manager loses the newspaper then the kid sees the paper, therefore if the student pays the car then the kid sees the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V2",
+            "O11"
+        ],
+        [
+            "S9",
+            "V7",
+            "O12"
+        ],
+        [
+            "S1",
+            "V4",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

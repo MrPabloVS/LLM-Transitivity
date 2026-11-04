@@ -1,0 +1,114 @@
+{
+    "userPrompt": "if the embryologist overrates the fumigation then the corsican prepays the coronograph, if the corsican prepays the coronograph then the plutocrat reappraises the conventionalism, therefore if the plutocrat reappraises the conventionalism then the embryologist overrates the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V9",
+            "O5"
+        ],
+        [
+            "S8",
+            "V3",
+            "O21"
+        ],
+        [
+            "S1",
+            "V1",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": null,
+    "response_status": "content_filter",
+    "api_response": {
+        "id": "gen-1793809089-9FLdXjy16ZBXXh2DYwZr",
+        "object": "chat.completion",
+        "created": 1793809089,
+        "model": "anthropic/claude-sonnet-4.5",
+        "provider": "Claude Platform on AWS",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+            {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "content_filter",
+                "native_finish_reason": "refusal",
+                "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": null
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 88,
+            "completion_tokens": 0,
+            "total_tokens": 88,
+            "cost": 0.000264,
+            "is_byok": false,
+            "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+            },
+            "cost_details": {
+                "upstream_inference_cost": 0.000264,
+                "upstream_inference_prompt_cost": 0.000264,
+                "upstream_inference_completions_cost": 0
+            },
+            "completion_tokens_details": {
+                "reasoning_tokens": 0,
+                "image_tokens": 0,
+                "audio_tokens": 0
+            }
+        },
+        "benchmark_input": {
+            "row": 631,
+            "userPrompt": "if the embryologist overrates the fumigation then the corsican prepays the coronograph, if the corsican prepays the coronograph then the plutocrat reappraises the conventionalism, therefore if the plutocrat reappraises the conventionalism then the embryologist overrates the fumigation",
+            "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+            "model": "anthropic/claude-sonnet-4.5",
+            "id": [
+                [
+                    "S9",
+                    "V9",
+                    "O5"
+                ],
+                [
+                    "S8",
+                    "V3",
+                    "O21"
+                ],
+                [
+                    "S1",
+                    "V1",
+                    "O15"
+                ]
+            ],
+            "tags": {
+                "frecuency": "LF",
+                "verbal time": "PR",
+                "conectors": "if then / therefore",
+                "validity": "invalid",
+                "cononic": "canonico"
+            },
+            "response_status": "content_filter"
+        },
+        "benchmark_recovery": {
+            "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_631.json",
+            "recorded_without_new_request": true,
+            "recorded_at": "2026-11-04T13:20:26.095253-03:00"
+        }
+    },
+    "source_error": "data/zeroShot/anthropic_claude-sonnet-4.5/HS_LF_PR/errors/2026-11-04_13-17-42_948364_631.json"
+}

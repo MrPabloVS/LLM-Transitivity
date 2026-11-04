@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the alpinist sasses the taxman then the herpetologist prepays the fumigation, if the herpetologist prepays the fumigation then the clerkship overrates the semiology, therefore if the alpinist sasses the taxman then the clerkship overrates the semiology",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S6",
+            "V7",
+            "O19"
+        ],
+        [
+            "S4",
+            "V3",
+            "O5"
+        ],
+        [
+            "S3",
+            "V9",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the alpinist sasses the taxman → the herpetologist prepays the fumigation\n2. If the herpetologist prepays the fumigation → the clerkship overrates the semiology\n\nConclusion:\n- If the alpinist sasses the taxman → the clerkship overrates the semiology\n\nThis is a valid application of the hypothetical syllogism (chain reasoning):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nThe logical form is valid.\n\nyes"
+}

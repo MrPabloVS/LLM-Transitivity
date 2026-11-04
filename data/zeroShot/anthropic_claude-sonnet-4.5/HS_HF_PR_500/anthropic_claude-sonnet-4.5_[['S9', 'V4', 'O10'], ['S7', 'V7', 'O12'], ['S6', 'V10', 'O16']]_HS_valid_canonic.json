@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager sees the college then the doctor loses the newspaper, if the doctor loses the newspaper then the teacher hates the food, therefore if the manager sees the college then the teacher hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V4",
+            "O10"
+        ],
+        [
+            "S7",
+            "V7",
+            "O12"
+        ],
+        [
+            "S6",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\n**Premise 1:** If the manager sees the college → the doctor loses the newspaper\n**Premise 2:** If the doctor loses the newspaper → the teacher hates the food\n**Conclusion:** If the manager sees the college → the teacher hates the food\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the manager sees the college\n- B = the doctor loses the newspaper\n- C = the teacher hates the food\n\n**yes**"
+}

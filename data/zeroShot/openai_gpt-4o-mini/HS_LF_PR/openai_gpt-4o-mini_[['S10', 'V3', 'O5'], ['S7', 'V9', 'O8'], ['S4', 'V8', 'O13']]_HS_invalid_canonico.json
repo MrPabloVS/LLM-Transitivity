@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the bibliophile prepays the fumigation then the hypnotherapist overrates the conventionalism, if the hypnotherapist overrates the conventionalism then the herpetologist intellectualizes the rocketry, therefore if the herpetologist intellectualizes the rocketry then the bibliophile prepays the fumigation",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S10",
+            "V3",
+            "O5"
+        ],
+        [
+            "S7",
+            "V9",
+            "O8"
+        ],
+        [
+            "S4",
+            "V8",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

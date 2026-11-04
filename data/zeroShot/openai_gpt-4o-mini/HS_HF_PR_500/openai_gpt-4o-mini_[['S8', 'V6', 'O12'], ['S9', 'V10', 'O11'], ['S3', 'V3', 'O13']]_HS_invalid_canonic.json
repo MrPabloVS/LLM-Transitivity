@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer reads the newspaper then the manager hates the car, if the manager hates the car then the woman finds the game, therefore if the woman finds the game then the officer reads the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V6",
+            "O12"
+        ],
+        [
+            "S9",
+            "V10",
+            "O11"
+        ],
+        [
+            "S3",
+            "V3",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

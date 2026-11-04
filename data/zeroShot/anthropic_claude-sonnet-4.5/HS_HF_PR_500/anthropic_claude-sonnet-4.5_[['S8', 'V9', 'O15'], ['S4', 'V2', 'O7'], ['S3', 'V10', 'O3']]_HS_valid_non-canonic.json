@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family pays the sugar then the woman hates the money,if the officer wins the game then the family pays the sugar therefore if the woman hates the money then the officer wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S8",
+            "V9",
+            "O15"
+        ],
+        [
+            "S4",
+            "V2",
+            "O7"
+        ],
+        [
+            "S3",
+            "V10",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "non-canonic"
+    },
+    "responses": "No.\n\nThis is an invalid argument. It commits the fallacy of affirming the consequent.\n\nFrom the premises:\n1. If family pays sugar → woman hates money\n2. If officer wins game → family pays sugar\n\nWe can validly conclude: If officer wins game → woman hates money\n\nHowever, the conclusion states: If woman hates money → officer wins game\n\nThis reverses the direction of the conditional, which is not logically valid."
+}

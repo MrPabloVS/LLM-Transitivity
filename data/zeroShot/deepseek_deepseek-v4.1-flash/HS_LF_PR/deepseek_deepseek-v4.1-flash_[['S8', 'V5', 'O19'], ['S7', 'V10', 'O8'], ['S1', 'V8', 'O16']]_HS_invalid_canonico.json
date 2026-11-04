@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the corsican piggybacks the taxman then the hypnotherapist upbraids the pugilist, if the hypnotherapist upbraids the pugilist then the plutocrat intellectualizes the rebelliousness, therefore if the plutocrat intellectualizes the rebelliousness then the corsican piggybacks the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V5",
+            "O19"
+        ],
+        [
+            "S7",
+            "V10",
+            "O8"
+        ],
+        [
+            "S1",
+            "V8",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

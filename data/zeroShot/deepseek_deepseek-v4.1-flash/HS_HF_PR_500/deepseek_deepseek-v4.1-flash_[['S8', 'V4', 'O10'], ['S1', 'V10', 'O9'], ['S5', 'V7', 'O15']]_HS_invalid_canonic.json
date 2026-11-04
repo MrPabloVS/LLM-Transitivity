@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer sees the college then the kid hates the building, if the kid hates the building then the student loses the game, therefore if the student loses the game then the officer sees the college",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S8",
+            "V4",
+            "O10"
+        ],
+        [
+            "S1",
+            "V10",
+            "O9"
+        ],
+        [
+            "S5",
+            "V7",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

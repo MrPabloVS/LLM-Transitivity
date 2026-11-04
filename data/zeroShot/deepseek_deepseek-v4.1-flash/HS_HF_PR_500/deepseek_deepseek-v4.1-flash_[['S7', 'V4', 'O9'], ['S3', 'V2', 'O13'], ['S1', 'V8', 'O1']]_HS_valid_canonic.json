@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor sees the building then the woman pays the paper, if the woman pays the paper then the kid loves the program, therefore if the doctor sees the building then the kid loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S7",
+            "V4",
+            "O9"
+        ],
+        [
+            "S3",
+            "V2",
+            "O13"
+        ],
+        [
+            "S1",
+            "V8",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

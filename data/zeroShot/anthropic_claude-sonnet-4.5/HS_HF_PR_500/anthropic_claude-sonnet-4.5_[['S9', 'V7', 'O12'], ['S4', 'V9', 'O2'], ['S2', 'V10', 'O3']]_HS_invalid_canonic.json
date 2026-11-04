@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loses the newspaper then the family wins the case, if the family wins the case then the man hates the money, therefore if the man hates the money then the manager loses the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V7",
+            "O12"
+        ],
+        [
+            "S4",
+            "V9",
+            "O2"
+        ],
+        [
+            "S2",
+            "V10",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "No.\n\nThe argument commits the fallacy of affirming the consequent. The logic flows one direction:\n- Manager loses newspaper → Family wins case → Man hates money\n\nBut you cannot validly reverse this to conclude:\n- Man hates money → Manager loses newspaper\n\nThe man could hate money for other reasons unrelated to whether the manager lost the newspaper."
+}

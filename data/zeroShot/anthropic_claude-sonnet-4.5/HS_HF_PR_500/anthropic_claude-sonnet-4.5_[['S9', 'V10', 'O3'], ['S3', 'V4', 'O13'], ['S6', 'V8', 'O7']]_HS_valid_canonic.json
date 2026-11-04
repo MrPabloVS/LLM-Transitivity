@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager hates the money then the woman sees the paper, if the woman sees the paper then the teacher loves the sugar, therefore if the manager hates the money then the teacher loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V10",
+            "O3"
+        ],
+        [
+            "S3",
+            "V4",
+            "O13"
+        ],
+        [
+            "S6",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager hates the money → the woman sees the paper\nPremise 2: If the woman sees the paper → the teacher loves the sugar\nConclusion: If the manager hates the money → the teacher loves the sugar\n\nThis is a valid application of the hypothetical syllogism (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nWhere:\n- A = the manager hates the money\n- B = the woman sees the paper\n- C = the teacher loves the sugar\n\n**yes**"
+}

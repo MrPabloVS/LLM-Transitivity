@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager reads the book then the kid pays the food, if the kid pays the food then the girl loves the car, therefore if the manager reads the book then the girl loves the car",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S9",
+            "V6",
+            "O4"
+        ],
+        [
+            "S1",
+            "V2",
+            "O16"
+        ],
+        [
+            "S10",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the herpetologist prepays the magnetometer then the clerkship reappraises the polytheism, if the clerkship reappraises the polytheism then the bibliophile indemnifies the taxman, therefore if the bibliophile indemnifies the taxman then the herpetologist prepays the magnetometer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O17"
+        ],
+        [
+            "S3",
+            "V1",
+            "O11"
+        ],
+        [
+            "S10",
+            "V2",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonico"
+    },
+    "responses": "no"
+}

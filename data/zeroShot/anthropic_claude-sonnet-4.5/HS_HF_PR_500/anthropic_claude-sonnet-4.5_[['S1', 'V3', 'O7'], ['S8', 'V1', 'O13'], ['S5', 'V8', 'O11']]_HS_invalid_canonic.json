@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid finds the sugar then the officer buys the paper, if the officer buys the paper then the student loves the car, therefore if the student loves the car then the kid finds the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S1",
+            "V3",
+            "O7"
+        ],
+        [
+            "S8",
+            "V1",
+            "O13"
+        ],
+        [
+            "S5",
+            "V8",
+            "O11"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "invalid",
+        "cononic": "canonic"
+    },
+    "responses": "no"
+}

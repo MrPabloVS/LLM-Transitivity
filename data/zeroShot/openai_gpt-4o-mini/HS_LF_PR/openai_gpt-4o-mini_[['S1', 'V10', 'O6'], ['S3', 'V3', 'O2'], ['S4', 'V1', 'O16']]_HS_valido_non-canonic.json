@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the clerkship prepays the rental-car then the herpetologist reappraises the rebelliousness,if the plutocrat upbraids the metalurgist then the clerkship prepays the rental-car therefore if the herpetologist reappraises the rebelliousness then the plutocrat upbraids the metalurgist",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V10",
+            "O6"
+        ],
+        [
+            "S3",
+            "V3",
+            "O2"
+        ],
+        [
+            "S4",
+            "V1",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "non-canonic"
+    },
+    "responses": "yes"
+}

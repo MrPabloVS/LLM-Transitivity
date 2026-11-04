@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager finds the paper then the woman loves the sugar, if the woman loves the sugar then the teacher buys the computer, therefore if the manager finds the paper then the teacher buys the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "anthropic/claude-sonnet-4.5",
+    "id": [
+        [
+            "S9",
+            "V3",
+            "O12"
+        ],
+        [
+            "S3",
+            "V8",
+            "O7"
+        ],
+        [
+            "S6",
+            "V1",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Looking at this logical argument:\n\nPremise 1: If the manager finds the paper → the woman loves the sugar\nPremise 2: If the woman loves the sugar → the teacher buys the computer\nConclusion: If the manager finds the paper → the teacher buys the computer\n\nThis is a valid application of hypothetical syllogism (chain reasoning):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nyes"
+}

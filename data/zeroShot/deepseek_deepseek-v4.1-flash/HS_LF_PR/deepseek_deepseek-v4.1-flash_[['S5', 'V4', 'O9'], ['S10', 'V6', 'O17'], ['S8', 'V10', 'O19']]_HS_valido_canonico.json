@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the audiophile unfreezes the ceviche then the bibliophile federalizes the magnetometer, if the bibliophile federalizes the magnetometer then the corsican upbraids the taxman, therefore if the audiophile unfreezes the ceviche then the corsican upbraids the taxman",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "id": [
+        [
+            "S5",
+            "V4",
+            "O9"
+        ],
+        [
+            "S10",
+            "V6",
+            "O17"
+        ],
+        [
+            "S8",
+            "V10",
+            "O19"
+        ]
+    ],
+    "tags": {
+        "frecuency": "LF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valido",
+        "cononic": "canonico"
+    },
+    "responses": "yes"
+}
