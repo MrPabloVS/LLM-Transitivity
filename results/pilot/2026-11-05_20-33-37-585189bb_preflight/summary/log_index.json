@@ -1,0 +1,80 @@
+{
+  "flow_success": true,
+  "runner_error_type": null,
+  "call_export_status": "exported",
+  "logs": [
+    {
+      "path": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_8hSaKdyZtBTnYSN26Zors8.eval",
+      "sha256": "5ee1b7284efea23b8ef506c9b17b8bf480c8035593accc5da21267ec8f57330a",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/openai/gpt-4o-mini",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "earlier",
+      "provider_requested": "openai",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_9WBj7GyftWwGCA4HT8uEV9.eval",
+      "sha256": "a692ea0b64bc0681e7566159eaf4583a7a592d7fc6f96e32ea2d4a34afa070ea",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/openai/gpt-6-luna",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "later",
+      "provider_requested": "openai/flex",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_AacKXS3pAyyjx6dLcgLVkU.eval",
+      "sha256": "ba9b42ba76180cc932ceaf5139ac32d638fba3ddf94d599ba20f2a459e47fc63",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/anthropic/claude-sonnet-5",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "later",
+      "provider_requested": "anthropic",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_GQVkyWfLAFwNGHg6TjpfhH.eval",
+      "sha256": "754d08ef3d352019ef3e65bdf7420d5683958c26437c380e8c7206b7080519ac",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/google/gemini-2.5-flash-lite",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "earlier",
+      "provider_requested": "google-ai-studio/flex",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_VVdzy6tNFwmBAhGs3Daywp.eval",
+      "sha256": "7511ff46de8f353febf03b7341088f531ba9950c0627e5bf51fa346fdb73621b",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/anthropic/claude-sonnet-4.5",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "earlier",
+      "provider_requested": "anthropic",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_h4BVRmPAAZvUNhW33vrS9X.eval",
+      "sha256": "6c786d8816684176fad36af802cc757094024dd30e00d4e5a3e2bc520702f9df",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "later",
+      "provider_requested": "google-ai-studio/flex",
+      "sample_count": 1,
+      "sample_errors": 0
+    }
+  ],
+  "note": "Log index only; metrics and billing need a separate analysis."
+}

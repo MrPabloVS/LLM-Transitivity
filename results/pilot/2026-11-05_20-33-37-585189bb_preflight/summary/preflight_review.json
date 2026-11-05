@@ -1,0 +1,322 @@
+{
+  "reviewed_at_utc": "2026-11-05T23:38:24.682246+00:00",
+  "run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+  "run_directory": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+  "code_revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+  "operational_checks_passed": true,
+  "logical_validity_audited": false,
+  "planned_responses": 6,
+  "completed_responses": 6,
+  "model_http_attempts": 6,
+  "reported_cost_total_usd": "0.002935525",
+  "source_label_agreement_count": 6,
+  "format_compliant_count": 4,
+  "generation_lookup_available_count": 6,
+  "source_snapshot_hashes_verified": true,
+  "full_pilot_executed": false,
+  "notes": [
+    "Immediate generation lookups were unavailable. Read-only export refresh returned HTTP 200 for all six IDs.",
+    "Raw responses and refreshed generation details agree on reported provider, service tier, reasoning tokens, and cost.",
+    "Endpoint IDs are retained. Public saved model-card endpoints do not map IDs to routing slugs; no independent ID-to-slug mapping is claimed.",
+    "Native task metadata retains configuration-time verification placeholders. This review records the observed evidence separately.",
+    "Agreement is with source labels, not audited logical validity. A single shared case does not estimate accuracy across strata.",
+    "Stored-content lookups were not requested. Streaming remains disabled.",
+    "Review format deviations and agree budget before the complete pilot."
+  ],
+  "models": [
+    {
+      "model": "openai/gpt-4o-mini",
+      "requested_provider": "openai",
+      "requested_service_tier": "default",
+      "reported_provider": "OpenAI",
+      "reported_service_tier": "default",
+      "provider_and_tier_match": true,
+      "reported_endpoint_id": "77e40332-6f2a-4c48-bc14-e44596b30ce2",
+      "reported_model": "openai/gpt-4o-mini",
+      "endpoint_id_to_slug_mapping_verified": false,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "http_attempts": 1,
+      "input_tokens": 74,
+      "output_tokens": 2,
+      "reasoning_tokens": 0,
+      "reported_cost_usd": "0.0000123",
+      "source_label_agreement": true,
+      "format_compliant": false,
+      "response_category": "answered",
+      "extraction_position": "initial",
+      "completion": "Yes.",
+      "native_log": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_8hSaKdyZtBTnYSN26Zors8.eval",
+      "native_log_sha256": "5ee1b7284efea23b8ef506c9b17b8bf480c8035593accc5da21267ec8f57330a",
+      "refreshed_export": "openrouter_calls/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_8hSaKdyZtBTnYSN26Zors8-8002ff7942c1-9e294b0b.json",
+      "refreshed_export_sha256": "cdd43c767f61b895d8a3c7d01c807b6687efaa323638f0105987982251f5db15",
+      "generation_id": "gen-1793921622-lTZkyLyBu52Z7ez3DD4e",
+      "generation_lookup_status": "available",
+      "generation_lookup_http_status": 200,
+      "router_metadata_captured": true
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "requested_provider": "openai/flex",
+      "requested_service_tier": "flex",
+      "reported_provider": "OpenAI",
+      "reported_service_tier": "flex",
+      "provider_and_tier_match": true,
+      "reported_endpoint_id": "f6315674-f129-4ee4-bcc1-8ac4e2b3002f",
+      "reported_model": "openai/gpt-6-luna-20260922",
+      "endpoint_id_to_slug_mapping_verified": false,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "http_attempts": 1,
+      "input_tokens": 73,
+      "output_tokens": 5,
+      "reasoning_tokens": 0,
+      "reported_cost_usd": "0.0000049",
+      "source_label_agreement": true,
+      "format_compliant": true,
+      "response_category": "answered",
+      "extraction_position": "initial",
+      "completion": "yes",
+      "native_log": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_9WBj7GyftWwGCA4HT8uEV9.eval",
+      "native_log_sha256": "a692ea0b64bc0681e7566159eaf4583a7a592d7fc6f96e32ea2d4a34afa070ea",
+      "refreshed_export": "openrouter_calls/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_9WBj7GyftWwGCA4HT8uEV9-639fe01ae596-3e0eac6e.json",
+      "refreshed_export_sha256": "192ef1b303073f1584ccecfeb3e1ba6d6ee01101ece596d923b6a82b9159d6c9",
+      "generation_id": "gen-1793921625-G0KJykWEsMnhnpqHR577",
+      "generation_lookup_status": "available",
+      "generation_lookup_http_status": 200,
+      "router_metadata_captured": true
+    },
+    {
+      "model": "anthropic/claude-sonnet-4.5",
+      "requested_provider": "anthropic",
+      "requested_service_tier": "default",
+      "reported_provider": "Anthropic",
+      "reported_service_tier": "default",
+      "provider_and_tier_match": true,
+      "reported_endpoint_id": "f2e829ec-4a2c-45c4-9657-fd5998271267",
+      "reported_model": "anthropic/claude-4.5-sonnet-20250929",
+      "endpoint_id_to_slug_mapping_verified": false,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "http_attempts": 1,
+      "input_tokens": 72,
+      "output_tokens": 164,
+      "reasoning_tokens": 0,
+      "reported_cost_usd": "0.002676",
+      "source_label_agreement": true,
+      "format_compliant": false,
+      "response_category": "answered",
+      "extraction_position": "final_line",
+      "completion": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the man will love the school → the teacher will lose the newspaper\n2. If the teacher will lose the newspaper → the woman will see the chair\n\nConclusion to evaluate:\nIf the man will love the school → the woman will see the chair\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nWhere:\n- A = the man will love the school\n- B = the teacher will lose the newspaper\n- C = the woman will see the chair\n\nThis is a valid form of logical reasoning.\n\nyes",
+      "native_log": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_VVdzy6tNFwmBAhGs3Daywp.eval",
+      "native_log_sha256": "7511ff46de8f353febf03b7341088f531ba9950c0627e5bf51fa346fdb73621b",
+      "refreshed_export": "openrouter_calls/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_VVdzy6tNFwmBAhGs3Daywp-aade7af4c526-69b96d7c.json",
+      "refreshed_export_sha256": "5c1e138f56be9502930371ec4640aece304a2f5d4345cc570e99539e4a306225",
+      "generation_id": "gen-1793921628-9pbtqMLdSvs5zyzXzygO",
+      "generation_lookup_status": "available",
+      "generation_lookup_http_status": 200,
+      "router_metadata_captured": true
+    },
+    {
+      "model": "anthropic/claude-sonnet-5",
+      "requested_provider": "anthropic",
+      "requested_service_tier": "default",
+      "reported_provider": "Anthropic",
+      "reported_service_tier": "default",
+      "provider_and_tier_match": true,
+      "reported_endpoint_id": "0a2a206f-95f6-4173-9475-fe65a9a36171",
+      "reported_model": "anthropic/claude-sonnet-5-20260630",
+      "endpoint_id_to_slug_mapping_verified": false,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "http_attempts": 1,
+      "input_tokens": 95,
+      "output_tokens": 4,
+      "reasoning_tokens": 0,
+      "reported_cost_usd": "0.00023",
+      "source_label_agreement": true,
+      "format_compliant": true,
+      "response_category": "answered",
+      "extraction_position": "initial",
+      "completion": "yes",
+      "native_log": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_AacKXS3pAyyjx6dLcgLVkU.eval",
+      "native_log_sha256": "ba9b42ba76180cc932ceaf5139ac32d638fba3ddf94d599ba20f2a459e47fc63",
+      "refreshed_export": "openrouter_calls/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_AacKXS3pAyyjx6dLcgLVkU-a203d5e827d4-5823959f.json",
+      "refreshed_export_sha256": "a05914987c3564d47f66bdac8e14983768fcb9fe3011a721fe598f6d9017536b",
+      "generation_id": "gen-1793921635-6CfOaIkdBuhSmSmS72vW",
+      "generation_lookup_status": "available",
+      "generation_lookup_http_status": 200,
+      "router_metadata_captured": true
+    },
+    {
+      "model": "google/gemini-2.5-flash-lite",
+      "requested_provider": "google-ai-studio/flex",
+      "requested_service_tier": "flex",
+      "reported_provider": "Google AI Studio",
+      "reported_service_tier": "flex",
+      "provider_and_tier_match": true,
+      "reported_endpoint_id": "11c3f0e0-a05f-4669-ad64-ab362651d306",
+      "reported_model": "google/gemini-2.5-flash-lite",
+      "endpoint_id_to_slug_mapping_verified": false,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "http_attempts": 1,
+      "input_tokens": 65,
+      "output_tokens": 1,
+      "reasoning_tokens": 0,
+      "reported_cost_usd": "0.00000345",
+      "source_label_agreement": true,
+      "format_compliant": true,
+      "response_category": "answered",
+      "extraction_position": "initial",
+      "completion": "yes",
+      "native_log": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_GQVkyWfLAFwNGHg6TjpfhH.eval",
+      "native_log_sha256": "754d08ef3d352019ef3e65bdf7420d5683958c26437c380e8c7206b7080519ac",
+      "refreshed_export": "openrouter_calls/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_GQVkyWfLAFwNGHg6TjpfhH-4a1962062cb7-9fb0fef0.json",
+      "refreshed_export_sha256": "aa078adef735459ba3e28356621bd475a7633f9cae8a4564ce0d8cee01fdcb29",
+      "generation_id": "gen-1793921639-L4Z6G324rhErCo6BM3Wl",
+      "generation_lookup_status": "available",
+      "generation_lookup_http_status": 200,
+      "router_metadata_captured": true
+    },
+    {
+      "model": "google/gemini-3.1-flash-lite",
+      "requested_provider": "google-ai-studio/flex",
+      "requested_service_tier": "flex",
+      "reported_provider": "Google AI Studio",
+      "reported_service_tier": "flex",
+      "provider_and_tier_match": true,
+      "reported_endpoint_id": "850d0069-0b0c-4943-864f-3aef557f258d",
+      "reported_model": "google/gemini-3.1-flash-lite-20260507",
+      "endpoint_id_to_slug_mapping_verified": false,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "http_attempts": 1,
+      "input_tokens": 65,
+      "output_tokens": 1,
+      "reasoning_tokens": 0,
+      "reported_cost_usd": "0.000008875",
+      "source_label_agreement": true,
+      "format_compliant": true,
+      "response_category": "answered",
+      "extraction_position": "initial",
+      "completion": "yes",
+      "native_log": "inspect/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_h4BVRmPAAZvUNhW33vrS9X.eval",
+      "native_log_sha256": "6c786d8816684176fad36af802cc757094024dd30e00d4e5a3e2bc520702f9df",
+      "refreshed_export": "openrouter_calls/2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_h4BVRmPAAZvUNhW33vrS9X-7415ea293ea8-1f100020.json",
+      "refreshed_export_sha256": "d2f0112c1eeaaef86f6915ad2a035e62e6ac5a30b19fe2939c70ece1ddaecb1d",
+      "generation_id": "gen-1793921643-c8F1BRwXdxDpGqfFybtx",
+      "generation_lookup_status": "available",
+      "generation_lookup_http_status": 200,
+      "router_metadata_captured": true
+    }
+  ]
+}

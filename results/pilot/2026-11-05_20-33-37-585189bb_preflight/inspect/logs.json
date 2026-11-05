@@ -1,0 +1,4099 @@
+{
+  "2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_h4BVRmPAAZvUNhW33vrS9X.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_set_id": "Nr8vAQnTwEczWE7ptFG3Nv",
+      "eval_id": "aV2iWVn7E9F2ndn2gzQgN6",
+      "run_id": "XRGUwgn6gbPjztN5AeioKc",
+      "created": "2026-11-05T23:33:41+00:00",
+      "task": "zeroShot_HS_HF_FU_20",
+      "task_id": "h4BVRmPAAZvUNhW33vrS9X",
+      "task_version": 0,
+      "task_display_name": "HS_HF_FU_20 | zeroShot",
+      "task_registry_name": "llm_transitivity/hs_zero_shot",
+      "task_attribs": {},
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "task_args_passed": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "solver_args_passed": {},
+      "tags": [
+        "tense:FU",
+        "dataset:HS_HF_FU_20",
+        "frequency:HF",
+        "provider:google-ai-studio/flex",
+        "model:google/gemini-3.1-flash-lite",
+        "reasoning:disabled",
+        "protocol:zeroShot",
+        "family:HS",
+        "connectors:if then / therefore",
+        "project:llm-transitivity",
+        "service_tier:flex",
+        "phase:preflight",
+        "generation_group:later",
+        "model_family:google",
+        "experiment:llm-transitivity-coverage-pilot-v1"
+      ],
+      "dataset": {
+        "name": "pilot/HS_HF_FU_20",
+        "location": "datasets/pilot/HS_HF_FU_20.json",
+        "samples": 1,
+        "sample_ids": [
+          20
+        ],
+        "shuffled": false
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_generate_config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "flex"
+        }
+      },
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "config": {
+        "epochs": 1,
+        "fail_on_error": false,
+        "continue_on_fail": false,
+        "retry_on_error": 3,
+        "score_on_error": false,
+        "max_samples": 2,
+        "max_tasks": 1,
+        "sandbox_cleanup": true,
+        "sandbox_prebuilt": false,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "log_model_api": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/MrPabloVS/LLM-Transitivity.git",
+        "commit": "8688c6a",
+        "dirty": true
+      },
+      "packages": {
+        "inspect_ai": "0.3.286",
+        "llm-transitivity": "0.1.0"
+      },
+      "metadata": {
+        "metadata_version": 1,
+        "experiment_id": "llm-transitivity-coverage-pilot-v1",
+        "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+        "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+        "phase": "preflight",
+        "protocol": "zeroShot",
+        "scoring_version": "source-label-deterministic-v2",
+        "label_basis": "source-label agreement; logical validity not audited",
+        "logical_validity_audited": false,
+        "openrouter_capture": {
+          "http_attempts": true,
+          "full_response_json": true,
+          "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+          "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+          "streaming": false,
+          "credentials": "redacted"
+        },
+        "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+        "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+        "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+        "cases_per_stratum": 5,
+        "pilot_case_count": 540,
+        "git": {
+          "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+          "branch": "tobe/runs-2026-11-05",
+          "dirty": false
+        },
+        "source_sha256": {
+          ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+          "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+          "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+          "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+          "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+          "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+          "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+          "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+          "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+          "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+          "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+          "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+          "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+          "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+          "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+          "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+          "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+          "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+          "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+          "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+          "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+          "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+          "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+          "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+          "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+          "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+          "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+          "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+          "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+          "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+          "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+          "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+          "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+        },
+        "runtime": {
+          "python": "3.14.8",
+          "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+          "platform": "Darwin",
+          "packages": {
+            "inspect-ai": "0.3.286",
+            "inspect-flow": "0.14.0",
+            "openai": "3.41.0",
+            "python-dotenv": "1.2.4",
+            "requests": "2.34.2",
+            "tiktoken": "0.14.0"
+          }
+        },
+        "generation_policy": {
+          "max_output_tokens": 1024,
+          "reasoning": "disabled where supported",
+          "provider_fallback": false,
+          "cache_prompt": false,
+          "temperature": "provider default; omitted",
+          "top_p": "provider default; omitted",
+          "seed": "omitted; outputs are not deterministic",
+          "request_timeout_seconds": 60,
+          "request_max_retries": 2,
+          "sdk_max_retries": 0,
+          "max_tasks": 1,
+          "max_samples": 2
+        },
+        "planned_responses": 6,
+        "selected_cases_per_model": 1,
+        "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+        "results_folder_timezone": "America/Argentina/Buenos_Aires",
+        "generation_groups": {
+          "openai/gpt-4o-mini": "earlier",
+          "openai/gpt-6-luna": "later",
+          "anthropic/claude-sonnet-4.5": "earlier",
+          "anthropic/claude-sonnet-5": "later",
+          "google/gemini-2.5-flash-lite": "earlier",
+          "google/gemini-3.1-flash-lite": "later"
+        },
+        "requested_routing": {
+          "openai/gpt-4o-mini": {
+            "provider_only": [
+              "openai"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "openai/gpt-6-luna": {
+            "provider_only": [
+              "openai/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-4.5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-2.5-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-3.1-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          }
+        },
+        "archive_mode": "managed",
+        "system_prompt": "zeroShot",
+        "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+        "scoring": "source-label agreement",
+        "dataset_name": "HS_HF_FU_20",
+        "dataset_family": "HS",
+        "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+        "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+        "sample_count": 20,
+        "frequency": [
+          "HF"
+        ],
+        "verbal_time": [
+          "FU"
+        ],
+        "connectors": [
+          "if then / therefore"
+        ],
+        "source_validity": [
+          "invalid",
+          "valid"
+        ],
+        "canonical_form": [
+          "canonic",
+          "non-canonic"
+        ],
+        "provenance": {
+          "dataset": "HS_HF_FU_2000",
+          "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+          "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+          "working_path": "datasets/HS_HF_FU_2000.json",
+          "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+          "case_count": 2000,
+          "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+        },
+        "selected_case_count": 1,
+        "requested_model": "google/gemini-3.1-flash-lite",
+        "generation_group": "later",
+        "requested_provider": "google-ai-studio/flex",
+        "requested_service_tier": "flex",
+        "actual_service_tier": null,
+        "service_tier_verified": false,
+        "actual_provider": null,
+        "reasoning_verified": false,
+        "reasoning_policy": "disabled"
+      },
+      "scorers": [
+        {
+          "name": "source_label_match",
+          "options": {},
+          "metrics": [
+            {
+              "name": "llm_transitivity/source_agreement",
+              "options": {}
+            },
+            {
+              "name": "llm_transitivity/response_rates",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "llm_transitivity/generate_with_capture",
+          "params": {},
+          "params_passed": {}
+        },
+        {
+          "solver": "llm_transitivity/collect_openrouter_details",
+          "params": {},
+          "params_passed": {}
+        }
+      ],
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "flex"
+        }
+      }
+    },
+    "results": {
+      "total_samples": 1,
+      "completed_samples": 1,
+      "scores": [
+        {
+          "name": "source_label_match",
+          "scorer": "source_label_match",
+          "scored_samples": 1,
+          "unscored_samples": 0,
+          "params": {},
+          "metrics": {
+            "source_agreement": {
+              "name": "llm_transitivity/source_agreement",
+              "value": 1.0,
+              "params": {}
+            },
+            "answered_rate": {
+              "name": "answered_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            },
+            "empty_rate": {
+              "name": "empty_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "content_filter_rate": {
+              "name": "content_filter_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "invalid_format_rate": {
+              "name": "invalid_format_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "ambiguous_rate": {
+              "name": "ambiguous_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "error_rate": {
+              "name": "error_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "format_compliant_rate": {
+              "name": "format_compliant_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            }
+          }
+        }
+      ],
+      "headline": {
+        "scorer": "source_label_match",
+        "score": "source_label_match",
+        "metric": "source_agreement"
+      }
+    },
+    "stats": {
+      "started_at": "2026-11-05T23:34:03+00:00",
+      "completed_at": "2026-11-05T23:34:07+00:00",
+      "model_usage": {
+        "openrouter/google/gemini-3.1-flash-lite": {
+          "input_tokens": 65,
+          "output_tokens": 1,
+          "total_tokens": 66,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      "role_usage": {},
+      "connection_limit_history": []
+    },
+    "invalidated": false,
+    "tags": [
+      "connectors:if then / therefore",
+      "dataset:HS_HF_FU_20",
+      "experiment:llm-transitivity-coverage-pilot-v1",
+      "family:HS",
+      "frequency:HF",
+      "generation_group:later",
+      "model:google/gemini-3.1-flash-lite",
+      "model_family:google",
+      "phase:preflight",
+      "project:llm-transitivity",
+      "protocol:zeroShot",
+      "provider:google-ai-studio/flex",
+      "reasoning:disabled",
+      "service_tier:flex",
+      "tense:FU"
+    ],
+    "metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+      "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v2",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": false
+      },
+      "source_sha256": {
+        ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+        "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+        "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+        "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+        "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+        "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+        "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+        "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+        "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+        "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+        "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+        "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+        "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+        "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+        "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+        "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+        "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+        "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+        "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+        "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+        "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+        "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+        "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+        "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+        "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+        "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+        "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+        "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+        "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+        "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+        "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+        "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2",
+          "tiktoken": "0.14.0"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "disabled where supported",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 2
+      },
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-sonnet-4.5": "earlier",
+        "anthropic/claude-sonnet-5": "later",
+        "google/gemini-2.5-flash-lite": "earlier",
+        "google/gemini-3.1-flash-lite": "later"
+      },
+      "requested_routing": {
+        "openai/gpt-4o-mini": {
+          "provider_only": [
+            "openai"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "openai/gpt-6-luna": {
+          "provider_only": [
+            "openai/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-2.5-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "google/gemini-3.1-flash-lite",
+      "generation_group": "later",
+      "requested_provider": "google-ai-studio/flex",
+      "requested_service_tier": "flex",
+      "actual_service_tier": null,
+      "service_tier_verified": false,
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "disabled"
+    },
+    "reductions": [
+      {
+        "scorer": "source_label_match",
+        "samples": [
+          {
+            "value": 1.0,
+            "answer": "yes",
+            "explanation": "Compared with the source label; logical validity is not audited.",
+            "metadata": {
+              "status": "answered",
+              "extraction_rule": "initial_or_final_line_v1",
+              "extraction_position": "initial",
+              "expected": "yes",
+              "extracted_answer": "yes",
+              "format_compliant": true
+            },
+            "history": [],
+            "sample_id": 20
+          }
+        ]
+      }
+    ]
+  },
+  "2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_GQVkyWfLAFwNGHg6TjpfhH.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_set_id": "Nr8vAQnTwEczWE7ptFG3Nv",
+      "eval_id": "9bCJZbz8hti9CYxqE4V5Lk",
+      "run_id": "XRGUwgn6gbPjztN5AeioKc",
+      "created": "2026-11-05T23:33:41+00:00",
+      "task": "zeroShot_HS_HF_FU_20",
+      "task_id": "GQVkyWfLAFwNGHg6TjpfhH",
+      "task_version": 0,
+      "task_display_name": "HS_HF_FU_20 | zeroShot",
+      "task_registry_name": "llm_transitivity/hs_zero_shot",
+      "task_attribs": {},
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "task_args_passed": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "solver_args_passed": {},
+      "tags": [
+        "tense:FU",
+        "dataset:HS_HF_FU_20",
+        "frequency:HF",
+        "provider:google-ai-studio/flex",
+        "reasoning:disabled",
+        "protocol:zeroShot",
+        "family:HS",
+        "connectors:if then / therefore",
+        "model:google/gemini-2.5-flash-lite",
+        "generation_group:earlier",
+        "project:llm-transitivity",
+        "service_tier:flex",
+        "phase:preflight",
+        "model_family:google",
+        "experiment:llm-transitivity-coverage-pilot-v1"
+      ],
+      "dataset": {
+        "name": "pilot/HS_HF_FU_20",
+        "location": "datasets/pilot/HS_HF_FU_20.json",
+        "samples": 1,
+        "sample_ids": [
+          20
+        ],
+        "shuffled": false
+      },
+      "model": "openrouter/google/gemini-2.5-flash-lite",
+      "model_generate_config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "flex"
+        }
+      },
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "config": {
+        "epochs": 1,
+        "fail_on_error": false,
+        "continue_on_fail": false,
+        "retry_on_error": 3,
+        "score_on_error": false,
+        "max_samples": 2,
+        "max_tasks": 1,
+        "sandbox_cleanup": true,
+        "sandbox_prebuilt": false,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "log_model_api": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/MrPabloVS/LLM-Transitivity.git",
+        "commit": "8688c6a",
+        "dirty": true
+      },
+      "packages": {
+        "inspect_ai": "0.3.286",
+        "llm-transitivity": "0.1.0"
+      },
+      "metadata": {
+        "metadata_version": 1,
+        "experiment_id": "llm-transitivity-coverage-pilot-v1",
+        "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+        "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+        "phase": "preflight",
+        "protocol": "zeroShot",
+        "scoring_version": "source-label-deterministic-v2",
+        "label_basis": "source-label agreement; logical validity not audited",
+        "logical_validity_audited": false,
+        "openrouter_capture": {
+          "http_attempts": true,
+          "full_response_json": true,
+          "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+          "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+          "streaming": false,
+          "credentials": "redacted"
+        },
+        "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+        "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+        "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+        "cases_per_stratum": 5,
+        "pilot_case_count": 540,
+        "git": {
+          "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+          "branch": "tobe/runs-2026-11-05",
+          "dirty": false
+        },
+        "source_sha256": {
+          ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+          "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+          "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+          "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+          "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+          "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+          "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+          "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+          "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+          "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+          "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+          "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+          "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+          "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+          "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+          "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+          "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+          "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+          "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+          "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+          "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+          "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+          "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+          "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+          "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+          "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+          "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+          "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+          "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+          "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+          "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+          "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+          "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+        },
+        "runtime": {
+          "python": "3.14.8",
+          "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+          "platform": "Darwin",
+          "packages": {
+            "inspect-ai": "0.3.286",
+            "inspect-flow": "0.14.0",
+            "openai": "3.41.0",
+            "python-dotenv": "1.2.4",
+            "requests": "2.34.2",
+            "tiktoken": "0.14.0"
+          }
+        },
+        "generation_policy": {
+          "max_output_tokens": 1024,
+          "reasoning": "disabled where supported",
+          "provider_fallback": false,
+          "cache_prompt": false,
+          "temperature": "provider default; omitted",
+          "top_p": "provider default; omitted",
+          "seed": "omitted; outputs are not deterministic",
+          "request_timeout_seconds": 60,
+          "request_max_retries": 2,
+          "sdk_max_retries": 0,
+          "max_tasks": 1,
+          "max_samples": 2
+        },
+        "planned_responses": 6,
+        "selected_cases_per_model": 1,
+        "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+        "results_folder_timezone": "America/Argentina/Buenos_Aires",
+        "generation_groups": {
+          "openai/gpt-4o-mini": "earlier",
+          "openai/gpt-6-luna": "later",
+          "anthropic/claude-sonnet-4.5": "earlier",
+          "anthropic/claude-sonnet-5": "later",
+          "google/gemini-2.5-flash-lite": "earlier",
+          "google/gemini-3.1-flash-lite": "later"
+        },
+        "requested_routing": {
+          "openai/gpt-4o-mini": {
+            "provider_only": [
+              "openai"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "openai/gpt-6-luna": {
+            "provider_only": [
+              "openai/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-4.5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-2.5-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-3.1-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          }
+        },
+        "archive_mode": "managed",
+        "system_prompt": "zeroShot",
+        "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+        "scoring": "source-label agreement",
+        "dataset_name": "HS_HF_FU_20",
+        "dataset_family": "HS",
+        "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+        "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+        "sample_count": 20,
+        "frequency": [
+          "HF"
+        ],
+        "verbal_time": [
+          "FU"
+        ],
+        "connectors": [
+          "if then / therefore"
+        ],
+        "source_validity": [
+          "invalid",
+          "valid"
+        ],
+        "canonical_form": [
+          "canonic",
+          "non-canonic"
+        ],
+        "provenance": {
+          "dataset": "HS_HF_FU_2000",
+          "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+          "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+          "working_path": "datasets/HS_HF_FU_2000.json",
+          "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+          "case_count": 2000,
+          "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+        },
+        "selected_case_count": 1,
+        "requested_model": "google/gemini-2.5-flash-lite",
+        "generation_group": "earlier",
+        "requested_provider": "google-ai-studio/flex",
+        "requested_service_tier": "flex",
+        "actual_service_tier": null,
+        "service_tier_verified": false,
+        "actual_provider": null,
+        "reasoning_verified": false,
+        "reasoning_policy": "disabled"
+      },
+      "scorers": [
+        {
+          "name": "source_label_match",
+          "options": {},
+          "metrics": [
+            {
+              "name": "llm_transitivity/source_agreement",
+              "options": {}
+            },
+            {
+              "name": "llm_transitivity/response_rates",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "llm_transitivity/generate_with_capture",
+          "params": {},
+          "params_passed": {}
+        },
+        {
+          "solver": "llm_transitivity/collect_openrouter_details",
+          "params": {},
+          "params_passed": {}
+        }
+      ],
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "flex"
+        }
+      }
+    },
+    "results": {
+      "total_samples": 1,
+      "completed_samples": 1,
+      "scores": [
+        {
+          "name": "source_label_match",
+          "scorer": "source_label_match",
+          "scored_samples": 1,
+          "unscored_samples": 0,
+          "params": {},
+          "metrics": {
+            "source_agreement": {
+              "name": "llm_transitivity/source_agreement",
+              "value": 1.0,
+              "params": {}
+            },
+            "answered_rate": {
+              "name": "answered_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            },
+            "empty_rate": {
+              "name": "empty_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "content_filter_rate": {
+              "name": "content_filter_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "invalid_format_rate": {
+              "name": "invalid_format_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "ambiguous_rate": {
+              "name": "ambiguous_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "error_rate": {
+              "name": "error_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "format_compliant_rate": {
+              "name": "format_compliant_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            }
+          }
+        }
+      ],
+      "headline": {
+        "scorer": "source_label_match",
+        "score": "source_label_match",
+        "metric": "source_agreement"
+      }
+    },
+    "stats": {
+      "started_at": "2026-11-05T23:33:59+00:00",
+      "completed_at": "2026-11-05T23:34:03+00:00",
+      "model_usage": {
+        "openrouter/google/gemini-2.5-flash-lite": {
+          "input_tokens": 65,
+          "output_tokens": 1,
+          "total_tokens": 66,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      "role_usage": {},
+      "connection_limit_history": []
+    },
+    "invalidated": false,
+    "tags": [
+      "connectors:if then / therefore",
+      "dataset:HS_HF_FU_20",
+      "experiment:llm-transitivity-coverage-pilot-v1",
+      "family:HS",
+      "frequency:HF",
+      "generation_group:earlier",
+      "model:google/gemini-2.5-flash-lite",
+      "model_family:google",
+      "phase:preflight",
+      "project:llm-transitivity",
+      "protocol:zeroShot",
+      "provider:google-ai-studio/flex",
+      "reasoning:disabled",
+      "service_tier:flex",
+      "tense:FU"
+    ],
+    "metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+      "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v2",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": false
+      },
+      "source_sha256": {
+        ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+        "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+        "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+        "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+        "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+        "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+        "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+        "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+        "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+        "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+        "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+        "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+        "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+        "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+        "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+        "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+        "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+        "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+        "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+        "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+        "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+        "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+        "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+        "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+        "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+        "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+        "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+        "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+        "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+        "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+        "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+        "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2",
+          "tiktoken": "0.14.0"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "disabled where supported",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 2
+      },
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-sonnet-4.5": "earlier",
+        "anthropic/claude-sonnet-5": "later",
+        "google/gemini-2.5-flash-lite": "earlier",
+        "google/gemini-3.1-flash-lite": "later"
+      },
+      "requested_routing": {
+        "openai/gpt-4o-mini": {
+          "provider_only": [
+            "openai"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "openai/gpt-6-luna": {
+          "provider_only": [
+            "openai/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-2.5-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "google/gemini-2.5-flash-lite",
+      "generation_group": "earlier",
+      "requested_provider": "google-ai-studio/flex",
+      "requested_service_tier": "flex",
+      "actual_service_tier": null,
+      "service_tier_verified": false,
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "disabled"
+    },
+    "reductions": [
+      {
+        "scorer": "source_label_match",
+        "samples": [
+          {
+            "value": 1.0,
+            "answer": "yes",
+            "explanation": "Compared with the source label; logical validity is not audited.",
+            "metadata": {
+              "status": "answered",
+              "extraction_rule": "initial_or_final_line_v1",
+              "extraction_position": "initial",
+              "expected": "yes",
+              "extracted_answer": "yes",
+              "format_compliant": true
+            },
+            "history": [],
+            "sample_id": 20
+          }
+        ]
+      }
+    ]
+  },
+  "2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_AacKXS3pAyyjx6dLcgLVkU.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_set_id": "Nr8vAQnTwEczWE7ptFG3Nv",
+      "eval_id": "VQM6CS479T5LMUzTsyQRgm",
+      "run_id": "XRGUwgn6gbPjztN5AeioKc",
+      "created": "2026-11-05T23:33:41+00:00",
+      "task": "zeroShot_HS_HF_FU_20",
+      "task_id": "AacKXS3pAyyjx6dLcgLVkU",
+      "task_version": 0,
+      "task_display_name": "HS_HF_FU_20 | zeroShot",
+      "task_registry_name": "llm_transitivity/hs_zero_shot",
+      "task_attribs": {},
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "task_args_passed": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "solver_args_passed": {},
+      "tags": [
+        "service_tier:default",
+        "tense:FU",
+        "dataset:HS_HF_FU_20",
+        "frequency:HF",
+        "reasoning:disabled",
+        "protocol:zeroShot",
+        "family:HS",
+        "connectors:if then / therefore",
+        "project:llm-transitivity",
+        "model:anthropic/claude-sonnet-5",
+        "model_family:anthropic",
+        "provider:anthropic",
+        "phase:preflight",
+        "generation_group:later",
+        "experiment:llm-transitivity-coverage-pilot-v1"
+      ],
+      "dataset": {
+        "name": "pilot/HS_HF_FU_20",
+        "location": "datasets/pilot/HS_HF_FU_20.json",
+        "samples": 1,
+        "sample_ids": [
+          20
+        ],
+        "shuffled": false
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5",
+      "model_generate_config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "default"
+        }
+      },
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "config": {
+        "epochs": 1,
+        "fail_on_error": false,
+        "continue_on_fail": false,
+        "retry_on_error": 3,
+        "score_on_error": false,
+        "max_samples": 2,
+        "max_tasks": 1,
+        "sandbox_cleanup": true,
+        "sandbox_prebuilt": false,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "log_model_api": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/MrPabloVS/LLM-Transitivity.git",
+        "commit": "8688c6a",
+        "dirty": true
+      },
+      "packages": {
+        "inspect_ai": "0.3.286",
+        "llm-transitivity": "0.1.0"
+      },
+      "metadata": {
+        "metadata_version": 1,
+        "experiment_id": "llm-transitivity-coverage-pilot-v1",
+        "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+        "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+        "phase": "preflight",
+        "protocol": "zeroShot",
+        "scoring_version": "source-label-deterministic-v2",
+        "label_basis": "source-label agreement; logical validity not audited",
+        "logical_validity_audited": false,
+        "openrouter_capture": {
+          "http_attempts": true,
+          "full_response_json": true,
+          "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+          "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+          "streaming": false,
+          "credentials": "redacted"
+        },
+        "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+        "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+        "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+        "cases_per_stratum": 5,
+        "pilot_case_count": 540,
+        "git": {
+          "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+          "branch": "tobe/runs-2026-11-05",
+          "dirty": false
+        },
+        "source_sha256": {
+          ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+          "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+          "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+          "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+          "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+          "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+          "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+          "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+          "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+          "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+          "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+          "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+          "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+          "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+          "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+          "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+          "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+          "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+          "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+          "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+          "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+          "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+          "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+          "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+          "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+          "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+          "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+          "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+          "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+          "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+          "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+          "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+          "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+        },
+        "runtime": {
+          "python": "3.14.8",
+          "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+          "platform": "Darwin",
+          "packages": {
+            "inspect-ai": "0.3.286",
+            "inspect-flow": "0.14.0",
+            "openai": "3.41.0",
+            "python-dotenv": "1.2.4",
+            "requests": "2.34.2",
+            "tiktoken": "0.14.0"
+          }
+        },
+        "generation_policy": {
+          "max_output_tokens": 1024,
+          "reasoning": "disabled where supported",
+          "provider_fallback": false,
+          "cache_prompt": false,
+          "temperature": "provider default; omitted",
+          "top_p": "provider default; omitted",
+          "seed": "omitted; outputs are not deterministic",
+          "request_timeout_seconds": 60,
+          "request_max_retries": 2,
+          "sdk_max_retries": 0,
+          "max_tasks": 1,
+          "max_samples": 2
+        },
+        "planned_responses": 6,
+        "selected_cases_per_model": 1,
+        "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+        "results_folder_timezone": "America/Argentina/Buenos_Aires",
+        "generation_groups": {
+          "openai/gpt-4o-mini": "earlier",
+          "openai/gpt-6-luna": "later",
+          "anthropic/claude-sonnet-4.5": "earlier",
+          "anthropic/claude-sonnet-5": "later",
+          "google/gemini-2.5-flash-lite": "earlier",
+          "google/gemini-3.1-flash-lite": "later"
+        },
+        "requested_routing": {
+          "openai/gpt-4o-mini": {
+            "provider_only": [
+              "openai"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "openai/gpt-6-luna": {
+            "provider_only": [
+              "openai/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-4.5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-2.5-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-3.1-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          }
+        },
+        "archive_mode": "managed",
+        "system_prompt": "zeroShot",
+        "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+        "scoring": "source-label agreement",
+        "dataset_name": "HS_HF_FU_20",
+        "dataset_family": "HS",
+        "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+        "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+        "sample_count": 20,
+        "frequency": [
+          "HF"
+        ],
+        "verbal_time": [
+          "FU"
+        ],
+        "connectors": [
+          "if then / therefore"
+        ],
+        "source_validity": [
+          "invalid",
+          "valid"
+        ],
+        "canonical_form": [
+          "canonic",
+          "non-canonic"
+        ],
+        "provenance": {
+          "dataset": "HS_HF_FU_2000",
+          "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+          "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+          "working_path": "datasets/HS_HF_FU_2000.json",
+          "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+          "case_count": 2000,
+          "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+        },
+        "selected_case_count": 1,
+        "requested_model": "anthropic/claude-sonnet-5",
+        "generation_group": "later",
+        "requested_provider": "anthropic",
+        "requested_service_tier": "default",
+        "actual_service_tier": null,
+        "service_tier_verified": false,
+        "actual_provider": null,
+        "reasoning_verified": false,
+        "reasoning_policy": "disabled"
+      },
+      "scorers": [
+        {
+          "name": "source_label_match",
+          "options": {},
+          "metrics": [
+            {
+              "name": "llm_transitivity/source_agreement",
+              "options": {}
+            },
+            {
+              "name": "llm_transitivity/response_rates",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "llm_transitivity/generate_with_capture",
+          "params": {},
+          "params_passed": {}
+        },
+        {
+          "solver": "llm_transitivity/collect_openrouter_details",
+          "params": {},
+          "params_passed": {}
+        }
+      ],
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "default"
+        }
+      }
+    },
+    "results": {
+      "total_samples": 1,
+      "completed_samples": 1,
+      "scores": [
+        {
+          "name": "source_label_match",
+          "scorer": "source_label_match",
+          "scored_samples": 1,
+          "unscored_samples": 0,
+          "params": {},
+          "metrics": {
+            "source_agreement": {
+              "name": "llm_transitivity/source_agreement",
+              "value": 1.0,
+              "params": {}
+            },
+            "answered_rate": {
+              "name": "answered_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            },
+            "empty_rate": {
+              "name": "empty_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "content_filter_rate": {
+              "name": "content_filter_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "invalid_format_rate": {
+              "name": "invalid_format_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "ambiguous_rate": {
+              "name": "ambiguous_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "error_rate": {
+              "name": "error_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "format_compliant_rate": {
+              "name": "format_compliant_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            }
+          }
+        }
+      ],
+      "headline": {
+        "scorer": "source_label_match",
+        "score": "source_label_match",
+        "metric": "source_agreement"
+      }
+    },
+    "stats": {
+      "started_at": "2026-11-05T23:33:55+00:00",
+      "completed_at": "2026-11-05T23:33:59+00:00",
+      "model_usage": {
+        "openrouter/anthropic/claude-sonnet-5": {
+          "input_tokens": 95,
+          "output_tokens": 4,
+          "total_tokens": 99,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      "role_usage": {},
+      "connection_limit_history": []
+    },
+    "invalidated": false,
+    "tags": [
+      "connectors:if then / therefore",
+      "dataset:HS_HF_FU_20",
+      "experiment:llm-transitivity-coverage-pilot-v1",
+      "family:HS",
+      "frequency:HF",
+      "generation_group:later",
+      "model:anthropic/claude-sonnet-5",
+      "model_family:anthropic",
+      "phase:preflight",
+      "project:llm-transitivity",
+      "protocol:zeroShot",
+      "provider:anthropic",
+      "reasoning:disabled",
+      "service_tier:default",
+      "tense:FU"
+    ],
+    "metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+      "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v2",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": false
+      },
+      "source_sha256": {
+        ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+        "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+        "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+        "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+        "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+        "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+        "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+        "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+        "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+        "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+        "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+        "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+        "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+        "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+        "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+        "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+        "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+        "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+        "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+        "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+        "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+        "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+        "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+        "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+        "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+        "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+        "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+        "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+        "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+        "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+        "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+        "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2",
+          "tiktoken": "0.14.0"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "disabled where supported",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 2
+      },
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-sonnet-4.5": "earlier",
+        "anthropic/claude-sonnet-5": "later",
+        "google/gemini-2.5-flash-lite": "earlier",
+        "google/gemini-3.1-flash-lite": "later"
+      },
+      "requested_routing": {
+        "openai/gpt-4o-mini": {
+          "provider_only": [
+            "openai"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "openai/gpt-6-luna": {
+          "provider_only": [
+            "openai/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-2.5-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "anthropic/claude-sonnet-5",
+      "generation_group": "later",
+      "requested_provider": "anthropic",
+      "requested_service_tier": "default",
+      "actual_service_tier": null,
+      "service_tier_verified": false,
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "disabled"
+    },
+    "reductions": [
+      {
+        "scorer": "source_label_match",
+        "samples": [
+          {
+            "value": 1.0,
+            "answer": "yes",
+            "explanation": "Compared with the source label; logical validity is not audited.",
+            "metadata": {
+              "status": "answered",
+              "extraction_rule": "initial_or_final_line_v1",
+              "extraction_position": "initial",
+              "expected": "yes",
+              "extracted_answer": "yes",
+              "format_compliant": true
+            },
+            "history": [],
+            "sample_id": 20
+          }
+        ]
+      }
+    ]
+  },
+  "2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_VVdzy6tNFwmBAhGs3Daywp.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_set_id": "Nr8vAQnTwEczWE7ptFG3Nv",
+      "eval_id": "ai9wWwdG9yLEPC9insVuMk",
+      "run_id": "XRGUwgn6gbPjztN5AeioKc",
+      "created": "2026-11-05T23:33:41+00:00",
+      "task": "zeroShot_HS_HF_FU_20",
+      "task_id": "VVdzy6tNFwmBAhGs3Daywp",
+      "task_version": 0,
+      "task_display_name": "HS_HF_FU_20 | zeroShot",
+      "task_registry_name": "llm_transitivity/hs_zero_shot",
+      "task_attribs": {},
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "task_args_passed": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "solver_args_passed": {},
+      "tags": [
+        "service_tier:default",
+        "tense:FU",
+        "model:anthropic/claude-sonnet-4.5",
+        "dataset:HS_HF_FU_20",
+        "frequency:HF",
+        "reasoning:disabled",
+        "protocol:zeroShot",
+        "family:HS",
+        "connectors:if then / therefore",
+        "generation_group:earlier",
+        "project:llm-transitivity",
+        "model_family:anthropic",
+        "provider:anthropic",
+        "phase:preflight",
+        "experiment:llm-transitivity-coverage-pilot-v1"
+      ],
+      "dataset": {
+        "name": "pilot/HS_HF_FU_20",
+        "location": "datasets/pilot/HS_HF_FU_20.json",
+        "samples": 1,
+        "sample_ids": [
+          20
+        ],
+        "shuffled": false
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.5",
+      "model_generate_config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "default"
+        }
+      },
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "config": {
+        "epochs": 1,
+        "fail_on_error": false,
+        "continue_on_fail": false,
+        "retry_on_error": 3,
+        "score_on_error": false,
+        "max_samples": 2,
+        "max_tasks": 1,
+        "sandbox_cleanup": true,
+        "sandbox_prebuilt": false,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "log_model_api": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/MrPabloVS/LLM-Transitivity.git",
+        "commit": "8688c6a",
+        "dirty": true
+      },
+      "packages": {
+        "inspect_ai": "0.3.286",
+        "llm-transitivity": "0.1.0"
+      },
+      "metadata": {
+        "metadata_version": 1,
+        "experiment_id": "llm-transitivity-coverage-pilot-v1",
+        "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+        "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+        "phase": "preflight",
+        "protocol": "zeroShot",
+        "scoring_version": "source-label-deterministic-v2",
+        "label_basis": "source-label agreement; logical validity not audited",
+        "logical_validity_audited": false,
+        "openrouter_capture": {
+          "http_attempts": true,
+          "full_response_json": true,
+          "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+          "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+          "streaming": false,
+          "credentials": "redacted"
+        },
+        "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+        "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+        "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+        "cases_per_stratum": 5,
+        "pilot_case_count": 540,
+        "git": {
+          "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+          "branch": "tobe/runs-2026-11-05",
+          "dirty": false
+        },
+        "source_sha256": {
+          ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+          "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+          "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+          "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+          "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+          "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+          "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+          "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+          "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+          "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+          "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+          "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+          "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+          "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+          "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+          "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+          "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+          "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+          "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+          "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+          "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+          "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+          "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+          "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+          "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+          "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+          "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+          "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+          "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+          "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+          "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+          "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+          "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+        },
+        "runtime": {
+          "python": "3.14.8",
+          "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+          "platform": "Darwin",
+          "packages": {
+            "inspect-ai": "0.3.286",
+            "inspect-flow": "0.14.0",
+            "openai": "3.41.0",
+            "python-dotenv": "1.2.4",
+            "requests": "2.34.2",
+            "tiktoken": "0.14.0"
+          }
+        },
+        "generation_policy": {
+          "max_output_tokens": 1024,
+          "reasoning": "disabled where supported",
+          "provider_fallback": false,
+          "cache_prompt": false,
+          "temperature": "provider default; omitted",
+          "top_p": "provider default; omitted",
+          "seed": "omitted; outputs are not deterministic",
+          "request_timeout_seconds": 60,
+          "request_max_retries": 2,
+          "sdk_max_retries": 0,
+          "max_tasks": 1,
+          "max_samples": 2
+        },
+        "planned_responses": 6,
+        "selected_cases_per_model": 1,
+        "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+        "results_folder_timezone": "America/Argentina/Buenos_Aires",
+        "generation_groups": {
+          "openai/gpt-4o-mini": "earlier",
+          "openai/gpt-6-luna": "later",
+          "anthropic/claude-sonnet-4.5": "earlier",
+          "anthropic/claude-sonnet-5": "later",
+          "google/gemini-2.5-flash-lite": "earlier",
+          "google/gemini-3.1-flash-lite": "later"
+        },
+        "requested_routing": {
+          "openai/gpt-4o-mini": {
+            "provider_only": [
+              "openai"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "openai/gpt-6-luna": {
+            "provider_only": [
+              "openai/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-4.5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-2.5-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-3.1-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          }
+        },
+        "archive_mode": "managed",
+        "system_prompt": "zeroShot",
+        "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+        "scoring": "source-label agreement",
+        "dataset_name": "HS_HF_FU_20",
+        "dataset_family": "HS",
+        "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+        "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+        "sample_count": 20,
+        "frequency": [
+          "HF"
+        ],
+        "verbal_time": [
+          "FU"
+        ],
+        "connectors": [
+          "if then / therefore"
+        ],
+        "source_validity": [
+          "invalid",
+          "valid"
+        ],
+        "canonical_form": [
+          "canonic",
+          "non-canonic"
+        ],
+        "provenance": {
+          "dataset": "HS_HF_FU_2000",
+          "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+          "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+          "working_path": "datasets/HS_HF_FU_2000.json",
+          "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+          "case_count": 2000,
+          "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+        },
+        "selected_case_count": 1,
+        "requested_model": "anthropic/claude-sonnet-4.5",
+        "generation_group": "earlier",
+        "requested_provider": "anthropic",
+        "requested_service_tier": "default",
+        "actual_service_tier": null,
+        "service_tier_verified": false,
+        "actual_provider": null,
+        "reasoning_verified": false,
+        "reasoning_policy": "disabled"
+      },
+      "scorers": [
+        {
+          "name": "source_label_match",
+          "options": {},
+          "metrics": [
+            {
+              "name": "llm_transitivity/source_agreement",
+              "options": {}
+            },
+            {
+              "name": "llm_transitivity/response_rates",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "llm_transitivity/generate_with_capture",
+          "params": {},
+          "params_passed": {}
+        },
+        {
+          "solver": "llm_transitivity/collect_openrouter_details",
+          "params": {},
+          "params_passed": {}
+        }
+      ],
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "default"
+        }
+      }
+    },
+    "results": {
+      "total_samples": 1,
+      "completed_samples": 1,
+      "scores": [
+        {
+          "name": "source_label_match",
+          "scorer": "source_label_match",
+          "scored_samples": 1,
+          "unscored_samples": 0,
+          "params": {},
+          "metrics": {
+            "source_agreement": {
+              "name": "llm_transitivity/source_agreement",
+              "value": 1.0,
+              "params": {}
+            },
+            "answered_rate": {
+              "name": "answered_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            },
+            "empty_rate": {
+              "name": "empty_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "content_filter_rate": {
+              "name": "content_filter_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "invalid_format_rate": {
+              "name": "invalid_format_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "ambiguous_rate": {
+              "name": "ambiguous_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "error_rate": {
+              "name": "error_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "format_compliant_rate": {
+              "name": "format_compliant_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            }
+          }
+        }
+      ],
+      "headline": {
+        "scorer": "source_label_match",
+        "score": "source_label_match",
+        "metric": "source_agreement"
+      }
+    },
+    "stats": {
+      "started_at": "2026-11-05T23:33:48+00:00",
+      "completed_at": "2026-11-05T23:33:55+00:00",
+      "model_usage": {
+        "openrouter/anthropic/claude-sonnet-4.5": {
+          "input_tokens": 72,
+          "output_tokens": 164,
+          "total_tokens": 236,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      "role_usage": {},
+      "connection_limit_history": []
+    },
+    "invalidated": false,
+    "tags": [
+      "connectors:if then / therefore",
+      "dataset:HS_HF_FU_20",
+      "experiment:llm-transitivity-coverage-pilot-v1",
+      "family:HS",
+      "frequency:HF",
+      "generation_group:earlier",
+      "model:anthropic/claude-sonnet-4.5",
+      "model_family:anthropic",
+      "phase:preflight",
+      "project:llm-transitivity",
+      "protocol:zeroShot",
+      "provider:anthropic",
+      "reasoning:disabled",
+      "service_tier:default",
+      "tense:FU"
+    ],
+    "metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+      "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v2",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": false
+      },
+      "source_sha256": {
+        ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+        "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+        "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+        "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+        "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+        "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+        "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+        "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+        "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+        "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+        "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+        "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+        "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+        "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+        "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+        "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+        "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+        "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+        "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+        "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+        "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+        "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+        "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+        "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+        "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+        "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+        "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+        "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+        "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+        "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+        "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+        "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2",
+          "tiktoken": "0.14.0"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "disabled where supported",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 2
+      },
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-sonnet-4.5": "earlier",
+        "anthropic/claude-sonnet-5": "later",
+        "google/gemini-2.5-flash-lite": "earlier",
+        "google/gemini-3.1-flash-lite": "later"
+      },
+      "requested_routing": {
+        "openai/gpt-4o-mini": {
+          "provider_only": [
+            "openai"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "openai/gpt-6-luna": {
+          "provider_only": [
+            "openai/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-2.5-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "anthropic/claude-sonnet-4.5",
+      "generation_group": "earlier",
+      "requested_provider": "anthropic",
+      "requested_service_tier": "default",
+      "actual_service_tier": null,
+      "service_tier_verified": false,
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "disabled"
+    },
+    "reductions": [
+      {
+        "scorer": "source_label_match",
+        "samples": [
+          {
+            "value": 1.0,
+            "answer": "Let me work through this logical argument step by step.\n\nGiven premises:\n1. If the man will love the school → the teacher will lose the newspaper\n2. If the teacher will lose the newspaper → the woman will see the chair\n\nConclusion to evaluate:\nIf the man will love the school → the woman will see the chair\n\nThis is a hypothetical syllogism (chain argument):\n- If A → B (premise 1)\n- If B → C (premise 2)\n- Therefore, if A → C (conclusion)\n\nWhere:\n- A = the man will love the school\n- B = the teacher will lose the newspaper\n- C = the woman will see the chair\n\nThis is a valid form of logical reasoning.\n\nyes",
+            "explanation": "Compared with the source label; logical validity is not audited.",
+            "metadata": {
+              "status": "answered",
+              "extraction_rule": "initial_or_final_line_v1",
+              "extraction_position": "final_line",
+              "expected": "yes",
+              "extracted_answer": "yes",
+              "format_compliant": false
+            },
+            "history": [],
+            "sample_id": 20
+          }
+        ]
+      }
+    ]
+  },
+  "2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_9WBj7GyftWwGCA4HT8uEV9.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_set_id": "Nr8vAQnTwEczWE7ptFG3Nv",
+      "eval_id": "2UZxbtW8zYMU9Ki4FyKw8y",
+      "run_id": "XRGUwgn6gbPjztN5AeioKc",
+      "created": "2026-11-05T23:33:41+00:00",
+      "task": "zeroShot_HS_HF_FU_20",
+      "task_id": "9WBj7GyftWwGCA4HT8uEV9",
+      "task_version": 0,
+      "task_display_name": "HS_HF_FU_20 | zeroShot",
+      "task_registry_name": "llm_transitivity/hs_zero_shot",
+      "task_attribs": {},
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "task_args_passed": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "solver_args_passed": {},
+      "tags": [
+        "tense:FU",
+        "dataset:HS_HF_FU_20",
+        "frequency:HF",
+        "model_family:openai",
+        "model:openai/gpt-6-luna",
+        "reasoning:disabled",
+        "protocol:zeroShot",
+        "family:HS",
+        "connectors:if then / therefore",
+        "project:llm-transitivity",
+        "service_tier:flex",
+        "phase:preflight",
+        "generation_group:later",
+        "provider:openai/flex",
+        "experiment:llm-transitivity-coverage-pilot-v1"
+      ],
+      "dataset": {
+        "name": "pilot/HS_HF_FU_20",
+        "location": "datasets/pilot/HS_HF_FU_20.json",
+        "samples": 1,
+        "sample_ids": [
+          20
+        ],
+        "shuffled": false
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_generate_config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "flex"
+        }
+      },
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "config": {
+        "epochs": 1,
+        "fail_on_error": false,
+        "continue_on_fail": false,
+        "retry_on_error": 3,
+        "score_on_error": false,
+        "max_samples": 2,
+        "max_tasks": 1,
+        "sandbox_cleanup": true,
+        "sandbox_prebuilt": false,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "log_model_api": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/MrPabloVS/LLM-Transitivity.git",
+        "commit": "8688c6a",
+        "dirty": true
+      },
+      "packages": {
+        "inspect_ai": "0.3.286",
+        "llm-transitivity": "0.1.0"
+      },
+      "metadata": {
+        "metadata_version": 1,
+        "experiment_id": "llm-transitivity-coverage-pilot-v1",
+        "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+        "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+        "phase": "preflight",
+        "protocol": "zeroShot",
+        "scoring_version": "source-label-deterministic-v2",
+        "label_basis": "source-label agreement; logical validity not audited",
+        "logical_validity_audited": false,
+        "openrouter_capture": {
+          "http_attempts": true,
+          "full_response_json": true,
+          "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+          "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+          "streaming": false,
+          "credentials": "redacted"
+        },
+        "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+        "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+        "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+        "cases_per_stratum": 5,
+        "pilot_case_count": 540,
+        "git": {
+          "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+          "branch": "tobe/runs-2026-11-05",
+          "dirty": false
+        },
+        "source_sha256": {
+          ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+          "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+          "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+          "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+          "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+          "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+          "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+          "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+          "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+          "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+          "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+          "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+          "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+          "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+          "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+          "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+          "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+          "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+          "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+          "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+          "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+          "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+          "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+          "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+          "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+          "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+          "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+          "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+          "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+          "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+          "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+          "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+          "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+        },
+        "runtime": {
+          "python": "3.14.8",
+          "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+          "platform": "Darwin",
+          "packages": {
+            "inspect-ai": "0.3.286",
+            "inspect-flow": "0.14.0",
+            "openai": "3.41.0",
+            "python-dotenv": "1.2.4",
+            "requests": "2.34.2",
+            "tiktoken": "0.14.0"
+          }
+        },
+        "generation_policy": {
+          "max_output_tokens": 1024,
+          "reasoning": "disabled where supported",
+          "provider_fallback": false,
+          "cache_prompt": false,
+          "temperature": "provider default; omitted",
+          "top_p": "provider default; omitted",
+          "seed": "omitted; outputs are not deterministic",
+          "request_timeout_seconds": 60,
+          "request_max_retries": 2,
+          "sdk_max_retries": 0,
+          "max_tasks": 1,
+          "max_samples": 2
+        },
+        "planned_responses": 6,
+        "selected_cases_per_model": 1,
+        "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+        "results_folder_timezone": "America/Argentina/Buenos_Aires",
+        "generation_groups": {
+          "openai/gpt-4o-mini": "earlier",
+          "openai/gpt-6-luna": "later",
+          "anthropic/claude-sonnet-4.5": "earlier",
+          "anthropic/claude-sonnet-5": "later",
+          "google/gemini-2.5-flash-lite": "earlier",
+          "google/gemini-3.1-flash-lite": "later"
+        },
+        "requested_routing": {
+          "openai/gpt-4o-mini": {
+            "provider_only": [
+              "openai"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "openai/gpt-6-luna": {
+            "provider_only": [
+              "openai/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-4.5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-2.5-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-3.1-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          }
+        },
+        "archive_mode": "managed",
+        "system_prompt": "zeroShot",
+        "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+        "scoring": "source-label agreement",
+        "dataset_name": "HS_HF_FU_20",
+        "dataset_family": "HS",
+        "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+        "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+        "sample_count": 20,
+        "frequency": [
+          "HF"
+        ],
+        "verbal_time": [
+          "FU"
+        ],
+        "connectors": [
+          "if then / therefore"
+        ],
+        "source_validity": [
+          "invalid",
+          "valid"
+        ],
+        "canonical_form": [
+          "canonic",
+          "non-canonic"
+        ],
+        "provenance": {
+          "dataset": "HS_HF_FU_2000",
+          "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+          "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+          "working_path": "datasets/HS_HF_FU_2000.json",
+          "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+          "case_count": 2000,
+          "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+        },
+        "selected_case_count": 1,
+        "requested_model": "openai/gpt-6-luna",
+        "generation_group": "later",
+        "requested_provider": "openai/flex",
+        "requested_service_tier": "flex",
+        "actual_service_tier": null,
+        "service_tier_verified": false,
+        "actual_provider": null,
+        "reasoning_verified": false,
+        "reasoning_policy": "disabled"
+      },
+      "scorers": [
+        {
+          "name": "source_label_match",
+          "options": {},
+          "metrics": [
+            {
+              "name": "llm_transitivity/source_agreement",
+              "options": {}
+            },
+            {
+              "name": "llm_transitivity/response_rates",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "llm_transitivity/generate_with_capture",
+          "params": {},
+          "params_passed": {}
+        },
+        {
+          "solver": "llm_transitivity/collect_openrouter_details",
+          "params": {},
+          "params_passed": {}
+        }
+      ],
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "flex"
+        }
+      }
+    },
+    "results": {
+      "total_samples": 1,
+      "completed_samples": 1,
+      "scores": [
+        {
+          "name": "source_label_match",
+          "scorer": "source_label_match",
+          "scored_samples": 1,
+          "unscored_samples": 0,
+          "params": {},
+          "metrics": {
+            "source_agreement": {
+              "name": "llm_transitivity/source_agreement",
+              "value": 1.0,
+              "params": {}
+            },
+            "answered_rate": {
+              "name": "answered_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            },
+            "empty_rate": {
+              "name": "empty_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "content_filter_rate": {
+              "name": "content_filter_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "invalid_format_rate": {
+              "name": "invalid_format_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "ambiguous_rate": {
+              "name": "ambiguous_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "error_rate": {
+              "name": "error_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "format_compliant_rate": {
+              "name": "format_compliant_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            }
+          }
+        }
+      ],
+      "headline": {
+        "scorer": "source_label_match",
+        "score": "source_label_match",
+        "metric": "source_agreement"
+      }
+    },
+    "stats": {
+      "started_at": "2026-11-05T23:33:45+00:00",
+      "completed_at": "2026-11-05T23:33:48+00:00",
+      "model_usage": {
+        "openrouter/openai/gpt-6-luna": {
+          "input_tokens": 73,
+          "output_tokens": 5,
+          "total_tokens": 78,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      "role_usage": {},
+      "connection_limit_history": []
+    },
+    "invalidated": false,
+    "tags": [
+      "connectors:if then / therefore",
+      "dataset:HS_HF_FU_20",
+      "experiment:llm-transitivity-coverage-pilot-v1",
+      "family:HS",
+      "frequency:HF",
+      "generation_group:later",
+      "model:openai/gpt-6-luna",
+      "model_family:openai",
+      "phase:preflight",
+      "project:llm-transitivity",
+      "protocol:zeroShot",
+      "provider:openai/flex",
+      "reasoning:disabled",
+      "service_tier:flex",
+      "tense:FU"
+    ],
+    "metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+      "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v2",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": false
+      },
+      "source_sha256": {
+        ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+        "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+        "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+        "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+        "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+        "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+        "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+        "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+        "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+        "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+        "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+        "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+        "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+        "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+        "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+        "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+        "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+        "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+        "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+        "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+        "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+        "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+        "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+        "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+        "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+        "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+        "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+        "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+        "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+        "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+        "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+        "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2",
+          "tiktoken": "0.14.0"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "disabled where supported",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 2
+      },
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-sonnet-4.5": "earlier",
+        "anthropic/claude-sonnet-5": "later",
+        "google/gemini-2.5-flash-lite": "earlier",
+        "google/gemini-3.1-flash-lite": "later"
+      },
+      "requested_routing": {
+        "openai/gpt-4o-mini": {
+          "provider_only": [
+            "openai"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "openai/gpt-6-luna": {
+          "provider_only": [
+            "openai/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-2.5-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "openai/gpt-6-luna",
+      "generation_group": "later",
+      "requested_provider": "openai/flex",
+      "requested_service_tier": "flex",
+      "actual_service_tier": null,
+      "service_tier_verified": false,
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "disabled"
+    },
+    "reductions": [
+      {
+        "scorer": "source_label_match",
+        "samples": [
+          {
+            "value": 1.0,
+            "answer": "yes",
+            "explanation": "Compared with the source label; logical validity is not audited.",
+            "metadata": {
+              "status": "answered",
+              "extraction_rule": "initial_or_final_line_v1",
+              "extraction_position": "initial",
+              "expected": "yes",
+              "extracted_answer": "yes",
+              "format_compliant": true
+            },
+            "history": [],
+            "sample_id": 20
+          }
+        ]
+      }
+    ]
+  },
+  "2026-11-05T23-33-41-00-00_zeroShot-HS-HF-FU-20_8hSaKdyZtBTnYSN26Zors8.eval": {
+    "version": 2,
+    "status": "success",
+    "eval": {
+      "eval_set_id": "Nr8vAQnTwEczWE7ptFG3Nv",
+      "eval_id": "EpcSm47Zy76AFvzVo5dvGJ",
+      "run_id": "XRGUwgn6gbPjztN5AeioKc",
+      "created": "2026-11-05T23:33:41+00:00",
+      "task": "zeroShot_HS_HF_FU_20",
+      "task_id": "8hSaKdyZtBTnYSN26Zors8",
+      "task_version": 0,
+      "task_display_name": "HS_HF_FU_20 | zeroShot",
+      "task_registry_name": "llm_transitivity/hs_zero_shot",
+      "task_attribs": {},
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "task_args_passed": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "solver_args_passed": {},
+      "tags": [
+        "service_tier:default",
+        "reasoning:not-supported",
+        "provider:openai",
+        "tense:FU",
+        "dataset:HS_HF_FU_20",
+        "frequency:HF",
+        "model_family:openai",
+        "protocol:zeroShot",
+        "family:HS",
+        "connectors:if then / therefore",
+        "generation_group:earlier",
+        "project:llm-transitivity",
+        "phase:preflight",
+        "model:openai/gpt-4o-mini",
+        "experiment:llm-transitivity-coverage-pilot-v1"
+      ],
+      "dataset": {
+        "name": "pilot/HS_HF_FU_20",
+        "location": "datasets/pilot/HS_HF_FU_20.json",
+        "samples": 1,
+        "sample_ids": [
+          20
+        ],
+        "shuffled": false
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_generate_config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "default"
+        }
+      },
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "config": {
+        "epochs": 1,
+        "fail_on_error": false,
+        "continue_on_fail": false,
+        "retry_on_error": 3,
+        "score_on_error": false,
+        "max_samples": 2,
+        "max_tasks": 1,
+        "sandbox_cleanup": true,
+        "sandbox_prebuilt": false,
+        "log_samples": true,
+        "log_realtime": true,
+        "log_images": true,
+        "log_model_api": true,
+        "score_display": true
+      },
+      "revision": {
+        "type": "git",
+        "origin": "https://github.com/MrPabloVS/LLM-Transitivity.git",
+        "commit": "8688c6a",
+        "dirty": true
+      },
+      "packages": {
+        "inspect_ai": "0.3.286",
+        "llm-transitivity": "0.1.0"
+      },
+      "metadata": {
+        "metadata_version": 1,
+        "experiment_id": "llm-transitivity-coverage-pilot-v1",
+        "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+        "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+        "phase": "preflight",
+        "protocol": "zeroShot",
+        "scoring_version": "source-label-deterministic-v2",
+        "label_basis": "source-label agreement; logical validity not audited",
+        "logical_validity_audited": false,
+        "openrouter_capture": {
+          "http_attempts": true,
+          "full_response_json": true,
+          "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+          "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+          "streaming": false,
+          "credentials": "redacted"
+        },
+        "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+        "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+        "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+        "cases_per_stratum": 5,
+        "pilot_case_count": 540,
+        "git": {
+          "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+          "branch": "tobe/runs-2026-11-05",
+          "dirty": false
+        },
+        "source_sha256": {
+          ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+          "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+          "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+          "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+          "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+          "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+          "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+          "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+          "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+          "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+          "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+          "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+          "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+          "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+          "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+          "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+          "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+          "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+          "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+          "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+          "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+          "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+          "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+          "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+          "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+          "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+          "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+          "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+          "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+          "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+          "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+          "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+          "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+        },
+        "runtime": {
+          "python": "3.14.8",
+          "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+          "platform": "Darwin",
+          "packages": {
+            "inspect-ai": "0.3.286",
+            "inspect-flow": "0.14.0",
+            "openai": "3.41.0",
+            "python-dotenv": "1.2.4",
+            "requests": "2.34.2",
+            "tiktoken": "0.14.0"
+          }
+        },
+        "generation_policy": {
+          "max_output_tokens": 1024,
+          "reasoning": "disabled where supported",
+          "provider_fallback": false,
+          "cache_prompt": false,
+          "temperature": "provider default; omitted",
+          "top_p": "provider default; omitted",
+          "seed": "omitted; outputs are not deterministic",
+          "request_timeout_seconds": 60,
+          "request_max_retries": 2,
+          "sdk_max_retries": 0,
+          "max_tasks": 1,
+          "max_samples": 2
+        },
+        "planned_responses": 6,
+        "selected_cases_per_model": 1,
+        "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+        "results_folder_timezone": "America/Argentina/Buenos_Aires",
+        "generation_groups": {
+          "openai/gpt-4o-mini": "earlier",
+          "openai/gpt-6-luna": "later",
+          "anthropic/claude-sonnet-4.5": "earlier",
+          "anthropic/claude-sonnet-5": "later",
+          "google/gemini-2.5-flash-lite": "earlier",
+          "google/gemini-3.1-flash-lite": "later"
+        },
+        "requested_routing": {
+          "openai/gpt-4o-mini": {
+            "provider_only": [
+              "openai"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "openai/gpt-6-luna": {
+            "provider_only": [
+              "openai/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-4.5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "anthropic/claude-sonnet-5": {
+            "provider_only": [
+              "anthropic"
+            ],
+            "service_tier": "default",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-2.5-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          },
+          "google/gemini-3.1-flash-lite": {
+            "provider_only": [
+              "google-ai-studio/flex"
+            ],
+            "service_tier": "flex",
+            "allow_fallbacks": false,
+            "require_parameters": true
+          }
+        },
+        "archive_mode": "managed",
+        "system_prompt": "zeroShot",
+        "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+        "scoring": "source-label agreement",
+        "dataset_name": "HS_HF_FU_20",
+        "dataset_family": "HS",
+        "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+        "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+        "sample_count": 20,
+        "frequency": [
+          "HF"
+        ],
+        "verbal_time": [
+          "FU"
+        ],
+        "connectors": [
+          "if then / therefore"
+        ],
+        "source_validity": [
+          "invalid",
+          "valid"
+        ],
+        "canonical_form": [
+          "canonic",
+          "non-canonic"
+        ],
+        "provenance": {
+          "dataset": "HS_HF_FU_2000",
+          "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+          "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+          "working_path": "datasets/HS_HF_FU_2000.json",
+          "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+          "case_count": 2000,
+          "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+        },
+        "selected_case_count": 1,
+        "requested_model": "openai/gpt-4o-mini",
+        "generation_group": "earlier",
+        "requested_provider": "openai",
+        "requested_service_tier": "default",
+        "actual_service_tier": null,
+        "service_tier_verified": false,
+        "actual_provider": null,
+        "reasoning_verified": false,
+        "reasoning_policy": "not supported"
+      },
+      "scorers": [
+        {
+          "name": "source_label_match",
+          "options": {},
+          "metrics": [
+            {
+              "name": "llm_transitivity/source_agreement",
+              "options": {}
+            },
+            {
+              "name": "llm_transitivity/response_rates",
+              "options": {}
+            }
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    "plan": {
+      "name": "plan",
+      "steps": [
+        {
+          "solver": "llm_transitivity/generate_with_capture",
+          "params": {},
+          "params_passed": {}
+        },
+        {
+          "solver": "llm_transitivity/collect_openrouter_details",
+          "params": {},
+          "params_passed": {}
+        }
+      ],
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "max_connections": 2,
+        "max_tokens": 1024,
+        "cache_prompt": false,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "default"
+        }
+      }
+    },
+    "results": {
+      "total_samples": 1,
+      "completed_samples": 1,
+      "scores": [
+        {
+          "name": "source_label_match",
+          "scorer": "source_label_match",
+          "scored_samples": 1,
+          "unscored_samples": 0,
+          "params": {},
+          "metrics": {
+            "source_agreement": {
+              "name": "llm_transitivity/source_agreement",
+              "value": 1.0,
+              "params": {}
+            },
+            "answered_rate": {
+              "name": "answered_rate",
+              "group": "response_rates",
+              "value": 1.0,
+              "params": {}
+            },
+            "empty_rate": {
+              "name": "empty_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "content_filter_rate": {
+              "name": "content_filter_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "invalid_format_rate": {
+              "name": "invalid_format_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "ambiguous_rate": {
+              "name": "ambiguous_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "error_rate": {
+              "name": "error_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            },
+            "format_compliant_rate": {
+              "name": "format_compliant_rate",
+              "group": "response_rates",
+              "value": 0.0,
+              "params": {}
+            }
+          }
+        }
+      ],
+      "headline": {
+        "scorer": "source_label_match",
+        "score": "source_label_match",
+        "metric": "source_agreement"
+      }
+    },
+    "stats": {
+      "started_at": "2026-11-05T23:33:41+00:00",
+      "completed_at": "2026-11-05T23:33:45+00:00",
+      "model_usage": {
+        "openrouter/openai/gpt-4o-mini": {
+          "input_tokens": 74,
+          "output_tokens": 2,
+          "total_tokens": 76,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      "role_usage": {},
+      "connection_limit_history": []
+    },
+    "invalidated": false,
+    "tags": [
+      "connectors:if then / therefore",
+      "dataset:HS_HF_FU_20",
+      "experiment:llm-transitivity-coverage-pilot-v1",
+      "family:HS",
+      "frequency:HF",
+      "generation_group:earlier",
+      "model:openai/gpt-4o-mini",
+      "model_family:openai",
+      "phase:preflight",
+      "project:llm-transitivity",
+      "protocol:zeroShot",
+      "provider:openai",
+      "reasoning:not-supported",
+      "service_tier:default",
+      "tense:FU"
+    ],
+    "metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "585189bb-2b18-4fd7-b1af-79065a093ab6",
+      "configuration_created_utc": "2026-11-05T23:33:37.619726+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v2",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "8688c6a1e7a43068b231d3f1d9c9a4474ddce0e5",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": false
+      },
+      "source_sha256": {
+        ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+        "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+        "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+        "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+        "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/cli/app.py": "220e62eaded73829d63ed814f603d9a1aa6d755ddc340e9e82e7f8e299171d6d",
+        "src/llm_transitivity/cli/costs.py": "3ba3e48971046122d3c310cc39e1a392dd10d19c010f48881867e43c2b73b45b",
+        "src/llm_transitivity/cli/datasets.py": "f6e69f0602d0b6f78af1aacd0dc2228b4f4b3b933e9156dce38ca9f3d393c8e1",
+        "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+        "src/llm_transitivity/cli/pilot.py": "834d5e0f09121ab520b38c8e8e3935271360846f8dc8891e6f85758cd2f89727",
+        "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+        "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+        "src/llm_transitivity/costs/estimate.py": "fcc175ffd6c5ab736942106a0d9e591dac43e5f9333860de5d392572140e077c",
+        "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+        "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+        "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+        "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+        "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+        "src/llm_transitivity/domain/config.py": "7f2068d05664635f6536ba69bbd2a7c469d14a125e7d4e732572828eaffbea1c",
+        "src/llm_transitivity/domain/scoring.py": "f9dd73d04e2e3f3d670c86c8f23c24b0bc1733e38b77e57a8a5fc6f40f1a9852",
+        "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+        "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/evidence/metadata.py": "dffac2b6eec7bb019e177bca692fa48065689789ff0d752ceca17716e23f66d4",
+        "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+        "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/inspect/flow.py": "735181b0bebab6ccfe181afd228481d232dbd55954cf0f257bd537ca07025b17",
+        "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+        "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+        "src/llm_transitivity/inspect/tasks.py": "cd825a5dc9daaced4ca3b6d87a375f136ce2fbfeb16fa07a2cb7285ba1360757",
+        "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+        "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+        "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+        "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/runs/archive.py": "0a89053684eb4702ce0553b138f404333a41a4e8832f58bba6e7865fdd3207cf",
+        "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+        "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2",
+          "tiktoken": "0.14.0"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "disabled where supported",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 2
+      },
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-05_20-33-37-585189bb_preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-sonnet-4.5": "earlier",
+        "anthropic/claude-sonnet-5": "later",
+        "google/gemini-2.5-flash-lite": "earlier",
+        "google/gemini-3.1-flash-lite": "later"
+      },
+      "requested_routing": {
+        "openai/gpt-4o-mini": {
+          "provider_only": [
+            "openai"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "openai/gpt-6-luna": {
+          "provider_only": [
+            "openai/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-2.5-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "openai/gpt-4o-mini",
+      "generation_group": "earlier",
+      "requested_provider": "openai",
+      "requested_service_tier": "default",
+      "actual_service_tier": null,
+      "service_tier_verified": false,
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "not supported"
+    },
+    "reductions": [
+      {
+        "scorer": "source_label_match",
+        "samples": [
+          {
+            "value": 1.0,
+            "answer": "Yes.",
+            "explanation": "Compared with the source label; logical validity is not audited.",
+            "metadata": {
+              "status": "answered",
+              "extraction_rule": "initial_or_final_line_v1",
+              "extraction_position": "initial",
+              "expected": "yes",
+              "extracted_answer": "yes",
+              "format_compliant": false
+            },
+            "history": [],
+            "sample_id": 20
+          }
+        ]
+      }
+    ]
+  }
+}

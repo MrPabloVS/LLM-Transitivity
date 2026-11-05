@@ -1,9 +1,8 @@
 # Six-model pilot
 
-Status: pilot preparation restarted after the code and routing changes.
-The local checks and new cost estimate are complete. A new live preflight is
-required before the complete pilot. Earlier estimates and preflight reports are no longer
-part of the active preparation.
+Status: local preparation and the six-model live preflight are complete.
+Review the observed format deviations and agree on a budget before the full pilot.
+Earlier estimates and preflight reports are outside the active preparation.
 Saved model availability and price references were captured on November 5, 2026, through the
 [OpenRouter model catalog](https://openrouter.ai/api/v1/models) and its provider
 endpoint listings. A catalog entry does not establish access through our account.
@@ -23,11 +22,19 @@ USD 2.14 for 128 output tokens, and USD 15.11 at the 1,024-token output cap.
 The byte-input scenario with all three attempts totals USD 49.66. These are
 planning scenarios, not spending limits or reported charges.
 
-The earlier estimate attempt stopped because our quote filter required endpoint
-`status: 0`. Quote retrieval now uses the exact published endpoint tag regardless
-of status. The GPT-6 Luna Flex listing includes prices with `status: -2`.
-This status is not interpreted as an access or outage result. The new live
-preflight remains pending; no model generation was requested for the estimate.
+The [live preflight review](../results/pilot/2026-11-05_20-33-37-585189bb_preflight/summary/preflight_review.md)
+records six successful responses in six HTTP attempts, with total reported cost
+USD 0.002935525. Reported providers and service tiers match the requests. All six
+responses and refreshed generation lookups report zero reasoning tokens.
+Routing metadata, native logs, call exports, and frozen source snapshots were checked.
+
+Four responses meet the exact yes/no format. GPT-4o mini returned `Yes.` and
+Sonnet 4.5 returned an explanation ending with a separate `Yes`. Both agree with
+the source label but fail strict formatting. These are model outcomes; no response,
+score, or prompt was changed. Immediate generation lookups were unavailable;
+a read-only refresh returned HTTP 200 for all six generation IDs.
+The full pilot has not run. Native task metadata retains configuration-time
+verification placeholders; observed verification is recorded in the review.
 
 ## Goal
 
@@ -50,7 +57,8 @@ endpoint data for all six models, with sources, capture times and hashes.
 Routing decision approved on November 5, 2026. Flex is selected for GPT-6 Luna
 and both Gemini Flash-Lite models. The other three models use the default tier.
 The executable model catalog and Flow configuration now set these endpoint and
-tier pairs explicitly. A new live preflight is pending.
+tier pairs explicitly. The linked live preflight confirms reported provider
+and tier agreement for the six requests.
 Saved model cards describe their capture
 time; this guide records the current execution configuration.
 
@@ -173,8 +181,9 @@ The deterministic guarantee applies to input preservation and selection only.
 The Inspect model request retry limit is two, and SDK retries are disabled.
 There are at most three planned HTTP attempts per logical generation instead
 of two nested retry layers. The Flow evaluation-set attempt limit is
-one, with failed logs retained. Runtime reasoning behavior still needs to be
-confirmed from actual requests and reported usage.
+one, with failed logs retained. The live preflight confirmed the requested
+reasoning settings and zero reported reasoning tokens for its six responses.
+Continue checking actual requests and usage during the complete pilot.
 Streaming is disabled. Each sample also retains HTTP attempt snapshots and
 complete OpenRouter generation metadata, as described in the metadata guide.
 
@@ -275,3 +284,15 @@ logs and provenance remain available for later export.
 
 `transitivity pilot --dry-run` creates no result archive. The installed command
 provides the managed archive and finalization behavior for paid runs.
+
+## Watch a run in Inspect
+
+Start the viewer before launching a run from another terminal:
+
+```sh
+uv run --locked inspect view --recursive --log-dir results/pilot --host 127.0.0.1 --port 7575
+```
+
+Open `http://127.0.0.1:7575` in the browser. The viewer reads native Inspect logs
+across run directories. It does not request model generations. Review the saved
+requests, responses, scores, sample metadata, and errors there.
