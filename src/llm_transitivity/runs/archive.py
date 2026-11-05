@@ -90,12 +90,14 @@ def finalize_archive(
                 }
             )
     export_status = "no logs"
+    export_error = None
     if logs:
         try:
             export_run(archive)
             export_status = "exported"
         except (OSError, ValueError, RuntimeError, KeyError, BadZipFile) as error:
             export_status = f"failed: {type(error).__name__}"
+            export_error = error
     report = {
         "flow_success": flow_success,
         "runner_error_type": error_type,
@@ -106,3 +108,6 @@ def finalize_archive(
     with (archive / "summary" / "log_index.json").open("x", encoding="utf-8") as file:
         json.dump(report, file, ensure_ascii=False, indent=2)
         file.write("\n")
+
+    if export_error is not None:
+        raise export_error

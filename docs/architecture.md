@@ -47,3 +47,8 @@ CLI modules parse arguments and load credentials. The runner executes Flow; the
 archive component freezes evidence before execution and indexes partial results
 afterward. The exporter retains native model events and creates new files.
 Existing root commands delegate to these components without changing arguments.
+
+A run failure remains the primary exception if finalization also fails. The
+secondary error type is reported separately without its message. If execution
+succeeds but finalization fails, the command fails. Export failures keep the
+written log index and also fail finalization.
