@@ -66,9 +66,12 @@ Recalculate current quotes and assumptions with:
 uv run --locked transitivity costs
 ```
 
-This command makes public pricing queries and rewrites the JSON estimate. Review
-this Markdown comparison if prices or inputs change. It does not launch a pilot
-or enforce a budget.
+This command makes public pricing queries and saves a new snapshot under
+`results/cost_estimates/<local-date-time>-<id>/estimate.json`. It prints the
+snapshot path. Each capture uses a new directory and exclusive file creation;
+existing captures and the historical JSON linked above remain unchanged.
+The command does not launch a pilot or enforce a budget. Compare new snapshots
+with the assumptions in this historical report when reviewing current costs.
 
 ## Configuration source
 

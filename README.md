@@ -67,6 +67,10 @@ uv run --locked transitivity costs --help
 uv run --locked transitivity export --help
 ```
 
+`transitivity costs` saves each estimate to a new directory under
+`results/cost_estimates/` and prints its path. The saved estimate in `docs/`
+remains historical evidence.
+
 From another directory, use `transitivity --root /path/to/repository` before the
 subcommand. The installed commands replace the removed root Python adapters.
 

@@ -64,7 +64,11 @@ public provider quotes. Price retrieval is separate from arithmetic. It creates
 no Inspect tasks or run identity. Future reports keep the existing hash field names and use package source paths
 for the estimator, Flow configuration and model catalog. They also record hashes
 of the complete package implementation.
-Historical price snapshots remain unchanged.
+Historical price snapshots remain unchanged. The cost archive component saves
+each complete estimate under a new
+`results/cost_estimates/<local-date-time>-<id>/estimate.json` path. A directory
+collision fails instead of replacing a previous capture. The CLI prints the new
+snapshot path; the report under `docs/` remains historical reference evidence.
 
 ## Verification
 
@@ -94,7 +98,7 @@ uv run --locked transitivity costs
 uv run --locked transitivity export results/pilot/<run-directory>
 ```
 
-`costs` requests public quotes and writes the estimate. `pilot` requests model
+`costs` requests public quotes and writes a new estimate snapshot. `pilot` requests model
 responses unless `--dry-run` is set. Use each subcommand's `--help` to inspect
 its options without loading credentials or performing the action.
 

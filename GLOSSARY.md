@@ -58,3 +58,11 @@ coverage across strata or statistical accuracy.
 in this comparison. Each earlier or later group contains one model from each
 of OpenAI, Anthropic, and Google.
 _Avoid_: Model family when referring to an earlier or later group.
+
+## Costs
+
+**Cost estimate**: A prediction of experiment charges from endpoint price quotes
+and explicit assumptions about token usage and attempts. It is not a spending limit.
+
+**Reported cost**: An amount returned by OpenRouter for a generation. It is
+observed cost evidence, not an independent confirmation of the final bill.
