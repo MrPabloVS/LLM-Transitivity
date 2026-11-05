@@ -5,7 +5,7 @@ from unittest.mock import Mock
 import pytest
 import requests
 
-import openrouter_telemetry as telemetry
+from llm_transitivity.openrouter import client as telemetry
 
 
 def response(status=200, payload=None, text=""):
