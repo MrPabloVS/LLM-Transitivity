@@ -101,6 +101,7 @@ def build_pilot_spec(root: Path, *, preflight: bool = False) -> FlowSpec:
                             timeout=policy.request_timeout_seconds,
                             cache_prompt=policy.cache_prompt,
                             extra_body={"service_tier": model_spec.service_tier},
+                            extra_headers={"X-OpenRouter-Metadata": "enabled"},
                         ),
                     ),
                     fail_on_error=False,

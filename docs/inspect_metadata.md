@@ -83,6 +83,20 @@ The scoring rules and denominators remain documented in the README.
 
 ## OpenRouter details for each call
 
+Managed pilot and preflight requests send `X-OpenRouter-Metadata: enabled`
+for all six models. OpenRouter can return `openrouter_metadata` with routing
+candidates, selected providers, attempts, region, and pipeline stages. The raw
+HTTP capture retains the entire object, including unknown fields, in Inspect
+sample metadata and call exports. A returned routing summary remains observed
+evidence; missing fields remain unverified. See
+[router metadata](https://openrouter.ai/docs/guides/features/router-metadata).
+
+Usage is returned automatically; the deprecated `usage.include` parameter is
+not required. Streaming remains disabled. `debug.echo_upstream_body` requires
+streaming and is not requested. Stored content is queried only through the
+optional exporter flags documented below. These limits are separate from
+retaining every field of the responses received.
+
 The bounded generation solver attaches `openrouter_http_calls` to each sample.
 It restores capture context after success, error or cancellation, and isolates
 concurrent samples.

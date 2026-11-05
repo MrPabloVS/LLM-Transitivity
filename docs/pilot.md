@@ -145,6 +145,10 @@ and [provider routing](https://openrouter.ai/docs/guides/routing/provider-select
 Sonnet 5.5 and Gemini 3.5 Flash-Lite are excluded because the checked catalog
 marks their reasoning as mandatory.
 
+Managed requests also enable OpenRouter routing metadata for all six models.
+See the [metadata guide](inspect_metadata.md#openrouter-details-for-each-call)
+for the requested header, retained fields, and optional lookup limits.
+
 ## Scoring and readiness
 
 See [Inspect tags and metadata](inspect_metadata.md) for the evaluation, task,

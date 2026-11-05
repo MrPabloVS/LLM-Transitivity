@@ -105,6 +105,12 @@ def test_transport_capture_and_export_with_mocked_openrouter(tmp_path, monkeypat
     from llm_transitivity.runs.export import export_log
 
     count = 0
+    router_metadata = {
+        "requested": "openai/gpt-4o-mini",
+        "region": None,
+        "attempt": 1,
+        "future_field": {"zero": 0},
+    }
 
     async def handle(request):
         nonlocal count
@@ -112,7 +118,11 @@ def test_transport_capture_and_export_with_mocked_openrouter(tmp_path, monkeypat
         if count == 1:
             return httpx2.Response(
                 503,
-                json={"id": "gen-retry", "error": {"message": "busy", "code": 503}},
+                json={
+                    "id": "gen-retry",
+                    "error": {"message": "busy", "code": 503},
+                    "openrouter_metadata": router_metadata,
+                },
                 headers={"x-request-id": "req-retry"},
             )
         return httpx2.Response(
@@ -180,6 +190,7 @@ def test_transport_capture_and_export_with_mocked_openrouter(tmp_path, monkeypat
     metadata = logs[0].samples[0].metadata
     calls = metadata["openrouter_http_calls"]
     assert [call["http_status"] for call in calls] == [503, 200]
+    assert calls[0]["response_body"]["json"]["openrouter_metadata"] == router_metadata
     assert calls[1]["response_body"]["json"]["new_unknown_field"] == {
         "zero": 0,
         "null": None,
@@ -197,6 +208,12 @@ def test_transport_capture_and_export_with_mocked_openrouter(tmp_path, monkeypat
     path = next(Path(tmp_path).glob("*.eval"))
     exported = export_log(path)
     assert exported[0]["generation_id"] == "gen-success"
+    assert (
+        exported[0]["sample_metadata"]["openrouter_http_calls"][0]["response_body"][
+            "json"
+        ]["openrouter_metadata"]
+        == router_metadata
+    )
     assert (
         exported[0]["sample_metadata"]["openrouter_calls"][0]["reported"][
             "native_tokens_reasoning"

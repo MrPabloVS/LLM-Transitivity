@@ -6,10 +6,12 @@ from unittest.mock import Mock
 
 import pytest
 from inspect_ai import eval
+from inspect_ai.log import read_eval_log
 from inspect_ai.model import get_model
 
 from llm_transitivity.inspect.flow import build_pilot_spec
 from llm_transitivity.openrouter import client
+from llm_transitivity.runs.export import export_log
 
 ROOT = Path(__file__).resolve().parents[1]
 ROUTES = [
@@ -43,8 +45,17 @@ def test_route_reaches_http_and_keeps_observed_identifiers(
     assert f"service_tier:{tier}" in flow_task.tags
     assert spec.options.metadata["requested_routing"][model]["service_tier"] == tier
     requests = []
+    router_metadata = {
+        "requested": model,
+        "strategy": "direct",
+        "region": None,
+        "attempt": 1,
+        "endpoints": {"available": [{"provider": endpoint, "selected": True}]},
+        "future_field": {"zero": 0, "null": None},
+    }
 
     async def handle(request):
+        assert request.headers["X-OpenRouter-Metadata"] == "enabled"
         body = json.loads(request.content)
         requests.append(body)
         return httpx2.Response(
@@ -56,6 +67,7 @@ def test_route_reaches_http_and_keeps_observed_identifiers(
                 "model": model,
                 "provider": endpoint.split("/")[0],
                 "service_tier": tier,
+                "openrouter_metadata": router_metadata,
                 "choices": [
                     {
                         "index": 0,
@@ -123,3 +135,17 @@ def test_route_reaches_http_and_keeps_observed_identifiers(
     assert details["service_tier"] == tier
     assert details["model_permaslug"] == f"{model}-version-test"
     assert details["provider_responses"][0]["endpoint_id"] == "endpoint-test"
+
+    path = next(tmp_path.glob("*.eval"))
+    saved = read_eval_log(str(path))
+    captured = saved.samples[0].metadata["openrouter_http_calls"][0]
+    assert captured["request_headers"]["x-openrouter-metadata"] == "enabled"
+    assert captured["response_body"]["json"]["openrouter_metadata"] == router_metadata
+    exported = export_log(path)
+    assert (
+        exported[0]["sample_metadata"]["openrouter_http_calls"][0]["response_body"][
+            "json"
+        ]["openrouter_metadata"]
+        == router_metadata
+    )
+    assert "test-routing-secret" not in json.dumps(exported)

@@ -35,6 +35,7 @@ def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
     assert spec.options.log_samples is True
     assert spec.options.log_model_api is True
     for task in spec.tasks:
+        assert task.model.config.extra_headers == {"X-OpenRouter-Metadata": "enabled"}
         assert task.metadata["requested_model"] == task.model.name.removeprefix(
             "openrouter/"
         )
