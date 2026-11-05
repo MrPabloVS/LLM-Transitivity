@@ -7,7 +7,7 @@ from inspect_ai.model import GenerateConfig
 from inspect_flow import FlowModel
 from inspect_flow.api import run
 
-import run_pilot
+from llm_transitivity.runs import runner as run_pilot
 from pilot_config import MODEL_GROUPS, build_pilot_spec
 from prepare_pilot import digest
 

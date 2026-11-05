@@ -40,3 +40,10 @@ that root as a task argument, so worker processes read the same inputs. Sample
 UIDs, source row numbers and labels retain their previous meaning. Root task and
 Flow modules adapt the old signatures to the package. Importing `flow.py` does
 not build a specification; the Flow loader evaluates it in its execution context.
+
+## Managed runs
+
+CLI modules parse arguments and load credentials. The runner executes Flow; the
+archive component freezes evidence before execution and indexes partial results
+afterward. The exporter retains native model events and creates new files.
+Existing root commands delegate to these components without changing arguments.
