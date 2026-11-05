@@ -49,6 +49,7 @@ def build_pilot_spec() -> FlowSpec:
     for model, provider, supports_reasoning in MODELS:
         model_args = {
             "stream": False,
+            "max_retries": 0,
             "provider": {
                 "only": [provider],
                 "allow_fallbacks": False,

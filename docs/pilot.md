@@ -93,7 +93,9 @@ tokens, two connections, at most two concurrent samples, and one active task.
 Prompt caching is disabled. Temperature, top-p, and seed are omitted for all
 models; provider defaults apply and generated answers are not deterministic.
 The deterministic guarantee applies to input preservation and selection only.
-The model request retry limit is two; the Flow evaluation-set attempt limit is
+The Inspect model request retry limit is two, and SDK retries are disabled.
+There are at most three planned HTTP attempts per logical generation instead
+of two nested retry layers. The Flow evaluation-set attempt limit is
 one, with failed logs retained. Runtime reasoning behavior still needs to be
 confirmed from actual requests and reported usage.
 Streaming is disabled. Each sample also retains HTTP attempt snapshots and

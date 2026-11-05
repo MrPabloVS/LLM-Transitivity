@@ -89,6 +89,7 @@ def run_metadata(root: Path, manifest: dict) -> dict:
             "seed": "omitted; outputs are not deterministic",
             "request_timeout_seconds": 60,
             "request_max_retries": 2,
+            "sdk_max_retries": 0,
             "max_tasks": 1,
             "max_samples": 2,
         },

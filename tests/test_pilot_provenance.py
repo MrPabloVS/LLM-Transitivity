@@ -140,6 +140,7 @@ def test_six_models_cover_all_eighteen_datasets_without_reasoning_or_fallback():
     for task in spec.tasks:
         assert task.model.config.max_tokens == 1024
         args = task.model.model_args
+        assert args["max_retries"] == 0
         assert args["provider"]["allow_fallbacks"] is False
         assert len(args["provider"]["only"]) == 1
         if "gpt-4o-mini" not in task.model.name:
