@@ -154,7 +154,7 @@ uv run --locked run_pilot.py
 One directory holds the complete run, across all six models and 18 datasets:
 
 ```text
-results/pilot/<local-date-time>_<run-id>/
+results/pilot/<local-date-time>-<run-id>/
   inspect/             # All native .eval logs and Flow files
   openrouter_calls/    # Complete call exports
   provenance/          # Frozen metadata, Flow spec, inputs, code, and hashes

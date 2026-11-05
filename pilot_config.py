@@ -41,7 +41,7 @@ def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
     timestamp = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).strftime(
         "%Y-%m-%d_%H-%M-%S"
     )
-    run_folder = f"{timestamp}_{common['experiment_run_id'][:8]}"
+    run_folder = f"{timestamp}-{common['experiment_run_id'][:8]}"
     if preflight:
         run_folder += "_preflight"
     results = Path("results/pilot") / run_folder

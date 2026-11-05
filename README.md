@@ -81,7 +81,7 @@ uv run --locked run_pilot.py
 
 The run command requests 3,240 model responses, plus any retries.
 Each managed run keeps all six models and 18 datasets together under
-`results/pilot/<local-date-time>_<run-id>/`: `inspect/`, `openrouter_calls/`,
+`results/pilot/<local-date-time>-<run-id>/`: `inspect/`, `openrouter_calls/`,
 `provenance/`, and `summary/`. Folder timestamps use Buenos Aires time.
 Provenance is saved before model calls; call exports and a log index are saved
 when the run finishes or unwinds after an error. See the pilot guide for details.
