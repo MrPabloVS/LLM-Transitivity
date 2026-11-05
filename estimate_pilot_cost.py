@@ -9,8 +9,8 @@ from pathlib import Path
 import requests
 import tiktoken
 
-from pilot_config import MODELS, PROJECT_ROOT, build_pilot_spec
-from prepare_pilot import MANIFEST, digest, json_bytes
+from experiment_config import GENERATION_POLICY, MODEL_SPECS
+from prepare_pilot import MANIFEST, digest, json_bytes, verify
 
 
 def generation_cost(
@@ -34,8 +34,8 @@ def generation_cost(
 
 
 def estimate(root: Path) -> dict:
-    spec = build_pilot_spec()
-    manifest = json.loads((root / MANIFEST).read_text())
+    manifest = verify(root)
+    policy = GENERATION_POLICY
     system = json.loads((root / manifest["system_prompt"]["path"]).read_text())[0]
     prompts = [
         row[2]
@@ -53,16 +53,11 @@ def estimate(root: Path) -> dict:
         len(system.encode("utf-8")) + len(text.encode("utf-8")) + 256
         for text in prompts
     )
-    config = spec.tasks[0].model.config
-    attempts = config.max_retries + 1
-    for task in spec.tasks:
-        if (
-            task.model.config.max_tokens != config.max_tokens
-            or task.model.model_args["max_retries"] != 0
-        ):
-            raise ValueError("Unexpected output or SDK retry configuration")
+    attempts = policy.maximum_planned_attempts
     rows = []
-    for model, provider, _ in MODELS:
+    for model_spec in MODEL_SPECS:
+        model = model_spec.identifier
+        provider = model_spec.provider
         url = f"https://openrouter.ai/api/v1/models/{model}/endpoints"
         response = requests.get(url, timeout=30)
         response.raise_for_status()
@@ -99,9 +94,9 @@ def estimate(root: Path) -> dict:
                 "output_usd_per_million": float(output_price * 1000000),
                 "short_4_output_tokens_usd": cost(proxy_tokens, 4),
                 "verbose_128_output_tokens_usd": cost(proxy_tokens, 128),
-                "output_cap_1024_usd": cost(proxy_tokens, config.max_tokens),
+                "output_cap_1024_usd": cost(proxy_tokens, policy.max_output_tokens),
                 "byte_input_output_cap_all_attempts_usd": cost(
-                    byte_scenario, config.max_tokens, attempts
+                    byte_scenario, policy.max_output_tokens, attempts
                 ),
             }
         )
@@ -116,12 +111,15 @@ def estimate(root: Path) -> dict:
         "estimator_sha256": digest((root / "estimate_pilot_cost.py").read_bytes()),
         "manifest_sha256": digest((root / MANIFEST).read_bytes()),
         "configuration_sha256": digest((root / "pilot_config.py").read_bytes()),
+        "experiment_config_sha256": digest(
+            (root / "experiment_config.py").read_bytes()
+        ),
         "pilot_cases_per_model": len(prompts),
-        "models": len(MODELS),
-        "planned_responses": len(prompts) * len(MODELS),
-        "output_token_limit": config.max_tokens,
-        "inspect_max_retries": config.max_retries,
-        "sdk_max_retries": 0,
+        "models": len(MODEL_SPECS),
+        "planned_responses": len(prompts) * len(MODEL_SPECS),
+        "output_token_limit": policy.max_output_tokens,
+        "inspect_max_retries": policy.request_max_retries,
+        "sdk_max_retries": policy.sdk_max_retries,
         "maximum_planned_attempts_per_response": attempts,
         "input_proxy_tokens_per_model": proxy_tokens,
         "input_byte_scenario_tokens_per_model": byte_scenario,
@@ -140,8 +138,9 @@ def estimate(root: Path) -> dict:
 
 
 if __name__ == "__main__":
-    report = estimate(PROJECT_ROOT)
-    path = PROJECT_ROOT / "docs/pilot_cost_estimate.json"
+    root = Path(__file__).resolve().parent
+    report = estimate(root)
+    path = root / "docs/pilot_cost_estimate.json"
     path.write_bytes(json_bytes(report))
     print(json.dumps(report["totals_usd"], indent=2))
     print(f"Saved {path}")

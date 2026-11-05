@@ -63,3 +63,11 @@ uv run --locked estimate_pilot_cost.py
 This command makes public pricing queries and rewrites the JSON estimate. Review
 this Markdown comparison if prices or inputs change. It does not launch a pilot
 or enforce a budget.
+
+## Configuration source
+
+The estimator reads the model catalog and execution policy from
+`experiment_config.py`. It verifies the pilot inputs without constructing Inspect
+tasks or creating a run identity. Future reports include `experiment_config_sha256`
+in addition to the existing source hashes. The saved quote snapshot above keeps
+the evidence from its original calculation.
