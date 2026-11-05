@@ -1,0 +1,24 @@
+{
+  "command": "uv run --locked flow run flow.py --dry-run --json",
+  "exit_code": 0,
+  "evaluation_tasks": 108,
+  "pilot_cases": 540,
+  "models": 6,
+  "planned_responses": 3240,
+  "completed_samples": 0,
+  "manifest_sha256": "d6c93dfddf7abae68f547244840c300b541ecc0f1905b38dedb28be7be5a95a7",
+  "config_sha256": "3484e61eed9fa4fa7d8b99c0df50eef56d54426867139dfed032fc74e4f93752",
+  "note": "Dry run only. Model calls, provider access, billing and runtime reasoning behavior were not tested.",
+  "source_sha256": {
+    "flow.py": "150e41253c8b47fff75b298e2b067dd0c4c3e43f5c2218434f721748a2d48f32",
+    "pilot_config.py": "3484e61eed9fa4fa7d8b99c0df50eef56d54426867139dfed032fc74e4f93752",
+    "inspect_tasks.py": "abad4b3f2383edb88510c7d5c9f70a66ac331dfdc7463729594bb46d704b00bb",
+    "inspect_scoring.py": "f4356107da8eb005ac374a9646fc776b1713ffa36d55e634167dd95e74306888",
+    "experiment_metadata.py": "8293d0d2f1afcffee30539cfe7392213248c4c1d51363fa8a74c026a43d772e6",
+    "openrouter_telemetry.py": "ce451b66b6d0175de00f47ed3684f583e25ce15aa86f53b6a6eeeae1657642af",
+    "collect_openrouter.py": "10208cb3bef31ea5dbd2d961f3c0eb18c79d2c455d632053161dadcec3a2f3be",
+    "run_pilot.py": "a45adc653e0e55dc08d89de43190eaddd4591d25547cb9034c91915253e2dde2"
+  },
+  "managed_entrypoint": "uv run --locked run_pilot.py",
+  "results_layout": "results/pilot/<Buenos-Aires-date-time>_<run-id>/{inspect,openrouter_calls,provenance,summary}"
+}
