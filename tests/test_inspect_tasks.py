@@ -61,7 +61,7 @@ def test_invalid_last_case_stops_inspect_before_calls_or_writes(tmp_path, monkey
     datasets.mkdir()
     (datasets / "bad.json").write_text(json.dumps([row, row[:7]]))
     generate = Mock(side_effect=AssertionError("Unexpected generation setup"))
-    monkeypatch.setattr(inspect_tasks, "generate", generate)
+    monkeypatch.setattr(inspect_tasks, "generate_with_capture", generate)
     with pytest.raises(ValueError, match="case 2"):
         inspect_tasks.hs_zero_shot("bad", root=str(tmp_path))
     generate.assert_not_called()

@@ -52,3 +52,8 @@ A run failure remains the primary exception if finalization also fails. The
 secondary error type is reported separately without its message. If execution
 succeeds but finalization fails, the command fails. Export failures keep the
 written log index and also fail finalization.
+
+Managed tasks use a generation solver with a bounded capture context. It resets
+the context on success, error and cancellation while retaining captured attempts
+in sample metadata. Concurrent samples have separate contexts. Legacy pre-hook
+exports remain available for compatibility; managed tasks use the bounded solver.

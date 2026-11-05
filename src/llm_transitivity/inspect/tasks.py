@@ -6,7 +6,6 @@ from pathlib import Path
 from inspect_ai import Task, task
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import ChatMessageSystem, ChatMessageUser
-from inspect_ai.solver import generate
 
 from llm_transitivity.datasets.pilot import verified_pilot
 from llm_transitivity.datasets.validation import load_dataset
@@ -16,8 +15,8 @@ from llm_transitivity.evidence.metadata import EXPERIMENT_ID, SCORING_VERSION
 from llm_transitivity.evidence.serialization import digest, record_digest
 from llm_transitivity.inspect.scoring import source_label_match
 from llm_transitivity.inspect.telemetry import (
-    capture_openrouter_http,
     collect_openrouter_details,
+    generate_with_capture,
 )
 
 
@@ -149,7 +148,7 @@ def hs_zero_shot(dataset: str = "HS", *, root: str) -> Task:
         name=f"zeroShot_{pilot_name}",
         display_name=f"{pilot_name} | zeroShot",
         dataset=MemoryDataset(samples, name=dataset, location=str(path)),
-        solver=[capture_openrouter_http(), generate(), collect_openrouter_details()],
+        solver=[generate_with_capture(), collect_openrouter_details()],
         scorer=source_label_match(),
         score_on_error=False,
         tags=[

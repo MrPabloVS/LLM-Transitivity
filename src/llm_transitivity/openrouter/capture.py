@@ -1,6 +1,7 @@
 """Capture redacted transport attempts without depending on Inspect."""
 
 import time
+from contextlib import contextmanager
 from contextvars import ContextVar
 from datetime import UTC, datetime
 
@@ -43,3 +44,13 @@ async def capture_response(response) -> None:
             "http_seconds": time.monotonic() - started,
         }
     )
+
+
+@contextmanager
+def capture_scope(records: list):
+    """Restore the previous context on success, error or cancellation."""
+    token = _capture.set(records)
+    try:
+        yield
+    finally:
+        _capture.reset(token)
