@@ -80,7 +80,9 @@ The exporter separates event record construction, optional generation lookups,
 and exclusive file writes. The shared captured-ID reader retains capture order
 and duplicates. The collector and exporter each preserve their existing
 combination order, deduplication, and per-sample lookup cache behavior.
-Full native payloads and unknown fields remain intact.
+Full native payloads and unknown fields remain intact. Every exported record
+uses the same redaction policy, including errors without model events. That
+error-redaction correction has a separate regression test.
 The `transitivity` command delegates to the selected CLI module.
 
 A run failure remains the primary exception if finalization also fails. The
@@ -148,7 +150,6 @@ that check them. Fixtures prepare inputs; they do not calculate expected results
 Run the full suite with `uv run --locked pytest`. To check one responsibility,
 pass its directory, for example `uv run --locked pytest tests/openrouter`.
 The tests use mock models and HTTP responses, not paid model requests.
-
 
 ## Installed commands
 

@@ -122,7 +122,7 @@ JSON, and lookup durations. Each lookup has a 15-second timeout and up to three
 attempts for transient failures. It adds no new model generation, but adds
 metadata requests and wall-clock time. Lookup failures do not replace the model
 answer or fabricate usage. Samples that fail before the post-generation solver
-can be enriched later through the exporter.
+can be enriched later through the exporter when their logs retain model events.
 
 Generation details retain endpoint IDs, model permaslugs and complete
 `provider_responses` when reported. Missing identifiers remain unverified.
@@ -151,7 +151,10 @@ Exports retain the full native model events, project provenance, captured HTTP
 attempts, errors, retries, and generation details, linked to evaluation IDs,
 sample IDs, stable sample UIDs, and generation IDs. New JSON files are written
 under `openrouter_calls/` in the run directory. Original logs and earlier
-exports are preserved.
+exports are preserved. Records without model events keep the existing error
+summary format. Their errors use the same secret redaction as event records.
+Additional sample metadata remains in the native log; `--fetch` enriches records
+with model events.
 
 The optional `--fetch --include-stored-content` flags also query
 [`GET /generation/content`](https://openrouter.ai/docs/api/api-reference/generations/get-stored-prompt-completion-and-error-content-for-a-generation).

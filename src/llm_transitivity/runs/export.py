@@ -75,7 +75,7 @@ def export_log(
     for sample in log.samples or []:
         events = [event for event in sample.events if isinstance(event, ModelEvent)]
         if not events:
-            records.append(_empty_record(path, sample))
+            records.append(redact(_empty_record(path, sample), api_key or ""))
             continue
         lookup_cache = {}
         for number, event in enumerate(events, 1):

@@ -11,7 +11,7 @@ endpoint listings. A catalog entry does not establish access through our account
 ## Current preparation status
 
 Local checks passed again on November 5, 2026: 54,000 full records, 108 strata,
-and 540 selected cases; 175 tests; and both dry-runs (108 pilot tasks and six
+and 540 selected cases; 190 tests; and both dry-runs (108 pilot tasks and six
 preflight tasks). Original inputs and selected files remain unchanged. Ruff
 passes for package sources and tests. Global Ruff checks still report the
 existing lint and format failures in the preserved `runBenchmark.py`.
