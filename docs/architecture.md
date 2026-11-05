@@ -1,0 +1,20 @@
+# Experiment architecture
+
+The installed `llm_transitivity` package contains the experiment implementation.
+Root scripts keep the existing commands and public imports available.
+The historical runner and benchmark inputs remain outside the package.
+
+## Responsibilities
+
+- `domain`: cases, model catalog, execution policy, selection and response interpretation.
+- `datasets`: file validation, source comparison, pilot preparation and verification.
+- `evidence`: JSON representations, hashes and source metadata.
+- `openrouter`: HTTP capture, credential redaction and generation lookups.
+- `inspect`: tasks, solvers, scoring metrics and Flow configuration.
+- `runs`: result archives, exports and run execution.
+- `costs`: price queries and estimates from verified inputs.
+- `cli`: argument parsing and application composition.
+
+Domain imports have no filesystem, Git, HTTP or Inspect dependencies. JSON
+serialization and hashes use the same representations as the original manifest.
+Framework adapters translate the domain values into Inspect objects.

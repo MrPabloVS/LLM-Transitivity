@@ -1,7 +1,5 @@
 """Measure agreement with source labels and report response coverage."""
 
-import re
-
 from inspect_ai.scorer import (
     Metric,
     SampleScore,
@@ -12,6 +10,8 @@ from inspect_ai.scorer import (
     scorer,
 )
 from inspect_ai.solver import TaskState
+
+from llm_transitivity.domain.scoring import EXTRACTION_RULE, interpret_response
 
 
 @metric
@@ -80,29 +80,15 @@ def source_label_match() -> Scorer:
             raise ValueError("Expected a source-label target of yes or no")
         output = state.output
         raw = output.completion
-        answer = raw.strip().lower()
-        # Read an initial answer or a standalone answer on the final line.
-        match = re.match(r"^(?:answer:\s*)?(yes|no)(?=$|[\s.,!?:;])", answer)
-        position = "initial" if match else None
-        if not match:
-            match = re.fullmatch(
-                r"(?:answer:\s*)?(yes|no)[.!?]?", answer.split("\n")[-1].strip()
-            )
-            position = "final_line" if match else None
-        tokens = set(re.findall(r"\b(?:yes|no)\b", answer))
-        extracted = match.group(1) if match and len(tokens) == 1 else None
-        if output.error:
-            status = "error"
-        elif output.choices and output.stop_reason == "content_filter":
-            status = "content_filter"
-        elif not answer:
-            status = "empty"
-        elif len(tokens) > 1:
-            status = "ambiguous"
-        elif extracted is None:
-            status = "invalid_format"
-        else:
-            status = "answered"
+        interpretation = interpret_response(
+            raw,
+            error=bool(output.error),
+            content_filtered=bool(
+                output.choices and output.stop_reason == "content_filter"
+            ),
+        )
+        status = interpretation.status
+        extracted = interpretation.extracted_answer
         value = (
             ("C" if extracted == target.text else "I") if status == "answered" else "N"
         )
@@ -112,11 +98,11 @@ def source_label_match() -> Scorer:
             explanation="Compared with the source label; logical validity is not audited.",
             metadata={
                 "status": status,
-                "extraction_rule": "initial_or_final_line_v1",
-                "extraction_position": position if status == "answered" else None,
+                "extraction_rule": EXTRACTION_RULE,
+                "extraction_position": interpretation.extraction_position,
                 "expected": target.text,
                 "extracted_answer": extracted if status == "answered" else None,
-                "format_compliant": status == "answered" and answer in {"yes", "no"},
+                "format_compliant": interpretation.format_compliant,
             },
         )
 

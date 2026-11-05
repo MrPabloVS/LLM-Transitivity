@@ -1129,7 +1129,7 @@ wheels = [
 [[package]]
 name = "llm-transitivity"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "inspect-ai" },
     { name = "inspect-flow" },
