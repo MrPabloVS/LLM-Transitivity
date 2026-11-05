@@ -1,0 +1,16 @@
+[project]
+name = "llm-transitivity"
+version = "0.1.0"
+description = "Hypothetical syllogism benchmarks for language models"
+requires-python = ">=3.14"
+dependencies = [
+    "inspect-flow>=0.14.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
