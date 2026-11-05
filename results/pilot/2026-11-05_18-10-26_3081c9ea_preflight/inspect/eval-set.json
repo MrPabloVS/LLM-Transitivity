@@ -1,0 +1,136 @@
+{
+  "eval_set_id": "K5YBJBbBHx6nRUNC8UmMVX",
+  "tasks": [
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "NHnxJuRV4nPctzLepJzrTZ",
+      "task_file": "inspect_tasks.py",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 0
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "42idncUffdABfoonkt4Uwh",
+      "task_file": "inspect_tasks.py",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 1
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "FCkN4t9PNjV34D2GzSmo8v",
+      "task_file": "inspect_tasks.py",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 2
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "5NoxZN7sufGN4cWsGv9FSL",
+      "task_file": "inspect_tasks.py",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 3
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "6JgvdEMLauXEMsHA9yt7C5",
+      "task_file": "inspect_tasks.py",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20"
+      },
+      "model": "openrouter/google/gemini-2.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 4
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "jqvoZYVregvzQeRW4vDNK4",
+      "task_file": "inspect_tasks.py",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 5
+    }
+  ]
+}

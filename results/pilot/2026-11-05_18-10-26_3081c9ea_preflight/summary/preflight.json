@@ -1,0 +1,149 @@
+{
+  "command": "uv run --locked run_pilot.py --preflight",
+  "refresh_command": "uv run --locked collect_openrouter.py results/pilot/2026-11-05_18-10-26_3081c9ea_preflight --fetch",
+  "scope": "One unchanged source case across six models; six responses",
+  "total_cost_usd": "0.00215715",
+  "metadata_note": "Immediate generation lookups returned HTTP 404. Later read-only lookups returned HTTP 200 for all six calls. Original Inspect logs remain unchanged.",
+  "scoring_note": "Sonnet 4.5 ends with Yes after an explanation. The current initial-answer parser records invalid_format and does not extract that final answer. The raw response is preserved.",
+  "full_pilot_launched": false,
+  "rows": [
+    {
+      "model": "openrouter/openai/gpt-4o-mini",
+      "provider": "OpenAI",
+      "generation_id": "gen-1793913031-iEbuF6ush7c949V7bgvL",
+      "model_permaslug": null,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "http_attempts": 1,
+      "prompt_tokens": 74,
+      "completion_tokens": 1,
+      "reasoning_tokens": 0,
+      "cost_usd": 1.17e-05,
+      "response": "Yes",
+      "score": {
+        "status": "answered",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "generation_lookup_status": "available",
+      "inspect_log": "inspect/2026-11-05T21-10-29-00-00_zeroShot-HS-HF-FU-20_NHnxJuRV4nPctzLepJzrTZ.eval",
+      "refreshed_export": "openrouter_calls/2026-11-05T21-10-29-00-00_zeroShot-HS-HF-FU-20_NHnxJuRV4nPctzLepJzrTZ-e909044a5d10-afeec96f.json"
+    },
+    {
+      "model": "openrouter/openai/gpt-6-luna",
+      "provider": "OpenAI",
+      "generation_id": "gen-1793913035-3F5wxYb1wmpD9AAwNH4l",
+      "model_permaslug": null,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "http_attempts": 1,
+      "prompt_tokens": 73,
+      "completion_tokens": 5,
+      "reasoning_tokens": 0,
+      "cost_usd": 9.8e-06,
+      "response": "yes",
+      "score": {
+        "status": "answered",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "generation_lookup_status": "available",
+      "inspect_log": "inspect/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_42idncUffdABfoonkt4Uwh.eval",
+      "refreshed_export": "openrouter_calls/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_42idncUffdABfoonkt4Uwh-1d564bb35212-81c5a526.json"
+    },
+    {
+      "model": "openrouter/anthropic/claude-sonnet-5",
+      "provider": "Anthropic",
+      "generation_id": "gen-1793913048-oWKs0HXnaV4osAXxS1Nu",
+      "model_permaslug": null,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "http_attempts": 1,
+      "prompt_tokens": 95,
+      "completion_tokens": 4,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00023,
+      "response": "yes",
+      "score": {
+        "status": "answered",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "generation_lookup_status": "available",
+      "inspect_log": "inspect/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_5NoxZN7sufGN4cWsGv9FSL.eval",
+      "refreshed_export": "openrouter_calls/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_5NoxZN7sufGN4cWsGv9FSL-40e41c2b378c-2b874cfd.json"
+    },
+    {
+      "model": "openrouter/google/gemini-2.5-flash-lite",
+      "provider": "Google AI Studio",
+      "generation_id": "gen-1793913052-kMkhc01DiA5hvpIbIewJ",
+      "model_permaslug": null,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "http_attempts": 1,
+      "prompt_tokens": 65,
+      "completion_tokens": 1,
+      "reasoning_tokens": 0,
+      "cost_usd": 6.9e-06,
+      "response": "yes",
+      "score": {
+        "status": "answered",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "generation_lookup_status": "available",
+      "inspect_log": "inspect/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_6JgvdEMLauXEMsHA9yt7C5.eval",
+      "refreshed_export": "openrouter_calls/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_6JgvdEMLauXEMsHA9yt7C5-623af2bfa319-65c19ca3.json"
+    },
+    {
+      "model": "openrouter/anthropic/claude-sonnet-4.5",
+      "provider": "Anthropic",
+      "generation_id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+      "model_permaslug": null,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "http_attempts": 1,
+      "prompt_tokens": 72,
+      "completion_tokens": 111,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.001881,
+      "response": "Looking at this logical argument:\n\n**Premise 1:** If the man will love the school \u2192 the teacher will lose the newspaper\n**Premise 2:** If the teacher will lose the newspaper \u2192 the woman will see the chair\n**Conclusion:** If the man will love the school \u2192 the woman will see the chair\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A \u2192 B\n- If B \u2192 C\n- Therefore, if A \u2192 C\n\nYes",
+      "score": {
+        "status": "invalid_format",
+        "expected": "yes",
+        "extracted_answer": null,
+        "format_compliant": false
+      },
+      "generation_lookup_status": "available",
+      "inspect_log": "inspect/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_FCkN4t9PNjV34D2GzSmo8v.eval",
+      "refreshed_export": "openrouter_calls/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_FCkN4t9PNjV34D2GzSmo8v-ff92826697a4-f655d0f4.json"
+    },
+    {
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "provider": "Google AI Studio",
+      "generation_id": "gen-1793913056-33GC6wXIHU0oxidCMu6z",
+      "model_permaslug": null,
+      "sample_id": 20,
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "http_attempts": 1,
+      "prompt_tokens": 65,
+      "completion_tokens": 1,
+      "reasoning_tokens": 0,
+      "cost_usd": 1.775e-05,
+      "response": "yes",
+      "score": {
+        "status": "answered",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "generation_lookup_status": "available",
+      "inspect_log": "inspect/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_jqvoZYVregvzQeRW4vDNK4.eval",
+      "refreshed_export": "openrouter_calls/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_jqvoZYVregvzQeRW4vDNK4-c1e89f30d56a-84779a3e.json"
+    }
+  ]
+}

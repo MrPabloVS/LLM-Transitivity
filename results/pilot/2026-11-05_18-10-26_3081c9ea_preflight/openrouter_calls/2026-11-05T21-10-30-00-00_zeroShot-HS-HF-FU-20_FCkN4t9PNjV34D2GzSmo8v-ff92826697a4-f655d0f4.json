@@ -1,0 +1,755 @@
+[
+  {
+    "inspect_log": "results/pilot/2026-11-05_18-10-26_3081c9ea_preflight/inspect/2026-11-05T21-10-30-00-00_zeroShot-HS-HF-FU-20_FCkN4t9PNjV34D2GzSmo8v.eval",
+    "inspect_log_sha256": "5a284dfecdb8e1f7d0c44e9cf8121174de7ae24af8c7dbe603f9a41242d29112",
+    "inspect_eval_id": "Crb3eSru8tqyZavxoPfcQE",
+    "inspect_run_id": "gaVdJPvXe4Loyfed22rBta",
+    "experiment_run_id": "3081c9ea-cc44-4d16-bab3-1afa81b2e13f",
+    "sample_id": 20,
+    "sample_epoch": 1,
+    "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+    "model_event_index": 1,
+    "generation_id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+    "evaluation_metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "3081c9ea-cc44-4d16-bab3-1afa81b2e13f",
+      "configuration_created_utc": "2026-11-05T21:10:26.633752+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v2",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "d6c93dfddf7abae68f547244840c300b541ecc0f1905b38dedb28be7be5a95a7",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "54932a49eb93935705a863727d6a911f06194be1",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": true
+      },
+      "source_sha256": {
+        "flow.py": "150e41253c8b47fff75b298e2b067dd0c4c3e43f5c2218434f721748a2d48f32",
+        "pilot_config.py": "bd41cf80b7b9bcfa213d41de8b8cdbcf2378f9f3886c17cf910cf8551d93fced",
+        "inspect_tasks.py": "abad4b3f2383edb88510c7d5c9f70a66ac331dfdc7463729594bb46d704b00bb",
+        "inspect_scoring.py": "f4356107da8eb005ac374a9646fc776b1713ffa36d55e634167dd95e74306888",
+        "dataset_validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "prepare_pilot.py": "b0840ef99f3dc2d04e5e04ea5f5be94cc1b1a0348e3aa13ee763499188526942",
+        "experiment_metadata.py": "6335ca43bcb62ce8bc681f191dff074dd6e6d4b5ab78d00967ec50ffc44d1511",
+        "openrouter_telemetry.py": "ce451b66b6d0175de00f47ed3684f583e25ce15aa86f53b6a6eeeae1657642af",
+        "collect_openrouter.py": "10208cb3bef31ea5dbd2d961f3c0eb18c79d2c455d632053161dadcec3a2f3be",
+        "run_pilot.py": "41708b5e4038add160556d548141c7affcfb22fe8c67b471a52229fc50eaf9c0",
+        "pyproject.toml": "294cc06ba3048931fca04f3bb185fc91580461a443dffd2f4f36793702032f48",
+        "uv.lock": "7924684e3641e3ac475f9d6c4481d81ef4cb5c1c73d09dd706c3abbe03dc1226"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "disabled where supported",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 2
+      },
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-05_18-10-26_3081c9ea_preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "anthropic/claude-sonnet-4.5": "earlier",
+        "google/gemini-2.5-flash-lite": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-sonnet-5": "later",
+        "google/gemini-3.1-flash-lite": "later"
+      },
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "anthropic/claude-sonnet-4.5",
+      "generation_group": "earlier",
+      "requested_provider": "anthropic",
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "disabled"
+    },
+    "sample_metadata": {
+      "source_dataset": "pilot/HS_HF_FU_20",
+      "source_row": 1,
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "case_type": "HS",
+      "frequency": "HF",
+      "verbal_time": "FU",
+      "connectors": "if then / therefore",
+      "source_validity": "valid",
+      "canonical_form": "canonic",
+      "working_dataset": "HS_HF_FU_2000",
+      "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+      "original_row": 20,
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "original_record_sha256": "00efc2a68bbe13ae599309d4778dc1135e71c0c150a5d2744d911c2dd2e214ac",
+      "working_record_sha256": "00efc2a68bbe13ae599309d4778dc1135e71c0c150a5d2744d911c2dd2e214ac",
+      "original_labels": {
+        "validity": "valid",
+        "canonical_form": "canonic"
+      },
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "dataset_family": "HS",
+      "protocol": "zeroShot",
+      "expected_answer": "yes",
+      "label_basis": "source labels; logical validity not audited",
+      "logical_validity_audited": false,
+      "stratum_id": "aae97441d1c88703",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "tags": [
+        "family:HS",
+        "frequency:HF",
+        "tense:FU",
+        "validity:valid",
+        "form:canonic",
+        "connectors:if then / therefore"
+      ],
+      "openrouter_http_calls": [
+        {
+          "http_attempt": 1,
+          "request_started_utc": "2026-11-05T21:10:38.720238+00:00",
+          "method": "POST",
+          "url": "https://openrouter.ai/api/v1/chat/completions",
+          "request_headers": {
+            "host": "openrouter.ai",
+            "accept-encoding": "gzip, deflate, zstd",
+            "connection": "keep-alive",
+            "authorization": "[REDACTED]",
+            "accept": "application/json",
+            "content-type": "application/json",
+            "user-agent": "AsyncOpenAI/Python 3.41.0",
+            "x-stainless-lang": "python",
+            "x-stainless-package-version": "3.41.0",
+            "x-stainless-os": "MacOS",
+            "x-stainless-arch": "arm64",
+            "x-stainless-runtime": "CPython",
+            "x-stainless-runtime-version": "3.14.8",
+            "x-stainless-async": "async:asyncio",
+            "x-irid": "chzMreDLt6k94wp85s34AK",
+            "x-session-id": "92wGrFYqkAnUZQbUuQD4mK",
+            "x-stainless-retry-count": "0",
+            "x-stainless-read-timeout": "600.0",
+            "content-length": "519"
+          },
+          "request_body": {
+            "json": {
+              "model": "anthropic/claude-sonnet-4.5",
+              "messages": [
+                {
+                  "role": "system",
+                  "content": "Answer only with 'yes' or 'no' and nothing else."
+                },
+                {
+                  "role": "user",
+                  "content": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?"
+                }
+              ],
+              "max_tokens": 1024,
+              "provider": {
+                "only": [
+                  "anthropic"
+                ],
+                "allow_fallbacks": false,
+                "require_parameters": true
+              },
+              "reasoning": {
+                "enabled": false
+              }
+            }
+          },
+          "response_status": "received",
+          "response_received_utc": "2026-11-05T21:10:42.622413+00:00",
+          "http_status": 200,
+          "response_headers": {
+            "date": "Thu, 05 Nov 2026 21:10:42 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "access-control-allow-origin": "*",
+            "x-generation-id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+            "access-control-expose-headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-release": "api;66a79f0f-65f4-4e78-b931-4b09576f6d87",
+            "set-cookie": "[REDACTED]",
+            "permissions-policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "content-encoding": "gzip",
+            "server": "cloudflare",
+            "cf-ray": "a55ed8add945e425-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_body": {
+            "json": {
+              "id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+              "object": "chat.completion",
+              "created": 1793913039,
+              "model": "anthropic/claude-sonnet-4.5",
+              "provider": "Anthropic",
+              "system_fingerprint": null,
+              "service_tier": "default",
+              "choices": [
+                {
+                  "index": 0,
+                  "logprobs": null,
+                  "finish_reason": "stop",
+                  "native_finish_reason": "end_turn",
+                  "message": {
+                    "role": "assistant",
+                    "content": "Looking at this logical argument:\n\n**Premise 1:** If the man will love the school → the teacher will lose the newspaper\n**Premise 2:** If the teacher will lose the newspaper → the woman will see the chair\n**Conclusion:** If the man will love the school → the woman will see the chair\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nYes",
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 72,
+                "completion_tokens": 111,
+                "total_tokens": 183,
+                "cost": 0.001881,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": 0.001881,
+                  "upstream_inference_prompt_cost": 0.000216,
+                  "upstream_inference_completions_cost": 0.001665
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 0,
+                  "image_tokens": 0,
+                  "audio_tokens": 0
+                }
+              }
+            }
+          },
+          "http_seconds": 5.65225645800092
+        }
+      ],
+      "openrouter_calls": [
+        {
+          "generation_id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+          "lookup_status": "unavailable",
+          "generation": {
+            "endpoint": "generation",
+            "status": "unavailable",
+            "attempts": [
+              {
+                "fetched_at_utc": "2026-11-05T21:10:44.377828+00:00",
+                "http_status": 404,
+                "response_headers": {
+                  "Date": "Thu, 05 Nov 2026 21:10:44 GMT",
+                  "Content-Type": "application/json",
+                  "Transfer-Encoding": "chunked",
+                  "Connection": "keep-alive",
+                  "CF-Cache-Status": "BYPASS",
+                  "Access-Control-Allow-Origin": "*",
+                  "Cache-Control": "private, no-store",
+                  "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+                  "x-openrouter-error-origin": "client",
+                  "x-openrouter-release": "public-api;c520bdd6-4c0b-4952-a565-639ccd759723",
+                  "set-cookie": "[REDACTED]",
+                  "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+                  "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+                  "X-Content-Type-Options": "nosniff",
+                  "Content-Encoding": "gzip",
+                  "Server": "cloudflare",
+                  "CF-RAY": "a55ed8d14f511e9d-SCL",
+                  "alt-svc": "h3=\":443\"; ma=86400"
+                },
+                "response_json": {
+                  "error": {
+                    "message": "Generation gen-1793913039-OnF2LKrSpDF5xV5RQkDS not found",
+                    "code": 404
+                  }
+                },
+                "lookup_seconds": 0.765589832997648
+              },
+              {
+                "fetched_at_utc": "2026-11-05T21:10:45.395915+00:00",
+                "http_status": 404,
+                "response_headers": {
+                  "Date": "Thu, 05 Nov 2026 21:10:46 GMT",
+                  "Content-Type": "application/json",
+                  "Transfer-Encoding": "chunked",
+                  "Connection": "keep-alive",
+                  "CF-Cache-Status": "BYPASS",
+                  "Access-Control-Allow-Origin": "*",
+                  "Cache-Control": "private, no-store",
+                  "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+                  "x-openrouter-error-origin": "client",
+                  "x-openrouter-release": "public-api;c520bdd6-4c0b-4952-a565-639ccd759723",
+                  "set-cookie": "[REDACTED]",
+                  "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+                  "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+                  "X-Content-Type-Options": "nosniff",
+                  "Content-Encoding": "gzip",
+                  "Server": "cloudflare",
+                  "CF-RAY": "a55ed8d7980abae7-SCL",
+                  "alt-svc": "h3=\":443\"; ma=86400"
+                },
+                "response_json": {
+                  "error": {
+                    "message": "Generation gen-1793913039-OnF2LKrSpDF5xV5RQkDS not found",
+                    "code": 404
+                  }
+                },
+                "lookup_seconds": 1.5956581249993178
+              },
+              {
+                "fetched_at_utc": "2026-11-05T21:10:47.496589+00:00",
+                "http_status": 404,
+                "response_headers": {
+                  "Date": "Thu, 05 Nov 2026 21:10:47 GMT",
+                  "Content-Type": "application/json",
+                  "Transfer-Encoding": "chunked",
+                  "Connection": "keep-alive",
+                  "CF-Cache-Status": "BYPASS",
+                  "Access-Control-Allow-Origin": "*",
+                  "Cache-Control": "private, no-store",
+                  "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+                  "x-openrouter-error-origin": "client",
+                  "x-openrouter-release": "public-api;c520bdd6-4c0b-4952-a565-639ccd759723",
+                  "set-cookie": "[REDACTED]",
+                  "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+                  "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+                  "X-Content-Type-Options": "nosniff",
+                  "Content-Encoding": "gzip",
+                  "Server": "cloudflare",
+                  "CF-RAY": "a55ed8e4be46e9a1-SCL",
+                  "alt-svc": "h3=\":443\"; ma=86400"
+                },
+                "response_json": {
+                  "error": {
+                    "message": "Generation gen-1793913039-OnF2LKrSpDF5xV5RQkDS not found",
+                    "code": 404
+                  }
+                },
+                "lookup_seconds": 0.43749420899985125
+              }
+            ]
+          },
+          "stored_content": {
+            "status": "not requested; may require management-key access and stored content"
+          }
+        }
+      ]
+    },
+    "sample_error": null,
+    "model_event": {
+      "uuid": "cdsYSWPuvzxZSyDhGoKaEf",
+      "span_id": "cqJDcbyezo4uirTTnRFVG7",
+      "timestamp": "2026-11-05T21:10:38.716786+00:00",
+      "working_start": 0.0013429579994408414,
+      "metadata": null,
+      "pending": null,
+      "event": "model",
+      "model": "openrouter/anthropic/claude-sonnet-4.5",
+      "role": null,
+      "requested_model": null,
+      "origin": "agent",
+      "input": [
+        {
+          "id": "RizzNUwJcGF5YR3mhBpCmu",
+          "content": "Answer only with 'yes' or 'no' and nothing else.",
+          "source": "input",
+          "metadata": null,
+          "role": "system"
+        },
+        {
+          "id": "k8DH3ddhfkFBc8qjqfZsLU",
+          "content": "attachment://ef7bb8a60c4ea2d7a347655a2e1aa847",
+          "source": "input",
+          "metadata": null,
+          "role": "user",
+          "tool_call_id": null
+        }
+      ],
+      "input_refs": null,
+      "tools": [],
+      "tool_choice": "none",
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "attempt_timeout": null,
+        "stream_idle_timeout": null,
+        "max_connections": 2,
+        "adaptive_connections": null,
+        "system_message": null,
+        "max_tokens": 1024,
+        "top_p": null,
+        "temperature": null,
+        "stop_seqs": null,
+        "best_of": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "logit_bias": null,
+        "seed": null,
+        "top_k": null,
+        "num_choices": null,
+        "logprobs": null,
+        "top_logprobs": null,
+        "prompt_logprobs": null,
+        "parallel_tool_calls": null,
+        "internal_tools": null,
+        "max_tool_output": null,
+        "cache_prompt": false,
+        "fallback_models": null,
+        "fail_on_refusal": null,
+        "verbosity": null,
+        "effort": null,
+        "reasoning_effort": null,
+        "reasoning_mode": null,
+        "reasoning_tokens": null,
+        "reasoning_summary": null,
+        "reasoning_history": null,
+        "response_schema": null,
+        "extra_headers": null,
+        "extra_body": null,
+        "modalities": null,
+        "cache": null,
+        "batch": null
+      },
+      "output": {
+        "model": "anthropic/claude-sonnet-4.5",
+        "choices": [
+          {
+            "message": {
+              "id": "SYRNQgHjJcGFPcQBcNBK78",
+              "content": "attachment://9bcaf043a3f1a8ebfc432ad678d7d4d1",
+              "source": "generate",
+              "metadata": null,
+              "role": "assistant",
+              "tool_calls": null,
+              "model": "anthropic/claude-sonnet-4.5"
+            },
+            "stop_reason": "stop",
+            "stop_details": null,
+            "logprobs": null,
+            "prompt_logprobs": null
+          }
+        ],
+        "completion": "Looking at this logical argument:\n\n**Premise 1:** If the man will love the school → the teacher will lose the newspaper\n**Premise 2:** If the teacher will lose the newspaper → the woman will see the chair\n**Conclusion:** If the man will love the school → the woman will see the chair\n\nThis is a valid application of the **hypothetical syllogism** (chain rule):\n- If A → B\n- If B → C\n- Therefore, if A → C\n\nYes",
+        "usage": {
+          "input_tokens": 72,
+          "output_tokens": 111,
+          "total_tokens": 183,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0,
+          "total_cost": null
+        },
+        "input_context_tokens": 72,
+        "fallback": null,
+        "time": 5.652704624997568,
+        "metadata": null,
+        "error": null,
+        "response_id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS"
+      },
+      "retries": null,
+      "request_ids": null,
+      "error": null,
+      "traceback": null,
+      "traceback_ansi": null,
+      "cache": null,
+      "call": {
+        "request": {
+          "tools": null,
+          "tool_choice": null,
+          "extra_headers": {
+            "x-irid": "chzMreDLt6k94wp85s34AK",
+            "x-session-id": "92wGrFYqkAnUZQbUuQD4mK"
+          },
+          "model": "anthropic/claude-sonnet-4.5",
+          "max_tokens": 1024,
+          "extra_body": {
+            "provider": {
+              "only": [
+                "anthropic"
+              ],
+              "allow_fallbacks": false,
+              "require_parameters": true
+            },
+            "reasoning": {
+              "enabled": false
+            }
+          },
+          "messages": [
+            {
+              "role": "system",
+              "content": "Answer only with 'yes' or 'no' and nothing else."
+            },
+            {
+              "role": "user",
+              "content": "attachment://ef7bb8a60c4ea2d7a347655a2e1aa847"
+            }
+          ]
+        },
+        "response": {
+          "id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "attachment://9bcaf043a3f1a8ebfc432ad678d7d4d1",
+                "refusal": null,
+                "role": "assistant",
+                "annotations": null,
+                "audio": null,
+                "function_call": null,
+                "tool_calls": null,
+                "reasoning": null
+              },
+              "native_finish_reason": "end_turn"
+            }
+          ],
+          "created": 1793913039,
+          "model": "anthropic/claude-sonnet-4.5",
+          "object": "chat.completion",
+          "metadata": null,
+          "moderation": null,
+          "service_tier": "default",
+          "system_fingerprint": null,
+          "usage": {
+            "completion_tokens": 111,
+            "prompt_tokens": 72,
+            "total_tokens": 183,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": null,
+              "text_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "image_tokens": null,
+              "text_tokens": null,
+              "video_tokens": 0
+            },
+            "cost": 0.001881,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.001881,
+              "upstream_inference_prompt_cost": 0.000216,
+              "upstream_inference_completions_cost": 0.001665
+            }
+          },
+          "provider": "Anthropic"
+        },
+        "error": null,
+        "time": 5.652704624997568,
+        "call_refs": null,
+        "call_key": null
+      },
+      "completed": "2026-11-05T21:10:44.376331+00:00",
+      "working_time": 5.652704624997568
+    },
+    "generation_lookups": [
+      {
+        "generation_id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+        "lookup_status": "available",
+        "generation": {
+          "endpoint": "generation",
+          "status": "available",
+          "attempts": [
+            {
+              "fetched_at_utc": "2026-11-05T21:12:58.515602+00:00",
+              "http_status": 200,
+              "response_headers": {
+                "Date": "Thu, 05 Nov 2026 21:12:58 GMT",
+                "Content-Type": "application/json",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "CF-Cache-Status": "BYPASS",
+                "Access-Control-Allow-Origin": "*",
+                "Cache-Control": "private, no-store",
+                "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+                "x-openrouter-release": "public-api;c520bdd6-4c0b-4952-a565-639ccd759723",
+                "set-cookie": "[REDACTED]",
+                "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+                "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+                "X-Content-Type-Options": "nosniff",
+                "Content-Encoding": "gzip",
+                "Server": "cloudflare",
+                "CF-RAY": "a55edc165cae13b4-SCL",
+                "alt-svc": "h3=\":443\"; ma=86400"
+              },
+              "response_json": {
+                "data": {
+                  "created_at": "2026-11-05T21:10:39.021Z",
+                  "model": "anthropic/claude-4.5-sonnet-20250929",
+                  "app_id": null,
+                  "external_user": null,
+                  "streamed": true,
+                  "cancelled": false,
+                  "latency": 2798,
+                  "moderation_latency": null,
+                  "generation_time": 4524,
+                  "tokens_prompt": 70,
+                  "tokens_completion": 110,
+                  "native_tokens_prompt": 72,
+                  "native_tokens_completion": 111,
+                  "native_tokens_completion_images": null,
+                  "native_tokens_reasoning": 0,
+                  "native_tokens_cached": 0,
+                  "num_media_prompt": null,
+                  "num_input_audio_prompt": null,
+                  "num_media_completion": 0,
+                  "num_search_results": null,
+                  "num_fetches": null,
+                  "web_search_engine": null,
+                  "origin": "",
+                  "is_byok": false,
+                  "finish_reason": "stop",
+                  "native_finish_reason": "end_turn",
+                  "service_tier": "default",
+                  "usage": 0.001881,
+                  "router": null,
+                  "user_agent": "AsyncOpenAI/Python 3.41.0",
+                  "http_referer": null,
+                  "request_id": "req-1793913039-rliHjKgtMYoI6UZ40dnK",
+                  "session_id": "92wGrFYqkAnUZQbUuQD4mK",
+                  "preset_id": null,
+                  "api_type": "completions",
+                  "id": "gen-1793913039-OnF2LKrSpDF5xV5RQkDS",
+                  "upstream_id": "msg_011CgkU69jA146SsiFukJYh6",
+                  "provider_responses": [
+                    {
+                      "endpoint_id": "f2e829ec-4a2c-45c4-9657-fd5998271267",
+                      "id": "msg_011CgkU69jA146SsiFukJYh6",
+                      "is_byok": false,
+                      "latency": 2798,
+                      "model_permaslug": "anthropic/claude-4.5-sonnet-20250929",
+                      "provider_name": "Anthropic",
+                      "status": 200
+                    }
+                  ],
+                  "total_cost": 0.001881,
+                  "cache_discount": null,
+                  "upstream_inference_cost": 0,
+                  "provider_name": "Anthropic",
+                  "response_cache_source_id": null,
+                  "data_region": "global",
+                  "workspace_id": "3ba3c3ca-c0a0-543f-92df-62fe5b24377e"
+                }
+              },
+              "lookup_seconds": 0.4726852079984383
+            }
+          ]
+        },
+        "stored_content": {
+          "status": "not requested; may require management-key access and stored content"
+        },
+        "reported": {
+          "provider_name": "Anthropic",
+          "model": "anthropic/claude-4.5-sonnet-20250929",
+          "request_id": "req-1793913039-rliHjKgtMYoI6UZ40dnK",
+          "upstream_id": "msg_011CgkU69jA146SsiFukJYh6",
+          "total_cost": 0.001881,
+          "native_tokens_prompt": 72,
+          "native_tokens_completion": 111,
+          "native_tokens_reasoning": 0,
+          "native_tokens_cached": 0,
+          "finish_reason": "stop",
+          "native_finish_reason": "end_turn",
+          "latency": 2798,
+          "generation_time": 4524,
+          "moderation_latency": null,
+          "is_byok": false,
+          "service_tier": "default",
+          "data_region": "global"
+        }
+      }
+    ]
+  }
+]

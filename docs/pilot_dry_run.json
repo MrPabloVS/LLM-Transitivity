@@ -7,18 +7,18 @@
   "planned_responses": 3240,
   "completed_samples": 0,
   "manifest_sha256": "d6c93dfddf7abae68f547244840c300b541ecc0f1905b38dedb28be7be5a95a7",
-  "config_sha256": "3484e61eed9fa4fa7d8b99c0df50eef56d54426867139dfed032fc74e4f93752",
+  "config_sha256": "4345ef44888b7f0e21b3ed1741bdaab070ff6a72dd6a1e26da317251995c0b5f",
   "note": "Dry run only. Model calls, provider access, billing and runtime reasoning behavior were not tested.",
   "source_sha256": {
     "flow.py": "150e41253c8b47fff75b298e2b067dd0c4c3e43f5c2218434f721748a2d48f32",
-    "pilot_config.py": "3484e61eed9fa4fa7d8b99c0df50eef56d54426867139dfed032fc74e4f93752",
+    "pilot_config.py": "4345ef44888b7f0e21b3ed1741bdaab070ff6a72dd6a1e26da317251995c0b5f",
     "inspect_tasks.py": "abad4b3f2383edb88510c7d5c9f70a66ac331dfdc7463729594bb46d704b00bb",
-    "inspect_scoring.py": "f4356107da8eb005ac374a9646fc776b1713ffa36d55e634167dd95e74306888",
-    "experiment_metadata.py": "8293d0d2f1afcffee30539cfe7392213248c4c1d51363fa8a74c026a43d772e6",
+    "inspect_scoring.py": "b6802768d9d5f20a8f2124dad68980ff48ac9ab8d8ff6336bf73a5f78b06807f",
+    "experiment_metadata.py": "6335ca43bcb62ce8bc681f191dff074dd6e6d4b5ab78d00967ec50ffc44d1511",
     "openrouter_telemetry.py": "ce451b66b6d0175de00f47ed3684f583e25ce15aa86f53b6a6eeeae1657642af",
     "collect_openrouter.py": "10208cb3bef31ea5dbd2d961f3c0eb18c79d2c455d632053161dadcec3a2f3be",
-    "run_pilot.py": "a45adc653e0e55dc08d89de43190eaddd4591d25547cb9034c91915253e2dde2"
+    "run_pilot.py": "41708b5e4038add160556d548141c7affcfb22fe8c67b471a52229fc50eaf9c0"
   },
   "managed_entrypoint": "uv run --locked run_pilot.py",
-  "results_layout": "results/pilot/<Buenos-Aires-date-time>_<run-id>/{inspect,openrouter_calls,provenance,summary}"
+  "results_layout": "results/pilot/<Buenos-Aires-date-time>-<run-id>/{inspect,openrouter_calls,provenance,summary}"
 }
