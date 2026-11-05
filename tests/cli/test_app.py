@@ -1,13 +1,11 @@
 """Check installed command routing without external model requests."""
 
-from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
 
 from llm_transitivity.cli import app
-
-ROOT = Path(__file__).resolve().parents[1]
+from tests.paths import PROJECT_ROOT
 
 
 @pytest.mark.parametrize("command", app.COMMANDS)
@@ -26,13 +24,13 @@ def test_command_help_works_without_repository_or_requests(
 
 
 def test_root_discovery_from_nested_directory(monkeypatch):
-    monkeypatch.chdir(ROOT / "src/llm_transitivity")
-    assert app.repository_root(None) == ROOT
+    monkeypatch.chdir(PROJECT_ROOT / "src/llm_transitivity")
+    assert app.repository_root(None) == PROJECT_ROOT
 
 
 def test_explicit_root_from_outside_project(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
-    assert app.repository_root(ROOT) == ROOT
+    assert app.repository_root(PROJECT_ROOT) == PROJECT_ROOT
     with pytest.raises(ValueError, match="--root"):
         app.repository_root(None)
 
@@ -40,9 +38,9 @@ def test_explicit_root_from_outside_project(tmp_path, monkeypatch):
 def test_dispatch_passes_root_and_command_arguments(monkeypatch):
     module = Mock()
     monkeypatch.setattr(app.importlib, "import_module", Mock(return_value=module))
-    app.main(["--root", str(ROOT), "pilot", "--preflight", "--dry-run"])
-    module.main.assert_called_once_with(ROOT, ["--preflight", "--dry-run"])
+    app.main(["--root", str(PROJECT_ROOT), "pilot", "--preflight", "--dry-run"])
+    module.main.assert_called_once_with(PROJECT_ROOT, ["--preflight", "--dry-run"])
 
 
 def test_only_historical_python_script_remains_in_root():
-    assert {path.name for path in ROOT.glob("*.py")} == {"runBenchmark.py"}
+    assert {path.name for path in PROJECT_ROOT.glob("*.py")} == {"runBenchmark.py"}

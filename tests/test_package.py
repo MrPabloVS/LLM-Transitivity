@@ -3,6 +3,8 @@
 import subprocess
 import sys
 
+from tests.paths import PROJECT_ROOT
+
 
 def test_domain_imports_have_no_framework_or_network_dependencies():
     subprocess.run(
@@ -57,9 +59,8 @@ forbidden.assert_not_called()
 
 
 def test_managed_dry_run_works_outside_repository(tmp_path):
-    from pathlib import Path
 
-    root = Path(__file__).resolve().parents[1]
+    root = PROJECT_ROOT
     results = root / "results/pilot"
     before = {path.name for path in results.glob("*")}
     subprocess.run(

@@ -1,6 +1,6 @@
-from decimal import Decimal
+"""Check estimates against fixed quotes without starting a run."""
 
-from llm_transitivity.costs.calculation import generation_cost
+from tests.paths import PROJECT_ROOT
 
 FLEX_TOTALS = {
     "short_4_output_tokens_usd": 0.34827775,
@@ -10,40 +10,10 @@ FLEX_TOTALS = {
 }
 
 
-def test_cost_includes_failed_attempts_and_request_charges():
-    assert (
-        generation_cost(
-            1000000,
-            1000,
-            3,
-            cases=1000,
-            input_price=Decimal("0.000001"),
-            output_price=Decimal("0.000002"),
-            request_price=Decimal("0.0001"),
-        )
-        == 9.3
-    )
-
-
-def test_no_generated_tokens_still_accounts_for_input():
-    assert (
-        generation_cost(
-            1000000,
-            0,
-            cases=1000,
-            input_price=Decimal("0.000001"),
-            output_price=Decimal("0.000002"),
-            request_price=Decimal(0),
-        )
-        == 1
-    )
-
-
 def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     import json
     import subprocess
     import uuid
-    from pathlib import Path
     from unittest.mock import Mock
 
     import pytest
@@ -54,7 +24,7 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     from llm_transitivity.evidence.serialization import digest
     from llm_transitivity.inspect import flow as pilot_config
 
-    root = Path(__file__).resolve().parents[1]
+    root = PROJECT_ROOT
     quotes = {}
     for model in MODEL_SPECS:
         path = (

@@ -93,6 +93,31 @@ The full-corpus verifier reproduces the existing generated inventory bytes.
 The inventory retains its original command text for this check. Use installed
 commands for current operations. Current readiness belongs in the pilot guide.
 
+## Test responsibilities
+
+The test folders follow the component boundaries:
+
+- `tests/datasets`: record validation, corpus coverage, and pilot evidence protection.
+- `tests/inspect`: sample adaptation, source fidelity, scoring, Flow, and SDK capture.
+- `tests/openrouter`: generation lookups, retry records, and credential redaction.
+- `tests/runs`: result archives, finalization, and error precedence.
+- `tests/costs`: arithmetic, fixed endpoint quotes, estimates, and estimate archives.
+- `tests/cli`: command dispatch, help, and repository selection.
+- `tests/test_package.py`: import boundaries and execution outside the repository.
+
+`tests/paths.py` locates the repository once. Shared mock run specifications are
+function-scoped fixtures in `tests/conftest.py`. They create independent mutable
+state and import Inspect only when used. Source mutation tests share an isolated
+repository fixture under `tests/inspect/conftest.py`. HTTP response construction
+lives in `tests/support/http.py`; test modules do not import other test modules.
+Expected routes, prices, targets, and provenance assertions stay in the tests
+that check them. Fixtures prepare inputs; they do not calculate expected results.
+
+Run the full suite with `uv run --locked pytest`. To check one responsibility,
+pass its directory, for example `uv run --locked pytest tests/openrouter`.
+The tests use mock models and HTTP responses, not paid model requests.
+
+
 ## Installed commands
 
 ```sh

@@ -1,7 +1,6 @@
 """Check the six approved routes through the real SDK with mocked HTTP."""
 
 import json
-from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
@@ -12,8 +11,8 @@ from inspect_ai.model import get_model
 from llm_transitivity.inspect.flow import build_pilot_spec
 from llm_transitivity.openrouter import client
 from llm_transitivity.runs.export import export_log
+from tests.paths import PROJECT_ROOT
 
-ROOT = Path(__file__).resolve().parents[1]
 ROUTES = [
     ("openai/gpt-4o-mini", "openai", "default"),
     ("openai/gpt-6-luna", "openai/flex", "flex"),
@@ -26,7 +25,7 @@ ROUTES = [
 
 @pytest.fixture(scope="module")
 def spec():
-    return build_pilot_spec(ROOT, preflight=True)
+    return build_pilot_spec(PROJECT_ROOT, preflight=True)
 
 
 @pytest.mark.parametrize("model,endpoint,tier", ROUTES)

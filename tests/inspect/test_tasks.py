@@ -1,18 +1,18 @@
 import json
-from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
 
 from llm_transitivity.inspect import tasks as inspect_tasks
-
-ROOT = Path(__file__).resolve().parents[1]
+from tests.paths import PROJECT_ROOT
 
 
 def test_trial_preserves_all_prompts_and_metadata():
-    rows = json.loads((ROOT / "datasets" / "HS.json").read_text())
-    system = json.loads((ROOT / "prompts/systemPrompts/zeroShot.json").read_text())[0]
-    evaluation = inspect_tasks.hs_zero_shot(root=str(ROOT))
+    rows = json.loads((PROJECT_ROOT / "datasets" / "HS.json").read_text())
+    system = json.loads(
+        (PROJECT_ROOT / "prompts/systemPrompts/zeroShot.json").read_text()
+    )[0]
+    evaluation = inspect_tasks.hs_zero_shot(root=str(PROJECT_ROOT))
     assert len(evaluation.dataset) == len(rows) == 10
     assert evaluation.scorer is not None
     for number, (sample, row) in enumerate(zip(evaluation.dataset, rows), start=1):

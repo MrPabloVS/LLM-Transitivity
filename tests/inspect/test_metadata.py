@@ -2,19 +2,16 @@ import json
 from pathlib import Path
 
 from inspect_ai.log import read_eval_log
-from inspect_ai.model import GenerateConfig
-from inspect_flow import FlowModel
 from inspect_flow.api import run
 
 from llm_transitivity.evidence.metadata import EXPERIMENT_ID
 from llm_transitivity.inspect.flow import build_pilot_spec
-
-ROOT = Path(__file__).resolve().parents[1]
+from tests.paths import PROJECT_ROOT
 
 
 def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
     monkeypatch.setenv("OPENROUTER_API_KEY", "test-secret-must-not-be-recorded")
-    spec = build_pilot_spec(ROOT)
+    spec = build_pilot_spec(PROJECT_ROOT)
     md = spec.options.metadata
     assert "test-secret-must-not-be-recorded" not in json.dumps(md)
     assert md["experiment_id"] == EXPERIMENT_ID
@@ -44,17 +41,8 @@ def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
         assert f"provider:{task.metadata['requested_provider']}" in task.tags
 
 
-def test_metadata_survives_flow_and_eval_log_serialization(tmp_path):
-    spec = build_pilot_spec(ROOT)
-    spec.tasks = [spec.tasks[0]]
-    # Replace the live backend. This test has no external model calls.
-    spec.tasks[0].model = FlowModel(
-        name="mockllm/model", config=GenerateConfig(max_tokens=1024)
-    )
-    spec.log_dir = str(tmp_path)
-    spec.log_dir_create_unique = False
-    spec.options.limit = 1
-    spec.options.display = "none"
+def test_metadata_survives_flow_and_eval_log_serialization(mock_run_spec):
+    spec = mock_run_spec
     result = run(spec=spec)
     assert result.success
     paths = list(Path(result.log_dir).rglob("*.eval"))
@@ -103,9 +91,7 @@ def test_policy_changes_reach_both_execution_and_metadata(monkeypatch):
         reasoning_enabled=True,
     )
     monkeypatch.setattr(pilot_config, "GENERATION_POLICY", policy)
-    spec = pilot_config.build_pilot_spec(
-        Path(__file__).resolve().parents[1], preflight=True
-    )
+    spec = pilot_config.build_pilot_spec(PROJECT_ROOT, preflight=True)
     assert spec.options.metadata["generation_policy"] == policy.metadata()
     assert spec.options.metadata["openrouter_capture"]["streaming"] is True
     assert spec.options.max_tasks == 2

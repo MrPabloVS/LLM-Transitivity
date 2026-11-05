@@ -1,7 +1,6 @@
 """Preserve every complete source record through the Inspect adapter."""
 
 import json
-from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
@@ -10,19 +9,18 @@ from llm_transitivity.datasets import pilot
 from llm_transitivity.datasets.corpus import MAIN_REVISION
 from llm_transitivity.evidence.serialization import record_digest
 from llm_transitivity.inspect import tasks
-
-ROOT = Path(__file__).resolve().parents[1]
+from tests.paths import PROJECT_ROOT
 
 
 @pytest.mark.parametrize("name", pilot.dataset_names())
 def test_all_full_records_reach_inspect_from_main(name):
     family, frequency, tense, count = name.split("_")
     source_path = f"prompts/userPrompts/{family}_{frequency}_{tense}_500_complete.json"
-    original = json.loads(pilot.git_bytes(ROOT, MAIN_REVISION, source_path))
-    evaluation = tasks.hs_zero_shot(name, root=str(ROOT))
+    original = json.loads(pilot.git_bytes(PROJECT_ROOT, MAIN_REVISION, source_path))
+    evaluation = tasks.hs_zero_shot(name, root=str(PROJECT_ROOT))
     assert len(evaluation.dataset) == int(count) == len(original)
     assert evaluation.metadata["provenance"]["original_revision"] == MAIN_REVISION
-    assert evaluation.dataset.location == str(ROOT / f"datasets/{name}.json")
+    assert evaluation.dataset.location == str(PROJECT_ROOT / f"datasets/{name}.json")
     for number, (sample, before) in enumerate(zip(evaluation.dataset, original), 1):
         expected = before.copy()
         if name in pilot.TRANSLATED:
@@ -57,20 +55,13 @@ def test_all_full_records_reach_inspect_from_main(name):
     "change", ["space", "unicode", "label", "identifier", "order", "original", "system"]
 )
 def test_full_dataset_corruption_stops_before_solver_setup(
-    tmp_path, monkeypatch, change
+    copy_source_files, monkeypatch, change
 ):
     name = "HS_LF_PR_2000"
     original_path = "prompts/userPrompts/HS_LF_PR_500_complete.json"
     system_path = "prompts/systemPrompts/zeroShot.json"
     working_path = f"datasets/{name}.json"
-    baseline = {}
-    for relative in (original_path, system_path, working_path):
-        source = ROOT / relative
-        target = tmp_path / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_bytes(source.read_bytes())
-        baseline[relative] = source.read_bytes()
-    monkeypatch.setattr(pilot, "git_bytes", lambda root, revision, path: baseline[path])
+    tmp_path = copy_source_files([original_path, system_path, working_path])
     if change in {"original", "system"}:
         path = tmp_path / (original_path if change == "original" else system_path)
         path.write_bytes(path.read_bytes() + b" ")
@@ -99,7 +90,7 @@ def test_full_dataset_corruption_stops_before_solver_setup(
 def test_numeric_source_id_type_changes_are_rejected(tmp_path, monkeypatch):
     name = "HS_HF_PR_2000"
     original_path = "prompts/userPrompts/HS_HF_PR_500_complete.json"
-    before = json.loads((ROOT / original_path).read_text())
+    before = json.loads((PROJECT_ROOT / original_path).read_text())
     before[0][1] = 1
     after = json.loads(json.dumps(before))
     after[0][1] = True

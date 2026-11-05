@@ -1,11 +1,10 @@
 import json
-from pathlib import Path
 
 import pytest
 
 from llm_transitivity.datasets.validation import load_dataset
+from tests.paths import PROJECT_ROOT
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CASE = [
     "HS",
     [["S1", "V1", "O1"]],
