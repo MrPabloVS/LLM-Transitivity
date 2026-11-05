@@ -51,7 +51,7 @@ manual relaunch of the pilot.
 The budget amount and enforcement mechanism are not yet agreed or configured.
 Choose them before the full pilot. The authorized six-call preflight cost
 USD 0.00215715. It confirmed the fixed providers and zero reported reasoning
-tokens. See [the preflight results](pilot_preflight.md). Missing usage must
+tokens. See [the retired preflight summary](pilot_preflight.md). Missing usage must
 remain unresolved, not zero.
 
 Recalculate current quotes and assumptions with:
