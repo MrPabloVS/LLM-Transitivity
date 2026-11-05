@@ -41,9 +41,10 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
 
     import pytest
 
-    import estimate_pilot_cost
     import pilot_config
     from experiment_config import GENERATION_POLICY
+    from llm_transitivity.costs import estimate as estimate_pilot_cost
+    from llm_transitivity.costs import pricing
     from prepare_pilot import digest
 
     root = Path(__file__).resolve().parents[1]
@@ -81,8 +82,8 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
         assert command[:1] == ["git"] and command[3] == "show", command
         return original_check_output(command, **kwargs)
 
-    monkeypatch.setattr(estimate_pilot_cost.requests, "get", get)
-    monkeypatch.setattr(estimate_pilot_cost.requests, "post", forbidden)
+    monkeypatch.setattr(pricing.requests, "get", get)
+    monkeypatch.setattr(pricing.requests, "post", forbidden)
     monkeypatch.setattr(pilot_config, "build_pilot_spec", forbidden)
     monkeypatch.setattr(uuid, "uuid4", forbidden)
     monkeypatch.setattr(subprocess, "check_output", baseline_only)
@@ -101,6 +102,8 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     assert report["experiment_config_sha256"] == digest(
         (root / "experiment_config.py").read_bytes()
     )
+    assert "src/llm_transitivity/costs/estimate.py" in report["source_sha256"]
+    assert "src/llm_transitivity/costs/pricing.py" in report["source_sha256"]
     assert saved_path.read_bytes() == saved_bytes
 
 

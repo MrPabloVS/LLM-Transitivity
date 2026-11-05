@@ -57,3 +57,11 @@ Managed tasks use a generation solver with a bounded capture context. It resets
 the context on success, error and cancellation while retaining captured attempts
 in sample metadata. Concurrent samples have separate contexts. Legacy pre-hook
 exports remain available for compatibility; managed tasks use the bounded solver.
+
+## Cost estimates
+
+The estimator verifies inputs, reads the shared domain policy and requests only
+public provider quotes. Price retrieval is separate from arithmetic. It creates
+no Inspect tasks or run identity. Future reports keep the existing entry-point
+hashes and add hashes of the package sources that implement the calculation.
+Historical price snapshots remain unchanged.

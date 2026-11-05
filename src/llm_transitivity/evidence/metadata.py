@@ -46,6 +46,8 @@ def run_metadata(
         "openrouter_telemetry.py",
         "collect_openrouter.py",
         "run_pilot.py",
+        "estimate_pilot_cost.py",
+        ".python-version",
         "pyproject.toml",
         "uv.lock",
     ]
@@ -91,6 +93,7 @@ def run_metadata(
                     "openai",
                     "python-dotenv",
                     "requests",
+                    "tiktoken",
                 ]
             },
         },
