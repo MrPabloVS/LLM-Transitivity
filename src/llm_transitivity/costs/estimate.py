@@ -82,11 +82,15 @@ def estimate(root: Path) -> dict:
             path: digest((root / path).read_bytes()) for path in package_sources(root)
         },
         "checked_at_utc": datetime.now(UTC).isoformat(),
-        "estimator_sha256": digest((root / "estimate_pilot_cost.py").read_bytes()),
+        "estimator_sha256": digest(
+            (root / "src/llm_transitivity/costs/estimate.py").read_bytes()
+        ),
         "manifest_sha256": digest((root / MANIFEST).read_bytes()),
-        "configuration_sha256": digest((root / "pilot_config.py").read_bytes()),
+        "configuration_sha256": digest(
+            (root / "src/llm_transitivity/inspect/flow.py").read_bytes()
+        ),
         "experiment_config_sha256": digest(
-            (root / "experiment_config.py").read_bytes()
+            (root / "src/llm_transitivity/domain/config.py").read_bytes()
         ),
         "pilot_cases_per_model": len(prompts),
         "models": len(MODEL_SPECS),

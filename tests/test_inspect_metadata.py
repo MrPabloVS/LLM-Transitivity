@@ -6,13 +6,15 @@ from inspect_ai.model import GenerateConfig
 from inspect_flow import FlowModel
 from inspect_flow.api import run
 
-from experiment_metadata import EXPERIMENT_ID
-from pilot_config import build_pilot_spec
+from llm_transitivity.evidence.metadata import EXPERIMENT_ID
+from llm_transitivity.inspect.flow import build_pilot_spec
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
     monkeypatch.setenv("OPENROUTER_API_KEY", "test-secret-must-not-be-recorded")
-    spec = build_pilot_spec()
+    spec = build_pilot_spec(ROOT)
     md = spec.options.metadata
     assert "test-secret-must-not-be-recorded" not in json.dumps(md)
     assert md["experiment_id"] == EXPERIMENT_ID
@@ -20,10 +22,10 @@ def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
     assert md["git"]["revision"]
     assert md["runtime"]["packages"]["inspect-ai"]
     assert set(md["source_sha256"]) >= {
-        "inspect_tasks.py",
-        "inspect_scoring.py",
-        "experiment_config.py",
-        "benchmark_cases.py",
+        "src/llm_transitivity/inspect/tasks.py",
+        "src/llm_transitivity/inspect/scoring.py",
+        "src/llm_transitivity/domain/config.py",
+        "src/llm_transitivity/domain/cases.py",
         "uv.lock",
     }
     assert (
@@ -42,7 +44,7 @@ def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
 
 
 def test_metadata_survives_flow_and_eval_log_serialization(tmp_path):
-    spec = build_pilot_spec()
+    spec = build_pilot_spec(ROOT)
     spec.tasks = [spec.tasks[0]]
     # Replace the live backend. This test has no external model calls.
     spec.tasks[0].model = FlowModel(
@@ -79,7 +81,7 @@ def test_metadata_survives_flow_and_eval_log_serialization(tmp_path):
 def test_policy_changes_reach_both_execution_and_metadata(monkeypatch):
     from dataclasses import replace
 
-    from experiment_config import GENERATION_POLICY
+    from llm_transitivity.domain.config import GENERATION_POLICY
     from llm_transitivity.inspect import flow as pilot_config
 
     policy = replace(

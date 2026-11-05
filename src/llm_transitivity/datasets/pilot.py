@@ -155,6 +155,7 @@ def construct(root: Path, revision: str, count: int) -> tuple[dict, dict]:
 
 
 def inventory(manifest: dict) -> str:
+    # Retain historical command text to verify the existing inventory bytes.
     entries = manifest["datasets"]
     strata = sum(len(e["strata"]) for e in entries)
     population = sum(e["case_count"] for e in entries)

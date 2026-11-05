@@ -7,13 +7,13 @@ from pathlib import Path
 from llm_transitivity.datasets.pilot import prepare, verify
 
 
-def main(root: Path) -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
+def main(root: Path, argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(prog="transitivity datasets", description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     build = commands.add_parser("prepare")
     build.add_argument("--per-stratum", type=int, required=True)
     commands.add_parser("verify")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     try:
         manifest = (
             prepare(root, args.per_stratum)

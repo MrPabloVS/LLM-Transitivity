@@ -99,8 +99,8 @@ def test_transport_capture_and_export_with_mocked_openrouter(tmp_path, monkeypat
     from inspect_ai.model._providers.openai_compatible import OpenAICompatibleAPI
     from openai import DefaultAsyncHttpxClient
 
-    from collect_openrouter import export_log
-    from inspect_tasks import hs_zero_shot
+    from llm_transitivity.inspect.tasks import hs_zero_shot
+    from llm_transitivity.runs.export import export_log
 
     count = 0
 
@@ -163,7 +163,9 @@ def test_transport_capture_and_export_with_mocked_openrouter(tmp_path, monkeypat
         ),
     )
     logs = eval(
-        hs_zero_shot("pilot/HS_HF_FU_20"),
+        hs_zero_shot(
+            "pilot/HS_HF_FU_20", root=str(Path(__file__).resolve().parents[1])
+        ),
         model="openrouter/openai/gpt-4o-mini",
         model_args={"stream": False},
         limit=1,

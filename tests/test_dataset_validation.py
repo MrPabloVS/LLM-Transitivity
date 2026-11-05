@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from dataset_validation import load_dataset
+from llm_transitivity.datasets.validation import load_dataset
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CASE = [

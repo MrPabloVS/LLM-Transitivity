@@ -1,6 +1,6 @@
 from decimal import Decimal
 
-from estimate_pilot_cost import generation_cost
+from llm_transitivity.costs.calculation import generation_cost
 
 
 def test_cost_includes_failed_attempts_and_request_charges():
@@ -41,11 +41,11 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
 
     import pytest
 
-    import pilot_config
-    from experiment_config import GENERATION_POLICY
     from llm_transitivity.costs import estimate as estimate_pilot_cost
     from llm_transitivity.costs import pricing
-    from prepare_pilot import digest
+    from llm_transitivity.domain.config import GENERATION_POLICY
+    from llm_transitivity.evidence.serialization import digest
+    from llm_transitivity.inspect import flow as pilot_config
 
     root = Path(__file__).resolve().parents[1]
     saved_path = root / "docs/pilot_cost_estimate.json"
@@ -100,7 +100,7 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     assert report["sdk_max_retries"] == GENERATION_POLICY.sdk_max_retries
     assert report["maximum_planned_attempts_per_response"] == 3
     assert report["experiment_config_sha256"] == digest(
-        (root / "experiment_config.py").read_bytes()
+        (root / "src/llm_transitivity/domain/config.py").read_bytes()
     )
     assert "src/llm_transitivity/costs/estimate.py" in report["source_sha256"]
     assert "src/llm_transitivity/costs/pricing.py" in report["source_sha256"]
@@ -116,7 +116,7 @@ def test_estimator_import_does_not_load_evaluation_frameworks():
             sys.executable,
             "-c",
             (
-                "import sys; import estimate_pilot_cost; "
+                "import sys; import llm_transitivity.costs.estimate; "
                 "assert not {'inspect_ai', 'inspect_flow', 'pilot_config', "
                 "'experiment_metadata', 'inspect_tasks'} & sys.modules.keys()"
             ),

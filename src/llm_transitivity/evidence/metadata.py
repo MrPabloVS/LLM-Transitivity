@@ -33,24 +33,7 @@ def run_metadata(
             ["git", "-C", str(root), *args], text=True
         ).strip()
 
-    files = [
-        "flow.py",
-        "pilot_config.py",
-        "inspect_tasks.py",
-        "inspect_scoring.py",
-        "dataset_validation.py",
-        "benchmark_cases.py",
-        "prepare_pilot.py",
-        "experiment_metadata.py",
-        "experiment_config.py",
-        "openrouter_telemetry.py",
-        "collect_openrouter.py",
-        "run_pilot.py",
-        "estimate_pilot_cost.py",
-        ".python-version",
-        "pyproject.toml",
-        "uv.lock",
-    ]
+    files = [".python-version", "pyproject.toml", "uv.lock"]
     files += package_sources(root)
     return {
         "metadata_version": 1,

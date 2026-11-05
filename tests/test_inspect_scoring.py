@@ -6,7 +6,11 @@ from inspect_ai.model import ChatCompletionChoice, ChatMessageAssistant, ModelOu
 from inspect_ai.scorer import SampleScore, Score, Target
 from inspect_ai.solver import TaskState
 
-from inspect_scoring import response_rates, source_agreement, source_label_match
+from llm_transitivity.inspect.scoring import (
+    response_rates,
+    source_agreement,
+    source_label_match,
+)
 
 
 @pytest.mark.parametrize(

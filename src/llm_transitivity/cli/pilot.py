@@ -10,8 +10,8 @@ from llm_transitivity.inspect.flow import build_pilot_spec
 from llm_transitivity.runs.runner import execute
 
 
-def main(root: Path) -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
+def main(root: Path, argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(prog="transitivity pilot", description=__doc__)
     parser.add_argument(
         "--dry-run",
         action="store_true",
@@ -22,7 +22,7 @@ def main(root: Path) -> None:
         action="store_true",
         help="Run the same single source case on all six models",
     )
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     load_dotenv(root / ".env")
     spec = build_pilot_spec(root, preflight=args.preflight)
     if args.dry_run:

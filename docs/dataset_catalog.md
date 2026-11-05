@@ -82,7 +82,7 @@ fixed Git revision, hashes, and selected source rows. The
 and its coverage limits. Verify the complete source chain with:
 
 ```sh
-uv run --locked prepare_pilot.py verify
+uv run --locked transitivity datasets verify
 ```
 
 The separate [10-case smoke dataset](../datasets/HS.json) is retained for quick
@@ -92,7 +92,7 @@ checks. It is not included in the 18-dataset coverage pilot. Historical `Csf`,
 ## Case adaptation
 
 The package domain case adapter gives validated records named fields for Inspect.
-`benchmark_cases.py` preserves the existing import.
+The case type lives in `llm_transitivity.domain.cases`.
 The adapter preserves field values, source identifiers, and original labels.
 The original
 records remain the input to selection and hashing. `case_type` is the source

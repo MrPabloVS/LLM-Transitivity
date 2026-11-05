@@ -47,9 +47,8 @@ The group is stored in Inspect task metadata and tags.
 See [the architecture guide](architecture.md) before changing module boundaries.
 
 The package domain configuration defines the model catalog and immutable
-execution policy. `experiment_config.py` preserves the existing imports.
-The Flow configuration and run metadata use these same definitions. Existing
-`MODELS` and `MODEL_GROUPS` imports remain available as derived views. New runs
+execution policy. The catalog lives in `llm_transitivity.domain.config`.
+The Flow configuration and run metadata use these same definitions. `MODELS` and `MODEL_GROUPS` remain derived views in the package Flow adapter. New runs
 archive the configuration source and its hash with the other source evidence.
 
 See the [cost scenarios](pilot_cost_estimate.md) and
@@ -93,7 +92,7 @@ Use the scoring rules documented in the [README](../README.md#inspect-flow-trial
 Report agreement with source labels separately from format compliance. These
 labels have not been audited for logical validity.
 
-`flow.py` now builds the coverage pilot through `pilot_config.py`: 18 datasets
+`transitivity pilot` builds the coverage pilot through the package Flow adapter: 18 datasets
 times six models, or 108 evaluation tasks. It verifies the complete corpus and
 manifest before constructing the spec. Each task checks its source chain again
 before constructing Inspect samples. The 10-case `HS.json` remains a separate
@@ -116,9 +115,9 @@ complete OpenRouter generation metadata, as described in the metadata guide.
 ## Reproduce the checks
 
 ```sh
-uv run --locked prepare_pilot.py verify
+uv run --locked transitivity datasets verify
 uv run --locked pytest -q
-uv run --locked run_pilot.py --dry-run
+uv run --locked transitivity pilot --dry-run
 ```
 
 The verifier checks all 54,000 full records against a fixed Git revision. It
@@ -145,8 +144,8 @@ categories, token usage, and recorded costs before expanding the experiment.
 First run one identical source case on each model:
 
 ```sh
-uv run --locked run_pilot.py --preflight --dry-run
-uv run --locked run_pilot.py --preflight
+uv run --locked transitivity pilot --preflight --dry-run
+uv run --locked transitivity pilot --preflight
 ```
 
 This selects one verified original row from the first pilot dataset, creates six
@@ -156,7 +155,7 @@ The complete 540-case selection remains unchanged.
 Use the managed entry point for a paid run:
 
 ```sh
-uv run --locked run_pilot.py
+uv run --locked transitivity pilot
 ```
 
 One directory holds the complete run, across all six models and 18 datasets:
@@ -185,6 +184,5 @@ it is not yet an aggregate metrics or billing report. Partial and unreadable
 logs are recorded as such. A force-killed process cannot finalize; its existing
 logs and provenance remain available for later export.
 
-`run_pilot.py --dry-run` creates no result archive. Direct `flow run flow.py`
-remains a low-level entry point; use the managed command above to get the full
-archive and finalization behavior.
+`transitivity pilot --dry-run` creates no result archive. The installed command
+provides the managed archive and finalization behavior for paid runs.

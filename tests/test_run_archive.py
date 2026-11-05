@@ -7,15 +7,15 @@ from inspect_ai.model import GenerateConfig
 from inspect_flow import FlowModel
 from inspect_flow.api import run
 
+from llm_transitivity.evidence.serialization import digest
+from llm_transitivity.inspect.flow import MODEL_GROUPS, build_pilot_spec
 from llm_transitivity.runs import runner as run_pilot
-from pilot_config import MODEL_GROUPS, build_pilot_spec
-from prepare_pilot import digest
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def small_spec(tmp_path):
-    spec = build_pilot_spec()
+    spec = build_pilot_spec(ROOT)
     spec.tasks = [spec.tasks[0]]
     spec.tasks[0].model = FlowModel(
         name="mockllm/model", config=GenerateConfig(max_tokens=1024)
@@ -42,7 +42,10 @@ def test_all_results_and_evidence_stay_in_one_archive(tmp_path):
     assert frozen["experiment_run_id"] == spec.options.metadata["experiment_run_id"]
     assert (archive / "provenance/flow_spec.json").is_file()
     hashes = json.loads((archive / "provenance/snapshot_hashes.json").read_text())
-    assert {"experiment_config.py", "benchmark_cases.py"} <= hashes.keys()
+    assert {
+        "src/llm_transitivity/domain/config.py",
+        "src/llm_transitivity/domain/cases.py",
+    } <= hashes.keys()
     for relative, expected in hashes.items():
         assert (
             digest((archive / "provenance/snapshot" / relative).read_bytes())
@@ -80,7 +83,7 @@ def test_dry_run_does_not_create_archive(tmp_path):
 
 def test_generation_groups_and_shared_folder():
     assert Counter(MODEL_GROUPS.values()) == {"earlier": 3, "later": 3}
-    spec = build_pilot_spec()
+    spec = build_pilot_spec(ROOT)
     assert Counter(task.metadata["generation_group"] for task in spec.tasks) == {
         "earlier": 54,
         "later": 54,
@@ -93,7 +96,7 @@ def test_generation_groups_and_shared_folder():
 
 
 def test_preflight_is_one_identical_case_on_each_model():
-    spec = build_pilot_spec(preflight=True)
+    spec = build_pilot_spec(ROOT, preflight=True)
     assert len(spec.tasks) == 6
     assert len({task.model.name for task in spec.tasks}) == 6
     assert len({task.args["dataset"] for task in spec.tasks}) == 1

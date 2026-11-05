@@ -12,6 +12,9 @@ dependencies = [
     "tiktoken>=0.14.0",
 ]
 
+[project.scripts]
+transitivity = "llm_transitivity.cli.app:main"
+
 [dependency-groups]
 dev = [
     "pytest>=9.2.0",

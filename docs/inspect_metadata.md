@@ -17,7 +17,7 @@ Evaluation metadata records:
 - Git revision, branch, and dirty state. An original-data revision separately
   anchors the research inputs.
 - Python, uv, platform, and direct runtime dependency versions.
-- Hashes of the root entry scripts, configuration and package Python sources,
+- Hashes of project configuration and package Python sources,
   including the lockfile. A dirty Git revision alone does not identify the
   current code.
 - Pilot manifest hash, selection method, cases per stratum, and pilot case count.
@@ -115,13 +115,13 @@ reported, not recalculated as certified billing. See
 Export a run's `.eval` logs without additional API requests:
 
 ```sh
-uv run --locked collect_openrouter.py results/pilot/<run-directory>
+uv run --locked transitivity export results/pilot/<run-directory>
 ```
 
 Refresh delayed or unavailable generation metadata with read-only API requests:
 
 ```sh
-uv run --locked collect_openrouter.py results/pilot/<run-directory> --fetch
+uv run --locked transitivity export results/pilot/<run-directory> --fetch
 ```
 
 Exports retain the full native model events, project provenance, captured HTTP

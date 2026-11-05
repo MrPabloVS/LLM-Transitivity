@@ -23,7 +23,7 @@ def test_domain_imports_have_no_framework_or_network_dependencies():
     )
 
 
-def test_compatibility_imports_do_not_build_runs_or_load_credentials():
+def test_cli_imports_do_not_build_runs_or_load_credentials():
     subprocess.run(
         [
             sys.executable,
@@ -44,10 +44,9 @@ with (
     patch.object(requests.Session, 'request', forbidden),
 ):
     for name in (
-        'flow', 'run_pilot', 'pilot_config', 'inspect_tasks', 'inspect_scoring',
-        'prepare_pilot', 'dataset_validation', 'experiment_config',
-        'benchmark_cases', 'experiment_metadata', 'openrouter_telemetry',
-        'collect_openrouter', 'estimate_pilot_cost',
+        'llm_transitivity.cli.app', 'llm_transitivity.cli.pilot',
+        'llm_transitivity.cli.datasets', 'llm_transitivity.cli.costs',
+        'llm_transitivity.cli.export',
     ):
         importlib.import_module(name)
 forbidden.assert_not_called()
@@ -62,12 +61,21 @@ def test_managed_dry_run_works_outside_repository(tmp_path):
 
     root = Path(__file__).resolve().parents[1]
     results = root / "results/pilot"
-    before = {path.name for path in results.iterdir()}
+    before = {path.name for path in results.glob("*")}
     subprocess.run(
-        [sys.executable, str(root / "run_pilot.py"), "--preflight", "--dry-run"],
+        [
+            sys.executable,
+            "-m",
+            "llm_transitivity.cli.app",
+            "--root",
+            str(root),
+            "pilot",
+            "--preflight",
+            "--dry-run",
+        ],
         cwd=tmp_path,
         check=True,
         capture_output=True,
         text=True,
     )
-    assert {path.name for path in results.iterdir()} == before
+    assert {path.name for path in results.glob("*")} == before

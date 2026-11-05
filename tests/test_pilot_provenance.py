@@ -7,7 +7,7 @@ import pytest
 from llm_transitivity.datasets import pilot as prepare_pilot
 from llm_transitivity.evidence import serialization
 from llm_transitivity.inspect import tasks as inspect_tasks
-from pilot_config import MODELS, build_pilot_spec
+from llm_transitivity.inspect.flow import MODELS, build_pilot_spec
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -133,7 +133,7 @@ def test_preparation_refuses_to_replace_evidence():
 
 
 def test_six_models_cover_all_eighteen_datasets_without_reasoning_or_fallback():
-    spec = build_pilot_spec()
+    spec = build_pilot_spec(ROOT)
     assert len(spec.tasks) == 108
     assert len(MODELS) == 6
     assert len({task.args["dataset"] for task in spec.tasks}) == 18

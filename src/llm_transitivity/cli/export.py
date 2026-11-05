@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 from llm_transitivity.runs.export import export_run
 
 
-def main(root: Path) -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
+def main(root: Path, argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(prog="transitivity export", description=__doc__)
     parser.add_argument("log_dir", type=Path)
     parser.add_argument(
         "--fetch",
@@ -21,7 +21,7 @@ def main(root: Path) -> None:
         action="store_true",
         help="Also request stored content; may require management-key access",
     )
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.include_stored_content and not args.fetch:
         parser.error("--include-stored-content requires --fetch")
     load_dotenv(root / ".env")

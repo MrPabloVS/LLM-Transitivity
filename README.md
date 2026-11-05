@@ -52,9 +52,23 @@ selects the system prompt, and `--model` selects an OpenRouter model identifier.
 ## Inspect Flow trial
 
 `uv sync --locked` installs the `llm_transitivity` package from `src/`.
-The existing scripts keep their command names. See the
+The installed `transitivity` command provides `pilot`, `datasets`, `costs`,
+and `export` subcommands. See the
 [architecture guide](docs/architecture.md) for module responsibilities,
 compatibility, provenance, and failure handling.
+
+Available commands:
+
+```sh
+uv run --locked transitivity --help
+uv run --locked transitivity datasets verify
+uv run --locked transitivity pilot --dry-run
+uv run --locked transitivity costs --help
+uv run --locked transitivity export --help
+```
+
+From another directory, use `transitivity --root /path/to/repository` before the
+subcommand. The installed commands replace the removed root Python adapters.
 
 See the [six-model coverage pilot](docs/pilot.md) for model pairs, fixed
 providers, prices, settings without reasoning, and verification commands.
@@ -91,14 +105,14 @@ logs must therefore be checked for errors as well as response coverage.
 Preview the trial without model calls:
 
 ```sh
-uv run --locked prepare_pilot.py verify
-uv run --locked run_pilot.py --dry-run
+uv run --locked transitivity datasets verify
+uv run --locked transitivity pilot --dry-run
 ```
 
 To run the trial with your `OPENROUTER_API_KEY` in `.env`:
 
 ```sh
-uv run --locked run_pilot.py
+uv run --locked transitivity pilot
 ```
 
 The run command requests 3,240 model responses, plus any retries.
