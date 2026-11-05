@@ -1,4 +1,5 @@
 import json
+from unittest.mock import Mock
 
 import pytest
 
@@ -43,3 +44,26 @@ def test_bad_dataset_is_rejected_before_task_creation(tmp_path, monkeypatch):
     monkeypatch.setattr(inspect_tasks, "PROJECT_ROOT", tmp_path)
     with pytest.raises(ValueError, match="case 1"):
         inspect_tasks.hs_zero_shot("bad")
+
+
+def test_invalid_last_case_stops_inspect_before_calls_or_writes(tmp_path, monkeypatch):
+    row = [
+        "HS",
+        1,
+        "Does it follow?",
+        "HF",
+        "PR",
+        "if then / therefore",
+        "valid",
+        "canonic",
+    ]
+    datasets = tmp_path / "datasets"
+    datasets.mkdir()
+    (datasets / "bad.json").write_text(json.dumps([row, row[:7]]))
+    monkeypatch.setattr(inspect_tasks, "PROJECT_ROOT", tmp_path)
+    generate = Mock(side_effect=AssertionError("Unexpected generation setup"))
+    monkeypatch.setattr(inspect_tasks, "generate", generate)
+    with pytest.raises(ValueError, match="case 2"):
+        inspect_tasks.hs_zero_shot("bad")
+    generate.assert_not_called()
+    assert {path.name for path in tmp_path.iterdir()} == {"datasets"}

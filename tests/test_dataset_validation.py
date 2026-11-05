@@ -1,8 +1,5 @@
 import json
-import runpy
-import sys
 from pathlib import Path
-from unittest.mock import Mock
 
 import pytest
 
@@ -55,27 +52,6 @@ def test_invalid_json(tmp_path):
     path.write_text("[", encoding="utf-8")
     with pytest.raises(ValueError, match="cannot decode dataset"):
         load_dataset(path)
-
-
-def test_invalid_last_case_stops_runner_before_calls_or_writes(
-    tmp_path, monkeypatch, capsys
-):
-    runner = tmp_path / "runBenchmark.py"
-    runner.write_bytes((PROJECT_ROOT / "runBenchmark.py").read_bytes())
-    datasets = tmp_path / "datasets"
-    datasets.mkdir()
-    (datasets / "bad.json").write_text(json.dumps([CASE, CASE[:7]]), encoding="utf-8")
-    post = Mock(side_effect=AssertionError("Unexpected model call"))
-    monkeypatch.setattr("requests.post", post)
-    monkeypatch.setattr(sys, "argv", [str(runner), "bad"])
-    monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
-    with pytest.raises(SystemExit) as error:
-        runpy.run_path(str(runner), run_name="__main__")
-    assert error.value.code == 2
-    assert "case 2" in capsys.readouterr().err
-    post.assert_not_called()
-    assert not (tmp_path / "data").exists()
-    assert not (tmp_path / "logs").exists()
 
 
 @pytest.mark.parametrize(

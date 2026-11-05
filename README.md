@@ -26,15 +26,28 @@ uv --version
 
 See the [official uv installation guide](https://docs.astral.sh/uv/getting-started/installation/) for details and other installation methods.
 
-## Instructions for running the benchmark  
-1. [Install uv](#install-uv). The project uses Python 3.14.
-2. Run `uv sync --locked` in the project folder to prepare the Python environment and install the locked dependencies.
-3. Create a file named exactly .env in the project folder and write your API KEY like this: OPENROUTER_API_KEY=sk-or-xxxxxxxxxxxxxxxx  
-4. Run the benchmark: `uv run --locked runBenchmark.py HS --system zeroShot --model anthropic/claude-sonnet-4.5`
- - HS is the user prompts file name without .json  
- - --system picks the system prompt file (default zeroShot).  
- - --model picks the model, in provider/model format from openrouter.ai/models (default openai/gpt-4o-mini). 
+## Environment setup
 
+1. [Install uv](#install-uv). The project uses Python 3.14.
+2. Run `uv sync --locked` in the project folder to install the locked dependencies.
+3. Create `.env` in the project folder with `OPENROUTER_API_KEY=your-key`.
+
+Use the [Inspect Flow trial](#inspect-flow-trial) for the prepared pilot.
+
+## Historical benchmark runner
+
+`runBenchmark.py` preserves the script from the main baseline. It reads user
+prompts from `prompts/userPrompts/` and writes results under `data/` and `logs/`.
+It does not use the pilot configuration or its input checks.
+
+For example, this command makes paid model requests:
+
+```sh
+uv run --locked runBenchmark.py HS_test --system zeroShot --model anthropic/claude-sonnet-4.5
+```
+
+The positional argument is the user prompt filename without `.json`. `--system`
+selects the system prompt, and `--model` selects an OpenRouter model identifier.
 
 ## Inspect Flow trial
 
