@@ -60,15 +60,16 @@ component owns the context; metadata collection does not modify it.
 ## Cost estimates
 
 The estimator verifies inputs, reads the shared domain policy and requests only
-public provider quotes. Price retrieval is separate from arithmetic. It creates
-no Inspect tasks or run identity. Future reports keep the existing hash field names and use package source paths
-for the estimator, Flow configuration and model catalog. They also record hashes
-of the complete package implementation.
-Historical price snapshots remain unchanged. The cost archive component saves
-each complete estimate under a new
+public provider quotes. Price retrieval selects the exact endpoint tag without
+interpreting its status. Live access belongs to preflight verification.
+Price retrieval is separate from arithmetic. It creates
+no Inspect tasks or run identity. Reports keep the existing hash field names
+and use package source paths for the estimator, Flow configuration and model
+catalog. They also record hashes of the complete package implementation.
+The cost archive component saves each complete estimate under a new
 `results/cost_estimates/<local-date-time>-<id>/estimate.json` path. A directory
 collision fails instead of replacing a previous capture. The CLI prints the new
-snapshot path; the report under `docs/` remains historical reference evidence.
+snapshot path. Use [the cost procedure](pilot_costs.md) for new estimates.
 
 ## Verification
 
@@ -84,9 +85,9 @@ Original log files and historical reports retain their original implementation
 paths and scores. Package paths in new specifications identify the refactored
 implementation; task arguments also record the explicit repository root.
 
-The full-corpus verifier and the existing generated inventory retain their
-original algorithms and bytes. No generated inventory or historical price
-snapshot is refreshed as part of this refactor.
+The full-corpus verifier reproduces the existing generated inventory bytes.
+The inventory retains its original command text for this check. Use installed
+commands for current operations. Current readiness belongs in the pilot guide.
 
 ## Installed commands
 
@@ -103,7 +104,12 @@ responses unless `--dry-run` is set. Use each subcommand's `--help` to inspect
 its options without loading credentials or performing the action.
 
 The CLI finds the project from the current directory or its parents. From
-another directory, put `--root /path/to/repository` before the subcommand.
+another directory, select the project and set the root before the subcommand:
+
+```sh
+uv run --locked --project /path/to/repository transitivity --root /path/to/repository pilot --dry-run
+```
+
 Only the historical `runBenchmark.py` remains as Python code in the root.
 Historical generated inventories, logs and reports keep their original command
 text and source paths. Use the installed commands above for new work.

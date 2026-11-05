@@ -1,9 +1,33 @@
 # Six-model pilot
 
-Status: coverage pilot prepared and verified without paid model calls.
-Model availability and prices checked on November 5, 2026, through the
+Status: pilot preparation restarted after the code and routing changes.
+The local checks and new cost estimate are complete. A new live preflight is
+required before the complete pilot. Earlier estimates and preflight reports are no longer
+part of the active preparation.
+Saved model availability and price references were captured on November 5, 2026, through the
 [OpenRouter model catalog](https://openrouter.ai/api/v1/models) and its provider
 endpoint listings. A catalog entry does not establish access through our account.
+
+## Current preparation status
+
+Local checks passed again on November 5, 2026: 54,000 full records, 108 strata,
+and 540 selected cases; 149 tests; and both dry-runs (108 pilot tasks and six
+preflight tasks). Original inputs and selected files remain unchanged. Ruff
+passes for package sources and tests. Global Ruff checks still report the
+existing lint and format failures in the preserved `runBenchmark.py`.
+
+A new [cost estimate](../results/cost_estimates/2026-11-05_19-47-28-e1bd86b6/estimate.json)
+was saved on November 5, 2026, using all six selected endpoints and current
+verified inputs. The one-attempt scenarios total USD 0.35 for four output tokens,
+USD 2.14 for 128 output tokens, and USD 15.11 at the 1,024-token output cap.
+The byte-input scenario with all three attempts totals USD 49.66. These are
+planning scenarios, not spending limits or reported charges.
+
+The earlier estimate attempt stopped because our quote filter required endpoint
+`status: 0`. Quote retrieval now uses the exact published endpoint tag regardless
+of status. The GPT-6 Luna Flex listing includes prices with `status: -2`.
+This status is not interpreted as an access or outage result. The new live
+preflight remains pending; no model generation was requested for the estimate.
 
 ## Goal
 
@@ -17,18 +41,21 @@ generation change. Sonnet also has a higher price than the other model families.
 
 ## Selected models, endpoints and service tiers
 
+The executable catalog in `src/llm_transitivity/domain/config.py` defines the
+requested model IDs, endpoints, tiers, and execution policy.
+
 The [saved model cards](model_cards/README.md) retain the public catalog and
 endpoint data for all six models, with sources, capture times and hashes.
 
 Routing decision approved on November 5, 2026. Flex is selected for GPT-6 Luna
 and both Gemini Flash-Lite models. The other three models use the default tier.
 The executable model catalog and Flow configuration now set these endpoint and
-tier pairs explicitly. A new live preflight is pending. The retired preflight
-used standard endpoints throughout. Saved model cards describe their capture
+tier pairs explicitly. A new live preflight is pending.
+Saved model cards describe their capture
 time; this guide records the current execution configuration.
 
-Prices below are USD per million text tokens for the selected endpoints and
-short prompts. They were checked against the linked public endpoint listings on
+The dated quotes below are USD per million text tokens for the selected
+endpoints and short prompts. They are reference prices, not a new pilot estimate. They were checked against the linked public endpoint listings on
 November 5, 2026. They exclude cache and batch discounts, retries, and account
 charges. Published availability does not establish access through our account.
 
@@ -62,9 +89,8 @@ usage, capture, and cost before the complete pilot.
 Flex has lower processing priority. This experiment compares answers, not latency
 between service tiers. Review timeout suitability separately; this decision does
 not change timeouts or retry counts. The 50% price reduction applies to the three
-Flex model tariffs, not to the full pilot cost. Existing standard-tier estimates
-and archived preflight evidence retain their original values; recalculate the
-full estimate for the new executable routing configuration.
+Flex model tariffs, not to the full pilot cost. Calculate a new full estimate
+from the executable routing configuration.
 
 Inspect model names need the additional `openrouter/` prefix.
 
@@ -87,9 +113,9 @@ execution policy. The catalog lives in `llm_transitivity.domain.config`.
 The Flow configuration and run metadata use these same definitions. `MODELS` and `MODEL_GROUPS` remain derived views in the package Flow adapter. New runs
 archive the configuration source and its hash with the other source evidence.
 
-See the [cost scenarios](pilot_cost_estimate.md) and
-[quoted prices and inputs](pilot_cost_estimate.json) before selecting a budget.
-The estimate is not a spending limit; budget enforcement is still pending.
+Follow the [cost procedure](pilot_costs.md) to create a new estimate before
+selecting a budget. An estimate is not a spending limit; budget enforcement
+is still pending.
 
 - Use five cases from every observed stratum across the 18 full datasets.
   This gives 540 cases per model and 3,240 planned responses across six models.
@@ -124,7 +150,7 @@ marks their reasoning as mandatory.
 See [Inspect tags and metadata](inspect_metadata.md) for the evaluation, task,
 and sample fields, native log fields, and requested-versus-observed conditions.
 
-Use the scoring rules documented in the [README](../README.md#inspect-flow-trial).
+Use the scoring rules documented in the [README](../README.md#inspect-flow-pilot).
 Report agreement with source labels separately from format compliance. These
 labels have not been audited for logical validity.
 
@@ -161,11 +187,21 @@ allows only the two approved label translations, reproduces the selection,
 and checks all pilot files and the system prompt. The
 [manifest](../datasets/pilot/manifest.json) records source paths, hashes,
 original row numbers, and selected record hashes. Rebuilding refuses to
-overwrite existing evidence. Existing model logs are outside this verification.
+overwrite existing evidence. The generated inventory retains capture-time
+commands for byte verification. Use the commands here for current work.
+Existing model logs are outside this verification.
 
-The [dry-run summary](pilot_dry_run.json) records 108 tasks, 3,240 planned
-responses, zero completed samples, and the manifest and configuration hashes.
-It confirms local task construction, not provider access or model behavior.
+Run both current previews:
+
+```sh
+uv run --locked transitivity pilot --dry-run
+uv run --locked transitivity pilot --preflight --dry-run
+```
+
+Expect 108 tasks and 3,240 planned responses for the pilot, and six tasks and
+six planned responses for the preflight. Previews confirm local task
+construction, not provider access or model behavior. Do not use an earlier
+dry-run report as evidence for the current code.
 
 This provides reproducible evidence of exact sentence preservation, including
 spaces, case, punctuation, and Unicode. It does not audit logical validity.
@@ -175,9 +211,22 @@ pilot files, the manifest, and the system prompt to verify rejection.
 After the trial, inspect all 3,240 outcomes, their metadata, errors, response
 categories, token usage, and recorded costs before expanding the experiment.
 
+## Readiness sequence
+
+1. Verify the full corpus, manifest, source labels, and selected cases.
+2. Run the tests and both previews with the current code.
+3. Create a new cost estimate and review the requested endpoints and tiers.
+4. Run a new live preflight. Check actual routing, reasoning usage, output,
+   capture, generation lookups, and reported cost for all six models.
+5. Resolve missing evidence and execution errors before the complete pilot.
+
+Keep the original inputs and the deterministic selection. Restarting preparation
+does not require a different sample. The verifier must reproduce its bytes and
+hashes. Model cards remain dated catalog evidence, not proof of live access.
+
 ## Result directories
 
-First run one identical source case on each model:
+After the local checks and cost review, run one identical source case on each model:
 
 ```sh
 uv run --locked transitivity pilot --preflight --dry-run

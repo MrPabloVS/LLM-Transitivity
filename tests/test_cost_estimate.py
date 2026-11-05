@@ -55,9 +55,6 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     from llm_transitivity.inspect import flow as pilot_config
 
     root = Path(__file__).resolve().parents[1]
-    saved_path = root / "docs/pilot_cost_estimate.json"
-    saved_bytes = saved_path.read_bytes()
-    saved = json.loads(saved_bytes)
     quotes = {}
     for model in MODEL_SPECS:
         path = (
@@ -87,7 +84,7 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
                 "endpoints": [
                     {
                         "tag": row["provider"],
-                        "status": 0,
+                        "status": -2,
                         "pricing": row["pricing_snapshot"],
                     },
                     {"tag": "other-provider", "status": 0, "pricing": {}},
@@ -114,9 +111,7 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     assert set(requested) == set(quotes)
     assert len(requested) == 6
     assert report["planned_responses"] == 3240
-    assert (
-        report["input_proxy_tokens_per_model"] == saved["input_proxy_tokens_per_model"]
-    )
+    assert report["input_proxy_tokens_per_model"] == 54026
     # These fixed totals use the approved three Flex endpoints and saved input counts.
     assert report["totals_usd"] == pytest.approx(FLEX_TOTALS)
     assert {row["model"]: row["service_tier"] for row in report["quotes"]} == {
@@ -131,7 +126,6 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     )
     assert "src/llm_transitivity/costs/estimate.py" in report["source_sha256"]
     assert "src/llm_transitivity/costs/pricing.py" in report["source_sha256"]
-    assert saved_path.read_bytes() == saved_bytes
 
 
 def test_estimator_import_does_not_load_evaluation_frameworks():

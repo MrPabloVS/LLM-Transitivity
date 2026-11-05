@@ -79,7 +79,9 @@ the HS/LF/PR and mHS/LF/PR working copies. Sentences are unchanged.
 The [pilot manifest](../datasets/pilot/manifest.json) records the original file,
 fixed Git revision, hashes, and selected source rows. The
 [generated inventory](dataset_inventory.md) describes deterministic selection
-and its coverage limits. Verify the complete source chain with:
+and its coverage limits. Its script names describe the original capture; those
+scripts have been replaced by installed commands. Verify the complete source
+chain with:
 
 ```sh
 uv run --locked transitivity datasets verify

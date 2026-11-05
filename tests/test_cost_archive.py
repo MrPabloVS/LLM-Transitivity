@@ -19,7 +19,7 @@ REPORT = {
 def test_cost_command_saves_each_capture_and_preserves_historical_report(
     tmp_path, monkeypatch, capsys
 ):
-    historical = tmp_path / "docs/pilot_cost_estimate.json"
+    historical = tmp_path / "docs/unrelated_report.json"
     historical.parent.mkdir()
     historical.write_bytes(b'{"historical":true}\n')
     monkeypatch.setattr(costs, "estimate", Mock(return_value=REPORT))
