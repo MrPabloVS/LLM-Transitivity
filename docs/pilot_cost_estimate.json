@@ -1,0 +1,179 @@
+{
+  "checked_at_utc": "2026-11-05T21:03:51.179987+00:00",
+  "manifest_sha256": "d6c93dfddf7abae68f547244840c300b541ecc0f1905b38dedb28be7be5a95a7",
+  "configuration_sha256": "8cea33928720676051a726445b3327c6d713531a91d4e754c51ce07138ce1951",
+  "pilot_cases_per_model": 540,
+  "models": 6,
+  "planned_responses": 3240,
+  "output_token_limit": 1024,
+  "inspect_max_retries": 2,
+  "sdk_max_retries": 0,
+  "maximum_planned_attempts_per_response": 3,
+  "input_proxy_tokens_per_model": 54026,
+  "input_byte_scenario_tokens_per_model": 322502,
+  "assumptions": [
+    "o200k_base text counts plus 16 framing tokens per case are a proxy, not each provider's native count.",
+    "The byte-input scenario uses UTF-8 text bytes plus 256 framing tokens per case; it is a planning envelope, not a proven tokenizer bound.",
+    "Standard short-prompt provider rates; no reasoning, tools, cache or batch discounts.",
+    "Short and verbose scenarios use 4 or 128 output tokens per case with one attempt.",
+    "The final scenario charges every possible attempt for the full output cap, including failed attempts.",
+    "Account funding fees, taxes, unreported provider behavior and future price changes are excluded.",
+    "These estimates do not enforce an account or run spending limit."
+  ],
+  "quotes": [
+    {
+      "model": "openai/gpt-4o-mini",
+      "provider": "openai",
+      "source": "https://openrouter.ai/api/v1/models/openai/gpt-4o-mini/endpoints",
+      "pricing_snapshot": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000075",
+        "discount": 0
+      },
+      "cases": 540,
+      "input_usd_per_million": 0.15,
+      "output_usd_per_million": 0.6,
+      "short_4_output_tokens_usd": 0.0093999,
+      "verbose_128_output_tokens_usd": 0.0495759,
+      "output_cap_1024_usd": 0.3398799,
+      "byte_input_output_cap_all_attempts_usd": 1.1404539
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "provider": "openai",
+      "source": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna/endpoints",
+      "pricing_snapshot": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "discount": 0,
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.0000002",
+            "completion": "0.00000075",
+            "input_cache_read": "0.00000002",
+            "input_cache_write": "0.00000025"
+          }
+        ]
+      },
+      "cases": 540,
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5,
+      "short_4_output_tokens_usd": 0.0064826,
+      "verbose_128_output_tokens_usd": 0.0399626,
+      "output_cap_1024_usd": 0.2818826,
+      "byte_input_output_cap_all_attempts_usd": 0.9261906
+    },
+    {
+      "model": "anthropic/claude-sonnet-4.5",
+      "provider": "anthropic",
+      "source": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-4.5/endpoints",
+      "pricing_snapshot": {
+        "prompt": "0.000003",
+        "completion": "0.000015",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000003",
+        "input_cache_write": "0.00000375",
+        "input_cache_write_1h": "0.000006",
+        "discount": 0,
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000006",
+            "completion": "0.0000225",
+            "input_cache_read": "0.0000006",
+            "input_cache_write": "0.0000075",
+            "input_cache_write_1h": "0.000012"
+          }
+        ]
+      },
+      "cases": 540,
+      "input_usd_per_million": 3.0,
+      "output_usd_per_million": 15.0,
+      "short_4_output_tokens_usd": 0.194478,
+      "verbose_128_output_tokens_usd": 1.198878,
+      "output_cap_1024_usd": 8.456478,
+      "byte_input_output_cap_all_attempts_usd": 27.785718
+    },
+    {
+      "model": "anthropic/claude-sonnet-5",
+      "provider": "anthropic",
+      "source": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5/endpoints",
+      "pricing_snapshot": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "input_cache_write_1h": "0.000004",
+        "discount": 0
+      },
+      "cases": 540,
+      "input_usd_per_million": 2.0,
+      "output_usd_per_million": 10.0,
+      "short_4_output_tokens_usd": 0.129652,
+      "verbose_128_output_tokens_usd": 0.799252,
+      "output_cap_1024_usd": 5.637652,
+      "byte_input_output_cap_all_attempts_usd": 18.523812
+    },
+    {
+      "model": "google/gemini-2.5-flash-lite",
+      "provider": "google-ai-studio",
+      "source": "https://openrouter.ai/api/v1/models/google/gemini-2.5-flash-lite/endpoints",
+      "pricing_snapshot": {
+        "prompt": "0.0000001",
+        "completion": "0.0000004",
+        "image": "0.0000001",
+        "audio": "0.0000003",
+        "input_audio_cache": "0.00000003",
+        "web_search": "0.014",
+        "internal_reasoning": "0.0000004",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.0000000833333333333333",
+        "discount": 0
+      },
+      "cases": 540,
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.4,
+      "short_4_output_tokens_usd": 0.0062666,
+      "verbose_128_output_tokens_usd": 0.0330506,
+      "output_cap_1024_usd": 0.2265866,
+      "byte_input_output_cap_all_attempts_usd": 0.7603026
+    },
+    {
+      "model": "google/gemini-3.1-flash-lite",
+      "provider": "google-ai-studio",
+      "source": "https://openrouter.ai/api/v1/models/google/gemini-3.1-flash-lite/endpoints",
+      "pricing_snapshot": {
+        "prompt": "0.00000025",
+        "completion": "0.0000015",
+        "image": "0.00000025",
+        "audio": "0.0000005",
+        "input_audio_cache": "0.00000005",
+        "web_search": "0.014",
+        "internal_reasoning": "0.0000015",
+        "input_cache_read": "0.000000025",
+        "input_cache_write": "0.0000000833333333333333",
+        "discount": 0
+      },
+      "cases": 540,
+      "input_usd_per_million": 0.25,
+      "output_usd_per_million": 1.5,
+      "short_4_output_tokens_usd": 0.0167465,
+      "verbose_128_output_tokens_usd": 0.1171865,
+      "output_cap_1024_usd": 0.8429465,
+      "byte_input_output_cap_all_attempts_usd": 2.7301965
+    }
+  ],
+  "totals_usd": {
+    "short_4_output_tokens_usd": 0.3630256,
+    "verbose_128_output_tokens_usd": 2.2379056,
+    "output_cap_1024_usd": 15.7854256,
+    "byte_input_output_cap_all_attempts_usd": 51.8666736
+  },
+  "estimator_sha256": "6518cbf0db86d46ebe6d8cb10a572d4a9386da9a6c293078b8cb3c4b23b742f3"
+}

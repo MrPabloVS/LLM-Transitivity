@@ -9,6 +9,7 @@ dependencies = [
     "openai>=3.41.0",
     "python-dotenv>=1.2.4",
     "requests>=2.34.2",
+    "tiktoken>=0.14.0",
 ]
 
 [dependency-groups]

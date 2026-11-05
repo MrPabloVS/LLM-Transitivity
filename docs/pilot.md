@@ -44,6 +44,10 @@ The group is stored in Inspect task metadata and tags.
 
 ## Pilot conditions
 
+See the [cost scenarios](pilot_cost_estimate.md) and
+[quoted prices and inputs](pilot_cost_estimate.json) before selecting a budget.
+The estimate is not a spending limit; budget enforcement is still pending.
+
 - Use five cases from every observed stratum across the 18 full datasets.
   This gives 540 cases per model and 3,240 planned responses across six models.
   Retries can increase the number of requests.
