@@ -40,6 +40,10 @@ condition, not a lower frequency category.
 **Working dataset**: A copy used for execution. Its sentences and records match
 the original except for the explicitly approved label translations.
 
+**Verified dataset**: A working dataset checked against its original, with the
+same cases, sentences, order, and labels except for approved label translations.
+This verification does not establish logical validity.
+
 **Stratum**: A group within one dataset with the same case type, frequency,
 verbal time, connectors, source validity label, and canonical form label.
 

@@ -1,14 +1,19 @@
-"""Build and verify a pilot against originals anchored to a Git revision."""
+"""Build and verify a pilot from source-verified corpus records."""
 
 import json
 import subprocess
-from collections import defaultdict
-from itertools import product
 from pathlib import Path
 
-from llm_transitivity.datasets.validation import load_dataset
-from llm_transitivity.domain.selection import select_rows, stratum
-from llm_transitivity.evidence.serialization import digest, json_bytes, record_digest
+from llm_transitivity.datasets import corpus
+from llm_transitivity.domain.selection import select_rows
+from llm_transitivity.evidence.serialization import digest, json_bytes
+
+# Keep previous public imports while corpus owns source verification.
+TRANSLATED = corpus.TRANSLATED
+dataset_names = corpus.dataset_names
+describe_system = corpus.describe_system
+git_bytes = corpus.git_bytes
+stratum = corpus.stratum
 
 MANIFEST = Path("datasets/pilot/manifest.json")
 DIMENSIONS = [
@@ -19,120 +24,31 @@ DIMENSIONS = [
     "source_validity",
     "canonical_form",
 ]
-TRANSLATED = {"HS_LF_PR_2000", "mHS_LF_PR_4000"}
-
-
-def dataset_names() -> list[str]:
-    return [
-        f"{kind}_{frequency}_{tense}_{size}"
-        for kind, size in [("HS", 2000), ("mHS", 4000)]
-        for frequency, tense in product(("HF", "LF", "NS"), ("FU", "PA", "PR"))
-    ]
-
-
-def git_bytes(root: Path, revision: str, path: str) -> bytes:
-    return subprocess.check_output(
-        ["git", "-C", str(root), "show", f"{revision}:{path}"]
-    )
 
 
 def describe_dataset(
     root: Path, revision: str, name: str, count: int
 ) -> tuple[dict, bytes]:
-    """Compare full records, then select rows by a stable SHA-256 ranking."""
-    family, frequency, tense, size = name.split("_")
-    original_path = (
-        f"prompts/userPrompts/{family}_{frequency}_{tense}_500_complete.json"
+    """Select pilot rows from a complete verified dataset."""
+    dataset = corpus.verify_dataset(root, revision, name)
+    return _describe_selection(dataset, count)
+
+
+def _describe_selection(
+    dataset: corpus.VerifiedDataset, count: int
+) -> tuple[dict, bytes]:
+    name = dataset.name
+    selected = select_rows(dataset.records, dataset.groups, count)
+    payload = json_bytes([dataset.records[number - 1] for number in selected])
+    entry = dataset.provenance(selected, count)
+    # Keep the existing manifest field order and serialized representation.
+    rows = entry.pop("selected_rows")
+    entry["pilot_path"] = (
+        f"datasets/pilot/{name.rsplit('_', 1)[0]}_{len(selected)}.json"
     )
-    working_path = f"datasets/{name}.json"
-    baseline = git_bytes(root, revision, original_path)
-    if (root / original_path).read_bytes() != baseline:
-        raise ValueError(f"{original_path}: original differs from Git baseline")
-    original = json.loads(baseline)
-    working = load_dataset(root / working_path)
-    if len(original) != len(working) or len(working) != int(size):
-        raise ValueError(
-            f"{working_path}: case count differs from baseline or filename"
-        )
-    groups = defaultdict(list)
-    for number, (before, after) in enumerate(zip(original, working), start=1):
-        expected = before.copy()
-        if name in TRANSLATED:
-            expected[6] = {"valido": "valid"}.get(before[6], before[6])
-            expected[7] = {"canonico": "canonic"}.get(before[7], before[7])
-        if before[2] != after[2]:
-            raise ValueError(
-                f"{working_path}: case {number}: sentence differs from original"
-            )
-        if record_digest(after) != record_digest(expected):
-            raise ValueError(
-                f"{working_path}: case {number}: unexpected metadata change"
-            )
-        if after[0] != "HS" or after[3:5] != [frequency, tense]:
-            raise ValueError(
-                f"{working_path}: case {number}: filename and metadata disagree"
-            )
-        if after[6] not in {"valid", "invalid"} or after[7] not in {
-            "canonic",
-            "non-canonic",
-        }:
-            raise ValueError(f"{working_path}: case {number}: unknown label")
-        groups[stratum(after)].append(number)
-    expected_connectors = (
-        ["if then / therefore"]
-        if family == "HS"
-        else [
-            "assuming that we can infer / thus",
-            "from the inference (therefore) / does the inference follow",
-        ]
-    )
-    expected_groups = {
-        ("HS", frequency, tense, connector, validity, form)
-        for connector, validity, form in product(
-            expected_connectors, ("valid", "invalid"), ("canonic", "non-canonic")
-        )
-    }
-    if set(groups) != expected_groups or any(
-        len(numbers) != 500 for numbers in groups.values()
-    ):
-        raise ValueError(
-            f"{working_path}: expected all source strata with 500 cases each"
-        )
-    selected = select_rows(working, groups, count)
-    pilot = [working[number - 1] for number in selected]
-    payload = json_bytes(pilot)
-    entry = {
-        "dataset": name,
-        "original_path": original_path,
-        "original_sha256": digest(baseline),
-        "working_path": working_path,
-        "working_sha256": digest((root / working_path).read_bytes()),
-        "case_count": len(working),
-        "strata": [
-            {"values": list(key), "population": len(numbers), "selected": count}
-            for key, numbers in sorted(groups.items())
-        ],
-        "pilot_path": f"datasets/pilot/{name.rsplit('_', 1)[0]}_{len(pilot)}.json",
-        "pilot_sha256": digest(payload),
-        "selected_rows": [
-            {
-                "original_row": number,
-                "sentence_sha256": digest(working[number - 1][2].encode("utf-8")),
-                "original_record_sha256": record_digest(original[number - 1]),
-                "working_record_sha256": record_digest(working[number - 1]),
-            }
-            for number in selected
-        ],
-    }
+    entry["pilot_sha256"] = digest(payload)
+    entry["selected_rows"] = rows
     return entry, payload
-
-
-def describe_system(root: Path, revision: str) -> dict:
-    path = "prompts/systemPrompts/zeroShot.json"
-    baseline = git_bytes(root, revision, path)
-    if (root / path).read_bytes() != baseline:
-        raise ValueError(f"{path}: system prompt differs from Git baseline")
-    return {"path": path, "sha256": digest(baseline)}
 
 
 def construct(root: Path, revision: str, count: int) -> tuple[dict, dict]:
@@ -260,8 +176,8 @@ def verify(root: Path) -> dict:
     return saved
 
 
-def verified_pilot(root: Path, name: str) -> tuple[list, dict]:
-    """Check one task's source chain again when Inspect constructs its samples."""
+def verified_pilot_source(root: Path, name: str) -> tuple[corpus.VerifiedDataset, dict]:
+    """Check a task source chain and retain its checked originals."""
     saved = json.loads((root / MANIFEST).read_text(encoding="utf-8"))
     entry = next(
         (
@@ -274,11 +190,18 @@ def verified_pilot(root: Path, name: str) -> tuple[list, dict]:
     if entry is None or entry["dataset"] not in dataset_names():
         raise ValueError(f"Unknown pilot dataset: {name}")
     name = entry["dataset"]
-    actual, payload = describe_dataset(
-        root, saved["baseline_revision"], name, saved["cases_per_stratum"]
-    )
+    dataset = corpus.verify_dataset(root, saved["baseline_revision"], name)
+    actual, payload = _describe_selection(dataset, saved["cases_per_stratum"])
     if actual != entry or (root / entry["pilot_path"]).read_bytes() != payload:
         raise ValueError(f"{name}: pilot provenance check failed")
     if describe_system(root, saved["baseline_revision"]) != saved["system_prompt"]:
         raise ValueError("System prompt manifest check failed")
-    return json.loads(payload), entry
+    return dataset, entry
+
+
+def verified_pilot(root: Path, name: str) -> tuple[list, dict]:
+    """Check one task's source chain again when Inspect constructs its samples."""
+    dataset, entry = verified_pilot_source(root, name)
+    return [
+        dataset.records[row["original_row"] - 1] for row in entry["selected_rows"]
+    ], entry

@@ -4,7 +4,7 @@ import json
 
 import pytest
 
-from llm_transitivity.datasets import pilot
+from llm_transitivity.datasets import corpus, pilot
 from tests.paths import PROJECT_ROOT
 
 
@@ -19,7 +19,7 @@ def copy_source_files(tmp_path, monkeypatch):
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(payload)
         monkeypatch.setattr(
-            pilot, "git_bytes", lambda root, revision, path: baseline[path]
+            corpus, "git_bytes", lambda root, revision, path: baseline[path]
         )
         return tmp_path
 

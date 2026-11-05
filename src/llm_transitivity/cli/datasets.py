@@ -4,8 +4,12 @@ import argparse
 import subprocess
 from pathlib import Path
 
-from llm_transitivity.datasets.corpus import MAIN_REVISION, verified_full_dataset
-from llm_transitivity.datasets.pilot import dataset_names, prepare, verify
+from llm_transitivity.datasets.corpus import (
+    MAIN_REVISION,
+    dataset_names,
+    verified_full_dataset,
+)
+from llm_transitivity.datasets.pilot import prepare, verify
 
 
 def main(root: Path, argv: list[str] | None = None) -> None:

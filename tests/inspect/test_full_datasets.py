@@ -5,7 +5,7 @@ from unittest.mock import Mock
 
 import pytest
 
-from llm_transitivity.datasets import pilot
+from llm_transitivity.datasets import corpus, pilot
 from llm_transitivity.datasets.corpus import MAIN_REVISION
 from llm_transitivity.evidence.serialization import record_digest
 from llm_transitivity.inspect import tasks
@@ -99,6 +99,6 @@ def test_numeric_source_id_type_changes_are_rejected(tmp_path, monkeypatch):
     (tmp_path / original_path).write_bytes(baseline)
     (tmp_path / "datasets").mkdir()
     (tmp_path / f"datasets/{name}.json").write_text(json.dumps(after))
-    monkeypatch.setattr(pilot, "git_bytes", lambda root, revision, path: baseline)
+    monkeypatch.setattr(corpus, "git_bytes", lambda root, revision, path: baseline)
     with pytest.raises(ValueError, match="unexpected metadata change"):
         tasks.hs_zero_shot(name, root=str(tmp_path))
