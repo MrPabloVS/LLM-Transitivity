@@ -1,4 +1,4 @@
-"""Read quotes from the selected standard provider endpoints."""
+"""Read quotes from the selected provider endpoints."""
 
 import requests
 
@@ -12,11 +12,11 @@ def provider_quote(model: ModelSpec) -> tuple[str, dict]:
     endpoints = [
         e
         for e in response.json()["data"]["endpoints"]
-        if e.get("tag") == model.provider and e.get("status") == 0
+        if e.get("tag") == model.provider
     ]
     if len(endpoints) != 1:
         raise ValueError(
-            f"{model.identifier}: expected one available standard endpoint for {model.provider}"
+            f"{model.identifier}: expected exactly one published endpoint for {model.provider}"
         )
     pricing = endpoints[0]["pricing"]
     return url, pricing
