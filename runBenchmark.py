@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 from pathlib import Path
 from datetime import datetime
 
+from dataset_validation import load_dataset
+
 #-------------------------------------------------------------------------------------------------------------------
 
 # PARSER
@@ -18,10 +20,15 @@ args = p.parse_args()
 # PROYECT DIRS
 PROJECT_ROOT = Path(__file__).resolve().parent
 SYSTEM_PROMPTS_DIR = PROJECT_ROOT / "prompts" / "systemPrompts"
-USER_PROMPTS_DIR = PROJECT_ROOT / "prompts" / "userPrompts"
+DATASETS_DIR = PROJECT_ROOT / "datasets"
 modelName = args.model.replace("/", "_")
 OUT_DIR = PROJECT_ROOT / "data" / args.system / modelName / args.promptFile
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# Validate every case before loading credentials or creating output files.
+try:
+    promts = load_dataset(DATASETS_DIR / f"{args.promptFile}.json")
+except ValueError as error:
+    p.error(str(error))
 
 # LOAD API KEY
 load_dotenv()
@@ -30,15 +37,12 @@ if not apiKey:
     raise ValueError("Set OPENROUTER_API_KEY before running this script.")
 
 # LOAD PROMPTS
-with open( USER_PROMPTS_DIR / f"{args.promptFile}.json", encoding="utf-8") as file: 
-    promts = json.load(file)
-    #print(promts)
-
 with open( SYSTEM_PROMPTS_DIR / f"{args.system}.json", encoding="utf-8") as file: 
     systemPrompt = json.load(file)
     #print(systemPromt)
 
 # CREATE LOG
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 date = datetime.now().strftime("%Y-%m-%d_%H-%M")
 log = PROJECT_ROOT / "logs" / f"{args.promptFile}_{modelName}_{date}.json"
 results = []
