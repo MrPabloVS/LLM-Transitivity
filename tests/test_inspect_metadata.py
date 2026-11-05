@@ -23,6 +23,7 @@ def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
         "inspect_tasks.py",
         "inspect_scoring.py",
         "experiment_config.py",
+        "benchmark_cases.py",
         "uv.lock",
     }
     assert (

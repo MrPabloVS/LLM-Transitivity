@@ -88,3 +88,11 @@ uv run --locked prepare_pilot.py verify
 The separate [10-case smoke dataset](../datasets/HS.json) is retained for quick
 checks. It is not included in the 18-dataset coverage pilot. Historical `Csf`,
 `Csf2`, and `HS_test` files are outside this active catalog.
+
+## Case adaptation
+
+`benchmark_cases.py` gives validated records named fields for the Inspect adapter.
+It preserves field values, source identifiers, and original labels. The original
+records remain the input to selection and hashing. `case_type` is the source
+label; the dataset name supplies `dataset_family`. New run archives include the
+case adapter source and its hash.

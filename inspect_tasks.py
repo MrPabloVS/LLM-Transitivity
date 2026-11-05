@@ -8,6 +8,7 @@ from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import ChatMessageSystem, ChatMessageUser
 from inspect_ai.solver import generate
 
+from benchmark_cases import BenchmarkCase
 from dataset_validation import load_dataset
 from experiment_metadata import EXPERIMENT_ID, SCORING_VERSION
 from inspect_scoring import source_label_match
@@ -27,10 +28,11 @@ def hs_zero_shot(dataset: str = "HS") -> Task:
         path = PROJECT_ROOT / provenance["pilot_path"]
     else:
         rows = load_dataset(path)
-    for number, row in enumerate(rows, start=1):
-        if row[6] not in {"valid", "invalid"}:
+    cases = [BenchmarkCase.from_record(row) for row in rows]
+    for number, case in enumerate(cases, start=1):
+        if case.source_validity not in {"valid", "invalid"}:
             raise ValueError(
-                f"{path}: case {number}: unknown source validity {row[6]!r}"
+                f"{path}: case {number}: unknown source validity {case.source_validity!r}"
             )
     system_path = PROJECT_ROOT / "prompts" / "systemPrompts" / "zeroShot.json"
     system = json.loads(system_path.read_text(encoding="utf-8"))
@@ -45,30 +47,31 @@ def hs_zero_shot(dataset: str = "HS") -> Task:
     samples = [
         Sample(
             id=number,
-            target="yes" if row[6] == "valid" else "no",
+            target="yes" if case.source_validity == "valid" else "no",
             input=[
                 ChatMessageSystem(content=system[0]),
-                ChatMessageUser(content=row[2]),
+                ChatMessageUser(content=case.prompt),
             ],
             metadata={
                 "source_dataset": dataset,
                 "source_row": number,
-                "source_id": row[1],
-                "case_type": row[0],
-                "frequency": row[3],
-                "verbal_time": row[4],
-                "connectors": row[5],
-                "source_validity": row[6],
-                "canonical_form": row[7],
+                "source_id": case.source_id,
+                "case_type": case.case_type,
+                "frequency": case.frequency,
+                "verbal_time": case.verbal_time,
+                "connectors": case.connectors,
+                "source_validity": case.source_validity,
+                "canonical_form": case.canonical_form,
             },
         )
-        for number, row in enumerate(rows, start=1)
+        for number, case in enumerate(cases, start=1)
     ]
     if provenance is not None:
         originals = json.loads(
             (PROJECT_ROOT / provenance["original_path"]).read_text(encoding="utf-8")
         )
         for sample, origin in zip(samples, provenance["selected_rows"]):
+            original = BenchmarkCase.from_record(originals[origin["original_row"] - 1])
             sample.id = origin["original_row"]
             sample.metadata.update(
                 {
@@ -79,13 +82,13 @@ def hs_zero_shot(dataset: str = "HS") -> Task:
                     "original_record_sha256": origin["original_record_sha256"],
                     "working_record_sha256": origin["working_record_sha256"],
                     "original_labels": {
-                        "validity": originals[origin["original_row"] - 1][6],
-                        "canonical_form": originals[origin["original_row"] - 1][7],
+                        "validity": original.source_validity,
+                        "canonical_form": original.canonical_form,
                     },
                 }
             )
     family = (provenance["dataset"] if provenance else path.stem).split("_")[0]
-    for sample, row in zip(samples, rows):
+    for sample, case, row in zip(samples, cases, rows):
         md = sample.metadata
         md.update(
             {
@@ -96,14 +99,14 @@ def hs_zero_shot(dataset: str = "HS") -> Task:
                 "label_basis": "source labels; logical validity not audited",
                 "logical_validity_audited": False,
                 "stratum_id": record_digest(list(stratum(row)))[:16],
-                "sample_uid": f"{md.get('working_dataset', dataset)}:{sample.id}:{digest(row[2].encode('utf-8'))[:16]}",
+                "sample_uid": f"{md.get('working_dataset', dataset)}:{sample.id}:{digest(case.prompt.encode('utf-8'))[:16]}",
                 "tags": [
                     f"family:{family}",
-                    f"frequency:{row[3]}",
-                    f"tense:{row[4]}",
-                    f"validity:{row[6]}",
-                    f"form:{row[7]}",
-                    f"connectors:{row[5]}",
+                    f"frequency:{case.frequency}",
+                    f"tense:{case.verbal_time}",
+                    f"validity:{case.source_validity}",
+                    f"form:{case.canonical_form}",
+                    f"connectors:{case.connectors}",
                 ],
             }
         )
@@ -119,11 +122,11 @@ def hs_zero_shot(dataset: str = "HS") -> Task:
         "dataset_path": str(path.relative_to(PROJECT_ROOT)),
         "dataset_sha256": digest(path.read_bytes()),
         "sample_count": len(rows),
-        "frequency": sorted({row[3] for row in rows}),
-        "verbal_time": sorted({row[4] for row in rows}),
-        "connectors": sorted({row[5] for row in rows}),
-        "source_validity": sorted({row[6] for row in rows}),
-        "canonical_form": sorted({row[7] for row in rows}),
+        "frequency": sorted({case.frequency for case in cases}),
+        "verbal_time": sorted({case.verbal_time for case in cases}),
+        "connectors": sorted({case.connectors for case in cases}),
+        "source_validity": sorted({case.source_validity for case in cases}),
+        "canonical_form": sorted({case.canonical_form for case in cases}),
     }
     if provenance:
         metadata["provenance"] = {

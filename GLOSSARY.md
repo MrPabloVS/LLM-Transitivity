@@ -2,6 +2,15 @@
 
 ## Case families
 
+**Benchmark case**: A reasoning question with its experimental conditions and
+source labels. A source label does not establish audited logical validity.
+
+**Case family**: The distinction between hypothetical syllogism cases (HS) and
+metainferential hypothetical syllogism cases (mHS).
+
+**Source case type**: The case-type label stored in an original record. It can
+be `HS` in both case families and does not by itself identify the family.
+
 **HS**: Instances of hypothetical syllogism, expressed with conditionals.
 
 **mHS**: Metainferential instances of hypothetical syllogism. These cases express

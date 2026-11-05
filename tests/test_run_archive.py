@@ -42,7 +42,7 @@ def test_all_results_and_evidence_stay_in_one_archive(tmp_path):
     assert frozen["experiment_run_id"] == spec.options.metadata["experiment_run_id"]
     assert (archive / "provenance/flow_spec.json").is_file()
     hashes = json.loads((archive / "provenance/snapshot_hashes.json").read_text())
-    assert "experiment_config.py" in hashes
+    assert {"experiment_config.py", "benchmark_cases.py"} <= hashes.keys()
     for relative, expected in hashes.items():
         assert (
             digest((archive / "provenance/snapshot" / relative).read_bytes())

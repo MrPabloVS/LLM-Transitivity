@@ -30,6 +30,7 @@ def run_metadata(
         "inspect_tasks.py",
         "inspect_scoring.py",
         "dataset_validation.py",
+        "benchmark_cases.py",
         "prepare_pilot.py",
         "experiment_metadata.py",
         "experiment_config.py",
