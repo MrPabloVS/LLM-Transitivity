@@ -12,22 +12,6 @@ from llm_transitivity.openrouter.client import generation_details
 
 
 @solver
-def capture_openrouter_http() -> Solver:
-    """Capture each transport attempt, including SDK and Inspect retry responses."""
-
-    async def solve(state: TaskState, generate: Generate) -> TaskState:
-        if not str(state.model).startswith("openrouter/"):
-            return state
-        records = []
-        state.metadata["openrouter_http_calls"] = records
-        capture._capture.set(records)
-        _install_capture()
-        return state
-
-    return solve
-
-
-@solver
 def collect_openrouter_details() -> Solver:
     """Attach full generation metadata to the Inspect sample after generation."""
 
@@ -46,8 +30,6 @@ def collect_openrouter_details() -> Solver:
                 generation_details, generation_id, os.environ.get("OPENROUTER_API_KEY")
             )
             state.metadata.setdefault("openrouter_calls", []).append(record)
-        if capture._capture.get() is state.metadata.get("openrouter_http_calls"):
-            capture._capture.set(None)
         return state
 
     return solve

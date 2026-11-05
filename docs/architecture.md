@@ -54,8 +54,8 @@ written log index and also fail finalization.
 
 Managed tasks use a generation solver with a bounded capture context. It resets
 the context on success, error and cancellation while retaining captured attempts
-in sample metadata. Concurrent samples have separate contexts. Legacy pre-hook
-exports remain available for compatibility; managed tasks use the bounded solver.
+in sample metadata. Concurrent samples have separate contexts. The capture
+component owns the context; metadata collection does not modify it.
 
 ## Cost estimates
 

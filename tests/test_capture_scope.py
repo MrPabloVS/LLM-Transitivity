@@ -75,3 +75,25 @@ def test_concurrent_samples_keep_separate_attempts(monkeypatch):
         assert capture._capture.get() is None
 
     asyncio.run(run())
+
+
+def test_metadata_collection_leaves_capture_context_to_its_owner(monkeypatch):
+    from inspect_ai.model import ModelOutput
+
+    monkeypatch.setattr(
+        telemetry,
+        "generation_details",
+        Mock(return_value={"lookup_status": "missing generation id"}),
+    )
+
+    async def run():
+        records = []
+        sample = state(1)
+        sample.output = ModelOutput.from_content("openrouter/openai/gpt-4o-mini", "yes")
+        sample.metadata["openrouter_http_calls"] = records
+        with capture.capture_scope(records):
+            await telemetry.collect_openrouter_details()(sample, None)
+            assert capture._capture.get() is records
+        assert capture._capture.get() is None
+
+    asyncio.run(run())
