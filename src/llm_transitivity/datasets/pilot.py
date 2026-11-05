@@ -64,7 +64,7 @@ def describe_dataset(
             raise ValueError(
                 f"{working_path}: case {number}: sentence differs from original"
             )
-        if after != expected:
+        if record_digest(after) != record_digest(expected):
             raise ValueError(
                 f"{working_path}: case {number}: unexpected metadata change"
             )

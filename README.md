@@ -98,7 +98,9 @@ The installed commands replace the removed root Python adapters.
 See the [six-model coverage pilot](docs/pilot.md) for model pairs, fixed
 providers, prices, settings without reasoning, and verification commands.
 The [dataset catalog](docs/dataset_catalog.md) explains filenames and links all
-18 full datasets and their pilot samples. The generated
+18 full datasets and their pilot samples.
+All full datasets can also be adapted to Inspect with source verification; see
+[complete dataset preparation](docs/dataset_catalog.md#complete-datasets-in-inspect). The generated
 [dataset inventory](docs/dataset_inventory.md) records counts and all 108 observed strata.
 Its old script commands are capture-time text. Use `transitivity datasets verify`
 for current verification.

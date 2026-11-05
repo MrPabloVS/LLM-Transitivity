@@ -7,7 +7,8 @@ from inspect_ai import Task, task
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import ChatMessageSystem, ChatMessageUser
 
-from llm_transitivity.datasets.pilot import verified_pilot
+from llm_transitivity.datasets.corpus import verified_full_dataset
+from llm_transitivity.datasets.pilot import dataset_names, verified_pilot
 from llm_transitivity.datasets.validation import load_dataset
 from llm_transitivity.domain.cases import BenchmarkCase
 from llm_transitivity.domain.selection import stratum
@@ -29,6 +30,9 @@ def hs_zero_shot(dataset: str = "HS", *, root: str) -> Task:
     if dataset.startswith("pilot/"):
         rows, provenance = verified_pilot(project_root, dataset.removeprefix("pilot/"))
         path = project_root / provenance["pilot_path"]
+    elif dataset in dataset_names():
+        rows, provenance = verified_full_dataset(project_root, dataset)
+        path = project_root / provenance["working_path"]
     else:
         rows = load_dataset(path)
     cases = [BenchmarkCase.from_record(row) for row in rows]
@@ -142,7 +146,9 @@ def hs_zero_shot(dataset: str = "HS", *, root: str) -> Task:
                 "working_sha256",
                 "case_count",
                 "pilot_sha256",
+                "original_revision",
             ]
+            if key in provenance
         }
     return Task(
         name=f"zeroShot_{pilot_name}",

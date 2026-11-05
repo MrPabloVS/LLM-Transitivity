@@ -100,3 +100,30 @@ The original
 records remain the input to selection and hashing. `case_type` is the source
 label; the dataset name supplies `dataset_family`. New run archives include the
 case adapter source and its hash.
+
+## Complete datasets in Inspect
+
+All 18 complete working datasets are ready for the Inspect task factory.
+Use the full filename stem, for example `HS_HF_PR_2000` or `mHS_NS_FU_4000`,
+as its `dataset` argument. The factory checks every record before it constructs
+samples or solvers. The `HS.json` smoke file is separate from this guarantee.
+
+Verify the complete collection against the preserved main revision:
+
+```sh
+uv run --locked transitivity datasets verify --full
+```
+
+The reference is main revision `7ccba3fb581a14f0c1dab5ceba5e1dac341d49ef`.
+Verification reads the original files from Git and compares their bytes with
+the local originals. It compares all eight fields of all 54,000 working records
+in source order. Only `valido` to `valid` and `canonico` to `canonic` are allowed,
+in the two LF/PR datasets named above. JSON value types also remain unchanged.
+Sentence spaces, Unicode, punctuation, and letter case remain exact.
+The system prompt must also match the reference revision.
+
+Inspect receives every original row in order, the normalized target, source
+labels, family and condition tags, original row number, stable sample UID,
+record hashes, and the reference revision. Full inputs keep 2,000 HS or 4,000
+mHS samples per task. Preparation does not execute these samples or include
+them in the 540-case pilot. No new copy replaces the working inputs.

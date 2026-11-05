@@ -4,7 +4,8 @@ import argparse
 import subprocess
 from pathlib import Path
 
-from llm_transitivity.datasets.pilot import prepare, verify
+from llm_transitivity.datasets.corpus import MAIN_REVISION, verified_full_dataset
+from llm_transitivity.datasets.pilot import dataset_names, prepare, verify
 
 
 def main(root: Path, argv: list[str] | None = None) -> None:
@@ -12,9 +13,22 @@ def main(root: Path, argv: list[str] | None = None) -> None:
     commands = parser.add_subparsers(dest="command", required=True)
     build = commands.add_parser("prepare")
     build.add_argument("--per-stratum", type=int, required=True)
-    commands.add_parser("verify")
+    check = commands.add_parser("verify")
+    check.add_argument(
+        "--full",
+        action="store_true",
+        help="Verify all full datasets against preserved main",
+    )
     args = parser.parse_args(argv)
     try:
+        if args.command == "verify" and args.full:
+            entries = [verified_full_dataset(root, name)[1] for name in dataset_names()]
+            print(
+                f"Verified {sum(e['case_count'] for e in entries):,} full cases, "
+                f"{sum(len(e['strata']) for e in entries)} strata against main "
+                f"{MAIN_REVISION}."
+            )
+            return
         manifest = (
             prepare(root, args.per_stratum)
             if args.command == "prepare"
