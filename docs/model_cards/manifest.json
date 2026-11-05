@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "archive_kind": "OpenRouter model cards and endpoint snapshots",
+  "captured_at_utc": "2026-11-05T22:14:12.152565+00:00",
+  "catalog_source": {
+    "url": "https://openrouter.ai/api/v1/models",
+    "fetched_at_utc": "2026-11-05T22:14:11.709930+00:00",
+    "http_status": 200,
+    "headers": {
+      "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+      "Content-Type": "application/json"
+    }
+  },
+  "record_note": "model.json is the complete selected record extracted from the public catalog, not the full catalog response. endpoints.json retains the complete endpoint response.",
+  "routing_note": "Experiment routing choices come from docs/pilot.md. They do not certify account access or observed routing. Executable routing changes are pending.",
+  "models": [
+    {
+      "model_id": "openai/gpt-4o-mini",
+      "directory": "openai--gpt-4o-mini",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-05T22:14:11.709930+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/openai/gpt-4o-mini/endpoints",
+        "fetched_at_utc": "2026-11-05T22:14:11.860939+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "experiment_routing": {
+        "provider_only": [
+          "openai"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "dc0d1f977fa77898f06797a2600d3a711cfca9cb8a80e254f118e6202ab8990b",
+          "bytes": 1784
+        },
+        "endpoints.json": {
+          "sha256": "56d75aa413c870c9adfe9c88c7aa4b8708fbf395eed0a8a03f49794639b20019",
+          "bytes": 5271
+        },
+        "card.md": {
+          "sha256": "58a61e05e7019d5ef303c27cc0f88f387b4d6e227000fef420e51aa100174ffc",
+          "bytes": 1972
+        }
+      }
+    },
+    {
+      "model_id": "openai/gpt-6-luna",
+      "directory": "openai--gpt-6-luna",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-05T22:14:11.709930+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna/endpoints",
+        "fetched_at_utc": "2026-11-05T22:14:11.858262+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "experiment_routing": {
+        "provider_only": [
+          "openai/flex"
+        ],
+        "service_tier": "flex",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "c518cd2c33cae9e47e052fb83a78f58f1032ec5a541df70c3c21ead2e93e45c3",
+          "bytes": 2365
+        },
+        "endpoints.json": {
+          "sha256": "c0521a85f58787cfbb89f16ad3d6b3e2d7a92171d48341cb2a129b5f0441cba7",
+          "bytes": 16270
+        },
+        "card.md": {
+          "sha256": "e8e7cbfc160bb1c75560e31a65edc31b749df0c7ead6bf872a3e4e900b9ca42f",
+          "bytes": 1991
+        }
+      }
+    },
+    {
+      "model_id": "anthropic/claude-sonnet-4.5",
+      "directory": "anthropic--claude-sonnet-4.5",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-05T22:14:11.709930+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-4.5/endpoints",
+        "fetched_at_utc": "2026-11-05T22:14:11.862490+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "experiment_routing": {
+        "provider_only": [
+          "anthropic"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "f0801e97590aba4620b1de1c264b7242475191a15497aae6728559226d0a1d13",
+          "bytes": 3875
+        },
+        "endpoints.json": {
+          "sha256": "a557b2761f4d728b80158ef46f4726fc86a53d043f4eb109361ae6aa5e3768ce",
+          "bytes": 14952
+        },
+        "card.md": {
+          "sha256": "c54fb8402356bd4bc95d6c9b3e8a3450a0573371b5eed2ff15a08b05f58a8806",
+          "bytes": 2049
+        }
+      }
+    },
+    {
+      "model_id": "anthropic/claude-sonnet-5",
+      "directory": "anthropic--claude-sonnet-5",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-05T22:14:11.709930+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5/endpoints",
+        "fetched_at_utc": "2026-11-05T22:14:12.149345+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:12 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "experiment_routing": {
+        "provider_only": [
+          "anthropic"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "98fab05e4c3efa6a60357ad2b5f65b72404be85ab7f45afeefb5ff2025896084",
+          "bytes": 4915
+        },
+        "endpoints.json": {
+          "sha256": "867d9163e4e5f17ca820f561811523991aa074f540255ae482095d960bf35062",
+          "bytes": 18028
+        },
+        "card.md": {
+          "sha256": "c4c96c8734e9c4f26c40c20ef6e8c83144f152db9d1741b3d04432f61efa2d6b",
+          "bytes": 2039
+        }
+      }
+    },
+    {
+      "model_id": "google/gemini-2.5-flash-lite",
+      "directory": "google--gemini-2.5-flash-lite",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-05T22:14:11.709930+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/google/gemini-2.5-flash-lite/endpoints",
+        "fetched_at_utc": "2026-11-05T22:14:12.066648+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:12 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "experiment_routing": {
+        "provider_only": [
+          "google-ai-studio/flex"
+        ],
+        "service_tier": "flex",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "4da5ea71f0a55dd2720113918609042fa14378388c62b928c4b9a1a2a53c666b",
+          "bytes": 1897
+        },
+        "endpoints.json": {
+          "sha256": "86aef478b3891f6281d8db06b025baf65f47697191992b6bd35ad7757c5566ca",
+          "bytes": 6009
+        },
+        "card.md": {
+          "sha256": "06696f6ad6b29a9fc1d0cc83b2fa8dcaf5320cca787af585a1fa0755cd53943f",
+          "bytes": 2055
+        }
+      }
+    },
+    {
+      "model_id": "google/gemini-3.1-flash-lite",
+      "directory": "google--gemini-3.1-flash-lite",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-05T22:14:11.709930+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:11 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/google/gemini-3.1-flash-lite/endpoints",
+        "fetched_at_utc": "2026-11-05T22:14:12.070419+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Thu, 05 Nov 2026 22:14:12 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "experiment_routing": {
+        "provider_only": [
+          "google-ai-studio/flex"
+        ],
+        "service_tier": "flex",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "9d0d2b2f05eb6e3fe0e8c5536fb23940e8d769f4156cc8add6cd92bf39a9172b",
+          "bytes": 2190
+        },
+        "endpoints.json": {
+          "sha256": "8fb15bc3f1f85f45a4aff38efee1da49c8e4cdf9a5abda5ccd5594d546edec8a",
+          "bytes": 15789
+        },
+        "card.md": {
+          "sha256": "91ca3c120e59f109bc1e218f014c2cd086be5af12c3abd4c48838f859358915b",
+          "bytes": 2077
+        }
+      }
+    }
+  ]
+}
