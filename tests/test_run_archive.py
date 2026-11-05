@@ -89,3 +89,17 @@ def test_generation_groups_and_shared_folder():
     assert spec.log_dir_create_unique is False
     for task in spec.tasks:
         assert f"generation_group:{task.metadata['generation_group']}" in task.tags
+
+
+def test_preflight_is_one_identical_case_on_each_model():
+    spec = build_pilot_spec(preflight=True)
+    assert len(spec.tasks) == 6
+    assert len({task.model.name for task in spec.tasks}) == 6
+    assert len({task.args["dataset"] for task in spec.tasks}) == 1
+    assert len({tuple(task.sample_id) for task in spec.tasks}) == 1
+    assert len(spec.tasks[0].sample_id) == 1
+    assert spec.options.metadata["planned_responses"] == 6
+    assert spec.options.metadata["selected_cases_per_model"] == 1
+    assert spec.options.metadata["phase"] == "preflight"
+    assert Path(spec.log_dir).parent.name.endswith("_preflight")
+    assert all("phase:preflight" in task.tags for task in spec.tasks)

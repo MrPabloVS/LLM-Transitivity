@@ -134,6 +134,17 @@ categories, token usage, and recorded costs before expanding the experiment.
 
 ## Result directories
 
+First run one identical source case on each model:
+
+```sh
+uv run --locked run_pilot.py --preflight --dry-run
+uv run --locked run_pilot.py --preflight
+```
+
+This selects one verified original row from the first pilot dataset, creates six
+tasks, and records `phase:preflight`. Its result folder ends in `_preflight`.
+The complete 540-case selection remains unchanged.
+
 Use the managed entry point for a paid run:
 
 ```sh

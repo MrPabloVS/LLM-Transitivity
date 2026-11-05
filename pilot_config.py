@@ -29,13 +29,21 @@ MODEL_GROUPS = {
 }
 
 
-def build_pilot_spec() -> FlowSpec:
+def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
     manifest = verify(PROJECT_ROOT)
     common = run_metadata(PROJECT_ROOT, manifest)
+    phase = "preflight" if preflight else "coverage-pilot"
+    common["phase"] = phase
+    common["planned_responses"] = (
+        len(MODELS) if preflight else common["pilot_case_count"] * len(MODELS)
+    )
+    common["selected_cases_per_model"] = 1 if preflight else common["pilot_case_count"]
     timestamp = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).strftime(
         "%Y-%m-%d_%H-%M-%S"
     )
     run_folder = f"{timestamp}_{common['experiment_run_id'][:8]}"
+    if preflight:
+        run_folder += "_preflight"
     results = Path("results/pilot") / run_folder
     common["results_root"] = str(results)
     common["results_folder_timezone"] = "America/Argentina/Buenos_Aires"
@@ -58,7 +66,7 @@ def build_pilot_spec() -> FlowSpec:
         }
         if supports_reasoning:
             model_args["reasoning_enabled"] = False
-        for entry in manifest["datasets"]:
+        for entry in manifest["datasets"][:1] if preflight else manifest["datasets"]:
             tasks.append(
                 FlowTask(
                     factory=hs_zero_shot,
@@ -75,9 +83,12 @@ def build_pilot_spec() -> FlowSpec:
                         ),
                     ),
                     fail_on_error=False,
+                    sample_id=[entry["selected_rows"][0]["original_row"]]
+                    if preflight
+                    else None,
                     tags=list(prepared[entry["dataset"]].tags or [])
                     + [
-                        "phase:coverage-pilot",
+                        f"phase:{phase}",
                         f"model:{model}",
                         f"model_family:{model.split('/')[0]}",
                         f"provider:{provider}",
@@ -88,6 +99,10 @@ def build_pilot_spec() -> FlowSpec:
                     ],
                     metadata={
                         **prepared[entry["dataset"]].metadata,
+                        "phase": phase,
+                        "selected_case_count": 1
+                        if preflight
+                        else len(entry["selected_rows"]),
                         "pilot_manifest_sha256": digest(
                             (PROJECT_ROOT / MANIFEST).read_bytes()
                         ),
@@ -112,7 +127,7 @@ def build_pilot_spec() -> FlowSpec:
             max_samples=2,
             retry_attempts=1,
             retry_cleanup=False,
-            tags=[f"experiment:{EXPERIMENT_ID}", "phase:coverage-pilot"],
+            tags=[f"experiment:{EXPERIMENT_ID}", f"phase:{phase}"],
             metadata=common,
             log_samples=True,
             log_model_api=True,

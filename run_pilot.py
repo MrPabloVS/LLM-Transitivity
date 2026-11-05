@@ -133,9 +133,14 @@ def main() -> None:
         action="store_true",
         help="Check the spec without creating an archive or calling models",
     )
+    parser.add_argument(
+        "--preflight",
+        action="store_true",
+        help="Run the same single source case on all six models",
+    )
     args = parser.parse_args()
     load_dotenv(PROJECT_ROOT / ".env")
-    spec = build_pilot_spec()
+    spec = build_pilot_spec(preflight=args.preflight)
     if args.dry_run:
         run(spec=spec, dry_run=True)
     elif not execute(spec, PROJECT_ROOT):
