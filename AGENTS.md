@@ -10,6 +10,13 @@ It defines the project conventions.
 - Before you design a component or interface, refactor code, or review its design,
   read and use [design-principles](.agents/skills/design-principles/SKILL.md).
 
+## Context
+
+- Before you change domain terms or their interpretation, read
+  [GLOSSARY.md](GLOSSARY.md).
+- Before you change pilot execution, input verification, or result archives, read
+  [the pilot guide](docs/pilot.md).
+
 ## Tools and checks
 
 Use `uv` to manage dependencies and run Python commands.

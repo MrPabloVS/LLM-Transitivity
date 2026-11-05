@@ -12,9 +12,18 @@ consistent term for each concept. Keep technical names and identifiers exact.
 Define technical terms when the reader needs them.
 
 Use Spanish in conversations with the user.
-Preserve the original content of benchmark prompts, model responses, and
-historical data. Language rules do not authorize changes to research evidence.
 Keep installed third-party skills in their original form.
+
+## Preservation
+
+Apply refactors to the new experiment code. Preserve code inherited from the
+main baseline `7ccba3fb581a14f0c1dab5ceba5e1dac341d49ef` byte for byte unless
+the user explicitly requests a change to that code. This includes `runBenchmark.py`.
+Documentation can describe the historical and current workflows separately.
+
+Preserve original benchmark inputs, model responses, historical data, and
+archived run evidence byte for byte. Save new runs in new directories.
+Language rules do not authorize changes to research evidence.
 
 ## Commits
 
