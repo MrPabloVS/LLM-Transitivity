@@ -1,5 +1,11 @@
 # Pilot cost estimate
 
+This saved estimate uses the previous all-standard routing. The executable
+catalog now selects three Flex endpoints and three default endpoints, as recorded
+in [the pilot guide](pilot.md). New estimates use those selected endpoints and
+record each requested tier. This document and its JSON snapshot retain the
+original standard-tier calculation; they are not a current Flex budget.
+
 Quotes checked on November 5, 2026, against the exact standard-provider endpoints
 listed in [the machine-readable estimate](pilot_cost_estimate.json). The estimate
 uses the 540 actual pilot inputs for each of six models, or 3,240 planned answers.

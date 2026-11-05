@@ -15,20 +15,56 @@ These are comparisons of specific model versions. Differences also include
 training, model size, and tokenization. They do not isolate the effect of a
 generation change. Sonnet also has a higher price than the other model families.
 
-## Proposed models and providers
+## Selected models, endpoints and service tiers
 
-Prices are USD per million text tokens for standard requests with short prompts.
-They exclude cache and batch discounts, retries, and account-level charges.
-Provider means the endpoint selected within OpenRouter.
+The [saved model cards](model_cards/README.md) retain the public catalog and
+endpoint data for all six models, with sources, capture times and hashes.
 
-| Model ID in OpenRouter | Provider | Provider slug | Input | Output |
-| --- | --- | --- | ---: | ---: |
-| [openai/gpt-4o-mini](https://openrouter.ai/openai/gpt-4o-mini) | OpenAI | `openai` | $0.15 | $0.60 |
-| [openai/gpt-6-luna](https://openrouter.ai/openai/gpt-6-luna) | OpenAI | `openai` | $0.10 | $0.50 |
-| [anthropic/claude-sonnet-4.5](https://openrouter.ai/anthropic/claude-sonnet-4.5) | Anthropic | `anthropic` | $3.00 | $15.00 |
-| [anthropic/claude-sonnet-5](https://openrouter.ai/anthropic/claude-sonnet-5) | Anthropic | `anthropic` | $2.00 | $10.00 |
-| [google/gemini-2.5-flash-lite](https://openrouter.ai/google/gemini-2.5-flash-lite) | Google AI Studio | `google-ai-studio` | $0.10 | $0.40 |
-| [google/gemini-3.1-flash-lite](https://openrouter.ai/google/gemini-3.1-flash-lite) | Google AI Studio | `google-ai-studio` | $0.25 | $1.50 |
+Routing decision approved on November 5, 2026. Flex is selected for GPT-6 Luna
+and both Gemini Flash-Lite models. The other three models use the default tier.
+The executable model catalog and Flow configuration now set these endpoint and
+tier pairs explicitly. A new live preflight is pending. The retired preflight
+used standard endpoints throughout. Saved model cards describe their capture
+time; this guide records the current execution configuration.
+
+Prices below are USD per million text tokens for the selected endpoints and
+short prompts. They were checked against the linked public endpoint listings on
+November 5, 2026. They exclude cache and batch discounts, retries, and account
+charges. Published availability does not establish access through our account.
+
+| Model ID in OpenRouter | Provider | Exact `provider.only` slug | Explicit `service_tier` | Input | Output |
+| --- | --- | --- | --- | ---: | ---: |
+| [openai/gpt-4o-mini](https://openrouter.ai/api/v1/models/openai/gpt-4o-mini/endpoints) | OpenAI | `openai` | `default` | $0.15 | $0.60 |
+| [openai/gpt-6-luna](https://openrouter.ai/api/v1/models/openai/gpt-6-luna/endpoints) | OpenAI | `openai/flex` | `flex` | $0.05 | $0.25 |
+| [anthropic/claude-sonnet-4.5](https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-4.5/endpoints) | Anthropic | `anthropic` | `default` | $3.00 | $15.00 |
+| [anthropic/claude-sonnet-5](https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5/endpoints) | Anthropic | `anthropic` | `default` | $2.00 | $10.00 |
+| [google/gemini-2.5-flash-lite](https://openrouter.ai/api/v1/models/google/gemini-2.5-flash-lite/endpoints) | Google AI Studio | `google-ai-studio/flex` | `flex` | $0.05 | $0.20 |
+| [google/gemini-3.1-flash-lite](https://openrouter.ai/api/v1/models/google/gemini-3.1-flash-lite/endpoints) | Google AI Studio | `google-ai-studio/flex` | `flex` | $0.125 | $0.75 |
+
+For every model, request one slug in `provider.only`, `allow_fallbacks=false`,
+`require_parameters=true`, and the explicit `service_tier` shown above. Keep the
+model IDs unchanged, optional reasoning disabled, and endpoint selection fixed
+without price sorting. The published default slugs are `openai` and `anthropic`;
+there is no `/default` suffix in this contract.
+
+OpenRouter uses prefix matching for base provider slugs. The explicit default
+tier excludes other tiers; it does not certify the effective endpoint identity.
+See [provider selection](https://openrouter.ai/docs/guides/routing/provider-selection)
+and [service tiers](https://openrouter.ai/docs/guides/features/service-tiers).
+
+Run and task metadata record the requested endpoint and tier; task tags include
+`service_tier`. The request sends the tier as a top-level body field through
+Inspect's `extra_body`. Compare the request with the reported endpoint
+ID, provider, model or permaslug, and service tier when available. Missing fields
+remain unverified. A preflight must check this evidence, reported reasoning
+usage, capture, and cost before the complete pilot.
+
+Flex has lower processing priority. This experiment compares answers, not latency
+between service tiers. Review timeout suitability separately; this decision does
+not change timeouts or retry counts. The 50% price reduction applies to the three
+Flex model tariffs, not to the full pilot cost. Existing standard-tier estimates
+and archived preflight evidence retain their original values; recalculate the
+full estimate for the new executable routing configuration.
 
 Inspect model names need the additional `openrouter/` prefix.
 

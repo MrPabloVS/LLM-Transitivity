@@ -117,6 +117,9 @@ def generation_details(
             key: data.get(key)
             for key in [
                 "provider_name",
+                "endpoint_id",
+                "model_permaslug",
+                "provider_responses",
                 "model",
                 "request_id",
                 "upstream_id",

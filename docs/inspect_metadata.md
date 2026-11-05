@@ -39,6 +39,12 @@ hashes; source and pilot counts; source condition values; the system prompt hash
 and requested model and provider IDs. It preserves factory metadata when Flow
 applies its overrides.
 
+`requested_provider` is the fixed endpoint slug and `requested_service_tier` is
+the explicit tier. Run metadata includes all six pairs in `requested_routing`.
+Task tags include `service_tier:<tier>`. `actual_service_tier` starts as null and
+`service_tier_verified` starts as false. Confirm effective tiers from individual
+responses rather than from these configuration fields.
+
 `requested_provider` is a configuration choice. `actual_provider` starts as null,
 and `reasoning_verified` starts as false. These are not automatically certified
 by a dry run or changed to success by a completed evaluation. Confirm them from
@@ -103,6 +109,9 @@ attempts for transient failures. It adds no new model generation, but adds
 metadata requests and wall-clock time. Lookup failures do not replace the model
 answer or fabricate usage. Samples that fail before the post-generation solver
 can be enriched later through the exporter.
+
+Generation details retain endpoint IDs, model permaslugs and complete
+`provider_responses` when reported. Missing identifiers remain unverified.
 
 Generation details can include provider and upstream IDs, native and normalized
 token counts, reasoning and cache tokens, total cost, provider responses, latency,

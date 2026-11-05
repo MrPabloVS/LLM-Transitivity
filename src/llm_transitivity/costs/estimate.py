@@ -58,6 +58,7 @@ def estimate(root: Path) -> dict:
             {
                 "model": model,
                 "provider": provider,
+                "service_tier": model_spec.service_tier,
                 "source": url,
                 "pricing_snapshot": pricing,
                 "cases": len(prompts),

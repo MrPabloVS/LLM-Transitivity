@@ -41,6 +41,15 @@ def build_pilot_spec(root: Path, *, preflight: bool = False) -> FlowSpec:
     common["results_root"] = str(results)
     common["results_folder_timezone"] = "America/Argentina/Buenos_Aires"
     common["generation_groups"] = MODEL_GROUPS
+    common["requested_routing"] = {
+        model.identifier: {
+            "provider_only": [model.provider],
+            "service_tier": model.service_tier,
+            "allow_fallbacks": policy.provider_fallback,
+            "require_parameters": policy.require_parameters,
+        }
+        for model in MODEL_SPECS
+    }
     # FlowTask metadata replaces factory metadata, so preserve it explicitly.
     prepared = {
         entry["dataset"]: hs_zero_shot(
@@ -91,6 +100,7 @@ def build_pilot_spec(root: Path, *, preflight: bool = False) -> FlowSpec:
                             max_retries=policy.request_max_retries,
                             timeout=policy.request_timeout_seconds,
                             cache_prompt=policy.cache_prompt,
+                            extra_body={"service_tier": model_spec.service_tier},
                         ),
                     ),
                     fail_on_error=False,
@@ -103,6 +113,7 @@ def build_pilot_spec(root: Path, *, preflight: bool = False) -> FlowSpec:
                         f"model:{model}",
                         f"model_family:{model.split('/')[0]}",
                         f"provider:{provider}",
+                        f"service_tier:{model_spec.service_tier}",
                         f"generation_group:{MODEL_GROUPS[model]}",
                         reasoning_tag,
                     ],
@@ -117,6 +128,9 @@ def build_pilot_spec(root: Path, *, preflight: bool = False) -> FlowSpec:
                         "requested_model": model,
                         "generation_group": MODEL_GROUPS[model],
                         "requested_provider": provider,
+                        "requested_service_tier": model_spec.service_tier,
+                        "actual_service_tier": None,
+                        "service_tier_verified": False,
                         "actual_provider": None,
                         "reasoning_verified": False,
                         "reasoning_policy": reasoning_policy,

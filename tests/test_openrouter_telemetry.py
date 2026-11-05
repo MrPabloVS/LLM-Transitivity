@@ -45,6 +45,8 @@ def test_all_fields_null_and_zero_survive_and_secrets_are_removed():
     assert raw["future_field"] == {"unknown": None}
     assert raw["native_tokens_reasoning"] == raw["total_cost"] == 0
     assert record["reported"]["native_tokens_cached"] is None
+    assert record["reported"]["service_tier"] is None
+    assert record["reported"]["endpoint_id"] is None
     assert "secret" not in json.dumps(record)
     assert record["stored_content"]["status"] == "available"
     assert get.call_count == 2

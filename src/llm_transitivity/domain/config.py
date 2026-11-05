@@ -9,6 +9,7 @@ class ModelSpec:
     provider: str
     generation_group: str
     supports_reasoning: bool
+    service_tier: str
 
 
 @dataclass(frozen=True)
@@ -57,11 +58,15 @@ class GenerationPolicy:
 
 
 MODEL_SPECS = (
-    ModelSpec("openai/gpt-4o-mini", "openai", "earlier", False),
-    ModelSpec("openai/gpt-6-luna", "openai", "later", True),
-    ModelSpec("anthropic/claude-sonnet-4.5", "anthropic", "earlier", True),
-    ModelSpec("anthropic/claude-sonnet-5", "anthropic", "later", True),
-    ModelSpec("google/gemini-2.5-flash-lite", "google-ai-studio", "earlier", True),
-    ModelSpec("google/gemini-3.1-flash-lite", "google-ai-studio", "later", True),
+    ModelSpec("openai/gpt-4o-mini", "openai", "earlier", False, "default"),
+    ModelSpec("openai/gpt-6-luna", "openai/flex", "later", True, "flex"),
+    ModelSpec("anthropic/claude-sonnet-4.5", "anthropic", "earlier", True, "default"),
+    ModelSpec("anthropic/claude-sonnet-5", "anthropic", "later", True, "default"),
+    ModelSpec(
+        "google/gemini-2.5-flash-lite", "google-ai-studio/flex", "earlier", True, "flex"
+    ),
+    ModelSpec(
+        "google/gemini-3.1-flash-lite", "google-ai-studio/flex", "later", True, "flex"
+    ),
 )
 GENERATION_POLICY = GenerationPolicy()

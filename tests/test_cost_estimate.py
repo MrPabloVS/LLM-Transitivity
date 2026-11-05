@@ -2,6 +2,13 @@ from decimal import Decimal
 
 from llm_transitivity.costs.calculation import generation_cost
 
+FLEX_TOTALS = {
+    "short_4_output_tokens_usd": 0.34827775,
+    "verbose_128_output_tokens_usd": 2.14280575,
+    "output_cap_1024_usd": 15.10971775,
+    "byte_input_output_cap_all_attempts_usd": 49.65832875,
+}
+
 
 def test_cost_includes_failed_attempts_and_request_charges():
     assert (
@@ -43,7 +50,7 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
 
     from llm_transitivity.costs import estimate as estimate_pilot_cost
     from llm_transitivity.costs import pricing
-    from llm_transitivity.domain.config import GENERATION_POLICY
+    from llm_transitivity.domain.config import GENERATION_POLICY, MODEL_SPECS
     from llm_transitivity.evidence.serialization import digest
     from llm_transitivity.inspect import flow as pilot_config
 
@@ -51,7 +58,23 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     saved_path = root / "docs/pilot_cost_estimate.json"
     saved_bytes = saved_path.read_bytes()
     saved = json.loads(saved_bytes)
-    quotes = {row["source"]: row for row in saved["quotes"]}
+    quotes = {}
+    for model in MODEL_SPECS:
+        path = (
+            root
+            / "docs/model_cards"
+            / model.identifier.replace("/", "--")
+            / "endpoints.json"
+        )
+        payload = json.loads(path.read_text())
+        selected = next(
+            e for e in payload["data"]["endpoints"] if e["tag"] == model.provider
+        )
+        url = f"https://openrouter.ai/api/v1/models/{model.identifier}/endpoints"
+        quotes[url] = {
+            "provider": model.provider,
+            "pricing_snapshot": selected["pricing"],
+        }
     requested = []
 
     def get(url, *, timeout):
@@ -94,7 +117,11 @@ def test_estimate_uses_saved_quotes_without_run_setup(monkeypatch):
     assert (
         report["input_proxy_tokens_per_model"] == saved["input_proxy_tokens_per_model"]
     )
-    assert report["totals_usd"] == pytest.approx(saved["totals_usd"])
+    # These fixed totals use the approved three Flex endpoints and saved input counts.
+    assert report["totals_usd"] == pytest.approx(FLEX_TOTALS)
+    assert {row["model"]: row["service_tier"] for row in report["quotes"]} == {
+        model.identifier: model.service_tier for model in MODEL_SPECS
+    }
     assert report["output_token_limit"] == GENERATION_POLICY.max_output_tokens
     assert report["inspect_max_retries"] == GENERATION_POLICY.request_max_retries
     assert report["sdk_max_retries"] == GENERATION_POLICY.sdk_max_retries
