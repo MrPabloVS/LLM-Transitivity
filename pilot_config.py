@@ -7,31 +7,23 @@ from zoneinfo import ZoneInfo
 from inspect_ai.model import GenerateConfig
 from inspect_flow import FlowModel, FlowOptions, FlowSpec, FlowTask
 
+from experiment_config import GENERATION_POLICY, MODEL_SPECS
 from experiment_metadata import EXPERIMENT_ID, run_metadata
 from inspect_tasks import PROJECT_ROOT, hs_zero_shot
 from prepare_pilot import MANIFEST, digest, verify
 
+# Preserve existing imports while deriving each view from the model catalog.
 MODELS = [
-    ("openai/gpt-4o-mini", "openai", False),
-    ("openai/gpt-6-luna", "openai", True),
-    ("anthropic/claude-sonnet-4.5", "anthropic", True),
-    ("anthropic/claude-sonnet-5", "anthropic", True),
-    ("google/gemini-2.5-flash-lite", "google-ai-studio", True),
-    ("google/gemini-3.1-flash-lite", "google-ai-studio", True),
+    (model.identifier, model.provider, model.supports_reasoning)
+    for model in MODEL_SPECS
 ]
-MODEL_GROUPS = {
-    "openai/gpt-4o-mini": "earlier",
-    "anthropic/claude-sonnet-4.5": "earlier",
-    "google/gemini-2.5-flash-lite": "earlier",
-    "openai/gpt-6-luna": "later",
-    "anthropic/claude-sonnet-5": "later",
-    "google/gemini-3.1-flash-lite": "later",
-}
+MODEL_GROUPS = {model.identifier: model.generation_group for model in MODEL_SPECS}
 
 
 def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
     manifest = verify(PROJECT_ROOT)
-    common = run_metadata(PROJECT_ROOT, manifest)
+    policy = GENERATION_POLICY
+    common = run_metadata(PROJECT_ROOT, manifest, policy=policy)
     phase = "preflight" if preflight else "coverage-pilot"
     common["phase"] = phase
     common["planned_responses"] = (
@@ -54,18 +46,31 @@ def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
         for entry in manifest["datasets"]
     }
     tasks = []
-    for model, provider, supports_reasoning in MODELS:
+    for model_spec in MODEL_SPECS:
+        model = model_spec.identifier
+        provider = model_spec.provider
+        supports_reasoning = model_spec.supports_reasoning
         model_args = {
-            "stream": False,
-            "max_retries": 0,
+            "stream": policy.stream,
+            "max_retries": policy.sdk_max_retries,
             "provider": {
                 "only": [provider],
-                "allow_fallbacks": False,
-                "require_parameters": True,
+                "allow_fallbacks": policy.provider_fallback,
+                "require_parameters": policy.require_parameters,
             },
         }
+        reasoning_policy = (
+            ("enabled" if policy.reasoning_enabled else "disabled")
+            if supports_reasoning
+            else "not supported"
+        )
+        reasoning_tag = (
+            f"reasoning:{reasoning_policy}"
+            if supports_reasoning
+            else "reasoning:not-supported"
+        )
         if supports_reasoning:
-            model_args["reasoning_enabled"] = False
+            model_args["reasoning_enabled"] = policy.reasoning_enabled
         for entry in manifest["datasets"][:1] if preflight else manifest["datasets"]:
             tasks.append(
                 FlowTask(
@@ -75,11 +80,11 @@ def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
                         name=f"openrouter/{model}",
                         model_args=model_args,
                         config=GenerateConfig(
-                            max_tokens=1024,
-                            max_connections=2,
-                            max_retries=2,
-                            timeout=60,
-                            cache_prompt=False,
+                            max_tokens=policy.max_output_tokens,
+                            max_connections=policy.max_connections,
+                            max_retries=policy.request_max_retries,
+                            timeout=policy.request_timeout_seconds,
+                            cache_prompt=policy.cache_prompt,
                         ),
                     ),
                     fail_on_error=False,
@@ -93,9 +98,7 @@ def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
                         f"model_family:{model.split('/')[0]}",
                         f"provider:{provider}",
                         f"generation_group:{MODEL_GROUPS[model]}",
-                        "reasoning:disabled"
-                        if supports_reasoning
-                        else "reasoning:not-supported",
+                        reasoning_tag,
                     ],
                     metadata={
                         **prepared[entry["dataset"]].metadata,
@@ -112,9 +115,7 @@ def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
                         "requested_provider": provider,
                         "actual_provider": None,
                         "reasoning_verified": False,
-                        "reasoning_policy": "disabled"
-                        if supports_reasoning
-                        else "not supported",
+                        "reasoning_policy": reasoning_policy,
                     },
                 )
             )
@@ -123,10 +124,10 @@ def build_pilot_spec(*, preflight: bool = False) -> FlowSpec:
         log_dir_create_unique=False,
         store=None,
         options=FlowOptions(
-            max_tasks=1,
-            max_samples=2,
-            retry_attempts=1,
-            retry_cleanup=False,
+            max_tasks=policy.max_tasks,
+            max_samples=policy.max_samples,
+            retry_attempts=policy.flow_retry_attempts,
+            retry_cleanup=policy.flow_retry_cleanup,
             tags=[f"experiment:{EXPERIMENT_ID}", f"phase:{phase}"],
             metadata=common,
             log_samples=True,

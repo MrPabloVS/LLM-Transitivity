@@ -22,6 +22,7 @@ def test_metadata_is_allowlisted_and_matches_configuration(monkeypatch):
     assert set(md["source_sha256"]) >= {
         "inspect_tasks.py",
         "inspect_scoring.py",
+        "experiment_config.py",
         "uv.lock",
     }
     assert (
@@ -72,3 +73,54 @@ def test_metadata_survives_flow_and_eval_log_serialization(tmp_path):
     assert sample.metadata["sentence_sha256"]
     assert sample.metadata["sample_uid"]
     assert sample.metadata["tags"]
+
+
+def test_policy_changes_reach_both_execution_and_metadata(monkeypatch):
+    from dataclasses import replace
+
+    import pilot_config
+    from experiment_config import GENERATION_POLICY
+
+    policy = replace(
+        GENERATION_POLICY,
+        max_output_tokens=256,
+        max_connections=3,
+        max_tasks=2,
+        max_samples=3,
+        request_timeout_seconds=45,
+        request_max_retries=1,
+        sdk_max_retries=1,
+        flow_retry_attempts=2,
+        flow_retry_cleanup=True,
+        cache_prompt=True,
+        stream=True,
+        provider_fallback=True,
+        require_parameters=False,
+        reasoning_enabled=True,
+    )
+    monkeypatch.setattr(pilot_config, "GENERATION_POLICY", policy)
+    spec = pilot_config.build_pilot_spec(preflight=True)
+    assert spec.options.metadata["generation_policy"] == policy.metadata()
+    assert spec.options.metadata["openrouter_capture"]["streaming"] is True
+    assert spec.options.max_tasks == 2
+    assert spec.options.max_samples == 3
+    assert spec.options.retry_attempts == 2
+    assert spec.options.retry_cleanup is True
+    for task in spec.tasks:
+        config = task.model.config
+        assert (config.max_tokens, config.max_connections, config.timeout) == (
+            256,
+            3,
+            45,
+        )
+        assert config.max_retries == 1
+        assert config.cache_prompt is True
+        args = task.model.model_args
+        assert args["max_retries"] == 1
+        assert args["stream"] is True
+        assert args["provider"]["allow_fallbacks"] is True
+        assert args["provider"]["require_parameters"] is False
+        if "gpt-4o-mini" not in task.model.name:
+            assert args["reasoning_enabled"] is True
+            assert "reasoning:enabled" in task.tags
+            assert task.metadata["reasoning_policy"] == "enabled"

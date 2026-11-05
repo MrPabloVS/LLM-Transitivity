@@ -44,6 +44,11 @@ The group is stored in Inspect task metadata and tags.
 
 ## Pilot conditions
 
+`experiment_config.py` defines the model catalog and immutable execution policy.
+The Flow configuration and run metadata use these same definitions. Existing
+`MODELS` and `MODEL_GROUPS` imports remain available as derived views. New runs
+archive the configuration source and its hash with the other source evidence.
+
 See the [cost scenarios](pilot_cost_estimate.md) and
 [quoted prices and inputs](pilot_cost_estimate.json) before selecting a budget.
 The estimate is not a spending limit; budget enforcement is still pending.

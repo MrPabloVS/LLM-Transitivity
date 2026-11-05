@@ -40,3 +40,12 @@ it does not establish statistical accuracy or cover every distinct sentence.
 
 **Source-label agreement**: Agreement between a model answer and the label stored
 in the original dataset. This does not establish the logical validity of the case.
+
+**Preflight**: A check that uses the same single source case across all selected
+models before the coverage pilot. It checks access and response evidence, not
+coverage across strata or statistical accuracy.
+
+**Model generation group**: A set of models from the same relative generation
+in this comparison. Each earlier or later group contains one model from each
+of OpenAI, Anthropic, and Google.
+_Avoid_: Model family when referring to an earlier or later group.

@@ -7,13 +7,16 @@ from importlib.metadata import version
 from pathlib import Path
 from uuid import uuid4
 
+from experiment_config import GENERATION_POLICY, GenerationPolicy
 from prepare_pilot import MANIFEST, digest
 
 EXPERIMENT_ID = "llm-transitivity-coverage-pilot-v1"
 SCORING_VERSION = "source-label-deterministic-v2"
 
 
-def run_metadata(root: Path, manifest: dict) -> dict:
+def run_metadata(
+    root: Path, manifest: dict, *, policy: GenerationPolicy = GENERATION_POLICY
+) -> dict:
     """Snapshot only allowlisted code, package versions, and Git state."""
 
     def git(*args):
@@ -29,6 +32,7 @@ def run_metadata(root: Path, manifest: dict) -> dict:
         "dataset_validation.py",
         "prepare_pilot.py",
         "experiment_metadata.py",
+        "experiment_config.py",
         "openrouter_telemetry.py",
         "collect_openrouter.py",
         "run_pilot.py",
@@ -50,7 +54,7 @@ def run_metadata(root: Path, manifest: dict) -> dict:
             "full_response_json": True,
             "generation_lookup": "automatic, up to three read-only lookup attempts per id",
             "stored_content_lookup": "optional exporter flag; permissions may be restricted",
-            "streaming": False,
+            "streaming": policy.stream,
             "credentials": "redacted",
         },
         "pilot_manifest_sha256": digest((root / MANIFEST).read_bytes()),
@@ -79,18 +83,5 @@ def run_metadata(root: Path, manifest: dict) -> dict:
                 ]
             },
         },
-        "generation_policy": {
-            "max_output_tokens": 1024,
-            "reasoning": "disabled where supported",
-            "provider_fallback": False,
-            "cache_prompt": False,
-            "temperature": "provider default; omitted",
-            "top_p": "provider default; omitted",
-            "seed": "omitted; outputs are not deterministic",
-            "request_timeout_seconds": 60,
-            "request_max_retries": 2,
-            "sdk_max_retries": 0,
-            "max_tasks": 1,
-            "max_samples": 2,
-        },
+        "generation_policy": policy.metadata(),
     }
