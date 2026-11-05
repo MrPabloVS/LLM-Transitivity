@@ -5,7 +5,8 @@ from pathlib import Path
 import pytest
 
 import inspect_tasks
-import prepare_pilot
+from llm_transitivity.datasets import pilot as prepare_pilot
+from llm_transitivity.evidence import serialization
 from pilot_config import MODELS, build_pilot_spec
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -110,18 +111,18 @@ def test_corruption_is_rejected_before_inspect_builds_task(
         path = root / entry["pilot_path"]
         data = json.loads(path.read_text())
         data[0][2] += " "
-        path.write_bytes(prepare_pilot.json_bytes(data))
+        path.write_bytes(serialization.json_bytes(data))
     elif change == "manifest":
         path = root / prepare_pilot.MANIFEST
         data = json.loads(path.read_text())
         next(e for e in data["datasets"] if e["dataset"] == name)["selected_rows"][0][
             "original_row"
         ] += 1
-        path.write_bytes(prepare_pilot.json_bytes(data))
+        path.write_bytes(serialization.json_bytes(data))
     else:
         (root / "prompts/systemPrompts/zeroShot.json").write_text('["changed"]')
     if change in {"sentence", "label", "identifier", "order"}:
-        path.write_bytes(prepare_pilot.json_bytes(rows))
+        path.write_bytes(serialization.json_bytes(rows))
     monkeypatch.setattr(inspect_tasks, "PROJECT_ROOT", root)
     with pytest.raises(ValueError):
         inspect_tasks.hs_zero_shot(f"pilot/{name}")
