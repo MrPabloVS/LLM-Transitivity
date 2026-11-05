@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the money then the girl pays the car, if the girl pays the car then the man eats the food, therefore if the officer finds the money then the man eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O3"
+        ],
+        [
+            "S10",
+            "V2",
+            "O11"
+        ],
+        [
+            "S2",
+            "V5",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

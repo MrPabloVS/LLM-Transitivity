@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer finds the newspaper then the teacher hates the computer, if the teacher hates the computer then the manager loses the paper, therefore if the officer finds the newspaper then the manager loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V3",
+            "O11"
+        ],
+        [
+            "S6",
+            "V10",
+            "O14"
+        ],
+        [
+            "S9",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

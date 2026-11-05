@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the paper then the man buys the building, if the man buys the building then the woman reads the book, therefore if the teacher finds the paper then the woman reads the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O12"
+        ],
+        [
+            "S2",
+            "V1",
+            "O9"
+        ],
+        [
+            "S3",
+            "V6",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

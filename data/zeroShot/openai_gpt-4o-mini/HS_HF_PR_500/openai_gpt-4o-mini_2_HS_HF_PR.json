@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family buys the table then the teacher eats the sugar, if the teacher eats the sugar then the manager sees the chair, therefore if the family buys the table then the manager sees the chair",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V1",
+            "O5"
+        ],
+        [
+            "S6",
+            "V5",
+            "O7"
+        ],
+        [
+            "S9",
+            "V4",
+            "O6"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

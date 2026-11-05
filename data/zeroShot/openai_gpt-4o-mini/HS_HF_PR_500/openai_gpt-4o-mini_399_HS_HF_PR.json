@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loses the book then the girl buys the table, if the girl buys the table then the student finds the school, therefore if the man loses the book then the student finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V7",
+            "O4"
+        ],
+        [
+            "S10",
+            "V1",
+            "O5"
+        ],
+        [
+            "S5",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

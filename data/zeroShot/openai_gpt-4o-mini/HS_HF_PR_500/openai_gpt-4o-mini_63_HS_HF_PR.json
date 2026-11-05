@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the newspaper then the girl loses the game, if the girl loses the game then the doctor eats the food, therefore if the teacher finds the newspaper then the doctor eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O11"
+        ],
+        [
+            "S10",
+            "V7",
+            "O15"
+        ],
+        [
+            "S7",
+            "V5",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid buys the computer then the officer sees the newspaper, if the officer sees the newspaper then the woman loves the book, therefore if the kid buys the computer then the woman loves the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O14"
+        ],
+        [
+            "S8",
+            "V4",
+            "O12"
+        ],
+        [
+            "S3",
+            "V8",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

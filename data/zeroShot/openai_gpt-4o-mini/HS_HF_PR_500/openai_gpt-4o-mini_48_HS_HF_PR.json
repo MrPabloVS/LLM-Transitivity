@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid buys the chair then the doctor hates the sugar, if the doctor hates the sugar then the man loves the program, therefore if the kid buys the chair then the man loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O6"
+        ],
+        [
+            "S7",
+            "V10",
+            "O7"
+        ],
+        [
+            "S2",
+            "V8",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

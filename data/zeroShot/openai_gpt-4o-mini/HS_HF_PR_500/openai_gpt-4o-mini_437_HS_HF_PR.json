@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor wins the game then the officer sees the college, if the officer sees the college then the teacher pays the computer, therefore if the doctor wins the game then the teacher pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V4",
+            "O10"
+        ],
+        [
+            "S6",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer buys the building then the girl wins the game, if the girl wins the game then the doctor loves the program, therefore if the officer buys the building then the doctor loves the program",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V1",
+            "O9"
+        ],
+        [
+            "S10",
+            "V9",
+            "O15"
+        ],
+        [
+            "S7",
+            "V8",
+            "O1"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

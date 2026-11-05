@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager pays the computer then the teacher hates the school, if the teacher hates the school then the student buys the sugar, therefore if the manager pays the computer then the student buys the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V2",
+            "O14"
+        ],
+        [
+            "S6",
+            "V10",
+            "O8"
+        ],
+        [
+            "S5",
+            "V1",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

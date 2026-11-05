@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student wins the case then the teacher finds the sugar, if the teacher finds the sugar then the officer pays the computer, therefore if the student wins the case then the officer pays the computer",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V9",
+            "O2"
+        ],
+        [
+            "S6",
+            "V3",
+            "O7"
+        ],
+        [
+            "S8",
+            "V2",
+            "O14"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor buys the table then the manager finds the sugar, if the manager finds the sugar then the family wins the case, therefore if the doctor buys the table then the family wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V1",
+            "O5"
+        ],
+        [
+            "S9",
+            "V3",
+            "O7"
+        ],
+        [
+            "S4",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

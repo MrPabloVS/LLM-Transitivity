@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man loses the newspaper then the kid hates the school, if the kid hates the school then the teacher sees the money, therefore if the man loses the newspaper then the teacher sees the money",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V7",
+            "O12"
+        ],
+        [
+            "S1",
+            "V10",
+            "O8"
+        ],
+        [
+            "S6",
+            "V4",
+            "O3"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

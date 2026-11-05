@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher buys the paper then the man loses the car, if the man loses the car then the officer finds the food, therefore if the teacher buys the paper then the officer finds the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V1",
+            "O13"
+        ],
+        [
+            "S2",
+            "V7",
+            "O11"
+        ],
+        [
+            "S8",
+            "V3",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

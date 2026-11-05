@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the man buys the car then the teacher loses the case, if the teacher loses the case then the manager finds the food, therefore if the man buys the car then the manager finds the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S2",
+            "V1",
+            "O11"
+        ],
+        [
+            "S6",
+            "V7",
+            "O2"
+        ],
+        [
+            "S9",
+            "V3",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

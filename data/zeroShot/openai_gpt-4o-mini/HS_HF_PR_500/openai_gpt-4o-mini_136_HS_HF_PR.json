@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loves the car then the woman sees the table, if the woman sees the table then the doctor finds the book, therefore if the family loves the car then the doctor finds the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V8",
+            "O11"
+        ],
+        [
+            "S3",
+            "V4",
+            "O5"
+        ],
+        [
+            "S7",
+            "V3",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

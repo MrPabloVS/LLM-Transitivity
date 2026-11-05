@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman loves the computer then the kid finds the food, if the kid finds the food then the manager buys the paper, therefore if the woman loves the computer then the manager buys the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V8",
+            "O14"
+        ],
+        [
+            "S1",
+            "V3",
+            "O16"
+        ],
+        [
+            "S9",
+            "V1",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

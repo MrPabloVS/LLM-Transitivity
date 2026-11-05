@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family finds the college then the student loves the sugar, if the student loves the sugar then the woman sees the book, therefore if the family finds the college then the woman sees the book",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V3",
+            "O10"
+        ],
+        [
+            "S5",
+            "V8",
+            "O7"
+        ],
+        [
+            "S3",
+            "V4",
+            "O4"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

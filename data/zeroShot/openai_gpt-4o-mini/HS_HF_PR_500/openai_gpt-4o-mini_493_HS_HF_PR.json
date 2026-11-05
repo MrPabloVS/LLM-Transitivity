@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor pays the building then the student loves the book, if the student loves the book then the kid sees the table, therefore if the doctor pays the building then the kid sees the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V2",
+            "O9"
+        ],
+        [
+            "S5",
+            "V8",
+            "O4"
+        ],
+        [
+            "S1",
+            "V4",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

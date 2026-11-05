@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the doctor loses the paper then the teacher wins the game, if the teacher wins the game then the officer loves the sugar, therefore if the doctor loses the paper then the officer loves the sugar",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S6",
+            "V9",
+            "O15"
+        ],
+        [
+            "S8",
+            "V8",
+            "O7"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

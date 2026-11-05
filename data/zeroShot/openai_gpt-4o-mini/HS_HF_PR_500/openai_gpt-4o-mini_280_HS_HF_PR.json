@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family loses the money then the woman buys the newspaper, if the woman buys the newspaper then the student loves the building, therefore if the family loses the money then the student loves the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V7",
+            "O3"
+        ],
+        [
+            "S3",
+            "V1",
+            "O12"
+        ],
+        [
+            "S5",
+            "V8",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

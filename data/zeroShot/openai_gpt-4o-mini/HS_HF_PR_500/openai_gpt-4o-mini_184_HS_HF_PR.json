@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager loves the computer then the kid pays the table, if the kid pays the table then the doctor loses the case, therefore if the manager loves the computer then the doctor loses the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V8",
+            "O14"
+        ],
+        [
+            "S1",
+            "V2",
+            "O5"
+        ],
+        [
+            "S7",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

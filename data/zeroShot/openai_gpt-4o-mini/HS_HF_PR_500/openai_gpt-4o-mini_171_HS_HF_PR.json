@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the woman buys the food then the officer loves the book, if the officer loves the book then the kid wins the game, therefore if the woman buys the food then the kid wins the game",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S3",
+            "V1",
+            "O16"
+        ],
+        [
+            "S8",
+            "V8",
+            "O4"
+        ],
+        [
+            "S1",
+            "V9",
+            "O15"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

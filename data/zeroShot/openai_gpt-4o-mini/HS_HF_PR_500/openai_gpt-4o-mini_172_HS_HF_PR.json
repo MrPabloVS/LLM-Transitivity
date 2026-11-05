@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the officer loves the newspaper then the kid sees the chair, if the kid sees the chair then the doctor finds the school, therefore if the officer loves the newspaper then the doctor finds the school",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S8",
+            "V8",
+            "O12"
+        ],
+        [
+            "S1",
+            "V4",
+            "O6"
+        ],
+        [
+            "S7",
+            "V3",
+            "O8"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

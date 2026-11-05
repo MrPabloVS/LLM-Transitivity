@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student loves the car then the manager finds the money, if the manager finds the money then the man buys the table, therefore if the student loves the car then the man buys the table",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O11"
+        ],
+        [
+            "S9",
+            "V3",
+            "O3"
+        ],
+        [
+            "S2",
+            "V1",
+            "O5"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes"
+}

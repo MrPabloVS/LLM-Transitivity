@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the teacher finds the sugar then the woman hates the newspaper, if the woman hates the newspaper then the student loses the paper, therefore if the teacher finds the sugar then the student loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S6",
+            "V3",
+            "O7"
+        ],
+        [
+            "S3",
+            "V10",
+            "O12"
+        ],
+        [
+            "S5",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

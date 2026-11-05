@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the manager sees the college then the doctor loses the newspaper, if the doctor loses the newspaper then the teacher hates the food, therefore if the manager sees the college then the teacher hates the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S9",
+            "V4",
+            "O10"
+        ],
+        [
+            "S7",
+            "V7",
+            "O12"
+        ],
+        [
+            "S6",
+            "V10",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student finds the building then the woman eats the food, if the woman eats the food then the girl loses the paper, therefore if the student finds the building then the girl loses the paper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V3",
+            "O9"
+        ],
+        [
+            "S3",
+            "V5",
+            "O16"
+        ],
+        [
+            "S10",
+            "V7",
+            "O13"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

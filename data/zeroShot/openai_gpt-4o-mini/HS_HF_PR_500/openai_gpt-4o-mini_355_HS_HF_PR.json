@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the student loves the computer then the family pays the paper, if the family pays the paper then the manager wins the case, therefore if the student loves the computer then the manager wins the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S5",
+            "V8",
+            "O14"
+        ],
+        [
+            "S4",
+            "V2",
+            "O13"
+        ],
+        [
+            "S9",
+            "V9",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

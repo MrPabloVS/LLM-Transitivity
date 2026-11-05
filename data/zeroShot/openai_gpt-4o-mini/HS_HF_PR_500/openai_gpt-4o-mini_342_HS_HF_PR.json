@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the family hates the paper then the doctor loves the money, if the doctor loves the money then the woman loses the case, therefore if the family hates the paper then the woman loses the case",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S4",
+            "V10",
+            "O13"
+        ],
+        [
+            "S7",
+            "V8",
+            "O3"
+        ],
+        [
+            "S3",
+            "V7",
+            "O2"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

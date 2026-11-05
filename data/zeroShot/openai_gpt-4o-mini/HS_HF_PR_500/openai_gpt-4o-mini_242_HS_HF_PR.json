@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid wins the game then the doctor loses the paper, if the doctor loses the paper then the manager pays the food, therefore if the kid wins the game then the manager pays the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V9",
+            "O15"
+        ],
+        [
+            "S7",
+            "V7",
+            "O13"
+        ],
+        [
+            "S9",
+            "V2",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

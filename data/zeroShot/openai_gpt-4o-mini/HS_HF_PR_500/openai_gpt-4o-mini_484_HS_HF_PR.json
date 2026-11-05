@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid pays the sugar then the teacher buys the newspaper, if the teacher buys the newspaper then the doctor sees the building, therefore if the kid pays the sugar then the doctor sees the building",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V2",
+            "O7"
+        ],
+        [
+            "S6",
+            "V1",
+            "O12"
+        ],
+        [
+            "S7",
+            "V4",
+            "O9"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid buys the building then the teacher hates the food, if the teacher hates the food then the girl loses the newspaper, therefore if the kid buys the building then the girl loses the newspaper",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V1",
+            "O9"
+        ],
+        [
+            "S6",
+            "V10",
+            "O16"
+        ],
+        [
+            "S10",
+            "V7",
+            "O12"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "yes"
+}

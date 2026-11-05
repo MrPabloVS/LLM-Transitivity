@@ -45,6 +45,8 @@ results = []
 
 #-------------------------------------------------------------------------------------------------------------------
 
+tIndex = 0 #? indice es temporal para no sobre escribir nombres, pensar bien nombre o armar indice con enumerate
+
 #* Input
 for p in promts:
     r = requests.post(
@@ -76,8 +78,9 @@ for p in promts:
                     "responses": answer
                 }
     
-
-    outFile = OUT_DIR / f"{modelName}_{p[1]}_{p[0]}.json"
+    tIndex = tIndex + 1 #?
+    #outFile = OUT_DIR / f"{modelName}_{p[1]}_{p[0]}.json" #! Pensar una convencion de nombramiento exhaustiva
+    outFile = OUT_DIR / f"{modelName}_{tIndex}_{p[0]}_{p[3]}_{p[4]}.json" #? Borrar con tIndex
     with open(outFile, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
 

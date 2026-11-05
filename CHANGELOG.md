@@ -1,5 +1,12 @@
 # Changelog  
 
+## - 2026-11-4
+## Changed
+- tIndex to runBenchmark.py
+  
+### Fixed  
+- typo in README.md
+
 ## - 2026-11-3
 ### Added
 - HS_LF, HS_HF, HS_NS user prompts for an initial testing

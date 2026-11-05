@@ -1,0 +1,30 @@
+{
+    "userPrompt": "if the kid sees the car then the girl pays the paper, if the girl pays the paper then the family eats the food, therefore if the kid sees the car then the family eats the food",
+    "system_prompt": "Answer only with 'yes' or 'no' and nothing else.",
+    "model": "openai/gpt-4o-mini",
+    "id": [
+        [
+            "S1",
+            "V4",
+            "O11"
+        ],
+        [
+            "S10",
+            "V2",
+            "O13"
+        ],
+        [
+            "S4",
+            "V5",
+            "O16"
+        ]
+    ],
+    "tags": {
+        "frecuency": "HF",
+        "verbal time": "PR",
+        "conectors": "if then / therefore",
+        "validity": "valid",
+        "cononic": "canonic"
+    },
+    "responses": "Yes."
+}
