@@ -79,8 +79,8 @@ def test_metadata_survives_flow_and_eval_log_serialization(tmp_path):
 def test_policy_changes_reach_both_execution_and_metadata(monkeypatch):
     from dataclasses import replace
 
-    import pilot_config
     from experiment_config import GENERATION_POLICY
+    from llm_transitivity.inspect import flow as pilot_config
 
     policy = replace(
         GENERATION_POLICY,
@@ -100,7 +100,9 @@ def test_policy_changes_reach_both_execution_and_metadata(monkeypatch):
         reasoning_enabled=True,
     )
     monkeypatch.setattr(pilot_config, "GENERATION_POLICY", policy)
-    spec = pilot_config.build_pilot_spec(preflight=True)
+    spec = pilot_config.build_pilot_spec(
+        Path(__file__).resolve().parents[1], preflight=True
+    )
     assert spec.options.metadata["generation_policy"] == policy.metadata()
     assert spec.options.metadata["openrouter_capture"]["streaming"] is True
     assert spec.options.max_tasks == 2

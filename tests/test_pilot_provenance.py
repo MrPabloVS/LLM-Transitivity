@@ -4,9 +4,9 @@ from pathlib import Path
 
 import pytest
 
-import inspect_tasks
 from llm_transitivity.datasets import pilot as prepare_pilot
 from llm_transitivity.evidence import serialization
+from llm_transitivity.inspect import tasks as inspect_tasks
 from pilot_config import MODELS, build_pilot_spec
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,7 +26,7 @@ def test_every_pilot_sentence_and_metadata_reaches_inspect_unchanged(name):
     full = json.loads((ROOT / entry["working_path"]).read_text())
     original = json.loads((ROOT / entry["original_path"]).read_text())
     pilot_name = Path(entry["pilot_path"]).stem
-    evaluation = inspect_tasks.hs_zero_shot(f"pilot/{pilot_name}")
+    evaluation = inspect_tasks.hs_zero_shot(f"pilot/{pilot_name}", root=str(ROOT))
     samples = list(evaluation.dataset)
     assert Path(evaluation.dataset.location).is_file()
     assert int(pilot_name.rsplit("_", 1)[1]) == len(rows)
@@ -123,9 +123,8 @@ def test_corruption_is_rejected_before_inspect_builds_task(
         (root / "prompts/systemPrompts/zeroShot.json").write_text('["changed"]')
     if change in {"sentence", "label", "identifier", "order"}:
         path.write_bytes(serialization.json_bytes(rows))
-    monkeypatch.setattr(inspect_tasks, "PROJECT_ROOT", root)
     with pytest.raises(ValueError):
-        inspect_tasks.hs_zero_shot(f"pilot/{name}")
+        inspect_tasks.hs_zero_shot(f"pilot/{name}", root=str(root))
 
 
 def test_preparation_refuses_to_replace_evidence():
