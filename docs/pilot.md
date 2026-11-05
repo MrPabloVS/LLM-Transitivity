@@ -11,14 +11,14 @@ endpoint listings. A catalog entry does not establish access through our account
 ## Current preparation status
 
 Local checks passed again on November 5, 2026: 54,000 full records, 108 strata,
-and 540 selected cases; 149 tests; and both dry-runs (108 pilot tasks and six
+and 540 selected cases; 175 tests; and both dry-runs (108 pilot tasks and six
 preflight tasks). Original inputs and selected files remain unchanged. Ruff
 passes for package sources and tests. Global Ruff checks still report the
 existing lint and format failures in the preserved `runBenchmark.py`.
 
-A new [cost estimate](../results/cost_estimates/2026-11-05_19-47-28-e1bd86b6/estimate.json)
+A new [cost estimate](../results/cost_estimates/2026-11-05_19-56-40-9e2fda15/estimate.json)
 was saved on November 5, 2026, using all six selected endpoints and current
-verified inputs. The one-attempt scenarios total USD 0.35 for four output tokens,
+verified inputs after the approved JSON formatting. The one-attempt scenarios total USD 0.35 for four output tokens,
 USD 2.14 for 128 output tokens, and USD 15.11 at the 1,024-token output cap.
 The byte-input scenario with all three attempts totals USD 49.66. These are
 planning scenarios, not spending limits or reported charges.

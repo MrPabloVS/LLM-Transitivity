@@ -127,3 +127,12 @@ labels, family and condition tags, original row number, stable sample UID,
 record hashes, and the reference revision. Full inputs keep 2,000 HS or 4,000
 mHS samples per task. Preparation does not execute these samples or include
 them in the 540-case pilot. No new copy replaces the working inputs.
+
+The pilot manifest keeps its original source revision and selection. Both source
+anchors contain the same original inputs. After the approved JSON formatting,
+only the manifest hashes for the complete working files change. Selected rows,
+record hashes, sentence hashes, and pilot file bytes remain unchanged.
+
+Working datasets use two-space JSON indentation, readable Unicode, and a final
+newline, like the pilot files. This changes JSON presentation only. Original
+files under `prompts/` retain their original bytes.
