@@ -8,7 +8,10 @@ from inspect_ai.solver import Generate, Solver, TaskState, solver
 from inspect_ai.solver import generate as generate_solver
 
 from llm_transitivity.openrouter import capture
-from llm_transitivity.openrouter.client import generation_details
+from llm_transitivity.openrouter.client import (
+    captured_generation_ids,
+    generation_details,
+)
 
 
 @solver
@@ -18,11 +21,7 @@ def collect_openrouter_details() -> Solver:
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         if not str(state.model).startswith("openrouter/"):
             return state
-        ids = []
-        for call in state.metadata.get("openrouter_http_calls", []):
-            payload = call.get("response_body", {}).get("json")
-            if isinstance(payload, dict) and isinstance(payload.get("id"), str):
-                ids.append(payload["id"])
+        ids = captured_generation_ids(state.metadata.get("openrouter_http_calls", []))
         if state.output.response_id:
             ids.append(state.output.response_id)
         for generation_id in dict.fromkeys(ids or [None]):

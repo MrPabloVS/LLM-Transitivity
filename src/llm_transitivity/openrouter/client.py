@@ -89,6 +89,16 @@ def fetch_endpoint(generation_id: str, api_key: str, endpoint: str, get=None) ->
     }
 
 
+def captured_generation_ids(calls: list[dict]) -> list[str]:
+    """Read IDs in capture order; callers retain their own deduplication policy."""
+    ids = []
+    for call in calls:
+        payload = call.get("response_body", {}).get("json")
+        if isinstance(payload, dict) and isinstance(payload.get("id"), str):
+            ids.append(payload["id"])
+    return ids
+
+
 def generation_details(
     generation_id: str | None,
     api_key: str | None,

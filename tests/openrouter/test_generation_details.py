@@ -80,3 +80,18 @@ def test_missing_ids_or_keys_do_not_call_endpoint():
         telemetry.generation_details("gen-test", None, get=get)["lookup_status"]
         == "missing credentials"
     )
+
+
+def test_captured_ids_keep_order_and_duplicates_for_each_consumer():
+    calls = [
+        {"response_body": {"json": {"id": "gen-retry"}}},
+        {"response_body": {"json": {"id": None}}},
+        {"response_body": {"text": "unavailable"}},
+        {"response_body": {"json": {"id": "gen-success"}}},
+        {"response_body": {"json": {"id": "gen-retry"}}},
+    ]
+    assert telemetry.captured_generation_ids(calls) == [
+        "gen-retry",
+        "gen-success",
+        "gen-retry",
+    ]

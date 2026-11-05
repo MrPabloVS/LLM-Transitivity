@@ -11,15 +11,23 @@ from llm_transitivity.datasets.pilot import MANIFEST, verify
 from llm_transitivity.evidence.serialization import digest, json_bytes
 from llm_transitivity.runs.export import export_run
 
+ARCHIVE_ERRORS = (OSError, ValueError, RuntimeError, KeyError, BadZipFile)
+
 
 def prepare_archive(spec, root: Path) -> Path:
-    """Freeze inputs and source evidence before the first model request."""
+    """Validate and freeze all evidence before the first model request."""
     manifest = verify(root)
     archive = Path(spec.log_dir).parent
     if Path(spec.log_dir).name != "inspect":
         raise ValueError("The managed log directory must end in /inspect")
     spec.options.metadata["archive_mode"] = "managed"
     flow_payload = json_bytes(dump_spec(spec))
+    snapshots, hashes = _snapshot_inputs(spec, root, manifest)
+    _write_snapshot(archive, snapshots, hashes, spec.options.metadata, flow_payload)
+    return archive
+
+
+def _snapshot_inputs(spec, root: Path, manifest: dict) -> tuple[dict, dict]:
     files = set(spec.options.metadata["source_sha256"])
     files.add(str(MANIFEST))
     files.add(manifest["system_prompt"]["path"])
@@ -43,6 +51,12 @@ def prepare_archive(spec, root: Path) -> Path:
             )
         snapshots[relative] = payload
         hashes[relative] = digest(payload)
+    return snapshots, hashes
+
+
+def _write_snapshot(
+    archive: Path, snapshots: dict, hashes: dict, metadata: dict, flow_payload: bytes
+) -> None:
     archive.mkdir(parents=True, exist_ok=False)
     for name in ["inspect", "openrouter_calls", "provenance", "summary"]:
         (archive / name).mkdir()
@@ -50,17 +64,12 @@ def prepare_archive(spec, root: Path) -> Path:
         target = archive / "provenance" / "snapshot" / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(payload)
-    (archive / "provenance" / "run.json").write_bytes(json_bytes(spec.options.metadata))
+    (archive / "provenance" / "run.json").write_bytes(json_bytes(metadata))
     (archive / "provenance" / "snapshot_hashes.json").write_bytes(json_bytes(hashes))
     (archive / "provenance" / "flow_spec.json").write_bytes(flow_payload)
-    return archive
 
 
-def finalize_archive(
-    archive: Path, *, flow_success: bool | None, error_type: str | None = None
-) -> None:
-    """Keep partial results discoverable even when a run fails or is interrupted."""
-    logs = sorted((archive / "inspect").rglob("*.eval"))
+def _log_entries(logs: list[Path], archive: Path) -> list[dict]:
     entries = []
     for path in logs:
         try:
@@ -82,22 +91,36 @@ def finalize_archive(
                     ),
                 }
             )
-        except (OSError, ValueError, RuntimeError, KeyError, BadZipFile) as error:
+        except ARCHIVE_ERRORS as error:
             entries.append(
                 {
                     "path": str(path.relative_to(archive)),
                     "read_error_type": type(error).__name__,
                 }
             )
+    return entries
+
+
+def _export_status(archive: Path, logs: list[Path]) -> tuple[str, Exception | None]:
     export_status = "no logs"
     export_error = None
     if logs:
         try:
             export_run(archive)
             export_status = "exported"
-        except (OSError, ValueError, RuntimeError, KeyError, BadZipFile) as error:
+        except ARCHIVE_ERRORS as error:
             export_status = f"failed: {type(error).__name__}"
             export_error = error
+    return export_status, export_error
+
+
+def finalize_archive(
+    archive: Path, *, flow_success: bool | None, error_type: str | None = None
+) -> None:
+    """Write the index before propagating a failed export."""
+    logs = sorted((archive / "inspect").rglob("*.eval"))
+    entries = _log_entries(logs, archive)
+    export_status, export_error = _export_status(archive, logs)
     report = {
         "flow_success": flow_success,
         "runner_error_type": error_type,

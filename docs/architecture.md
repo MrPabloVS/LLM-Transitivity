@@ -71,7 +71,16 @@ not build specifications or create runs.
 
 CLI modules parse arguments and load credentials. The runner executes Flow; the
 archive component freezes evidence before execution and indexes partial results
-afterward. The exporter retains native model events and creates new files.
+afterward. Snapshot preparation reads and validates every expected payload
+before the archive directory is created. Log indexing and call export are
+separate finalization operations; the index is written before a failed export
+is propagated.
+
+The exporter separates event record construction, optional generation lookups,
+and exclusive file writes. The shared captured-ID reader retains capture order
+and duplicates. The collector and exporter each preserve their existing
+combination order, deduplication, and per-sample lookup cache behavior.
+Full native payloads and unknown fields remain intact.
 The `transitivity` command delegates to the selected CLI module.
 
 A run failure remains the primary exception if finalization also fails. The
