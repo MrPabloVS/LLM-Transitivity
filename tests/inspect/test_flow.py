@@ -48,3 +48,16 @@ def test_preflight_is_one_identical_case_on_each_model():
     assert spec.options.metadata["phase"] == "preflight"
     assert Path(spec.log_dir).parent.name.endswith("_preflight")
     assert all("phase:preflight" in task.tags for task in spec.tasks)
+
+
+def test_tasks_have_independent_mutable_configuration():
+    spec = build_pilot_spec(PROJECT_ROOT)
+    first, second = spec.tasks[:2]
+    first.model.model_args["provider"]["only"].append("changed")
+    first.model.config.extra_headers["X-OpenRouter-Metadata"] = "disabled"
+    first.model.config.extra_body["service_tier"] = "changed"
+    first.metadata["frequency"].append("changed")
+    assert second.model.model_args["provider"]["only"] == ["openai"]
+    assert second.model.config.extra_headers == {"X-OpenRouter-Metadata": "enabled"}
+    assert second.model.config.extra_body == {"service_tier": "default"}
+    assert "changed" not in second.metadata["frequency"]

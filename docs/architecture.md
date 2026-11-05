@@ -47,10 +47,25 @@ evaluation state. Lookup failures remain separate from model answers and usage.
 
 ## Inspect boundary
 
-Task factories take the repository root explicitly. Flow specifications retain
-that root as a task argument, so worker processes read the same inputs. Sample
-UIDs, source row numbers and labels retain their previous meaning. The installed CLI uses the package task and Flow factories directly. Module
-imports do not build specifications.
+`datasets.inputs.load_input` reads and validates a complete `DatasetInput` before
+Inspect samples or solvers are constructed. It retains the already checked
+original records, source hashes, provenance, and system prompt. Complete and
+pilot source operations reuse the same verified corpus values; adaptation does
+not reread original files.
+
+`inspect.samples` constructs samples, tags, and task metadata from these values.
+It performs no filesystem or Git operations. The public task factory remains
+`inspect.tasks.hs_zero_shot` and composes the loader, adapter, solvers, and scorer.
+Sample UIDs, row numbers, targets, raw labels, and metadata field order retain
+their previous meaning and representation.
+
+Flow construction separates run context, model request settings, and task
+composition. Each task receives independent mutable model settings and dataset
+metadata. The shared model catalog and execution policy remain authoritative.
+`MODELS` and `MODEL_GROUPS` remain compatible derived views. Every input is
+verified in both pilot and preflight modes before runnable tasks are built.
+Flow specifications retain the explicit root for worker processes. Imports do
+not build specifications or create runs.
 
 ## Managed runs
 
