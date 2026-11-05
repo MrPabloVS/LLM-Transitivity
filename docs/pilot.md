@@ -44,7 +44,10 @@ The group is stored in Inspect task metadata and tags.
 
 ## Pilot conditions
 
-`experiment_config.py` defines the model catalog and immutable execution policy.
+See [the architecture guide](architecture.md) before changing module boundaries.
+
+The package domain configuration defines the model catalog and immutable
+execution policy. `experiment_config.py` preserves the existing imports.
 The Flow configuration and run metadata use these same definitions. Existing
 `MODELS` and `MODEL_GROUPS` imports remain available as derived views. New runs
 archive the configuration source and its hash with the other source evidence.

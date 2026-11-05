@@ -17,8 +17,9 @@ Evaluation metadata records:
 - Git revision, branch, and dirty state. An original-data revision separately
   anchors the research inputs.
 - Python, uv, platform, and direct runtime dependency versions.
-- Hashes of an explicit list of source and configuration files, including the
-  lockfile. A dirty Git revision alone does not identify the current code.
+- Hashes of the root entry scripts, configuration and package Python sources,
+  including the lockfile. A dirty Git revision alone does not identify the
+  current code.
 - Pilot manifest hash, selection method, cases per stratum, and pilot case count.
 - Requested output limit, reasoning policy, fallback policy, caching, retry,
   timeout, concurrency, and omitted sampling parameters.
@@ -76,7 +77,9 @@ The scoring rules and denominators remain documented in the README.
 
 ## OpenRouter details for each call
 
-The OpenRouter capture solver attaches `openrouter_http_calls` to each sample.
+The bounded generation solver attaches `openrouter_http_calls` to each sample.
+It restores capture context after success, error or cancellation, and isolates
+concurrent samples.
 It records every observed HTTP attempt through Inspect's SDK client, including
 retry responses: request method, URL, headers, complete parsed JSON body,
 HTTP status, response headers, complete parsed JSON response, UTC timestamps,

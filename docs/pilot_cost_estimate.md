@@ -66,8 +66,9 @@ or enforce a budget.
 
 ## Configuration source
 
-The estimator reads the model catalog and execution policy from
-`experiment_config.py`. It verifies the pilot inputs without constructing Inspect
-tasks or creating a run identity. Future reports include `experiment_config_sha256`
-in addition to the existing source hashes. The saved quote snapshot above keeps
-the evidence from its original calculation.
+The estimator reads the package domain model catalog and execution policy.
+`experiment_config.py` preserves the existing imports. The estimator verifies
+the pilot inputs without constructing Inspect tasks or creating a run identity. Future reports include `experiment_config_sha256`
+and `source_sha256` for the package implementation, in addition to the existing
+entry-point hashes. The saved quote snapshot above keeps the evidence from its
+original calculation.

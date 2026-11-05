@@ -65,3 +65,21 @@ public provider quotes. Price retrieval is separate from arithmetic. It creates
 no Inspect tasks or run identity. Future reports keep the existing entry-point
 hashes and add hashes of the package sources that implement the calculation.
 Historical price snapshots remain unchanged.
+
+## Verification
+
+Use `uv sync --locked` to install the editable package. Build distributions with
+`uv build`. Dataset verification uses `uv run --locked prepare_pilot.py verify`.
+Preview both modes with `uv run --locked run_pilot.py --dry-run` and
+`uv run --locked run_pilot.py --preflight --dry-run`.
+
+Tests cover source preservation, source-label agreement, mocked provider quotes,
+mocked HTTP retries, failed and cancelled generations, concurrent sample capture,
+archive failures, import side effects and execution outside the repository.
+Original log files and historical reports retain their original implementation
+paths and scores. Package paths in new specifications identify the refactored
+implementation; task arguments also record the explicit repository root.
+
+The full-corpus verifier and the existing generated inventory retain their
+original algorithms and bytes. No generated inventory or historical price
+snapshot is refreshed as part of this refactor.

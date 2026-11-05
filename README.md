@@ -51,6 +51,11 @@ selects the system prompt, and `--model` selects an OpenRouter model identifier.
 
 ## Inspect Flow trial
 
+`uv sync --locked` installs the `llm_transitivity` package from `src/`.
+The existing scripts keep their command names. See the
+[architecture guide](docs/architecture.md) for module responsibilities,
+compatibility, provenance, and failure handling.
+
 See the [six-model coverage pilot](docs/pilot.md) for model pairs, fixed
 providers, prices, settings without reasoning, and verification commands.
 The [dataset catalog](docs/dataset_catalog.md) explains filenames and links all

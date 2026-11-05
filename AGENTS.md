@@ -12,6 +12,8 @@ It defines the project conventions.
 
 ## Context
 
+- Before you change module boundaries or dependencies, read
+  [the architecture guide](docs/architecture.md).
 - Before you change domain terms or their interpretation, read
   [GLOSSARY.md](GLOSSARY.md).
 - Before you change pilot execution, input verification, or result archives, read
