@@ -20,7 +20,7 @@ def test_trial_preserves_all_prompts_and_metadata():
             ("system", system),
             ("user", row[2]),
         ]
-        assert sample.metadata == {
+        expected = {
             "source_dataset": "HS",
             "source_row": number,
             "source_id": row[1],
@@ -31,6 +31,9 @@ def test_trial_preserves_all_prompts_and_metadata():
             "source_validity": row[6],
             "canonical_form": row[7],
         }
+        assert all(sample.metadata[key] == value for key, value in expected.items())
+        assert sample.metadata["expected_answer"] == sample.target
+        assert sample.metadata["sample_uid"]
 
 
 def test_bad_dataset_is_rejected_before_task_creation(tmp_path, monkeypatch):
