@@ -81,8 +81,14 @@ def source_label_match() -> Scorer:
         output = state.output
         raw = output.completion
         answer = raw.strip().lower()
-        # Read only an explicit initial answer, with an optional Answer: prefix.
+        # Read an initial answer or a standalone answer on the final line.
         match = re.match(r"^(?:answer:\s*)?(yes|no)(?=$|[\s.,!?:;])", answer)
+        position = "initial" if match else None
+        if not match:
+            match = re.fullmatch(
+                r"(?:answer:\s*)?(yes|no)[.!?]?", answer.split("\n")[-1].strip()
+            )
+            position = "final_line" if match else None
         tokens = set(re.findall(r"\b(?:yes|no)\b", answer))
         extracted = match.group(1) if match and len(tokens) == 1 else None
         if output.error:
@@ -106,6 +112,8 @@ def source_label_match() -> Scorer:
             explanation="Compared with the source label; logical validity is not audited.",
             metadata={
                 "status": status,
+                "extraction_rule": "initial_or_final_line_v1",
+                "extraction_position": position if status == "answered" else None,
                 "expected": target.text,
                 "extracted_answer": extracted if status == "answered" else None,
                 "format_compliant": status == "answered" and answer in {"yes", "no"},

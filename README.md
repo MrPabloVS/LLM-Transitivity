@@ -54,10 +54,14 @@ expects `yes`, and `invalid` expects `no`. This does not establish logical valid
 The scorer trims outer whitespace and ignores letter case. Format compliance
 requires only `yes` or `no`. Content interpretation also accepts an initial
 `yes` or `no` followed by whitespace or punctuation, with an optional `Answer:`
-prefix. For example, `Yes, it follows.` can agree with the source label while
-failing the format requirement. Responses with both whole words `yes` and `no`
+prefix. It also accepts a final line that contains only `yes` or `no`, with an
+optional `Answer:` prefix and one optional `.`, `!`, or `?`. For example,
+`Yes, it follows.` can agree with the source label while failing the format
+requirement. Responses with both whole words `yes` and `no`
 are marked ambiguous. Other text is not interpreted. These conservative rules
 do not interpret arbitrary explanations or resolve contradictions in prose.
+Score metadata records the extraction rule version and the answer position.
+Existing logs keep the scores and rules used when they were created.
 
 `source_agreement` uses interpreted answers as its denominator.
 `format_compliant_rate` uses all scored samples as its denominator.

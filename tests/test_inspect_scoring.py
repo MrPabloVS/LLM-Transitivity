@@ -28,6 +28,16 @@ from inspect_scoring import response_rates, source_agreement, source_label_match
         ("yes or no", "yes", "stop", None, "ambiguous", "N"),
         ("Yes. Actually, no.", "yes", "stop", None, "ambiguous", "N"),
         ("The answer is yes", "yes", "stop", None, "invalid_format", "N"),
+        ("The conclusion follows.\n\nYes", "yes", "stop", None, "answered", "C"),
+        ("The conclusion fails.\n Answer: NO. ", "no", "stop", None, "answered", "C"),
+        ("Explanation.\nNo!", "yes", "stop", None, "answered", "I"),
+        ("Explanation.\nYes, it follows.", "yes", "stop", None, "invalid_format", "N"),
+        ("Explanation. Yes", "yes", "stop", None, "invalid_format", "N"),
+        ("Quote: yes\nNo", "no", "stop", None, "ambiguous", "N"),
+        ("Explanation.\nYes\nMore text.", "yes", "stop", None, "invalid_format", "N"),
+        ("Explanation.\nYesterday", "yes", "stop", None, "invalid_format", "N"),
+        ("Explanation.\nYes", "yes", "content_filter", None, "content_filter", "N"),
+        ("Explanation.\nYes", "yes", "stop", "provider failed", "error", "N"),
         ("yesterday", "yes", "stop", None, "invalid_format", "N"),
         ("nobody", "no", "stop", None, "invalid_format", "N"),
         ("no", "no", "stop", "provider failed", "error", "N"),
@@ -55,6 +65,12 @@ def test_response_categories(text, target, stop, error, status, value):
     assert result.answer == text
     assert result.metadata["status"] == status
     assert result.metadata["expected"] == target
+    assert result.metadata["extraction_rule"] == "initial_or_final_line_v1"
+    assert result.metadata["extraction_position"] == (
+        ("final_line" if "\n" in text.strip() else "initial")
+        if status == "answered"
+        else None
+    )
     assert result.metadata["format_compliant"] == (
         status == "answered" and text.strip().lower() in {"yes", "no"}
     )
