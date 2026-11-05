@@ -15,9 +15,9 @@ class ModelSpec:
 @dataclass(frozen=True)
 class GenerationPolicy:
     max_output_tokens: int = 1024
-    max_connections: int = 2
+    max_connections: int = 16
     max_tasks: int = 1
-    max_samples: int = 2
+    max_samples: int = 16
     request_timeout_seconds: int = 60
     request_max_retries: int = 2
     sdk_max_retries: int = 0

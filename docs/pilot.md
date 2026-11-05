@@ -20,7 +20,9 @@ was saved on November 5, 2026, using all six selected endpoints and current
 verified inputs after the approved JSON formatting. The one-attempt scenarios total USD 0.35 for four output tokens,
 USD 2.14 for 128 output tokens, and USD 15.11 at the 1,024-token output cap.
 The byte-input scenario with all three attempts totals USD 49.66. These are
-planning scenarios, not spending limits or reported charges.
+planning scenarios, not spending limits or reported charges. This capture predates
+the concurrency increase to 16. Prices, selected cases, output limits, and retry
+assumptions are unchanged; concurrency is recorded by the new run configuration.
 
 The [live preflight review](../results/pilot/2026-11-05_20-33-37-585189bb_preflight/summary/preflight_review.md)
 records six successful responses in six HTTP attempts, with total reported cost
@@ -174,7 +176,11 @@ smoke dataset and is not included in this coverage pilot.
 
 The configuration fixes each provider, disables fallbacks, and sends
 `reasoning_enabled=False` for models with optional reasoning. It uses 1,024 output
-tokens, two connections, at most two concurrent samples, and one active task.
+tokens, 16 connections, at most 16 concurrent samples, and one active task.
+This cap applies to the current model/dataset task; it is not 16 per model
+across six simultaneous models. The live preflight used the previous cap of two
+and one sample per task, so it did not test concurrency at 16. Monitor 429
+responses, retries, and latency during the pilot.
 Prompt caching is disabled. Temperature, top-p, and seed are omitted for all
 models; provider defaults apply and generated answers are not deterministic.
 The deterministic guarantee applies to input preservation and selection only.
