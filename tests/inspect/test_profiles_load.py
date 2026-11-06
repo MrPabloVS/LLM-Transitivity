@@ -143,3 +143,22 @@ def test_pilot2_reasoning_overrides_do_not_change_historical_profiles():
     assert models["google/gemini-3.5-flash-lite"].reasoning_effort == "minimal"
     assert all(m.reasoning_enabled is None for m in profile_models("sonnet"))
     assert all(m.reasoning_enabled is None for m in profile_models("haiku"))
+
+
+def test_pilot3_replaces_only_sonnet46_and_uses_64_per_task():
+    old = profile_models("pilot2")
+    new = profile_models("pilot3")
+    assert new[:2] == old[:2]
+    assert new[3:] == old[3:]
+    assert new[2].identifier == "anthropic/claude-haiku-5.5"
+    spec = build_pilot_spec(
+        PROJECT_ROOT, profile="pilot3", concurrency=64, max_tasks=108
+    )
+    assert len(spec.tasks) == 108
+    assert spec.options.max_samples == 64
+    assert spec.options.metadata["planned_responses"] == 3240
+    assert spec.options.metadata["effective_sample_ceiling"] == 3240
+    assert all(t.model.config.max_connections == 1152 for t in spec.tasks)
+    assert all(
+        t.model.model_args["provider"]["allow_fallbacks"] is False for t in spec.tasks
+    )

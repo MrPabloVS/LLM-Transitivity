@@ -70,3 +70,9 @@ See [Pilot 2.0 results](../pilot2_results.md) for the completed preflight and ru
 Pilot 2.0 now uses reasoning only for Sonnet 5.5 (`low`) and Gemini 3.5
 Flash-Lite (`minimal`). See [the current request policy](../pilot2.md). Saved
 cards retain their capture-time descriptions; they do not replace that policy.
+
+## Pilot 3
+
+The [Pilot 3 manifest](pilot-3-manifest.json) references the same shared model
+directories. It replaces the Sonnet 4.6 reference with the existing Haiku 5.5
+capture. See [the execution guide](../pilot3.md) for current controls.

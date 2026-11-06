@@ -23,7 +23,7 @@ def main(root: Path, argv: list[str] | None = None) -> None:
         help="Run the same single source case on the selected models",
     )
     parser.add_argument(
-        "--profile", choices=["sonnet", "haiku", "pilot2"], default="sonnet"
+        "--profile", choices=["sonnet", "haiku", "pilot2", "pilot3"], default="sonnet"
     )
     parser.add_argument("--model", action="append")
     parser.add_argument("--concurrency", type=int, choices=[16, 32, 64], default=16)

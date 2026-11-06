@@ -26,12 +26,17 @@ HAIKU_IDS = ("anthropic/claude-haiku-4.5", "anthropic/claude-haiku-5.5")
 
 
 def stage_specs(root: Path, *, profile: str = "haiku") -> list[tuple[str, FlowSpec]]:
-    if profile == "pilot2":
+    if profile in {"pilot2", "pilot3"}:
         return [
             ("preflight", build_pilot_spec(root, profile=profile, preflight=True)),
             (
                 "coverage",
-                build_pilot_spec(root, profile=profile, concurrency=32, max_tasks=108),
+                build_pilot_spec(
+                    root,
+                    profile=profile,
+                    concurrency=64 if profile == "pilot3" else 32,
+                    max_tasks=108,
+                ),
             ),
         ]
     return [
@@ -87,7 +92,13 @@ def prepare(
     parent = (
         continue_from / "continuations" if continue_from else root / "results/pilot"
     )
-    suffix = "pilot-2.0" if profile == "pilot2" else f"{profile}-followup"
+    suffix = (
+        "pilot-3"
+        if profile == "pilot3"
+        else "pilot-2.0"
+        if profile == "pilot2"
+        else f"{profile}-followup"
+    )
     directory = parent / f"{stamp}-{campaign_id[:8]}-{suffix}"
     directory.mkdir(parents=True, exist_ok=False)
     manifest = {
@@ -95,9 +106,17 @@ def prepare(
         "campaign_id": campaign_id,
         "created_at_utc": datetime.now(UTC).isoformat(),
         "profile": profile,
-        "pilot_name": "Pilot 2.0" if profile == "pilot2" else "Haiku follow-up",
+        "pilot_name": "Pilot 3"
+        if profile == "pilot3"
+        else "Pilot 2.0"
+        if profile == "pilot2"
+        else "Haiku follow-up",
         "direct_load_concurrency": 64 if profile == "haiku" else None,
-        "coverage_concurrency": 16 if profile == "haiku" else 32,
+        "coverage_concurrency": 16
+        if profile == "haiku"
+        else 64
+        if profile == "pilot3"
+        else 32,
         "no_spend_pause": True,
         "full_corpus_run": False,
         "planned_responses": sum(
@@ -395,7 +414,7 @@ def execute(root: Path, directory: Path) -> bool:
                 review_sha256=digest((directory / relative).read_bytes()),
             )
             stopped = status != "passed"
-        if manifest.get("profile") == "pilot2":
+        if manifest.get("profile") in {"pilot2", "pilot3"}:
             from llm_transitivity.analysis.pilot2_report import write_report
         else:
             from llm_transitivity.analysis.followup_report import write_report

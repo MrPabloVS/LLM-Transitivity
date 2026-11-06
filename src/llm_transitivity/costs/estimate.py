@@ -92,7 +92,7 @@ def estimate(root: Path, *, profile: str = "sonnet", followup: bool = False) -> 
                         else policy.reasoning_enabled,
                         "reasoning_effort": model_spec.reasoning_effort,
                     }
-                    if profile == "pilot2"
+                    if profile in {"pilot2", "pilot3"}
                     else {}
                 ),
                 "source": url,
@@ -147,7 +147,7 @@ def estimate(root: Path, *, profile: str = "sonnet", followup: bool = False) -> 
             "The byte-input scenario uses UTF-8 text bytes plus 256 framing tokens per case; it is a planning envelope, not a proven tokenizer bound.",
             (
                 "Standard short-prompt rates; output scenarios include reasoning and final text for the two enabled Pilot 2.0 models; no tools, cache or batch discounts."
-                if profile == "pilot2"
+                if profile in {"pilot2", "pilot3"}
                 else "Standard short-prompt provider rates; no reasoning, tools, cache or batch discounts."
             ),
             "Short and verbose scenarios use 4 or 128 output tokens per case with one attempt.",

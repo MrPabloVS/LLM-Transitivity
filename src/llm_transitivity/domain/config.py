@@ -115,6 +115,16 @@ PILOT2_SPECS = (
 )
 
 
+PILOT3_SPECS = tuple(
+    ModelSpec(
+        "anthropic/claude-haiku-5.5", "anthropic", "earlier", True, "default", "medium"
+    )
+    if model.identifier == "anthropic/claude-sonnet-4.6"
+    else model
+    for model in PILOT2_SPECS
+)
+
+
 def profile_models(
     profile: str = "sonnet", selected: tuple[str, ...] | None = None
 ) -> tuple[ModelSpec, ...]:
@@ -123,6 +133,7 @@ def profile_models(
         "sonnet": MODEL_SPECS,
         "haiku": HAIKU_SPECS,
         "pilot2": PILOT2_SPECS,
+        "pilot3": PILOT3_SPECS,
     }
     if profile not in profiles:
         raise ValueError(f"Unknown model profile: {profile}")

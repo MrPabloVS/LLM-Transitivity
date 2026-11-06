@@ -18,7 +18,7 @@ def write_report(root: Path, directory: Path, manifest: dict, reviews: dict) -> 
     missing = [k for k, v in generations.items() if v["cost_usd"] is None]
     summary = {
         "campaign_id": manifest["campaign_id"],
-        "profile": "pilot2",
+        "profile": manifest.get("profile", "pilot2"),
         "known_cost_usd": known,
         "missing_cost_ids": missing,
         "generation_attempts": len(generations),
@@ -32,15 +32,25 @@ def write_report(root: Path, directory: Path, manifest: dict, reviews: dict) -> 
     suffix = uuid4().hex[:8]
     path = directory / f"report-{suffix}.json"
     path.write_bytes(json_bytes(summary))
+    if manifest.get("profile") == "pilot3":
+        schedule = (
+            "Coverage configures 108 active tasks and 64 samples per task. The configured",
+            "ceiling is 6912. Dataset sizes reduce the effective sample ceiling to 3240.",
+            "Shared connection pools allow 1152 requests per model. All selected providers",
+        )
+    else:
+        schedule = (
+            "Coverage configures 108 active tasks and 32 samples per task. The configured",
+            "ceiling is 3456. Dataset sizes reduce the effective sample ceiling to 2808.",
+            "Shared connection pools allow 576 requests per model. All selected providers",
+        )
     lines = [
-        "# Pilot 2.0 results",
+        f"# {manifest.get('pilot_name', 'Pilot 2.0')} results",
         "",
         f"Campaign: `{manifest['campaign_id']}`.",
         "",
         "The experiment compares six models on the same 540 source cases per model.",
-        "Coverage configures 108 active tasks and 32 samples per task. The configured",
-        "ceiling is 3456. Dataset sizes reduce the effective sample ceiling to 2808.",
-        "Shared connection pools allow 576 requests per model. All selected providers",
+        *schedule,
         "are fixed. Observed concurrency and response checks are reported below.",
         "",
         "Agreement uses source labels, not independently audited logical validity.",

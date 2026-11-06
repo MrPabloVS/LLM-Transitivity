@@ -193,3 +193,8 @@ providers, unchanged 540-case input selection, and 108-task schedule at 32 sampl
 per task. The [saved cards](docs/model_cards/README.md#pilot-20) include manufacturer
 documents and full endpoint snapshots. The [completed results](docs/pilot2_results.md) include 3,240 coverage responses,
 per-model checks, retries, filters, and reported costs.
+
+## Pilot 3
+
+See [Pilot 3](docs/pilot3.md) for the Haiku 5.5 replacement and the 108-task
+schedule at 64 samples per task. The full corpus is not part of this run.

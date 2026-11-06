@@ -11,7 +11,9 @@ def main(root: Path, argv: list[str] | None = None) -> None:
     parser.add_argument("--detach", action="store_true")
     parser.add_argument("--resume", type=Path)
     parser.add_argument("--continue-from", type=Path)
-    parser.add_argument("--profile", choices=["haiku", "pilot2"], default="haiku")
+    parser.add_argument(
+        "--profile", choices=["haiku", "pilot2", "pilot3"], default="haiku"
+    )
     parser.add_argument("--prepare-only", action="store_true")
     args = parser.parse_args(argv)
     if args.prepare_only and (

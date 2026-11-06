@@ -80,15 +80,19 @@ def _run_context(
     load: bool,
 ) -> dict:
     context = run_metadata(root, manifest, policy=policy)
-    if profile == "pilot2":
+    if profile in {"pilot2", "pilot3"}:
         base = Path("docs/model_cards")
-        card_manifest = base / "pilot-2.0-manifest.json"
+        card_manifest = base / (
+            "pilot-3-manifest.json"
+            if profile == "pilot3"
+            else "pilot-2.0-manifest.json"
+        )
         cards = json.loads((root / card_manifest).read_text())
         if {entry["model_id"] for entry in cards["models"]} != {
             m.identifier for m in profile_models(profile)
         }:
             raise ValueError("Pilot 2.0 cards do not match the model profile")
-        context["pilot_name"] = "Pilot 2.0"
+        context["pilot_name"] = "Pilot 3" if profile == "pilot3" else "Pilot 2.0"
         context["model_reasoning_policies"] = {
             model.identifier: {
                 "policy": _reasoning_policy(model, policy),
@@ -287,7 +291,13 @@ def build_pilot_spec(
             retry_attempts=policy.flow_retry_attempts,
             retry_cleanup=policy.flow_retry_cleanup,
             tags=[f"experiment:{EXPERIMENT_ID}", f"phase:{context['phase']}"]
-            + (["pilot:2.0"] if profile == "pilot2" else []),
+            + (
+                ["pilot:3"]
+                if profile == "pilot3"
+                else ["pilot:2.0"]
+                if profile == "pilot2"
+                else []
+            ),
             metadata=context,
             log_samples=True,
             log_model_api=True,

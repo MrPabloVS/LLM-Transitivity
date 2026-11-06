@@ -11,7 +11,7 @@ from llm_transitivity.costs.estimate import estimate
 def main(root: Path, argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(prog="transitivity costs", description=__doc__)
     parser.add_argument(
-        "--profile", choices=["sonnet", "haiku", "pilot2"], default="sonnet"
+        "--profile", choices=["sonnet", "haiku", "pilot2", "pilot3"], default="sonnet"
     )
     parser.add_argument("--followup", action="store_true")
     args = parser.parse_args(argv)
