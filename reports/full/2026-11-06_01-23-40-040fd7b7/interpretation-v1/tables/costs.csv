@@ -1,0 +1,14 @@
+phase,model,kind,generations,known_cost_ids,unknown_cost_ids,known_usd
+corpus,anthropic/claude-haiku-5.5,final,54000,53648,352,0.7898359
+corpus,anthropic/claude-sonnet-5.5,final,54000,54000,0,26.647214
+corpus,google/gemini-3.1-flash-lite,final,54000,54000,0,0.61592925
+corpus,google/gemini-3.5-flash-lite,final,54000,54000,0,0.75799625
+corpus,openai/gpt-4o-mini,final,54000,54000,0,0.8043684
+corpus,openai/gpt-6-luna,additional,426,0,426,
+corpus,openai/gpt-6-luna,final,54000,54000,0,0.3213795
+preflight,anthropic/claude-haiku-5.5,final,1,1,0,1.16e-05
+preflight,anthropic/claude-sonnet-5.5,final,1,1,0,0.000234
+preflight,google/gemini-3.1-flash-lite,final,1,1,0,8.875e-06
+preflight,google/gemini-3.5-flash-lite,final,1,1,0,1.1e-05
+preflight,openai/gpt-4o-mini,final,1,1,0,1.17e-05
+preflight,openai/gpt-6-luna,final,1,1,0,4.9e-06

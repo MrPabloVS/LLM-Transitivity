@@ -1,0 +1,16 @@
+model_a,model_b,paired_cases,both_interpreted,same_answer,both_match,both_disagree,a_only_match,b_only_match
+anthropic/claude-haiku-5.5,anthropic/claude-sonnet-5.5,54000,53643,41167,41163,4,18,12458
+anthropic/claude-haiku-5.5,google/gemini-3.1-flash-lite,54000,53648,41167,41156,11,30,12451
+anthropic/claude-haiku-5.5,google/gemini-3.5-flash-lite,54000,53648,41208,40517,691,669,11771
+anthropic/claude-haiku-5.5,openai/gpt-4o-mini,54000,53647,29875,29168,707,12017,11755
+anthropic/claude-haiku-5.5,openai/gpt-6-luna,54000,53648,41911,37306,4605,3880,7857
+anthropic/claude-sonnet-5.5,google/gemini-3.1-flash-lite,54000,53995,53932,53932,0,41,22
+anthropic/claude-sonnet-5.5,google/gemini-3.5-flash-lite,54000,53995,52625,52619,6,1354,16
+anthropic/claude-sonnet-5.5,openai/gpt-4o-mini,54000,53994,41227,41209,18,12763,4
+anthropic/claude-sonnet-5.5,openai/gpt-6-luna,54000,53995,45463,45463,0,8510,22
+google/gemini-3.1-flash-lite,google/gemini-3.5-flash-lite,54000,54000,52641,52620,21,1339,20
+google/gemini-3.1-flash-lite,openai/gpt-4o-mini,54000,53999,41257,41217,40,12741,1
+google/gemini-3.1-flash-lite,openai/gpt-6-luna,54000,54000,45449,45449,0,8510,41
+google/gemini-3.5-flash-lite,openai/gpt-4o-mini,54000,53999,40562,40210,352,12429,1008
+google/gemini-3.5-flash-lite,openai/gpt-6-luna,54000,54000,45104,44617,487,8023,873
+openai/gpt-4o-mini,openai/gpt-6-luna,54000,53999,33610,33159,451,8059,12330

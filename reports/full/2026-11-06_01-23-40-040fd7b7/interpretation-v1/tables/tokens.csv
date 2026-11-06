@@ -1,0 +1,13 @@
+phase,model,samples,input_tokens,output_tokens,reasoning_tokens,unknown_input,unknown_output,unknown_reasoning
+corpus,anthropic/claude-haiku-5.5,54000,6894599,200752,0,352,352,352
+corpus,anthropic/claude-sonnet-5.5,54000,6996312,1265459,0,0,0,0
+corpus,google/gemini-3.1-flash-lite,54000,4603200,54039,0,0,0,0
+corpus,google/gemini-3.5-flash-lite,54000,4603200,54013,0,0,0,0
+corpus,openai/gpt-4o-mini,54000,5131440,57754,0,0,0,0
+corpus,openai/gpt-6-luna,54000,5077440,270030,0,0,0,0
+preflight,anthropic/claude-haiku-5.5,1,96,4,0,0,0,0
+preflight,anthropic/claude-sonnet-5.5,1,97,4,0,0,0,0
+preflight,google/gemini-3.1-flash-lite,1,65,1,0,0,0,0
+preflight,google/gemini-3.5-flash-lite,1,65,1,0,0,0,0
+preflight,openai/gpt-4o-mini,1,74,1,0,0,0,0
+preflight,openai/gpt-6-luna,1,73,5,0,0,0,0
