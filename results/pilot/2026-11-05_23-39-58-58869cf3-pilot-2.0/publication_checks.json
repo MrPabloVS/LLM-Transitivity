@@ -1,0 +1,12 @@
+{
+  "source_snapshots": "verified before publication",
+  "model_calls": 0,
+  "historical_runner": "matches main baseline byte for byte",
+  "full_pytest": 328,
+  "ruff_sources_and_tests": "passed",
+  "format_sources_and_tests": "passed",
+  "global_ruff": "6 inherited errors",
+  "global_format": "2 inherited files",
+  "staged_diff_check": "Only two copies of preserved zeroShot.json line 2 have inherited trailing whitespace; original bytes retained",
+  "scope": "Code, shared cards, public price quote, and prepared preflight/coverage specs; no run execution"
+}

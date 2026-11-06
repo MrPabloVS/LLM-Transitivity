@@ -1,0 +1,26 @@
+{
+  "status": "prepared; no generations requested",
+  "tests": {
+    "full_suite_passed": 328,
+    "warnings": 43,
+    "log": "/tmp/pilot2-checks-current.txt"
+  },
+  "ruff_sources_tests": "passed",
+  "ruff_format_sources_tests": "passed",
+  "global_ruff": "6 existing findings in historical files",
+  "global_format": "2 historical files require formatting",
+  "locked_install": "passed",
+  "build": "passed",
+  "dry_runs": "passed",
+  "planned_preflight_responses": 6,
+  "planned_coverage_responses": 3240,
+  "configured_sample_ceiling": 3456,
+  "effective_sample_ceiling": 2808,
+  "no_fallback_tasks_verified": 114,
+  "model_cards": "shared directories; references in docs/model_cards/pilot-2.0-manifest.json",
+  "score_filter_status": "content_filter",
+  "task_filter_metric": "content_filter_rate",
+  "native_log_count": 0,
+  "source_snapshots": "verified",
+  "historical_source_data": "unchanged; only the readable model-card index was updated"
+}
