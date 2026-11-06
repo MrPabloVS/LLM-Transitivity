@@ -1,0 +1,8 @@
+{
+  "file": "viewer-console.zip",
+  "member": "viewer-console.txt",
+  "uncompressed_sha256": "3155fede64aa76dffe9e7805cd1b98bf2990539911a14e37241b3ce5a50b9e31",
+  "uncompressed_bytes": 219208104,
+  "archive_sha256": "a5edb16a041619a23def6024e45a2773d259cc3daeae10812607a428f1b8d47b",
+  "note": "Lossless copy of the stopped viewer console. The recursive viewer tried to parse OpenRouter exports as Inspect logs. The viewer now uses only the native inspect directory."
+}
