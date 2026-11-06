@@ -20,7 +20,10 @@ uv run --locked transitivity report --run results/full/2026-11-06_01-23-40-040fd
 The output directory must not exist. The command makes no provider API calls.
 For the HTML explorer, run `uv run --locked python -m http.server 8000` from the
 repository and open the report path through `http://localhost:8000/`.
-All report assets and dataset files are local. See the
+The full report uses Git LFS for the compressed SQLite database and response CSV.
+Run `git lfs pull` after cloning and follow the
+[report bundle instructions](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/README.md)
+to restore the database. All report assets and dataset files are local. See the
 [architecture guide](docs/architecture.md#offline-full-corpus-report) for checks
 and data responsibilities.
 

@@ -1,0 +1,2 @@
+reports/full/*/*/analysis.sqlite.gz filter=lfs diff=lfs merge=lfs -text
+reports/full/*/*/tables/responses.csv filter=lfs diff=lfs merge=lfs -text
