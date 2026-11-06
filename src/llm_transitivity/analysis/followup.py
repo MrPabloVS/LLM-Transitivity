@@ -193,6 +193,13 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                     "google": "Google AI Studio",
                 }[identifier.split("/")[0]]
                 usage = body.get("usage") or {}
+                expected_reasoning = (
+                    log.eval.metadata.get("reasoning_policy", "disabled") == "enabled"
+                )
+                expected_effort = log.eval.model_generate_config.reasoning_effort
+                reasoning_tokens = (usage.get("completion_tokens_details") or {}).get(
+                    "reasoning_tokens"
+                )
                 checks = {
                     "request model": request.get("model") == identifier,
                     "single provider": provider.get("only") == [model.provider],
@@ -203,9 +210,10 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                     "response provider": body.get("provider") == expected_provider,
                     "response tier": body.get("service_tier") == model.service_tier,
                     "reasoning usage": (
-                        usage.get("completion_tokens_details") or {}
-                    ).get("reasoning_tokens")
-                    == 0,
+                        isinstance(reasoning_tokens, int) and reasoning_tokens >= 0
+                    )
+                    if expected_reasoning
+                    else reasoning_tokens == 0,
                     "final reported cost": usage.get("cost") is not None,
                 }
                 filtered = (
@@ -235,10 +243,12 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                             unverified.append({"uid": uid, "kind": name})
                             checks.pop(name)
                 if model.supports_reasoning:
-                    checks["reasoning disabled"] = reasoning.get("enabled") is False
-                if model.reasoning_effort:
+                    checks["reasoning control"] = (
+                        reasoning.get("enabled") is expected_reasoning
+                    )
+                if expected_effort:
                     checks["explicit effort"] = (
-                        reasoning.get("effort") == model.reasoning_effort
+                        reasoning.get("effort") == expected_effort
                     )
                 faults.extend(
                     {"uid": uid, "kind": name}

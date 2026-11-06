@@ -17,9 +17,10 @@ from tests.paths import PROJECT_ROOT
         "anthropic/claude-haiku-4.5",
         "anthropic/claude-haiku-5.5",
         "anthropic/claude-sonnet-5.5",
+        "google/gemini-3.5-flash-lite",
     ],
 )
-def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
+def test_model_reasoning_controls_reach_real_sdk_wire(
     identifier, tmp_path, monkeypatch
 ):
     import httpx2
@@ -73,12 +74,17 @@ def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
     monkeypatch.setenv("OPENROUTER_API_KEY", "test-haiku-fake-key")
     spec = build_pilot_spec(
         PROJECT_ROOT,
-        profile="pilot2" if "sonnet-5.5" in identifier else "haiku",
+        profile="pilot2"
+        if identifier in {"anthropic/claude-sonnet-5.5", "google/gemini-3.5-flash-lite"}
+        else "haiku",
         preflight=True,
     )
     task = next(t for t in spec.tasks if t.metadata["requested_model"] == identifier)
     backend = get_model(
-        task.model.name, config=task.model.config, **task.model.model_args
+        task.model.name,
+        memoize=False,
+        config=task.model.config,
+        **task.model.model_args,
     )
     result = inspect_eval(
         task.factory(**task.args),
@@ -89,10 +95,23 @@ def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
     )[0]
     assert result.status == "success"
     assert len(requests) == 1
-    assert requests[0]["reasoning"]["enabled"] is False
-    if identifier.endswith("5.5"):
-        assert requests[0]["reasoning"]["effort"] == "medium"
-    assert requests[0]["provider"]["only"] == ["anthropic"]
+    enabled = identifier in {
+        "anthropic/claude-sonnet-5.5",
+        "google/gemini-3.5-flash-lite",
+    }
+    assert requests[0]["reasoning"]["enabled"] is enabled
+    effort = (
+        "low"
+        if "sonnet-5.5" in identifier
+        else "minimal"
+        if "gemini-3.5" in identifier
+        else "medium"
+    )
+    if identifier.endswith("5.5") or "gemini-3.5" in identifier:
+        assert requests[0]["reasoning"]["effort"] == effort
+    assert requests[0]["provider"]["only"] == (
+        ["google-ai-studio/flex"] if "gemini" in identifier else ["anthropic"]
+    )
     assert (
         result.samples[0].metadata["openrouter_http_calls"][0]["response_body"]["json"][
             "usage"
@@ -102,7 +121,17 @@ def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
 
 
 @pytest.mark.parametrize(
-    "filtered_mode", [None, "missing", "empty", "wrong_tier", "reasoning", "http_error"]
+    "filtered_mode",
+    [
+        None,
+        "missing",
+        "empty",
+        "wrong_tier",
+        "reasoning",
+        "http_error",
+        "pilot2",
+        "catalog_changed",
+    ],
 )
 def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
     tmp_path, monkeypatch, filtered_mode
@@ -190,7 +219,11 @@ def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
         },
     )
     monkeypatch.setenv("OPENROUTER_API_KEY", "test-followup-audit-key")
-    spec = build_pilot_spec(PROJECT_ROOT, profile="haiku", preflight=True)
+    spec = build_pilot_spec(
+        PROJECT_ROOT,
+        profile="pilot2" if filtered_mode in {"pilot2", "catalog_changed"} else "haiku",
+        preflight=True,
+    )
     for flow_task in spec.tasks:
         task = flow_task.factory(**flow_task.args)
         task.metadata = flow_task.metadata
@@ -211,14 +244,30 @@ def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
             )[0].status
             == "success"
         )
+    if filtered_mode == "catalog_changed":
+        from dataclasses import replace
+
+        from llm_transitivity.analysis import followup as reviewing
+        from llm_transitivity.domain.config import profile_models
+
+        changed = tuple(
+            replace(m, reasoning_enabled=False, reasoning_effort="high")
+            for m in profile_models("pilot2")
+        )
+        monkeypatch.setattr(reviewing, "profile_models", lambda profile: changed)
     report = review_phase(tmp_path, phase, dump_spec(spec))
-    assert report["technical_pass"] is (filtered_mode in (None, "missing", "empty"))
+    assert report["technical_pass"] is (
+        filtered_mode in (None, "missing", "empty", "pilot2", "catalog_changed")
+    )
     assert len(report["models"]) == 6
     assert all(
         v["samples"] == 1 and v["known_cost_usd"] == 0
         for v in report["models"].values()
     )
 
+    if filtered_mode in {"pilot2", "catalog_changed"}:
+        assert not any(v["faults"] for v in report["models"].values())
+        return
     haiku = report["models"]["anthropic/claude-haiku-5.5"]
     if filtered_mode == "http_error":
         assert haiku["faults"]

@@ -33,7 +33,12 @@ MODEL_GROUPS = {model.identifier: model.generation_group for model in MODEL_SPEC
 def _reasoning_policy(model: ModelSpec, policy: GenerationPolicy) -> str:
     if not model.supports_reasoning:
         return "not supported"
-    return "enabled" if policy.reasoning_enabled else "disabled"
+    enabled = (
+        policy.reasoning_enabled
+        if model.reasoning_enabled is None
+        else model.reasoning_enabled
+    )
+    return "enabled" if enabled else "disabled"
 
 
 def _flow_model(model: ModelSpec, policy: GenerationPolicy) -> FlowModel:
@@ -48,7 +53,7 @@ def _flow_model(model: ModelSpec, policy: GenerationPolicy) -> FlowModel:
         },
     }
     if model.supports_reasoning:
-        args["reasoning_enabled"] = policy.reasoning_enabled
+        args["reasoning_enabled"] = _reasoning_policy(model, policy) == "enabled"
     return FlowModel(
         name=f"openrouter/{model.identifier}",
         model_args=args,
@@ -84,6 +89,16 @@ def _run_context(
         }:
             raise ValueError("Pilot 2.0 cards do not match the model profile")
         context["pilot_name"] = "Pilot 2.0"
+        context["model_reasoning_policies"] = {
+            model.identifier: {
+                "policy": _reasoning_policy(model, policy),
+                "effort": model.reasoning_effort,
+            }
+            for model in models
+        }
+        context["generation_policy"]["reasoning"] = (
+            "per-model; see model_reasoning_policies"
+        )
         context["model_cards_manifest"] = str(card_manifest)
         context["source_sha256"][str(card_manifest)] = digest(
             (root / card_manifest).read_bytes()
@@ -164,6 +179,11 @@ def _flow_task(
             f"service_tier:{model.service_tier}",
             f"generation_group:{model.generation_group}",
             reasoning_tag,
+            *(
+                [f"reasoning_effort:{model.reasoning_effort}"]
+                if model.reasoning_effort
+                else []
+            ),
         ],
         # Flow replaces factory metadata, so retain the complete dataset context.
         metadata={

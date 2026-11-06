@@ -116,8 +116,11 @@ def test_pilot2_profile_runs_all_dataset_tasks_with_shared_model_pool():
     for task in spec.tasks:
         assert task.model.config.max_connections == 576
         if task.model.name.startswith("openrouter/anthropic/"):
-            assert task.model.config.reasoning_effort == "medium"
-            assert task.model.model_args["reasoning_enabled"] is False
+            enabled = task.model.name.endswith("sonnet-5.5")
+            assert task.model.config.reasoning_effort == (
+                "low" if enabled else "medium"
+            )
+            assert task.model.model_args["reasoning_enabled"] is enabled
             assert task.model.model_args["provider"]["only"] == ["anthropic"]
 
     spec.tasks[0].model.config.max_connections = 1
@@ -130,3 +133,13 @@ def test_invalid_active_task_count_fails_before_archive_creation():
 
     with pytest.raises(ValueError, match="Active task count"):
         build_pilot_spec(PROJECT_ROOT, max_tasks=0)
+
+
+def test_pilot2_reasoning_overrides_do_not_change_historical_profiles():
+    models = {m.identifier: m for m in profile_models("pilot2")}
+    assert models["anthropic/claude-sonnet-5.5"].reasoning_enabled is True
+    assert models["anthropic/claude-sonnet-5.5"].reasoning_effort == "low"
+    assert models["google/gemini-3.5-flash-lite"].reasoning_enabled is True
+    assert models["google/gemini-3.5-flash-lite"].reasoning_effort == "minimal"
+    assert all(m.reasoning_enabled is None for m in profile_models("sonnet"))
+    assert all(m.reasoning_enabled is None for m in profile_models("haiku"))

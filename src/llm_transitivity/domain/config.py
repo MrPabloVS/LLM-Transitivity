@@ -11,6 +11,7 @@ class ModelSpec:
     supports_reasoning: bool
     service_tier: str
     reasoning_effort: str | None = None
+    reasoning_enabled: bool | None = None
 
 
 @dataclass(frozen=True)
@@ -91,13 +92,25 @@ PILOT2_SPECS = (
         "anthropic/claude-sonnet-4.6", "anthropic", "earlier", True, "default", "medium"
     ),
     ModelSpec(
-        "anthropic/claude-sonnet-5.5", "anthropic", "later", True, "default", "medium"
+        "anthropic/claude-sonnet-5.5",
+        "anthropic",
+        "later",
+        True,
+        "default",
+        "low",
+        True,
     ),
     ModelSpec(
         "google/gemini-3.1-flash-lite", "google-ai-studio/flex", "earlier", True, "flex"
     ),
     ModelSpec(
-        "google/gemini-3.5-flash-lite", "google-ai-studio/flex", "later", True, "flex"
+        "google/gemini-3.5-flash-lite",
+        "google-ai-studio/flex",
+        "later",
+        True,
+        "flex",
+        "minimal",
+        True,
     ),
 )
 

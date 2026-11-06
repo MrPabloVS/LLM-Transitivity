@@ -1,6 +1,7 @@
 # Pilot 2.0
 
-Status: preparation only. No preflight or coverage generations have run.
+Status: the next preparation uses the per-model reasoning settings below.
+The historical Sonnet and Haiku results remain separate from this experiment.
 The historical Sonnet and Haiku results remain unchanged.
 
 ## Models and fixed providers
@@ -46,11 +47,26 @@ no caching, no streaming, fixed provider, and no fallback. Every task sets
 `provider.allow_fallbacks: false`, exactly one `provider.only` entry, and
 `provider.require_parameters: true`. Retries use that same model, endpoint,
 and tier. Provider errors do not authorize a different model, provider, or tier.
-Anthropic models
-request medium effort and explicit reasoning disabled. Gemini uses explicit
-reasoning disabled through the current OpenRouter adapter. Minimal thinking
-alone does not establish disabled reasoning. Preflight must check emitted
-controls, routing, and returned usage; runtime reviews retain all contradictions.
+The user authorized reasoning only for the two endpoints that require it:
+
+| Model | Requested reasoning | Effort |
+| --- | --- | --- |
+| GPT-4o mini | Not supported | Omitted |
+| GPT-6 Luna | Disabled | Omitted |
+| Sonnet 4.6 | Disabled | medium |
+| Sonnet 5.5 | Enabled | **low** |
+| Gemini 3.1 Flash-Lite | Disabled | Omitted |
+| Gemini 3.5 Flash-Lite | Enabled | **minimal** |
+
+These are the lowest published effort levels for the two enabled models. See
+[Sonnet effort](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide)
+and [Gemini 3.5 Flash-Lite](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite).
+This comparison has mixed reasoning conditions. Do not describe all six models
+as running without reasoning. The output cap includes reasoning and final text.
+Preflight checks emitted controls, routing, and returned usage per model.
+Disabled models must report zero reasoning tokens. Enabled models can report
+zero or positive reasoning usage; missing usage remains unverified. Runtime
+reviews use the controls frozen in each native log, not a later catalog value.
 
 Inspect stores filtered responses with score metadata `status: content_filter`
 and reports the task metric `content_filter_rate`. Their score value is `N`

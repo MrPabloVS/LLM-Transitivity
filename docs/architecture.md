@@ -237,3 +237,8 @@ The separate Pilot 2.0 report retains unknown costs, filters, and observed peaks
 The phase reviewer checks for response choices before reading the stop reason.
 An HTTP rejection with no model output remains a technical failure; it does not
 crash the closing review or become a filtered response.
+
+Pilot 2.0 has explicit per-model reasoning overrides. Historical profiles retain
+the shared disabled default. Task tags and metadata record enabled or disabled
+reasoning and explicit effort. Reviews read the frozen native task policy and
+configuration, so later catalog edits do not reinterpret an earlier request.

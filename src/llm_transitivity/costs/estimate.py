@@ -85,6 +85,16 @@ def estimate(root: Path, *, profile: str = "sonnet", followup: bool = False) -> 
                 "model": model,
                 "provider": provider,
                 "service_tier": model_spec.service_tier,
+                **(
+                    {
+                        "reasoning_enabled": model_spec.reasoning_enabled
+                        if model_spec.reasoning_enabled is not None
+                        else policy.reasoning_enabled,
+                        "reasoning_effort": model_spec.reasoning_effort,
+                    }
+                    if profile == "pilot2"
+                    else {}
+                ),
                 "source": url,
                 "pricing_snapshot": pricing,
                 "cases": len(prompts),
@@ -135,7 +145,11 @@ def estimate(root: Path, *, profile: str = "sonnet", followup: bool = False) -> 
         "assumptions": [
             "o200k_base text counts plus 16 framing tokens per case are a proxy, not each provider's native count.",
             "The byte-input scenario uses UTF-8 text bytes plus 256 framing tokens per case; it is a planning envelope, not a proven tokenizer bound.",
-            "Standard short-prompt provider rates; no reasoning, tools, cache or batch discounts.",
+            (
+                "Standard short-prompt rates; output scenarios include reasoning and final text for the two enabled Pilot 2.0 models; no tools, cache or batch discounts."
+                if profile == "pilot2"
+                else "Standard short-prompt provider rates; no reasoning, tools, cache or batch discounts."
+            ),
             "Short and verbose scenarios use 4 or 128 output tokens per case with one attempt.",
             "The final scenario charges every possible attempt for the full output cap, including failed attempts.",
             "Account funding fees, taxes, unreported provider behavior and future price changes are excluded.",
