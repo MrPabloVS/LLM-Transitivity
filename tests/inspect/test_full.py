@@ -13,10 +13,14 @@ from tests.paths import PROJECT_ROOT
 def test_full_spec_uses_every_case_and_preserves_model_controls():
     spec = build_full_spec(PROJECT_ROOT)
     assert len(spec.tasks) == 108
-    assert spec.options.max_tasks == 108
+    assert spec.options.max_tasks == 6
     assert spec.options.max_samples == 32
     assert spec.options.metadata["planned_responses"] == 324000
-    assert spec.options.metadata["effective_sample_ceiling"] == 3456
+    assert spec.options.metadata["effective_sample_ceiling"] == 192
+    assert spec.options.log_buffer == spec.options.metadata["log_buffer"] == 32
+    assert len({t.model.name for t in spec.tasks[:6]}) == 6
+    assert len({t.args["dataset"] for t in spec.tasks[:6]}) == 1
+    assert len({(t.model.name, t.args["dataset"]) for t in spec.tasks}) == 108
     counts = Counter()
     expected = {"openrouter/" + m.identifier: m for m in profile_models("pilot3")}
     for task in spec.tasks:
@@ -27,7 +31,7 @@ def test_full_spec_uses_every_case_and_preserves_model_controls():
         assert task.model.config.adaptive_connections.model_dump() == {
             "min": 10,
             "start": 20,
-            "max": 576,
+            "max": 64,
             "cooldown_seconds": 15.0,
             "decrease_factor": 0.8,
             "scale_up_percent": 0.05,
@@ -42,6 +46,7 @@ def test_full_spec_uses_every_case_and_preserves_model_controls():
         assert task.model.model_args["provider"]["allow_fallbacks"] is False
         counts[task.model.name] += task.metadata["selected_case_count"]
     assert len({id(t.model.config.adaptive_connections) for t in spec.tasks}) == 108
+    assert spec.options.metadata["generation_policy"]["max_tasks"] == 6
     assert spec.options.metadata["generation_policy"]["max_samples"] == 32
     assert spec.options.metadata["generation_policy"]["max_connections"] is None
     assert set(counts.values()) == {54000}

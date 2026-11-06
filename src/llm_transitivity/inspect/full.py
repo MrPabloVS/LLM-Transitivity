@@ -18,24 +18,27 @@ def build_full_spec(root: Path):
     }
     if sum(len(data.records) for data in inputs.values()) != 54000:
         raise ValueError("Expected 54000 verified corpus records")
-    spec = build_pilot_spec(root, profile="pilot3", concurrency=32, max_tasks=108)
+    spec = build_pilot_spec(root, profile="pilot3", concurrency=32, max_tasks=6)
+    spec.options.log_buffer = 32
     context = spec.options.metadata
     context.update(
         phase="full-corpus",
         corpus_case_count=54000,
         selected_cases_per_model=54000,
         planned_responses=324000,
-        configured_sample_ceiling=3456,
-        effective_sample_ceiling=3456,
+        configured_sample_ceiling=192,
+        effective_sample_ceiling=192,
         max_connections_per_model=None,
         connection_limit_scope="adaptive shared model endpoint pool",
+        log_buffer=32,
+        task_order="dataset then model; completion order can change model overlap",
         selection="All verified source rows in original dataset order",
         cases_per_stratum=500,
     )
     adaptive = AdaptiveConcurrency(
         min=10,
         start=20,
-        max=576,
+        max=64,
         cooldown_seconds=15,
         decrease_factor=0.8,
         scale_up_percent=0.05,
@@ -81,4 +84,17 @@ def build_full_spec(root: Path):
             ]
             + ["phase:full-corpus", "profile:pilot3"]
         )
+    dataset_order = {
+        entry["dataset"]: i for i, entry in enumerate(manifest["datasets"])
+    }
+    model_order = {
+        name: i
+        for i, name in enumerate(dict.fromkeys(t.model.name for t in spec.tasks))
+    }
+    spec.tasks.sort(
+        key=lambda task: (
+            dataset_order[task.args["dataset"]],
+            model_order[task.model.name],
+        )
+    )
     return spec
