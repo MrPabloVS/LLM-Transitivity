@@ -65,7 +65,7 @@ The manifest records all local file paths, source URLs, capture times, byte
 counts, and SHA-256 hashes. It includes manufacturer PDFs and HTML documents.
 The GPT-4o system card is a family document, not a dedicated mini card. Luna
 documents describe their own release scope and do not prove the API revision.
-Preflight and runtime checks for Pilot 2.0 remain pending.
+See [Pilot 2.0 results](../pilot2_results.md) for the completed preflight and runtime checks.
 
 Pilot 2.0 now uses reasoning only for Sonnet 5.5 (`low`) and Gemini 3.5
 Flash-Lite (`minimal`). See [the current request policy](../pilot2.md). Saved

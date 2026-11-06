@@ -1,6 +1,6 @@
 # Pilot 2.0
 
-Status: the next preparation uses the per-model reasoning settings below.
+Status: the preflight and coverage pilot completed. See [the results](pilot2_results.md).
 The historical Sonnet and Haiku results remain separate from this experiment.
 The historical Sonnet and Haiku results remain unchanged.
 

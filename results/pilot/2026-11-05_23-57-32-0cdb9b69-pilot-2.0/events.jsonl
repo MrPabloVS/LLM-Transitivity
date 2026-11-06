@@ -1,0 +1,4 @@
+{"at_utc": "2026-11-06T02:57:45.227488+00:00", "stage": "preflight", "status": "started"}
+{"at_utc": "2026-11-06T02:58:10.491461+00:00", "stage": "preflight", "status": "passed", "review": "preflight/summary/review-d0359354.json", "review_sha256": "24aaf868ecfe6e9fb54aa948cdc3ad7e02fbc15994c823501f5fedcfe792e2c7"}
+{"at_utc": "2026-11-06T02:58:10.540058+00:00", "stage": "coverage", "status": "started"}
+{"at_utc": "2026-11-06T03:01:58.057455+00:00", "stage": "coverage", "status": "passed", "review": "coverage/summary/review-60b2b602.json", "review_sha256": "902d11bd1ee0846b0f23addf557091bc496d25b2f0385de6dc15c2f5fa32e08b"}

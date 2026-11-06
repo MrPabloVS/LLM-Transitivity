@@ -1,0 +1,80 @@
+{
+  "flow_success": true,
+  "runner_error_type": null,
+  "call_export_status": "exported",
+  "logs": [
+    {
+      "path": "inspect/2026-11-06T02-57-46-00-00_zeroShot-HS-HF-FU-20_ECjzDsvZhgDjwUPTvCWhY2.eval",
+      "sha256": "14128abda4f423c01fcc2b672dbc2faa667314dc587058d9420c9f53527475b3",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "earlier",
+      "provider_requested": "google-ai-studio/flex",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-06T02-57-46-00-00_zeroShot-HS-HF-FU-20_F8YRD3eLWGcvNzZFJozUw3.eval",
+      "sha256": "ff9ac69a0b2f47ad171b5032f43d5cf2d00837267ade9d728dd5c45e9d323d5b",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "later",
+      "provider_requested": "google-ai-studio/flex",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-06T02-57-46-00-00_zeroShot-HS-HF-FU-20_RyYUBVpodeH8T7GFZYJhX9.eval",
+      "sha256": "0751eca532570066598f8580e0f347ee5d8b88c33bddf7e6116a3db0cfd5ca4c",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "later",
+      "provider_requested": "anthropic",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-06T02-57-46-00-00_zeroShot-HS-HF-FU-20_UPtdsV8rYB3yiYVUjd8eXw.eval",
+      "sha256": "1caa58c8ff2461fc65d00306e4d8dff598dbad7e0b98d1619e4fc794c963414a",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/openai/gpt-4o-mini",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "earlier",
+      "provider_requested": "openai",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-06T02-57-46-00-00_zeroShot-HS-HF-FU-20_ehbJNkewV54dUau65cfKRo.eval",
+      "sha256": "eed121c13a9c409924a8919ca5ced432d93d389292b55aa48faf868c7c03aa73",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/openai/gpt-6-luna",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "later",
+      "provider_requested": "openai/flex",
+      "sample_count": 1,
+      "sample_errors": 0
+    },
+    {
+      "path": "inspect/2026-11-06T02-57-46-00-00_zeroShot-HS-HF-FU-20_ek7FjbMsjY6Wuf3kGy7u7n.eval",
+      "sha256": "18a1031da8d5bb98bd198c3307d82d40fd52eede908365065f0f3b5335d2a48f",
+      "status": "success",
+      "task": "zeroShot_HS_HF_FU_20",
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "dataset": "HS_HF_FU_20",
+      "generation_group": "earlier",
+      "provider_requested": "anthropic",
+      "sample_count": 1,
+      "sample_errors": 0
+    }
+  ],
+  "note": "Log index only; metrics and billing need a separate analysis."
+}

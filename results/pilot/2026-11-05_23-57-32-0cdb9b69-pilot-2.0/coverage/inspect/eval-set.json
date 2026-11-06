@@ -1,0 +1,2363 @@
+{
+  "eval_set_id": "AHxfWgu6ifEhtsJYaedfoa",
+  "tasks": [
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "DH5VpdKmMXNNd4VugsG2PJ",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 0
+    },
+    {
+      "name": "zeroShot_HS_HF_PA_20",
+      "task_id": "BHnsb3EyYKGmpKo3WSN3aq",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 1
+    },
+    {
+      "name": "zeroShot_HS_HF_PR_20",
+      "task_id": "GSvnqKC5pXx5Voafvn8uKg",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 2
+    },
+    {
+      "name": "zeroShot_HS_LF_FU_20",
+      "task_id": "fhMbJSBhi6A2XQkK64p8EY",
+      "task_args": {
+        "dataset": "pilot/HS_LF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 3
+    },
+    {
+      "name": "zeroShot_HS_LF_PA_20",
+      "task_id": "4Pbui9jBfkYGY8vciAPxef",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 4
+    },
+    {
+      "name": "zeroShot_HS_LF_PR_20",
+      "task_id": "UJ5S7joSqoWgPNHCsNskrW",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 5
+    },
+    {
+      "name": "zeroShot_HS_NS_FU_20",
+      "task_id": "jazc3zQwRnAMgoiKnuJmnp",
+      "task_args": {
+        "dataset": "pilot/HS_NS_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 6
+    },
+    {
+      "name": "zeroShot_HS_NS_PA_20",
+      "task_id": "aa6GjqJqAhcJKiRqZ9dJQd",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 7
+    },
+    {
+      "name": "zeroShot_HS_NS_PR_20",
+      "task_id": "dzmNyRN74RozJkWtDqzJnh",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 8
+    },
+    {
+      "name": "zeroShot_mHS_HF_FU_40",
+      "task_id": "SNrHyKpCNsHQS9tNUdri6b",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 9
+    },
+    {
+      "name": "zeroShot_mHS_HF_PA_40",
+      "task_id": "4JvvTLp4QJ5CPKtEbbzBHs",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 10
+    },
+    {
+      "name": "zeroShot_mHS_HF_PR_40",
+      "task_id": "kQuG45Lio9awRfyagBjPpP",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 11
+    },
+    {
+      "name": "zeroShot_mHS_LF_FU_40",
+      "task_id": "o4Jm9WtxUFa49zP9aUL6VK",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 12
+    },
+    {
+      "name": "zeroShot_mHS_LF_PA_40",
+      "task_id": "MiYZTWWQShEQXhWSdAChaX",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 13
+    },
+    {
+      "name": "zeroShot_mHS_LF_PR_40",
+      "task_id": "imPTy2wU6vBu5RCqPatDYR",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 14
+    },
+    {
+      "name": "zeroShot_mHS_NS_FU_40",
+      "task_id": "HWdBJfsM2g2uUj2pkVWk35",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 15
+    },
+    {
+      "name": "zeroShot_mHS_NS_PA_40",
+      "task_id": "gnKRjyREKPDzJGxNCmGWUq",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 16
+    },
+    {
+      "name": "zeroShot_mHS_NS_PR_40",
+      "task_id": "VnfoMUSrd4EqMMBPX5BCKh",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 17
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "f26nNGNhahwte8GmtZJRuz",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 18
+    },
+    {
+      "name": "zeroShot_HS_HF_PA_20",
+      "task_id": "4wXY9whDDZkcZkbMTU9ZPf",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 19
+    },
+    {
+      "name": "zeroShot_HS_HF_PR_20",
+      "task_id": "8wS9xy5xyDTDL8fhxvoBor",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 20
+    },
+    {
+      "name": "zeroShot_HS_LF_FU_20",
+      "task_id": "LVgjfKwTJi8QSV8ZDNNavC",
+      "task_args": {
+        "dataset": "pilot/HS_LF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 21
+    },
+    {
+      "name": "zeroShot_HS_LF_PA_20",
+      "task_id": "gRd66nJExM2VqJ3npCeCUb",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 22
+    },
+    {
+      "name": "zeroShot_HS_LF_PR_20",
+      "task_id": "NALU4qM4VDArVZcHMfgWVM",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 23
+    },
+    {
+      "name": "zeroShot_HS_NS_FU_20",
+      "task_id": "bHqXPN8dPABRXiF6SEqayc",
+      "task_args": {
+        "dataset": "pilot/HS_NS_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 24
+    },
+    {
+      "name": "zeroShot_HS_NS_PA_20",
+      "task_id": "Gt8KhVYcEA64iy7gDXWazs",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 25
+    },
+    {
+      "name": "zeroShot_HS_NS_PR_20",
+      "task_id": "JqN8MTejqDUmjV2CLP7qWh",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 26
+    },
+    {
+      "name": "zeroShot_mHS_HF_FU_40",
+      "task_id": "FoAqLPCHpx3EVaVypxvxL8",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 27
+    },
+    {
+      "name": "zeroShot_mHS_HF_PA_40",
+      "task_id": "7yP8VcvMKdKoJdWYigfjyE",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 28
+    },
+    {
+      "name": "zeroShot_mHS_HF_PR_40",
+      "task_id": "8cZwKwLw2MvsoiQQYiUtdr",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 29
+    },
+    {
+      "name": "zeroShot_mHS_LF_FU_40",
+      "task_id": "ZPYaQZYKoVoiqjhCBuUgHU",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 30
+    },
+    {
+      "name": "zeroShot_mHS_LF_PA_40",
+      "task_id": "5CPGn25GRzbHwzjieYY97p",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 31
+    },
+    {
+      "name": "zeroShot_mHS_LF_PR_40",
+      "task_id": "H8QUCJJgCnXJppUt2yycWY",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 32
+    },
+    {
+      "name": "zeroShot_mHS_NS_FU_40",
+      "task_id": "B6rsyZhMJkEYRNsGmoM38q",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 33
+    },
+    {
+      "name": "zeroShot_mHS_NS_PA_40",
+      "task_id": "e6qjD6bBQLe5sWQkL3c4zJ",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 34
+    },
+    {
+      "name": "zeroShot_mHS_NS_PR_40",
+      "task_id": "HZAras2P2CGv4VHd6XzGjw",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 35
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "BhRjpceJLBsWVEJ2YLLJYm",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 36
+    },
+    {
+      "name": "zeroShot_HS_HF_PA_20",
+      "task_id": "S3M6CRFx5Bo7VHkksewRTM",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 37
+    },
+    {
+      "name": "zeroShot_HS_HF_PR_20",
+      "task_id": "aqzj6bGqEstHqTrJtv3V3M",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 38
+    },
+    {
+      "name": "zeroShot_HS_LF_FU_20",
+      "task_id": "SichWdPh7pNNb9HK9pfgWt",
+      "task_args": {
+        "dataset": "pilot/HS_LF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 39
+    },
+    {
+      "name": "zeroShot_HS_LF_PA_20",
+      "task_id": "HwQfJ5WsuqhZVtWUeyUrig",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 40
+    },
+    {
+      "name": "zeroShot_HS_LF_PR_20",
+      "task_id": "fJkVvnwCEi2VfytxMoJPsM",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 41
+    },
+    {
+      "name": "zeroShot_HS_NS_FU_20",
+      "task_id": "RnVzVY4ZtkajfLCNQL5XXu",
+      "task_args": {
+        "dataset": "pilot/HS_NS_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 42
+    },
+    {
+      "name": "zeroShot_HS_NS_PA_20",
+      "task_id": "P5iwzLoccDD598w8kcR4M8",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 43
+    },
+    {
+      "name": "zeroShot_HS_NS_PR_20",
+      "task_id": "HCEswLNsu2redZXQ4ZVsM2",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 44
+    },
+    {
+      "name": "zeroShot_mHS_HF_FU_40",
+      "task_id": "8k8XYZQyQaZNckaULwq3GK",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 45
+    },
+    {
+      "name": "zeroShot_mHS_HF_PA_40",
+      "task_id": "6bDhP8RJoHEzSJMYMt2Lya",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 46
+    },
+    {
+      "name": "zeroShot_mHS_HF_PR_40",
+      "task_id": "BqNLb8NP2NDNek7E9HduCa",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 47
+    },
+    {
+      "name": "zeroShot_mHS_LF_FU_40",
+      "task_id": "LPNEkhnEuNekZEqwiKMJo4",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 48
+    },
+    {
+      "name": "zeroShot_mHS_LF_PA_40",
+      "task_id": "TXQtFQBi4rzKcqSnKw5cAQ",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 49
+    },
+    {
+      "name": "zeroShot_mHS_LF_PR_40",
+      "task_id": "f9cVzXEu6ugedN4sURXSKV",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 50
+    },
+    {
+      "name": "zeroShot_mHS_NS_FU_40",
+      "task_id": "4hDNZKYpHs72AyVRnTRK2p",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 51
+    },
+    {
+      "name": "zeroShot_mHS_NS_PA_40",
+      "task_id": "HuhiYWvVsdagSMjk3es9oE",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 52
+    },
+    {
+      "name": "zeroShot_mHS_NS_PR_40",
+      "task_id": "oCwVkRoiHBnHZQMq8GfpTa",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-4.6",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 53
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "2GF8yetmUyfwQuHSjfHWMp",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 54
+    },
+    {
+      "name": "zeroShot_HS_HF_PA_20",
+      "task_id": "3JEZHf29LFoAWYUe8oNVsK",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 55
+    },
+    {
+      "name": "zeroShot_HS_HF_PR_20",
+      "task_id": "Kjv2P7AABd34VximGTYzN8",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 56
+    },
+    {
+      "name": "zeroShot_HS_LF_FU_20",
+      "task_id": "P36VAuNbQP4DaJCrs8HRSj",
+      "task_args": {
+        "dataset": "pilot/HS_LF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 57
+    },
+    {
+      "name": "zeroShot_HS_LF_PA_20",
+      "task_id": "FG5PG98qWHfcYbZj4amVY6",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 58
+    },
+    {
+      "name": "zeroShot_HS_LF_PR_20",
+      "task_id": "Qh92aN3dpeDfDh2exbTSmC",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 59
+    },
+    {
+      "name": "zeroShot_HS_NS_FU_20",
+      "task_id": "3DurBe3nUhAFP4d5VaYAG8",
+      "task_args": {
+        "dataset": "pilot/HS_NS_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 60
+    },
+    {
+      "name": "zeroShot_HS_NS_PA_20",
+      "task_id": "QZJnxEAoKHpEoLNNyoESTM",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 61
+    },
+    {
+      "name": "zeroShot_HS_NS_PR_20",
+      "task_id": "o4ghg4q5mBfzNbUV8vjrHo",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 62
+    },
+    {
+      "name": "zeroShot_mHS_HF_FU_40",
+      "task_id": "EwcYZbDevUP5oZ5ztJS8Qh",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 63
+    },
+    {
+      "name": "zeroShot_mHS_HF_PA_40",
+      "task_id": "SUYtuNZDg2HoeorZdVaU5E",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 64
+    },
+    {
+      "name": "zeroShot_mHS_HF_PR_40",
+      "task_id": "5EDTFhoXerXmozGRgQSN42",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 65
+    },
+    {
+      "name": "zeroShot_mHS_LF_FU_40",
+      "task_id": "g5gAWHaYJVNG3m9VF9arG6",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 66
+    },
+    {
+      "name": "zeroShot_mHS_LF_PA_40",
+      "task_id": "TFF7VDbM26b5HwjB9ore3g",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 67
+    },
+    {
+      "name": "zeroShot_mHS_LF_PR_40",
+      "task_id": "A4Gttt9gQwLVdaQ8HYMUCh",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 68
+    },
+    {
+      "name": "zeroShot_mHS_NS_FU_40",
+      "task_id": "2rdSgdFseVusbKbKtjoNpv",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 69
+    },
+    {
+      "name": "zeroShot_mHS_NS_PA_40",
+      "task_id": "J6ZJ7hgbrQr34oRnCvKm3C",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 70
+    },
+    {
+      "name": "zeroShot_mHS_NS_PR_40",
+      "task_id": "XxA9LonXnGEthsbMbLesDd",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 71
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "YixvoKpN2vjbK34yrk4fVt",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 72
+    },
+    {
+      "name": "zeroShot_HS_HF_PA_20",
+      "task_id": "R8zKGHez2DKvFgwZyr7VLu",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 73
+    },
+    {
+      "name": "zeroShot_HS_HF_PR_20",
+      "task_id": "SKAgVddjzoP6gX34QEkFi5",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 74
+    },
+    {
+      "name": "zeroShot_HS_LF_FU_20",
+      "task_id": "7ETz9FUm6M4J6Y8thXYWFN",
+      "task_args": {
+        "dataset": "pilot/HS_LF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 75
+    },
+    {
+      "name": "zeroShot_HS_LF_PA_20",
+      "task_id": "KtyhT5RD5gTbZiREp7vC8v",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 76
+    },
+    {
+      "name": "zeroShot_HS_LF_PR_20",
+      "task_id": "Mpswr4taB8Mhbh6BtTtjnF",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 77
+    },
+    {
+      "name": "zeroShot_HS_NS_FU_20",
+      "task_id": "WSTk44t3pwuwPrPPJeNsXe",
+      "task_args": {
+        "dataset": "pilot/HS_NS_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 78
+    },
+    {
+      "name": "zeroShot_HS_NS_PA_20",
+      "task_id": "dJTMsk7KFoWzWLSBsxVWbD",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 79
+    },
+    {
+      "name": "zeroShot_HS_NS_PR_20",
+      "task_id": "Cjrv4grUCWnaHoQ9kSYHzv",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 80
+    },
+    {
+      "name": "zeroShot_mHS_HF_FU_40",
+      "task_id": "YQKVb9etsbZfWhUkFhDtP9",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 81
+    },
+    {
+      "name": "zeroShot_mHS_HF_PA_40",
+      "task_id": "D5yw35bEmv4zrHi9kaWTcC",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 82
+    },
+    {
+      "name": "zeroShot_mHS_HF_PR_40",
+      "task_id": "gHqFd7iVVdpWDg8MKvtKxD",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 83
+    },
+    {
+      "name": "zeroShot_mHS_LF_FU_40",
+      "task_id": "CmuWBFDJLE2JgJ6rnoKDio",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 84
+    },
+    {
+      "name": "zeroShot_mHS_LF_PA_40",
+      "task_id": "hNTXDKJ5QFiwGQRpgYGBcd",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 85
+    },
+    {
+      "name": "zeroShot_mHS_LF_PR_40",
+      "task_id": "ifQNASMo4WvueQY2TuP9Ns",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 86
+    },
+    {
+      "name": "zeroShot_mHS_NS_FU_40",
+      "task_id": "cxBpcWkasBpk9fJnNewpNz",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 87
+    },
+    {
+      "name": "zeroShot_mHS_NS_PA_40",
+      "task_id": "P8WGkUq8Nv9BYhA4QcxZgh",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 88
+    },
+    {
+      "name": "zeroShot_mHS_NS_PR_40",
+      "task_id": "iKRukWRGfWEYQNmkKwGne8",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 89
+    },
+    {
+      "name": "zeroShot_HS_HF_FU_20",
+      "task_id": "9ZM4jUDzT2pp6chirwTf83",
+      "task_args": {
+        "dataset": "pilot/HS_HF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 90
+    },
+    {
+      "name": "zeroShot_HS_HF_PA_20",
+      "task_id": "dWWi6KmYAVpxCSmSQTiBXy",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 91
+    },
+    {
+      "name": "zeroShot_HS_HF_PR_20",
+      "task_id": "RtsgJgExwB9BGJBCeCnZyi",
+      "task_args": {
+        "dataset": "pilot/HS_HF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 92
+    },
+    {
+      "name": "zeroShot_HS_LF_FU_20",
+      "task_id": "8E77Ln9c2hdg5FQPfZneRE",
+      "task_args": {
+        "dataset": "pilot/HS_LF_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 93
+    },
+    {
+      "name": "zeroShot_HS_LF_PA_20",
+      "task_id": "nWL7VYn3ksrFssgJ8S3vhW",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 94
+    },
+    {
+      "name": "zeroShot_HS_LF_PR_20",
+      "task_id": "crBjnYaYGZfpP72vfEXVdv",
+      "task_args": {
+        "dataset": "pilot/HS_LF_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 95
+    },
+    {
+      "name": "zeroShot_HS_NS_FU_20",
+      "task_id": "PihVvRWTNSgtPXJuSdQrPw",
+      "task_args": {
+        "dataset": "pilot/HS_NS_FU_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 96
+    },
+    {
+      "name": "zeroShot_HS_NS_PA_20",
+      "task_id": "RnHtLxHnodtYLVPrg5amh5",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PA_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 97
+    },
+    {
+      "name": "zeroShot_HS_NS_PR_20",
+      "task_id": "6af7LsVGZmgmSopjkmdmnw",
+      "task_args": {
+        "dataset": "pilot/HS_NS_PR_20",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 98
+    },
+    {
+      "name": "zeroShot_mHS_HF_FU_40",
+      "task_id": "mw8fEaxsUngGUFDsd5VyHU",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 99
+    },
+    {
+      "name": "zeroShot_mHS_HF_PA_40",
+      "task_id": "nfvqwnfqtSvJcCKhM6oqwY",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 100
+    },
+    {
+      "name": "zeroShot_mHS_HF_PR_40",
+      "task_id": "VKVEehz9AQuSgVLRZ3Aur3",
+      "task_args": {
+        "dataset": "pilot/mHS_HF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 101
+    },
+    {
+      "name": "zeroShot_mHS_LF_FU_40",
+      "task_id": "XoHXEeTvz8bbDpMv2B3KTD",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 102
+    },
+    {
+      "name": "zeroShot_mHS_LF_PA_40",
+      "task_id": "8VKm7jybKKsbAUVZxdJHgS",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 103
+    },
+    {
+      "name": "zeroShot_mHS_LF_PR_40",
+      "task_id": "oChUkPPjyZwPdNqzm8TNm7",
+      "task_args": {
+        "dataset": "pilot/mHS_LF_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 104
+    },
+    {
+      "name": "zeroShot_mHS_NS_FU_40",
+      "task_id": "5V9AVQSfZoxXbBvZkhWAsV",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_FU_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 105
+    },
+    {
+      "name": "zeroShot_mHS_NS_PA_40",
+      "task_id": "56HzAkzpyDnQA8rpynsyQo",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PA_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 106
+    },
+    {
+      "name": "zeroShot_mHS_NS_PR_40",
+      "task_id": "WZwjuR9Abpg9vZtzZZzQSL",
+      "task_args": {
+        "dataset": "pilot/mHS_NS_PR_40",
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": true
+      },
+      "sequence": 107
+    }
+  ]
+}

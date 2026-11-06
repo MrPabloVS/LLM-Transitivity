@@ -191,4 +191,5 @@ comparison and the reason the 64-slot load was not executed.
 See [the preparation guide](docs/pilot2.md) for the six-model selection, fixed
 providers, unchanged 540-case input selection, and 108-task schedule at 32 samples
 per task. The [saved cards](docs/model_cards/README.md#pilot-20) include manufacturer
-documents and full endpoint snapshots. This preparation has not run generations.
+documents and full endpoint snapshots. The [completed results](docs/pilot2_results.md) include 3,240 coverage responses,
+per-model checks, retries, filters, and reported costs.

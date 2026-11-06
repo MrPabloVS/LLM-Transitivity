@@ -1,0 +1,53 @@
+{
+  "source_commit": "95241c0",
+  "full_pytest": 333,
+  "wire_tests": 12,
+  "ruff_package_tests": "passed",
+  "format_package_tests": "passed",
+  "global_ruff": "6 inherited errors",
+  "global_format": "2 inherited files",
+  "failed_run_deleted": true,
+  "protected_inputs": "unchanged",
+  "secret_scan_matches": 0,
+  "preflight_passed": true,
+  "coverage_passed": true,
+  "final_sample_errors": 0,
+  "coverage_samples": 3240,
+  "coverage_tasks": 108,
+  "reported_reasoning": {
+    "openai/gpt-6-luna": {
+      "reported_tokens": 0,
+      "positive_samples": 0,
+      "missing_usage": 0
+    },
+    "anthropic/claude-sonnet-4.6": {
+      "reported_tokens": 0,
+      "positive_samples": 0,
+      "missing_usage": 2
+    },
+    "anthropic/claude-sonnet-5.5": {
+      "reported_tokens": 0,
+      "positive_samples": 0,
+      "missing_usage": 0
+    },
+    "google/gemini-3.5-flash-lite": {
+      "reported_tokens": 0,
+      "positive_samples": 0,
+      "missing_usage": 0
+    },
+    "google/gemini-3.1-flash-lite": {
+      "reported_tokens": 0,
+      "positive_samples": 0,
+      "missing_usage": 0
+    },
+    "openai/gpt-4o-mini": {
+      "reported_tokens": 0,
+      "positive_samples": 0,
+      "missing_usage": 0
+    }
+  },
+  "unknown_cost_generation_ids": 7,
+  "attempts_without_generation_ids": 451,
+  "full_corpus_started": false,
+  "push": false
+}
