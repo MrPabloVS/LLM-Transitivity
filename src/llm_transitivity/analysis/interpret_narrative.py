@@ -148,7 +148,7 @@ def narrative(data):
         "02_ceiling",
         "The high-match models on an enlarged scale.",
         "This axis starts at 97%, not zero. Use the counts to judge the absolute differences.",
-        "Sonnet has 53,973 matches; Gemini 3.1 has 53,959. A 14-match difference over 54,000 cases is small in this corpus, even though their format behavior differs substantially.",
+        f"Sonnet has {totals['anthropic/claude-sonnet-5.5']['matched']:,} matches; Gemini 3.1 has {totals['google/gemini-3.1-flash-lite']['matched']:,}. Their absolute difference is {abs(totals['anthropic/claude-sonnet-5.5']['matched'] - totals['google/gemini-3.1-flash-lite']['matched']):,} matches over 54,000 cases. Their format behavior differs substantially.",
         "One execution does not establish a stable advantage on repeated requests or other corpora.",
     )
     heading("4. Family changes the reading")
@@ -275,7 +275,7 @@ def narrative(data):
         "06_concentration",
         "The count of disagreeing models for each question.",
         "Count only interpreted answers that disagree with the source label. A bar at zero can still contain a filtered or otherwise uninterpretable answer.",
-        "There are 22,373 cases with one disagreeing model and 6,074 with two or more. Another 25,553 have no interpreted disagreement. Shared disagreement is a useful queue for manual review of prompts, labels, and model answers.",
+        f"There are {sum(r['cases'] for r in t['concentration'] if r['disagrees'] == 1):,} cases with one disagreeing model and {sum(r['cases'] for r in t['concentration'] if r['disagrees'] >= 2):,} with two or more. Another {sum(r['cases'] for r in t['concentration'] if r['disagrees'] == 0):,} have no interpreted disagreement. Shared disagreement is a useful queue for manual review of prompts, labels, and model answers.",
         "Even unanimous disagreement would not prove that a source label is wrong. Models can share mistakes.",
     )
     heading("8. Usable answers and strict format")
