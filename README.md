@@ -6,9 +6,13 @@ The completed full-corpus report is below. For another paid run, follow the
 
 ## Full-corpus results
 
+[Guía paso a paso en español: instalación, generación y explorador](docs/guia_informe_es.md).
+
 The completed run contains 54,000 cases evaluated by six models: 324,000 responses
 in 108 tasks. Read the [full report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/report.md)
-or use the [HTML report and case explorer](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/index.html).
+or use the [HTML report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/index.html).
+Use the separate [interactive tables and case explorer](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/explorer.html)
+to filter results and inspect original responses.
 The report measures agreement with source labels, not audited logical validity.
 
 Build a new report offline from the closed native evidence:
