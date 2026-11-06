@@ -1,0 +1,73 @@
+model,family,formulation,canonical,validity,samples,matched,disagreed,answered,strict,content_filter,empty,ambiguous,invalid_format,error,nonstrict_answered,yes,no,agreement,coverage,format_rate,matched_total
+anthropic/claude-haiku-5.5,HS,if then / therefore,canonic,invalid,4500,1357,3110,4467,4467,33,0,0,0,0,0,3110,1357,0.30378329975374974,0.9926666666666667,0.9926666666666667,0.3015555555555556
+anthropic/claude-haiku-5.5,HS,if then / therefore,canonic,valid,4500,4471,0,4471,4471,29,0,0,0,0,0,4471,0,1.0,0.9935555555555555,0.9935555555555555,0.9935555555555555
+anthropic/claude-haiku-5.5,HS,if then / therefore,non-canonic,invalid,4500,2426,2038,4464,4463,36,0,0,0,0,1,2038,2426,0.5434587813620072,0.992,0.9917777777777778,0.5391111111111111
+anthropic/claude-haiku-5.5,HS,if then / therefore,non-canonic,valid,4500,4463,0,4463,4463,37,0,0,0,0,0,4463,0,1.0,0.9917777777777778,0.9917777777777778,0.9917777777777778
+anthropic/claude-haiku-5.5,mHS,assuming that we can infer / thus,canonic,invalid,4500,3695,673,4368,4368,132,0,0,0,0,0,673,3695,0.8459249084249084,0.9706666666666667,0.9706666666666667,0.8211111111111111
+anthropic/claude-haiku-5.5,mHS,assuming that we can infer / thus,canonic,valid,4500,4484,0,4484,4484,16,0,0,0,0,0,4484,0,1.0,0.9964444444444445,0.9964444444444445,0.9964444444444445
+anthropic/claude-haiku-5.5,mHS,assuming that we can infer / thus,non-canonic,invalid,4500,3320,1164,4484,4484,16,0,0,0,0,0,1164,3320,0.7404103479036575,0.9964444444444445,0.9964444444444445,0.7377777777777778
+anthropic/claude-haiku-5.5,mHS,assuming that we can infer / thus,non-canonic,valid,4500,4441,13,4454,4453,46,0,0,0,0,1,4441,13,0.9970812752581949,0.9897777777777778,0.9895555555555555,0.9868888888888889
+anthropic/claude-haiku-5.5,mHS,from the inference (therefore) / does the inference follow,canonic,invalid,4500,1892,2603,4495,4495,5,0,0,0,0,0,2603,1892,0.42091212458286986,0.9988888888888889,0.9988888888888889,0.42044444444444445
+anthropic/claude-haiku-5.5,mHS,from the inference (therefore) / does the inference follow,canonic,valid,4500,4336,162,4498,4498,2,0,0,0,0,0,4336,162,0.963983992885727,0.9995555555555555,0.9995555555555555,0.9635555555555556
+anthropic/claude-haiku-5.5,mHS,from the inference (therefore) / does the inference follow,non-canonic,invalid,4500,1851,2649,4500,4496,0,0,0,0,0,4,2649,1851,0.41133333333333333,1.0,0.9991111111111111,0.41133333333333333
+anthropic/claude-haiku-5.5,mHS,from the inference (therefore) / does the inference follow,non-canonic,valid,4500,4476,24,4500,4500,0,0,0,0,0,0,4476,24,0.9946666666666667,1.0,1.0,0.9946666666666667
+anthropic/claude-sonnet-5.5,HS,if then / therefore,canonic,invalid,4500,4500,0,4500,2343,0,0,0,0,0,2157,0,4500,1.0,1.0,0.5206666666666667,1.0
+anthropic/claude-sonnet-5.5,HS,if then / therefore,canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+anthropic/claude-sonnet-5.5,HS,if then / therefore,non-canonic,invalid,4500,4500,0,4500,1207,0,0,0,0,0,3293,0,4500,1.0,1.0,0.2682222222222222,1.0
+anthropic/claude-sonnet-5.5,HS,if then / therefore,non-canonic,valid,4500,4500,0,4500,4479,0,0,0,0,0,21,4500,0,1.0,1.0,0.9953333333333333,1.0
+anthropic/claude-sonnet-5.5,mHS,assuming that we can infer / thus,canonic,invalid,4500,4500,0,4500,3739,0,0,0,0,0,761,0,4500,1.0,1.0,0.8308888888888889,1.0
+anthropic/claude-sonnet-5.5,mHS,assuming that we can infer / thus,canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+anthropic/claude-sonnet-5.5,mHS,assuming that we can infer / thus,non-canonic,invalid,4500,4500,0,4500,3113,0,0,0,0,0,1387,0,4500,1.0,1.0,0.6917777777777778,1.0
+anthropic/claude-sonnet-5.5,mHS,assuming that we can infer / thus,non-canonic,valid,4500,4500,0,4500,4497,0,0,0,0,0,3,4500,0,1.0,1.0,0.9993333333333333,1.0
+anthropic/claude-sonnet-5.5,mHS,from the inference (therefore) / does the inference follow,canonic,invalid,4500,4499,0,4499,4218,0,0,1,0,0,281,0,4499,1.0,0.9997777777777778,0.9373333333333334,0.9997777777777778
+anthropic/claude-sonnet-5.5,mHS,from the inference (therefore) / does the inference follow,canonic,valid,4500,4474,22,4496,4287,0,0,4,0,0,209,4474,22,0.9951067615658363,0.9991111111111111,0.9526666666666667,0.9942222222222222
+anthropic/claude-sonnet-5.5,mHS,from the inference (therefore) / does the inference follow,non-canonic,invalid,4500,4500,0,4500,2992,0,0,0,0,0,1508,0,4500,1.0,1.0,0.6648888888888889,1.0
+anthropic/claude-sonnet-5.5,mHS,from the inference (therefore) / does the inference follow,non-canonic,valid,4500,4500,0,4500,4475,0,0,0,0,0,25,4500,0,1.0,1.0,0.9944444444444445,1.0
+google/gemini-3.1-flash-lite,HS,if then / therefore,canonic,invalid,4500,4500,0,4500,4497,0,0,0,0,0,3,0,4500,1.0,1.0,0.9993333333333333,1.0
+google/gemini-3.1-flash-lite,HS,if then / therefore,canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+google/gemini-3.1-flash-lite,HS,if then / therefore,non-canonic,invalid,4500,4500,0,4500,4500,0,0,0,0,0,0,0,4500,1.0,1.0,1.0,1.0
+google/gemini-3.1-flash-lite,HS,if then / therefore,non-canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+google/gemini-3.1-flash-lite,mHS,assuming that we can infer / thus,canonic,invalid,4500,4500,0,4500,4485,0,0,0,0,0,15,0,4500,1.0,1.0,0.9966666666666667,1.0
+google/gemini-3.1-flash-lite,mHS,assuming that we can infer / thus,canonic,valid,4500,4500,0,4500,4495,0,0,0,0,0,5,4500,0,1.0,1.0,0.9988888888888889,1.0
+google/gemini-3.1-flash-lite,mHS,assuming that we can infer / thus,non-canonic,invalid,4500,4500,0,4500,4496,0,0,0,0,0,4,0,4500,1.0,1.0,0.9991111111111111,1.0
+google/gemini-3.1-flash-lite,mHS,assuming that we can infer / thus,non-canonic,valid,4500,4500,0,4500,4499,0,0,0,0,0,1,4500,0,1.0,1.0,0.9997777777777778,1.0
+google/gemini-3.1-flash-lite,mHS,from the inference (therefore) / does the inference follow,canonic,invalid,4500,4500,0,4500,4491,0,0,0,0,0,9,0,4500,1.0,1.0,0.998,1.0
+google/gemini-3.1-flash-lite,mHS,from the inference (therefore) / does the inference follow,canonic,valid,4500,4465,35,4500,4500,0,0,0,0,0,0,4465,35,0.9922222222222222,1.0,1.0,0.9922222222222222
+google/gemini-3.1-flash-lite,mHS,from the inference (therefore) / does the inference follow,non-canonic,invalid,4500,4500,0,4500,4498,0,0,0,0,0,2,0,4500,1.0,1.0,0.9995555555555555,1.0
+google/gemini-3.1-flash-lite,mHS,from the inference (therefore) / does the inference follow,non-canonic,valid,4500,4492,8,4500,4500,0,0,0,0,0,0,4492,8,0.9982222222222222,1.0,1.0,0.9982222222222222
+google/gemini-3.5-flash-lite,HS,if then / therefore,canonic,invalid,4500,4500,0,4500,4500,0,0,0,0,0,0,0,4500,1.0,1.0,1.0,1.0
+google/gemini-3.5-flash-lite,HS,if then / therefore,canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+google/gemini-3.5-flash-lite,HS,if then / therefore,non-canonic,invalid,4500,4500,0,4500,4500,0,0,0,0,0,0,0,4500,1.0,1.0,1.0,1.0
+google/gemini-3.5-flash-lite,HS,if then / therefore,non-canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+google/gemini-3.5-flash-lite,mHS,assuming that we can infer / thus,canonic,invalid,4500,4484,16,4500,4499,0,0,0,0,0,1,16,4484,0.9964444444444445,1.0,0.9997777777777778,0.9964444444444445
+google/gemini-3.5-flash-lite,mHS,assuming that we can infer / thus,canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+google/gemini-3.5-flash-lite,mHS,assuming that we can infer / thus,non-canonic,invalid,4500,4500,0,4500,4500,0,0,0,0,0,0,0,4500,1.0,1.0,1.0,1.0
+google/gemini-3.5-flash-lite,mHS,assuming that we can infer / thus,non-canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+google/gemini-3.5-flash-lite,mHS,from the inference (therefore) / does the inference follow,canonic,invalid,4500,3880,620,4500,4495,0,0,0,0,0,5,620,3880,0.8622222222222222,1.0,0.9988888888888889,0.8622222222222222
+google/gemini-3.5-flash-lite,mHS,from the inference (therefore) / does the inference follow,canonic,valid,4500,4283,217,4500,4494,0,0,0,0,0,6,4283,217,0.9517777777777777,1.0,0.9986666666666667,0.9517777777777777
+google/gemini-3.5-flash-lite,mHS,from the inference (therefore) / does the inference follow,non-canonic,invalid,4500,4149,351,4500,4500,0,0,0,0,0,0,351,4149,0.922,1.0,1.0,0.922
+google/gemini-3.5-flash-lite,mHS,from the inference (therefore) / does the inference follow,non-canonic,valid,4500,4352,148,4500,4500,0,0,0,0,0,0,4352,148,0.9671111111111111,1.0,1.0,0.9671111111111111
+openai/gpt-4o-mini,HS,if then / therefore,canonic,invalid,4500,4431,69,4500,4442,0,0,0,0,0,58,69,4431,0.9846666666666667,1.0,0.9871111111111112,0.9846666666666667
+openai/gpt-4o-mini,HS,if then / therefore,canonic,valid,4500,4492,8,4500,3946,0,0,0,0,0,554,4492,8,0.9982222222222222,1.0,0.8768888888888889,0.9982222222222222
+openai/gpt-4o-mini,HS,if then / therefore,non-canonic,invalid,4500,3788,712,4500,4284,0,0,0,0,0,216,712,3788,0.8417777777777777,1.0,0.952,0.8417777777777777
+openai/gpt-4o-mini,HS,if then / therefore,non-canonic,valid,4500,3914,585,4499,3808,0,0,0,1,0,691,3914,585,0.8699711046899311,0.9997777777777778,0.8462222222222222,0.8697777777777778
+openai/gpt-4o-mini,mHS,assuming that we can infer / thus,canonic,invalid,4500,4300,200,4500,4337,0,0,0,0,0,163,200,4300,0.9555555555555556,1.0,0.9637777777777777,0.9555555555555556
+openai/gpt-4o-mini,mHS,assuming that we can infer / thus,canonic,valid,4500,4342,158,4500,3786,0,0,0,0,0,714,4342,158,0.9648888888888889,1.0,0.8413333333333334,0.9648888888888889
+openai/gpt-4o-mini,mHS,assuming that we can infer / thus,non-canonic,invalid,4500,4447,53,4500,4264,0,0,0,0,0,236,53,4447,0.9882222222222222,1.0,0.9475555555555556,0.9882222222222222
+openai/gpt-4o-mini,mHS,assuming that we can infer / thus,non-canonic,valid,4500,419,4081,4500,4281,0,0,0,0,0,219,419,4081,0.09311111111111112,1.0,0.9513333333333334,0.09311111111111112
+openai/gpt-4o-mini,mHS,from the inference (therefore) / does the inference follow,canonic,invalid,4500,4500,0,4500,4438,0,0,0,0,0,62,0,4500,1.0,1.0,0.9862222222222222,1.0
+openai/gpt-4o-mini,mHS,from the inference (therefore) / does the inference follow,canonic,valid,4500,1728,2772,4500,3971,0,0,0,0,0,529,1728,2772,0.384,1.0,0.8824444444444445,0.384
+openai/gpt-4o-mini,mHS,from the inference (therefore) / does the inference follow,non-canonic,invalid,4500,4499,1,4500,4360,0,0,0,0,0,140,1,4499,0.9997777777777778,1.0,0.9688888888888889,0.9997777777777778
+openai/gpt-4o-mini,mHS,from the inference (therefore) / does the inference follow,non-canonic,valid,4500,374,4126,4500,4318,0,0,0,0,0,182,374,4126,0.08311111111111111,1.0,0.9595555555555556,0.08311111111111111
+openai/gpt-6-luna,HS,if then / therefore,canonic,invalid,4500,3686,814,4500,4500,0,0,0,0,0,0,814,3686,0.8191111111111111,1.0,1.0,0.8191111111111111
+openai/gpt-6-luna,HS,if then / therefore,canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+openai/gpt-6-luna,HS,if then / therefore,non-canonic,invalid,4500,3672,828,4500,4500,0,0,0,0,0,0,828,3672,0.816,1.0,1.0,0.816
+openai/gpt-6-luna,HS,if then / therefore,non-canonic,valid,4500,4496,4,4500,4500,0,0,0,0,0,0,4496,4,0.9991111111111111,1.0,1.0,0.9991111111111111
+openai/gpt-6-luna,mHS,assuming that we can infer / thus,canonic,invalid,4500,4255,245,4500,4500,0,0,0,0,0,0,245,4255,0.9455555555555556,1.0,1.0,0.9455555555555556
+openai/gpt-6-luna,mHS,assuming that we can infer / thus,canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0
+openai/gpt-6-luna,mHS,assuming that we can infer / thus,non-canonic,invalid,4500,2704,1796,4500,4500,0,0,0,0,0,0,1796,2704,0.6008888888888889,1.0,1.0,0.6008888888888889
+openai/gpt-6-luna,mHS,assuming that we can infer / thus,non-canonic,valid,4500,4499,1,4500,4500,0,0,0,0,0,0,4499,1,0.9997777777777778,1.0,1.0,0.9997777777777778
+openai/gpt-6-luna,mHS,from the inference (therefore) / does the inference follow,canonic,invalid,4500,2916,1584,4500,4500,0,0,0,0,0,0,1584,2916,0.648,1.0,1.0,0.648
+openai/gpt-6-luna,mHS,from the inference (therefore) / does the inference follow,canonic,valid,4500,4487,13,4500,4500,0,0,0,0,0,0,4487,13,0.9971111111111111,1.0,1.0,0.9971111111111111
+openai/gpt-6-luna,mHS,from the inference (therefore) / does the inference follow,non-canonic,invalid,4500,1277,3223,4500,4500,0,0,0,0,0,0,3223,1277,0.2837777777777778,1.0,1.0,0.2837777777777778
+openai/gpt-6-luna,mHS,from the inference (therefore) / does the inference follow,non-canonic,valid,4500,4500,0,4500,4500,0,0,0,0,0,0,4500,0,1.0,1.0,1.0,1.0

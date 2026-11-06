@@ -316,7 +316,7 @@ El último comando debe mostrar las opciones `--run` y `--output`.
 ## 8. Elegir: leer el informe existente o generar otro
 
 Si solo querés leer los resultados, **no hace falta regenerarlos ni descomprimir
-la base SQLite**. Andá directamente a la sección 10 y usá `analysis-v1`.
+la base SQLite**. Andá directamente a la sección 10 y usá `analysis-v3`.
 
 Si querés generar un informe desde las respuestas originales, continuá con la
 sección 9. Descargar el CSV o la base de datos del informe no reemplaza los logs
@@ -368,16 +368,19 @@ los archivos faltantes.
 El mismo comando funciona en ambos sistemas. Copialo como una sola línea:
 
 ```sh
-uv run --locked transitivity report --run results/full/2026-11-06_01-23-40-040fd7b7 --output reports/full/2026-11-06_01-23-40-040fd7b7/mi-informe-01
+uv run --locked transitivity report --run results/full/2026-11-06_01-23-40-040fd7b7 --correction results/corrections/2026-11-06_15-37-32-64caf3fd-eate-to-ate-v1 --output reports/full/2026-11-06_01-23-40-040fd7b7/mi-informe-01
 ```
 
-`--run` señala la corrida que se va a leer. `--output` indica dónde crear el
+`--run` señala la corrida original. `--correction` señala la ejecución con las
+respuestas nuevas para los 612 casos corregidos. Necesitás ambas carpetas
+completas para reconstruir el informe actual. La carpeta de corrección es
+`results/corrections/2026-11-06_15-37-32-64caf3fd-eate-to-ate-v1`. `--output` indica dónde crear el
 informe nuevo. **La carpeta de salida no debe existir.** No la crees antes.
 Si ya existe `mi-informe-01`, usá `mi-informe-02`, y así sucesivamente.
 
 El programa revisa los originales, lee las respuestas y calcula las tablas.
 Después genera Markdown, las dos páginas HTML, los gráficos y los datos del
-explorador. No ejecutes `pilot`, `full` ni `followup` para esta tarea: esos son
+explorador. No ejecutes `pilot`, `full`, `followup` ni `correction` para esta tarea: esos son
 comandos de ejecución del experimento.
 
 ### 9.3. Esperar a que termine
@@ -426,10 +429,10 @@ Safari o Firefox:
 - Tablas y explorador: <http://127.0.0.1:7590/reports/full/2026-11-06_01-23-40-040fd7b7/mi-informe-01/explorer.html>
 
 Si elegiste otro nombre de salida, reemplazá `mi-informe-01` en las direcciones.
-Para abrir el informe ya guardado en el proyecto, usá `analysis-v1` en su lugar:
+Para abrir el informe ya guardado en el proyecto, usá `analysis-v3` en su lugar:
 
-- Informe existente: <http://127.0.0.1:7590/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/index.html>
-- Explorador existente: <http://127.0.0.1:7590/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/explorer.html>
+- Informe existente: <http://127.0.0.1:7590/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/index.html>
+- Explorador existente: <http://127.0.0.1:7590/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/explorer.html>
 
 No abras el HTML con doble clic: puede abrirse como `file://` y el navegador
 puede bloquear la lectura de los datos interactivos. Usá las direcciones HTTP.

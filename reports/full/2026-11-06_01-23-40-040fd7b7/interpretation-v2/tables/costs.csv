@@ -1,0 +1,26 @@
+phase,model,kind,generations,known_cost_ids,unknown_cost_ids,known_usd
+corpus,anthropic/claude-haiku-5.5,final,54000,53648,352,0.7898254
+corpus,anthropic/claude-sonnet-5.5,final,54000,54000,0,26.645994
+corpus,google/gemini-3.1-flash-lite,final,54000,54000,0,0.61577625
+corpus,google/gemini-3.5-flash-lite,final,54000,54000,0,0.7578114
+corpus,openai/gpt-4o-mini,final,54000,54000,0,0.8041914
+corpus,openai/gpt-6-luna,additional,426,0,426,
+corpus,openai/gpt-6-luna,final,54000,54000,0,0.3213183
+correction_preflight,anthropic/claude-haiku-5.5,final,1,1,0,1.08e-05
+correction_preflight,anthropic/claude-sonnet-5.5,final,1,1,0,0.000218
+correction_preflight,google/gemini-3.1-flash-lite,final,1,1,0,8.125e-06
+correction_preflight,google/gemini-3.5-flash-lite,final,1,1,0,1.01e-05
+correction_preflight,openai/gpt-4o-mini,final,1,1,0,1.08e-05
+correction_preflight,openai/gpt-6-luna,final,1,1,0,4.6e-06
+preflight,anthropic/claude-haiku-5.5,final,1,1,0,1.16e-05
+preflight,anthropic/claude-sonnet-5.5,final,1,1,0,0.000234
+preflight,google/gemini-3.1-flash-lite,final,1,1,0,8.875e-06
+preflight,google/gemini-3.5-flash-lite,final,1,1,0,1.1e-05
+preflight,openai/gpt-4o-mini,final,1,1,0,1.17e-05
+preflight,openai/gpt-6-luna,final,1,1,0,4.9e-06
+superseded,anthropic/claude-haiku-5.5,historical replaced calls,612,612,0,0.0074343
+superseded,anthropic/claude-sonnet-5.5,historical replaced calls,612,612,0,0.23166
+superseded,google/gemini-3.1-flash-lite,historical replaced calls,612,612,0,0.005712
+superseded,google/gemini-3.5-flash-lite,historical replaced calls,612,612,0,0.00706985
+superseded,openai/gpt-4o-mini,historical replaced calls,612,612,0,0.0075498
+superseded,openai/gpt-6-luna,historical replaced calls,613,612,1,0.0031212

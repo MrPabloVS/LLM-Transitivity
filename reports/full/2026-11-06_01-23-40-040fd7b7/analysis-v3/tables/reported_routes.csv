@@ -1,0 +1,20 @@
+phase,model,reported_providers,reported_tiers,samples
+corpus,anthropic/claude-haiku-5.5,"[""Anthropic""]","[""default""]",53648
+corpus,anthropic/claude-haiku-5.5,"[""Anthropic""]",[],352
+corpus,anthropic/claude-sonnet-5.5,"[""Anthropic""]","[""default""]",54000
+corpus,google/gemini-3.1-flash-lite,"[""Google AI Studio""]","[""flex""]",54000
+corpus,google/gemini-3.5-flash-lite,"[""Google AI Studio""]","[""flex""]",54000
+corpus,openai/gpt-4o-mini,"[""OpenAI""]","[""default""]",54000
+corpus,openai/gpt-6-luna,"[""OpenAI""]","[""flex""]",54000
+correction_preflight,anthropic/claude-haiku-5.5,"[""Anthropic""]","[""default""]",1
+correction_preflight,anthropic/claude-sonnet-5.5,"[""Anthropic""]","[""default""]",1
+correction_preflight,google/gemini-3.1-flash-lite,"[""Google AI Studio""]","[""flex""]",1
+correction_preflight,google/gemini-3.5-flash-lite,"[""Google AI Studio""]","[""flex""]",1
+correction_preflight,openai/gpt-4o-mini,"[""OpenAI""]","[""default""]",1
+correction_preflight,openai/gpt-6-luna,"[""OpenAI""]","[""flex""]",1
+preflight,anthropic/claude-haiku-5.5,"[""Anthropic""]","[""default""]",1
+preflight,anthropic/claude-sonnet-5.5,"[""Anthropic""]","[""default""]",1
+preflight,google/gemini-3.1-flash-lite,"[""Google AI Studio""]","[""flex""]",1
+preflight,google/gemini-3.5-flash-lite,"[""Google AI Studio""]","[""flex""]",1
+preflight,openai/gpt-4o-mini,"[""OpenAI""]","[""default""]",1
+preflight,openai/gpt-6-luna,"[""OpenAI""]","[""flex""]",1

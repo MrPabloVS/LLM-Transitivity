@@ -1,0 +1,13 @@
+timestamp,model,old_limit,new_limit,reason
+1793939105.5511098,openrouter/openai/gpt-4o-mini,20,40,slow_start
+1793939106.218356,openrouter/anthropic/claude-haiku-5.5,20,40,slow_start
+1793939106.275193,openrouter/google/gemini-3.1-flash-lite,20,40,slow_start
+1793939106.516829,openrouter/google/gemini-3.5-flash-lite,20,40,slow_start
+1793939106.523364,openrouter/openai/gpt-6-luna,20,40,slow_start
+1793939107.006738,openrouter/anthropic/claude-sonnet-5.5,20,40,slow_start
+1793939487.851632,openrouter/openai/gpt-4o-mini,40,64,slow_start
+1793939490.283286,openrouter/google/gemini-3.1-flash-lite,40,64,slow_start
+1793939504.889149,openrouter/google/gemini-3.5-flash-lite,40,64,slow_start
+1793939513.78597,openrouter/anthropic/claude-haiku-5.5,40,64,slow_start
+1793939560.8876128,openrouter/anthropic/claude-sonnet-5.5,40,64,slow_start
+1793939567.776314,openrouter/openai/gpt-6-luna,40,64,slow_start

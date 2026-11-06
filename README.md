@@ -6,20 +6,24 @@ The completed full-corpus report is below. For another paid run, follow the
 
 ## Full-corpus results
 
+[Report index: current and historical versions](reports/README.md).
+
 [Guía paso a paso en español: instalación, generación y explorador](docs/guia_informe_es.md).
 
-The completed run contains 54,000 cases evaluated by six models: 324,000 responses
-in 108 tasks. Read the [full report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/report.md)
-or download the [continuous, single-page PDF](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/report.pdf).
-You can also use the [HTML report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/index.html).
-Use the separate [interactive tables and case explorer](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/explorer.html)
+The corrected principal corpus contains 54,000 cases evaluated by six models:
+324,000 responses in 108 model/dataset combinations. It combines 320,328 original
+responses with 3,672 replacements for 612 questions corrected from `eate` to `ate`.
+The [correction procedure](docs/corpus_correction.md) explains the two executions. Read the [full report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/report.md)
+or download the [continuous, single-page PDF](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/report.pdf).
+You can also use the [HTML report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/index.html).
+Use the separate [interactive tables and case explorer](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/explorer.html)
 to filter results and inspect original responses.
 The report measures agreement with source labels, not audited logical validity.
 
 Build a new report offline from the closed native evidence:
 
 ```sh
-uv run --locked transitivity report --run results/full/2026-11-06_01-23-40-040fd7b7 --output reports/full/2026-11-06_01-23-40-040fd7b7/new-analysis
+uv run --locked transitivity report --run results/full/2026-11-06_01-23-40-040fd7b7 --correction results/corrections/2026-11-06_15-37-32-64caf3fd-eate-to-ate-v1 --output reports/full/2026-11-06_01-23-40-040fd7b7/new-analysis
 ```
 
 The output directory must not exist. The command makes no provider API calls.
@@ -31,35 +35,35 @@ uv run --locked python -m http.server 8000 --bind 127.0.0.1
 ```
 
 Leave that terminal open. Open the
-[HTML report](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/index.html)
-or the [interactive explorer](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/explorer.html).
+[HTML report](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/index.html)
+or the [interactive explorer](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/explorer.html).
 Press `Ctrl+C` to stop the server. The report links to the separate explorer.
 
 Git LFS stores every file in the completed run, plus the report's compressed
 SQLite database and response CSV. The run contains about 15.4 GB of evidence.
 Run `git lfs pull` after cloning and follow the
-[report bundle instructions](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/README.md)
+[report bundle instructions](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/README.md)
 to restore the database. All report assets and dataset files are local. See the
 [architecture guide](docs/architecture.md#offline-full-corpus-report) for checks
 and data responsibilities.
 
 ## Static analysis and interpretation
 
-Read the new [interpretation in Markdown](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v1/report.md),
-[static HTML](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v1/index.html),
-or [continuous PDF](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v1/report.pdf).
+Read the new [interpretation in Markdown](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v2/report.md),
+[static HTML](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v2/index.html),
+or [continuous PDF](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v2/report.pdf).
 It explains model differences, condition contrasts, answer format, and costs in
 simplified English. It adds descriptive crosses and 12 static figures in eight
 groups. Source-label agreement is not an audit of logical validity.
 
 Unlike the interactive explorer, this HTML opens directly from disk. It has no
 JavaScript or external assets. The Markdown, HTML, and PDF share the same text
-and values. The original report and native evidence remain unchanged.
+and values. Historical reports and native evidence remain unchanged.
 
 To reproduce the interpretation in a new directory:
 
 ```sh
-uv run --locked transitivity interpret --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1 --output reports/full/2026-11-06_01-23-40-040fd7b7/new-interpretation
+uv run --locked transitivity interpret --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3 --output reports/full/2026-11-06_01-23-40-040fd7b7/new-interpretation
 ```
 
 The command is defined for this completed run and scoring version. It checks the
@@ -73,18 +77,20 @@ class-specific error rates and coverage for every condition. Positive means
 `yes`; comparisons use source labels, not audited logical validity.
 The [previous original report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/report.md),
 [previous PDF](output/pdf/full-corpus-report-continuous.pdf), and
-[static interpretation](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v1/report.md)
+[previous FP/FN report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/report.md), and
+[previous static interpretation](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v1/report.md)
 remain unchanged. Each new `report` command also creates a continuous `report.pdf`.
 
 ## Saved data
 
 All derived files below belong to the same
-[report bundle](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/).
+[report bundle](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3/).
 
 | File or folder | Contents |
 | --- | --- |
 | `tables/responses.csv` | Response text, model, UID, interpretation, scores, tokens, and duration; corpus and preflight rows |
 | `tables/totals.csv`, `tables/by_*.csv` | Model totals and condition breakdowns |
+| `tables/replacements.csv`, `tables/correction_*.csv` | Response replacements, before/after measures, and costs by execution |
 | `tables/pairwise.csv` | Paired model comparisons |
 | `tables/costs.csv`, `tables/generations.csv` | Costs and generation records |
 | `data/*.json` | 18 files with 54,000 cases, original prompts, source labels, conditions, and six responses per case |
@@ -92,7 +98,7 @@ All derived files below belong to the same
 | `validation.json`, `provenance.json` | Reconciliation checks and source hashes |
 | `analysis.sqlite.gz` | Compressed derived SQLite database |
 
-The CSV response table contains 324,000 corpus rows and six preflight rows.
+The CSV response table contains 324,000 corpus rows, six original preflight rows, and six correction preflight rows.
 Missing costs remain unknown, not zero. Filters and uninterpretable answers
 remain separate from `no`. The case JSON files contain corpus responses only.
 
@@ -101,7 +107,7 @@ remain separate from `no`. The case JSON files contain corpus responses only.
 Open the saved report in DuckDB UI:
 
 ```sh
-uv run --locked transitivity explore --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2
+uv run --locked transitivity explore --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3
 ```
 
 Expand the database and its `report` schema. `case_details` contains original
@@ -238,7 +244,7 @@ after a subcommand to inspect its arguments without starting it.
 From another directory, select both the uv project and repository root:
 
 ```sh
-uv run --locked --project /path/to/repository transitivity --root /path/to/repository explore --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1
+uv run --locked --project /path/to/repository transitivity --root /path/to/repository explore --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v3
 ```
 
 The installed commands replace the removed root Python adapters.

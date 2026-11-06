@@ -1,0 +1,7 @@
+model,samples,changed_answers,before_matched,after_matched,before_strict,after_strict,before_answered,after_answered,before_filtered,after_filtered,before_fp,after_fp,before_fn,after_fn
+anthropic/claude-haiku-5.5,612,70,523,549,612,612,612,612,0,0,73,49,16,14
+anthropic/claude-sonnet-5.5,612,2,611,611,533,543,612,612,0,0,0,0,1,1
+google/gemini-3.1-flash-lite,612,4,610,608,612,612,612,612,0,0,0,0,2,4
+google/gemini-3.5-flash-lite,612,30,575,583,611,612,612,612,0,0,10,3,27,26
+openai/gpt-4o-mini,612,24,448,464,575,564,612,612,0,0,1,2,163,146
+openai/gpt-6-luna,612,42,545,547,612,612,612,612,0,0,67,65,0,0
