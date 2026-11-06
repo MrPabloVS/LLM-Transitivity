@@ -9,10 +9,10 @@ The completed full-corpus report is below. For another paid run, follow the
 [Guía paso a paso en español: instalación, generación y explorador](docs/guia_informe_es.md).
 
 The completed run contains 54,000 cases evaluated by six models: 324,000 responses
-in 108 tasks. Read the [full report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/report.md)
-or download the [continuous, single-page PDF](output/pdf/full-corpus-report-continuous.pdf).
-You can also use the [HTML report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/index.html).
-Use the separate [interactive tables and case explorer](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/explorer.html)
+in 108 tasks. Read the [full report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/report.md)
+or download the [continuous, single-page PDF](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/report.pdf).
+You can also use the [HTML report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/index.html).
+Use the separate [interactive tables and case explorer](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/explorer.html)
 to filter results and inspect original responses.
 The report measures agreement with source labels, not audited logical validity.
 
@@ -31,14 +31,14 @@ uv run --locked python -m http.server 8000 --bind 127.0.0.1
 ```
 
 Leave that terminal open. Open the
-[HTML report](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/index.html)
-or the [interactive explorer](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/explorer.html).
+[HTML report](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/index.html)
+or the [interactive explorer](http://localhost:8000/reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/explorer.html).
 Press `Ctrl+C` to stop the server. The report links to the separate explorer.
 
 Git LFS stores every file in the completed run, plus the report's compressed
 SQLite database and response CSV. The run contains about 15.4 GB of evidence.
 Run `git lfs pull` after cloning and follow the
-[report bundle instructions](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/README.md)
+[report bundle instructions](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/README.md)
 to restore the database. All report assets and dataset files are local. See the
 [architecture guide](docs/architecture.md#offline-full-corpus-report) for checks
 and data responsibilities.
@@ -68,10 +68,18 @@ model calls, or browser service is needed. The output includes SVG and PNG
 figures, CSV tables, shared document blocks, summary data, input hashes, and a
 validation record. DuckDB and ReportLab are installed by `uv sync --locked`.
 
+The original report now separates false positives and false negatives, with
+class-specific error rates and coverage for every condition. Positive means
+`yes`; comparisons use source labels, not audited logical validity.
+The [previous original report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/report.md),
+[previous PDF](output/pdf/full-corpus-report-continuous.pdf), and
+[static interpretation](reports/full/2026-11-06_01-23-40-040fd7b7/interpretation-v1/report.md)
+remain unchanged. Each new `report` command also creates a continuous `report.pdf`.
+
 ## Saved data
 
 All derived files below belong to the same
-[report bundle](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/).
+[report bundle](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2/).
 
 | File or folder | Contents |
 | --- | --- |
@@ -93,7 +101,7 @@ remain separate from `no`. The case JSON files contain corpus responses only.
 Open the saved report in DuckDB UI:
 
 ```sh
-uv run --locked transitivity explore --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1
+uv run --locked transitivity explore --report reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v2
 ```
 
 Expand the database and its `report` schema. `case_details` contains original

@@ -6,3 +6,8 @@ results/full/2026-11-06_01-23-40-040fd7b7/** filter=lfs diff=lfs merge=lfs -text
 reports/full/*/interpretation-*/figures/*.svg -whitespace
 reports/full/*/interpretation-*/tables/*.csv whitespace=cr-at-eol
 reports/full/*/interpretation-*/*.pdf binary
+
+# Preserve generated full-report figures, CSV line endings, and PDF bytes.
+reports/full/*/analysis-*/figures/*.svg -whitespace
+reports/full/*/analysis-*/tables/*.csv whitespace=cr-at-eol
+reports/full/*/analysis-*/*.pdf binary
