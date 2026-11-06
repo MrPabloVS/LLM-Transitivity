@@ -96,7 +96,7 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
             [],
             [],
         )
-        final_ids = []
+        final_ids, unverified, filtered_uids = [], [], []
         for _, path, log in latest.values():
             if log.eval.model != "openrouter/" + identifier:
                 continue
@@ -107,7 +107,7 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                 uid = md.get("sample_uid")
                 seen.append(uid)
                 raw = sample.output.completion
-                if sample.error or not raw.strip():
+                if sample.error:
                     faults.append({"uid": uid, "kind": "sample error or empty output"})
                 if source_cases.get(uid) != (
                     sample.input[-1].content,
@@ -130,6 +130,7 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                         {
                             "model": identifier,
                             "sample_uid": uid,
+                            "review_policy": "content-filter-outcome-v2",
                             "phase": phase_name,
                             "conditions": {
                                 k: md.get(k)
@@ -204,6 +205,31 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                     == 0,
                     "final reported cost": usage.get("cost") is not None,
                 }
+                filtered = (
+                    sample.output.stop_reason == "content_filter"
+                    and score is not None
+                    and score.metadata.get("status") == "content_filter"
+                    and any(
+                        choice.get("finish_reason") == "content_filter"
+                        for choice in body.get("choices", [])
+                    )
+                )
+                if not raw.strip() and not filtered:
+                    faults.append({"uid": uid, "kind": "sample error or empty output"})
+                if filtered:
+                    filtered_uids.append(uid)
+                    missing = {
+                        "response tier": body.get("service_tier") is None,
+                        "reasoning usage": (
+                            usage.get("completion_tokens_details") or {}
+                        ).get("reasoning_tokens")
+                        is None,
+                        "final reported cost": usage.get("cost") is None,
+                    }
+                    for name, absent in missing.items():
+                        if absent:
+                            unverified.append({"uid": uid, "kind": name})
+                            checks.pop(name)
                 if model.supports_reasoning:
                     checks["reasoning disabled"] = reasoning.get("enabled") is False
                 if model.reasoning_effort:
@@ -234,6 +260,8 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
             "samples": len(seen),
             "expected_samples": len(expected_uids),
             "faults": faults,
+            "filtered_uids": filtered_uids,
+            "unverified_fields": unverified,
             "measures": measures(scored),
             "attempts": len(attempts),
             "failed_attempts": failures,
@@ -267,6 +295,7 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
         else {}
     )
     return {
+        "review_policy": "content-filter-outcome-v2",
         "phase": phase_name,
         "technical_pass": passed
         and (

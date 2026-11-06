@@ -92,8 +92,11 @@ def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
     )
 
 
+@pytest.mark.parametrize(
+    "filtered_mode", [None, "missing", "empty", "wrong_tier", "reasoning"]
+)
 def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
-    tmp_path, monkeypatch
+    tmp_path, monkeypatch, filtered_mode
 ):
     import httpx2
     from inspect_ai.model._providers.openai_compatible import OpenAICompatibleAPI
@@ -116,31 +119,49 @@ def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
             "anthropic": "Anthropic",
             "google": "Google AI Studio",
         }[identifier.split("/")[0]]
-        return httpx2.Response(
-            200,
-            json={
-                "id": "gen-" + identifier.replace("/", "-"),
-                "created": 0,
-                "object": "chat.completion",
-                "model": identifier,
-                "provider": provider,
-                "service_tier": body["service_tier"],
-                "choices": [
-                    {
-                        "index": 0,
-                        "message": {"role": "assistant", "content": "yes"},
-                        "finish_reason": "stop",
-                    }
-                ],
-                "usage": {
+        payload = {
+            "id": "gen-" + identifier.replace("/", "-"),
+            "created": 0,
+            "object": "chat.completion",
+            "model": identifier,
+            "provider": provider,
+            "service_tier": body["service_tier"],
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {"role": "assistant", "content": "yes"},
+                    "finish_reason": "stop",
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 10,
+                "completion_tokens": 1,
+                "total_tokens": 11,
+                "cost": 0,
+                "completion_tokens_details": {"reasoning_tokens": 0},
+            },
+        }
+        if filtered_mode and identifier.endswith("haiku-5.5"):
+            payload["choices"][0].update(
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": None,
+                        "refusal": "" if filtered_mode == "empty" else "Filtered",
+                    },
+                    "finish_reason": "content_filter",
+                }
+            )
+            payload["service_tier"] = "wrong" if filtered_mode == "wrong_tier" else None
+            payload.pop("usage")
+            if filtered_mode == "reasoning":
+                payload["usage"] = {
                     "prompt_tokens": 10,
                     "completion_tokens": 1,
                     "total_tokens": 11,
-                    "cost": 0,
-                    "completion_tokens_details": {"reasoning_tokens": 0},
-                },
-            },
-        )
+                    "completion_tokens_details": {"reasoning_tokens": 1},
+                }
+        return httpx2.Response(200, json=payload)
 
     monkeypatch.setattr(
         OpenAICompatibleAPI,
@@ -177,9 +198,22 @@ def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
             == "success"
         )
     report = review_phase(tmp_path, phase, dump_spec(spec))
-    assert report["technical_pass"] is True
+    assert report["technical_pass"] is (filtered_mode in (None, "missing", "empty"))
     assert len(report["models"]) == 6
     assert all(
         v["samples"] == 1 and v["known_cost_usd"] == 0
         for v in report["models"].values()
     )
+
+    haiku = report["models"]["anthropic/claude-haiku-5.5"]
+    if filtered_mode:
+        assert len(haiku["filtered_uids"]) == 1
+        assert haiku["missing_cost_ids"]
+        assert {v["kind"] for v in haiku["unverified_fields"]} >= {
+            "final reported cost"
+        }
+        if filtered_mode in ("missing", "empty"):
+            assert len(haiku["unverified_fields"]) == 3
+            assert not haiku["faults"]
+        else:
+            assert haiku["faults"]

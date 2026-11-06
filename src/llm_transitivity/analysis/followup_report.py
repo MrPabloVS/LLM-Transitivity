@@ -143,6 +143,19 @@ def write_report(root: Path, directory: Path, manifest: dict, reviews: dict) -> 
         "load64_validated": load.get("load64_validated", False),
         "load_reasons": load.get("load_reasons", {}),
         "executed_stages": list(reviews),
+        "parent_campaign": manifest.get("parent_campaign"),
+        "filtered_samples": {
+            name: sum(
+                len(v.get("filtered_uids", [])) for v in review["models"].values()
+            )
+            for name, review in reviews.items()
+        },
+        "unverified_fields": {
+            name: sum(
+                len(v.get("unverified_fields", [])) for v in review["models"].values()
+            )
+            for name, review in reviews.items()
+        },
         "note": "No 16/32 matched load exists. No measured speedup or model replacement is claimed.",
     }
     suffix = uuid4().hex[:8]
@@ -175,6 +188,10 @@ def write_report(root: Path, directory: Path, manifest: dict, reviews: dict) -> 
         "",
         f"Total known reported cost: **USD {known:.8f}**; {len(missing)} generation IDs have unknown cost.",
         "Missing costs are not zero. These are returned charges, not an independent invoice audit.",
+        "Confirmed content filters are experimental outcomes. Missing tier, reasoning usage,",
+        "and cost remain unverified. Passed checks do not imply these fields were reported.",
+        f"Filtered samples by phase: `{report['filtered_samples']}`.",
+        f"Unverified field counts by phase: `{report['unverified_fields']}`.",
         "",
         "## Haiku answers",
         "",
