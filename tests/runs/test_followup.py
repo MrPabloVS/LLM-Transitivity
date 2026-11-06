@@ -114,3 +114,61 @@ def test_execution_error_survives_a_second_finalization_failure(tmp_path, monkey
     with pytest.raises(ValueError, match="original") as caught:
         followup._phase_run(tmp_path, tmp_path, SimpleNamespace())
     assert caught.value.__notes__ == ["Finalization failed: OSError"]
+
+
+def test_derived_continuation_reuses_parent_responses(tmp_path, monkeypatch):
+    directory = campaign(tmp_path)
+    log = tmp_path / "response.eval"
+    log.write_bytes(b"saved response")
+    for name in ("preflight", "coverage"):
+        review = directory / name / "summary/review.json"
+        review.write_bytes(
+            json_bytes(
+                {
+                    "samples": [
+                        {
+                            "source_log": "response.eval",
+                            "source_log_sha256": digest(log.read_bytes()),
+                        }
+                    ],
+                    "runner_error_type": None,
+                }
+            )
+        )
+        followup._event(
+            directory,
+            stage=name,
+            status="stopped",
+            review=str(review.relative_to(directory)),
+            review_sha256=digest(review.read_bytes()),
+        )
+    calls = []
+    monkeypatch.setattr(
+        followup,
+        "review_phase",
+        lambda root, phase, spec: calls.append(phase.name) or {"technical_pass": True},
+    )
+    reviews = followup._review_completed(tmp_path, directory)
+    assert calls == ["preflight", "coverage"]
+    assert reviews["coverage"]["derived_from"]["sha256"]
+    assert log.read_bytes() == b"saved response"
+    log.write_bytes(b"changed")
+    with pytest.raises(ValueError, match="Parent response log changed"):
+        followup._review_completed(tmp_path, directory)
+
+
+def test_derived_continuation_blocks_remaining_technical_faults(tmp_path, monkeypatch):
+    directory = campaign(tmp_path)
+    review = directory / "preflight/summary/review.json"
+    review.write_text('{"samples": []}')
+    followup._event(
+        directory,
+        stage="preflight",
+        review=str(review.relative_to(directory)),
+        review_sha256=digest(review.read_bytes()),
+    )
+    monkeypatch.setattr(
+        followup, "review_phase", lambda *args: {"technical_pass": False}
+    )
+    with pytest.raises(ValueError, match="still fails technical verification"):
+        followup._review_completed(tmp_path, directory)

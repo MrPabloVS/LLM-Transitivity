@@ -48,15 +48,28 @@ def preview(root: Path) -> dict:
     }
 
 
-def prepare(root: Path) -> Path:
-    stages = stage_specs(root)
+def prepare(root: Path, *, continue_from: Path | None = None) -> Path:
+    inherited = _review_completed(root, continue_from) if continue_from else {}
+    stages = (
+        [
+            (
+                "load-64",
+                build_pilot_spec(root, profile="haiku", load=True, concurrency=64),
+            )
+        ]
+        if continue_from
+        else stage_specs(root)
+    )
     quote = estimate(root, profile="haiku", followup=True)
     estimate_path = save_estimate(root, quote)
     campaign_id = str(uuid4())
     stamp = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).strftime(
         "%Y-%m-%d_%H-%M-%S"
     )
-    directory = root / "results/pilot" / f"{stamp}-{campaign_id[:8]}-haiku-followup"
+    parent = (
+        continue_from / "continuations" if continue_from else root / "results/pilot"
+    )
+    directory = parent / f"{stamp}-{campaign_id[:8]}-haiku-followup"
     directory.mkdir(parents=True, exist_ok=False)
     manifest = {
         "version": 1,
@@ -67,8 +80,16 @@ def prepare(root: Path) -> Path:
         "coverage_concurrency": 16,
         "no_spend_pause": True,
         "full_corpus_run": False,
-        "planned_responses": 2382,
-        "planned_tasks": 48,
+        "planned_responses": 1296 if continue_from else 2382,
+        "planned_tasks": 6 if continue_from else 48,
+        "price_estimate_scope": "Full follow-up scenario; continuation runs only load-64",
+        "parent_campaign": str(continue_from.relative_to(root))
+        if continue_from
+        else None,
+        "parent_campaign_sha256": digest((continue_from / "campaign.json").read_bytes())
+        if continue_from
+        else None,
+        "inherited_reviews": {},
         "omitted_load_levels": {
             "16": "User requested direct 64-slot load",
             "32": "User requested direct 64-slot load",
@@ -77,6 +98,13 @@ def prepare(root: Path) -> Path:
         "price_estimate_sha256": digest(estimate_path.read_bytes()),
         "stages": [],
     }
+    for name, review in inherited.items():
+        path = directory / f"inherited-{name}.json"
+        path.write_bytes(json_bytes(review))
+        manifest["inherited_reviews"][name] = {
+            "path": path.name,
+            "sha256": digest(path.read_bytes()),
+        }
     for name, spec in stages:
         phase = directory / name
         spec.log_dir = str(phase / "inspect")
@@ -115,6 +143,56 @@ def prepare(root: Path) -> Path:
     return directory
 
 
+def _review_completed(root: Path, directory: Path) -> dict:
+    """Derive reviews from saved responses; retain the original frozen sources."""
+    manifest = json.loads((directory / "campaign.json").read_text())
+    events = [
+        json.loads(line)
+        for line in (directory / "events.jsonl").read_text().splitlines()
+    ]
+    reviews = {}
+    for name in ("preflight", "coverage"):
+        stage = next(s for s in manifest["stages"] if s["name"] == name)
+        path = directory / stage["spec"]
+        if digest(path.read_bytes()) != stage["spec_sha256"]:
+            raise ValueError("Parent Flow spec changed")
+        hashes = json.loads((path.parent / "snapshot_hashes.json").read_text())
+        for relative, expected in hashes.items():
+            if digest((path.parent / "snapshot" / relative).read_bytes()) != expected:
+                raise ValueError("Parent snapshot changed: " + relative)
+            # Only package code can differ for this new review policy.
+            if (
+                not (relative.startswith("src/") and relative.endswith(".py"))
+                and digest((root / relative).read_bytes()) != expected
+            ):
+                raise ValueError("Parent input changed: " + relative)
+        saved = next(
+            e for e in reversed(events) if e.get("stage") == name and "review" in e
+        )
+        review_path = directory / saved["review"]
+        if digest(review_path.read_bytes()) != saved["review_sha256"]:
+            raise ValueError("Parent review changed")
+        old = json.loads(review_path.read_text())
+        if old.get("runner_error_type"):
+            raise ValueError("Parent execution failed")
+        for sample in old["samples"]:
+            if (
+                digest((root / sample["source_log"]).read_bytes())
+                != sample["source_log_sha256"]
+            ):
+                raise ValueError("Parent response log changed")
+        review = review_phase(root, path.parent.parent, json.loads(path.read_text()))
+        if not review["technical_pass"]:
+            raise ValueError("Parent phase still fails technical verification: " + name)
+        review["derived_from"] = {
+            "review": str(review_path.relative_to(root)),
+            "sha256": digest(review_path.read_bytes()),
+            "reason": "Treat confirmed content filters as experimental outcomes",
+        }
+        reviews[name] = review
+    return reviews
+
+
 def launch(root: Path, directory: Path) -> int:
     with (directory / "console.txt").open("ab") as output:
         child = subprocess.Popen(
@@ -151,6 +229,13 @@ def _event(directory: Path, **fields) -> None:
 
 
 def _validate(root: Path, directory: Path, manifest: dict) -> None:
+    for entry in manifest.get("inherited_reviews", {}).values():
+        if digest((directory / entry["path"]).read_bytes()) != entry["sha256"]:
+            raise ValueError("Inherited review changed")
+    if manifest.get("parent_campaign"):
+        parent = root / manifest["parent_campaign"] / "campaign.json"
+        if digest(parent.read_bytes()) != manifest["parent_campaign_sha256"]:
+            raise ValueError("Parent campaign changed")
     if (
         digest((root / manifest["price_estimate"]).read_bytes())
         != manifest["price_estimate_sha256"]
@@ -214,7 +299,11 @@ def execute(root: Path, directory: Path) -> bool:
     with (directory / "execution.lock").open("a+") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         _validate(root, directory, manifest)
-        reviews, stopped = {}, False
+        reviews = {
+            name: json.loads((directory / entry["path"]).read_text())
+            for name, entry in manifest.get("inherited_reviews", {}).items()
+        }
+        stopped = False
         previous = []
         if (directory / "events.jsonl").exists():
             previous = [

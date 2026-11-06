@@ -24,9 +24,18 @@ source row numbers that overlap between datasets.
 
 The [follow-up results](haiku_followup_results.md) record the completed preflight
 and 1,080 Haiku coverage responses. Six filtered Haiku 5.5 responses omit tier,
-usage, and cost; the program therefore omitted the direct 64-slot load. The
+usage, and cost; the first review therefore omitted the direct 64-slot load. The
 known reported campaign cost is USD 0.073634125. Review the unresolved fields
-before deciding whether to change the protocol or launch further calls.
+in the original review. The corrected policy treats confirmed content filters as
+experimental outcomes. They do not block later phases. Missing tier, reasoning
+usage, and cost remain explicitly unverified; contradictory reported values
+still block execution. Filters do not trigger replacement generations.
+
+Use `followup --continue-from <campaign> --detach` to derive new reviews from
+saved responses and run only load-64 under a new frozen source snapshot. The
+continuation checks parent snapshots, input bytes, review hashes, and native
+response hashes. It preserves the original stop review and does not repeat
+preflight or coverage. Ordinary `--resume` still requires unchanged source code.
 
 ## Commands
 

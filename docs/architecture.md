@@ -209,3 +209,15 @@ verifies frozen sources on resume, and records phase status in an event journal.
 `analysis.followup` reviews requests, responses, usage, and load metrics without
 network calls. `analysis.followup_report` keeps load throughput separate from
 coverage agreement. See [the authorized follow-up procedure](haiku_followup.md).
+
+## Follow-up review and continuation
+
+A confirmed content filter is a model outcome, not an execution failure. The
+review retains missing tier, reasoning usage, and cost as unverified fields.
+Reported contradictions still fail the technical gate. No filter triggers a
+replacement generation.
+
+A derived continuation validates parent snapshots and response hashes, then
+reviews saved responses with the current policy. It freezes new package code
+for the remaining load phase. It preserves the old review and does not relax
+the source checks for normal resume.
