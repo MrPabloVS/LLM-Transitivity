@@ -198,3 +198,9 @@ per-model checks, retries, filters, and reported costs.
 
 See [Pilot 3](docs/pilot3.md) for the Haiku 5.5 replacement and the 108-task
 schedule at 64 samples per task. The full corpus is not part of this run.
+
+## Full corpus
+
+The [full-corpus procedure](docs/full_corpus.md) uses all 54,000 cases for each
+of the six Pilot 3 models, with 108 active tasks and 64 samples per task.
+Use `transitivity full --dry-run` to check the 324,000-response configuration.

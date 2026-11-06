@@ -242,3 +242,11 @@ Pilot 2.0 has explicit per-model reasoning overrides. Historical profiles retain
 the shared disabled default. Task tags and metadata record enabled or disabled
 reasoning and explicit effort. Reviews read the frozen native task policy and
 configuration, so later catalog edits do not reinterpret an earlier request.
+
+## Full-corpus execution
+
+`inspect.full` composes the full selection after complete input verification,
+using the fixed Pilot 3 model settings. `runs.full` owns preparation, detached
+execution, locks, phase checks, and recovery. The preflight uses the existing
+technical reviewer; full-corpus closure checks all expected model/dataset pairs
+and counts. The separate command is described in [the full-corpus guide](full_corpus.md).

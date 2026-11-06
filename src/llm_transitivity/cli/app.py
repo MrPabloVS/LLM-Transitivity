@@ -7,6 +7,7 @@ import tomllib
 from pathlib import Path
 
 COMMANDS = {
+    "full": "Prepare and run the verified full corpus with Pilot 3 controls",
     "followup": "Run the Haiku pilot and direct 64-slot load validation",
     "pilot": "Run or preview the coverage pilot",
     "datasets": "Prepare or verify pilot datasets",

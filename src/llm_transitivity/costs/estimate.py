@@ -16,7 +16,11 @@ from llm_transitivity.evidence.metadata import package_sources
 from llm_transitivity.evidence.serialization import digest
 
 
-def estimate(root: Path, *, profile: str = "sonnet", followup: bool = False) -> dict:
+def estimate(
+    root: Path, *, profile: str = "sonnet", followup: bool = False, full: bool = False
+) -> dict:
+    if full and followup:
+        raise ValueError("Full corpus and pilot follow-up are separate estimates")
     if followup and profile != "haiku":
         raise ValueError("The follow-up schedule requires the haiku profile")
     manifest = verify(root)
@@ -25,7 +29,9 @@ def estimate(root: Path, *, profile: str = "sonnet", followup: bool = False) -> 
     prompts = [
         row[2]
         for entry in manifest["datasets"]
-        for row in json.loads((root / entry["pilot_path"]).read_text())
+        for row in json.loads(
+            (root / entry["working_path" if full else "pilot_path"]).read_text()
+        )
     ]
     encoding = tiktoken.get_encoding("o200k_base")
     proxy_tokens = sum(
@@ -131,10 +137,25 @@ def estimate(root: Path, *, profile: str = "sonnet", followup: bool = False) -> 
         "experiment_config_sha256": digest(
             (root / "src/llm_transitivity/domain/config.py").read_bytes()
         ),
-        "pilot_cases_per_model": len(coverage_prompts),
+        "pilot_cases_per_model": sum(
+            len(e["selected_rows"]) for e in manifest["datasets"]
+        )
+        if full
+        else len(coverage_prompts),
         "models": len(models),
         "profile": profile,
         "followup": followup,
+        **(
+            {
+                "scope": "full-corpus",
+                "full_cases_per_model": len(coverage_prompts),
+                "pilot_cases_per_model": sum(
+                    len(e["selected_rows"]) for e in manifest["datasets"]
+                ),
+            }
+            if full
+            else {}
+        ),
         "planned_responses": sum(row["cases"] for row in rows),
         "output_token_limit": policy.max_output_tokens,
         "inspect_max_retries": policy.request_max_retries,
