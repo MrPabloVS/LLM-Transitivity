@@ -1,0 +1,826 @@
+[
+  {
+    "inspect_log": "/Users/andrestobelem/ws/at/LLM-Transitivity/results/pilot/2026-11-06_00-22-17-4747886d-pilot-3/preflight/inspect/2026-11-06T03-22-23-00-00_zeroShot-HS-HF-FU-20_bMQJnmdmgzr9HELSfFgCLw.eval",
+    "inspect_log_sha256": "f7b9baf49895707dc029887f4d4626aac03e5b4862b5db71e36bbb5b517d70d8",
+    "inspect_eval_id": "YiP8HB7vERCy77PYMNFqe9",
+    "inspect_run_id": "grdXmdoxrVGSb9fuYnmjqR",
+    "experiment_run_id": "89d4af28-eb94-4097-a15a-e5f33737ac89",
+    "sample_id": 20,
+    "sample_epoch": 1,
+    "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+    "model_event_index": 1,
+    "generation_id": "gen-1793935347-COGm4pDIAajzflVPTYb3",
+    "evaluation_metadata": {
+      "metadata_version": 1,
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "experiment_run_id": "89d4af28-eb94-4097-a15a-e5f33737ac89",
+      "configuration_created_utc": "2026-11-06T03:22:09.515566+00:00",
+      "phase": "preflight",
+      "protocol": "zeroShot",
+      "scoring_version": "source-label-deterministic-v3",
+      "label_basis": "source-label agreement; logical validity not audited",
+      "logical_validity_audited": false,
+      "openrouter_capture": {
+        "http_attempts": true,
+        "full_response_json": true,
+        "generation_lookup": "automatic, up to three read-only lookup attempts per id",
+        "stored_content_lookup": "optional exporter flag; permissions may be restricted",
+        "streaming": false,
+        "credentials": "redacted"
+      },
+      "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+      "original_revision": "000a6bda314da9bdc318ca4411d76dc41161ca1e",
+      "selection": "sha256 of compact UTF-8 JSON row, then source row; preserve source order",
+      "cases_per_stratum": 5,
+      "pilot_case_count": 540,
+      "git": {
+        "revision": "285a872042e1e922760741974886ff41beda8808",
+        "branch": "tobe/runs-2026-11-05",
+        "dirty": true
+      },
+      "source_sha256": {
+        ".python-version": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135",
+        "pyproject.toml": "25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4",
+        "uv.lock": "4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1",
+        "src/llm_transitivity/__init__.py": "9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e",
+        "src/llm_transitivity/analysis/__init__.py": "26241fca0fab026f736a98d262a6860bcd4bf60e08b8776a91321e50efc68bac",
+        "src/llm_transitivity/analysis/calculations.py": "dc1dfa1212f2a12bb0d0122473a5dfb31ab27c5dd9e16cf4ae110fc77c684ccd",
+        "src/llm_transitivity/analysis/followup.py": "3414132e345b38a1cdc370e05d803ac16d8468f3bfd6a87af16e9ecad81993c6",
+        "src/llm_transitivity/analysis/followup_report.py": "4b1084b0e06469c07e686eb8518450e30849baa483030fb42d559b61c9b19fe9",
+        "src/llm_transitivity/analysis/pilot.py": "b33df00ff7411da93718df83db9024dd514b8247c90c8a9db5e1748393063ead",
+        "src/llm_transitivity/analysis/pilot2_report.py": "759e07e3efda0640ce27b2f35c43ae9cf264eac7a8427a6a2570ed6133cb92b6",
+        "src/llm_transitivity/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/cli/app.py": "578ea68a83af63a4a902f26d952a8cfdd9e95a5063aa6a197503effa4541ce78",
+        "src/llm_transitivity/cli/costs.py": "944874d71b0afc9901f79c93f03e73ea804acad9d49c374424a5a655d4f2b211",
+        "src/llm_transitivity/cli/datasets.py": "b725c491827d670670da0f25cfc69a69874f4a512370a151ead15c871c696ad5",
+        "src/llm_transitivity/cli/export.py": "9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3",
+        "src/llm_transitivity/cli/followup.py": "5b39af25b5d8041c5b40aaca66a4ab88e8e15447b3cace68d4cffedb204ee7c6",
+        "src/llm_transitivity/cli/pilot.py": "2e13b7298840f679ac27ef0001374302dee46dab56751eeda3e830d66073762d",
+        "src/llm_transitivity/costs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/costs/archive.py": "745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906",
+        "src/llm_transitivity/costs/calculation.py": "df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d",
+        "src/llm_transitivity/costs/estimate.py": "e896269946f4a8ef8959fc7784fd56d79cf31ffd3c58ac1e16d476ac883f330f",
+        "src/llm_transitivity/costs/pricing.py": "7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9",
+        "src/llm_transitivity/datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/datasets/corpus.py": "4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd",
+        "src/llm_transitivity/datasets/inputs.py": "706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009",
+        "src/llm_transitivity/datasets/load_pool.py": "8a925f26ce544a5aab258b07e1b14cef5c700d2ca17cfa4eca9fbdec84e3a860",
+        "src/llm_transitivity/datasets/pilot.py": "d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6",
+        "src/llm_transitivity/datasets/validation.py": "295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab",
+        "src/llm_transitivity/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/domain/cases.py": "47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a",
+        "src/llm_transitivity/domain/config.py": "54370e0d7abf337b1c14f4be68cf82cd3a6051c1b077366719090ef2820842e6",
+        "src/llm_transitivity/domain/scoring.py": "cc2335a1310a11b70c385d36a0f68f5fe806c2f87ee60f8baa46af0d99b713a2",
+        "src/llm_transitivity/domain/selection.py": "67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30",
+        "src/llm_transitivity/evidence/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/evidence/metadata.py": "a84bafb27804da22b5f902e817720272235d1c69f1c258cf50f02060f71cf74c",
+        "src/llm_transitivity/evidence/serialization.py": "b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5",
+        "src/llm_transitivity/inspect/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/inspect/flow.py": "f8b6530b6a30dd30b030d70b9d697550f89abbcc5f8d9fb483fc214f7a5b7a39",
+        "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
+        "src/llm_transitivity/inspect/scoring.py": "b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f",
+        "src/llm_transitivity/inspect/tasks.py": "f398bdb6c2e39440760d7b7c2e2c666a7426052ad20dec84d81af11d327d967a",
+        "src/llm_transitivity/inspect/telemetry.py": "c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356",
+        "src/llm_transitivity/openrouter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/openrouter/capture.py": "5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe",
+        "src/llm_transitivity/openrouter/client.py": "efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657",
+        "src/llm_transitivity/runs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/llm_transitivity/runs/archive.py": "6759ea78587f2380eb9038df42f39ad72830b11801c20a82e032e12a09bb056e",
+        "src/llm_transitivity/runs/export.py": "31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294",
+        "src/llm_transitivity/runs/followup.py": "511a0fc57cd6f49b16c22007a4f604006e3d1d67069a2fe10b7b0f9a14cfbc0e",
+        "src/llm_transitivity/runs/runner.py": "ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc",
+        "docs/model_cards/pilot-3-manifest.json": "1c7229ee2b5b77fc400313cf575f2acc06c4e3b653b40fff1be4dbdf938b0832",
+        "docs/model_cards/openai--gpt-4o-mini/card-6c7e5c7c37f6.md": "6c7e5c7c37f657de4d1120d1c21f4b6cf947208753152ee8d8f24e0dc81f6c29",
+        "docs/model_cards/openai--gpt-4o-mini/model.json": "dc0d1f977fa77898f06797a2600d3a711cfca9cb8a80e254f118e6202ab8990b",
+        "docs/model_cards/openai--gpt-4o-mini/endpoints-189703c94977.json": "189703c949778b9e63f21396dfff91d4b52c37a911d6bff5671e97f2f935c040",
+        "docs/model_cards/openai--gpt-6-luna/card-c92cf782bf12.md": "c92cf782bf12c81cd631d83cbd5b16666ebbfd8eae0e48a3b2ca0c7cd3f0d12d",
+        "docs/model_cards/openai--gpt-6-luna/model.json": "c518cd2c33cae9e47e052fb83a78f58f1032ec5a541df70c3c21ead2e93e45c3",
+        "docs/model_cards/openai--gpt-6-luna/endpoints-d5fff7773c27.json": "d5fff7773c27a6c317fc09a4f2fa5428bf70f1129dd96316769382cfc8b29f28",
+        "docs/model_cards/anthropic--claude-haiku-5.5/card.md": "1597caa79783fe42ccb5c2ed9d49a8d2e018887c957c4dd44203786b0596fe72",
+        "docs/model_cards/anthropic--claude-haiku-5.5/model.json": "7ebfd1495207031fa251c23fe1f5fdc319a34b0a7156ab211033ea658789b944",
+        "docs/model_cards/anthropic--claude-haiku-5.5/endpoints.json": "8eeba3c35da24724076814739da76f26e504b736097fb4858e095a45d13a940d",
+        "docs/model_cards/anthropic--claude-sonnet-5.5/card.md": "fd7d069fecef381fec2004a82b84dcb44f000366dc0c246eccb7675beed6ae1b",
+        "docs/model_cards/anthropic--claude-sonnet-5.5/model.json": "a901241ea2507d9e1256cbda22dfee9a9a10098a366705b65da5d40c6e6f0185",
+        "docs/model_cards/anthropic--claude-sonnet-5.5/endpoints.json": "81a819d44614b7df6aa093c223b1fd43a4f08ae3df7b39461157f96ff7ff3f58",
+        "docs/model_cards/google--gemini-3.1-flash-lite/card-118a223e4e22.md": "118a223e4e22739dfdfa64b9526df57e15a0f465fc7db225969776923b602b09",
+        "docs/model_cards/google--gemini-3.1-flash-lite/model.json": "9d0d2b2f05eb6e3fe0e8c5536fb23940e8d769f4156cc8add6cd92bf39a9172b",
+        "docs/model_cards/google--gemini-3.1-flash-lite/endpoints-8a42f9c9da43.json": "8a42f9c9da4345d5fc142ba068ed18e31489eea9137eff3922042fdf1e52898d",
+        "docs/model_cards/google--gemini-3.5-flash-lite/card.md": "97b9a23a84dcbd872d88f17e459ad802fd7cf385b34589d31c7a807437c96252",
+        "docs/model_cards/google--gemini-3.5-flash-lite/model.json": "f3817fe53f32ace41bc92470b7e419d4dfb111efa485e363609906e1c0c65bc2",
+        "docs/model_cards/google--gemini-3.5-flash-lite/endpoints.json": "ac2ec4aa5e804c1bb3704b794ae3bc0c3c7c81be1d42c3e832f497dfe08e5a55"
+      },
+      "runtime": {
+        "python": "3.14.8",
+        "uv": "uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)",
+        "platform": "Darwin",
+        "packages": {
+          "inspect-ai": "0.3.286",
+          "inspect-flow": "0.14.0",
+          "openai": "3.41.0",
+          "python-dotenv": "1.2.4",
+          "requests": "2.34.2",
+          "tiktoken": "0.14.0"
+        }
+      },
+      "generation_policy": {
+        "max_output_tokens": 1024,
+        "reasoning": "per-model; see model_reasoning_policies",
+        "provider_fallback": false,
+        "cache_prompt": false,
+        "temperature": "provider default; omitted",
+        "top_p": "provider default; omitted",
+        "seed": "omitted; outputs are not deterministic",
+        "request_timeout_seconds": 60,
+        "request_max_retries": 2,
+        "sdk_max_retries": 0,
+        "max_tasks": 1,
+        "max_samples": 16
+      },
+      "pilot_name": "Pilot 3",
+      "model_reasoning_policies": {
+        "openai/gpt-4o-mini": {
+          "policy": "not supported",
+          "effort": null
+        },
+        "openai/gpt-6-luna": {
+          "policy": "disabled",
+          "effort": null
+        },
+        "anthropic/claude-haiku-5.5": {
+          "policy": "disabled",
+          "effort": "medium"
+        },
+        "anthropic/claude-sonnet-5.5": {
+          "policy": "enabled",
+          "effort": "low"
+        },
+        "google/gemini-3.1-flash-lite": {
+          "policy": "disabled",
+          "effort": null
+        },
+        "google/gemini-3.5-flash-lite": {
+          "policy": "enabled",
+          "effort": "minimal"
+        }
+      },
+      "model_cards_manifest": "docs/model_cards/pilot-3-manifest.json",
+      "profile": "pilot3",
+      "concurrency": 16,
+      "planned_responses": 6,
+      "selected_cases_per_model": 1,
+      "results_root": "results/pilot/2026-11-06_00-22-17-4747886d-pilot-3/preflight",
+      "results_folder_timezone": "America/Argentina/Buenos_Aires",
+      "generation_groups": {
+        "openai/gpt-4o-mini": "earlier",
+        "openai/gpt-6-luna": "later",
+        "anthropic/claude-haiku-5.5": "earlier",
+        "anthropic/claude-sonnet-5.5": "later",
+        "google/gemini-3.1-flash-lite": "earlier",
+        "google/gemini-3.5-flash-lite": "later"
+      },
+      "requested_routing": {
+        "openai/gpt-4o-mini": {
+          "provider_only": [
+            "openai"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "openai/gpt-6-luna": {
+          "provider_only": [
+            "openai/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-haiku-5.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "anthropic/claude-sonnet-5.5": {
+          "provider_only": [
+            "anthropic"
+          ],
+          "service_tier": "default",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "google/gemini-3.5-flash-lite": {
+          "provider_only": [
+            "google-ai-studio/flex"
+          ],
+          "service_tier": "flex",
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "campaign_id": "4747886d-3505-4d29-8399-88abc3c317f5",
+      "archive_mode": "managed",
+      "system_prompt": "zeroShot",
+      "system_prompt_sha256": "589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282",
+      "scoring": "source-label agreement",
+      "dataset_name": "HS_HF_FU_20",
+      "dataset_family": "HS",
+      "dataset_path": "datasets/pilot/HS_HF_FU_20.json",
+      "dataset_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b",
+      "sample_count": 20,
+      "frequency": [
+        "HF"
+      ],
+      "verbal_time": [
+        "FU"
+      ],
+      "connectors": [
+        "if then / therefore"
+      ],
+      "source_validity": [
+        "invalid",
+        "valid"
+      ],
+      "canonical_form": [
+        "canonic",
+        "non-canonic"
+      ],
+      "provenance": {
+        "dataset": "HS_HF_FU_2000",
+        "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+        "original_sha256": "9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71",
+        "working_path": "datasets/HS_HF_FU_2000.json",
+        "working_sha256": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+        "case_count": 2000,
+        "pilot_sha256": "8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b"
+      },
+      "selected_case_count": 1,
+      "requested_model": "openai/gpt-6-luna",
+      "generation_group": "later",
+      "requested_provider": "openai/flex",
+      "requested_service_tier": "flex",
+      "actual_service_tier": null,
+      "service_tier_verified": false,
+      "actual_provider": null,
+      "reasoning_verified": false,
+      "reasoning_policy": "disabled"
+    },
+    "sample_metadata": {
+      "source_dataset": "pilot/HS_HF_FU_20",
+      "source_row": 1,
+      "source_id": [
+        [
+          "S2",
+          "V8",
+          "O8"
+        ],
+        [
+          "S6",
+          "V7",
+          "O12"
+        ],
+        [
+          "S3",
+          "V4",
+          "O6"
+        ]
+      ],
+      "case_type": "HS",
+      "frequency": "HF",
+      "verbal_time": "FU",
+      "connectors": "if then / therefore",
+      "source_validity": "valid",
+      "canonical_form": "canonic",
+      "working_dataset": "HS_HF_FU_2000",
+      "original_path": "prompts/userPrompts/HS_HF_FU_500_complete.json",
+      "original_row": 20,
+      "sentence_sha256": "ed6b8640592546b4afd7e76d5ae5628d621debe967b2be469bb75be0c612c1e0",
+      "original_record_sha256": "00efc2a68bbe13ae599309d4778dc1135e71c0c150a5d2744d911c2dd2e214ac",
+      "working_record_sha256": "00efc2a68bbe13ae599309d4778dc1135e71c0c150a5d2744d911c2dd2e214ac",
+      "original_labels": {
+        "validity": "valid",
+        "canonical_form": "canonic"
+      },
+      "experiment_id": "llm-transitivity-coverage-pilot-v1",
+      "dataset_family": "HS",
+      "protocol": "zeroShot",
+      "expected_answer": "yes",
+      "label_basis": "source labels; logical validity not audited",
+      "logical_validity_audited": false,
+      "stratum_id": "aae97441d1c88703",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "tags": [
+        "family:HS",
+        "frequency:HF",
+        "tense:FU",
+        "validity:valid",
+        "form:canonic",
+        "connectors:if then / therefore"
+      ],
+      "openrouter_http_calls": [
+        {
+          "http_attempt": 1,
+          "request_started_utc": "2026-11-06T03:22:27.461220+00:00",
+          "method": "POST",
+          "url": "https://openrouter.ai/api/v1/chat/completions",
+          "request_headers": {
+            "host": "openrouter.ai",
+            "accept-encoding": "gzip, deflate, zstd",
+            "connection": "keep-alive",
+            "authorization": "[REDACTED]",
+            "accept": "application/json",
+            "content-type": "application/json",
+            "user-agent": "AsyncOpenAI/Python 3.41.0",
+            "x-stainless-lang": "python",
+            "x-stainless-package-version": "3.41.0",
+            "x-stainless-os": "MacOS",
+            "x-stainless-arch": "arm64",
+            "x-stainless-runtime": "CPython",
+            "x-stainless-runtime-version": "3.14.8",
+            "x-stainless-async": "async:asyncio",
+            "x-irid": "2ytDKQ2qN2e3k3zaM86gqF",
+            "x-session-id": "DAWhx9VncfbhtXiyeGPwfp",
+            "x-openrouter-metadata": "enabled",
+            "x-stainless-retry-count": "0",
+            "x-stainless-read-timeout": "600.0",
+            "content-length": "544"
+          },
+          "request_body": {
+            "json": {
+              "model": "openai/gpt-6-luna",
+              "messages": [
+                {
+                  "role": "system",
+                  "content": "Answer only with 'yes' or 'no' and nothing else."
+                },
+                {
+                  "role": "user",
+                  "content": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?"
+                }
+              ],
+              "max_completion_tokens": 1024,
+              "service_tier": "flex",
+              "provider": {
+                "only": [
+                  "openai/flex"
+                ],
+                "allow_fallbacks": false,
+                "require_parameters": true
+              },
+              "reasoning": {
+                "enabled": false
+              }
+            }
+          },
+          "response_status": "received",
+          "response_received_utc": "2026-11-06T03:22:28.281844+00:00",
+          "http_status": 200,
+          "response_headers": {
+            "date": "Fri, 06 Nov 2026 03:22:28 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "keep-alive",
+            "access-control-allow-origin": "*",
+            "x-generation-id": "gen-1793935347-COGm4pDIAajzflVPTYb3",
+            "access-control-expose-headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-release": "api;abfc1ba7-5ead-4e72-9190-f50fb277c9cb",
+            "set-cookie": "[REDACTED]",
+            "permissions-policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
+            "x-content-type-options": "nosniff",
+            "content-encoding": "gzip",
+            "server": "cloudflare",
+            "cf-ray": "a560f9538a9c7d01-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_body": {
+            "json": {
+              "id": "gen-1793935347-COGm4pDIAajzflVPTYb3",
+              "object": "chat.completion",
+              "created": 1793935347,
+              "model": "openai/gpt-6-luna",
+              "provider": "OpenAI",
+              "system_fingerprint": null,
+              "service_tier": "flex",
+              "choices": [
+                {
+                  "index": 0,
+                  "logprobs": null,
+                  "finish_reason": "stop",
+                  "native_finish_reason": "completed",
+                  "message": {
+                    "role": "assistant",
+                    "content": "yes",
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 73,
+                "completion_tokens": 5,
+                "total_tokens": 78,
+                "cost": 4.9e-06,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": 4.9e-06,
+                  "upstream_inference_prompt_cost": 3.65e-06,
+                  "upstream_inference_completions_cost": 1.25e-06
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 0,
+                  "image_tokens": 0,
+                  "audio_tokens": 0
+                }
+              },
+              "openrouter_metadata": {
+                "requested": "openai/gpt-6-luna",
+                "strategy": "direct",
+                "region": "SCL",
+                "summary": "available=1, selected=OpenAI",
+                "attempt": 1,
+                "is_byok": false,
+                "endpoints": {
+                  "total": 8,
+                  "available": [
+                    {
+                      "provider": "OpenAI",
+                      "model": "openai/gpt-6-luna-20260922",
+                      "selected": true
+                    }
+                  ]
+                },
+                "generation_time": 5997
+              }
+            }
+          },
+          "http_seconds": 6.447456041998521
+        }
+      ],
+      "openrouter_calls": [
+        {
+          "generation_id": "gen-1793935347-COGm4pDIAajzflVPTYb3",
+          "lookup_status": "unavailable",
+          "generation": {
+            "endpoint": "generation",
+            "status": "unavailable",
+            "attempts": [
+              {
+                "fetched_at_utc": "2026-11-06T03:22:33.918699+00:00",
+                "http_status": 404,
+                "response_headers": {
+                  "Date": "Fri, 06 Nov 2026 03:22:34 GMT",
+                  "Content-Type": "application/json",
+                  "Transfer-Encoding": "chunked",
+                  "Connection": "keep-alive",
+                  "CF-Cache-Status": "BYPASS",
+                  "Access-Control-Allow-Origin": "*",
+                  "Cache-Control": "private, no-store",
+                  "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+                  "x-openrouter-error-origin": "client",
+                  "x-openrouter-release": "public-api;ffb9ce1f-7462-4105-900c-46acc15c06a9",
+                  "set-cookie": "[REDACTED]",
+                  "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+                  "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+                  "X-Content-Type-Options": "nosniff",
+                  "Content-Encoding": "gzip",
+                  "Server": "cloudflare",
+                  "CF-RAY": "a560f97bf9f89288-SCL",
+                  "alt-svc": "h3=\":443\"; ma=86400"
+                },
+                "response_json": {
+                  "error": {
+                    "message": "Generation gen-1793935347-COGm4pDIAajzflVPTYb3 not found",
+                    "code": 404
+                  }
+                },
+                "lookup_seconds": 0.906244791993231
+              },
+              {
+                "fetched_at_utc": "2026-11-06T03:22:35.079972+00:00",
+                "http_status": 404,
+                "response_headers": {
+                  "Date": "Fri, 06 Nov 2026 03:22:35 GMT",
+                  "Content-Type": "application/json",
+                  "Transfer-Encoding": "chunked",
+                  "Connection": "keep-alive",
+                  "CF-Cache-Status": "BYPASS",
+                  "Access-Control-Allow-Origin": "*",
+                  "Cache-Control": "private, no-store",
+                  "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+                  "x-openrouter-error-origin": "client",
+                  "x-openrouter-release": "public-api;ffb9ce1f-7462-4105-900c-46acc15c06a9",
+                  "set-cookie": "[REDACTED]",
+                  "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+                  "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+                  "X-Content-Type-Options": "nosniff",
+                  "Content-Encoding": "gzip",
+                  "Server": "cloudflare",
+                  "CF-RAY": "a560f9830de2ceee-SCL",
+                  "alt-svc": "h3=\":443\"; ma=86400"
+                },
+                "response_json": {
+                  "error": {
+                    "message": "Generation gen-1793935347-COGm4pDIAajzflVPTYb3 not found",
+                    "code": 404
+                  }
+                },
+                "lookup_seconds": 0.49296508300176356
+              },
+              {
+                "fetched_at_utc": "2026-11-06T03:22:36.077953+00:00",
+                "http_status": 404,
+                "response_headers": {
+                  "Date": "Fri, 06 Nov 2026 03:22:36 GMT",
+                  "Content-Type": "application/json",
+                  "Transfer-Encoding": "chunked",
+                  "Connection": "keep-alive",
+                  "CF-Cache-Status": "BYPASS",
+                  "Access-Control-Allow-Origin": "*",
+                  "Cache-Control": "private, no-store",
+                  "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+                  "x-openrouter-error-origin": "client",
+                  "x-openrouter-release": "public-api;ffb9ce1f-7462-4105-900c-46acc15c06a9",
+                  "set-cookie": "[REDACTED]",
+                  "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+                  "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+                  "X-Content-Type-Options": "nosniff",
+                  "Content-Encoding": "gzip",
+                  "Server": "cloudflare",
+                  "CF-RAY": "a560f9896e4b24e4-SCL",
+                  "alt-svc": "h3=\":443\"; ma=86400"
+                },
+                "response_json": {
+                  "error": {
+                    "message": "Generation gen-1793935347-COGm4pDIAajzflVPTYb3 not found",
+                    "code": 404
+                  }
+                },
+                "lookup_seconds": 0.45697425000253133
+              }
+            ]
+          },
+          "stored_content": {
+            "status": "not requested; may require management-key access and stored content"
+          }
+        }
+      ]
+    },
+    "sample_error": null,
+    "model_event": {
+      "uuid": "UmzGZNf6a8pCDnRnovJfbw",
+      "span_id": "cMUqBuNwKQHBzbimCvwDo9",
+      "timestamp": "2026-11-06T03:22:27.458917+00:00",
+      "working_start": 0.0009565830041537993,
+      "metadata": null,
+      "pending": null,
+      "event": "model",
+      "model": "openrouter/openai/gpt-6-luna",
+      "role": null,
+      "requested_model": null,
+      "origin": "agent",
+      "input": [
+        {
+          "id": "XUurzmCmydyAkPbkoBAXn4",
+          "content": "Answer only with 'yes' or 'no' and nothing else.",
+          "source": "input",
+          "metadata": null,
+          "role": "system"
+        },
+        {
+          "id": "5FQkTRp5Uz7eoXqdfLEuot",
+          "content": "attachment://ef7bb8a60c4ea2d7a347655a2e1aa847",
+          "source": "input",
+          "metadata": null,
+          "role": "user",
+          "tool_call_id": null
+        }
+      ],
+      "input_refs": null,
+      "tools": [],
+      "tool_choice": "none",
+      "config": {
+        "max_retries": 2,
+        "timeout": 60,
+        "attempt_timeout": null,
+        "stream_idle_timeout": null,
+        "max_connections": 16,
+        "adaptive_connections": null,
+        "system_message": null,
+        "max_tokens": 1024,
+        "top_p": null,
+        "temperature": null,
+        "stop_seqs": null,
+        "best_of": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "logit_bias": null,
+        "seed": null,
+        "top_k": null,
+        "num_choices": null,
+        "logprobs": null,
+        "top_logprobs": null,
+        "prompt_logprobs": null,
+        "parallel_tool_calls": null,
+        "internal_tools": null,
+        "max_tool_output": null,
+        "cache_prompt": false,
+        "fallback_models": null,
+        "fail_on_refusal": null,
+        "verbosity": null,
+        "effort": null,
+        "reasoning_effort": null,
+        "reasoning_mode": null,
+        "reasoning_tokens": null,
+        "reasoning_summary": null,
+        "reasoning_history": null,
+        "response_schema": null,
+        "extra_headers": {
+          "X-OpenRouter-Metadata": "enabled"
+        },
+        "extra_body": {
+          "service_tier": "flex"
+        },
+        "modalities": null,
+        "cache": null,
+        "batch": null
+      },
+      "output": {
+        "model": "openai/gpt-6-luna",
+        "choices": [
+          {
+            "message": {
+              "id": "SYXPUWnyPcZkQzFe393ziq",
+              "content": "yes",
+              "source": "generate",
+              "metadata": null,
+              "role": "assistant",
+              "tool_calls": null,
+              "model": "openai/gpt-6-luna"
+            },
+            "stop_reason": "stop",
+            "stop_details": null,
+            "logprobs": null,
+            "prompt_logprobs": null
+          }
+        ],
+        "completion": "yes",
+        "usage": {
+          "input_tokens": 73,
+          "output_tokens": 5,
+          "total_tokens": 78,
+          "input_tokens_cache_write": 0,
+          "input_tokens_cache_read": 0,
+          "reasoning_tokens": 0,
+          "total_cost": null
+        },
+        "input_context_tokens": 73,
+        "fallback": null,
+        "time": 6.448997250001412,
+        "metadata": null,
+        "error": null,
+        "response_id": "gen-1793935347-COGm4pDIAajzflVPTYb3"
+      },
+      "retries": null,
+      "request_ids": null,
+      "error": null,
+      "traceback": null,
+      "traceback_ansi": null,
+      "cache": null,
+      "call": {
+        "request": {
+          "tools": null,
+          "tool_choice": null,
+          "extra_headers": {
+            "x-irid": "2ytDKQ2qN2e3k3zaM86gqF",
+            "x-session-id": "DAWhx9VncfbhtXiyeGPwfp",
+            "X-OpenRouter-Metadata": "enabled"
+          },
+          "model": "openai/gpt-6-luna",
+          "extra_body": {
+            "service_tier": "flex",
+            "provider": {
+              "only": [
+                "openai/flex"
+              ],
+              "allow_fallbacks": false,
+              "require_parameters": true
+            },
+            "reasoning": {
+              "enabled": false
+            }
+          },
+          "max_completion_tokens": 1024,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Answer only with 'yes' or 'no' and nothing else."
+            },
+            {
+              "role": "user",
+              "content": "attachment://ef7bb8a60c4ea2d7a347655a2e1aa847"
+            }
+          ]
+        },
+        "response": {
+          "id": "gen-1793935347-COGm4pDIAajzflVPTYb3",
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "yes",
+                "refusal": null,
+                "role": "assistant",
+                "annotations": null,
+                "audio": null,
+                "function_call": null,
+                "tool_calls": null,
+                "reasoning": null
+              },
+              "native_finish_reason": "completed"
+            }
+          ],
+          "created": 1793935347,
+          "model": "openai/gpt-6-luna",
+          "object": "chat.completion",
+          "metadata": null,
+          "moderation": null,
+          "service_tier": "flex",
+          "system_fingerprint": null,
+          "usage": {
+            "completion_tokens": 5,
+            "prompt_tokens": 73,
+            "total_tokens": 78,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": null,
+              "text_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "image_tokens": null,
+              "text_tokens": null,
+              "video_tokens": 0
+            },
+            "cost": 4.9e-06,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 4.9e-06,
+              "upstream_inference_prompt_cost": 3.65e-06,
+              "upstream_inference_completions_cost": 1.25e-06
+            }
+          },
+          "provider": "OpenAI",
+          "openrouter_metadata": {
+            "requested": "openai/gpt-6-luna",
+            "strategy": "direct",
+            "region": "SCL",
+            "summary": "available=1, selected=OpenAI",
+            "attempt": 1,
+            "is_byok": false,
+            "endpoints": {
+              "total": 8,
+              "available": [
+                {
+                  "provider": "OpenAI",
+                  "model": "openai/gpt-6-luna-20260922",
+                  "selected": true
+                }
+              ]
+            },
+            "generation_time": 5997
+          }
+        },
+        "error": null,
+        "time": 6.448997250001412,
+        "call_refs": null,
+        "call_key": null
+      },
+      "completed": "2026-11-06T03:22:33.915685+00:00",
+      "working_time": 6.448997250001412
+    }
+  }
+]

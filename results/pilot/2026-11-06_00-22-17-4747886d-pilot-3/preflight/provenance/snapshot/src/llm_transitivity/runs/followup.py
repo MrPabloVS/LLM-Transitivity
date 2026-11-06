@@ -1,0 +1,422 @@
+"""Freeze and execute the authorized Haiku follow-up with direct 64-slot load."""
+
+import fcntl
+import importlib
+import json
+import os
+import subprocess
+import sys
+from datetime import UTC, datetime
+from pathlib import Path
+from uuid import uuid4
+from zipfile import ZIP_DEFLATED, ZipFile
+from zoneinfo import ZoneInfo
+
+from inspect_flow import FlowSpec
+from inspect_flow.api import init, run
+
+from llm_transitivity.analysis.followup import review_phase
+from llm_transitivity.costs.archive import save_estimate
+from llm_transitivity.costs.estimate import estimate
+from llm_transitivity.evidence.serialization import digest, json_bytes
+from llm_transitivity.inspect.flow import build_pilot_spec
+from llm_transitivity.runs.archive import finalize_archive, prepare_archive
+
+HAIKU_IDS = ("anthropic/claude-haiku-4.5", "anthropic/claude-haiku-5.5")
+
+
+def stage_specs(root: Path, *, profile: str = "haiku") -> list[tuple[str, FlowSpec]]:
+    if profile in {"pilot2", "pilot3"}:
+        return [
+            ("preflight", build_pilot_spec(root, profile=profile, preflight=True)),
+            (
+                "coverage",
+                build_pilot_spec(
+                    root,
+                    profile=profile,
+                    concurrency=64 if profile == "pilot3" else 32,
+                    max_tasks=108,
+                ),
+            ),
+        ]
+    return [
+        ("preflight", build_pilot_spec(root, profile="haiku", preflight=True)),
+        (
+            "coverage",
+            build_pilot_spec(root, profile="haiku", selected_models=HAIKU_IDS),
+        ),
+        ("load-64", build_pilot_spec(root, profile="haiku", load=True, concurrency=64)),
+    ]
+
+
+def preview(root: Path, *, profile: str = "haiku") -> dict:
+    return {
+        name: {
+            "tasks": len(spec.tasks),
+            "responses": spec.options.metadata["planned_responses"],
+            "max_samples": spec.options.max_samples,
+            "max_tasks": spec.options.max_tasks,
+        }
+        for name, spec in (
+            stage_specs(root)
+            if profile == "haiku"
+            else stage_specs(root, profile=profile)
+        )
+    }
+
+
+def prepare(
+    root: Path, *, continue_from: Path | None = None, profile: str = "haiku"
+) -> Path:
+    if continue_from and profile != "haiku":
+        raise ValueError("Derived continuation requires the original haiku profile")
+    inherited = _review_completed(root, continue_from) if continue_from else {}
+    stages = (
+        [
+            (
+                "load-64",
+                build_pilot_spec(root, profile="haiku", load=True, concurrency=64),
+            )
+        ]
+        if continue_from
+        else stage_specs(root)
+        if profile == "haiku"
+        else stage_specs(root, profile=profile)
+    )
+    quote = estimate(root, profile=profile, followup=profile == "haiku")
+    estimate_path = save_estimate(root, quote)
+    campaign_id = str(uuid4())
+    stamp = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).strftime(
+        "%Y-%m-%d_%H-%M-%S"
+    )
+    parent = (
+        continue_from / "continuations" if continue_from else root / "results/pilot"
+    )
+    suffix = (
+        "pilot-3"
+        if profile == "pilot3"
+        else "pilot-2.0"
+        if profile == "pilot2"
+        else f"{profile}-followup"
+    )
+    directory = parent / f"{stamp}-{campaign_id[:8]}-{suffix}"
+    directory.mkdir(parents=True, exist_ok=False)
+    manifest = {
+        "version": 1,
+        "campaign_id": campaign_id,
+        "created_at_utc": datetime.now(UTC).isoformat(),
+        "profile": profile,
+        "pilot_name": "Pilot 3"
+        if profile == "pilot3"
+        else "Pilot 2.0"
+        if profile == "pilot2"
+        else "Haiku follow-up",
+        "direct_load_concurrency": 64 if profile == "haiku" else None,
+        "coverage_concurrency": 16
+        if profile == "haiku"
+        else 64
+        if profile == "pilot3"
+        else 32,
+        "no_spend_pause": True,
+        "full_corpus_run": False,
+        "planned_responses": sum(
+            spec.options.metadata["planned_responses"] for _, spec in stages
+        ),
+        "planned_tasks": sum(len(spec.tasks) for _, spec in stages),
+        "price_estimate_scope": "Full Haiku follow-up scenario"
+        if profile == "haiku"
+        else "3240 coverage responses; six extra preflight calls",
+        "parent_campaign": str(continue_from.relative_to(root))
+        if continue_from
+        else None,
+        "parent_campaign_sha256": digest((continue_from / "campaign.json").read_bytes())
+        if continue_from
+        else None,
+        "inherited_reviews": {},
+        "omitted_load_levels": {
+            "16": "User requested direct 64-slot load"
+            if profile == "haiku"
+            else "No separate load stage in Pilot 2.0",
+            "32": "User requested direct 64-slot load"
+            if profile == "haiku"
+            else "No separate load stage in Pilot 2.0",
+        },
+        "price_estimate": str(estimate_path.relative_to(root)),
+        "price_estimate_sha256": digest(estimate_path.read_bytes()),
+        "stages": [],
+    }
+    for name, review in inherited.items():
+        path = directory / f"inherited-{name}.json"
+        path.write_bytes(json_bytes(review))
+        manifest["inherited_reviews"][name] = {
+            "path": path.name,
+            "sha256": digest(path.read_bytes()),
+        }
+    for name, spec in stages:
+        phase = directory / name
+        spec.log_dir = str(phase / "inspect")
+        spec.options.metadata.update(
+            {
+                "campaign_id": campaign_id,
+                "profile": profile,
+                "results_root": str(phase.relative_to(root)),
+            }
+        )
+        spec.options.tags += [
+            f"campaign:{campaign_id}",
+            f"profile:{profile}",
+            f"concurrency:{spec.options.max_samples}",
+            f"active_tasks:{spec.options.max_tasks}",
+        ]
+        for task in spec.tasks:
+            task.metadata["campaign_id"] = campaign_id
+            task.tags += [
+                f"campaign:{campaign_id}",
+                f"profile:{profile}",
+                f"concurrency:{spec.options.max_samples}",
+                f"active_tasks:{spec.options.max_tasks}",
+            ]
+        prepare_archive(spec, root)
+        manifest["stages"].append(
+            {
+                "name": name,
+                "spec": str(
+                    (phase / "provenance/flow_spec.json").relative_to(directory)
+                ),
+                "spec_sha256": digest(
+                    (phase / "provenance/flow_spec.json").read_bytes()
+                ),
+            }
+        )
+    (directory / "campaign.json").write_bytes(json_bytes(manifest))
+    return directory
+
+
+def _review_completed(root: Path, directory: Path) -> dict:
+    """Derive reviews from saved responses; retain the original frozen sources."""
+    manifest = json.loads((directory / "campaign.json").read_text())
+    events = [
+        json.loads(line)
+        for line in (directory / "events.jsonl").read_text().splitlines()
+    ]
+    reviews = {}
+    for name in ("preflight", "coverage"):
+        stage = next(s for s in manifest["stages"] if s["name"] == name)
+        path = directory / stage["spec"]
+        if digest(path.read_bytes()) != stage["spec_sha256"]:
+            raise ValueError("Parent Flow spec changed")
+        hashes = json.loads((path.parent / "snapshot_hashes.json").read_text())
+        for relative, expected in hashes.items():
+            if digest((path.parent / "snapshot" / relative).read_bytes()) != expected:
+                raise ValueError("Parent snapshot changed: " + relative)
+            # Only package code can differ for this new review policy.
+            if (
+                not (relative.startswith("src/") and relative.endswith(".py"))
+                and digest((root / relative).read_bytes()) != expected
+            ):
+                raise ValueError("Parent input changed: " + relative)
+        saved = next(
+            e for e in reversed(events) if e.get("stage") == name and "review" in e
+        )
+        review_path = directory / saved["review"]
+        if digest(review_path.read_bytes()) != saved["review_sha256"]:
+            raise ValueError("Parent review changed")
+        old = json.loads(review_path.read_text())
+        if old.get("runner_error_type"):
+            raise ValueError("Parent execution failed")
+        for sample in old["samples"]:
+            if (
+                digest((root / sample["source_log"]).read_bytes())
+                != sample["source_log_sha256"]
+            ):
+                raise ValueError("Parent response log changed")
+        review = review_phase(root, path.parent.parent, json.loads(path.read_text()))
+        if not review["technical_pass"]:
+            raise ValueError("Parent phase still fails technical verification: " + name)
+        review["derived_from"] = {
+            "review": str(review_path.relative_to(root)),
+            "sha256": digest(review_path.read_bytes()),
+            "reason": "Treat confirmed content filters as experimental outcomes",
+        }
+        reviews[name] = review
+    return reviews
+
+
+def launch(root: Path, directory: Path) -> int:
+    with (directory / "console.txt").open("ab") as output:
+        child = subprocess.Popen(
+            [
+                sys.executable,
+                "-m",
+                "llm_transitivity.cli.app",
+                "--root",
+                str(root),
+                "followup",
+                "--resume",
+                str(directory),
+            ],
+            cwd=root,
+            stdin=subprocess.DEVNULL,
+            stdout=output,
+            stderr=subprocess.STDOUT,
+            start_new_session=True,
+        )
+    path = directory / f"launcher-{child.pid}.json"
+    path.write_bytes(
+        json_bytes({"pid": child.pid, "mode": "detached", "directory": str(directory)})
+    )
+    return child.pid
+
+
+def _event(directory: Path, **fields) -> None:
+    with (directory / "events.jsonl").open("a") as stream:
+        stream.write(
+            json.dumps({"at_utc": datetime.now(UTC).isoformat(), **fields}) + "\n"
+        )
+        stream.flush()
+        os.fsync(stream.fileno())
+
+
+def _validate(root: Path, directory: Path, manifest: dict) -> None:
+    for entry in manifest.get("inherited_reviews", {}).values():
+        if digest((directory / entry["path"]).read_bytes()) != entry["sha256"]:
+            raise ValueError("Inherited review changed")
+    if manifest.get("parent_campaign"):
+        parent = root / manifest["parent_campaign"] / "campaign.json"
+        if digest(parent.read_bytes()) != manifest["parent_campaign_sha256"]:
+            raise ValueError("Parent campaign changed")
+    if (
+        digest((root / manifest["price_estimate"]).read_bytes())
+        != manifest["price_estimate_sha256"]
+    ):
+        raise ValueError("Price estimate changed")
+    for stage in manifest["stages"]:
+        path = directory / stage["spec"]
+        if digest(path.read_bytes()) != stage["spec_sha256"]:
+            raise ValueError("Frozen Flow spec changed")
+        hashes = json.loads((path.parent / "snapshot_hashes.json").read_text())
+        for relative, expected in hashes.items():
+            if digest((root / relative).read_bytes()) != expected:
+                raise ValueError(
+                    "Source changed since follow-up preparation: " + relative
+                )
+            if digest((path.parent / "snapshot" / relative).read_bytes()) != expected:
+                raise ValueError("Frozen snapshot changed: " + relative)
+
+
+def _checkpoint(phase: Path) -> None:
+    logs = list((phase / "inspect").glob("*.eval"))
+    if logs:
+        suffix = uuid4().hex[:8]
+        with ZipFile(
+            phase / "provenance" / f"resume-checkpoint-{suffix}.zip", "x", ZIP_DEFLATED
+        ) as archive:
+            for path in sorted((phase / "inspect").rglob("*")):
+                if path.is_file():
+                    archive.write(path, path.relative_to(phase))
+
+
+def _finalize(phase: Path, success: bool | None, error: str | None = None) -> None:
+    name = "log_index.json"
+    if (phase / "summary" / name).exists():
+        name = f"log_index-{uuid4().hex[:8]}.json"
+    finalize_archive(phase, flow_success=success, error_type=error, index_name=name)
+
+
+def _phase_run(root: Path, phase: Path, spec: FlowSpec) -> bool:
+    _checkpoint(phase)
+    try:
+        result = run(
+            spec=spec,
+            base_dir=str(root),
+            handle_file=str(phase / f"handle-{uuid4().hex[:8]}.json"),
+        )
+    except BaseException as primary:
+        try:
+            _finalize(phase, None, type(primary).__name__)
+        except BaseException as secondary:  # noqa: BLE001 - preserve the primary error
+            primary.add_note(f"Finalization failed: {type(secondary).__name__}")
+        raise
+    _finalize(phase, result.success)
+    return result.success
+
+
+def execute(root: Path, directory: Path) -> bool:
+    init(display="plain", dotenv_base_dir=str(root))
+    importlib.import_module("llm_transitivity.inspect.tasks")
+    manifest = json.loads((directory / "campaign.json").read_text())
+    with (directory / "execution.lock").open("a+") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        _validate(root, directory, manifest)
+        reviews = {
+            name: json.loads((directory / entry["path"]).read_text())
+            for name, entry in manifest.get("inherited_reviews", {}).items()
+        }
+        stopped = False
+        previous = []
+        if (directory / "events.jsonl").exists():
+            previous = [
+                json.loads(line)
+                for line in (directory / "events.jsonl").read_text().splitlines()
+            ]
+        for stage in manifest["stages"]:
+            name = stage["name"]
+            if stopped:
+                _event(
+                    directory,
+                    stage=name,
+                    status="omitted",
+                    reason="Previous stage failed technical verification",
+                )
+                continue
+            saved = next(
+                (
+                    e
+                    for e in reversed(previous)
+                    if e.get("stage") == name and e.get("status") == "passed"
+                ),
+                None,
+            )
+            if saved:
+                review = json.loads((directory / saved["review"]).read_text())
+                if (
+                    digest((directory / saved["review"]).read_bytes())
+                    != saved["review_sha256"]
+                ):
+                    raise ValueError("Saved phase review changed")
+                reviews[name] = review
+                continue
+            path = directory / stage["spec"]
+            spec_data = json.loads(path.read_text())
+            spec = FlowSpec.model_validate(spec_data)
+            phase = path.parent.parent
+            _validate(root, directory, manifest)
+            _event(directory, stage=name, status="started")
+            error_type = None
+            try:
+                if not _phase_run(root, phase, spec):
+                    error_type = "FlowIncomplete"
+            except Exception as error:  # noqa: BLE001 - record the phase failure without exposing credentials
+                error_type = type(error).__name__
+            review = review_phase(root, phase, spec_data)
+            review["runner_error_type"] = error_type
+            if error_type:
+                review["technical_pass"] = False
+            relative = f"{name}/summary/review-{uuid4().hex[:8]}.json"
+            (directory / relative).write_bytes(json_bytes(review))
+            reviews[name] = review
+            status = "passed" if review["technical_pass"] else "stopped"
+            _event(
+                directory,
+                stage=name,
+                status=status,
+                review=relative,
+                review_sha256=digest((directory / relative).read_bytes()),
+            )
+            stopped = status != "passed"
+        if manifest.get("profile") in {"pilot2", "pilot3"}:
+            from llm_transitivity.analysis.pilot2_report import write_report
+        else:
+            from llm_transitivity.analysis.followup_report import write_report
+        write_report(root, directory, manifest, reviews)
+        return not stopped

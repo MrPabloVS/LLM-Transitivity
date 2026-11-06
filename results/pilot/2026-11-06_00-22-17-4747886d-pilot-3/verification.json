@@ -1,0 +1,17 @@
+{
+  "full_pytest": 334,
+  "ruff_package_tests": "passed",
+  "format_package_tests": "passed",
+  "global_ruff": "6 inherited errors",
+  "global_format": "2 inherited files",
+  "preflight_passed": true,
+  "coverage_passed": true,
+  "samples": 3240,
+  "final_sample_errors": 0,
+  "fallbacks": false,
+  "attempts": 3901,
+  "failed_attempts": 655,
+  "attempts_without_ids": 654,
+  "source_snapshots": "verified",
+  "full_corpus_started": false
+}

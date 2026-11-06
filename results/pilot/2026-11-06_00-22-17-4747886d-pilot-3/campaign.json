@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "campaign_id": "4747886d-3505-4d29-8399-88abc3c317f5",
+  "created_at_utc": "2026-11-06T03:22:17.703471+00:00",
+  "profile": "pilot3",
+  "pilot_name": "Pilot 3",
+  "direct_load_concurrency": null,
+  "coverage_concurrency": 64,
+  "no_spend_pause": true,
+  "full_corpus_run": false,
+  "planned_responses": 3246,
+  "planned_tasks": 114,
+  "price_estimate_scope": "3240 coverage responses; six extra preflight calls",
+  "parent_campaign": null,
+  "parent_campaign_sha256": null,
+  "inherited_reviews": {},
+  "omitted_load_levels": {
+    "16": "No separate load stage in Pilot 2.0",
+    "32": "No separate load stage in Pilot 2.0"
+  },
+  "price_estimate": "results/cost_estimates/2026-11-06_00-22-17-1d5db818/estimate.json",
+  "price_estimate_sha256": "0cc92bf5c31fa8d8e4697f637705c63252d59ac0af70a78a89807feae562193b",
+  "stages": [
+    {
+      "name": "preflight",
+      "spec": "preflight/provenance/flow_spec.json",
+      "spec_sha256": "882e54fdc0f5d34465a4400b28d78a7af7c3a433f49448f1b7d64665df09e067"
+    },
+    {
+      "name": "coverage",
+      "spec": "coverage/provenance/flow_spec.json",
+      "spec_sha256": "e3c729a63a9d20308cf01dc1b0483455d47e911bfe99adf5674e261ce466a98c"
+    }
+  ]
+}

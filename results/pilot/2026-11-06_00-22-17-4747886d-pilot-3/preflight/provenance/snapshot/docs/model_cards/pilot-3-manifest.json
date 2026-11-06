@@ -1,0 +1,882 @@
+{
+  "version": 1,
+  "experiment": "Pilot 3",
+  "captured_at_utc": "2026-11-06T02:33:27.262273+00:00",
+  "status": "Preparation only; no model generations requested",
+  "catalog_source": {
+    "url": "https://openrouter.ai/api/v1/models",
+    "resolved_url": "https://openrouter.ai/api/v1/models",
+    "fetched_at_utc": "2026-11-06T02:33:24.970324+00:00",
+    "http_status": 200,
+    "content_type": "application/json",
+    "headers": {
+      "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+    },
+    "bytes": 814090,
+    "sha256": "b1ff51c3ba8c6d91c08425c86769c084033598abd9f40a9d23c9c3ac3586acf6"
+  },
+  "record_note": "model.json retains the complete selected catalog record. Endpoint and manufacturer files retain downloaded response bytes. Manufacturer document scope does not establish the version served by an API alias.",
+  "models": [
+    {
+      "model_id": "openai/gpt-4o-mini",
+      "directory": "openai--gpt-4o-mini",
+      "generation_group": "earlier",
+      "requested_routing": {
+        "provider_only": [
+          "openai"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "observed_routing_verified": false
+      },
+      "selected_endpoint": {
+        "name": "OpenAI | openai/gpt-4o-mini",
+        "model_id": "openai/gpt-4o-mini",
+        "model_name": "OpenAI: GPT-4o-mini",
+        "context_length": 128000,
+        "pricing": {
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000075",
+          "discount": 0
+        },
+        "provider_name": "OpenAI",
+        "tag": "openai",
+        "service_tier": null,
+        "quantization": "unknown",
+        "max_completion_tokens": 16384,
+        "max_prompt_tokens": null,
+        "supported_parameters": [
+          "seed",
+          "max_tokens",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
+          "frequency_penalty",
+          "logit_bias",
+          "logprobs",
+          "prediction",
+          "presence_penalty",
+          "stop",
+          "temperature",
+          "top_logprobs",
+          "top_p",
+          "web_search_options"
+        ],
+        "supports_tool_choice": {
+          "none": true,
+          "auto": true,
+          "required": true,
+          "function": true
+        },
+        "status": 0,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100,
+        "uptime_last_1d": 100,
+        "supports_implicit_caching": true,
+        "native_tools": {},
+        "supports_voice_cloning": false,
+        "supports_multiple_audio_references": false,
+        "supports_image_reference": false,
+        "supports_diarization": false,
+        "latency_last_30m": null,
+        "throughput_last_30m": null
+      },
+      "files": {
+        "model.json": {
+          "bytes": 1784,
+          "sha256": "dc0d1f977fa77898f06797a2600d3a711cfca9cb8a80e254f118e6202ab8990b",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models",
+            "resolved_url": "https://openrouter.ai/api/v1/models",
+            "fetched_at_utc": "2026-11-06T02:33:24.970324+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 814090,
+            "sha256": "b1ff51c3ba8c6d91c08425c86769c084033598abd9f40a9d23c9c3ac3586acf6"
+          },
+          "path": "openai--gpt-4o-mini/model.json"
+        },
+        "endpoints.json": {
+          "bytes": 3503,
+          "sha256": "189703c949778b9e63f21396dfff91d4b52c37a911d6bff5671e97f2f935c040",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models/openai/gpt-4o-mini/endpoints",
+            "resolved_url": "https://openrouter.ai/api/v1/models/openai/gpt-4o-mini/endpoints",
+            "fetched_at_utc": "2026-11-06T02:33:24.277998+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 3503,
+            "sha256": "189703c949778b9e63f21396dfff91d4b52c37a911d6bff5671e97f2f935c040"
+          },
+          "path": "openai--gpt-4o-mini/endpoints-189703c94977.json"
+        },
+        "manufacturer-model.html": {
+          "bytes": 446170,
+          "sha256": "7813ea12ab05cbfe921ee41e31c2249a69fbda3c61f6b7e98af72ddb6b7774a6",
+          "source": {
+            "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+            "resolved_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+            "fetched_at_utc": "2026-11-06T02:33:24.728240+00:00",
+            "http_status": 200,
+            "content_type": "text/html",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 446170,
+            "sha256": "7813ea12ab05cbfe921ee41e31c2249a69fbda3c61f6b7e98af72ddb6b7774a6"
+          },
+          "document_scope": "Model-specific API overview",
+          "path": "openai--gpt-4o-mini/manufacturer-model.html"
+        },
+        "family-system-card.pdf": {
+          "bytes": 1402648,
+          "sha256": "e2579ecb185cbc13bac39f9dbf25e1917f78e1ea5a3a5023165c6614fb5db724",
+          "source": {
+            "url": "https://cdn.openai.com/gpt-4o-system-card.pdf",
+            "resolved_url": "https://cdn.openai.com/gpt-4o-system-card.pdf",
+            "fetched_at_utc": "2026-11-06T02:33:24.392337+00:00",
+            "http_status": 200,
+            "content_type": "application/pdf",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT",
+              "ETag": "0x8DDDA8F3FC7DF84",
+              "Last-Modified": "Wed, 13 Aug 2025 17:31:34 GMT"
+            },
+            "bytes": 1402648,
+            "sha256": "e2579ecb185cbc13bac39f9dbf25e1917f78e1ea5a3a5023165c6614fb5db724"
+          },
+          "document_scope": "GPT-4o family system card; includes mini evaluation results; not a mini-only card",
+          "path": "openai--gpt-4o-mini/family-system-card.pdf"
+        },
+        "card.md": {
+          "bytes": 1238,
+          "sha256": "6c7e5c7c37f657de4d1120d1c21f4b6cf947208753152ee8d8f24e0dc81f6c29",
+          "path": "openai--gpt-4o-mini/card-6c7e5c7c37f6.md"
+        }
+      },
+      "card_path": "openai--gpt-4o-mini/card-6c7e5c7c37f6.md"
+    },
+    {
+      "model_id": "openai/gpt-6-luna",
+      "directory": "openai--gpt-6-luna",
+      "generation_group": "later",
+      "requested_routing": {
+        "provider_only": [
+          "openai/flex"
+        ],
+        "service_tier": "flex",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "observed_routing_verified": false
+      },
+      "selected_endpoint": {
+        "name": "OpenAI | openai/gpt-6-luna-20260922",
+        "model_id": "openai/gpt-6-luna",
+        "model_name": "OpenAI: GPT-6 Luna",
+        "context_length": 1050000,
+        "pricing": {
+          "prompt": "0.00000005",
+          "completion": "0.00000025",
+          "web_search": "0.01",
+          "input_cache_read": "0.000000005",
+          "input_cache_write": "0.0000000625",
+          "discount": 0,
+          "overrides": [
+            {
+              "min_prompt_tokens": 272000,
+              "prompt": "0.0000001",
+              "completion": "0.000000375",
+              "input_cache_read": "0.00000001",
+              "input_cache_write": "0.000000125"
+            }
+          ]
+        },
+        "provider_name": "OpenAI",
+        "tag": "openai/flex",
+        "service_tier": "flex",
+        "quantization": "unknown",
+        "max_completion_tokens": 128000,
+        "max_prompt_tokens": 922000,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "seed",
+          "max_tokens",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
+          "verbosity",
+          "reasoning_effort"
+        ],
+        "supports_tool_choice": {
+          "none": true,
+          "auto": true,
+          "required": true,
+          "function": true
+        },
+        "status": 0,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100,
+        "uptime_last_1d": 79.23611111111111,
+        "supports_implicit_caching": false,
+        "native_tools": {
+          "openrouter:web_search": {
+            "type": "web_search"
+          },
+          "openrouter:apply_patch": {
+            "type": "apply_patch"
+          }
+        },
+        "supports_voice_cloning": false,
+        "supports_multiple_audio_references": false,
+        "supports_image_reference": false,
+        "supports_diarization": false,
+        "latency_last_30m": null,
+        "throughput_last_30m": null
+      },
+      "files": {
+        "model.json": {
+          "bytes": 2365,
+          "sha256": "c518cd2c33cae9e47e052fb83a78f58f1032ec5a541df70c3c21ead2e93e45c3",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models",
+            "resolved_url": "https://openrouter.ai/api/v1/models",
+            "fetched_at_utc": "2026-11-06T02:33:24.970324+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 814090,
+            "sha256": "b1ff51c3ba8c6d91c08425c86769c084033598abd9f40a9d23c9c3ac3586acf6"
+          },
+          "path": "openai--gpt-6-luna/model.json"
+        },
+        "endpoints.json": {
+          "bytes": 10449,
+          "sha256": "d5fff7773c27a6c317fc09a4f2fa5428bf70f1129dd96316769382cfc8b29f28",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna/endpoints",
+            "resolved_url": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna/endpoints",
+            "fetched_at_utc": "2026-11-06T02:33:24.330621+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 10449,
+            "sha256": "d5fff7773c27a6c317fc09a4f2fa5428bf70f1129dd96316769382cfc8b29f28"
+          },
+          "path": "openai--gpt-6-luna/endpoints-d5fff7773c27.json"
+        },
+        "manufacturer-model.html": {
+          "bytes": 462784,
+          "sha256": "ee8800c25ca26c41294aed0bd0a20d7f8a263848d329538e3c10249b9e57cc7e",
+          "source": {
+            "url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+            "resolved_url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+            "fetched_at_utc": "2026-11-06T02:33:24.451698+00:00",
+            "http_status": 200,
+            "content_type": "text/html",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 462784,
+            "sha256": "ee8800c25ca26c41294aed0bd0a20d7f8a263848d329538e3c10249b9e57cc7e"
+          },
+          "document_scope": "Model-specific API overview",
+          "path": "openai--gpt-6-luna/manufacturer-model.html"
+        },
+        "system-card.html": {
+          "bytes": 332659,
+          "sha256": "530cb4aaff5265b1f1aa2b68fcd04dfdcfa9acbe4865c1e6595001957cd3cf29",
+          "source": {
+            "url": "https://deploymentsafety.openai.com/gpt-6-october",
+            "resolved_url": "https://deploymentsafety.openai.com/gpt-6-october",
+            "fetched_at_utc": "2026-11-06T02:33:25.263458+00:00",
+            "http_status": 200,
+            "content_type": "text/html",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 332659,
+            "sha256": "530cb4aaff5265b1f1aa2b68fcd04dfdcfa9acbe4865c1e6595001957cd3cf29"
+          },
+          "document_scope": "GPT-6 Sol and Luna October update; document scope does not identify the current OpenRouter API revision",
+          "path": "openai--gpt-6-luna/system-card.html"
+        },
+        "system-card-addendum.html": {
+          "bytes": 291436,
+          "sha256": "d0df9bd7e4bfeeb7c9e347eaf039264c495e03fb49ef00b478381d3d9ee3bf23",
+          "source": {
+            "url": "https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum",
+            "resolved_url": "https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum",
+            "fetched_at_utc": "2026-11-06T02:33:25.087956+00:00",
+            "http_status": 200,
+            "content_type": "text/html",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 291436,
+            "sha256": "d0df9bd7e4bfeeb7c9e347eaf039264c495e03fb49ef00b478381d3d9ee3bf23"
+          },
+          "document_scope": "October 29 Luna addendum; described ChatGPT update; not proof of API revision",
+          "path": "openai--gpt-6-luna/system-card-addendum.html"
+        },
+        "card.md": {
+          "bytes": 1450,
+          "sha256": "c92cf782bf12c81cd631d83cbd5b16666ebbfd8eae0e48a3b2ca0c7cd3f0d12d",
+          "path": "openai--gpt-6-luna/card-c92cf782bf12.md"
+        }
+      },
+      "card_path": "openai--gpt-6-luna/card-c92cf782bf12.md"
+    },
+    {
+      "model_id": "anthropic/claude-haiku-5.5",
+      "directory": "anthropic--claude-haiku-5.5",
+      "candidate_group": "later",
+      "status": "candidate; not executed",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "resolved_url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-06T00:49:46.168929+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:45 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-5.5/endpoints",
+        "resolved_url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-5.5/endpoints",
+        "fetched_at_utc": "2026-11-06T00:49:46.615122+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:46 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "system_card_source": {
+        "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card",
+        "resolved_url": "https://assets.claude.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5.pdf",
+        "fetched_at_utc": "2026-11-06T00:49:48.824446+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:47 GMT",
+          "Content-Type": "application/pdf",
+          "ETag": "\"4097a876620aba9b36d513e61da3208b\""
+        }
+      },
+      "files": {
+        "model.json": {
+          "sha256": "7ebfd1495207031fa251c23fe1f5fdc319a34b0a7156ab211033ea658789b944",
+          "bytes": 3424,
+          "path": "anthropic--claude-haiku-5.5/model.json"
+        },
+        "endpoints.json": {
+          "sha256": "8eeba3c35da24724076814739da76f26e504b736097fb4858e095a45d13a940d",
+          "bytes": 21588,
+          "path": "anthropic--claude-haiku-5.5/endpoints.json"
+        },
+        "system-card.pdf": {
+          "sha256": "d5dbaab6996c02ad6ff28b032ce5a9c7582e59af09b5d1bc0975cf0235535da9",
+          "bytes": 13007054,
+          "path": "anthropic--claude-haiku-5.5/system-card.pdf"
+        },
+        "card.md": {
+          "sha256": "1597caa79783fe42ccb5c2ed9d49a8d2e018887c957c4dd44203786b0596fe72",
+          "bytes": 3426,
+          "path": "anthropic--claude-haiku-5.5/card.md"
+        }
+      },
+      "generation_group": "earlier",
+      "card_path": "anthropic--claude-haiku-5.5/card.md",
+      "requested_routing": {
+        "provider_only": [
+          "anthropic"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled; native support documented; OpenRouter runtime unverified",
+        "observed_routing_verified": false
+      }
+    },
+    {
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "directory": "anthropic--claude-sonnet-5.5",
+      "generation_group": "later",
+      "requested_routing": {
+        "provider_only": [
+          "anthropic"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "observed_routing_verified": false
+      },
+      "selected_endpoint": {
+        "name": "Anthropic | anthropic/claude-sonnet-5.5-20260928",
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "model_name": "Anthropic: Claude Sonnet 5.5",
+        "context_length": 1000000,
+        "pricing": {
+          "prompt": "0.000002",
+          "completion": "0.00001",
+          "web_search": "0.01",
+          "input_cache_read": "0.0000001",
+          "input_cache_write": "0.0000025",
+          "input_cache_write_1h": "0.000004",
+          "discount": 0
+        },
+        "provider_name": "Anthropic",
+        "tag": "anthropic",
+        "service_tier": null,
+        "quantization": "unknown",
+        "max_completion_tokens": 128000,
+        "max_prompt_tokens": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "stop",
+          "tools",
+          "tool_choice",
+          "structured_outputs",
+          "response_format",
+          "verbosity",
+          "reasoning_effort"
+        ],
+        "supports_tool_choice": {
+          "none": true,
+          "auto": true,
+          "required": false,
+          "function": false
+        },
+        "status": 0,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100,
+        "uptime_last_1d": 100,
+        "supports_implicit_caching": false,
+        "native_tools": {
+          "openrouter:web_search": {
+            "type": "web_search_20260209"
+          },
+          "openrouter:web_fetch": {
+            "type": "web_fetch_20260209"
+          },
+          "openrouter:bash": {
+            "type": "bash_20250124"
+          },
+          "openrouter:advisor": {
+            "type": "advisor_20260301"
+          }
+        },
+        "supports_voice_cloning": false,
+        "supports_multiple_audio_references": false,
+        "supports_image_reference": false,
+        "supports_diarization": false,
+        "latency_last_30m": null,
+        "throughput_last_30m": null
+      },
+      "files": {
+        "model.json": {
+          "bytes": 3697,
+          "sha256": "a901241ea2507d9e1256cbda22dfee9a9a10098a366705b65da5d40c6e6f0185",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models",
+            "resolved_url": "https://openrouter.ai/api/v1/models",
+            "fetched_at_utc": "2026-11-06T02:33:24.970324+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 814090,
+            "sha256": "b1ff51c3ba8c6d91c08425c86769c084033598abd9f40a9d23c9c3ac3586acf6"
+          },
+          "path": "anthropic--claude-sonnet-5.5/model.json"
+        },
+        "endpoints.json": {
+          "bytes": 12005,
+          "sha256": "81a819d44614b7df6aa093c223b1fd43a4f08ae3df7b39461157f96ff7ff3f58",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5.5/endpoints",
+            "resolved_url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5.5/endpoints",
+            "fetched_at_utc": "2026-11-06T02:33:25.276486+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT"
+            },
+            "bytes": 12005,
+            "sha256": "81a819d44614b7df6aa093c223b1fd43a4f08ae3df7b39461157f96ff7ff3f58"
+          },
+          "path": "anthropic--claude-sonnet-5.5/endpoints.json"
+        },
+        "manufacturer-model.html": {
+          "bytes": 524030,
+          "sha256": "cb265ae8ef79546872fc5f7353d7971cb1a6418b2938eb32ac64f6792b46ab77",
+          "source": {
+            "url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+            "resolved_url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+            "fetched_at_utc": "2026-11-06T02:33:25.552372+00:00",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT"
+            },
+            "bytes": 524030,
+            "sha256": "cb265ae8ef79546872fc5f7353d7971cb1a6418b2938eb32ac64f6792b46ab77"
+          },
+          "document_scope": "Model-specific API overview",
+          "path": "anthropic--claude-sonnet-5.5/manufacturer-model.html"
+        },
+        "system-card.pdf": {
+          "bytes": 13101289,
+          "sha256": "89cfd6a6d3aa6148eaf23f4a53006950ee7746009f381237c62920c720725785",
+          "source": {
+            "url": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+            "resolved_url": "https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf",
+            "fetched_at_utc": "2026-11-06T02:33:27.246342+00:00",
+            "http_status": 200,
+            "content_type": "application/pdf",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT",
+              "ETag": "\"0b0553b9fcee9bc232f3fad0adb4703a\""
+            },
+            "bytes": 13101289,
+            "sha256": "89cfd6a6d3aa6148eaf23f4a53006950ee7746009f381237c62920c720725785"
+          },
+          "document_scope": "Claude Sonnet 5.5 system card",
+          "path": "anthropic--claude-sonnet-5.5/system-card.pdf"
+        },
+        "card.md": {
+          "bytes": 1207,
+          "sha256": "fd7d069fecef381fec2004a82b84dcb44f000366dc0c246eccb7675beed6ae1b",
+          "path": "anthropic--claude-sonnet-5.5/card.md"
+        }
+      },
+      "card_path": "anthropic--claude-sonnet-5.5/card.md"
+    },
+    {
+      "model_id": "google/gemini-3.1-flash-lite",
+      "directory": "google--gemini-3.1-flash-lite",
+      "generation_group": "earlier",
+      "requested_routing": {
+        "provider_only": [
+          "google-ai-studio/flex"
+        ],
+        "service_tier": "flex",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "observed_routing_verified": false
+      },
+      "selected_endpoint": {
+        "name": "Google AI Studio | google/gemini-3.1-flash-lite-20260507",
+        "model_id": "google/gemini-3.1-flash-lite",
+        "model_name": "Google: Gemini 3.1 Flash Lite",
+        "context_length": 1048576,
+        "pricing": {
+          "prompt": "0.000000125",
+          "completion": "0.00000075",
+          "image": "0.000000125",
+          "audio": "0.00000025",
+          "input_audio_cache": "0.000000025",
+          "web_search": "0.014",
+          "internal_reasoning": "0.00000075",
+          "input_cache_read": "0.0000000125",
+          "input_cache_write": "0.0000000416666666666667",
+          "discount": 0
+        },
+        "provider_name": "Google AI Studio",
+        "tag": "google-ai-studio/flex",
+        "service_tier": "flex",
+        "quantization": "unknown",
+        "max_completion_tokens": 65536,
+        "max_prompt_tokens": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "response_format",
+          "structured_outputs",
+          "tool_choice",
+          "tools",
+          "reasoning_effort"
+        ],
+        "supports_tool_choice": {
+          "none": true,
+          "auto": true,
+          "required": true,
+          "function": true
+        },
+        "status": 0,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100,
+        "uptime_last_1d": 100,
+        "supports_implicit_caching": false,
+        "native_tools": {
+          "openrouter:web_search": {
+            "type": "google_search"
+          }
+        },
+        "supports_voice_cloning": false,
+        "supports_multiple_audio_references": false,
+        "supports_image_reference": false,
+        "supports_diarization": false,
+        "latency_last_30m": null,
+        "throughput_last_30m": null
+      },
+      "files": {
+        "model.json": {
+          "bytes": 2190,
+          "sha256": "9d0d2b2f05eb6e3fe0e8c5536fb23940e8d769f4156cc8add6cd92bf39a9172b",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models",
+            "resolved_url": "https://openrouter.ai/api/v1/models",
+            "fetched_at_utc": "2026-11-06T02:33:24.970324+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 814090,
+            "sha256": "b1ff51c3ba8c6d91c08425c86769c084033598abd9f40a9d23c9c3ac3586acf6"
+          },
+          "path": "google--gemini-3.1-flash-lite/model.json"
+        },
+        "endpoints.json": {
+          "bytes": 10537,
+          "sha256": "8a42f9c9da4345d5fc142ba068ed18e31489eea9137eff3922042fdf1e52898d",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models/google/gemini-3.1-flash-lite/endpoints",
+            "resolved_url": "https://openrouter.ai/api/v1/models/google/gemini-3.1-flash-lite/endpoints",
+            "fetched_at_utc": "2026-11-06T02:33:25.534493+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT"
+            },
+            "bytes": 10537,
+            "sha256": "8a42f9c9da4345d5fc142ba068ed18e31489eea9137eff3922042fdf1e52898d"
+          },
+          "path": "google--gemini-3.1-flash-lite/endpoints-8a42f9c9da43.json"
+        },
+        "manufacturer-model-card.html": {
+          "bytes": 154185,
+          "sha256": "7c82d2304c3dd4ae922f094bddcda8188e47d575eb04642fa39abed3d405b414",
+          "source": {
+            "url": "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/",
+            "resolved_url": "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/",
+            "fetched_at_utc": "2026-11-06T02:33:26.298350+00:00",
+            "http_status": 200,
+            "content_type": "text/html",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT",
+              "ETag": "\"4Q_AzA\""
+            },
+            "bytes": 154185,
+            "sha256": "7c82d2304c3dd4ae922f094bddcda8188e47d575eb04642fa39abed3d405b414"
+          },
+          "document_scope": "Manufacturer model card",
+          "path": "google--gemini-3.1-flash-lite/manufacturer-model-card.html"
+        },
+        "model-card.pdf": {
+          "bytes": 331126,
+          "sha256": "72730fbcf1b1864afa8245f53644173da025a6f192a77cd6f9fcb33353982d56",
+          "source": {
+            "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Lite-Model-Card.pdf",
+            "resolved_url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Lite-Model-Card.pdf",
+            "fetched_at_utc": "2026-11-06T02:33:26.272214+00:00",
+            "http_status": 200,
+            "content_type": "application/pdf",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT",
+              "ETag": "\"99e4817ad6625b55eebb6253c544604f\"",
+              "Last-Modified": "Tue, 19 May 2026 17:00:29 GMT"
+            },
+            "bytes": 331126,
+            "sha256": "72730fbcf1b1864afa8245f53644173da025a6f192a77cd6f9fcb33353982d56"
+          },
+          "document_scope": "Manufacturer model card PDF",
+          "path": "google--gemini-3.1-flash-lite/model-card.pdf"
+        },
+        "card.md": {
+          "bytes": 1278,
+          "sha256": "118a223e4e22739dfdfa64b9526df57e15a0f465fc7db225969776923b602b09",
+          "path": "google--gemini-3.1-flash-lite/card-118a223e4e22.md"
+        }
+      },
+      "card_path": "google--gemini-3.1-flash-lite/card-118a223e4e22.md"
+    },
+    {
+      "model_id": "google/gemini-3.5-flash-lite",
+      "directory": "google--gemini-3.5-flash-lite",
+      "generation_group": "later",
+      "requested_routing": {
+        "provider_only": [
+          "google-ai-studio/flex"
+        ],
+        "service_tier": "flex",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "observed_routing_verified": false
+      },
+      "selected_endpoint": {
+        "name": "Google AI Studio | google/gemini-3.5-flash-lite-20260721",
+        "model_id": "google/gemini-3.5-flash-lite",
+        "model_name": "Google: Gemini 3.5 Flash Lite",
+        "context_length": 1048576,
+        "pricing": {
+          "prompt": "0.00000015",
+          "completion": "0.00000125",
+          "image": "0.00000015",
+          "audio": "0.00000015",
+          "input_audio_cache": "0.000000015",
+          "web_search": "0.014",
+          "internal_reasoning": "0.00000125",
+          "input_cache_read": "0.000000015",
+          "input_cache_write": "0.0000000416666666666667",
+          "discount": 0
+        },
+        "provider_name": "Google AI Studio",
+        "tag": "google-ai-studio/flex",
+        "service_tier": "flex",
+        "quantization": "unknown",
+        "max_completion_tokens": 65536,
+        "max_prompt_tokens": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "response_format",
+          "structured_outputs",
+          "tool_choice",
+          "tools",
+          "reasoning_effort"
+        ],
+        "supports_tool_choice": {
+          "none": true,
+          "auto": true,
+          "required": true,
+          "function": true
+        },
+        "status": 0,
+        "uptime_last_30m": 100,
+        "uptime_last_5m": 100,
+        "uptime_last_1d": 100,
+        "supports_implicit_caching": false,
+        "native_tools": {
+          "openrouter:web_search": {
+            "type": "google_search"
+          }
+        },
+        "supports_voice_cloning": false,
+        "supports_multiple_audio_references": false,
+        "supports_image_reference": false,
+        "supports_diarization": false,
+        "latency_last_30m": null,
+        "throughput_last_30m": null
+      },
+      "files": {
+        "model.json": {
+          "bytes": 2314,
+          "sha256": "f3817fe53f32ace41bc92470b7e419d4dfb111efa485e363609906e1c0c65bc2",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models",
+            "resolved_url": "https://openrouter.ai/api/v1/models",
+            "fetched_at_utc": "2026-11-06T02:33:24.970324+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:24 GMT"
+            },
+            "bytes": 814090,
+            "sha256": "b1ff51c3ba8c6d91c08425c86769c084033598abd9f40a9d23c9c3ac3586acf6"
+          },
+          "path": "google--gemini-3.5-flash-lite/model.json"
+        },
+        "endpoints.json": {
+          "bytes": 10340,
+          "sha256": "ac2ec4aa5e804c1bb3704b794ae3bc0c3c7c81be1d42c3e832f497dfe08e5a55",
+          "source": {
+            "url": "https://openrouter.ai/api/v1/models/google/gemini-3.5-flash-lite/endpoints",
+            "resolved_url": "https://openrouter.ai/api/v1/models/google/gemini-3.5-flash-lite/endpoints",
+            "fetched_at_utc": "2026-11-06T02:33:25.966581+00:00",
+            "http_status": 200,
+            "content_type": "application/json",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT"
+            },
+            "bytes": 10340,
+            "sha256": "ac2ec4aa5e804c1bb3704b794ae3bc0c3c7c81be1d42c3e832f497dfe08e5a55"
+          },
+          "path": "google--gemini-3.5-flash-lite/endpoints.json"
+        },
+        "manufacturer-model-card.html": {
+          "bytes": 153571,
+          "sha256": "2db0d4e59d77d55863fe4446e2367f8f390d37e4b134a08ad6f406cb0a1b5cb4",
+          "source": {
+            "url": "https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/",
+            "resolved_url": "https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/",
+            "fetched_at_utc": "2026-11-06T02:33:26.559830+00:00",
+            "http_status": 200,
+            "content_type": "text/html",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:25 GMT",
+              "ETag": "\"4Q_AzA\""
+            },
+            "bytes": 153571,
+            "sha256": "2db0d4e59d77d55863fe4446e2367f8f390d37e4b134a08ad6f406cb0a1b5cb4"
+          },
+          "document_scope": "Manufacturer model card",
+          "path": "google--gemini-3.5-flash-lite/manufacturer-model-card.html"
+        },
+        "model-card.pdf": {
+          "bytes": 286833,
+          "sha256": "d4d8e79d69377a5d1add81b7833197f3e84dd6ebe983b5d5a39f1530e2052571",
+          "source": {
+            "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-5-Flash-Lite-Model-Card.pdf",
+            "resolved_url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-5-Flash-Lite-Model-Card.pdf",
+            "fetched_at_utc": "2026-11-06T02:33:26.909741+00:00",
+            "http_status": 200,
+            "content_type": "application/pdf",
+            "headers": {
+              "Date": "Fri, 06 Nov 2026 02:33:26 GMT",
+              "ETag": "\"2eaab253c89bc28220e9d66d93146c65\"",
+              "Last-Modified": "Tue, 01 Sep 2026 16:42:57 GMT"
+            },
+            "bytes": 286833,
+            "sha256": "d4d8e79d69377a5d1add81b7833197f3e84dd6ebe983b5d5a39f1530e2052571"
+          },
+          "document_scope": "Manufacturer model card PDF",
+          "path": "google--gemini-3.5-flash-lite/model-card.pdf"
+        },
+        "card.md": {
+          "bytes": 1264,
+          "sha256": "97b9a23a84dcbd872d88f17e459ad802fd7cf385b34589d31c7a807437c96252",
+          "path": "google--gemini-3.5-flash-lite/card.md"
+        }
+      },
+      "card_path": "google--gemini-3.5-flash-lite/card.md"
+    }
+  ],
+  "storage_note": "One shared model directory per model. Reuse files with identical bytes. A changed capture has a content-hash filename. Pilot manifests reference these files without copies."
+}

@@ -36,3 +36,6 @@ uv run --locked transitivity followup --profile pilot3 --prepare-only
 ```
 
 The full corpus is not part of this run.
+
+The run completed. See [the results](pilot3_results.md) for outcomes, retries,
+filters, and incomplete reported costs.
