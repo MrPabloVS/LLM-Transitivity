@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "campaign_id": "c77c2597-242c-4ea2-9d0e-473628d27c40",
+  "created_at_utc": "2026-11-06T02:00:34.969086+00:00",
+  "profile": "haiku",
+  "direct_load_concurrency": 64,
+  "coverage_concurrency": 16,
+  "no_spend_pause": true,
+  "full_corpus_run": false,
+  "planned_responses": 1296,
+  "planned_tasks": 6,
+  "price_estimate_scope": "Full follow-up scenario; continuation runs only load-64",
+  "parent_campaign": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup",
+  "parent_campaign_sha256": "f48b887525a51424994bab2f415572017afa06500869cb1d1a37fb560fd690be",
+  "inherited_reviews": {
+    "preflight": {
+      "path": "inherited-preflight.json",
+      "sha256": "478c06ddd2f9809b26d8116b00093dcda01fa18edae9a6554c77f98deee9449e"
+    },
+    "coverage": {
+      "path": "inherited-coverage.json",
+      "sha256": "a80e3c645b57831fa997b550f9754ed57800c27b715ec5720f2921a6d6b42a9f"
+    }
+  },
+  "omitted_load_levels": {
+    "16": "User requested direct 64-slot load",
+    "32": "User requested direct 64-slot load"
+  },
+  "price_estimate": "results/cost_estimates/2026-11-05_23-00-34-8a731cd6/estimate.json",
+  "price_estimate_sha256": "fe1bc9a403d80d2f6f88d1ca8d41c5794340f2a1a576865e007b254937c7ac16",
+  "stages": [
+    {
+      "name": "load-64",
+      "spec": "load-64/provenance/flow_spec.json",
+      "spec_sha256": "9668e5793c40a33016296166840a08662dcf36a9d3c38df0f522a837dbda796b"
+    }
+  ]
+}

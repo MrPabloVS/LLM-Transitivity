@@ -1,0 +1,130 @@
+{
+  "eval_set_id": "f3BD6Rb8xsitdddAXLHiFC",
+  "tasks": [
+    {
+      "name": "zeroShot_load_216",
+      "task_id": "G8fB4E7DNpKMdFS823vgZf",
+      "task_args": {
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-4o-mini",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        }
+      },
+      "sequence": 0
+    },
+    {
+      "name": "zeroShot_load_216",
+      "task_id": "54nvfypZaGAzUMfaFWCfeC",
+      "task_args": {
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/openai/gpt-6-luna",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "openai/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 1
+    },
+    {
+      "name": "zeroShot_load_216",
+      "task_id": "MdCKmK556vFADuZ5wsZPvU",
+      "task_args": {
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-haiku-4.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 2
+    },
+    {
+      "name": "zeroShot_load_216",
+      "task_id": "CTYQcggwQEkw3yRekFC6dX",
+      "task_args": {
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/anthropic/claude-haiku-5.5",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 3
+    },
+    {
+      "name": "zeroShot_load_216",
+      "task_id": "YG8EWVpChiWmhgoK4jBmRe",
+      "task_args": {
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-2.5-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 4
+    },
+    {
+      "name": "zeroShot_load_216",
+      "task_id": "fkpsJyCxLxzkoFCN28t8aW",
+      "task_args": {
+        "root": "/Users/andrestobelem/ws/at/LLM-Transitivity"
+      },
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "model_args": {
+        "stream": false,
+        "max_retries": 0,
+        "provider": {
+          "only": [
+            "google-ai-studio/flex"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true
+        },
+        "reasoning_enabled": false
+      },
+      "sequence": 5
+    }
+  ]
+}

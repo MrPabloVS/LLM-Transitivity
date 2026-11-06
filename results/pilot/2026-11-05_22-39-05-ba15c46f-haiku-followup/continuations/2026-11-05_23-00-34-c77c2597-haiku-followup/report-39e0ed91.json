@@ -1,0 +1,123 @@
+{
+  "campaign_id": "c77c2597-242c-4ea2-9d0e-473628d27c40",
+  "known_cost_usd": 0.110887425,
+  "missing_cost_ids": [
+    "gen-1793929367-lxLvEEskVct5sqa83W2Q",
+    "gen-1793929390-gM6EF1gPD51j2TV3wwBP",
+    "gen-1793929405-1AcASXRYlcDnM2NxpOql",
+    "gen-1793929446-oo0FjEuhXyMZ3iY0lWSy",
+    "gen-1793929482-u4Hhw73Wi0t1xGOEWMP8",
+    "gen-1793929494-DYwU8pf8ZG9WwtOS63UB",
+    "gen-1793930482-fZ68E8DwsI6Wxy25NKWj",
+    "gen-1793930484-xjKcx4ieFkvF7O1bPFgr",
+    "gen-1793930537-im1Mpu9LQprLgbNjg56A",
+    "gen-1793930542-oBPt0pW1AGHE6JLMtWnO",
+    "gen-1793930551-dGZsTpcnkGQ6Yv9RC8J7"
+  ],
+  "comparisons": {
+    "anthropic/claude-haiku-4.5": {
+      "baseline_model": "openrouter/anthropic/claude-sonnet-4.5",
+      "paired_cases": 540,
+      "complete_pairing": true,
+      "paired_agreement": {
+        "(True, True)": 540
+      }
+    },
+    "anthropic/claude-haiku-5.5": {
+      "baseline_model": "openrouter/anthropic/claude-sonnet-5",
+      "paired_cases": 540,
+      "complete_pairing": true,
+      "paired_agreement": {
+        "(True, True)": 403,
+        "(True, False)": 137
+      }
+    }
+  },
+  "projections": {
+    "google/gemini-2.5-flash-lite": {
+      "group": "earlier",
+      "cost_usd": 0.24086,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": 1.3280245833333333,
+      "slow_hours_at64": 1.413731694444445
+    },
+    "google/gemini-3.1-flash-lite": {
+      "group": "later",
+      "cost_usd": 0.615725,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": 1.1905959722222224,
+      "slow_hours_at64": 1.2618070277777775
+    },
+    "openai/gpt-4o-mini": {
+      "group": "earlier",
+      "cost_usd": 0.80391,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": 1.3762275319565667,
+      "slow_hours_at64": 1.4748282819565663
+    },
+    "openai/gpt-6-luna": {
+      "group": "later",
+      "cost_usd": 0.32158,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": 1.4707221073118846,
+      "slow_hours_at64": 1.6334962184229955
+    },
+    "anthropic/claude-haiku-4.5": {
+      "group": "earlier",
+      "cost_usd": 6.563199999999999,
+      "cost_basis": "Haiku 540-case coverage pilot",
+      "central_hours_at64": 1.3637291666666662,
+      "slow_hours_at64": 1.4655578333333332
+    },
+    "anthropic/claude-haiku-5.5": {
+      "group": "later",
+      "cost_usd": null,
+      "cost_basis": "Haiku 540-case coverage pilot",
+      "central_hours_at64": 1.4805412500000001,
+      "slow_hours_at64": 1.5750372222222222
+    }
+  },
+  "groups": {
+    "earlier": {
+      "cost_usd": 7.607969999999999,
+      "central_hours_at64": 4.067981281956566,
+      "slow_hours_at64": 4.354117809734344
+    },
+    "later": {
+      "cost_usd": null,
+      "central_hours_at64": 4.141859329534107,
+      "slow_hours_at64": 4.470340468422995
+    },
+    "all": {
+      "cost_usd": null,
+      "central_hours_at64": 8.209840611490673,
+      "slow_hours_at64": 8.82445827815734
+    }
+  },
+  "load64_validated": true,
+  "load_reasons": {
+    "openai/gpt-4o-mini": [],
+    "openai/gpt-6-luna": [],
+    "anthropic/claude-haiku-4.5": [],
+    "anthropic/claude-haiku-5.5": [],
+    "google/gemini-2.5-flash-lite": [],
+    "google/gemini-3.1-flash-lite": []
+  },
+  "executed_stages": [
+    "preflight",
+    "coverage",
+    "load-64"
+  ],
+  "parent_campaign": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup",
+  "filtered_samples": {
+    "preflight": 0,
+    "coverage": 6,
+    "load-64": 3
+  },
+  "unverified_fields": {
+    "preflight": 0,
+    "coverage": 18,
+    "load-64": 9
+  },
+  "note": "No 16/32 matched load exists. No measured speedup or model replacement is claimed."
+}

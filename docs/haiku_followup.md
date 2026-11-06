@@ -22,20 +22,22 @@ source row numbers that overlap between datasets.
 
 ## Latest execution
 
-The [follow-up results](haiku_followup_results.md) record the completed preflight
-and 1,080 Haiku coverage responses. Six filtered Haiku 5.5 responses omit tier,
-usage, and cost; the first review therefore omitted the direct 64-slot load. The
-known reported campaign cost is USD 0.073634125. Review the unresolved fields
-in the original review. The corrected policy treats confirmed content filters as
-experimental outcomes. They do not block later phases. Missing tier, reasoning
-usage, and cost remain explicitly unverified; contradictory reported values
-still block execution. Filters do not trigger replacement generations.
+The [follow-up results](haiku_followup_results.md) record six preflight responses,
+1,080 coverage responses, and 1,296 load responses. All six models passed the
+direct 64-slot load gate, including observed sample and HTTP peaks of 64. The
+known reported cost is USD 0.110887425; eleven generation IDs have unknown cost.
+
+The first review stopped on missing telemetry for six filtered coverage responses.
+The corrected policy treats confirmed filters as experimental outcomes. Missing
+tier, reasoning usage, and cost remain explicitly unverified; contradictory
+reported values still block execution. Filters do not trigger new generations.
 
 Use `followup --continue-from <campaign> --detach` to derive new reviews from
-saved responses and run only load-64 under a new frozen source snapshot. The
-continuation checks parent snapshots, input bytes, review hashes, and native
-response hashes. It preserves the original stop review and does not repeat
-preflight or coverage. Ordinary `--resume` still requires unchanged source code.
+saved preflight and coverage responses and run only load-64 under a new frozen
+source snapshot. The continuation checks parent snapshots, input bytes, review
+hashes, and native response hashes. It preserves the original stop review.
+Ordinary `--resume` still requires unchanged source code. This continuation has
+already completed; use its explicit directory to resume without new generations.
 
 ## Commands
 

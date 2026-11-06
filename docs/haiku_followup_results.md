@@ -1,8 +1,14 @@
 # Haiku follow-up results and load decision
 
-Status: preflight passed and all 1,080 coverage responses were saved. The coverage
-review stopped the program because six Haiku 5.5 filtered responses omit tier,
-usage, and cost. The 64-slot load was not executed. No 16/32 loads were scheduled.
+Status: preflight, coverage, and the direct 64-slot load are complete. The six
+models passed the load checks, with 216 saved responses each and observed sample
+and HTTP peaks of 64. No 16/32 loads were scheduled.
+
+The first coverage review stopped on six filtered responses with missing telemetry.
+The user clarified that filters must not stop the program. Policy
+`content-filter-outcome-v2` retains them as experimental outcomes with unverified
+fields. A derived continuation reused all saved preflight and coverage responses.
+It froze new source code for load-64 and preserved the original stopped review.
 
 ## What ran
 
@@ -10,9 +16,9 @@ usage, and cost. The 64-slot load was not executed. No 16/32 loads were schedule
 | --- | ---: | ---: | --- |
 | Six-model preflight | 6 | 6 | Passed request and response checks |
 | Two-model Haiku coverage at 16 | 36 | 1,080 | Execution complete; six unverified filtered responses |
-| Six-model load at 64 | 0 of 6 | 0 of 1,296 | Omitted by the technical gate |
+| Six-model load at 64 | 6 | 1,296 | Passed; three filtered responses retained |
 
-All 42 executed tasks have native status `success`, with no final sample execution
+All 48 executed tasks have native status `success`, with no final sample execution
 errors. A successful Inspect task can contain a filtered response. Task execution
 success is distinct from complete experimental verification. No responses were
 regenerated, no provider fallback was used, and no full-corpus run was started.
@@ -36,7 +42,7 @@ other output forms remain separate from source-label agreement. Haiku 5.5 had
 131 disagreements and six filtered responses. Do not fold the filters into `no`
 or exclude them silently from coverage reporting.
 
-## Why the load stopped
+## Original stop and corrected filter policy
 
 The six blocked responses report `finish_reason: content_filter` and native
 reason `refusal`. They contain no usage object and report `service_tier: null`.
@@ -141,10 +147,12 @@ Sample `HS_NS_FU_2000:1476:dba3b1067eac8e36`. Source target `yes`. Provider resu
 
 ## Cost and time projections
 
-Known reported follow-up cost, including preflight: **USD 0.073634125**.
-There were 1,086 captured generation attempts and no generation retries. Six
-generation IDs have no reported cost. This is not an independently reconciled
-account invoice. Read-only metadata refreshes requested no new generations.
+Known reported follow-up cost, including preflight, coverage, and load:
+**USD 0.110887425**. Load added **USD 0.03725330**. The program saved 2,382
+responses in 2,384 captured generation attempts. Eleven generation IDs have
+unknown costs: six coverage filters, three load filters, and two failed Luna
+Flex attempts. No missing charge is treated as zero. These are returned
+charges, not an independently reconciled account invoice.
 
 The complete `earlier` group with Haiku 4.5 projects to **USD 7.61** for
 162,000 responses: USD 6.5632 from Haiku 4.5 plus the observed-cost projections
@@ -156,23 +164,57 @@ coverage charges were scaled by 100 and combined with the four unchanged
 models. It is **not a complete total**: it excludes the unknown charges for
 six filtered Haiku 5.5 cases. No amount is imputed for those records.
 
-**There is no new validated runtime estimate at 64.** The load never started.
-Earlier 6–7 hour figures used unchanged Sonnet latency as an unmeasured scenario;
-they must not be described as observed Haiku throughput or a verified speedup.
+## Observed load at 64
+
+| Model | Samples | Attempts | Failed attempts | Sample / HTTP peak | Samples/min | p90 sample seconds | Known USD |
+| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: |
+| openai/gpt-4o-mini | 216 | 216 | 0 | 64 / 64 | 576.2 | 7.83 | 0.00321270 |
+| openai/gpt-6-luna | 216 | 218 | 2 | 64 / 64 | 385.8 | 8.74 | 0.00128370 |
+| anthropic/claude-haiku-4.5 | 216 | 216 | 0 | 64 / 64 | 578.3 | 7.94 | 0.02620600 |
+| anthropic/claude-haiku-5.5 | 216 | 216 | 0 | 64 / 64 | 532.8 | 7.83 | 0.00313060 |
+| google/gemini-2.5-flash-lite | 216 | 216 | 0 | 64 / 64 | 573.5 | 7.13 | 0.00096180 |
+| google/gemini-3.1-flash-lite | 216 | 216 | 0 | 64 / 64 | 661.6 | 7.08 | 0.00245850 |
+
+All six models met the direct-load gate: complete cases, no final execution
+errors or reported configuration contradictions, at most 5% failed attempts,
+and an observed peak of 64. Luna had two provider errors in HTTP 200 responses
+(2/218 attempts, 0.92%); retries completed both samples. Their costs are unknown.
+Haiku 5.5 returned three filters. Their tier, reasoning usage, and charges remain
+unverified. These were planned load cases, not retries of coverage filters.
+
+The load phase took 167.14 seconds from its start event to its passed review.
+Per-model throughput uses first sample start to last sample completion, and
+sample p90 includes generation, retries, and metadata lookups. It excludes
+phase setup and final archive work. Load answers are excluded from pilot accuracy.
+
+## Full-corpus time at 64
+
+| Design | Responses | Central hours | Slow hours | Complete cost USD |
+| --- | ---: | ---: | ---: | ---: |
+| earlier | 162,000 | 4.07 | 4.35 | 7.61 |
+| later | 162,000 | 4.14 | 4.47 | Unknown |
+| all | 324,000 | 8.21 | 8.82 | Unknown |
+
+These are projections for the Haiku design, with one task active at 64.
+They use two observed load samples per stratum: mean for central, p90 for slow,
+and measured nonnegative task overhead. The slow scenario is not a confidence
+bound. Sustained provider capacity and account rate limits can change runtime.
+No matched 16/32 load exists, so no measured speedup is claimed. These timings
+do not apply automatically to Sonnet.
 
 ## Recommendation
 
-Do not automatically replace the Sonnet pair or declare 64 validated. Haiku 4.5
-is a promising lower-cost candidate on these cases. Haiku 5.5 needs joint review
-because of its lower agreement, filters, and missing refusal telemetry.
+Use 64 samples with one active task for the next jointly approved stage; this
+short load met the stated criteria for all six models. Retain filters as outcomes
+and keep missing telemetry unknown. Do not rewrite source questions, enable
+fallback, or regenerate filtered cases automatically.
 
-The next decision is how to handle provider refusals that omit usage: keep the
-current requirement and stop, or explicitly revise the protocol to retain those
-cases as filtered outcomes with unverified fields. Any revised gate needs a new
-version and tests; historical responses and the stopped review must stay intact.
-Do not reword source questions, enable fallback, or rerun the 540 cases to hide
-the refusals. A future authorized load can use the saved 216-case selection
-without repeating the completed coverage pilot.
+Haiku 4.5 remains a promising lower-cost candidate: it matched all 540 source
+labels at much lower reported cost than Sonnet 4.5. Haiku 5.5 needs joint review
+before replacement because it had 131 disagreements and six coverage filters.
+The default Sonnet profile is unchanged. Do not start the full corpus until
+that model decision is made. A staged earlier-group run is a reasonable option;
+its current projection is USD 7.61 and 4.07–4.35 hours.
 
 For a concurrency comparison, one task at 64 can later be compared with two
 tasks at 32. Inspect limits samples per task, so two tasks at 64 could have
@@ -185,3 +227,11 @@ tasks at 32. Inspect limits samples per task, so two tasks at 64 could have
 - [Coverage review with all cases, conditions, outputs, and log hashes](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/coverage/summary/review-44c59cb9.json).
 - [Read-only metadata refresh for filtered responses](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/postrun-filter-lookups.json).
 - [Event journal, including the omitted load reason](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/events.jsonl).
+
+## Derived continuation evidence
+
+- [Combined report](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/continuations/2026-11-05_23-00-34-c77c2597-haiku-followup/report-39e0ed91.md).
+- [Frozen continuation](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/continuations/2026-11-05_23-00-34-c77c2597-haiku-followup/campaign.json).
+- [Corrected coverage review](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/continuations/2026-11-05_23-00-34-c77c2597-haiku-followup/inherited-coverage.json).
+- [Load review](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/continuations/2026-11-05_23-00-34-c77c2597-haiku-followup/load-64/summary/review-f5129e6d.json).
+- [Continuation events](../results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/continuations/2026-11-05_23-00-34-c77c2597-haiku-followup/events.jsonl).
