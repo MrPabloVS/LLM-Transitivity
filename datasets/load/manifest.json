@@ -1,0 +1,2171 @@
+{
+  "version": 1,
+  "selection": "two lowest record SHA-256 values per pilot stratum; source row breaks ties; retain dataset and source order",
+  "case_count": 216,
+  "strata": 108,
+  "cases_per_stratum": 2,
+  "pilot_manifest_sha256": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+  "cases_sha256": "ca22b99880613b23adb0e274bad20fb49548df5c8cd297219bcfdac3b4666f90",
+  "selected_rows": [
+    {
+      "original_row": 159,
+      "sentence_sha256": "71d3ccef4ed46966f22c3a2ce4f043faa2fe3efba17450f34e5f474ae99dac84",
+      "original_record_sha256": "0063e3685ae334008d949a2b01d8e251dc8c84cda91e0424a29d727c4635d880",
+      "working_record_sha256": "0063e3685ae334008d949a2b01d8e251dc8c84cda91e0424a29d727c4635d880",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:159:71d3ccef4ed46966",
+      "stratum_id": "aae97441d1c88703"
+    },
+    {
+      "original_row": 208,
+      "sentence_sha256": "b2571e8f59a93ef962e16ae17d44daf51608d493230657cbbe2e6d5112c7f5d7",
+      "original_record_sha256": "0048f0ba60a720c30e9a2bdd77aa72ab02b32dfcb61b77fcc2365c1986282f88",
+      "working_record_sha256": "0048f0ba60a720c30e9a2bdd77aa72ab02b32dfcb61b77fcc2365c1986282f88",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:208:b2571e8f59a93ef9",
+      "stratum_id": "aae97441d1c88703"
+    },
+    {
+      "original_row": 649,
+      "sentence_sha256": "2fd08cc3dc9a27e9ed2ee3e48d93da12d16d998480850ab8d4cf156d7092ba01",
+      "original_record_sha256": "00e5db243a3402f435ab84b27f38c0f72a81ebeb2364c4f305f5463d4b542975",
+      "working_record_sha256": "00e5db243a3402f435ab84b27f38c0f72a81ebeb2364c4f305f5463d4b542975",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:649:2fd08cc3dc9a27e9",
+      "stratum_id": "a58b81d51ecd743d"
+    },
+    {
+      "original_row": 818,
+      "sentence_sha256": "7d79613101786e6734547083269fba7f2c31c499702771d840fd9ace5677090e",
+      "original_record_sha256": "00c38bf348048b0e60258551da72dc6039167694646a41b06ac8ab295b804188",
+      "working_record_sha256": "00c38bf348048b0e60258551da72dc6039167694646a41b06ac8ab295b804188",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:818:7d79613101786e67",
+      "stratum_id": "a58b81d51ecd743d"
+    },
+    {
+      "original_row": 1090,
+      "sentence_sha256": "5f1216f9bdd2154e8526ef43667670efeaa4b94ae28a67cc23ecc58d0565131b",
+      "original_record_sha256": "001bee81c95ebae055acd3ae4934c411bf3d37c984dc664af63a3626d97f5729",
+      "working_record_sha256": "001bee81c95ebae055acd3ae4934c411bf3d37c984dc664af63a3626d97f5729",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:1090:5f1216f9bdd2154e",
+      "stratum_id": "c37c8e69da389136"
+    },
+    {
+      "original_row": 1395,
+      "sentence_sha256": "237794278500391dcf29c9eb15aeeeff9217e4265efb7f3108c2f1a313d022da",
+      "original_record_sha256": "00921545a793f8272e727588971507b2c5731704bfa8a469beb6f205d8b8b25b",
+      "working_record_sha256": "00921545a793f8272e727588971507b2c5731704bfa8a469beb6f205d8b8b25b",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:1395:237794278500391d",
+      "stratum_id": "c37c8e69da389136"
+    },
+    {
+      "original_row": 1730,
+      "sentence_sha256": "1032ebb4e14a1bba48c6e64d6786754e9518e89d771affef2fc6d37c000bf75b",
+      "original_record_sha256": "018734c63c72c160fcec889b1bdaff9bac53d2fc9cdff04d0de103b4428af2c8",
+      "working_record_sha256": "018734c63c72c160fcec889b1bdaff9bac53d2fc9cdff04d0de103b4428af2c8",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:1730:1032ebb4e14a1bba",
+      "stratum_id": "317e67166557fa14"
+    },
+    {
+      "original_row": 1945,
+      "sentence_sha256": "83f024ec68d87c47f850f7f04815339f6478a9d5420d39cfc0acd05d9087b549",
+      "original_record_sha256": "010488e3638db6df002366cc18058fccc19882d281cf05dd318a2172712e5082",
+      "working_record_sha256": "010488e3638db6df002366cc18058fccc19882d281cf05dd318a2172712e5082",
+      "dataset": "HS_HF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_HF_FU_20.json",
+      "sample_uid": "HS_HF_FU_2000:1945:83f024ec68d87c47",
+      "stratum_id": "317e67166557fa14"
+    },
+    {
+      "original_row": 182,
+      "sentence_sha256": "b6e97d507def8de6d65c03a7adc2d1fe16e8c2f4f814fe54492af8cd1deb492b",
+      "original_record_sha256": "00da268f9516781a2d922e573f47ed1025e7c0e8b03fe225f432f89e68bb6bd7",
+      "working_record_sha256": "00da268f9516781a2d922e573f47ed1025e7c0e8b03fe225f432f89e68bb6bd7",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:182:b6e97d507def8de6",
+      "stratum_id": "e9d939076fd1a2f9"
+    },
+    {
+      "original_row": 449,
+      "sentence_sha256": "d6d6f83a11c6eb48c03e19996f6045f9e5082ad6ad7d7a40ed3328a78eac32f6",
+      "original_record_sha256": "0028bd22ef659e563f4cb1716c798a960a58537ecf7c5b18addffbcf8c0740a0",
+      "working_record_sha256": "0028bd22ef659e563f4cb1716c798a960a58537ecf7c5b18addffbcf8c0740a0",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:449:d6d6f83a11c6eb48",
+      "stratum_id": "e9d939076fd1a2f9"
+    },
+    {
+      "original_row": 517,
+      "sentence_sha256": "1ec2c581b4cb00bfe131c2a7c96a486f5fbae671ec63f00b82b17955794379e7",
+      "original_record_sha256": "00b0c1799d518841ed672692a4295efbd6a927b0026bb4bd9c44f1d14af61c68",
+      "working_record_sha256": "00b0c1799d518841ed672692a4295efbd6a927b0026bb4bd9c44f1d14af61c68",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:517:1ec2c581b4cb00bf",
+      "stratum_id": "88adbe5307968942"
+    },
+    {
+      "original_row": 689,
+      "sentence_sha256": "cd0952ba7a9e1d598deda02e6194539606ff59ed8b0d147933bc9123b4914978",
+      "original_record_sha256": "00972a98d2409304e4859034d5b3a252f99431adf516b50e51c2692765cafe44",
+      "working_record_sha256": "00972a98d2409304e4859034d5b3a252f99431adf516b50e51c2692765cafe44",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:689:cd0952ba7a9e1d59",
+      "stratum_id": "88adbe5307968942"
+    },
+    {
+      "original_row": 1130,
+      "sentence_sha256": "6718336793146d5e5932ff59f9ed8ec145ba0cb4a829b45e019f714bd580a492",
+      "original_record_sha256": "0040c76061b80b21de48d309104ddba9c48af87ae64b81e9afbca270e5e7616d",
+      "working_record_sha256": "0040c76061b80b21de48d309104ddba9c48af87ae64b81e9afbca270e5e7616d",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:1130:6718336793146d5e",
+      "stratum_id": "28938067df8b6989"
+    },
+    {
+      "original_row": 1363,
+      "sentence_sha256": "87e4f5d0a95e972cd8ed4730a86ddf37f88e57c53a646f50a619218ec8deeab9",
+      "original_record_sha256": "015b74b9c6b531d29b5e2d3a8893c6c62ba5f69c8c6858d534f8d6fefe2589fb",
+      "working_record_sha256": "015b74b9c6b531d29b5e2d3a8893c6c62ba5f69c8c6858d534f8d6fefe2589fb",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:1363:87e4f5d0a95e972c",
+      "stratum_id": "28938067df8b6989"
+    },
+    {
+      "original_row": 1736,
+      "sentence_sha256": "2aacbb187be51e8b03a7742d8e0e117fc5be7886ea75f6d5389875b34caa26aa",
+      "original_record_sha256": "006532a3b63fc7033f3fb5e745ccacd36da23284d3035a0c71b6acd320e4075c",
+      "working_record_sha256": "006532a3b63fc7033f3fb5e745ccacd36da23284d3035a0c71b6acd320e4075c",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:1736:2aacbb187be51e8b",
+      "stratum_id": "cb97b0d0822e631b"
+    },
+    {
+      "original_row": 1764,
+      "sentence_sha256": "25c47ce7c3f64929ed6cd4505d04e90435a54c5c619e33afd7bfcef421cf33cb",
+      "original_record_sha256": "0091a546349a9b3a5ff251d1f602071c990c7076bfbe0b53961c754cb874eada",
+      "working_record_sha256": "0091a546349a9b3a5ff251d1f602071c990c7076bfbe0b53961c754cb874eada",
+      "dataset": "HS_HF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PA_20.json",
+      "sample_uid": "HS_HF_PA_2000:1764:25c47ce7c3f64929",
+      "stratum_id": "cb97b0d0822e631b"
+    },
+    {
+      "original_row": 149,
+      "sentence_sha256": "ba8c300f1be8ac1ba9dc3c16ae83a983943bcb87b89eeb957fb36be79407d8a6",
+      "original_record_sha256": "0029d785618a459d7fbf5f5040f7f869707dba744140ed55ee77767d3e4c979b",
+      "working_record_sha256": "0029d785618a459d7fbf5f5040f7f869707dba744140ed55ee77767d3e4c979b",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:149:ba8c300f1be8ac1b",
+      "stratum_id": "09d1dc727fff411e"
+    },
+    {
+      "original_row": 357,
+      "sentence_sha256": "cee27039837306c517437d06ec528e34b701d5cf396059bb826aa083dfd73488",
+      "original_record_sha256": "00ae4531d85ebd3f459500e77d4ca758e7592485421a5653d1bec1c10be9fcc7",
+      "working_record_sha256": "00ae4531d85ebd3f459500e77d4ca758e7592485421a5653d1bec1c10be9fcc7",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:357:cee27039837306c5",
+      "stratum_id": "09d1dc727fff411e"
+    },
+    {
+      "original_row": 928,
+      "sentence_sha256": "160aecf08f4ce75b26b3f0f49b194832fc25d67d60ef33231ea02357924ad407",
+      "original_record_sha256": "01566381ad9551bfd8e8f2393c06d16ac1ae9524004b439875e081af2b3e82bd",
+      "working_record_sha256": "01566381ad9551bfd8e8f2393c06d16ac1ae9524004b439875e081af2b3e82bd",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:928:160aecf08f4ce75b",
+      "stratum_id": "3671d2c50abf81a2"
+    },
+    {
+      "original_row": 940,
+      "sentence_sha256": "893deecc037c53b14096f70f509cad2476c0b2fd441b6f8602813c131e025b47",
+      "original_record_sha256": "00c4e6d0b73962f425135bc630c7d29c689826fea5764cdec33f287bfd2c9b00",
+      "working_record_sha256": "00c4e6d0b73962f425135bc630c7d29c689826fea5764cdec33f287bfd2c9b00",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:940:893deecc037c53b1",
+      "stratum_id": "3671d2c50abf81a2"
+    },
+    {
+      "original_row": 1320,
+      "sentence_sha256": "9b68f9ee1aa187549acafb33afe79e29a0a594ab31406d883c024c1eab39a244",
+      "original_record_sha256": "01abaffdc8ad2fd8b4bd65381c1609141d396f559ea7ce487667b4825e39ae2b",
+      "working_record_sha256": "01abaffdc8ad2fd8b4bd65381c1609141d396f559ea7ce487667b4825e39ae2b",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:1320:9b68f9ee1aa18754",
+      "stratum_id": "1ca9d2b9890a3057"
+    },
+    {
+      "original_row": 1420,
+      "sentence_sha256": "e9578d3c383e63258e802ee9759b03ad60b7201c67e11204a4600bf793866297",
+      "original_record_sha256": "00d3f8219b2cc76747f6598aee44d8b0ed0053e165c8d73876f5934065517c58",
+      "working_record_sha256": "00d3f8219b2cc76747f6598aee44d8b0ed0053e165c8d73876f5934065517c58",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:1420:e9578d3c383e6325",
+      "stratum_id": "1ca9d2b9890a3057"
+    },
+    {
+      "original_row": 1510,
+      "sentence_sha256": "bd60550ac893cb2ceac496ce9286cd095dc4064e600e160d747d0b5752ccd857",
+      "original_record_sha256": "02aad2ff9ba53d4b1dfd99c85249f868745b5d0c2c129cf6817aa036a79c7033",
+      "working_record_sha256": "02aad2ff9ba53d4b1dfd99c85249f868745b5d0c2c129cf6817aa036a79c7033",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:1510:bd60550ac893cb2c",
+      "stratum_id": "8fbccb89e409155d"
+    },
+    {
+      "original_row": 1956,
+      "sentence_sha256": "c2b6a0a4651d4a35c18ea365e913964e832dddf6c1ecdb3f823f5f44923ad1ad",
+      "original_record_sha256": "004d8af91704188fb40a577507f37501d8854eaef26efeec4d1cf414446710b2",
+      "working_record_sha256": "004d8af91704188fb40a577507f37501d8854eaef26efeec4d1cf414446710b2",
+      "dataset": "HS_HF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_HF_PR_20.json",
+      "sample_uid": "HS_HF_PR_2000:1956:c2b6a0a4651d4a35",
+      "stratum_id": "8fbccb89e409155d"
+    },
+    {
+      "original_row": 178,
+      "sentence_sha256": "d4adec92d9ffd3d5e7a81a301726f97ecca79ea83ed26ad1977e179f77ffbac7",
+      "original_record_sha256": "00aaadc745613357be030b419469e6286660b7282579b38cd231513e25dd1f91",
+      "working_record_sha256": "00aaadc745613357be030b419469e6286660b7282579b38cd231513e25dd1f91",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:178:d4adec92d9ffd3d5",
+      "stratum_id": "cdb46aef9df02667"
+    },
+    {
+      "original_row": 483,
+      "sentence_sha256": "27f9d38869d37b2f55e1f1e84d3b18b4a503a95fd2ccf1b7c90d9140c1581dcd",
+      "original_record_sha256": "00a7110611e09ae44650453ab6f72e86c746ef72916201acc066c7ae99356275",
+      "working_record_sha256": "00a7110611e09ae44650453ab6f72e86c746ef72916201acc066c7ae99356275",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:483:27f9d38869d37b2f",
+      "stratum_id": "cdb46aef9df02667"
+    },
+    {
+      "original_row": 893,
+      "sentence_sha256": "a7d3a1c6ef7f564ff96e3a31478fb9a6185c0ec915d2119bb1a93e58d18b1911",
+      "original_record_sha256": "00e8f891460c8d9db7119fe9e15fff6f0dd952c14658d434d65ff26f418dab5d",
+      "working_record_sha256": "00e8f891460c8d9db7119fe9e15fff6f0dd952c14658d434d65ff26f418dab5d",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:893:a7d3a1c6ef7f564f",
+      "stratum_id": "12dee3b300585795"
+    },
+    {
+      "original_row": 967,
+      "sentence_sha256": "a23ea8818ede5bc1647dbe2385e46304fc28af195681e66d37a81a3658628e59",
+      "original_record_sha256": "00bca7c6ad8d251bb55be3bf25fb27280dc1b4dd259e710fe374a48bcd0cdb24",
+      "working_record_sha256": "00bca7c6ad8d251bb55be3bf25fb27280dc1b4dd259e710fe374a48bcd0cdb24",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:967:a23ea8818ede5bc1",
+      "stratum_id": "12dee3b300585795"
+    },
+    {
+      "original_row": 1113,
+      "sentence_sha256": "8934a3300f37e36e91ad8f5f8fd0d9ee93eb9ddbb9940674b5687f4f936d9c8c",
+      "original_record_sha256": "00921f10d646dba723bedc5c57e525b0496d62243632e8d8e4b08ccbf9af71f7",
+      "working_record_sha256": "00921f10d646dba723bedc5c57e525b0496d62243632e8d8e4b08ccbf9af71f7",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:1113:8934a3300f37e36e",
+      "stratum_id": "02649d4ef4189134"
+    },
+    {
+      "original_row": 1331,
+      "sentence_sha256": "ede5e970efc9817f6c72dee47351e3a9e5c79834917e8cfcc0d720346efd5d8f",
+      "original_record_sha256": "0010e7179468649ae137d9b2bf67763f4aa99ffbe14a0ad1acf11bf53f57ec1f",
+      "working_record_sha256": "0010e7179468649ae137d9b2bf67763f4aa99ffbe14a0ad1acf11bf53f57ec1f",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:1331:ede5e970efc9817f",
+      "stratum_id": "02649d4ef4189134"
+    },
+    {
+      "original_row": 1752,
+      "sentence_sha256": "fc1f6395eb087dba8ebec183f0bac0ce0bf4effc95c2b7387d4adffe1ee846b8",
+      "original_record_sha256": "01153f0b427d2978c666842f421ae7d09104aab1654d7bd028e14f68bec3a455",
+      "working_record_sha256": "01153f0b427d2978c666842f421ae7d09104aab1654d7bd028e14f68bec3a455",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:1752:fc1f6395eb087dba",
+      "stratum_id": "d3a57f05136c92d3"
+    },
+    {
+      "original_row": 1883,
+      "sentence_sha256": "ae975c70056b007a3da2b1a536213c3bca920f1f9f2f28dbd0b454d9e5b767f8",
+      "original_record_sha256": "008903d4834e93be124e3ece26fe0a878112996df6568081d6e918f99a832fa3",
+      "working_record_sha256": "008903d4834e93be124e3ece26fe0a878112996df6568081d6e918f99a832fa3",
+      "dataset": "HS_LF_FU_2000",
+      "pilot_path": "datasets/pilot/HS_LF_FU_20.json",
+      "sample_uid": "HS_LF_FU_2000:1883:ae975c70056b007a",
+      "stratum_id": "d3a57f05136c92d3"
+    },
+    {
+      "original_row": 191,
+      "sentence_sha256": "d5d6539e3af1d02996bdb77c3cc8b8a498629302c5fb0044f5293cbff308f3f3",
+      "original_record_sha256": "00a2fb4ee2f14b540400f274c112397cb257d66a9725289a7690cc176d8ba798",
+      "working_record_sha256": "00a2fb4ee2f14b540400f274c112397cb257d66a9725289a7690cc176d8ba798",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:191:d5d6539e3af1d029",
+      "stratum_id": "276c35c4351455c8"
+    },
+    {
+      "original_row": 412,
+      "sentence_sha256": "15a6108d383706c69ac3f6f6a8eee53b9c21e19f4d8be0c6ae93b60eadde58dd",
+      "original_record_sha256": "01aac288852e1912f3708d85e1bc45c08444858101b4acc42ac7af1cf9882174",
+      "working_record_sha256": "01aac288852e1912f3708d85e1bc45c08444858101b4acc42ac7af1cf9882174",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:412:15a6108d383706c6",
+      "stratum_id": "276c35c4351455c8"
+    },
+    {
+      "original_row": 653,
+      "sentence_sha256": "ff8c92a4c77396e1713d435dbb0320e890d1b66498062a773271c714fd77b176",
+      "original_record_sha256": "00e0a03192889ef55048aeedcce7465809900327fc62c9aee2b16760c19ca052",
+      "working_record_sha256": "00e0a03192889ef55048aeedcce7465809900327fc62c9aee2b16760c19ca052",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:653:ff8c92a4c77396e1",
+      "stratum_id": "28612365f6a1cd64"
+    },
+    {
+      "original_row": 930,
+      "sentence_sha256": "add672ee4c0ca5cbc22f6e06fa4ac3de31121d45279bdbcf5af1c0fbd35ef26a",
+      "original_record_sha256": "00d4ba9aff2a2d435c5f1e9bd663f4c494ad7044c496840c4d8de139b35b1df0",
+      "working_record_sha256": "00d4ba9aff2a2d435c5f1e9bd663f4c494ad7044c496840c4d8de139b35b1df0",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:930:add672ee4c0ca5cb",
+      "stratum_id": "28612365f6a1cd64"
+    },
+    {
+      "original_row": 1059,
+      "sentence_sha256": "6e63d7e9a49fe48fbd112ab5bc5a1f2a153bd44725a8b617412a3259cce9047c",
+      "original_record_sha256": "002208e8efd8f3701e201258e061f8ba42683c4c3abed269485f9b1d8bd6fe02",
+      "working_record_sha256": "002208e8efd8f3701e201258e061f8ba42683c4c3abed269485f9b1d8bd6fe02",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:1059:6e63d7e9a49fe48f",
+      "stratum_id": "ec2bee1e15af9336"
+    },
+    {
+      "original_row": 1096,
+      "sentence_sha256": "77ef88e3309c791a37d70c67bdf388485d9d2f50a2e1f05fe639095260572122",
+      "original_record_sha256": "01e1b9f0be9554bac826d5559ab4a915686a7df6475d2732349e3a14b367c64b",
+      "working_record_sha256": "01e1b9f0be9554bac826d5559ab4a915686a7df6475d2732349e3a14b367c64b",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:1096:77ef88e3309c791a",
+      "stratum_id": "ec2bee1e15af9336"
+    },
+    {
+      "original_row": 1533,
+      "sentence_sha256": "0f7372b9d145ee4d347e3bece0a15ecfa2bd79464b930b5839756a9d586e2acc",
+      "original_record_sha256": "004108ecb78af58817a18e188865e4f57b0e0ef78537e060444109f1bf18a0f3",
+      "working_record_sha256": "004108ecb78af58817a18e188865e4f57b0e0ef78537e060444109f1bf18a0f3",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:1533:0f7372b9d145ee4d",
+      "stratum_id": "4351a5a6831a1d7b"
+    },
+    {
+      "original_row": 1947,
+      "sentence_sha256": "1cbfbbf6766f8f549f79651960376e380b1d5611fa940dde004d51ce623a67ab",
+      "original_record_sha256": "0060f18eb9ba3c1896237fb6b55f331c12c62e598d637045c16a884d38e6af07",
+      "working_record_sha256": "0060f18eb9ba3c1896237fb6b55f331c12c62e598d637045c16a884d38e6af07",
+      "dataset": "HS_LF_PA_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PA_20.json",
+      "sample_uid": "HS_LF_PA_2000:1947:1cbfbbf6766f8f54",
+      "stratum_id": "4351a5a6831a1d7b"
+    },
+    {
+      "original_row": 140,
+      "sentence_sha256": "6f1f5e61f072eb839cacc03d434ff2e7198d4cb94526cd6b2e6f40969563876f",
+      "original_record_sha256": "0dd7b4903c822860c3f51ba77d32f833413ff1566c85c722e120673b8e5772a7",
+      "working_record_sha256": "00aa7a59ad7913e304e8ea6038955b1a848ef63cac9f3a035d77dce7a5d6ea35",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:140:6f1f5e61f072eb83",
+      "stratum_id": "fd2f2bd86159948f"
+    },
+    {
+      "original_row": 297,
+      "sentence_sha256": "26bb35b60235b8c0e94f85724cfd01c8595baaf1f365596edd33080d8d2eb31f",
+      "original_record_sha256": "cbecb3692be1c27f33808d2514d46ee23e01faa6b9e65395615e79950c8e67b8",
+      "working_record_sha256": "00893a0b4a501e87cf8a1d127b6dfc630cbfd51f742039ec18026716bcdf0e76",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:297:26bb35b60235b8c0",
+      "stratum_id": "fd2f2bd86159948f"
+    },
+    {
+      "original_row": 530,
+      "sentence_sha256": "dcc67efd298d39d0dfc922ed45e7b5820866eaa6130ab7d391b9d79482142fcd",
+      "original_record_sha256": "639eff4764c13eb260f4277158894fab66370e6502e61863aa8e96c2cb3b2453",
+      "working_record_sha256": "02c6b858b0e856c3ba4a720f426b769198c1e643973a8aea6dd66fedc7c8dc88",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:530:dcc67efd298d39d0",
+      "stratum_id": "b20a18e485dda6a3"
+    },
+    {
+      "original_row": 617,
+      "sentence_sha256": "5479ec8263a777e974996beabed34a40a0a4e6ae5ab7f9a8d9fa0c5297e59b9a",
+      "original_record_sha256": "b7da89e2b37401f6aebe7b5db74a33f554bf8711faf2ad9db94e705c4a67149d",
+      "working_record_sha256": "02c46f475e11e49bf66d288ec6b87944b31e86fe29663fb035c8dd895b1a6616",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:617:5479ec8263a777e9",
+      "stratum_id": "b20a18e485dda6a3"
+    },
+    {
+      "original_row": 1452,
+      "sentence_sha256": "a55c83dbb07335c4cd1af15e423f54debf0d05a9c3f74a40d9d7b354337a2f16",
+      "original_record_sha256": "06ad37a9631f2a7544ed7aa7aafafc1164cd6b540a1ec3fd04e4dd2f945bfec0",
+      "working_record_sha256": "0020f0c472afbd08ee1c0dd402dc2333fe34a0b1275d2260001434abf6a54a3f",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:1452:a55c83dbb07335c4",
+      "stratum_id": "64a0d7f554c78125"
+    },
+    {
+      "original_row": 1485,
+      "sentence_sha256": "6f46535114232c68aac2141ff86487d85f492e33b4766e1351d59ab251f1b170",
+      "original_record_sha256": "7aa36a289ba7c6e586eb3de79f0a0e86ca5b85e5830c30f4c95ff0a7388690c0",
+      "working_record_sha256": "007d864c5759f121463b8f926699c5b7ac2847d5fcf22305fd8e70f082b61cfa",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:1485:6f46535114232c68",
+      "stratum_id": "64a0d7f554c78125"
+    },
+    {
+      "original_row": 1760,
+      "sentence_sha256": "095c141800d40e55a9745263f12290e4ae82614e1eb28e0df452907979082830",
+      "original_record_sha256": "01b39b086938e748205972fc5e46a0fec5201befd85c9d47af347004fc823230",
+      "working_record_sha256": "01b39b086938e748205972fc5e46a0fec5201befd85c9d47af347004fc823230",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:1760:095c141800d40e55",
+      "stratum_id": "91484d487cbf7f04"
+    },
+    {
+      "original_row": 1980,
+      "sentence_sha256": "3dab05ff7cefb305d20c885d6939906a5d3f22d4b0dbf1bc7b440333539d2104",
+      "original_record_sha256": "0058a07cca9c1e521aef601a27fba2e4043130ec2c45955bb828f5d69811c051",
+      "working_record_sha256": "0058a07cca9c1e521aef601a27fba2e4043130ec2c45955bb828f5d69811c051",
+      "dataset": "HS_LF_PR_2000",
+      "pilot_path": "datasets/pilot/HS_LF_PR_20.json",
+      "sample_uid": "HS_LF_PR_2000:1980:3dab05ff7cefb305",
+      "stratum_id": "91484d487cbf7f04"
+    },
+    {
+      "original_row": 19,
+      "sentence_sha256": "5b061b179c96e7af2396ffbb370478a3b6c49125437f6c2fe00a0f0ad62204f6",
+      "original_record_sha256": "005f601df72017a4a35c984e521e33d3fb75f4398675ded06b6c20f41826e177",
+      "working_record_sha256": "005f601df72017a4a35c984e521e33d3fb75f4398675ded06b6c20f41826e177",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:19:5b061b179c96e7af",
+      "stratum_id": "2e247e119bcac5f0"
+    },
+    {
+      "original_row": 176,
+      "sentence_sha256": "f241efc5ccb998eab6cb443d6cec2721629910ea76bb7ea9550d565a11cf26ec",
+      "original_record_sha256": "00ecc03ab3e637d35275b07abb620e0c414b9fa0eecda8854c4ff33bd57534c3",
+      "working_record_sha256": "00ecc03ab3e637d35275b07abb620e0c414b9fa0eecda8854c4ff33bd57534c3",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:176:f241efc5ccb998ea",
+      "stratum_id": "2e247e119bcac5f0"
+    },
+    {
+      "original_row": 644,
+      "sentence_sha256": "273dc890b17fea73b78207c9a189ed5a902e6eb7d7cc1e5b57c03a0bbd7ed385",
+      "original_record_sha256": "01ea417ae2d088f15226cb0a31135e0b75c53ac902dcb6bb63649e9984bd6542",
+      "working_record_sha256": "01ea417ae2d088f15226cb0a31135e0b75c53ac902dcb6bb63649e9984bd6542",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:644:273dc890b17fea73",
+      "stratum_id": "9ec20a182d15b9aa"
+    },
+    {
+      "original_row": 999,
+      "sentence_sha256": "c2809e31fc609d4d294c1b59655c33c45a6df117d3a9c69d2ac33f299e02233c",
+      "original_record_sha256": "01c6a715ebe4c7e20ff993066aeb693e9bbc6c824ac6b97233cf0c6d1de4f82d",
+      "working_record_sha256": "01c6a715ebe4c7e20ff993066aeb693e9bbc6c824ac6b97233cf0c6d1de4f82d",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:999:c2809e31fc609d4d",
+      "stratum_id": "9ec20a182d15b9aa"
+    },
+    {
+      "original_row": 1352,
+      "sentence_sha256": "308f6e865d78d450f5da82379594c7edfef4fd1ae1a4c32f2613586c2797ca0d",
+      "original_record_sha256": "00a239e275ba46475b216fd63b0152430e163342932bd56201c19931b60865ff",
+      "working_record_sha256": "00a239e275ba46475b216fd63b0152430e163342932bd56201c19931b60865ff",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:1352:308f6e865d78d450",
+      "stratum_id": "a71af80ff1da8bfe"
+    },
+    {
+      "original_row": 1400,
+      "sentence_sha256": "71d6d67baa876f92b4d2020c83f278259e5dd32a7b27618a9cecb5c72c735543",
+      "original_record_sha256": "009bfc92c897fceb99c81510175f91bfa653285e0e3e60da302490123cbec250",
+      "working_record_sha256": "009bfc92c897fceb99c81510175f91bfa653285e0e3e60da302490123cbec250",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:1400:71d6d67baa876f92",
+      "stratum_id": "a71af80ff1da8bfe"
+    },
+    {
+      "original_row": 1792,
+      "sentence_sha256": "fb07a1da52a7d92235cf110bb1c45a763bde369fdf8fcac6b1a143eafc3b13fa",
+      "original_record_sha256": "0014de1855fb2dd97df1cc16e172dc84b314531db40ecc55fbeda9a86a03297f",
+      "working_record_sha256": "0014de1855fb2dd97df1cc16e172dc84b314531db40ecc55fbeda9a86a03297f",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:1792:fb07a1da52a7d922",
+      "stratum_id": "659fbd38f1987fb2"
+    },
+    {
+      "original_row": 1897,
+      "sentence_sha256": "8b93653f946dcaed6654aa5b2c9a9bb5e0e3901746ebfa179ec68a73ae38e41b",
+      "original_record_sha256": "00cd3a4eb71493b6711739818d077d9b56eacc721b507a570a24aafd5ca40ba9",
+      "working_record_sha256": "00cd3a4eb71493b6711739818d077d9b56eacc721b507a570a24aafd5ca40ba9",
+      "dataset": "HS_NS_FU_2000",
+      "pilot_path": "datasets/pilot/HS_NS_FU_20.json",
+      "sample_uid": "HS_NS_FU_2000:1897:8b93653f946dcaed",
+      "stratum_id": "659fbd38f1987fb2"
+    },
+    {
+      "original_row": 105,
+      "sentence_sha256": "aec684a96d5e00cb005861198b89623d714f81741fc4b40f543a381960ccbf27",
+      "original_record_sha256": "004055a6233311842377a68edebb32c5f01609321878723764562e42906ce3c2",
+      "working_record_sha256": "004055a6233311842377a68edebb32c5f01609321878723764562e42906ce3c2",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:105:aec684a96d5e00cb",
+      "stratum_id": "cfb471c763c7fed0"
+    },
+    {
+      "original_row": 376,
+      "sentence_sha256": "e2ab455ae576a1563d4735516041be3335e8a7ebd71fdab4fff163fa430de499",
+      "original_record_sha256": "00bd80d56306167fc56f7afc7320a1127333b17601b94e24e18d1af2a454b17b",
+      "working_record_sha256": "00bd80d56306167fc56f7afc7320a1127333b17601b94e24e18d1af2a454b17b",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:376:e2ab455ae576a156",
+      "stratum_id": "cfb471c763c7fed0"
+    },
+    {
+      "original_row": 741,
+      "sentence_sha256": "6ea134af9870ecfff238c99c7f392543b4efd1a1f22f6eba8ce01a69c01ee999",
+      "original_record_sha256": "0006b307ff8ddb75b1fb16ffdd69b37f70efe5e94e66b42c3bd2c1d82b1cf7a0",
+      "working_record_sha256": "0006b307ff8ddb75b1fb16ffdd69b37f70efe5e94e66b42c3bd2c1d82b1cf7a0",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:741:6ea134af9870ecff",
+      "stratum_id": "f7c7c185f23eabdf"
+    },
+    {
+      "original_row": 800,
+      "sentence_sha256": "be843e1c066a75865441c8a57789562743039ebdb69dde86cc6359bb9f84f1de",
+      "original_record_sha256": "02ec725212b2889c19fc6af24709c14d4841e1948fdfacffd738fe75c91e26e8",
+      "working_record_sha256": "02ec725212b2889c19fc6af24709c14d4841e1948fdfacffd738fe75c91e26e8",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:800:be843e1c066a7586",
+      "stratum_id": "f7c7c185f23eabdf"
+    },
+    {
+      "original_row": 1051,
+      "sentence_sha256": "d8bb144ad90bbc6ee3db2f37d695d74623978aecc9d4d5f41d13f96947152778",
+      "original_record_sha256": "03376ab9c15490e545fc93c6e49e4f2adf6974348ffb9ae677382c9cd0d77d57",
+      "working_record_sha256": "03376ab9c15490e545fc93c6e49e4f2adf6974348ffb9ae677382c9cd0d77d57",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:1051:d8bb144ad90bbc6e",
+      "stratum_id": "186591b1f59bd206"
+    },
+    {
+      "original_row": 1252,
+      "sentence_sha256": "b1d1f6ba3f6578efed58b5daa2cd4a0f8cbf7ece29411ea9e86b22ecce583691",
+      "original_record_sha256": "00d83710a7e071c0843645b6304896a5d1ce96b9465979d4e1be6ea20ebe6374",
+      "working_record_sha256": "00d83710a7e071c0843645b6304896a5d1ce96b9465979d4e1be6ea20ebe6374",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:1252:b1d1f6ba3f6578ef",
+      "stratum_id": "186591b1f59bd206"
+    },
+    {
+      "original_row": 1530,
+      "sentence_sha256": "5f685fd9bbb348b5f08118bb118826dc73fb6271825d22c56b275bdd4ca7cb7e",
+      "original_record_sha256": "011a7807cf5b250b80a611d4e4374e6b217246c043894cad7fb0e7134822999e",
+      "working_record_sha256": "011a7807cf5b250b80a611d4e4374e6b217246c043894cad7fb0e7134822999e",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:1530:5f685fd9bbb348b5",
+      "stratum_id": "3a5ac23a095ba981"
+    },
+    {
+      "original_row": 1748,
+      "sentence_sha256": "a534a9bec33184580ba10512909abc4538c7e5c68dbe11de51585b29a1478309",
+      "original_record_sha256": "015ad64afa9c09f2ff16b2038abd15963d4e4aa7066f5bede9d81b994536119a",
+      "working_record_sha256": "015ad64afa9c09f2ff16b2038abd15963d4e4aa7066f5bede9d81b994536119a",
+      "dataset": "HS_NS_PA_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PA_20.json",
+      "sample_uid": "HS_NS_PA_2000:1748:a534a9bec3318458",
+      "stratum_id": "3a5ac23a095ba981"
+    },
+    {
+      "original_row": 157,
+      "sentence_sha256": "1c18343ac26d9423859543d04fb95cb71522cbce5b8357cac29954fb38488a98",
+      "original_record_sha256": "0040a3f8ef4a5f778218f1abaffde75b2a8105b9eab03a313ce8314859b97f40",
+      "working_record_sha256": "0040a3f8ef4a5f778218f1abaffde75b2a8105b9eab03a313ce8314859b97f40",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:157:1c18343ac26d9423",
+      "stratum_id": "01c8a4d4cf3e0513"
+    },
+    {
+      "original_row": 173,
+      "sentence_sha256": "310db17b135d5eb8d82529b11d4a7bdec8dacebc040c78b29f86adecec18b776",
+      "original_record_sha256": "0076da7c926ea6880f2e4d0e5b9eada447bb2cb0a368f8cee7b0285421b69077",
+      "working_record_sha256": "0076da7c926ea6880f2e4d0e5b9eada447bb2cb0a368f8cee7b0285421b69077",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:173:310db17b135d5eb8",
+      "stratum_id": "01c8a4d4cf3e0513"
+    },
+    {
+      "original_row": 610,
+      "sentence_sha256": "8166d16df1df3dc429dfdd8aca83b0fad386aabb5b4c1feaf527cf2455e0815c",
+      "original_record_sha256": "00a722936e5f643a10f3d5604be7e8b4e0a109417b1f1fbc1794e8ba8772943d",
+      "working_record_sha256": "00a722936e5f643a10f3d5604be7e8b4e0a109417b1f1fbc1794e8ba8772943d",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:610:8166d16df1df3dc4",
+      "stratum_id": "65151de1f9cbbbac"
+    },
+    {
+      "original_row": 702,
+      "sentence_sha256": "90c4029c0f48432562324a9f8dea768790e10f7d9bfa6a28e2b728abea129cb6",
+      "original_record_sha256": "006e211904d498c1f76cd9dac1a74ebbd7b6fc29a9a94ee9d8292fe362d81c57",
+      "working_record_sha256": "006e211904d498c1f76cd9dac1a74ebbd7b6fc29a9a94ee9d8292fe362d81c57",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:702:90c4029c0f484325",
+      "stratum_id": "65151de1f9cbbbac"
+    },
+    {
+      "original_row": 1031,
+      "sentence_sha256": "2607252082769c16925707a5613e6ab41d3a710ed880f53adfdb835252f10803",
+      "original_record_sha256": "0077201c895806a3650804feae737afbb6aa0022ec874d07b7cf6571a7168124",
+      "working_record_sha256": "0077201c895806a3650804feae737afbb6aa0022ec874d07b7cf6571a7168124",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:1031:2607252082769c16",
+      "stratum_id": "ba16f7442e266cd9"
+    },
+    {
+      "original_row": 1438,
+      "sentence_sha256": "6c599aa58628a2d4d3dd05836e3b4d6ecff74935c3f2f542bfbfc603883a7093",
+      "original_record_sha256": "0005db8dca9d6718676c030a7d027c1eb908174e2075d0442799df8768002ecf",
+      "working_record_sha256": "0005db8dca9d6718676c030a7d027c1eb908174e2075d0442799df8768002ecf",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:1438:6c599aa58628a2d4",
+      "stratum_id": "ba16f7442e266cd9"
+    },
+    {
+      "original_row": 1644,
+      "sentence_sha256": "d54a7eb1d02eb751eea8164719cc1f22c1e1f5ae70a7b0c2f6093b6252153842",
+      "original_record_sha256": "00ef07158c511a861c40292e09d914e4ee5c9a1fbcb27c31ede63a5fa1fe0cfa",
+      "working_record_sha256": "00ef07158c511a861c40292e09d914e4ee5c9a1fbcb27c31ede63a5fa1fe0cfa",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:1644:d54a7eb1d02eb751",
+      "stratum_id": "e3d6ef70cec4290b"
+    },
+    {
+      "original_row": 1697,
+      "sentence_sha256": "7425311d89d76c37e2c087b8fcc2cc1a1505fee4c1bb948ba20c2080b82a0de6",
+      "original_record_sha256": "016a8fcaa17da3dd08ffb8ff7d187a821d8fcee7d7908e239cb1ddcabf3c0fe6",
+      "working_record_sha256": "016a8fcaa17da3dd08ffb8ff7d187a821d8fcee7d7908e239cb1ddcabf3c0fe6",
+      "dataset": "HS_NS_PR_2000",
+      "pilot_path": "datasets/pilot/HS_NS_PR_20.json",
+      "sample_uid": "HS_NS_PR_2000:1697:7425311d89d76c37",
+      "stratum_id": "e3d6ef70cec4290b"
+    },
+    {
+      "original_row": 121,
+      "sentence_sha256": "e78c89f7c8c946c51c07001a97d4603094a06f2338a29253d331e8e7b92d930a",
+      "original_record_sha256": "00a921c1e8c0b4718b608b0c98ef160b9a12f1dff33df78476da7681c2254c96",
+      "working_record_sha256": "00a921c1e8c0b4718b608b0c98ef160b9a12f1dff33df78476da7681c2254c96",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:121:e78c89f7c8c946c5",
+      "stratum_id": "db06096fec7c4459"
+    },
+    {
+      "original_row": 174,
+      "sentence_sha256": "c88d81ac96a7b8fdcb315c1e1cb19aafa2330373d38c45e7118d8412aced4669",
+      "original_record_sha256": "0055d5f3517e7969f1ee53f98fab9ad6dbfb822c5686529492802035c20c8273",
+      "working_record_sha256": "0055d5f3517e7969f1ee53f98fab9ad6dbfb822c5686529492802035c20c8273",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:174:c88d81ac96a7b8fd",
+      "stratum_id": "db06096fec7c4459"
+    },
+    {
+      "original_row": 890,
+      "sentence_sha256": "f981b0c7457c9f90d5d78d05747c8b440f67b111d8a3c225c8cea41a679a9c86",
+      "original_record_sha256": "03da47adef73262f02a126edc6fa20d6ab11179774793381c7609946909b7077",
+      "working_record_sha256": "03da47adef73262f02a126edc6fa20d6ab11179774793381c7609946909b7077",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:890:f981b0c7457c9f90",
+      "stratum_id": "d64d74808762efbf"
+    },
+    {
+      "original_row": 945,
+      "sentence_sha256": "0e9c978367de61f1822cc4941509808ff42d20e6eaf441115e9c4ffd11a6d578",
+      "original_record_sha256": "035e7cbcb2903c2c860187ddfa23884d0a12a6153afa797daef9921de7fb8b9a",
+      "working_record_sha256": "035e7cbcb2903c2c860187ddfa23884d0a12a6153afa797daef9921de7fb8b9a",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:945:0e9c978367de61f1",
+      "stratum_id": "d64d74808762efbf"
+    },
+    {
+      "original_row": 1052,
+      "sentence_sha256": "cb41d17c83b0203c567eba70efa021d09a056c5013d5c0536e9c9e1923bf4b92",
+      "original_record_sha256": "0130cfb335dea166b041bbaf5946c8888dd518a1b9e768651e81b8648fb89a51",
+      "working_record_sha256": "0130cfb335dea166b041bbaf5946c8888dd518a1b9e768651e81b8648fb89a51",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:1052:cb41d17c83b0203c",
+      "stratum_id": "c0822d69dd77b700"
+    },
+    {
+      "original_row": 1151,
+      "sentence_sha256": "b982cfd26cb9439769b2480e825981aec772503fe70a287d6a15adacdeb9b27a",
+      "original_record_sha256": "00f03dde3f82c4bb8ae4ca926a9453000a5dd7f29314d1a9a697e7415cfc9d74",
+      "working_record_sha256": "00f03dde3f82c4bb8ae4ca926a9453000a5dd7f29314d1a9a697e7415cfc9d74",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:1151:b982cfd26cb94397",
+      "stratum_id": "c0822d69dd77b700"
+    },
+    {
+      "original_row": 1669,
+      "sentence_sha256": "68430c2a191c2988101652bce560f84e596891e871fa03d9a6bb7e0b90e9df06",
+      "original_record_sha256": "002d9270784a136f44e528fc4291d0d3bb16f5e9b37cbb5d20b2baf5bfc0ee98",
+      "working_record_sha256": "002d9270784a136f44e528fc4291d0d3bb16f5e9b37cbb5d20b2baf5bfc0ee98",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:1669:68430c2a191c2988",
+      "stratum_id": "f2cac50bb4391f2c"
+    },
+    {
+      "original_row": 1687,
+      "sentence_sha256": "bb4ec02b23a0161ac9c8b17946c41adfbfbb45d6e01fa494f9c2768bc2a05948",
+      "original_record_sha256": "00bcce2f7a143fee56d475356fcde0de4308e6af760ce7fb0320d60184086542",
+      "working_record_sha256": "00bcce2f7a143fee56d475356fcde0de4308e6af760ce7fb0320d60184086542",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:1687:bb4ec02b23a0161a",
+      "stratum_id": "f2cac50bb4391f2c"
+    },
+    {
+      "original_row": 2062,
+      "sentence_sha256": "d33a365c578d0e6c29e834b998cb9d7f721f65b90cde32cc3e97d895fe0e614d",
+      "original_record_sha256": "0167ad5f9be6c9314e24d1d086fbf422a5aa11de25655074e4d9225594157ae6",
+      "working_record_sha256": "0167ad5f9be6c9314e24d1d086fbf422a5aa11de25655074e4d9225594157ae6",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:2062:d33a365c578d0e6c",
+      "stratum_id": "4e66fac31069fcae"
+    },
+    {
+      "original_row": 2178,
+      "sentence_sha256": "2ba51d894748243174964d87f0adac719368a279cb734dd9d9ea2dcf73efeab2",
+      "original_record_sha256": "00434bb514446422f79a2411db2b4d204d6638c5b4872ea21ea5f8145869dd91",
+      "working_record_sha256": "00434bb514446422f79a2411db2b4d204d6638c5b4872ea21ea5f8145869dd91",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:2178:2ba51d8947482431",
+      "stratum_id": "4e66fac31069fcae"
+    },
+    {
+      "original_row": 2747,
+      "sentence_sha256": "247eb124924085ccb262f75736d42330cbd5958c76523bf886e67f875084d193",
+      "original_record_sha256": "031155c8affa672bc8a6584c5f90bd732b68b0a530696e3be96bd9232ea2aa5a",
+      "working_record_sha256": "031155c8affa672bc8a6584c5f90bd732b68b0a530696e3be96bd9232ea2aa5a",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:2747:247eb124924085cc",
+      "stratum_id": "a19b60eeac200002"
+    },
+    {
+      "original_row": 2790,
+      "sentence_sha256": "4c8a6b05e8c58ec2a0d795e04cb91cfb83fb9b9ee795531f2993bb303d98af88",
+      "original_record_sha256": "023ffcc8dbdc5dce1b8dc2d0cec66377763318f876a4c396bb8bd406e20c5f87",
+      "working_record_sha256": "023ffcc8dbdc5dce1b8dc2d0cec66377763318f876a4c396bb8bd406e20c5f87",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:2790:4c8a6b05e8c58ec2",
+      "stratum_id": "a19b60eeac200002"
+    },
+    {
+      "original_row": 3251,
+      "sentence_sha256": "47af01ba6a4ba275db0a5e21596b9180ad0dbce9afacf7e5ca7632c29739564b",
+      "original_record_sha256": "0085bbaf04b0b030236193fa37a1d3775c2932e5928c232a59635370a7f948eb",
+      "working_record_sha256": "0085bbaf04b0b030236193fa37a1d3775c2932e5928c232a59635370a7f948eb",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:3251:47af01ba6a4ba275",
+      "stratum_id": "f1e215f2475f507b"
+    },
+    {
+      "original_row": 3463,
+      "sentence_sha256": "d62b99a12723c792c6e71a89cc10f24df36fc748fb2a16cc8cb3958a4d9e8491",
+      "original_record_sha256": "00259ec2c2389bec0e39ce6596f368450f00cd0c8ec1d27a15928c2e3e64badc",
+      "working_record_sha256": "00259ec2c2389bec0e39ce6596f368450f00cd0c8ec1d27a15928c2e3e64badc",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:3463:d62b99a12723c792",
+      "stratum_id": "f1e215f2475f507b"
+    },
+    {
+      "original_row": 3571,
+      "sentence_sha256": "6904f2ebef4bf1b405efe452565e35a548e1f1fa8e26afd93bfe61d64cb4494d",
+      "original_record_sha256": "00bf908e3662b0a22c006c0a017026388bf3a20ee533f7194470922893121155",
+      "working_record_sha256": "00bf908e3662b0a22c006c0a017026388bf3a20ee533f7194470922893121155",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:3571:6904f2ebef4bf1b4",
+      "stratum_id": "bba2d075f4d03055"
+    },
+    {
+      "original_row": 3886,
+      "sentence_sha256": "cc7639576efa85617d3e9d081e7693e76eb70e6d83498156de135de2059e7c41",
+      "original_record_sha256": "007ebf9fdeb2bb66bd5fcce6ba60c505f62f4419b6ff9b01b9298d51ea78392c",
+      "working_record_sha256": "007ebf9fdeb2bb66bd5fcce6ba60c505f62f4419b6ff9b01b9298d51ea78392c",
+      "dataset": "mHS_HF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_FU_40.json",
+      "sample_uid": "mHS_HF_FU_4000:3886:cc7639576efa8561",
+      "stratum_id": "bba2d075f4d03055"
+    },
+    {
+      "original_row": 31,
+      "sentence_sha256": "7397ed4e18408e3e246d1319e9f5077eed65378c1c5c04837549582281bbd7d1",
+      "original_record_sha256": "00517e4c7649bd97df5bfe2803cb3d6682fa983b4d6753b896773321f43a4659",
+      "working_record_sha256": "00517e4c7649bd97df5bfe2803cb3d6682fa983b4d6753b896773321f43a4659",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:31:7397ed4e18408e3e",
+      "stratum_id": "9003d19f25c63366"
+    },
+    {
+      "original_row": 100,
+      "sentence_sha256": "9dafac0fb5b701c31fb43e2465b74e8cdffc7a56dadd6f50b3ca846a8713ea85",
+      "original_record_sha256": "003c6c38207e9d9a1b392dfd23df8d9027f530428f0857c5ff5010ec1d8e65b7",
+      "working_record_sha256": "003c6c38207e9d9a1b392dfd23df8d9027f530428f0857c5ff5010ec1d8e65b7",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:100:9dafac0fb5b701c3",
+      "stratum_id": "9003d19f25c63366"
+    },
+    {
+      "original_row": 574,
+      "sentence_sha256": "17af98617315f1a1696801384b539faf89faa434c2a4801d92159c6bc9ed3e3e",
+      "original_record_sha256": "0084d7bad02d48239d8ede095d20653476d2bd4a2599b861397b0a06de943249",
+      "working_record_sha256": "0084d7bad02d48239d8ede095d20653476d2bd4a2599b861397b0a06de943249",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:574:17af98617315f1a1",
+      "stratum_id": "67ab8cd5c0936eb8"
+    },
+    {
+      "original_row": 686,
+      "sentence_sha256": "5be1277161355902e18f1b056dba462727a8d389ceb40111a02c7611754e744f",
+      "original_record_sha256": "012bb4716529013792ff81f48d705d50d00d8683f2916173e9c60f0194bb0cc1",
+      "working_record_sha256": "012bb4716529013792ff81f48d705d50d00d8683f2916173e9c60f0194bb0cc1",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:686:5be1277161355902",
+      "stratum_id": "67ab8cd5c0936eb8"
+    },
+    {
+      "original_row": 1098,
+      "sentence_sha256": "42983902425dc536321c42d466377ba4aee69de92ac69120406954263725b6c2",
+      "original_record_sha256": "01fa2ffc1826b568a56088327b82f6857a516cd7482e39812205dffba6216af7",
+      "working_record_sha256": "01fa2ffc1826b568a56088327b82f6857a516cd7482e39812205dffba6216af7",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:1098:42983902425dc536",
+      "stratum_id": "b4d2420ecae92e34"
+    },
+    {
+      "original_row": 1133,
+      "sentence_sha256": "c15aeeaf2e98f734c1bed16ae866629d5636b60ba7b996bd5a1e79f31a2bce53",
+      "original_record_sha256": "0159b2a0e46af8445191d8a939a82d8449c8d9a876bf03ff023102d51af5fe8b",
+      "working_record_sha256": "0159b2a0e46af8445191d8a939a82d8449c8d9a876bf03ff023102d51af5fe8b",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:1133:c15aeeaf2e98f734",
+      "stratum_id": "b4d2420ecae92e34"
+    },
+    {
+      "original_row": 1716,
+      "sentence_sha256": "138209445ff32e5b1598e62565f13d0c4ff7319d101a640b16709f591fd72287",
+      "original_record_sha256": "01453c7f3b27fbeaee3be523585602f99cd5a475de70efdd1e10b34787d38a1e",
+      "working_record_sha256": "01453c7f3b27fbeaee3be523585602f99cd5a475de70efdd1e10b34787d38a1e",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:1716:138209445ff32e5b",
+      "stratum_id": "65d24251e6409d4f"
+    },
+    {
+      "original_row": 1859,
+      "sentence_sha256": "990c52194dfd44b0058f71e69be2e458a3a5668a920eede3cd147753aacbba0b",
+      "original_record_sha256": "0196dcd8fc4b8a6a621fe474237240e79f3f76626dd6057acc3b98406e16f2c4",
+      "working_record_sha256": "0196dcd8fc4b8a6a621fe474237240e79f3f76626dd6057acc3b98406e16f2c4",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:1859:990c52194dfd44b0",
+      "stratum_id": "65d24251e6409d4f"
+    },
+    {
+      "original_row": 2108,
+      "sentence_sha256": "835a1a91a629419677a58c43676c63f4adc13a529855ce08087b757e3cfe1f8a",
+      "original_record_sha256": "003fbab25cad9d4e89212f7859c29bf4ae1e68b923d9037b0d4e8bb30ef9bfe1",
+      "working_record_sha256": "003fbab25cad9d4e89212f7859c29bf4ae1e68b923d9037b0d4e8bb30ef9bfe1",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:2108:835a1a91a6294196",
+      "stratum_id": "74e62420cc28b66b"
+    },
+    {
+      "original_row": 2228,
+      "sentence_sha256": "12914b7277f5b6fd73636aebe3fbb15088f9c0fb8a2cf8b3374608f8b6fc64bf",
+      "original_record_sha256": "00e7b6544751c206b5d9a846bb95df13f21587399ffcb4e653963df0c639cc70",
+      "working_record_sha256": "00e7b6544751c206b5d9a846bb95df13f21587399ffcb4e653963df0c639cc70",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:2228:12914b7277f5b6fd",
+      "stratum_id": "74e62420cc28b66b"
+    },
+    {
+      "original_row": 2619,
+      "sentence_sha256": "213e4da81ddef792460439ce6548f48c756a53802b392e4f000533eab19c4144",
+      "original_record_sha256": "003bac6a19b61307e192fda1e48e05724e0e4f81b2ad290ef9ff325d23079fba",
+      "working_record_sha256": "003bac6a19b61307e192fda1e48e05724e0e4f81b2ad290ef9ff325d23079fba",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:2619:213e4da81ddef792",
+      "stratum_id": "153c8bdb0646bd87"
+    },
+    {
+      "original_row": 2829,
+      "sentence_sha256": "b67678f61d2c56ca4f4a6bf27924e0296e33858096c58f5d948c2e63ef64de36",
+      "original_record_sha256": "0026736b115f22efbad2a57aeb93800a327ae2bfac049c1288d584d9ffaf97c8",
+      "working_record_sha256": "0026736b115f22efbad2a57aeb93800a327ae2bfac049c1288d584d9ffaf97c8",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:2829:b67678f61d2c56ca",
+      "stratum_id": "153c8bdb0646bd87"
+    },
+    {
+      "original_row": 3123,
+      "sentence_sha256": "1f247992151acdbf932d32f0c3f9128ae9ab05770dc2fb62dcddd111c63fab29",
+      "original_record_sha256": "005ea040d8a87565c28cbd3199006c411be6a368890814328f952d28d1a8ed94",
+      "working_record_sha256": "005ea040d8a87565c28cbd3199006c411be6a368890814328f952d28d1a8ed94",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:3123:1f247992151acdbf",
+      "stratum_id": "18bb9fd2a508dbb6"
+    },
+    {
+      "original_row": 3278,
+      "sentence_sha256": "91750d72af8b8435e089a71d4c2d73d83bdf07542cf015e6eff0bddd63cb9580",
+      "original_record_sha256": "00596ae432ea461eb2a0dac6ed7f3e9fa4144282dfdbf509cf581d9c4bac5e40",
+      "working_record_sha256": "00596ae432ea461eb2a0dac6ed7f3e9fa4144282dfdbf509cf581d9c4bac5e40",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:3278:91750d72af8b8435",
+      "stratum_id": "18bb9fd2a508dbb6"
+    },
+    {
+      "original_row": 3578,
+      "sentence_sha256": "ed5e576dd9abcf852a50a8e1ac7da372bf58f2f9c323bf5908ddc317a325d267",
+      "original_record_sha256": "0121a6aa7d7166cc605663f1408945e7f4daf89df510766851c5e67a3e99981c",
+      "working_record_sha256": "0121a6aa7d7166cc605663f1408945e7f4daf89df510766851c5e67a3e99981c",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:3578:ed5e576dd9abcf85",
+      "stratum_id": "5ebed69eb5548b93"
+    },
+    {
+      "original_row": 3643,
+      "sentence_sha256": "caa26d03493b63303d57655606908d20527874f7613264eeeb73248e0bcaefb5",
+      "original_record_sha256": "0018a464c5b3032e65b359cd27bcd79ee54ed927252ff4fdbe2dc794d1a094ec",
+      "working_record_sha256": "0018a464c5b3032e65b359cd27bcd79ee54ed927252ff4fdbe2dc794d1a094ec",
+      "dataset": "mHS_HF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PA_40.json",
+      "sample_uid": "mHS_HF_PA_4000:3643:caa26d03493b6330",
+      "stratum_id": "5ebed69eb5548b93"
+    },
+    {
+      "original_row": 452,
+      "sentence_sha256": "d6d463dc4f0acd5b6c565812a07791ef7de9a902b516b7d84ef98007300031da",
+      "original_record_sha256": "02252b73e4d4c3515889911086cb1b4867026264106e8d709dfdd0592ab2b793",
+      "working_record_sha256": "02252b73e4d4c3515889911086cb1b4867026264106e8d709dfdd0592ab2b793",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:452:d6d463dc4f0acd5b",
+      "stratum_id": "a98d3789862da016"
+    },
+    {
+      "original_row": 453,
+      "sentence_sha256": "3868a8dc35c690f7e21b59047c622cf1a3c2e42011686a210020ba0b77a45233",
+      "original_record_sha256": "00e427f9399b6aa44067d85720e50e1b936d96b0655201112d97cd9c9ccf691a",
+      "working_record_sha256": "00e427f9399b6aa44067d85720e50e1b936d96b0655201112d97cd9c9ccf691a",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:453:3868a8dc35c690f7",
+      "stratum_id": "a98d3789862da016"
+    },
+    {
+      "original_row": 561,
+      "sentence_sha256": "171d0bde8a7a9d50f0b894c9e1327c1b3dfacff5db298e5aae127b6b71c4bf6a",
+      "original_record_sha256": "0033ec78494d0a34439602be13f01ea3f4753bbd0731989f9360a36afef33439",
+      "working_record_sha256": "0033ec78494d0a34439602be13f01ea3f4753bbd0731989f9360a36afef33439",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:561:171d0bde8a7a9d50",
+      "stratum_id": "261230db55b0f591"
+    },
+    {
+      "original_row": 906,
+      "sentence_sha256": "91c05727588afedb423179ffc849c7afd60691cee338d4b8d1fce19945044e71",
+      "original_record_sha256": "00515987a5c294957d3986fef94b63b829a9bc3066b0a5218d5ab101af511886",
+      "working_record_sha256": "00515987a5c294957d3986fef94b63b829a9bc3066b0a5218d5ab101af511886",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:906:91c05727588afedb",
+      "stratum_id": "261230db55b0f591"
+    },
+    {
+      "original_row": 1023,
+      "sentence_sha256": "857622bc93fe922565de6519e4839729246e078a4fac61247479460354766275",
+      "original_record_sha256": "02212be75e9bd6931f40c50fabddbcbcb66a81349a949261e71addf03b2ef9b4",
+      "working_record_sha256": "02212be75e9bd6931f40c50fabddbcbcb66a81349a949261e71addf03b2ef9b4",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:1023:857622bc93fe9225",
+      "stratum_id": "ba95d54c94705ba5"
+    },
+    {
+      "original_row": 1186,
+      "sentence_sha256": "d54a8de8fc296dd862edde179d9d9f38538996f15feef766cd8e81f5643cc6d7",
+      "original_record_sha256": "01321d43bc347fbde03f480b9aaec491b3c93d167aa0cfad03f809645aefc90b",
+      "working_record_sha256": "01321d43bc347fbde03f480b9aaec491b3c93d167aa0cfad03f809645aefc90b",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:1186:d54a8de8fc296dd8",
+      "stratum_id": "ba95d54c94705ba5"
+    },
+    {
+      "original_row": 1690,
+      "sentence_sha256": "19383c69be95ef78b93d879619e25074aa214ab71bc756b42c17018e9879a2fd",
+      "original_record_sha256": "008b467e81693724a53c68a3668bcd46763ba7c2ec5b8c51616be79a0d08582e",
+      "working_record_sha256": "008b467e81693724a53c68a3668bcd46763ba7c2ec5b8c51616be79a0d08582e",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:1690:19383c69be95ef78",
+      "stratum_id": "f1d541ad5f9092ad"
+    },
+    {
+      "original_row": 1793,
+      "sentence_sha256": "d8cadfaff0aca0cccc5b621d34d6a88bd17116e0f40e7bfdd78f3c7ebf2f6b09",
+      "original_record_sha256": "008bb9c9d92513bc3a2fe85ab7184288d81ae080950f4553ef5f7e0d8a1d7194",
+      "working_record_sha256": "008bb9c9d92513bc3a2fe85ab7184288d81ae080950f4553ef5f7e0d8a1d7194",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:1793:d8cadfaff0aca0cc",
+      "stratum_id": "f1d541ad5f9092ad"
+    },
+    {
+      "original_row": 2259,
+      "sentence_sha256": "27df36e363e99979c7e081d4860eac63a4770d274a9520b55cddcf9d2b967ce9",
+      "original_record_sha256": "015b227b2327882953f7920e573b47028447b43fa42f5a90c8351895e56ab0ae",
+      "working_record_sha256": "015b227b2327882953f7920e573b47028447b43fa42f5a90c8351895e56ab0ae",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:2259:27df36e363e99979",
+      "stratum_id": "8768a47f64f550c0"
+    },
+    {
+      "original_row": 2385,
+      "sentence_sha256": "ffbfe6419793af6b1eac30fc34c01ae7aa7280b3770cf9f9f57857baeec89b84",
+      "original_record_sha256": "01b412f0a023a5f931c7083196d1a3088c88465448f12f2d8e1c2349a9439aa8",
+      "working_record_sha256": "01b412f0a023a5f931c7083196d1a3088c88465448f12f2d8e1c2349a9439aa8",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:2385:ffbfe6419793af6b",
+      "stratum_id": "8768a47f64f550c0"
+    },
+    {
+      "original_row": 2557,
+      "sentence_sha256": "7f4ba097560d2cc7de79e260cc7d1eb9788cd7d17dd199a2c67e18be4d4592ac",
+      "original_record_sha256": "00f54069a024a57e932a90ac0b0ee04eb2e77a3b9f2beb58c148ad8d10606e9c",
+      "working_record_sha256": "00f54069a024a57e932a90ac0b0ee04eb2e77a3b9f2beb58c148ad8d10606e9c",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:2557:7f4ba097560d2cc7",
+      "stratum_id": "07ce35bfde6ffee9"
+    },
+    {
+      "original_row": 2771,
+      "sentence_sha256": "1e7914a7d55a070e137147f8361a0566aaffa24cd4ad18eaa4379af7a0a138fd",
+      "original_record_sha256": "0015be49bde9ea1a02bb5815185def92679905f4f48282fd5499399d7f73755e",
+      "working_record_sha256": "0015be49bde9ea1a02bb5815185def92679905f4f48282fd5499399d7f73755e",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:2771:1e7914a7d55a070e",
+      "stratum_id": "07ce35bfde6ffee9"
+    },
+    {
+      "original_row": 3172,
+      "sentence_sha256": "6007897cdf560fc9b7c011ed2de6ae77535a55427f726996bcfb8d3fd2a748a7",
+      "original_record_sha256": "0033c851b8f474fb8255cfe7cfd0db2cffbdf2ba39ecd046f7c12dd34c36de72",
+      "working_record_sha256": "0033c851b8f474fb8255cfe7cfd0db2cffbdf2ba39ecd046f7c12dd34c36de72",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:3172:6007897cdf560fc9",
+      "stratum_id": "acd61af18e2203f2"
+    },
+    {
+      "original_row": 3301,
+      "sentence_sha256": "792ce10100049ad4e2003ab3c8c7974ffa35ecf81a3330ba27dc1b5c9db616a1",
+      "original_record_sha256": "01217211a35bb965fbee88666764070f06d902317674ca8b6b789c0035d5d1ed",
+      "working_record_sha256": "01217211a35bb965fbee88666764070f06d902317674ca8b6b789c0035d5d1ed",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:3301:792ce10100049ad4",
+      "stratum_id": "acd61af18e2203f2"
+    },
+    {
+      "original_row": 3621,
+      "sentence_sha256": "b0284f501bf808b91c2118ebbe9ad60f9785119a092de59c4da86971c8e96d7e",
+      "original_record_sha256": "00203eabaef928053706b9c0101fb380f04f3b269946d4f018c3b7b5b75abf58",
+      "working_record_sha256": "00203eabaef928053706b9c0101fb380f04f3b269946d4f018c3b7b5b75abf58",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:3621:b0284f501bf808b9",
+      "stratum_id": "637025361b05c531"
+    },
+    {
+      "original_row": 3801,
+      "sentence_sha256": "1937b2f8e83ffe813ae93dd40da7f14599e8af0415ba32ea01c36723229cfbef",
+      "original_record_sha256": "01087315505485e8662c7227ad69560708f798aca3c15e71fb2499c65b235ee6",
+      "working_record_sha256": "01087315505485e8662c7227ad69560708f798aca3c15e71fb2499c65b235ee6",
+      "dataset": "mHS_HF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_HF_PR_40.json",
+      "sample_uid": "mHS_HF_PR_4000:3801:1937b2f8e83ffe81",
+      "stratum_id": "637025361b05c531"
+    },
+    {
+      "original_row": 21,
+      "sentence_sha256": "f9abcbce920777108a568591049bbc2716c43ca12e68dd0fecf87ecad9460c67",
+      "original_record_sha256": "01424acb0f95c8033d9c7947b17323c37b8b5d3017b3a0b2a08ac3b5551f72bb",
+      "working_record_sha256": "01424acb0f95c8033d9c7947b17323c37b8b5d3017b3a0b2a08ac3b5551f72bb",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:21:f9abcbce92077710",
+      "stratum_id": "1ad4bbb75b6d1455"
+    },
+    {
+      "original_row": 75,
+      "sentence_sha256": "29f78eb2448106211e3836df9bdcd49162db76742492ab87b1fc40e7121e1370",
+      "original_record_sha256": "00ed57bd0acab0d087446099d41058022c4aebd2030023c79689388619c3d7dd",
+      "working_record_sha256": "00ed57bd0acab0d087446099d41058022c4aebd2030023c79689388619c3d7dd",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:75:29f78eb244810621",
+      "stratum_id": "1ad4bbb75b6d1455"
+    },
+    {
+      "original_row": 642,
+      "sentence_sha256": "31f7daf10a1706a356ce9dd25b2c2a8ed39b23c3890476c599e8cdf868fe9ffa",
+      "original_record_sha256": "00c2e7a3970e0427ba701d6bd8a744966bf9d7b8e73babf98df1819c98d20cde",
+      "working_record_sha256": "00c2e7a3970e0427ba701d6bd8a744966bf9d7b8e73babf98df1819c98d20cde",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:642:31f7daf10a1706a3",
+      "stratum_id": "a4509334db763aa5"
+    },
+    {
+      "original_row": 818,
+      "sentence_sha256": "9dff6e75b0b7192f26b3e29cfe40ec7b4d87c05828cf1a6ac4cf1cc66905d06d",
+      "original_record_sha256": "006ec9442902501450c10503536e3c9529a89af70328ce232605434bfaf8ae43",
+      "working_record_sha256": "006ec9442902501450c10503536e3c9529a89af70328ce232605434bfaf8ae43",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:818:9dff6e75b0b7192f",
+      "stratum_id": "a4509334db763aa5"
+    },
+    {
+      "original_row": 1130,
+      "sentence_sha256": "df0f92412b62a9618730b308e622435bcb9698bbf76cec5e04b4f10feaf83f8b",
+      "original_record_sha256": "002c4e2fe9c83a9f923dc116ef6e8736b1822d09299b9babf31a81594915f468",
+      "working_record_sha256": "002c4e2fe9c83a9f923dc116ef6e8736b1822d09299b9babf31a81594915f468",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:1130:df0f92412b62a961",
+      "stratum_id": "91928eca4e92ea08"
+    },
+    {
+      "original_row": 1300,
+      "sentence_sha256": "348d6e47df8a1c0a07e7d06eda189bae8be4ce9e3e116dea837b20a88896edac",
+      "original_record_sha256": "002ff999891fb48eb2a90ab8d74a8d3648effba2337e998ad4785207cb2485fb",
+      "working_record_sha256": "002ff999891fb48eb2a90ab8d74a8d3648effba2337e998ad4785207cb2485fb",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:1300:348d6e47df8a1c0a",
+      "stratum_id": "91928eca4e92ea08"
+    },
+    {
+      "original_row": 1705,
+      "sentence_sha256": "4bf73ae34551254422c285dfeb2847531fbc3e093c44dac7c40d1269d1cc66a2",
+      "original_record_sha256": "0070ade4be6cd5dbf49e581d7bc74ab87a2d1bb99919faeb0e50ad0f53723910",
+      "working_record_sha256": "0070ade4be6cd5dbf49e581d7bc74ab87a2d1bb99919faeb0e50ad0f53723910",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:1705:4bf73ae345512544",
+      "stratum_id": "1fe6e53a4b442754"
+    },
+    {
+      "original_row": 1902,
+      "sentence_sha256": "0890df2b42613aa9e6791088c2bfe9430d608b1bc791eaf74de0996628781f00",
+      "original_record_sha256": "00476e0f1d5210c794c1d64cddafbe445efcd4bd95b25742193c46fe46fbac4b",
+      "working_record_sha256": "00476e0f1d5210c794c1d64cddafbe445efcd4bd95b25742193c46fe46fbac4b",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:1902:0890df2b42613aa9",
+      "stratum_id": "1fe6e53a4b442754"
+    },
+    {
+      "original_row": 2052,
+      "sentence_sha256": "9604e04b2eb8e5fc9011ace11db070abb9060708eb5e1d28e27f4faa06ee012d",
+      "original_record_sha256": "0384ab681c179d34ffbec95c8bdbecb4f5dea97c50c9fce25cc1302017f34a63",
+      "working_record_sha256": "0384ab681c179d34ffbec95c8bdbecb4f5dea97c50c9fce25cc1302017f34a63",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:2052:9604e04b2eb8e5fc",
+      "stratum_id": "f0e6ba2779770421"
+    },
+    {
+      "original_row": 2088,
+      "sentence_sha256": "b450e016484bd5abd87e8a2b005514ab9ba9ef24e1abb25dad4cb73899b030dd",
+      "original_record_sha256": "036f8b18d08f4d203ef3f6afe9fac25016697328f9b52fb087efd4bae6a8b874",
+      "working_record_sha256": "036f8b18d08f4d203ef3f6afe9fac25016697328f9b52fb087efd4bae6a8b874",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:2088:b450e016484bd5ab",
+      "stratum_id": "f0e6ba2779770421"
+    },
+    {
+      "original_row": 2556,
+      "sentence_sha256": "296003a5c74f77b7ac10cf9a9e303d82713537d6ed1dd8d4012ba3a4a2d77c94",
+      "original_record_sha256": "002d273b5c4730940aa5b8f49d3e2d0795d45de2e005f910f0dbd57e50b9524a",
+      "working_record_sha256": "002d273b5c4730940aa5b8f49d3e2d0795d45de2e005f910f0dbd57e50b9524a",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:2556:296003a5c74f77b7",
+      "stratum_id": "d543bcf9e81f0753"
+    },
+    {
+      "original_row": 2903,
+      "sentence_sha256": "f06c470bb6c0bb24b4101f7357d41c739e231c6d9e1ac80d2896c5c6186f487f",
+      "original_record_sha256": "00d649475e1c68e69f437c3f44385a5e154e935b277394c730328e93ff1d8ebc",
+      "working_record_sha256": "00d649475e1c68e69f437c3f44385a5e154e935b277394c730328e93ff1d8ebc",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:2903:f06c470bb6c0bb24",
+      "stratum_id": "d543bcf9e81f0753"
+    },
+    {
+      "original_row": 3262,
+      "sentence_sha256": "29f58b6497b7a1b301f8c5899f4dab68060ff54ac19eef996667d4167ede73ed",
+      "original_record_sha256": "00494920124b95bfc5041d6689c60955e5a8d40756565986cfa219f86c23b91e",
+      "working_record_sha256": "00494920124b95bfc5041d6689c60955e5a8d40756565986cfa219f86c23b91e",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:3262:29f58b6497b7a1b3",
+      "stratum_id": "d1ab0f8d56b2032d"
+    },
+    {
+      "original_row": 3375,
+      "sentence_sha256": "ac66805fbcba8976e9daf00857b906cf35fdc59e4ca5e3f904e21b7d8e6b6a0c",
+      "original_record_sha256": "000d175edd795cee5001516a3794983766db3ce85f2660ec38769bd6251705b0",
+      "working_record_sha256": "000d175edd795cee5001516a3794983766db3ce85f2660ec38769bd6251705b0",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:3375:ac66805fbcba8976",
+      "stratum_id": "d1ab0f8d56b2032d"
+    },
+    {
+      "original_row": 3541,
+      "sentence_sha256": "95d5eb54ceec0a9aa011f994595870cb17204f5ec4684bac142c535422190fd0",
+      "original_record_sha256": "019b80411e649a208c3e45feb602565e28418aeaaedf45afdebefc2bf7cd9b2a",
+      "working_record_sha256": "019b80411e649a208c3e45feb602565e28418aeaaedf45afdebefc2bf7cd9b2a",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:3541:95d5eb54ceec0a9a",
+      "stratum_id": "ea0279d603850e43"
+    },
+    {
+      "original_row": 3722,
+      "sentence_sha256": "8f077174294ce270de117a3af7ccad2e711b5719b15b9c9160e5d7750158008f",
+      "original_record_sha256": "00b7bbddf7cbc7fab18aa8e55b7e6c3f1a23a8e9f190dd2af61f9fc3defafa92",
+      "working_record_sha256": "00b7bbddf7cbc7fab18aa8e55b7e6c3f1a23a8e9f190dd2af61f9fc3defafa92",
+      "dataset": "mHS_LF_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_FU_40.json",
+      "sample_uid": "mHS_LF_FU_4000:3722:8f077174294ce270",
+      "stratum_id": "ea0279d603850e43"
+    },
+    {
+      "original_row": 232,
+      "sentence_sha256": "2f17ee1585a29a4b29efedd105c8a6a4d5dddc02195be71af66d0f4fcebcbc6b",
+      "original_record_sha256": "0063ba6e0156f250640984a8c99aef2fa4f29e42f50ae4e9e50daf7211b1efd8",
+      "working_record_sha256": "0063ba6e0156f250640984a8c99aef2fa4f29e42f50ae4e9e50daf7211b1efd8",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:232:2f17ee1585a29a4b",
+      "stratum_id": "a26c53cc094646b8"
+    },
+    {
+      "original_row": 245,
+      "sentence_sha256": "3de387a391e04f01c59d25b9799655935267896c5e384d55f9cde7123dd3d57a",
+      "original_record_sha256": "0125d934670974a8e6ee0b218113cdb3e3f4d807d5583d364e81e45d5b4ac92b",
+      "working_record_sha256": "0125d934670974a8e6ee0b218113cdb3e3f4d807d5583d364e81e45d5b4ac92b",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:245:3de387a391e04f01",
+      "stratum_id": "a26c53cc094646b8"
+    },
+    {
+      "original_row": 922,
+      "sentence_sha256": "728f604001d1e5b1bc6057b039bfbbe3f482a2748bd73c45ca42220f1dbae646",
+      "original_record_sha256": "0047860eadd440ae5dd375c7a27943cc7e29073110c71dd5704d27c6c679e7bb",
+      "working_record_sha256": "0047860eadd440ae5dd375c7a27943cc7e29073110c71dd5704d27c6c679e7bb",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:922:728f604001d1e5b1",
+      "stratum_id": "0a5865576efb5e22"
+    },
+    {
+      "original_row": 995,
+      "sentence_sha256": "e0efc057ea38c241224f5e9ecc18d29e2a9d1faf39db6f1db683108f22ebb068",
+      "original_record_sha256": "0061296e68fb3c18fec43bbb4094f4c15eb19321846351cc7e1e1faf53e93a8b",
+      "working_record_sha256": "0061296e68fb3c18fec43bbb4094f4c15eb19321846351cc7e1e1faf53e93a8b",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:995:e0efc057ea38c241",
+      "stratum_id": "0a5865576efb5e22"
+    },
+    {
+      "original_row": 1001,
+      "sentence_sha256": "97d0456e149ff23f068b21d0979e7fd55c5f397bf9b6c8ced1c3039c5c471550",
+      "original_record_sha256": "00cd1daccdc53e5c3495838838b8a2dedb48dcc731fd944f7912abd14e92ca5d",
+      "working_record_sha256": "00cd1daccdc53e5c3495838838b8a2dedb48dcc731fd944f7912abd14e92ca5d",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:1001:97d0456e149ff23f",
+      "stratum_id": "72e2ff25d5622707"
+    },
+    {
+      "original_row": 1338,
+      "sentence_sha256": "8926379e6626fae933e8d5f67fcbda7942ca57e6eb920d7b19b020a80c4d5045",
+      "original_record_sha256": "017a40e35d2b88f80776d7073e5e112e633f3b8028f12f756a50772cf41c3473",
+      "working_record_sha256": "017a40e35d2b88f80776d7073e5e112e633f3b8028f12f756a50772cf41c3473",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:1338:8926379e6626fae9",
+      "stratum_id": "72e2ff25d5622707"
+    },
+    {
+      "original_row": 1543,
+      "sentence_sha256": "026a77209e7bfc05d6a2d57e23fdc12fa4ec3df7b6df4f82bed38dba08b3b46f",
+      "original_record_sha256": "010b21b07e2c50cdd280d765b77c43ea4eb030c20d14254315e3eb6243918e61",
+      "working_record_sha256": "010b21b07e2c50cdd280d765b77c43ea4eb030c20d14254315e3eb6243918e61",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:1543:026a77209e7bfc05",
+      "stratum_id": "91b414ea3a96ca85"
+    },
+    {
+      "original_row": 1907,
+      "sentence_sha256": "5442ed5cb2ab13f1c57168f61427b5be69fcd1750836d432d67918f247733c3f",
+      "original_record_sha256": "009a73fb74d22cac15906bb269ced2dfd70edac367be4b3681660ec4e0d8a131",
+      "working_record_sha256": "009a73fb74d22cac15906bb269ced2dfd70edac367be4b3681660ec4e0d8a131",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:1907:5442ed5cb2ab13f1",
+      "stratum_id": "91b414ea3a96ca85"
+    },
+    {
+      "original_row": 2045,
+      "sentence_sha256": "61046a8a881230703987a4c2710f40ea39df1fb4cc25c64c32f7749901d4a2d3",
+      "original_record_sha256": "0122d61c2beeb2d00eaa792f180324030335bfd5666d584bda08cdf70e30ba04",
+      "working_record_sha256": "0122d61c2beeb2d00eaa792f180324030335bfd5666d584bda08cdf70e30ba04",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:2045:61046a8a88123070",
+      "stratum_id": "c31ea5b33f889e14"
+    },
+    {
+      "original_row": 2222,
+      "sentence_sha256": "76adda7f6caf9ba31ba38d4e633ba2eb940c45c2c3a08e04ea8094808a9e8918",
+      "original_record_sha256": "0111c9a1d7b001f3fb6bd9465d00bf077cc43c2df5d22cca6df5181623e6173e",
+      "working_record_sha256": "0111c9a1d7b001f3fb6bd9465d00bf077cc43c2df5d22cca6df5181623e6173e",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:2222:76adda7f6caf9ba3",
+      "stratum_id": "c31ea5b33f889e14"
+    },
+    {
+      "original_row": 2806,
+      "sentence_sha256": "50c11ab55ea021503868ce9f8dc12d0ffb57212d8ade1165c6bdef0c742a15ba",
+      "original_record_sha256": "001d5dbc75b24595708c2bfada9ace1e3577482e659c17f24fd56d551c1e61b8",
+      "working_record_sha256": "001d5dbc75b24595708c2bfada9ace1e3577482e659c17f24fd56d551c1e61b8",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:2806:50c11ab55ea02150",
+      "stratum_id": "ab0fc8d97fb14fb9"
+    },
+    {
+      "original_row": 2848,
+      "sentence_sha256": "5d297ba0548c5191c087c298ce5fc154ec6d0c3aa4f38b3d096f685c255cfeb1",
+      "original_record_sha256": "00725b3d7aa53c0bad3f4456a300007476911afe70057e0eea2ba91d673f25d4",
+      "working_record_sha256": "00725b3d7aa53c0bad3f4456a300007476911afe70057e0eea2ba91d673f25d4",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:2848:5d297ba0548c5191",
+      "stratum_id": "ab0fc8d97fb14fb9"
+    },
+    {
+      "original_row": 3051,
+      "sentence_sha256": "8c68e4a254aa8e7904a4948cd076650522886dd5bebef4679ffd4ab1d1edd2f9",
+      "original_record_sha256": "001331dc08f81378d554a08d42420b4bdd8903b03d15a32854bc3fa0ee3ff8de",
+      "working_record_sha256": "001331dc08f81378d554a08d42420b4bdd8903b03d15a32854bc3fa0ee3ff8de",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:3051:8c68e4a254aa8e79",
+      "stratum_id": "b36c60920576fb39"
+    },
+    {
+      "original_row": 3053,
+      "sentence_sha256": "8f62091a0ba97b5e29ff788b1e19ba1e9012df838da3f3fccab8bcc8653f77e3",
+      "original_record_sha256": "02304eebd87d00bdbb84bf9be2d4d5694e38da65fe2595fab0cd93063a9330f4",
+      "working_record_sha256": "02304eebd87d00bdbb84bf9be2d4d5694e38da65fe2595fab0cd93063a9330f4",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:3053:8f62091a0ba97b5e",
+      "stratum_id": "b36c60920576fb39"
+    },
+    {
+      "original_row": 3667,
+      "sentence_sha256": "28c6f78c66d217c379c01202c3eea3cc9d8e005e83f89fe3d0f89d857d7876ff",
+      "original_record_sha256": "00a3c595ee080d55eea8bd11dc3fc5fab4b71ea9fde5df385813975797462d54",
+      "working_record_sha256": "00a3c595ee080d55eea8bd11dc3fc5fab4b71ea9fde5df385813975797462d54",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:3667:28c6f78c66d217c3",
+      "stratum_id": "ac6d8b4432cf5248"
+    },
+    {
+      "original_row": 3729,
+      "sentence_sha256": "8b265f3ae85c8d129cf8a54e228460d361616035da2b4edea7a9b202909d5bef",
+      "original_record_sha256": "00ba4a692d8efda65fa171f333aa473e95ecadf57c7361043a702fdaccfa3c3e",
+      "working_record_sha256": "00ba4a692d8efda65fa171f333aa473e95ecadf57c7361043a702fdaccfa3c3e",
+      "dataset": "mHS_LF_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PA_40.json",
+      "sample_uid": "mHS_LF_PA_4000:3729:8b265f3ae85c8d12",
+      "stratum_id": "ac6d8b4432cf5248"
+    },
+    {
+      "original_row": 17,
+      "sentence_sha256": "0ae34e2a7daa5a2acd68a7c6b2b3912875c410ea1b5f0b47ceb25072e02bb5a9",
+      "original_record_sha256": "c5e6caf254ef9b51b2fbea2c1ffe13ec0d5d7ea3463d9f6302e078611d5e3473",
+      "working_record_sha256": "03a7611cbb409ce0a53d651ce65589031f6cea52e66c82e41860ff7c2e5d548c",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:17:0ae34e2a7daa5a2a",
+      "stratum_id": "c6f956446083a5d5"
+    },
+    {
+      "original_row": 390,
+      "sentence_sha256": "a3e240aeae1a381eeb4318ae0bb7db172fabef6210431de3a60d4430b79cb60e",
+      "original_record_sha256": "02e0a3b56dcefa3e3e6e41668a6f54f81bc808e1d5fb64ed4be52528de6da112",
+      "working_record_sha256": "022f405e04fc815a3d18a0ebcb7cad9eb200fa2b5b7dd179a8ae89f3e89b964c",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:390:a3e240aeae1a381e",
+      "stratum_id": "c6f956446083a5d5"
+    },
+    {
+      "original_row": 563,
+      "sentence_sha256": "991f1dc08c6a46fe994a09005fafe2b38d26d306df0da32fa20e86e6f4a1efbc",
+      "original_record_sha256": "83b970ab8d41dbda45b21f8bd0b874859d43aae958250601f663755daca8fc96",
+      "working_record_sha256": "00159e7c86217d788435b1d189658d009c5374510eae27b494ec58b9cb2fd5ab",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:563:991f1dc08c6a46fe",
+      "stratum_id": "24d010280f3e8de4"
+    },
+    {
+      "original_row": 626,
+      "sentence_sha256": "be6c74ee1e3bf04cf3eda272453467d60888e604c7ab1d82d7be46085c3137ac",
+      "original_record_sha256": "384f28fc45a7abf35abd96b31f883967bfe6fc5861150b94d3bb9f80f8d987c8",
+      "working_record_sha256": "0022b7211c1982828dfc256b9b84f42115bdb80e5a8a2a8f5df66506e5336436",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:626:be6c74ee1e3bf04c",
+      "stratum_id": "24d010280f3e8de4"
+    },
+    {
+      "original_row": 1015,
+      "sentence_sha256": "2db6157c6285ecf03b0e538a4042d765b14ead29f8bd808bbfe3a15643baec9b",
+      "original_record_sha256": "f8cf9e3039dd25e6fdd661dd95354d378c04c1c9227a7a9959ed20ca4346f4c7",
+      "working_record_sha256": "0104e464e9bb35efd00f20149696caff9a677315c9a4d28d243a7530b2ca7da2",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:1015:2db6157c6285ecf0",
+      "stratum_id": "602028f03371dc3b"
+    },
+    {
+      "original_row": 1402,
+      "sentence_sha256": "0da2c3a5fdc68affa8bdcf4174cca924b88e9f50782cd67a8ff547a620f9b773",
+      "original_record_sha256": "81377c8ae018e68c1381562d0686988d5c3c4d4ab62500cd9cad005355988c07",
+      "working_record_sha256": "00794e6fee69f53ee5a11a3f372408b492cc64ed014a2a34c75493d1e41db535",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:1402:0da2c3a5fdc68aff",
+      "stratum_id": "602028f03371dc3b"
+    },
+    {
+      "original_row": 1694,
+      "sentence_sha256": "f8eef241da78fbc91e33ae288ff68b172c640c0afdbd74178c4d40bc44482081",
+      "original_record_sha256": "fd09ed6fe8b48f722c254da40ec40ff6422e0a8c3eb11c1f4f26be0298fc07e0",
+      "working_record_sha256": "012abb08a3bebe2ccae2c85853c3bbfaca650082335b4c68a1feaaa6d884dbba",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:1694:f8eef241da78fbc9",
+      "stratum_id": "9bc1d4f58849c65c"
+    },
+    {
+      "original_row": 1762,
+      "sentence_sha256": "167738adb5f7016f92b53cae410b332f834613f04a3e740216af4cac5fabdca4",
+      "original_record_sha256": "ab269370d6aec4d2c58784edc31ce5d0a4c95e5e1c14ac9bcacbab8d1da270d4",
+      "working_record_sha256": "00f1f4e974029cd0d6f1dc906491e1fc37a3e43f35c2a17a401ec8095fa50445",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:1762:167738adb5f7016f",
+      "stratum_id": "9bc1d4f58849c65c"
+    },
+    {
+      "original_row": 2127,
+      "sentence_sha256": "ba3926666f21712cb53281ca754a283224b5a67d59861fcba7afc015e36f769c",
+      "original_record_sha256": "65eadc2aebeb0acb94864820f707af5cbdeeedbd65bd3a0cbcd841d906f1df25",
+      "working_record_sha256": "00919e77eaa37d4c0aff42f69f706b4e91d2d2d460e4605489840c8c5119a8cf",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:2127:ba3926666f21712c",
+      "stratum_id": "358dea95683e2ce4"
+    },
+    {
+      "original_row": 2397,
+      "sentence_sha256": "9dea36528c321e3dcf05feddbe27bbf23b56a2a422b5047566883ee3284844c7",
+      "original_record_sha256": "2e2398c850fa85e5dddea9e8e1ed49bf3047e574c72ef1735560b94bf581826a",
+      "working_record_sha256": "004057fbc4db3dcf0c94e96c9034adea13cccd48d7188a1168656315cac3643e",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:2397:9dea36528c321e3d",
+      "stratum_id": "358dea95683e2ce4"
+    },
+    {
+      "original_row": 2790,
+      "sentence_sha256": "2fa86e3f8c4138d6f668a26e91428dc7aaf4273006d858741a0d1629eed1666f",
+      "original_record_sha256": "7b360efac0101567fa49f69148fc20ebedae8678a99b04c53e0d82833e510713",
+      "working_record_sha256": "0083fa0cacd9531f02de8a0621db2265325221656df1d3e2f5f99373d03a23b3",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:2790:2fa86e3f8c4138d6",
+      "stratum_id": "4b05a6fb8c8c8fde"
+    },
+    {
+      "original_row": 2850,
+      "sentence_sha256": "7067462f3f8342cd76fa994b2e306c9c930650071b1951378e84eb9ddd003a5f",
+      "original_record_sha256": "c631016b862ac08f69d48b8cf2b10be71bebec0bd90d4eac93d862d65f893394",
+      "working_record_sha256": "0056e67d04d9a721ed5b8e7237c6d9d00ca59531085baf9fc86e728ede53e167",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:2850:7067462f3f8342cd",
+      "stratum_id": "4b05a6fb8c8c8fde"
+    },
+    {
+      "original_row": 3100,
+      "sentence_sha256": "7975419b67dadd16c2910729434b1c5e5ea8796b31faec38a069063bfac64aeb",
+      "original_record_sha256": "00d4145989e3c9b280e00d0a113fd45a933e02c268f14b72ff79d23c6c8e493a",
+      "working_record_sha256": "00d4145989e3c9b280e00d0a113fd45a933e02c268f14b72ff79d23c6c8e493a",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:3100:7975419b67dadd16",
+      "stratum_id": "a6435af4aa23690f"
+    },
+    {
+      "original_row": 3176,
+      "sentence_sha256": "3ee08b132dfc48ef7be06dd064ece5e7c2a34a69b33567698d3c9c89f5e3b25b",
+      "original_record_sha256": "00d0eb09310b6a52ebf758c3a4f1b64b173a017b6c254c5585e47ac3f82cc2fe",
+      "working_record_sha256": "00d0eb09310b6a52ebf758c3a4f1b64b173a017b6c254c5585e47ac3f82cc2fe",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:3176:3ee08b132dfc48ef",
+      "stratum_id": "a6435af4aa23690f"
+    },
+    {
+      "original_row": 3512,
+      "sentence_sha256": "4db452d9b95a860d9abd71f17e00a17a08039c7bc158d2cb82349185ac6e10b6",
+      "original_record_sha256": "01cc47dff52a89b94d7574767bae1337859303f1d67995737f4b93904b901a23",
+      "working_record_sha256": "01cc47dff52a89b94d7574767bae1337859303f1d67995737f4b93904b901a23",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:3512:4db452d9b95a860d",
+      "stratum_id": "d04bb481d0c92a2b"
+    },
+    {
+      "original_row": 3727,
+      "sentence_sha256": "31039af2018e112761c4dd952b6b92c5135860a425eb4c91600641598309ef7b",
+      "original_record_sha256": "01fdc878656948bd111308d66bf5132dc86f9775b8c89362e4d219a665536417",
+      "working_record_sha256": "01fdc878656948bd111308d66bf5132dc86f9775b8c89362e4d219a665536417",
+      "dataset": "mHS_LF_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_LF_PR_40.json",
+      "sample_uid": "mHS_LF_PR_4000:3727:31039af2018e1127",
+      "stratum_id": "d04bb481d0c92a2b"
+    },
+    {
+      "original_row": 235,
+      "sentence_sha256": "e328d14dc79edfcd5389c27c6894daa4436ee129f2e2d43589283b2adf4b5f74",
+      "original_record_sha256": "004dc5bbe51300a4e275110c0632f3b55fdc656b3a24e23e7be34f63b1275069",
+      "working_record_sha256": "004dc5bbe51300a4e275110c0632f3b55fdc656b3a24e23e7be34f63b1275069",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:235:e328d14dc79edfcd",
+      "stratum_id": "2422f0c032b1e34e"
+    },
+    {
+      "original_row": 252,
+      "sentence_sha256": "c2ebe2bea78e923d68fa7404b86db20f244b63eab4a55f6a77b4069469b7e8bf",
+      "original_record_sha256": "008cc531192a7ff6ebb855b02a1c4eb284b111857f685008bd27e94c37f26111",
+      "working_record_sha256": "008cc531192a7ff6ebb855b02a1c4eb284b111857f685008bd27e94c37f26111",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:252:c2ebe2bea78e923d",
+      "stratum_id": "2422f0c032b1e34e"
+    },
+    {
+      "original_row": 686,
+      "sentence_sha256": "50cde6c01ab9794638e42bcdd42c86d3e94e3c3c6c2a8af0c4d05374f54c33d2",
+      "original_record_sha256": "00b5b0692513c11fde3ea3e540a86a8875f1f40d4b9af926c13091ca2d3a8077",
+      "working_record_sha256": "00b5b0692513c11fde3ea3e540a86a8875f1f40d4b9af926c13091ca2d3a8077",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:686:50cde6c01ab97946",
+      "stratum_id": "74edcc455b94745f"
+    },
+    {
+      "original_row": 855,
+      "sentence_sha256": "4547fbc5bbfe5d87f264e41b147f04edc3007a058f1dd06443bb55aed5c547c9",
+      "original_record_sha256": "00bc0951980807433211af914407a7bb97778ac8f807a505f75a57f348a17759",
+      "working_record_sha256": "00bc0951980807433211af914407a7bb97778ac8f807a505f75a57f348a17759",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:855:4547fbc5bbfe5d87",
+      "stratum_id": "74edcc455b94745f"
+    },
+    {
+      "original_row": 1109,
+      "sentence_sha256": "c941faa3a75504c4e1eb502b4064ce1c748b8b8ba592d8ccd0517c18c54503e8",
+      "original_record_sha256": "002ac96d928cf80fc538f1fec959ac3351cf966b1479add6c9166c368bbb4e25",
+      "working_record_sha256": "002ac96d928cf80fc538f1fec959ac3351cf966b1479add6c9166c368bbb4e25",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:1109:c941faa3a75504c4",
+      "stratum_id": "1b98960221e18c1c"
+    },
+    {
+      "original_row": 1278,
+      "sentence_sha256": "a896bdae14360ba7ac6de8f9b0776b60ff960143a0667bfa66748209362e3cb0",
+      "original_record_sha256": "001cb82bc6a96abe5e45ec8c1bd9bea29830045b0da854bbc67559f46be886d1",
+      "working_record_sha256": "001cb82bc6a96abe5e45ec8c1bd9bea29830045b0da854bbc67559f46be886d1",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:1278:a896bdae14360ba7",
+      "stratum_id": "1b98960221e18c1c"
+    },
+    {
+      "original_row": 1741,
+      "sentence_sha256": "d6235676e71cb7d2f64ce065dc4cb4dfae0e577009afcc510e1590011d47066e",
+      "original_record_sha256": "001ea59196908d978fbffcd01c9e6d6a854a0a0cfcafecb9b0ac4889296179e4",
+      "working_record_sha256": "001ea59196908d978fbffcd01c9e6d6a854a0a0cfcafecb9b0ac4889296179e4",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:1741:d6235676e71cb7d2",
+      "stratum_id": "3cc407a4b913370c"
+    },
+    {
+      "original_row": 1989,
+      "sentence_sha256": "516f89ae20c7683dcc57effe9ac44921b2a7c39bebf01ff2990f05ce2cd4bd85",
+      "original_record_sha256": "024043ea61b6c5867e3fe9f96d403a3d79fc830850cb5cdd2a8282e65e08a450",
+      "working_record_sha256": "024043ea61b6c5867e3fe9f96d403a3d79fc830850cb5cdd2a8282e65e08a450",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:1989:516f89ae20c7683d",
+      "stratum_id": "3cc407a4b913370c"
+    },
+    {
+      "original_row": 2183,
+      "sentence_sha256": "86b57573b4043ff65ede1caa196a55ade9aa17e12a545724f704a39fc7a6c04e",
+      "original_record_sha256": "01921067cbe6fd5dcdfa54e9e2a042382c7fb6013cae39d95a2608cc5813e45a",
+      "working_record_sha256": "01921067cbe6fd5dcdfa54e9e2a042382c7fb6013cae39d95a2608cc5813e45a",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:2183:86b57573b4043ff6",
+      "stratum_id": "ae482d2cfaf756e3"
+    },
+    {
+      "original_row": 2461,
+      "sentence_sha256": "adcc17960a17e59c08a9573f8f5f85f3bcd6df5d8a54bde6154116daad9a9781",
+      "original_record_sha256": "0153bbdc60ba9e51659b720de032db68cb93b97048de3a229a6fc7f8e8950b93",
+      "working_record_sha256": "0153bbdc60ba9e51659b720de032db68cb93b97048de3a229a6fc7f8e8950b93",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:2461:adcc17960a17e59c",
+      "stratum_id": "ae482d2cfaf756e3"
+    },
+    {
+      "original_row": 2829,
+      "sentence_sha256": "92d89a215fd5f7aaf5d1bd26559f6246b9aef93bcca07a6cece599e8e7919fe6",
+      "original_record_sha256": "0245b8bf8b7bffd2f481f56867887cab6398d89c10290139204b0b00458ad0d8",
+      "working_record_sha256": "0245b8bf8b7bffd2f481f56867887cab6398d89c10290139204b0b00458ad0d8",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:2829:92d89a215fd5f7aa",
+      "stratum_id": "83fe61e42f8d177e"
+    },
+    {
+      "original_row": 2971,
+      "sentence_sha256": "d6c9297a705c91ea13339768e6a53390c9e9aae0f05f561e3b8e49fd33e115a4",
+      "original_record_sha256": "01c56fcb9b19e378094f8400d3f438e52efd180747ee4ee70da093d450a6b39f",
+      "working_record_sha256": "01c56fcb9b19e378094f8400d3f438e52efd180747ee4ee70da093d450a6b39f",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:2971:d6c9297a705c91ea",
+      "stratum_id": "83fe61e42f8d177e"
+    },
+    {
+      "original_row": 3394,
+      "sentence_sha256": "80284c0d883bdc95a692f9db1f3e8c4a99dcd7719d33e5b8e2c3292100de1de8",
+      "original_record_sha256": "00a023bc8390a23c61da41b7b3899096ac2e66b4099eb9ecb76499fc84533e35",
+      "working_record_sha256": "00a023bc8390a23c61da41b7b3899096ac2e66b4099eb9ecb76499fc84533e35",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:3394:80284c0d883bdc95",
+      "stratum_id": "7af4b34201ddb16c"
+    },
+    {
+      "original_row": 3443,
+      "sentence_sha256": "3040ee06c7891ba91331adb3ee138a4b6f0c1b52f1f8767351de0dc027cba7d9",
+      "original_record_sha256": "00f526dbff8880759006500de0b7294c1d0b4a6b8af43dd73c10e4f12ec09321",
+      "working_record_sha256": "00f526dbff8880759006500de0b7294c1d0b4a6b8af43dd73c10e4f12ec09321",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:3443:3040ee06c7891ba9",
+      "stratum_id": "7af4b34201ddb16c"
+    },
+    {
+      "original_row": 3589,
+      "sentence_sha256": "fc5dcfc1bb5c24b3c89af617ffe1b95aa3d58eb6c0966df5cd86ef74faba54d4",
+      "original_record_sha256": "006cfe438248c435082e7946d3584d5ceec324ca997060dca7fca7499aacee0e",
+      "working_record_sha256": "006cfe438248c435082e7946d3584d5ceec324ca997060dca7fca7499aacee0e",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:3589:fc5dcfc1bb5c24b3",
+      "stratum_id": "81849eafbea8f53c"
+    },
+    {
+      "original_row": 3963,
+      "sentence_sha256": "db08fff46c0b7a42dc66dbfffef24237b1634839f8bb8ff594bf07ef693f8975",
+      "original_record_sha256": "01f9888b252e79e5d9cffdc08f587345127d92911e11419dbb2f8e4f37d7395a",
+      "working_record_sha256": "01f9888b252e79e5d9cffdc08f587345127d92911e11419dbb2f8e4f37d7395a",
+      "dataset": "mHS_NS_FU_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_FU_40.json",
+      "sample_uid": "mHS_NS_FU_4000:3963:db08fff46c0b7a42",
+      "stratum_id": "81849eafbea8f53c"
+    },
+    {
+      "original_row": 211,
+      "sentence_sha256": "3273d231a8583f7e6b7492836fcd4c2cd2a96855df5486edb97b8d9c40dc512c",
+      "original_record_sha256": "00c6c9d602196bc8e666385a84988c6dcb8d9cdd00480335333c346df446a104",
+      "working_record_sha256": "00c6c9d602196bc8e666385a84988c6dcb8d9cdd00480335333c346df446a104",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:211:3273d231a8583f7e",
+      "stratum_id": "ddd2c9235bad95f1"
+    },
+    {
+      "original_row": 420,
+      "sentence_sha256": "768f90f76147776ee24695572decbf054120f8e90c470c644872dc7e9ca35b0a",
+      "original_record_sha256": "00f508bd314c9dd1dd1b9d691a64d42d1a40951bdbb78fba92578e9bb992525c",
+      "working_record_sha256": "00f508bd314c9dd1dd1b9d691a64d42d1a40951bdbb78fba92578e9bb992525c",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:420:768f90f76147776e",
+      "stratum_id": "ddd2c9235bad95f1"
+    },
+    {
+      "original_row": 595,
+      "sentence_sha256": "b8d257ea673735b8a7d89462c50a191c2136c715da80f4828ac8db76c052cfad",
+      "original_record_sha256": "01821a148941b9c02aff65f62f929d27bdcad719a0a5f009869a8c24f7da9255",
+      "working_record_sha256": "01821a148941b9c02aff65f62f929d27bdcad719a0a5f009869a8c24f7da9255",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:595:b8d257ea673735b8",
+      "stratum_id": "b22efad293bfc2ef"
+    },
+    {
+      "original_row": 820,
+      "sentence_sha256": "52d3ac869bbf9c7573a412cc852621c87174bee2c72a2d415cdf6d4050ad515e",
+      "original_record_sha256": "0080c8a4c998a57c1347544dc5b9bee8044a2476d33537141f9d1782ab44aec9",
+      "working_record_sha256": "0080c8a4c998a57c1347544dc5b9bee8044a2476d33537141f9d1782ab44aec9",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:820:52d3ac869bbf9c75",
+      "stratum_id": "b22efad293bfc2ef"
+    },
+    {
+      "original_row": 1125,
+      "sentence_sha256": "5fa4f66b7a2f5c5b4a62ec3f97dc1fe149f8fba0ec6877d02553f64ba4b0d61c",
+      "original_record_sha256": "009645194e5a244d2c317f880abe81aada58bc6d271f7ec27246ab066847a57c",
+      "working_record_sha256": "009645194e5a244d2c317f880abe81aada58bc6d271f7ec27246ab066847a57c",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:1125:5fa4f66b7a2f5c5b",
+      "stratum_id": "c0cbe391262799c1"
+    },
+    {
+      "original_row": 1390,
+      "sentence_sha256": "b66edbc84e1dfd3a3a8a1db161a2ad24ffb6b853991b608da9709c71b9b3973f",
+      "original_record_sha256": "009bb54f2583bb5aa080e11f8bd2b223185223bedb5388c368a45db5ca014846",
+      "working_record_sha256": "009bb54f2583bb5aa080e11f8bd2b223185223bedb5388c368a45db5ca014846",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:1390:b66edbc84e1dfd3a",
+      "stratum_id": "c0cbe391262799c1"
+    },
+    {
+      "original_row": 1944,
+      "sentence_sha256": "737531f41897e0bdaec7a70a4245538b88a36cf8c020ff8489d1cb9648c56acb",
+      "original_record_sha256": "006466b88a80a238319d1334073c22201275aef5a57566441b50d63362526f55",
+      "working_record_sha256": "006466b88a80a238319d1334073c22201275aef5a57566441b50d63362526f55",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:1944:737531f41897e0bd",
+      "stratum_id": "75e2d31c97ea76b1"
+    },
+    {
+      "original_row": 1945,
+      "sentence_sha256": "6fa1cefbe09d011c967b1754c3118858d655f2c9de0fae6ca93d87ffc1cd830b",
+      "original_record_sha256": "002f6e1e1e41c9d6e17df3911077a5241ae9e986aced59ed51ab66224ccf4858",
+      "working_record_sha256": "002f6e1e1e41c9d6e17df3911077a5241ae9e986aced59ed51ab66224ccf4858",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:1945:6fa1cefbe09d011c",
+      "stratum_id": "75e2d31c97ea76b1"
+    },
+    {
+      "original_row": 2267,
+      "sentence_sha256": "b2dcf0e6419326571872eb2af0c4e68e88b29c3fde650e397f9b6ad8faa4c549",
+      "original_record_sha256": "00767c9f4abaf064240b2f11a425924c21968566b21faa4d20b765f3b8e3e3ff",
+      "working_record_sha256": "00767c9f4abaf064240b2f11a425924c21968566b21faa4d20b765f3b8e3e3ff",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:2267:b2dcf0e641932657",
+      "stratum_id": "44c14dbafb8859a3"
+    },
+    {
+      "original_row": 2480,
+      "sentence_sha256": "66ce7dc5b03716fddc1c8fdaf0e720b8b3890e482968f022d76481057eae4df3",
+      "original_record_sha256": "0072bdccd55e28895b920d2be89d5f52e9b4a33ab7173390bd2dcf53d81d773f",
+      "working_record_sha256": "0072bdccd55e28895b920d2be89d5f52e9b4a33ab7173390bd2dcf53d81d773f",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:2480:66ce7dc5b03716fd",
+      "stratum_id": "44c14dbafb8859a3"
+    },
+    {
+      "original_row": 2883,
+      "sentence_sha256": "5978c0a4af5dfdc39fae051af731370af348aa43bc9aac0b97b517f1b70a1f45",
+      "original_record_sha256": "00afe9131f98d3285716276395d65fc6c1cfe5dbdc56cf62d39db029068a913e",
+      "working_record_sha256": "00afe9131f98d3285716276395d65fc6c1cfe5dbdc56cf62d39db029068a913e",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:2883:5978c0a4af5dfdc3",
+      "stratum_id": "38da6fd8f3871bde"
+    },
+    {
+      "original_row": 2975,
+      "sentence_sha256": "98d4aad99b2f72a8a2969710b5bb6904a15a263f8f6959f3d146b7958bc16cb0",
+      "original_record_sha256": "00449accf0ea9eb9acce842c86ea96997c17a422ccee48602b6e15efed05d9f3",
+      "working_record_sha256": "00449accf0ea9eb9acce842c86ea96997c17a422ccee48602b6e15efed05d9f3",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:2975:98d4aad99b2f72a8",
+      "stratum_id": "38da6fd8f3871bde"
+    },
+    {
+      "original_row": 3305,
+      "sentence_sha256": "5ef83a30e1454b279a38841bad0ca4db5485f8b3e94c0a636b9255bfea1c130c",
+      "original_record_sha256": "003295d17c3cc151620477e5607315dfd197dbd2df8fe7fec897756cb42ca51c",
+      "working_record_sha256": "003295d17c3cc151620477e5607315dfd197dbd2df8fe7fec897756cb42ca51c",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:3305:5ef83a30e1454b27",
+      "stratum_id": "8230ea8d57fea191"
+    },
+    {
+      "original_row": 3472,
+      "sentence_sha256": "12b2d941dcdf1a2eb00ed8ff0284c3c014756d591c705830b1d03af7b68100c8",
+      "original_record_sha256": "016469a9133a1cbf3f8851bdd1ee5026327e693538897a33fc3eeadde8c1d815",
+      "working_record_sha256": "016469a9133a1cbf3f8851bdd1ee5026327e693538897a33fc3eeadde8c1d815",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:3472:12b2d941dcdf1a2e",
+      "stratum_id": "8230ea8d57fea191"
+    },
+    {
+      "original_row": 3950,
+      "sentence_sha256": "68ba042bd3fc7d10eccb57e03062fdf540a5f893840fd9f8ab791bbf0a12cbe1",
+      "original_record_sha256": "005a6069cdc793938fb2bb53fa499309a2b9df953dfb40581227bba18a6cddb1",
+      "working_record_sha256": "005a6069cdc793938fb2bb53fa499309a2b9df953dfb40581227bba18a6cddb1",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:3950:68ba042bd3fc7d10",
+      "stratum_id": "6fb9267cd856af74"
+    },
+    {
+      "original_row": 3990,
+      "sentence_sha256": "d35fb95862ef7635dad072a516faa2c2016842b1c79a0fdacb9a13f20566b943",
+      "original_record_sha256": "00af519acfe5c7a6c6d86daad599f1788f0a11b0d3690676e79251940e4c1f9b",
+      "working_record_sha256": "00af519acfe5c7a6c6d86daad599f1788f0a11b0d3690676e79251940e4c1f9b",
+      "dataset": "mHS_NS_PA_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PA_40.json",
+      "sample_uid": "mHS_NS_PA_4000:3990:d35fb95862ef7635",
+      "stratum_id": "6fb9267cd856af74"
+    },
+    {
+      "original_row": 72,
+      "sentence_sha256": "855f2210205f7de9519e89bd18f02ac8ea711387dbfdfa4ad2dccf7208132bb4",
+      "original_record_sha256": "0039f591ae0cc5dbad287c7141772dcf5e8c0c838f08dc522afc32c281e66706",
+      "working_record_sha256": "0039f591ae0cc5dbad287c7141772dcf5e8c0c838f08dc522afc32c281e66706",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:72:855f2210205f7de9",
+      "stratum_id": "2fbc668f95237690"
+    },
+    {
+      "original_row": 310,
+      "sentence_sha256": "850aa10eabc0974019a3a591968509e5b8e64203080dfd09d74a506ca1787f84",
+      "original_record_sha256": "000ba83a13c575ecc5f39b58e278c05a608b4cd751a92676cf6328ba6518e3cf",
+      "working_record_sha256": "000ba83a13c575ecc5f39b58e278c05a608b4cd751a92676cf6328ba6518e3cf",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:310:850aa10eabc09740",
+      "stratum_id": "2fbc668f95237690"
+    },
+    {
+      "original_row": 960,
+      "sentence_sha256": "c0584201f7bc9dbe336d4b675e1f314c95866d2de9239281b9628a42229ebd21",
+      "original_record_sha256": "00ca525a581a47854fc360ce702874803502a37639271f7bd20cfc69d1c076bd",
+      "working_record_sha256": "00ca525a581a47854fc360ce702874803502a37639271f7bd20cfc69d1c076bd",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:960:c0584201f7bc9dbe",
+      "stratum_id": "83916e935575c5ed"
+    },
+    {
+      "original_row": 998,
+      "sentence_sha256": "89a232f7c05f0198fdbe916da59a3fb7b941d8b03ac89ef89da95ff08ae64b03",
+      "original_record_sha256": "002626604ea24f3f23fe23c414c9ed6db9a09f6314ab22e63cd74ec0257aaa7f",
+      "working_record_sha256": "002626604ea24f3f23fe23c414c9ed6db9a09f6314ab22e63cd74ec0257aaa7f",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:998:89a232f7c05f0198",
+      "stratum_id": "83916e935575c5ed"
+    },
+    {
+      "original_row": 1437,
+      "sentence_sha256": "b916049867c2d3a59be0fd764465531942963409bdce7dec5aa10284870591a8",
+      "original_record_sha256": "003488fac0c410ab3031dc46302cc67b877377f8ca650d84a1fd73bffc0d6e75",
+      "working_record_sha256": "003488fac0c410ab3031dc46302cc67b877377f8ca650d84a1fd73bffc0d6e75",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:1437:b916049867c2d3a5",
+      "stratum_id": "25fdf1b627a0ed95"
+    },
+    {
+      "original_row": 1442,
+      "sentence_sha256": "8dfc47edf8cf926468002903c8f34a5a2840cb3376bb57e2ddbd740d1defe0c1",
+      "original_record_sha256": "01a07b76e81ec917b3275b1ef46d8f35c6a777b6ef0a70d8faa15bf02881f41a",
+      "working_record_sha256": "01a07b76e81ec917b3275b1ef46d8f35c6a777b6ef0a70d8faa15bf02881f41a",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:1442:8dfc47edf8cf9264",
+      "stratum_id": "25fdf1b627a0ed95"
+    },
+    {
+      "original_row": 1850,
+      "sentence_sha256": "43f7b0c918df699e4aba132b4acab9d6fc58b13fccf2c82352e524359f7cde3a",
+      "original_record_sha256": "010e816e1414e4876c943293f3d275a77d0b6e0ada565367dcd694d978ebc7f6",
+      "working_record_sha256": "010e816e1414e4876c943293f3d275a77d0b6e0ada565367dcd694d978ebc7f6",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:1850:43f7b0c918df699e",
+      "stratum_id": "20ae3bc0eacdd20c"
+    },
+    {
+      "original_row": 1890,
+      "sentence_sha256": "3691092752d351bdcf648676d20d3b48a9e13dfde2b7c0f9c1485a5982a31cf2",
+      "original_record_sha256": "015e1a20fe65e3f7cd94e280521e375c2977fdfc0050b1112b05887fd73e228b",
+      "working_record_sha256": "015e1a20fe65e3f7cd94e280521e375c2977fdfc0050b1112b05887fd73e228b",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:1890:3691092752d351bd",
+      "stratum_id": "20ae3bc0eacdd20c"
+    },
+    {
+      "original_row": 2226,
+      "sentence_sha256": "0fd89b3a9db399bd77455cd5d67228c45f4dd6459b8c55e93ee4f794892d4c84",
+      "original_record_sha256": "008c08caa73eed9cc7d8c0fb093a7c28edf764cce913eb702f2714c8291011e8",
+      "working_record_sha256": "008c08caa73eed9cc7d8c0fb093a7c28edf764cce913eb702f2714c8291011e8",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:2226:0fd89b3a9db399bd",
+      "stratum_id": "aed50b64bc87f47d"
+    },
+    {
+      "original_row": 2391,
+      "sentence_sha256": "6e5d8eb608f887a3915ad671b3534c40267eebd376496daae1013ecb5e12dd61",
+      "original_record_sha256": "00a10bc1b90c5236d37d8c937615ca1f06ea5e93b227117833c4d439cde160df",
+      "working_record_sha256": "00a10bc1b90c5236d37d8c937615ca1f06ea5e93b227117833c4d439cde160df",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:2391:6e5d8eb608f887a3",
+      "stratum_id": "aed50b64bc87f47d"
+    },
+    {
+      "original_row": 2525,
+      "sentence_sha256": "07f788cacde32ad1d4fad77a029e6b81884f9083d8b501608581614867b2c2e6",
+      "original_record_sha256": "0006ad17a4fc30e172f6ff9ec562aadeff96607356e7e8346e001d0817c00c58",
+      "working_record_sha256": "0006ad17a4fc30e172f6ff9ec562aadeff96607356e7e8346e001d0817c00c58",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:2525:07f788cacde32ad1",
+      "stratum_id": "eb6647154e6229c2"
+    },
+    {
+      "original_row": 2570,
+      "sentence_sha256": "d53790bd2a86388505a4b84ea9ca35b929d68a82d7e7807a783aae068ef8dbc3",
+      "original_record_sha256": "001db88d6be788ac92049418eda0f6aad250241dd6f95bb259351d10b8d25e72",
+      "working_record_sha256": "001db88d6be788ac92049418eda0f6aad250241dd6f95bb259351d10b8d25e72",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:2570:d53790bd2a863885",
+      "stratum_id": "eb6647154e6229c2"
+    },
+    {
+      "original_row": 3039,
+      "sentence_sha256": "def22b65780e76bc31a4865d9b3890dfb5cbaf5051cfbee04ce09398103e6bd6",
+      "original_record_sha256": "000facb1ecd7a248f0494806fecb9324a650357a0399296082fb34bc414074b3",
+      "working_record_sha256": "000facb1ecd7a248f0494806fecb9324a650357a0399296082fb34bc414074b3",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:3039:def22b65780e76bc",
+      "stratum_id": "bc4b8d93d8fa1371"
+    },
+    {
+      "original_row": 3054,
+      "sentence_sha256": "027781e5c88d4cb8aab0810405370da5812901edc4a0a570213b74919f517fc0",
+      "original_record_sha256": "001456bb85d8c7c31be8da207424a3623851b8ff78486505e793144e0e6831cc",
+      "working_record_sha256": "001456bb85d8c7c31be8da207424a3623851b8ff78486505e793144e0e6831cc",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:3054:027781e5c88d4cb8",
+      "stratum_id": "bc4b8d93d8fa1371"
+    },
+    {
+      "original_row": 3650,
+      "sentence_sha256": "0b4decc6d4c0beddbfbaa45b83d1b4cbb09c798c3ae5bc97bf80ab9542acd8c4",
+      "original_record_sha256": "009023a5d0626ba2ac1444dc9bc234710f10f67e81d186253cb3bc591d5d4ec0",
+      "working_record_sha256": "009023a5d0626ba2ac1444dc9bc234710f10f67e81d186253cb3bc591d5d4ec0",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:3650:0b4decc6d4c0bedd",
+      "stratum_id": "9be114e6e9514651"
+    },
+    {
+      "original_row": 3828,
+      "sentence_sha256": "3e0da0a4c41b8c29edf47bfe6845c577f10a0a77534d7ffe2b3641f4aa297729",
+      "original_record_sha256": "001dbce637c19246397b53a5b9d650e4356e018f495238c6ea8fb87925e93ba4",
+      "working_record_sha256": "001dbce637c19246397b53a5b9d650e4356e018f495238c6ea8fb87925e93ba4",
+      "dataset": "mHS_NS_PR_4000",
+      "pilot_path": "datasets/pilot/mHS_NS_PR_40.json",
+      "sample_uid": "mHS_NS_PR_4000:3828:3e0da0a4c41b8c29",
+      "stratum_id": "9be114e6e9514651"
+    }
+  ]
+}

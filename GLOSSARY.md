@@ -54,6 +54,13 @@ it does not establish statistical accuracy or cover every distinct sentence.
 **Source-label agreement**: Agreement between a model answer and the label stored
 in the original dataset. This does not establish the logical validity of the case.
 
+**Load validation**: A run that measures throughput, execution failures, and
+observed concurrency for a fixed case selection. Repeated questions in this
+run are not additional evidence of reasoning accuracy.
+
+**Model profile**: A named selection of model versions and providers for one
+comparison. Different profiles are separate experimental conditions.
+
 **Preflight**: A check that uses the same single source case across all selected
 models before the coverage pilot. It checks access and response evidence, not
 coverage across strata or statistical accuracy.

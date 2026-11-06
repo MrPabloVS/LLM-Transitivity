@@ -10,6 +10,7 @@ class ModelSpec:
     generation_group: str
     supports_reasoning: bool
     service_tier: str
+    reasoning_effort: str | None = None
 
 
 @dataclass(frozen=True)
@@ -70,3 +71,33 @@ MODEL_SPECS = (
     ),
 )
 GENERATION_POLICY = GenerationPolicy()
+
+HAIKU_SPECS = tuple(
+    ModelSpec("anthropic/claude-haiku-4.5", "anthropic", "earlier", True, "default")
+    if model.identifier == "anthropic/claude-sonnet-4.5"
+    else ModelSpec(
+        "anthropic/claude-haiku-5.5", "anthropic", "later", True, "default", "medium"
+    )
+    if model.identifier == "anthropic/claude-sonnet-5"
+    else model
+    for model in MODEL_SPECS
+)
+
+
+def profile_models(
+    profile: str = "sonnet", selected: tuple[str, ...] | None = None
+) -> tuple[ModelSpec, ...]:
+    """Select an explicit profile without changing the historical default."""
+    profiles = {"sonnet": MODEL_SPECS, "haiku": HAIKU_SPECS}
+    if profile not in profiles:
+        raise ValueError(f"Unknown model profile: {profile}")
+    models = profiles[profile]
+    if selected is None:
+        return models
+    if (
+        not selected
+        or len(set(selected)) != len(selected)
+        or not set(selected) <= {m.identifier for m in models}
+    ):
+        raise ValueError("Selected models must be unique members of the profile")
+    return tuple(m for m in models if m.identifier in selected)

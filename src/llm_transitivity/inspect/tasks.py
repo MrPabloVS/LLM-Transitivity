@@ -31,3 +31,43 @@ def hs_zero_shot(dataset: str = "HS", *, root: str) -> Task:
         tags=task_tags(data, metadata),
         metadata=metadata,
     )
+
+
+@task
+def load_zero_shot(*, root: str) -> Task:
+    """Pool verified source cases while retaining each case's provenance."""
+    from llm_transitivity.datasets.load_pool import verify_load_pool
+
+    directory = Path(root)
+    manifest = verify_load_pool(directory)
+    names = list(dict.fromkeys(row["pilot_path"] for row in manifest["selected_rows"]))
+    # Read every source before creating any samples or solvers.
+    inputs = [load_input(directory, "pilot/" + Path(name).stem) for name in names]
+    samples = {
+        sample.metadata["sample_uid"]: sample
+        for data in inputs
+        for sample in build_samples(data)
+    }
+    pooled = []
+    for origin in manifest["selected_rows"]:
+        sample = samples[origin["sample_uid"]]
+        sample.id = origin["sample_uid"]
+        sample.metadata["phase"] = "load-validation"
+        pooled.append(sample)
+    metadata = {
+        "dataset_name": "load_216",
+        "sample_count": 216,
+        "source_datasets": [data.provenance["dataset"] for data in inputs],
+        "system_prompt_sha256": inputs[0].system_sha256,
+        "scoring_version": task_metadata(inputs[0])["scoring_version"],
+        "load_manifest": "datasets/load/manifest.json",
+    }
+    return Task(
+        name="zeroShot_load_216",
+        dataset=MemoryDataset(pooled, name="load_216"),
+        solver=[generate_with_capture(), collect_openrouter_details()],
+        scorer=source_label_match(),
+        score_on_error=False,
+        tags=["phase:load-validation", "protocol:zeroShot", "family:HS", "family:mHS"],
+        metadata=metadata,
+    )

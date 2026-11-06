@@ -22,9 +22,28 @@ def main(root: Path, argv: list[str] | None = None) -> None:
         action="store_true",
         help="Run the same single source case on all six models",
     )
+    parser.add_argument("--profile", choices=["sonnet", "haiku"], default="sonnet")
+    parser.add_argument("--model", action="append")
+    parser.add_argument("--concurrency", type=int, choices=[16, 32, 64], default=16)
+    parser.add_argument("--load", action="store_true")
     args = parser.parse_args(argv)
     load_dotenv(root / ".env")
-    spec = build_pilot_spec(root, preflight=args.preflight)
+    if (
+        args.profile == "sonnet"
+        and not args.model
+        and args.concurrency == 16
+        and not args.load
+    ):
+        spec = build_pilot_spec(root, preflight=args.preflight)
+    else:
+        spec = build_pilot_spec(
+            root,
+            preflight=args.preflight,
+            profile=args.profile,
+            selected_models=tuple(args.model) if args.model else None,
+            concurrency=args.concurrency,
+            load=args.load,
+        )
     if args.dry_run:
         run(spec=spec, dry_run=True)
     elif not execute(spec, root):

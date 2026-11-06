@@ -9,6 +9,7 @@ from llm_transitivity.datasets.corpus import (
     dataset_names,
     verified_full_dataset,
 )
+from llm_transitivity.datasets.load_pool import prepare_load_pool, verify_load_pool
 from llm_transitivity.datasets.pilot import prepare, verify
 
 
@@ -18,6 +19,8 @@ def main(root: Path, argv: list[str] | None = None) -> None:
     build = commands.add_parser("prepare")
     build.add_argument("--per-stratum", type=int, required=True)
     check = commands.add_parser("verify")
+    commands.add_parser("prepare-load")
+    commands.add_parser("verify-load")
     check.add_argument(
         "--full",
         action="store_true",
@@ -25,6 +28,15 @@ def main(root: Path, argv: list[str] | None = None) -> None:
     )
     args = parser.parse_args(argv)
     try:
+        if args.command in {"prepare-load", "verify-load"}:
+            operation = (
+                prepare_load_pool
+                if args.command == "prepare-load"
+                else verify_load_pool
+            )
+            operation(root)
+            print("Verified 216 load cases, two per observed pilot stratum.")
+            return
         if args.command == "verify" and args.full:
             entries = [verified_full_dataset(root, name)[1] for name in dataset_names()]
             print(

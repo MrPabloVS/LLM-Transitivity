@@ -1,6 +1,7 @@
 """Compose the coverage pilot from verified inputs and shared execution policy."""
 
 from copy import deepcopy
+from dataclasses import replace
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -15,9 +16,11 @@ from llm_transitivity.domain.config import (
     MODEL_SPECS,
     GenerationPolicy,
     ModelSpec,
+    profile_models,
 )
 from llm_transitivity.evidence.metadata import EXPERIMENT_ID, run_metadata
-from llm_transitivity.inspect.tasks import hs_zero_shot
+from llm_transitivity.evidence.serialization import digest
+from llm_transitivity.inspect.tasks import hs_zero_shot, load_zero_shot
 
 MODELS = [
     (model.identifier, model.provider, model.supports_reasoning)
@@ -49,6 +52,7 @@ def _flow_model(model: ModelSpec, policy: GenerationPolicy) -> FlowModel:
         name=f"openrouter/{model.identifier}",
         model_args=args,
         config=GenerateConfig(
+            reasoning_effort=model.reasoning_effort,
             max_tokens=policy.max_output_tokens,
             max_connections=policy.max_connections,
             max_retries=policy.request_max_retries,
@@ -61,15 +65,27 @@ def _flow_model(model: ModelSpec, policy: GenerationPolicy) -> FlowModel:
 
 
 def _run_context(
-    root: Path, manifest: dict, policy: GenerationPolicy, preflight: bool
+    root: Path,
+    manifest: dict,
+    policy: GenerationPolicy,
+    preflight: bool,
+    models: tuple[ModelSpec, ...],
+    profile: str,
+    load: bool,
 ) -> dict:
     context = run_metadata(root, manifest, policy=policy)
-    context["phase"] = "preflight" if preflight else "coverage-pilot"
+    context["phase"] = (
+        "preflight" if preflight else "load-validation" if load else "coverage-pilot"
+    )
+    context["profile"] = profile
+    context["concurrency"] = policy.max_samples
     context["planned_responses"] = (
-        len(MODELS) if preflight else context["pilot_case_count"] * len(MODELS)
+        len(models)
+        if preflight
+        else (216 if load else context["pilot_case_count"]) * len(models)
     )
     context["selected_cases_per_model"] = (
-        1 if preflight else context["pilot_case_count"]
+        1 if preflight else 216 if load else context["pilot_case_count"]
     )
     timestamp = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).strftime(
         "%Y-%m-%d_%H-%M-%S"
@@ -79,7 +95,9 @@ def _run_context(
         folder += "_preflight"
     context["results_root"] = str(Path("results/pilot") / folder)
     context["results_folder_timezone"] = "America/Argentina/Buenos_Aires"
-    context["generation_groups"] = dict(MODEL_GROUPS)
+    context["generation_groups"] = {
+        model.identifier: model.generation_group for model in models
+    }
     context["requested_routing"] = {
         model.identifier: {
             "provider_only": [model.provider],
@@ -87,7 +105,7 @@ def _run_context(
             "allow_fallbacks": policy.provider_fallback,
             "require_parameters": policy.require_parameters,
         }
-        for model in MODEL_SPECS
+        for model in models
     }
     return context
 
@@ -109,8 +127,10 @@ def _flow_task(
         else "reasoning:not-supported"
     )
     return FlowTask(
-        factory=hs_zero_shot,
-        args={"dataset": f"pilot/{Path(entry['pilot_path']).stem}", "root": str(root)},
+        factory=load_zero_shot if phase == "load-validation" else hs_zero_shot,
+        args={"root": str(root)}
+        if phase == "load-validation"
+        else {"dataset": f"pilot/{Path(entry['pilot_path']).stem}", "root": str(root)},
         model=_flow_model(model, policy),
         fail_on_error=False,
         sample_id=[entry["selected_rows"][0]["original_row"]] if preflight else None,
@@ -121,7 +141,7 @@ def _flow_task(
             f"model_family:{model.identifier.split('/')[0]}",
             f"provider:{model.provider}",
             f"service_tier:{model.service_tier}",
-            f"generation_group:{MODEL_GROUPS[model.identifier]}",
+            f"generation_group:{model.generation_group}",
             reasoning_tag,
         ],
         # Flow replaces factory metadata, so retain the complete dataset context.
@@ -132,7 +152,7 @@ def _flow_task(
             "pilot_manifest_sha256": context["pilot_manifest_sha256"],
             "original_revision": context["original_revision"],
             "requested_model": model.identifier,
-            "generation_group": MODEL_GROUPS[model.identifier],
+            "generation_group": model.generation_group,
             "requested_provider": model.provider,
             "requested_service_tier": model.service_tier,
             "actual_service_tier": None,
@@ -144,21 +164,49 @@ def _flow_task(
     )
 
 
-def build_pilot_spec(root: Path, *, preflight: bool = False) -> FlowSpec:
+def build_pilot_spec(
+    root: Path,
+    *,
+    preflight: bool = False,
+    profile: str = "sonnet",
+    selected_models: tuple[str, ...] | None = None,
+    concurrency: int | None = None,
+    load: bool = False,
+) -> FlowSpec:
+    if (concurrency is not None and concurrency not in {16, 32, 64}) or (
+        load and preflight
+    ):
+        raise ValueError("Invalid concurrency or conflicting execution phases")
+    models = profile_models(profile, selected_models)
     manifest = verify(root)
-    policy = GENERATION_POLICY
-    context = _run_context(root, manifest, policy, preflight)
-    # Validate every dataset in either phase before constructing runnable tasks.
-    prepared = {
-        entry["dataset"]: hs_zero_shot(
-            f"pilot/{Path(entry['pilot_path']).stem}", root=str(root)
+    policy = (
+        GENERATION_POLICY
+        if concurrency is None
+        else replace(
+            GENERATION_POLICY, max_samples=concurrency, max_connections=concurrency
         )
-        for entry in manifest["datasets"]
-    }
+    )
+    context = _run_context(root, manifest, policy, preflight, models, profile, load)
     selected = manifest["datasets"][:1] if preflight else manifest["datasets"]
+    prepared = {}
+    if not load:
+        prepared = {
+            entry["dataset"]: hs_zero_shot(
+                f"pilot/{Path(entry['pilot_path']).stem}", root=str(root)
+            )
+            for entry in manifest["datasets"]
+        }
+    if load:
+        from llm_transitivity.datasets.load_pool import verify_load_pool
+
+        pool = verify_load_pool(root)
+        prepared = {"load_216": load_zero_shot(root=str(root))}
+        selected = [{"dataset": "load_216", "selected_rows": pool["selected_rows"]}]
+        for relative in ["datasets/load/manifest.json", "datasets/load/cases_216.json"]:
+            context["source_sha256"][relative] = digest((root / relative).read_bytes())
     tasks = [
         _flow_task(root, entry, prepared[entry["dataset"]], model, policy, context)
-        for model in MODEL_SPECS
+        for model in models
         for entry in selected
     ]
     return FlowSpec(
