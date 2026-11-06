@@ -221,3 +221,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large reproducible full-report derivatives. Keep native evidence unchanged.
+/reports/full/*/*/analysis.sqlite
+/reports/full/*/*/tables/responses.csv

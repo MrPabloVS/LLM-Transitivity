@@ -1,0 +1,2476 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Full-corpus results · LLM Transitivity</title><link rel="stylesheet" href="report.css"><script src="report.js" defer></script></head>
+<body><header class="masthead"><span>LLM TRANSITIVITY / FULL CORPUS</span><nav><a href="#report">Read the report</a><a href="#aggregate">Compare conditions</a><a href="#explorer">Explore cases</a><a href="report.md">Markdown</a></nav></header>
+<main><article id="report"><h1 id="full-corpus-results-what-we-tested-and-what-we-found">Full-corpus results: what we tested and what we found</h1>
+<p>Run: <code>2026-11-06_01-23-40-040fd7b7</code>. Analysis: <code>full-corpus-report-v1</code>.</p>
+<h2 id="main-findings">Main findings</h2>
+<p>Six models answered the same 54,000 distinct questions. All 108 tasks completed. The corpus has 324,000 saved responses and zero final sample execution errors.
+There were 288,466 source-label matches, 352 content filters, and 6 other non-interpretable responses across all models. These are separate outcomes.
+Claude Sonnet 5.5 had the highest observed agreement with source labels: 53,973/53,995 (99.96%). This comparison concerns this corpus and this run. Source labels have not been independently audited for logical validity.</p>
+<p>Sonnet 5.5 and Gemini 3.1 Flash-Lite are close in source-label agreement, but differ in format compliance and reported cost. See the tables below for exact counts and missing cost evidence.</p>
+<div class="toc">
+<ul>
+<li><a href="#full-corpus-results-what-we-tested-and-what-we-found">Full-corpus results: what we tested and what we found</a><ul>
+<li><a href="#main-findings">Main findings</a></li>
+<li><a href="#what-question-does-the-experiment-ask">What question does the experiment ask?</a></li>
+<li><a href="#what-cases-are-in-the-corpus">What cases are in the corpus?</a></li>
+<li><a href="#which-models-answered">Which models answered?</a></li>
+<li><a href="#how-are-answers-counted">How are answers counted?</a></li>
+<li><a href="#what-did-each-model-return">What did each model return?</a><ul>
+<li><a href="#yes-and-no-answers">Yes and no answers</a></li>
+</ul>
+</li>
+<li><a href="#where-do-results-differ">Where do results differ?</a><ul>
+<li><a href="#case-family">Case family</a></li>
+<li><a href="#lexical-condition">Lexical condition</a></li>
+<li><a href="#verbal-time">Verbal time</a></li>
+<li><a href="#premise-order">Premise order</a></li>
+<li><a href="#source-validity-label">Source validity label</a></li>
+<li><a href="#question-formulation">Question formulation</a></li>
+<li><a href="#datasets-and-complete-strata">Datasets and complete strata</a></li>
+</ul>
+</li>
+<li><a href="#do-models-disagree-on-the-same-cases">Do models disagree on the same cases?</a></li>
+<li><a href="#cases-that-make-the-results-concrete">Cases that make the results concrete</a><ul>
+<li><a href="#hs-different-answers">HS: different answers</a></li>
+<li><a href="#hs-content-filter">HS: content filter</a></li>
+<li><a href="#hs-interpretable-non-strict-format">HS: interpretable, non-strict format</a></li>
+<li><a href="#mhs-different-answers">mHS: different answers</a></li>
+<li><a href="#mhs-content-filter">mHS: content filter</a></li>
+<li><a href="#mhs-interpretable-non-strict-format">mHS: interpretable, non-strict format</a></li>
+</ul>
+</li>
+<li><a href="#what-did-the-run-cost">What did the run cost?</a><ul>
+<li><a href="#tokens-in-final-responses">Tokens in final responses</a></li>
+</ul>
+</li>
+<li><a href="#what-conclusions-are-supported">What conclusions are supported?</a></li>
+<li><a href="#operational-appendix-time-and-concurrency">Operational appendix: time and concurrency</a><ul>
+<li><a href="#request-and-returned-metadata-checks">Request and returned metadata checks</a></li>
+</ul>
+</li>
+<li><a href="#evidence-definitions-and-reproduction">Evidence, definitions, and reproduction</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="what-question-does-the-experiment-ask">What question does the experiment ask?</h2>
+<p>We test how six language models answer hypothetical syllogism and metainferential hypothetical syllogism questions under different lexical and grammatical conditions. We compare each answer with the label supplied by the dataset. We also test whether the model follows a strict response-format instruction.</p>
+<p>Every case uses a new conversation, one system message, and one original question. No examples are supplied in the prompt (zero-shot). The system message is:</p>
+<pre>Answer only with &#x27;yes&#x27; or &#x27;no&#x27; and nothing else.</pre>
+
+<p>A case is one complete reasoning question. It can contain several clauses or sentences. We count cases, not individual clauses. The 54,000 question texts are distinct by exact text comparison.</p>
+<h2 id="what-cases-are-in-the-corpus">What cases are in the corpus?</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HS</td>
+<td>Hypothetical syllogism expressed with conditionals</td>
+<td>18,000</td>
+</tr>
+<tr>
+<td>mHS</td>
+<td>Metainferential hypothetical syllogism: relations between inferences</td>
+<td>36,000</td>
+</tr>
+<tr>
+<td>HF / LF / NS</td>
+<td>High-frequency words / low-frequency words / pseudowords</td>
+<td>18,000 each</td>
+</tr>
+<tr>
+<td>PR / PA / FU</td>
+<td>Present / past / future</td>
+<td>18,000 each</td>
+</tr>
+<tr>
+<td>canonic / non-canonic</td>
+<td>Standard / reversed premise order, as labeled by the source</td>
+<td>27,000 each</td>
+</tr>
+<tr>
+<td>valid / invalid</td>
+<td>Source validity label</td>
+<td>27,000 each</td>
+</tr>
+</tbody>
+</table>
+<p>NS is a pseudoword condition, not another level of word frequency. The filename identifies HS versus mHS; the original internal case-type field is HS in both families. We preserve that field and report family separately.</p>
+<p>Each HS dataset has four strata: source validity crossed with premise order. Each mHS dataset has eight strata: those four combinations crossed with two formulations. The formulations are <code>assuming that we can infer / thus</code> and <code>from the inference (therefore) / does the inference follow</code>. Each stratum contains 500 cases. The complete design has 108 strata.</p>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Family</th>
+<th>Lexical condition</th>
+<th>Tense</th>
+<th>Cases</th>
+<th>Strata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HS_HF_FU_2000</td>
+<td>HS</td>
+<td>HF</td>
+<td>FU</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_HF_PA_2000</td>
+<td>HS</td>
+<td>HF</td>
+<td>PA</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_HF_PR_2000</td>
+<td>HS</td>
+<td>HF</td>
+<td>PR</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_LF_FU_2000</td>
+<td>HS</td>
+<td>LF</td>
+<td>FU</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_LF_PA_2000</td>
+<td>HS</td>
+<td>LF</td>
+<td>PA</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_LF_PR_2000</td>
+<td>HS</td>
+<td>LF</td>
+<td>PR</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_NS_FU_2000</td>
+<td>HS</td>
+<td>NS</td>
+<td>FU</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_NS_PA_2000</td>
+<td>HS</td>
+<td>NS</td>
+<td>PA</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>HS_NS_PR_2000</td>
+<td>HS</td>
+<td>NS</td>
+<td>PR</td>
+<td>2000</td>
+<td>4</td>
+</tr>
+<tr>
+<td>mHS_HF_FU_4000</td>
+<td>mHS</td>
+<td>HF</td>
+<td>FU</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_HF_PA_4000</td>
+<td>mHS</td>
+<td>HF</td>
+<td>PA</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_HF_PR_4000</td>
+<td>mHS</td>
+<td>HF</td>
+<td>PR</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_LF_FU_4000</td>
+<td>mHS</td>
+<td>LF</td>
+<td>FU</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_LF_PA_4000</td>
+<td>mHS</td>
+<td>LF</td>
+<td>PA</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_LF_PR_4000</td>
+<td>mHS</td>
+<td>LF</td>
+<td>PR</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_NS_FU_4000</td>
+<td>mHS</td>
+<td>NS</td>
+<td>FU</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_NS_PA_4000</td>
+<td>mHS</td>
+<td>NS</td>
+<td>PA</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>mHS_NS_PR_4000</td>
+<td>mHS</td>
+<td>NS</td>
+<td>PR</td>
+<td>4000</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>mHS accounts for two thirds of the corpus. Overall results weight each case equally, so mHS has twice the weight of HS. Family-specific results are shown separately. The source labels are balanced: 27,000 valid and 27,000 invalid cases.</p>
+<p>Working inputs preserve the original question text, order, source identifiers, and all record fields, except the approved translations of <code>valido</code> to <code>valid</code> and <code>canonico</code> to <code>canonic</code> in the two LF/PR datasets. The analysis verifies every saved prompt and target against the frozen inputs and the Git source revision.</p>
+<h2 id="which-models-answered">Which models answered?</h2>
+<p>The exact model IDs identify the experiment. Provider, service tier, and reasoning settings are part of each model condition. These differences prevent us from attributing differences to a model name or reasoning setting alone.</p>
+<table>
+<thead>
+<tr>
+<th>Model ID</th>
+<th>Fixed endpoint</th>
+<th>Tier</th>
+<th>Reasoning requested</th>
+<th>Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>openai/gpt-4o-mini</td>
+<td>openai</td>
+<td>default</td>
+<td>not supported</td>
+<td>omitted</td>
+</tr>
+<tr>
+<td>openai/gpt-6-luna</td>
+<td>openai/flex</td>
+<td>flex</td>
+<td>disabled</td>
+<td>omitted</td>
+</tr>
+<tr>
+<td>anthropic/claude-haiku-5.5</td>
+<td>anthropic</td>
+<td>default</td>
+<td>disabled</td>
+<td>medium</td>
+</tr>
+<tr>
+<td>anthropic/claude-sonnet-5.5</td>
+<td>anthropic</td>
+<td>default</td>
+<td>enabled</td>
+<td>low</td>
+</tr>
+<tr>
+<td>google/gemini-3.1-flash-lite</td>
+<td>google-ai-studio/flex</td>
+<td>flex</td>
+<td>disabled</td>
+<td>omitted</td>
+</tr>
+<tr>
+<td>google/gemini-3.5-flash-lite</td>
+<td>google-ai-studio/flex</td>
+<td>flex</td>
+<td>enabled</td>
+<td>minimal</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="cards/openai--gpt-4o-mini/card-6c7e5c7c37f6.md">GPT-4o mini: archived model card</a></li>
+<li><a href="cards/openai--gpt-6-luna/card-c92cf782bf12.md">GPT-6 Luna Flex: archived model card</a></li>
+<li><a href="cards/anthropic--claude-haiku-5.5/card.md">Claude Haiku 5.5: archived model card</a></li>
+<li><a href="cards/anthropic--claude-sonnet-5.5/card.md">Claude Sonnet 5.5: archived model card</a></li>
+<li><a href="cards/google--gemini-3.1-flash-lite/card-118a223e4e22.md">Gemini 3.1 Flash-Lite Flex: archived model card</a></li>
+<li><a href="cards/google--gemini-3.5-flash-lite/card.md">Gemini 3.5 Flash-Lite Flex: archived model card</a></li>
+</ul>
+<p>Providers were fixed and fallbacks disabled. The output limit was 1,024 tokens, including reasoning where the provider counts it in the output budget. Temperature, top-p, and seed were omitted. Responses are not deterministic. Caching and streaming were disabled.</p>
+<p>The archived <code>earlier</code> and <code>later</code> tags are comparison slots. They are not equivalent generations across developers. Haiku and Sonnet are different model families. The main results therefore compare six individual models.</p>
+<h2 id="how-are-answers-counted">How are answers counted?</h2>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Numerator</th>
+<th>Denominator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source-label agreement</td>
+<td>Matches</td>
+<td>Interpretable answers</td>
+</tr>
+<tr>
+<td>Interpretation coverage</td>
+<td>Interpretable answers</td>
+<td>All planned cases</td>
+</tr>
+<tr>
+<td>Strict-format compliance</td>
+<td>Only yes or no, ignoring case and outer whitespace</td>
+<td>All planned cases</td>
+</tr>
+<tr>
+<td>Matches over all cases</td>
+<td>Matches</td>
+<td>All planned cases</td>
+</tr>
+</tbody>
+</table>
+<p>Scoring uses <code>source-label-deterministic-v3</code> and extraction rule <code>initial_or_final_line_v2</code>. It can read a supported yes/no answer at the beginning or on the final line. Explanations, punctuation, and bold answers may be interpretable but still fail the strict-format instruction. A response containing both complete terms yes and no is ambiguous. Errors, filters, empty responses, ambiguity, and unsupported formats keep their existing precedence. They are never converted to no.</p>
+<p>A source-label disagreement is not automatically a logical error. A source-label match is not independent proof of logical validity. We do not change source labels or scores in this report.</p>
+<h2 id="what-did-each-model-return">What did each model return?</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Agreement / interpreted</th>
+<th>Coverage / 54,000</th>
+<th>Strict / 54,000</th>
+<th>Matches / 54,000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-4o mini</td>
+<td>41,218/53,999 (76.33%)</td>
+<td>53,999/54,000 (100.00%)</td>
+<td>50,246/54,000 (93.05%)</td>
+<td>41,218/54,000 (76.33%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>45,490/54,000 (84.24%)</td>
+<td>54,000/54,000 (100.00%)</td>
+<td>54,000/54,000 (100.00%)</td>
+<td>45,490/54,000 (84.24%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>41,186/53,648 (76.77%)</td>
+<td>53,648/54,000 (99.35%)</td>
+<td>53,642/54,000 (99.34%)</td>
+<td>41,186/54,000 (76.27%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>53,973/53,995 (99.96%)</td>
+<td>53,995/54,000 (99.99%)</td>
+<td>44,340/54,000 (82.11%)</td>
+<td>53,973/54,000 (99.95%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>53,959/54,000 (99.92%)</td>
+<td>54,000/54,000 (100.00%)</td>
+<td>53,961/54,000 (99.93%)</td>
+<td>53,959/54,000 (99.92%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>52,640/54,000 (97.48%)</td>
+<td>54,000/54,000 (100.00%)</td>
+<td>53,987/54,000 (99.98%)</td>
+<td>52,640/54,000 (97.48%)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Matches</th>
+<th>Disagreements</th>
+<th>Filters</th>
+<th>Empty</th>
+<th>Ambiguous</th>
+<th>Unsupported format</th>
+<th>Errors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-4o mini</td>
+<td>41,218</td>
+<td>12,781</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>45,490</td>
+<td>8,510</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>41,186</td>
+<td>12,462</td>
+<td>352</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>53,973</td>
+<td>22</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>53,959</td>
+<td>41</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>52,640</td>
+<td>1,360</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Outcomes over all cases" src="figures/outcomes.svg" /></p>
+<h3 id="yes-and-no-answers">Yes and no answers</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Interpreted answer</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>no</td>
+<td>14718</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>yes</td>
+<td>38930</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>no</td>
+<td>27021</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>yes</td>
+<td>26974</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>no</td>
+<td>27041</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>yes</td>
+<td>26959</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>no</td>
+<td>26372</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>yes</td>
+<td>27628</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>no</td>
+<td>37713</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>yes</td>
+<td>16286</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>no</td>
+<td>18526</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>yes</td>
+<td>35474</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="tables/confusion.csv">source-label confusion table</a> crosses the expected answer with the interpreted answer. It excludes non-interpretable responses, whose counts remain above.</p>
+<h2 id="where-do-results-differ">Where do results differ?</h2>
+<p>The following tables compare observed results within the corpus. They do not establish causal effects. Each cell states its denominator. Comparisons between models use the same source cases; comparisons between conditions do not assume that cases are matched pairs.</p>
+<p><img alt="Agreement by family" src="figures/family_agreement.svg" /></p>
+<h3 id="case-family">Case family</h3>
+<p>The largest observed range across case family is for GPT-4o mini: 24.05 percentage points between HS (16,625/17,999 (92.37%)) and mHS (24,593/36,000 (68.31%)). This is a descriptive comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Condition</th>
+<th>Agreement</th>
+<th>Coverage</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>HS</td>
+<td>12,704/17,865 (71.11%)</td>
+<td>17,865/18,000 (99.25%)</td>
+<td>17,864/18,000 (99.24%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>mHS</td>
+<td>28,482/35,783 (79.60%)</td>
+<td>35,783/36,000 (99.40%)</td>
+<td>35,778/36,000 (99.38%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>HS</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>12,526/18,000 (69.59%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>mHS</td>
+<td>35,973/35,995 (99.94%)</td>
+<td>35,995/36,000 (99.99%)</td>
+<td>31,814/36,000 (88.37%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>HS</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,997/18,000 (99.98%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>mHS</td>
+<td>35,959/36,000 (99.89%)</td>
+<td>36,000/36,000 (100.00%)</td>
+<td>35,964/36,000 (99.90%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>HS</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>mHS</td>
+<td>34,640/36,000 (96.22%)</td>
+<td>36,000/36,000 (100.00%)</td>
+<td>35,987/36,000 (99.96%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>HS</td>
+<td>16,625/17,999 (92.37%)</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>16,483/18,000 (91.57%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>mHS</td>
+<td>24,593/36,000 (68.31%)</td>
+<td>36,000/36,000 (100.00%)</td>
+<td>33,763/36,000 (93.79%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>HS</td>
+<td>16,355/18,000 (90.86%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>mHS</td>
+<td>29,135/36,000 (80.93%)</td>
+<td>36,000/36,000 (100.00%)</td>
+<td>36,000/36,000 (100.00%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lexical-condition">Lexical condition</h3>
+<p>The largest observed range across lexical condition is for GPT-6 Luna Flex: 16.49 percentage points between NS (16,234/18,000 (90.19%)) and LF (13,266/18,000 (73.70%)). This is a descriptive comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Condition</th>
+<th>Agreement</th>
+<th>Coverage</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>HF</td>
+<td>15,041/18,000 (83.56%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,999/18,000 (99.99%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>LF</td>
+<td>12,611/17,924 (70.36%)</td>
+<td>17,924/18,000 (99.58%)</td>
+<td>17,920/18,000 (99.56%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>NS</td>
+<td>13,534/17,724 (76.36%)</td>
+<td>17,724/18,000 (98.47%)</td>
+<td>17,723/18,000 (98.46%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>HF</td>
+<td>17,987/17,999 (99.93%)</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>15,530/18,000 (86.28%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>LF</td>
+<td>17,997/18,000 (99.98%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>14,165/18,000 (78.69%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>NS</td>
+<td>17,989/17,996 (99.96%)</td>
+<td>17,996/18,000 (99.98%)</td>
+<td>14,645/18,000 (81.36%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>HF</td>
+<td>17,960/18,000 (99.78%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,970/18,000 (99.83%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>LF</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,992/18,000 (99.96%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>NS</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,999/18,000 (99.99%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>HF</td>
+<td>17,469/18,000 (97.05%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,989/18,000 (99.94%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>LF</td>
+<td>17,590/18,000 (97.72%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,999/18,000 (99.99%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>NS</td>
+<td>17,581/18,000 (97.67%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,999/18,000 (99.99%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>HF</td>
+<td>13,899/18,000 (77.22%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>16,285/18,000 (90.47%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>LF</td>
+<td>13,357/18,000 (74.21%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>16,725/18,000 (92.92%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>NS</td>
+<td>13,962/17,999 (77.57%)</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>17,236/18,000 (95.76%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>HF</td>
+<td>15,990/18,000 (88.83%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>LF</td>
+<td>13,266/18,000 (73.70%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>NS</td>
+<td>16,234/18,000 (90.19%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="verbal-time">Verbal time</h3>
+<p>The largest observed range across verbal time is for Claude Haiku 5.5: 7.40 percentage points between PR (14,490/17,851 (81.17%)) and FU (13,139/17,810 (73.77%)). This is a descriptive comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Condition</th>
+<th>Agreement</th>
+<th>Coverage</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>FU</td>
+<td>13,139/17,810 (73.77%)</td>
+<td>17,810/18,000 (98.94%)</td>
+<td>17,805/18,000 (98.92%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>PA</td>
+<td>13,557/17,987 (75.37%)</td>
+<td>17,987/18,000 (99.93%)</td>
+<td>17,986/18,000 (99.92%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>PR</td>
+<td>14,490/17,851 (81.17%)</td>
+<td>17,851/18,000 (99.17%)</td>
+<td>17,851/18,000 (99.17%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>FU</td>
+<td>17,999/17,999 (100.00%)</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>14,529/18,000 (80.72%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>PA</td>
+<td>17,986/17,999 (99.93%)</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>14,545/18,000 (80.81%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>PR</td>
+<td>17,988/17,997 (99.95%)</td>
+<td>17,997/18,000 (99.98%)</td>
+<td>15,266/18,000 (84.81%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>FU</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,987/18,000 (99.93%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>PA</td>
+<td>17,963/18,000 (99.79%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,990/18,000 (99.94%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>PR</td>
+<td>17,996/18,000 (99.98%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,984/18,000 (99.91%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>FU</td>
+<td>17,734/18,000 (98.52%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,997/18,000 (99.98%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>PA</td>
+<td>17,358/18,000 (96.43%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,993/18,000 (99.96%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>PR</td>
+<td>17,548/18,000 (97.49%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,997/18,000 (99.98%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>FU</td>
+<td>14,096/18,000 (78.31%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>16,660/18,000 (92.56%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>PA</td>
+<td>13,180/17,999 (73.23%)</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>17,032/18,000 (94.62%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>PR</td>
+<td>13,942/18,000 (77.46%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>16,554/18,000 (91.97%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>FU</td>
+<td>14,924/18,000 (82.91%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>PA</td>
+<td>15,174/18,000 (84.30%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>PR</td>
+<td>15,392/18,000 (85.51%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="premise-order">Premise order</h3>
+<p>The largest observed range across premise order is for GPT-4o mini: 23.51 percentage points between canonic (23,783/27,000 (88.09%)) and non-canonic (17,435/26,999 (64.58%)). This is a descriptive comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Condition</th>
+<th>Agreement</th>
+<th>Coverage</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>canonic</td>
+<td>20,226/26,783 (75.52%)</td>
+<td>26,783/27,000 (99.20%)</td>
+<td>26,783/27,000 (99.20%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>non-canonic</td>
+<td>20,960/26,865 (78.02%)</td>
+<td>26,865/27,000 (99.50%)</td>
+<td>26,859/27,000 (99.48%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>canonic</td>
+<td>26,973/26,995 (99.92%)</td>
+<td>26,995/27,000 (99.98%)</td>
+<td>23,585/27,000 (87.35%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>non-canonic</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>20,755/27,000 (76.87%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>canonic</td>
+<td>26,967/27,000 (99.88%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,968/27,000 (99.88%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>non-canonic</td>
+<td>26,992/27,000 (99.97%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,993/27,000 (99.97%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>canonic</td>
+<td>26,143/27,000 (96.83%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,987/27,000 (99.95%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>non-canonic</td>
+<td>26,497/27,000 (98.14%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>27,000/27,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>canonic</td>
+<td>23,783/27,000 (88.09%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>24,923/27,000 (92.31%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>non-canonic</td>
+<td>17,435/26,999 (64.58%)</td>
+<td>26,999/27,000 (100.00%)</td>
+<td>25,323/27,000 (93.79%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>canonic</td>
+<td>24,347/27,000 (90.17%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>27,000/27,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>non-canonic</td>
+<td>21,143/27,000 (78.31%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>27,000/27,000 (100.00%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="source-validity-label">Source validity label</h3>
+<p>The largest observed range across source validity label is for Claude Haiku 5.5: 45.04 percentage points between valid (26,669/26,870 (99.25%)) and invalid (14,517/26,778 (54.21%)). This is a descriptive comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Condition</th>
+<th>Agreement</th>
+<th>Coverage</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>invalid</td>
+<td>14,517/26,778 (54.21%)</td>
+<td>26,778/27,000 (99.18%)</td>
+<td>26,773/27,000 (99.16%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>valid</td>
+<td>26,669/26,870 (99.25%)</td>
+<td>26,870/27,000 (99.52%)</td>
+<td>26,869/27,000 (99.51%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>invalid</td>
+<td>26,999/26,999 (100.00%)</td>
+<td>26,999/27,000 (100.00%)</td>
+<td>17,600/27,000 (65.19%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>valid</td>
+<td>26,974/26,996 (99.92%)</td>
+<td>26,996/27,000 (99.99%)</td>
+<td>26,740/27,000 (99.04%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>invalid</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,967/27,000 (99.88%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>valid</td>
+<td>26,959/27,000 (99.85%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,994/27,000 (99.98%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>invalid</td>
+<td>26,006/27,000 (96.32%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,994/27,000 (99.98%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>valid</td>
+<td>26,634/27,000 (98.64%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,993/27,000 (99.97%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>invalid</td>
+<td>25,966/27,000 (96.17%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>26,132/27,000 (96.79%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>valid</td>
+<td>15,252/26,999 (56.49%)</td>
+<td>26,999/27,000 (100.00%)</td>
+<td>24,114/27,000 (89.31%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>invalid</td>
+<td>18,508/27,000 (68.55%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>27,000/27,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>valid</td>
+<td>26,982/27,000 (99.93%)</td>
+<td>27,000/27,000 (100.00%)</td>
+<td>27,000/27,000 (100.00%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="question-formulation">Question formulation</h3>
+<p>The largest observed range across question formulation is for GPT-4o mini: 30.71 percentage points between if then / therefore (16,625/17,999 (92.37%)) and from the inference (therefore) / does the inference follow (11,099/18,000 (61.66%)). This is a descriptive comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Condition</th>
+<th>Agreement</th>
+<th>Coverage</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>assuming that we can infer / thus</td>
+<td>15,928/17,790 (89.53%)</td>
+<td>17,790/18,000 (98.83%)</td>
+<td>17,789/18,000 (98.83%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>from the inference (therefore) / does the inference follow</td>
+<td>12,554/17,993 (69.77%)</td>
+<td>17,993/18,000 (99.96%)</td>
+<td>17,989/18,000 (99.94%)</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>if then / therefore</td>
+<td>12,704/17,865 (71.11%)</td>
+<td>17,865/18,000 (99.25%)</td>
+<td>17,864/18,000 (99.24%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>assuming that we can infer / thus</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>15,846/18,000 (88.03%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>from the inference (therefore) / does the inference follow</td>
+<td>17,973/17,995 (99.88%)</td>
+<td>17,995/18,000 (99.97%)</td>
+<td>15,968/18,000 (88.71%)</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>if then / therefore</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>12,526/18,000 (69.59%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>assuming that we can infer / thus</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,975/18,000 (99.86%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>from the inference (therefore) / does the inference follow</td>
+<td>17,959/18,000 (99.77%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,989/18,000 (99.94%)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>if then / therefore</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,997/18,000 (99.98%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>assuming that we can infer / thus</td>
+<td>17,982/18,000 (99.90%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,999/18,000 (99.99%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>from the inference (therefore) / does the inference follow</td>
+<td>16,658/18,000 (92.54%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,988/18,000 (99.93%)</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>if then / therefore</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>assuming that we can infer / thus</td>
+<td>13,494/18,000 (74.97%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>16,673/18,000 (92.63%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>from the inference (therefore) / does the inference follow</td>
+<td>11,099/18,000 (61.66%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>17,090/18,000 (94.94%)</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>if then / therefore</td>
+<td>16,625/17,999 (92.37%)</td>
+<td>17,999/18,000 (99.99%)</td>
+<td>16,483/18,000 (91.57%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>assuming that we can infer / thus</td>
+<td>15,956/18,000 (88.64%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>from the inference (therefore) / does the inference follow</td>
+<td>13,179/18,000 (73.22%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>if then / therefore</td>
+<td>16,355/18,000 (90.86%)</td>
+<td>18,000/18,000 (100.00%)</td>
+<td>18,000/18,000 (100.00%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="datasets-and-complete-strata">Datasets and complete strata</h3>
+<p><img alt="Agreement by dataset" src="figures/dataset_agreement.svg" /></p>
+<p>The <a href="tables/by_dataset.csv">dataset table</a> contains all 108 model/dataset cells. The <a href="tables/by_stratum.csv">stratum results</a> contain all 648 model/stratum cells. Join them to the <a href="tables/stratum_definitions.csv">stratum definitions</a> by stratum. The HTML report supports combined condition filters.</p>
+<h2 id="do-models-disagree-on-the-same-cases">Do models disagree on the same cases?</h2>
+<p>Each pair contains the same 54,000 UIDs. Agreement between answers and one-model-only source matches use only cases where both models gave interpretable answers. The excluded count remains visible. No missing answer is treated as a disagreement.</p>
+<table>
+<thead>
+<tr>
+<th>Model A</th>
+<th>Model B</th>
+<th>Same answer / both interpreted</th>
+<th>Only A matches</th>
+<th>Only B matches</th>
+<th>Both match</th>
+<th>Both disagree</th>
+<th>Not both interpreted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-4o mini</td>
+<td>GPT-6 Luna Flex</td>
+<td>33,610/53,999 (62.24%)</td>
+<td>8059</td>
+<td>12330</td>
+<td>33159</td>
+<td>451</td>
+<td>1</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>Claude Haiku 5.5</td>
+<td>29,875/53,647 (55.69%)</td>
+<td>11755</td>
+<td>12017</td>
+<td>29168</td>
+<td>707</td>
+<td>353</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>Claude Sonnet 5.5</td>
+<td>41,227/53,994 (76.35%)</td>
+<td>4</td>
+<td>12763</td>
+<td>41209</td>
+<td>18</td>
+<td>6</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>41,257/53,999 (76.40%)</td>
+<td>1</td>
+<td>12741</td>
+<td>41217</td>
+<td>40</td>
+<td>1</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>40,562/53,999 (75.12%)</td>
+<td>1008</td>
+<td>12429</td>
+<td>40210</td>
+<td>352</td>
+<td>1</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>Claude Haiku 5.5</td>
+<td>41,911/53,648 (78.12%)</td>
+<td>7857</td>
+<td>3880</td>
+<td>37306</td>
+<td>4605</td>
+<td>352</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>Claude Sonnet 5.5</td>
+<td>45,463/53,995 (84.20%)</td>
+<td>22</td>
+<td>8510</td>
+<td>45463</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>45,449/54,000 (84.16%)</td>
+<td>41</td>
+<td>8510</td>
+<td>45449</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>45,104/54,000 (83.53%)</td>
+<td>873</td>
+<td>8023</td>
+<td>44617</td>
+<td>487</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>Claude Sonnet 5.5</td>
+<td>41,167/53,643 (76.74%)</td>
+<td>18</td>
+<td>12458</td>
+<td>41163</td>
+<td>4</td>
+<td>357</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>41,167/53,648 (76.74%)</td>
+<td>30</td>
+<td>12451</td>
+<td>41156</td>
+<td>11</td>
+<td>352</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>41,208/53,648 (76.81%)</td>
+<td>669</td>
+<td>11771</td>
+<td>40517</td>
+<td>691</td>
+<td>352</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>53,932/53,995 (99.88%)</td>
+<td>41</td>
+<td>22</td>
+<td>53932</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>52,625/53,995 (97.46%)</td>
+<td>1354</td>
+<td>16</td>
+<td>52619</td>
+<td>6</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>52,641/54,000 (97.48%)</td>
+<td>1339</td>
+<td>20</td>
+<td>52620</td>
+<td>21</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cases-that-make-the-results-concrete">Cases that make the results concrete</h2>
+<p>Examples are selected by the smallest SHA-256 hash of the UID for each family and category, without repeating a case. Family order is HS then mHS; category order is different answers, content filter, then interpretable non-strict format. These examples illustrate outcomes; they do not estimate prevalence. The HTML explorer exposes every case.</p>
+<h3 id="hs-different-answers">HS: different answers</h3>
+<p>UID: <code>HS_NS_FU_2000:955:ecd5d089ff37fde8</code>. Dataset: <code>HS_NS_FU_2000</code>; original row 955. Source label: <code>invalid</code>; expected answer: <code>no</code>.</p>
+<pre>If the preggar will glash the ploodnum, then the probeller will trelf the blorrack; if the probeller will trelf the blorrack, then the bruggant will frike the drambet; therefore if the bruggant will frike the drambet, then the preggar will glash the ploodnum?</pre>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Interpreted answer</th>
+<th>Outcome</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>yes</td>
+<td>disagreement</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claude Haiku 5.5 — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>Claude Sonnet 5.5 — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Gemini 3.1 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Gemini 3.5 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-4o mini — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-6 Luna Flex — original response</strong></p>
+<pre>no</pre>
+
+<h3 id="hs-content-filter">HS: content filter</h3>
+<p>UID: <code>HS_NS_PR_2000:37:7f42d42c0023eb28</code>. Dataset: <code>HS_NS_PR_2000</code>; original row 37. Source label: <code>valid</code>; expected answer: <code>yes</code>.</p>
+<pre>If the preggar gresks the prebart, then the brettent glashes the flendop; if the brettent glashes the flendop, then the probeller frikes the ploodnum; therefore if the preggar gresks the prebart, then the probeller frikes the ploodnum?</pre>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Interpreted answer</th>
+<th>Outcome</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>not interpreted</td>
+<td>content_filter</td>
+<td>False</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claude Haiku 5.5 — original response</strong></p>
+<pre>This request triggered restrictions on content related to the development of high-yield explosives and was blocked under Anthropic&#x27;s Usage Policy. To learn more, provide feedback, or request an exemption based on how you use Claude, visit our help center: https://support.claude.com/ API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback</pre>
+
+<p><strong>Claude Sonnet 5.5 — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>Gemini 3.1 Flash-Lite Flex — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>Gemini 3.5 Flash-Lite Flex — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>GPT-4o mini — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>GPT-6 Luna Flex — original response</strong></p>
+<pre>yes</pre>
+
+<h3 id="hs-interpretable-non-strict-format">HS: interpretable, non-strict format</h3>
+<p>UID: <code>HS_HF_FU_2000:1602:787e8fed73f8e1dc</code>. Dataset: <code>HS_HF_FU_2000</code>; original row 1602. Source label: <code>invalid</code>; expected answer: <code>no</code>.</p>
+<pre>If the student will hate the computer, then the family will see the college; if the doctor will win the game, then the student will hate the computer; therefore if the family will see the college, then the doctor will win the game?</pre>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Interpreted answer</th>
+<th>Outcome</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>no</td>
+<td>match</td>
+<td>False</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claude Haiku 5.5 — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Claude Sonnet 5.5 — original response</strong></p>
+<pre>Let H = the student will hate the computer, F = the family will see the college, D = the doctor will win the game.
+
+The premises are H → F and D → H. Chaining them gives D → F.
+
+The conclusion asks for F → D, which is the converse of D → F. The premises do not support it. For example, if F is true while D and H are both false, both premises hold and the conclusion fails.
+
+No</pre>
+
+<p><strong>Gemini 3.1 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Gemini 3.5 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-4o mini — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-6 Luna Flex — original response</strong></p>
+<pre>no</pre>
+
+<h3 id="mhs-different-answers">mHS: different answers</h3>
+<p>UID: <code>mHS_HF_PR_4000:1953:d7b258905cf06b38</code>. Dataset: <code>mHS_HF_PR_4000</code>; original row 1953. Source label: <code>invalid</code>; expected answer: <code>no</code>.</p>
+<pre>From the inference &#x27;the woman pays the sugar, therefore the girl hates the school&#x27;, and the inference &#x27;the girl hates the school, therefore the officer finds the college&#x27;, does the inference &#x27;the officer finds the college, therefore the woman pays the sugar&#x27; follow?</pre>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Interpreted answer</th>
+<th>Outcome</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>yes</td>
+<td>disagreement</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claude Haiku 5.5 — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Claude Sonnet 5.5 — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Gemini 3.1 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Gemini 3.5 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-4o mini — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-6 Luna Flex — original response</strong></p>
+<pre>yes</pre>
+
+<h3 id="mhs-content-filter">mHS: content filter</h3>
+<p>UID: <code>mHS_NS_FU_4000:1062:cbe3c3e2be728394</code>. Dataset: <code>mHS_NS_FU_4000</code>; original row 1062. Source label: <code>invalid</code>; expected answer: <code>no</code>.</p>
+<pre>Assuming that the bruggant will trelf the drambet, we can infer that the preggar will prant the ploodnum. Assuming that the preggar will prant the ploodnum, we can infer that the probeller will glash the prebart. Thus, assuming that the probeller will glash the prebart, can we infer that the bruggant will trelf the drambet?</pre>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Interpreted answer</th>
+<th>Outcome</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>not interpreted</td>
+<td>content_filter</td>
+<td>False</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>no</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>yes</td>
+<td>disagreement</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claude Haiku 5.5 — original response</strong></p>
+<pre>This request triggered restrictions on content related to the development of high-yield explosives and was blocked under Anthropic&#x27;s Usage Policy. To learn more, provide feedback, or request an exemption based on how you use Claude, visit our help center: https://support.claude.com/ API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback</pre>
+
+<p><strong>Claude Sonnet 5.5 — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Gemini 3.1 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>Gemini 3.5 Flash-Lite Flex — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-4o mini — original response</strong></p>
+<pre>no</pre>
+
+<p><strong>GPT-6 Luna Flex — original response</strong></p>
+<pre>yes</pre>
+
+<h3 id="mhs-interpretable-non-strict-format">mHS: interpretable, non-strict format</h3>
+<p>UID: <code>mHS_HF_PR_4000:153:99c4ec3b9f63ae06</code>. Dataset: <code>mHS_HF_PR_4000</code>; original row 153. Source label: <code>valid</code>; expected answer: <code>yes</code>.</p>
+<pre>Assuming that the family pays the computer, we can infer that the man loses the game. Assuming that the man loses the game, we can infer that the woman hates the school. Thus, assuming that the family pays the computer, can we infer that the woman hates the school?</pre>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Interpreted answer</th>
+<th>Outcome</th>
+<th>Strict format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+<tr>
+<td>GPT-4o mini</td>
+<td>yes</td>
+<td>match</td>
+<td>False</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>yes</td>
+<td>match</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claude Haiku 5.5 — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>Claude Sonnet 5.5 — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>Gemini 3.1 Flash-Lite Flex — original response</strong></p>
+<pre>yes</pre>
+
+<p><strong>Gemini 3.5 Flash-Lite Flex — original response</strong></p>
+<pre>Yes</pre>
+
+<p><strong>GPT-4o mini — original response</strong></p>
+<pre>Yes.</pre>
+
+<p><strong>GPT-6 Luna Flex — original response</strong></p>
+<pre>yes</pre>
+
+<h2 id="what-did-the-run-cost">What did the run cost?</h2>
+<p>These are costs reported by OpenRouter, not an independent invoice audit. Costs are deduplicated by generation ID. A captured response cost takes precedence over a later lookup; conflicting observations remain in the database and conflict table. Zero is retained as zero. Missing costs remain unknown.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Model</th>
+<th>Generation role</th>
+<th>IDs with cost / all IDs</th>
+<th>Unknown-cost IDs</th>
+<th>Known USD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>corpus</td>
+<td>Claude Haiku 5.5</td>
+<td>final</td>
+<td>53648/54000</td>
+<td>352</td>
+<td>0.789836</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Claude Sonnet 5.5</td>
+<td>final</td>
+<td>54000/54000</td>
+<td>0</td>
+<td>26.647214</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>final</td>
+<td>54000/54000</td>
+<td>0</td>
+<td>0.615929</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>final</td>
+<td>54000/54000</td>
+<td>0</td>
+<td>0.757996</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-4o mini</td>
+<td>final</td>
+<td>54000/54000</td>
+<td>0</td>
+<td>0.804368</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-6 Luna Flex</td>
+<td>additional</td>
+<td>0/426</td>
+<td>426</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-6 Luna Flex</td>
+<td>final</td>
+<td>54000/54000</td>
+<td>0</td>
+<td>0.321379</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Haiku 5.5</td>
+<td>final</td>
+<td>1/1</td>
+<td>0</td>
+<td>0.000012</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Sonnet 5.5</td>
+<td>final</td>
+<td>1/1</td>
+<td>0</td>
+<td>0.000234</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>final</td>
+<td>1/1</td>
+<td>0</td>
+<td>0.000009</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>final</td>
+<td>1/1</td>
+<td>0</td>
+<td>0.000011</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-4o mini</td>
+<td>final</td>
+<td>1/1</td>
+<td>0</td>
+<td>0.000012</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-6 Luna Flex</td>
+<td>final</td>
+<td>1/1</td>
+<td>0</td>
+<td>0.000005</td>
+</tr>
+</tbody>
+</table>
+<p>Across this run's corpus and six-call preflight, known reported cost is <strong>USD 29.937005</strong>. There are <strong>778 generation IDs with unknown cost</strong> and <strong>0 conflicting cost observations</strong>. Amounts from earlier runs are excluded.</p>
+<p>Final generations have an explicit final response ID. Additional generations are other identified attempts for a sample with a final ID. Unresolved generations belong to samples without an explicit final ID; their role is not guessed. Attempts without IDs cannot be assigned a deduplicated cost.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Model</th>
+<th>HTTP attempts</th>
+<th>Failed attempts</th>
+<th>Attempts without ID</th>
+<th>Without end timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>corpus</td>
+<td>Claude Haiku 5.5</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Claude Sonnet 5.5</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>54001</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-4o mini</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-6 Luna Flex</td>
+<td>54426</td>
+<td>426</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Haiku 5.5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Sonnet 5.5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-4o mini</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-6 Luna Flex</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>A failed HTTP attempt has no response, HTTP status 4xx/5xx, or an error payload inside HTTP 200. The count of attempts beyond one per sample measures additional HTTP attempts; it does not add new cases. A filter is a recorded response outcome and does not by itself trigger a replacement generation.</p>
+<h3 id="tokens-in-final-responses">Tokens in final responses</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Model</th>
+<th>Input tokens</th>
+<th>Output tokens</th>
+<th>Reasoning tokens</th>
+<th>Unknown input/output/reasoning samples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>corpus</td>
+<td>Claude Haiku 5.5</td>
+<td>6894599</td>
+<td>200752</td>
+<td>0</td>
+<td>352/352/352</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Claude Sonnet 5.5</td>
+<td>6996312</td>
+<td>1265459</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>4603200</td>
+<td>54039</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>4603200</td>
+<td>54013</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-4o mini</td>
+<td>5131440</td>
+<td>57754</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-6 Luna Flex</td>
+<td>5077440</td>
+<td>270030</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Haiku 5.5</td>
+<td>96</td>
+<td>4</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Sonnet 5.5</td>
+<td>97</td>
+<td>4</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>65</td>
+<td>1</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>65</td>
+<td>1</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-4o mini</td>
+<td>74</td>
+<td>1</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-6 Luna Flex</td>
+<td>73</td>
+<td>5</td>
+<td>0</td>
+<td>0/0/0</td>
+</tr>
+</tbody>
+</table>
+<p>Token totals come from final output usage. They exclude usage missing from that field and do not count the usage of failed attempts as zero. Reported zero reasoning tokens do not prove the absence of unreported internal processing.</p>
+<h2 id="what-conclusions-are-supported">What conclusions are supported?</h2>
+<p>The results describe these six model/provider/reasoning conditions on this fixed corpus in one execution. Interpret agreement together with coverage and strict-format compliance. Review the condition tables before using the overall ranking: mHS has twice the weight of HS.</p>
+<p>Models can differ on the same question, and the paired table quantifies those differences without changing the cases. Filters and unparsed responses describe limits in usable coverage. Explanatory text that is interpreted successfully can still violate the requested format.</p>
+<p>Next, review source labels for cases with widespread disagreement and inspect mHS and reversed-order formulations. A logical audit should be a separate versioned analysis. Repeated independent runs would be needed to measure response variability. This report includes no confidence intervals, significance tests, causal claims, or cross-pilot comparisons.</p>
+<h2 id="operational-appendix-time-and-concurrency">Operational appendix: time and concurrency</h2>
+<table>
+<thead>
+<tr>
+<th>Interval</th>
+<th>Minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preparation and dispatch after corpus start</td>
+<td>0.72</td>
+</tr>
+<tr>
+<td>First task start to last task completion</td>
+<td>205.20</td>
+</tr>
+<tr>
+<td>Finalization and exports after last task</td>
+<td>15.61</td>
+</tr>
+<tr>
+<td>Full corpus phase including closure</td>
+<td>221.52</td>
+</tr>
+</tbody>
+</table>
+<p>Corpus phase started at 2026-11-06 01:24:17 -03 and closed at 2026-11-06 05:05:49 -03. Task duration includes generation, waits, retries, metadata collection, and scoring. It is not pure provider processing time. The preflight is separate.</p>
+<p>The run allowed six active tasks and 32 samples per task, for a 192-slot configured ceiling. Adaptive limits were min 10, start 20, max 64 per model. The controller can reduce limits after rate limits; transient errors pause growth. Limits are not measured request concurrency.</p>
+<p>The observed peak was <strong>192 concurrent samples</strong> and <strong>140 concurrent captured HTTP intervals with both timestamps</strong>. Missing HTTP end timestamps prevent a complete bound on transport concurrency.</p>
+<p><img alt="Adaptive connection limits" src="figures/adaptive_limits.svg" /></p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Sample peak</th>
+<th>HTTP interval peak</th>
+<th>Mean sample seconds</th>
+<th>P90 sample seconds</th>
+<th>Mean HTTP seconds</th>
+<th>P90 HTTP seconds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-4o mini</td>
+<td>32</td>
+<td>32</td>
+<td>6.56</td>
+<td>10.00</td>
+<td>1.19</td>
+<td>3.86</td>
+</tr>
+<tr>
+<td>GPT-6 Luna Flex</td>
+<td>64</td>
+<td>56</td>
+<td>7.68</td>
+<td>11.73</td>
+<td>2.25</td>
+<td>6.04</td>
+</tr>
+<tr>
+<td>Claude Haiku 5.5</td>
+<td>32</td>
+<td>32</td>
+<td>7.08</td>
+<td>10.57</td>
+<td>1.69</td>
+<td>4.54</td>
+</tr>
+<tr>
+<td>Claude Sonnet 5.5</td>
+<td>64</td>
+<td>53</td>
+<td>7.76</td>
+<td>11.34</td>
+<td>2.46</td>
+<td>5.35</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>32</td>
+<td>32</td>
+<td>6.48</td>
+<td>9.86</td>
+<td>1.12</td>
+<td>3.71</td>
+</tr>
+<tr>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>32</td>
+<td>32</td>
+<td>6.79</td>
+<td>10.26</td>
+<td>1.41</td>
+<td>4.13</td>
+</tr>
+</tbody>
+</table>
+<h3 id="request-and-returned-metadata-checks">Request and returned metadata checks</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Model</th>
+<th>Samples</th>
+<th>Missing captured requests</th>
+<th>Samples with condition faults</th>
+<th>Samples with reasoning usage reported</th>
+<th>Nonzero reasoning reported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>corpus</td>
+<td>Claude Haiku 5.5</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>53648</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Claude Sonnet 5.5</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>54000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>54000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>54000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-4o mini</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>54000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>corpus</td>
+<td>GPT-6 Luna Flex</td>
+<td>54000</td>
+<td>0</td>
+<td>0</td>
+<td>54000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Haiku 5.5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Claude Sonnet 5.5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.1 Flash-Lite Flex</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>Gemini 3.5 Flash-Lite Flex</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-4o mini</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>preflight</td>
+<td>GPT-6 Luna Flex</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="tables/reported_routes.csv">returned routing table</a> preserves reported provider and tier values, including empty sets. Missing evidence is not proof of a setting. The SQLite conditions table retains request-level fault descriptions. Native logs retain complete payloads and fields that this report does not project.</p>
+<h2 id="evidence-definitions-and-reproduction">Evidence, definitions, and reproduction</h2>
+<p><a href="summary.json">Summary JSON</a> · <a href="validation.json">Validation record</a> · <a href="provenance.json">Source and analysis hashes</a> · <a href="analysis.sqlite">SQLite analysis</a> · <a href="tables/responses.csv">Response table</a> · <a href="tables/generations.csv">Generation ledger</a> · <a href="tables/cost_conflicts.csv">Cost conflicts</a></p>
+<p>The report uses only the closed full-corpus run and its separate preflight. Inputs, original responses, native scores, logs, and exports are preserved. Every sample links to its native log and hash in the response table; every case includes source row, original identifiers, and record hashes in the dataset JSON files.</p>
+<p>To rebuild offline, run <code>uv run --locked transitivity report --run results/full/2026-11-06_01-23-40-040fd7b7 --output &lt;new-directory&gt;</code>. The destination must not exist. No provider API requests are made. To browse the HTML bundle, serve the repository with <code>uv run --locked python -m http.server 8000</code> and open this folder's <code>index.html</code> through localhost. All runtime assets and case shards are local.</p></article>
+<section id="aggregate"><p class="eyebrow">INTERACTIVE TABLES</p><h2>Compare conditions</h2><p>Combine filters below. Counts and denominators refer only to the selected cases. Agreement is with source labels, not audited logical validity.</p><div id="aggregate-filters" class="filters"></div><p id="aggregate-status" role="status">Loading local summary…</p><div class="table-scroll"><table><thead><tr><th>Model</th><th>Agreement</th><th>Coverage</th><th>Strict format</th><th>Matches / all</th><th>Filters</th><th>Other non-interpretable</th></tr></thead><tbody id="aggregate-rows"></tbody></table></div></section>
+<section id="explorer"><p class="eyebrow">ORIGINAL QUESTIONS AND RESPONSES</p><h2>Explore all 54,000 cases</h2><p>Load one dataset at a time. Open a case to compare all six original responses. Source labels are not independently audited.</p><div class="filters"><label>Dataset<select id="case-dataset"></select></label><label>Outcome<select id="case-outcome"><option value="all">All cases</option><option value="different">Different interpreted answers</option><option value="content_filter">Any content filter</option><option value="non-strict">Any interpretable non-strict answer</option><option value="uninterpretable">Any non-interpretable answer</option><option value="all-match">All models match the source</option></select></label><label>Source label<select id="case-validity"><option value="all">All labels</option><option value="valid">valid</option><option value="invalid">invalid</option></select></label><label>Premise order<select id="case-canonical"><option value="all">All orders</option><option value="canonic">canonic</option><option value="non-canonic">non-canonic</option></select></label><label>Find UID<input id="case-uid" placeholder="Paste a sample UID" type="search"></label></div>
+<p id="case-status" role="status">Loading local dataset list…</p><div class="pagination"><button id="previous" type="button">Previous 50</button><span id="page-number"></span><button id="next" type="button">Next 50</button></div><div id="case-list"></div></section></main><footer>Fixed source cases. Original responses. Explicit denominators. Local evidence.</footer></body></html>

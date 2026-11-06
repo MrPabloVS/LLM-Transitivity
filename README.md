@@ -1,8 +1,28 @@
 # LLM-Transitivity
 
-Use the installed Inspect workflow for the six-model coverage pilot.
-Preparation has restarted. See [current preparation status](docs/pilot.md#current-preparation-status)
-and complete the [readiness sequence](docs/pilot.md#readiness-sequence) before a paid run.
+Use the installed Inspect workflow to evaluate the reasoning corpus.
+The completed full-corpus report is below. For another paid run, follow the
+[full-corpus guide](docs/full_corpus.md) and its input checks.
+
+## Full-corpus results
+
+The completed run contains 54,000 cases evaluated by six models: 324,000 responses
+in 108 tasks. Read the [full report](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/report.md)
+or use the [HTML report and case explorer](reports/full/2026-11-06_01-23-40-040fd7b7/analysis-v1/index.html).
+The report measures agreement with source labels, not audited logical validity.
+
+Build a new report offline from the closed native evidence:
+
+```sh
+uv run --locked transitivity report --run results/full/2026-11-06_01-23-40-040fd7b7 --output reports/full/2026-11-06_01-23-40-040fd7b7/new-analysis
+```
+
+The output directory must not exist. The command makes no provider API calls.
+For the HTML explorer, run `uv run --locked python -m http.server 8000` from the
+repository and open the report path through `http://localhost:8000/`.
+All report assets and dataset files are local. See the
+[architecture guide](docs/architecture.md#offline-full-corpus-report) for checks
+and data responsibilities.
 
 ## Documentation
 
