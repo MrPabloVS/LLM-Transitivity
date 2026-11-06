@@ -1,13 +1,29 @@
 # Six-model pilot
 
-Status: local preparation and the six-model live preflight are complete.
-Review the observed format deviations and agree on a budget before the full pilot.
+Status: the full coverage pilot resumed after an interrupted process.
+The user authorized its launch with 16 concurrent samples and one active task.
 Earlier estimates and preflight reports are outside the active preparation.
 Saved model availability and price references were captured on November 5, 2026, through the
 [OpenRouter model catalog](https://openrouter.ai/api/v1/models) and its provider
 endpoint listings. A catalog entry does not establish access through our account.
 
 ## Current preparation status
+
+The active run is `2026-11-05_20-46-51-b3f8bb12`. Its
+[frozen run configuration](../results/pilot/2026-11-05_20-46-51-b3f8bb12/provenance/run.json)
+records 108 tasks and 3,240 planned responses. Open the Inspect viewer to follow
+progress. Final coverage, execution errors, and cost must be reviewed after
+completion. The saved preflight below remains a separate run.
+
+The original process stopped before finalization; the cause is unknown.
+Recovery found 29 complete tasks and 830 saved samples. The
+[recovery checkpoint](../results/pilot/2026-11-05_20-46-51-b3f8bb12/provenance/recovery-2026-11-06T00-05Z/checkpoint.json)
+records hashes and preserves the interrupted Inspect files in a ZIP archive.
+The detached recovery process uses the frozen Flow configuration and existing
+logs. It retains completed responses and runs pending samples. Original logs
+remain unchanged. Review recovered and retry logs without counting reused
+responses twice. The [pilot report draft](pilot_report.md) records methods;
+aggregate results and full-experiment projections remain pending.
 
 Local checks passed again on November 5, 2026: 54,000 full records, 108 strata,
 and 540 selected cases; 190 tests; and both dry-runs (108 pilot tasks and six
@@ -35,7 +51,7 @@ Sonnet 4.5 returned an explanation ending with a separate `Yes`. Both agree with
 the source label but fail strict formatting. These are model outcomes; no response,
 score, or prompt was changed. Immediate generation lookups were unavailable;
 a read-only refresh returned HTTP 200 for all six generation IDs.
-The full pilot has not run. Native task metadata retains configuration-time
+The full pilot is now running. Native task metadata retains configuration-time
 verification placeholders; observed verification is recorded in the review.
 
 ## Goal
