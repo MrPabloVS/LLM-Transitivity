@@ -224,3 +224,6 @@ __marimo__/
 
 # Keep the uncompressed database local; Git LFS stores its gzip archive.
 /reports/full/*/*/analysis.sqlite
+
+# Local DuckDB UI databases and state
+/.local/duckdb/

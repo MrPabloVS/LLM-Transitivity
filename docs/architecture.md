@@ -278,3 +278,11 @@ The output includes CSV tables, a generation ledger, SQLite data, input and code
 hashes, and a validation record. Native evidence remains unchanged. Serve the
 output through a local HTTP server to use the case explorer; it needs no external
 services. Do not treat an output without `validation.json` as a complete report.
+
+## Local DuckDB exploration
+
+`transitivity explore --report <directory>` registers CSV and JSON views over
+an existing report. It does not build a report or change archived evidence.
+The CLI owns the local UI lifetime and closes its server on `Ctrl+C`.
+Each report path has a separate local database under `.local/duckdb/`.
+The UI requires downloaded extension and web assets; queries run locally.

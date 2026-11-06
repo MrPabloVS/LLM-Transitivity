@@ -1316,6 +1316,7 @@ name = "llm-transitivity"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "duckdb" },
     { name = "inspect-ai" },
     { name = "inspect-flow" },
     { name = "markdown" },
@@ -1334,6 +1335,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "duckdb", specifier = ">=1.5.6" },
     { name = "inspect-ai", specifier = ">=0.3.286" },
     { name = "inspect-flow", specifier = ">=0.14.0" },
     { name = "markdown", specifier = ">=3.11.2" },
