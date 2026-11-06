@@ -86,6 +86,36 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                 "selected_rows"
             ]
         }
+    if spec["options"]["metadata"].get("correction_id"):
+        from types import SimpleNamespace
+
+        from llm_transitivity.datasets.correction import MANIFEST
+
+        correction = json.loads((root / MANIFEST).read_text())
+        source_cases = {}
+        for change in correction["cases"]:
+            row = json.loads((root / f"datasets/{change['dataset']}.json").read_text())[
+                change["original_row"] - 1
+            ]
+            source_cases[change["corrected_uid"]] = (
+                row[2],
+                "yes" if row[6] == "valid" else "no",
+            )
+        expected_uids = (
+            set(source_cases)
+            if phase_name == "corpus"
+            else {correction["cases"][0]["corrected_uid"]}
+        )
+        models = {}
+        for task in spec["tasks"]:
+            model = task["model"]
+            identifier = model["name"].removeprefix("openrouter/")
+            models[identifier] = SimpleNamespace(
+                provider=model["model_args"]["provider"]["only"][0],
+                service_tier=model["config"]["extra_body"]["service_tier"],
+                supports_reasoning=task["metadata"].get("reasoning_policy")
+                != "not supported",
+            )
     by_model = {}
     sample_records = []
     for identifier in wanted:

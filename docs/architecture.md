@@ -322,3 +322,11 @@ rates. It does not average stratum percentages. Case outcomes use the saved
 interpretation and source target, not raw-text matching. The report creates a
 continuous PDF from the same rendered article, with PNG companions for its SVG
 figures. Previous bundles and their assets retain their original bytes.
+
+## Corpus corrections
+
+The correction manifest permits only the approved whole-word text change.
+Selection uses original text with normalized source labels, so new text hashes
+do not select different pilot or load rows. The correction worker clones the
+frozen full-run model settings and executes only the listed source identities.
+See [the correction procedure](corpus_correction.md).
