@@ -221,3 +221,15 @@ A derived continuation validates parent snapshots and response hashes, then
 reviews saved responses with the current policy. It freezes new package code
 for the remaining load phase. It preserves the old review and does not relax
 the source checks for normal resume.
+
+## Pilot 2.0 preparation
+
+The `pilot2` profile selects the six models in [the Pilot 2.0 guide](pilot2.md).
+Flow accepts a local active-task override and derives the shared per-model
+connection limit from the per-task sample limit and dataset count. The original
+profile defaults and compatibility aliases remain unchanged. The snapshot
+includes the new model-card manifest and effective JSON cards.
+
+The follow-up runner can prepare both Pilot 2.0 phases without model calls.
+Its offline reviewer uses the frozen profile to select expected model settings.
+The separate Pilot 2.0 report retains unknown costs, filters, and observed peaks.

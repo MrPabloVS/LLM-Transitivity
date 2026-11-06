@@ -1,5 +1,6 @@
 """Compose the coverage pilot from verified inputs and shared execution policy."""
 
+import json
 from copy import deepcopy
 from dataclasses import replace
 from datetime import datetime
@@ -74,6 +75,26 @@ def _run_context(
     load: bool,
 ) -> dict:
     context = run_metadata(root, manifest, policy=policy)
+    if profile == "pilot2":
+        base = Path("docs/model_cards")
+        card_manifest = base / "pilot-2.0-manifest.json"
+        cards = json.loads((root / card_manifest).read_text())
+        if {entry["model_id"] for entry in cards["models"]} != {
+            m.identifier for m in profile_models(profile)
+        }:
+            raise ValueError("Pilot 2.0 cards do not match the model profile")
+        context["pilot_name"] = "Pilot 2.0"
+        context["model_cards_manifest"] = str(card_manifest)
+        context["source_sha256"][str(card_manifest)] = digest(
+            (root / card_manifest).read_bytes()
+        )
+        for entry in cards["models"]:
+            for name in ("card.md", "model.json", "endpoints.json"):
+                relative = base / entry["files"][name]["path"]
+                actual = digest((root / relative).read_bytes())
+                if actual != entry["files"][name]["sha256"]:
+                    raise ValueError("Pilot 2.0 model card changed: " + str(relative))
+                context["source_sha256"][str(relative)] = actual
     context["phase"] = (
         "preflight" if preflight else "load-validation" if load else "coverage-pilot"
     )
@@ -172,11 +193,14 @@ def build_pilot_spec(
     selected_models: tuple[str, ...] | None = None,
     concurrency: int | None = None,
     load: bool = False,
+    max_tasks: int | None = None,
 ) -> FlowSpec:
     if (concurrency is not None and concurrency not in {16, 32, 64}) or (
         load and preflight
     ):
         raise ValueError("Invalid concurrency or conflicting execution phases")
+    if max_tasks is not None and max_tasks < 1:
+        raise ValueError("Active task count must be positive")
     models = profile_models(profile, selected_models)
     manifest = verify(root)
     policy = (
@@ -186,7 +210,31 @@ def build_pilot_spec(
             GENERATION_POLICY, max_samples=concurrency, max_connections=concurrency
         )
     )
+    if max_tasks is not None:
+        datasets_per_model = 1 if preflight or load else len(manifest["datasets"])
+        policy = replace(
+            policy,
+            max_tasks=max_tasks,
+            max_connections=policy.max_samples * min(max_tasks, datasets_per_model),
+        )
     context = _run_context(root, manifest, policy, preflight, models, profile, load)
+    if max_tasks is not None:
+        context["max_connections_per_model"] = policy.max_connections
+        context["connection_limit_scope"] = "shared model endpoint pool"
+        limits = [
+            min(policy.max_samples, 1 if preflight else len(entry["selected_rows"]))
+            for entry in (
+                manifest["datasets"][:1] if preflight else manifest["datasets"]
+            )
+            for _ in models
+        ]
+        context["configured_sample_ceiling"] = policy.max_samples * min(
+            max_tasks, len(limits)
+        )
+        context["effective_sample_ceiling"] = sum(
+            sorted(limits, reverse=True)[:max_tasks]
+        )
+
     selected = manifest["datasets"][:1] if preflight else manifest["datasets"]
     prepared = {}
     if not load:
@@ -218,7 +266,8 @@ def build_pilot_spec(
             max_samples=policy.max_samples,
             retry_attempts=policy.flow_retry_attempts,
             retry_cleanup=policy.flow_retry_cleanup,
-            tags=[f"experiment:{EXPERIMENT_ID}", f"phase:{context['phase']}"],
+            tags=[f"experiment:{EXPERIMENT_ID}", f"phase:{context['phase']}"]
+            + (["pilot:2.0"] if profile == "pilot2" else []),
             metadata=context,
             log_samples=True,
             log_model_api=True,

@@ -12,7 +12,12 @@ from tests.paths import PROJECT_ROOT
 
 
 @pytest.mark.parametrize(
-    "identifier", ["anthropic/claude-haiku-4.5", "anthropic/claude-haiku-5.5"]
+    "identifier",
+    [
+        "anthropic/claude-haiku-4.5",
+        "anthropic/claude-haiku-5.5",
+        "anthropic/claude-sonnet-5.5",
+    ],
 )
 def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
     identifier, tmp_path, monkeypatch
@@ -66,7 +71,11 @@ def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
         },
     )
     monkeypatch.setenv("OPENROUTER_API_KEY", "test-haiku-fake-key")
-    spec = build_pilot_spec(PROJECT_ROOT, profile="haiku", preflight=True)
+    spec = build_pilot_spec(
+        PROJECT_ROOT,
+        profile="pilot2" if "sonnet-5.5" in identifier else "haiku",
+        preflight=True,
+    )
     task = next(t for t in spec.tasks if t.metadata["requested_model"] == identifier)
     backend = get_model(
         task.model.name, config=task.model.config, **task.model.model_args

@@ -185,3 +185,10 @@ all 48 tasks and 2,382 planned responses without API calls.
 
 The [latest follow-up results](docs/haiku_followup_results.md) include the Haiku
 comparison and the reason the 64-slot load was not executed.
+
+## Pilot 2.0
+
+See [the preparation guide](docs/pilot2.md) for the six-model selection, fixed
+providers, unchanged 540-case input selection, and 108-task schedule at 32 samples
+per task. The [saved cards](docs/model_cards/README.md#pilot-20) include manufacturer
+documents and full endpoint snapshots. This preparation has not run generations.

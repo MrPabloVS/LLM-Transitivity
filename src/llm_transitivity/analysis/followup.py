@@ -59,7 +59,10 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
         if key not in latest or rank > latest[key][0]:
             latest[key] = (rank, path, log)
     ledger = _capture_ledger(logs)
-    models = {m.identifier: m for m in profile_models("haiku")}
+    models = {
+        m.identifier: m
+        for m in profile_models(spec["options"]["metadata"].get("profile", "haiku"))
+    }
     wanted = spec["options"]["metadata"]["generation_groups"]
     source_manifest = json.loads((root / "datasets/pilot/manifest.json").read_text())
     source_cases = {}

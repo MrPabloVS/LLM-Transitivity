@@ -87,3 +87,46 @@ def test_haiku_coverage_and_direct_load_counts_and_mutability():
 def test_invalid_execution_fails_before_configuration(kwargs):
     with pytest.raises(ValueError):
         build_pilot_spec(PROJECT_ROOT, **kwargs)
+
+
+def test_pilot2_profile_runs_all_dataset_tasks_with_shared_model_pool():
+    from llm_transitivity.inspect.flow import build_pilot_spec
+    from tests.paths import PROJECT_ROOT
+
+    spec = build_pilot_spec(
+        PROJECT_ROOT, profile="pilot2", concurrency=32, max_tasks=108
+    )
+    assert len(spec.tasks) == 108
+    assert spec.options.max_tasks == 108
+    assert spec.options.max_samples == 32
+    assert spec.options.metadata["planned_responses"] == 3240
+    assert spec.options.metadata["configured_sample_ceiling"] == 3456
+    assert spec.options.metadata["effective_sample_ceiling"] == 2808
+    assert (
+        "docs/model_cards/pilot-2.0-manifest.json"
+        in spec.options.metadata["source_sha256"]
+    )
+    assert {task.model.name for task in spec.tasks} == {
+        "openrouter/" + m.identifier for m in profile_models("pilot2")
+    }
+    assert {m.generation_group for m in profile_models("pilot2")} == {
+        "earlier",
+        "later",
+    }
+    for task in spec.tasks:
+        assert task.model.config.max_connections == 576
+        if task.model.name.startswith("openrouter/anthropic/"):
+            assert task.model.config.reasoning_effort == "medium"
+            assert task.model.model_args["reasoning_enabled"] is False
+            assert task.model.model_args["provider"]["only"] == ["anthropic"]
+
+    spec.tasks[0].model.config.max_connections = 1
+    assert spec.tasks[1].model.config.max_connections == 576
+
+
+def test_invalid_active_task_count_fails_before_archive_creation():
+    from llm_transitivity.inspect.flow import build_pilot_spec
+    from tests.paths import PROJECT_ROOT
+
+    with pytest.raises(ValueError, match="Active task count"):
+        build_pilot_spec(PROJECT_ROOT, max_tasks=0)

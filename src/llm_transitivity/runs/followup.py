@@ -25,7 +25,15 @@ from llm_transitivity.runs.archive import finalize_archive, prepare_archive
 HAIKU_IDS = ("anthropic/claude-haiku-4.5", "anthropic/claude-haiku-5.5")
 
 
-def stage_specs(root: Path) -> list[tuple[str, FlowSpec]]:
+def stage_specs(root: Path, *, profile: str = "haiku") -> list[tuple[str, FlowSpec]]:
+    if profile == "pilot2":
+        return [
+            ("preflight", build_pilot_spec(root, profile=profile, preflight=True)),
+            (
+                "coverage",
+                build_pilot_spec(root, profile=profile, concurrency=32, max_tasks=108),
+            ),
+        ]
     return [
         ("preflight", build_pilot_spec(root, profile="haiku", preflight=True)),
         (
@@ -36,7 +44,7 @@ def stage_specs(root: Path) -> list[tuple[str, FlowSpec]]:
     ]
 
 
-def preview(root: Path) -> dict:
+def preview(root: Path, *, profile: str = "haiku") -> dict:
     return {
         name: {
             "tasks": len(spec.tasks),
@@ -44,11 +52,19 @@ def preview(root: Path) -> dict:
             "max_samples": spec.options.max_samples,
             "max_tasks": spec.options.max_tasks,
         }
-        for name, spec in stage_specs(root)
+        for name, spec in (
+            stage_specs(root)
+            if profile == "haiku"
+            else stage_specs(root, profile=profile)
+        )
     }
 
 
-def prepare(root: Path, *, continue_from: Path | None = None) -> Path:
+def prepare(
+    root: Path, *, continue_from: Path | None = None, profile: str = "haiku"
+) -> Path:
+    if continue_from and profile != "haiku":
+        raise ValueError("Derived continuation requires the original haiku profile")
     inherited = _review_completed(root, continue_from) if continue_from else {}
     stages = (
         [
@@ -59,8 +75,10 @@ def prepare(root: Path, *, continue_from: Path | None = None) -> Path:
         ]
         if continue_from
         else stage_specs(root)
+        if profile == "haiku"
+        else stage_specs(root, profile=profile)
     )
-    quote = estimate(root, profile="haiku", followup=True)
+    quote = estimate(root, profile=profile, followup=profile == "haiku")
     estimate_path = save_estimate(root, quote)
     campaign_id = str(uuid4())
     stamp = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).strftime(
@@ -69,20 +87,26 @@ def prepare(root: Path, *, continue_from: Path | None = None) -> Path:
     parent = (
         continue_from / "continuations" if continue_from else root / "results/pilot"
     )
-    directory = parent / f"{stamp}-{campaign_id[:8]}-haiku-followup"
+    suffix = "pilot-2.0" if profile == "pilot2" else f"{profile}-followup"
+    directory = parent / f"{stamp}-{campaign_id[:8]}-{suffix}"
     directory.mkdir(parents=True, exist_ok=False)
     manifest = {
         "version": 1,
         "campaign_id": campaign_id,
         "created_at_utc": datetime.now(UTC).isoformat(),
-        "profile": "haiku",
-        "direct_load_concurrency": 64,
-        "coverage_concurrency": 16,
+        "profile": profile,
+        "pilot_name": "Pilot 2.0" if profile == "pilot2" else "Haiku follow-up",
+        "direct_load_concurrency": 64 if profile == "haiku" else None,
+        "coverage_concurrency": 16 if profile == "haiku" else 32,
         "no_spend_pause": True,
         "full_corpus_run": False,
-        "planned_responses": 1296 if continue_from else 2382,
-        "planned_tasks": 6 if continue_from else 48,
-        "price_estimate_scope": "Full follow-up scenario; continuation runs only load-64",
+        "planned_responses": sum(
+            spec.options.metadata["planned_responses"] for _, spec in stages
+        ),
+        "planned_tasks": sum(len(spec.tasks) for _, spec in stages),
+        "price_estimate_scope": "Full Haiku follow-up scenario"
+        if profile == "haiku"
+        else "3240 coverage responses; six extra preflight calls",
         "parent_campaign": str(continue_from.relative_to(root))
         if continue_from
         else None,
@@ -91,8 +115,12 @@ def prepare(root: Path, *, continue_from: Path | None = None) -> Path:
         else None,
         "inherited_reviews": {},
         "omitted_load_levels": {
-            "16": "User requested direct 64-slot load",
-            "32": "User requested direct 64-slot load",
+            "16": "User requested direct 64-slot load"
+            if profile == "haiku"
+            else "No separate load stage in Pilot 2.0",
+            "32": "User requested direct 64-slot load"
+            if profile == "haiku"
+            else "No separate load stage in Pilot 2.0",
         },
         "price_estimate": str(estimate_path.relative_to(root)),
         "price_estimate_sha256": digest(estimate_path.read_bytes()),
@@ -111,21 +139,23 @@ def prepare(root: Path, *, continue_from: Path | None = None) -> Path:
         spec.options.metadata.update(
             {
                 "campaign_id": campaign_id,
-                "profile": "haiku",
+                "profile": profile,
                 "results_root": str(phase.relative_to(root)),
             }
         )
         spec.options.tags += [
             f"campaign:{campaign_id}",
-            "profile:haiku",
+            f"profile:{profile}",
             f"concurrency:{spec.options.max_samples}",
+            f"active_tasks:{spec.options.max_tasks}",
         ]
         for task in spec.tasks:
             task.metadata["campaign_id"] = campaign_id
             task.tags += [
                 f"campaign:{campaign_id}",
-                "profile:haiku",
+                f"profile:{profile}",
                 f"concurrency:{spec.options.max_samples}",
+                f"active_tasks:{spec.options.max_tasks}",
             ]
         prepare_archive(spec, root)
         manifest["stages"].append(
@@ -365,7 +395,9 @@ def execute(root: Path, directory: Path) -> bool:
                 review_sha256=digest((directory / relative).read_bytes()),
             )
             stopped = status != "passed"
-        from llm_transitivity.analysis.followup_report import write_report
-
+        if manifest.get("profile") == "pilot2":
+            from llm_transitivity.analysis.pilot2_report import write_report
+        else:
+            from llm_transitivity.analysis.followup_report import write_report
         write_report(root, directory, manifest, reviews)
         return not stopped

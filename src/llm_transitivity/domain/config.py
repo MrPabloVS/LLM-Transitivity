@@ -84,11 +84,33 @@ HAIKU_SPECS = tuple(
 )
 
 
+PILOT2_SPECS = (
+    MODEL_SPECS[0],
+    MODEL_SPECS[1],
+    ModelSpec(
+        "anthropic/claude-sonnet-4.6", "anthropic", "earlier", True, "default", "medium"
+    ),
+    ModelSpec(
+        "anthropic/claude-sonnet-5.5", "anthropic", "later", True, "default", "medium"
+    ),
+    ModelSpec(
+        "google/gemini-3.1-flash-lite", "google-ai-studio/flex", "earlier", True, "flex"
+    ),
+    ModelSpec(
+        "google/gemini-3.5-flash-lite", "google-ai-studio/flex", "later", True, "flex"
+    ),
+)
+
+
 def profile_models(
     profile: str = "sonnet", selected: tuple[str, ...] | None = None
 ) -> tuple[ModelSpec, ...]:
     """Select an explicit profile without changing the historical default."""
-    profiles = {"sonnet": MODEL_SPECS, "haiku": HAIKU_SPECS}
+    profiles = {
+        "sonnet": MODEL_SPECS,
+        "haiku": HAIKU_SPECS,
+        "pilot2": PILOT2_SPECS,
+    }
     if profile not in profiles:
         raise ValueError(f"Unknown model profile: {profile}")
     models = profiles[profile]
