@@ -206,6 +206,8 @@ def narrative(db, summary, card_links):
         "",
         "[Interactive tables](explorer.html#aggregate) · [Case explorer](explorer.html#explorer)",
         "",
+        "[Continuous PDF](https://github.com/MrPabloVS/LLM-Transitivity/blob/tobe/runs-2026-11-05/output/pdf/full-corpus-report-continuous.pdf) \u00b7 [Detailed setup guide (Spanish)](https://github.com/MrPabloVS/LLM-Transitivity/blob/tobe/runs-2026-11-05/docs/guia_informe_es.md)",
+        "",
         "## Main findings",
         "",
         "Six models answered the same 54,000 distinct questions. All 108 tasks completed. The corpus has 324,000 saved responses and zero final sample execution errors.",

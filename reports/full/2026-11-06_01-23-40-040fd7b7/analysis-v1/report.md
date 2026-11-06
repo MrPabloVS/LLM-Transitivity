@@ -4,6 +4,8 @@ Run: `2026-11-06_01-23-40-040fd7b7`. Analysis: `full-corpus-report-v1`.
 
 [Interactive tables](explorer.html#aggregate) · [Case explorer](explorer.html#explorer)
 
+[Continuous PDF](https://github.com/MrPabloVS/LLM-Transitivity/blob/tobe/runs-2026-11-05/output/pdf/full-corpus-report-continuous.pdf) · [Detailed setup guide (Spanish)](https://github.com/MrPabloVS/LLM-Transitivity/blob/tobe/runs-2026-11-05/docs/guia_informe_es.md)
+
 ## Main findings
 
 Six models answered the same 54,000 distinct questions. All 108 tasks completed. The corpus has 324,000 saved responses and zero final sample execution errors.
