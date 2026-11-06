@@ -12,7 +12,7 @@ from llm_transitivity.domain.config import GENERATION_POLICY, GenerationPolicy
 from llm_transitivity.evidence.serialization import digest
 
 EXPERIMENT_ID = "llm-transitivity-coverage-pilot-v1"
-SCORING_VERSION = "source-label-deterministic-v2"
+SCORING_VERSION = "source-label-deterministic-v3"
 
 
 def package_sources(root: Path) -> list[str]:

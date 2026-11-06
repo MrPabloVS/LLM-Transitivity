@@ -3,7 +3,7 @@
 import re
 from dataclasses import dataclass
 
-EXTRACTION_RULE = "initial_or_final_line_v1"
+EXTRACTION_RULE = "initial_or_final_line_v2"
 
 
 @dataclass(frozen=True)
@@ -20,14 +20,25 @@ def interpret_response(
     answer = raw.strip().lower()
     # Read an initial answer or a standalone answer on the final line.
     match = re.match(r"^(?:answer:\s*)?(yes|no)(?=$|[\s.,!?:;])", answer)
+    if not match:
+        match = re.match(r"^(?:answer:\s*)?\*\*(yes|no)\*\*[.!?]?(?=$|[\s,;:])", answer)
     position = "initial" if match else None
     if not match:
         match = re.fullmatch(
             r"(?:answer:\s*)?(yes|no)[.!?]?", answer.split("\n")[-1].strip()
         )
+        if not match:
+            match = re.fullmatch(
+                r"(?:\*\*(yes|no)\*\*[.!?]?|therefore,\s*(yes|no)[.!?]?)",
+                answer.split("\n")[-1].strip(),
+            )
         position = "final_line" if match else None
     tokens = set(re.findall(r"\b(?:yes|no)\b", answer))
-    extracted = match.group(1) if match and len(tokens) == 1 else None
+    extracted = (
+        next(group for group in match.groups() if group is not None)
+        if match and len(tokens) == 1
+        else None
+    )
     if error:
         status = "error"
     elif content_filtered:

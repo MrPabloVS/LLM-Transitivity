@@ -69,7 +69,7 @@ def test_response_categories(text, target, stop, error, status, value):
     assert result.answer == text
     assert result.metadata["status"] == status
     assert result.metadata["expected"] == target
-    assert result.metadata["extraction_rule"] == "initial_or_final_line_v1"
+    assert result.metadata["extraction_rule"] == "initial_or_final_line_v2"
     assert result.metadata["extraction_position"] == (
         ("final_line" if "\n" in text.strip() else "initial")
         if status == "answered"

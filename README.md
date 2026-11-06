@@ -124,6 +124,14 @@ do not interpret arbitrary explanations or resolve contradictions in prose.
 Score metadata records the extraction rule version and the answer position.
 Existing logs keep the scores and rules used when they were created.
 
+The current extraction rule is `initial_or_final_line_v2`, with scoring version
+`source-label-deterministic-v3`. It also accepts balanced bold `**yes**` or
+`**no**` initially or on the final line, with one optional final punctuation
+mark. A complete final line `Therefore, yes.` or `Therefore, no.` is accepted
+with optional `.`, `!`, or `?`. These forms remain strict-format violations.
+See the [pilot results](docs/pilot_report.md) for the derived reevaluation;
+native historical logs retain their original scores.
+
 `source_agreement` uses interpreted answers as its denominator.
 `format_compliant_rate` uses all scored samples as its denominator.
 Response rates report answered, empty, filtered, invalid-format, ambiguous, and output-error
