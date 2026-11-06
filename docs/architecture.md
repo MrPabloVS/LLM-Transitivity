@@ -250,3 +250,28 @@ using the fixed Pilot 3 model settings. `runs.full` owns preparation, detached
 execution, locks, phase checks, and recovery. The preflight uses the existing
 technical reviewer; full-corpus closure checks all expected model/dataset pairs
 and counts. The separate command is described in [the full-corpus guide](full_corpus.md).
+
+## Offline full-corpus report
+
+`transitivity report --run <directory> --output <new-directory>` reads a closed
+full-corpus run. It rejects an existing output directory and incomplete closure.
+It does not load credentials or call provider APIs.
+
+`analysis.full_store` verifies frozen inputs and reads one sample at a time from
+version 2 native Inspect log archives. It stores cases, results, captured attempts,
+and generation cost observations in SQLite. It verifies text, source conditions,
+record hashes, scorer versions, and native aggregate scores before publication.
+`analysis.full_summary` derives all tables from this database. It keeps unknown
+costs separate from zero and retains conflicting observations with their sources.
+`analysis.full_render` produces Markdown, HTML, and SVG figures from the same
+summary. Local case files load one dataset at a time in the HTML explorer.
+
+Agreement means source-label matches divided by interpretable responses.
+Coverage and strict format use all planned cases as their denominator. The report
+also shows matches divided by all planned cases. These measures do not establish
+audited logical validity. Preflight costs remain separate from corpus results.
+
+The output includes CSV tables, a generation ledger, SQLite data, input and code
+hashes, and a validation record. Native evidence remains unchanged. Serve the
+output through a local HTTP server to use the case explorer; it needs no external
+services. Do not treat an output without `validation.json` as a complete report.
