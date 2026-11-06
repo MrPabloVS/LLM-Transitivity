@@ -10,20 +10,17 @@
 There were 288,466 source-label matches, 352 content filters, and 6 other non-interpretable responses across all models. These are separate outcomes.
 Claude Sonnet 5.5 had the highest observed agreement with source labels: 53,973/53,995 (99.96%). This comparison concerns this corpus and this run. Source labels have not been independently audited for logical validity.</p>
 <p>Sonnet 5.5 and Gemini 3.1 Flash-Lite are close in source-label agreement, but differ in format compliance and reported cost. See the tables below for exact counts and missing cost evidence.</p>
-<div class="toc">
+<h2 id="table-of-contents">Table of contents</h2>
 <ul>
-<li><a href="#full-corpus-results-what-we-tested-and-what-we-found">Full-corpus results: what we tested and what we found</a><ul>
 <li><a href="#main-findings">Main findings</a></li>
 <li><a href="#what-question-does-the-experiment-ask">What question does the experiment ask?</a></li>
 <li><a href="#what-cases-are-in-the-corpus">What cases are in the corpus?</a></li>
 <li><a href="#which-models-answered">Which models answered?</a></li>
 <li><a href="#how-are-answers-counted">How are answers counted?</a></li>
-<li><a href="#what-did-each-model-return">What did each model return?</a><ul>
+<li><a href="#what-did-each-model-return">What did each model return?</a></li>
 <li><a href="#false-positives-and-false-negatives">False positives and false negatives</a></li>
 <li><a href="#yes-and-no-answers">Yes and no answers</a></li>
-</ul>
-</li>
-<li><a href="#where-do-results-differ">Where do results differ?</a><ul>
+<li><a href="#where-do-results-differ">Where do results differ?</a></li>
 <li><a href="#case-family">Case family</a></li>
 <li><a href="#lexical-condition">Lexical condition</a></li>
 <li><a href="#verbal-time">Verbal time</a></li>
@@ -31,32 +28,21 @@ Claude Sonnet 5.5 had the highest observed agreement with source labels: 53,973/
 <li><a href="#source-validity-label">Source validity label</a></li>
 <li><a href="#question-formulation">Question formulation</a></li>
 <li><a href="#datasets-and-complete-strata">Datasets and complete strata</a></li>
-</ul>
-</li>
 <li><a href="#do-models-disagree-on-the-same-cases">Do models disagree on the same cases?</a></li>
-<li><a href="#cases-that-make-the-results-concrete">Cases that make the results concrete</a><ul>
+<li><a href="#cases-that-make-the-results-concrete">Cases that make the results concrete</a></li>
 <li><a href="#hs-different-answers">HS: different answers</a></li>
 <li><a href="#hs-content-filter">HS: content filter</a></li>
 <li><a href="#hs-interpretable-non-strict-format">HS: interpretable, non-strict format</a></li>
 <li><a href="#mhs-different-answers">mHS: different answers</a></li>
 <li><a href="#mhs-content-filter">mHS: content filter</a></li>
 <li><a href="#mhs-interpretable-non-strict-format">mHS: interpretable, non-strict format</a></li>
-</ul>
-</li>
-<li><a href="#what-did-the-run-cost">What did the run cost?</a><ul>
+<li><a href="#what-did-the-run-cost">What did the run cost?</a></li>
 <li><a href="#tokens-in-final-responses">Tokens in final responses</a></li>
-</ul>
-</li>
 <li><a href="#what-conclusions-are-supported">What conclusions are supported?</a></li>
-<li><a href="#operational-appendix-time-and-concurrency">Operational appendix: time and concurrency</a><ul>
+<li><a href="#operational-appendix-time-and-concurrency">Operational appendix: time and concurrency</a></li>
 <li><a href="#request-and-returned-metadata-checks">Request and returned metadata checks</a></li>
-</ul>
-</li>
 <li><a href="#evidence-definitions-and-reproduction">Evidence, definitions, and reproduction</a></li>
 </ul>
-</li>
-</ul>
-</div>
 <h2 id="what-question-does-the-experiment-ask">What question does the experiment ask?</h2>
 <p>We test how six language models answer hypothetical syllogism and metainferential hypothetical syllogism questions under different lexical and grammatical conditions. We compare each answer with the label supplied by the dataset. We also test whether the model follows a strict response-format instruction.</p>
 <p>Every case uses a new conversation, one system message, and one original question. No examples are supplied in the prompt (zero-shot). The system message is:</p>

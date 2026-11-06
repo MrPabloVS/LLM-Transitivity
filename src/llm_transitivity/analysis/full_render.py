@@ -784,7 +784,20 @@ def narrative(db, summary, card_links):
         + " --output <new-directory>`. The destination must not exist. No provider API requests are made. To browse the HTML bundle, serve the repository with `uv run --locked python -m http.server 8000` and open this folder's `index.html` through localhost. All runtime assets and case shards are local.",
         "",
     ]
-    return "\n".join(lines)
+    return with_contents("\n".join(lines))
+
+
+def with_contents(text):
+    """Expand the TOC marker to links that work in plain Markdown."""
+    from markdown.extensions.toc import slugify
+
+    entries = []
+    for line in text.splitlines():
+        if line.startswith(("## ", "### ")):
+            level, title = line.split(" ", 1)
+            indent = "  " if level == "###" else ""
+            entries.append(f"{indent}- [{title}](#{slugify(title, chr(45))})")
+    return text.replace("[TOC]", "## Table of contents\n\n" + "\n".join(entries))
 
 
 def render(db, root: Path, run: Path, output: Path, summary: dict):

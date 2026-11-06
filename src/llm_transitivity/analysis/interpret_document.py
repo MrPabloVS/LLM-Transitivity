@@ -94,7 +94,10 @@ def _pdf(output, blocks):
                     backColor=colors.HexColor("#f0f5f8"),
                     borderPadding=8,
                 )
-            item = Paragraph(html.escape(b["text"]).replace("\n", "<br/>"), style)
+            text = html.escape(b["text"]).replace("\n", "<br/>")
+            if b.get("link"):
+                text = f'<link href="#{html.escape(b["link"], quote=True)}" color="#006b95">{text}</link>'
+            item = Paragraph(text, style)
         elif kind == "figure":
             item = Image(str(output / "figures" / (b["name"] + ".png")))
             item.drawHeight *= available / item.drawWidth
@@ -124,8 +127,8 @@ def _pdf(output, blocks):
         else:
             raise ValueError(f"Unknown document block: {kind}")
         _, height = item.wrap(available, 1000000)
-        pieces.append((item, height, before, after))
-    height = 2 * margin + sum(h + before + after for _, h, before, after in pieces)
+        pieces.append((item, height, before, after, b.get("anchor")))
+    height = 2 * margin + sum(h + before + after for _, h, before, after, _ in pieces)
     canvas = Canvas(
         str(output / "report.pdf"),
         pagesize=(width, height),
@@ -134,8 +137,10 @@ def _pdf(output, blocks):
     )
     canvas.setTitle("Full-corpus results: analysis and interpretation")
     y = height - margin
-    for item, h, before, after in pieces:
+    for item, h, before, after, anchor in pieces:
         y -= before + h
+        if anchor:
+            canvas.bookmarkPage(anchor, fit="XYZ", left=0, top=y + h, zoom=0)
         item.drawOn(canvas, margin, y)
         y -= after
     canvas.showPage()

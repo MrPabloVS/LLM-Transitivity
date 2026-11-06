@@ -14,7 +14,38 @@ Claude Sonnet 5.5 had the highest observed agreement with source labels: 53,973/
 
 Sonnet 5.5 and Gemini 3.1 Flash-Lite are close in source-label agreement, but differ in format compliance and reported cost. See the tables below for exact counts and missing cost evidence.
 
-[TOC]
+## Table of contents
+
+- [Main findings](#main-findings)
+- [What question does the experiment ask?](#what-question-does-the-experiment-ask)
+- [What cases are in the corpus?](#what-cases-are-in-the-corpus)
+- [Which models answered?](#which-models-answered)
+- [How are answers counted?](#how-are-answers-counted)
+- [What did each model return?](#what-did-each-model-return)
+  - [False positives and false negatives](#false-positives-and-false-negatives)
+  - [Yes and no answers](#yes-and-no-answers)
+- [Where do results differ?](#where-do-results-differ)
+  - [Case family](#case-family)
+  - [Lexical condition](#lexical-condition)
+  - [Verbal time](#verbal-time)
+  - [Premise order](#premise-order)
+  - [Source validity label](#source-validity-label)
+  - [Question formulation](#question-formulation)
+  - [Datasets and complete strata](#datasets-and-complete-strata)
+- [Do models disagree on the same cases?](#do-models-disagree-on-the-same-cases)
+- [Cases that make the results concrete](#cases-that-make-the-results-concrete)
+  - [HS: different answers](#hs-different-answers)
+  - [HS: content filter](#hs-content-filter)
+  - [HS: interpretable, non-strict format](#hs-interpretable-non-strict-format)
+  - [mHS: different answers](#mhs-different-answers)
+  - [mHS: content filter](#mhs-content-filter)
+  - [mHS: interpretable, non-strict format](#mhs-interpretable-non-strict-format)
+- [What did the run cost?](#what-did-the-run-cost)
+  - [Tokens in final responses](#tokens-in-final-responses)
+- [What conclusions are supported?](#what-conclusions-are-supported)
+- [Operational appendix: time and concurrency](#operational-appendix-time-and-concurrency)
+  - [Request and returned metadata checks](#request-and-returned-metadata-checks)
+- [Evidence, definitions, and reproduction](#evidence-definitions-and-reproduction)
 
 ## What question does the experiment ask?
 

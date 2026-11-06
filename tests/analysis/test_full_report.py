@@ -346,3 +346,22 @@ def test_pdf_article_blocks_preserve_tables_literals_and_images():
         {"kind": "table", "headers": ["FP"], "rows": [["0/0 (undefined)"]]},
         {"kind": "figure", "name": "false_rates", "alt": "Rates"},
     ]
+
+
+def test_contents_links_reach_headings_in_markdown_and_pdf():
+    import markdown
+
+    from llm_transitivity.analysis.full_pdf import ArticleBlocks
+    from llm_transitivity.analysis.full_render import with_contents
+
+    text = with_contents(
+        "# Report\n\n[TOC]\n\n## Results?\n\n### FP and FN\n\n## Costs\n"
+    )
+    assert "[TOC]" not in text
+    assert "- [Results?](#results)" in text
+    parser = ArticleBlocks()
+    parser.feed(markdown.markdown(text, extensions=["toc"]))
+    links = [block["link"] for block in parser.blocks if "link" in block]
+    anchors = {block["anchor"] for block in parser.blocks if "anchor" in block}
+    assert links == ["results", "fp-and-fn", "costs"]
+    assert set(links) <= anchors
