@@ -1,8 +1,10 @@
 # Saved model cards
 
-These are OpenRouter catalog cards, not manufacturer system cards. The JSON
+The readable cards summarize OpenRouter catalog information. The JSON
 snapshots retain every published field returned during capture. Each readable
 card links to its source, extracted model record, and complete endpoint response.
+The new Haiku candidate captures also include complete manufacturer system-card
+PDFs, with their own source URLs, capture times, and hashes.
 
 These files describe their capture time. Statements inside a card such as
 "applying it to executable routing is pending" record that time, not current
@@ -28,3 +30,17 @@ and requested routing choices. The snapshots use no credentials or model
 generations. Existing run evidence remains unchanged.
 
 Preserve these files when refreshing cards. Save a future capture separately.
+
+## Haiku candidates
+
+These candidates have not replaced the six models above. The completed Sonnet
+pilot and its results remain unchanged. Native thinking controls are documented;
+OpenRouter transport behavior, account access, and live usage remain unverified.
+
+| Candidate model | Proposed group | Saved card | Proposed provider and tier |
+| --- | --- | --- | --- |
+| `anthropic/claude-haiku-4.5` | `earlier` | [Card](anthropic--claude-haiku-4.5/card.md) | `anthropic`, `default` |
+| `anthropic/claude-haiku-5.5` | `later` | [Card](anthropic--claude-haiku-5.5/card.md) | `anthropic`, `default` |
+
+[haiku-candidates-manifest.json](haiku-candidates-manifest.json) records this
+new capture. The original six-model manifest and snapshots retain their bytes.

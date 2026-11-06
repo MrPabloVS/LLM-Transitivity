@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "archive_kind": "Candidate Haiku model and endpoint snapshots with manufacturer system cards",
+  "captured_at_utc": "2026-11-06T00:49:48.825332+00:00",
+  "catalog_source": {
+    "url": "https://openrouter.ai/api/v1/models",
+    "resolved_url": "https://openrouter.ai/api/v1/models",
+    "fetched_at_utc": "2026-11-06T00:49:46.168929+00:00",
+    "http_status": 200,
+    "headers": {
+      "Date": "Fri, 06 Nov 2026 00:49:45 GMT",
+      "Content-Type": "application/json"
+    }
+  },
+  "record_note": "model.json retains the complete selected catalog record. endpoints.json retains the complete endpoint response. system-card.pdf retains the complete manufacturer document.",
+  "status": "Candidates only; executable catalog unchanged; account access and actual routing not tested.",
+  "models": [
+    {
+      "model_id": "anthropic/claude-haiku-4.5",
+      "directory": "anthropic--claude-haiku-4.5",
+      "candidate_group": "earlier",
+      "status": "candidate; not executed",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "resolved_url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-06T00:49:46.168929+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:45 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-4.5/endpoints",
+        "resolved_url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-4.5/endpoints",
+        "fetched_at_utc": "2026-11-06T00:49:48.485229+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:48 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "system_card_source": {
+        "url": "https://www.anthropic.com/claude-haiku-4-5-system-card",
+        "resolved_url": "https://assets.claude.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf",
+        "fetched_at_utc": "2026-11-06T00:49:48.654366+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:47 GMT",
+          "Content-Type": "application/pdf",
+          "ETag": "\"57ccf5873608dfedef8c7864f2590d64\""
+        }
+      },
+      "proposed_routing": {
+        "provider_only": [
+          "anthropic"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled; native support documented; OpenRouter runtime unverified",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "acbbd1f27c3e6ac29c9185cf63fad5a34ee500cad057c1e89f59be27d6a9bbfb",
+          "bytes": 3160
+        },
+        "endpoints.json": {
+          "sha256": "11946b71e5c759b99bac92339cbfb52568d6cd91bf526cd2ef9b67bc8eff7fac",
+          "bytes": 14417
+        },
+        "system-card.pdf": {
+          "sha256": "1b9ae5f4f66a65c1b37a031179af3dba35959471a3a5d195e4fe700b87558141",
+          "bytes": 1765218
+        },
+        "card.md": {
+          "sha256": "7ce154947428a542c3196dff2de938d54f51a1d2939c253441a2507ff23b6e8e",
+          "bytes": 3182
+        }
+      }
+    },
+    {
+      "model_id": "anthropic/claude-haiku-5.5",
+      "directory": "anthropic--claude-haiku-5.5",
+      "candidate_group": "later",
+      "status": "candidate; not executed",
+      "model_source": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "resolved_url": "https://openrouter.ai/api/v1/models",
+        "fetched_at_utc": "2026-11-06T00:49:46.168929+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:45 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "endpoint_source": {
+        "url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-5.5/endpoints",
+        "resolved_url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-5.5/endpoints",
+        "fetched_at_utc": "2026-11-06T00:49:46.615122+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:46 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "system_card_source": {
+        "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card",
+        "resolved_url": "https://assets.claude.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5.pdf",
+        "fetched_at_utc": "2026-11-06T00:49:48.824446+00:00",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 06 Nov 2026 00:49:47 GMT",
+          "Content-Type": "application/pdf",
+          "ETag": "\"4097a876620aba9b36d513e61da3208b\""
+        }
+      },
+      "proposed_routing": {
+        "provider_only": [
+          "anthropic"
+        ],
+        "service_tier": "default",
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "reasoning": "disabled; native support documented; OpenRouter runtime unverified",
+        "observed_routing_verified": false
+      },
+      "files": {
+        "model.json": {
+          "sha256": "7ebfd1495207031fa251c23fe1f5fdc319a34b0a7156ab211033ea658789b944",
+          "bytes": 3424
+        },
+        "endpoints.json": {
+          "sha256": "8eeba3c35da24724076814739da76f26e504b736097fb4858e095a45d13a940d",
+          "bytes": 21588
+        },
+        "system-card.pdf": {
+          "sha256": "d5dbaab6996c02ad6ff28b032ce5a9c7582e59af09b5d1bc0975cf0235535da9",
+          "bytes": 13007054
+        },
+        "card.md": {
+          "sha256": "1597caa79783fe42ccb5c2ed9d49a8d2e018887c957c4dd44203786b0596fe72",
+          "bytes": 3426
+        }
+      }
+    }
+  ]
+}
