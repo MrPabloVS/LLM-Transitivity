@@ -11,3 +11,6 @@ reports/full/*/interpretation-*/*.pdf binary
 reports/full/*/analysis-*/figures/*.svg -whitespace
 reports/full/*/analysis-*/tables/*.csv whitespace=cr-at-eol
 reports/full/*/analysis-*/*.pdf binary
+
+# Freeze the complete correction execution as LFS evidence.
+results/corrections/2026-11-06_15-37-32-64caf3fd-eate-to-ate-v1/** filter=lfs diff=lfs merge=lfs -text
