@@ -1,1 +1,0 @@
-"""Reproducible hypothetical syllogism experiments."""
