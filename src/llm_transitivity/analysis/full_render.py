@@ -784,7 +784,10 @@ def narrative(db, summary, card_links):
         + " --output <new-directory>`. The destination must not exist. No provider API requests are made. To browse the HTML bundle, serve the repository with `uv run --locked python -m http.server 8000` and open this folder's `index.html` through localhost. All runtime assets and case shards are local.",
         "",
     ]
-    return with_contents("\n".join(lines))
+    text = "\n".join(lines)
+    if summary.get("correction"):
+        text = corrected_narrative(text, summary)
+    return with_contents(text)
 
 
 def with_contents(text):
@@ -855,3 +858,87 @@ def error_table(records, condition=False):
             for r in records
         ],
     )
+
+
+def corrected_narrative(text, summary):
+    """State composite provenance without inventing a continuous execution time."""
+    amendment = summary["correction"]
+    notice = "\n\n".join(
+        [
+            "## Corpus correction and response replacement",
+            "This is the corrected principal corpus, composed from two executions. The original run supplied 320,328 retained responses. A separate execution supplied 3,672 replacement responses for 612 questions. Only the complete word eate changed to ate. All source labels stayed unchanged.",
+            "Correction: `"
+            + amendment["id"]
+            + "`. Replacement execution: `"
+            + amendment["replacement_run"]
+            + "`.",
+            "The 54,000 cases still have six responses each. Replaced responses are excluded from accuracy, coverage, format, and pairwise results. They remain in the historical cost ledger. The six new preflight calls are separate from corpus results.",
+            table(
+                [
+                    "Model",
+                    "Cases",
+                    "Changed answers",
+                    "Matches before",
+                    "Matches after",
+                    "Strict before",
+                    "Strict after",
+                ],
+                [
+                    [
+                        LABELS[r["model"]],
+                        r["samples"],
+                        r["changed_answers"],
+                        r["before_matched"],
+                        r["after_matched"],
+                        r["before_strict"],
+                        r["after_strict"],
+                    ]
+                    for r in amendment["changes"]
+                ],
+            ),
+            "Changes can reflect both corrected text and model or service variability. This comparison does not isolate a causal effect of the spelling correction.",
+            "[Replacement audit](tables/replacements.csv) · [Costs by execution and replacement role](tables/correction_costs.csv) · [Before/after measures](tables/correction_changes.csv)",
+            table(
+                [
+                    "Cost scope",
+                    "Model",
+                    "Generation IDs",
+                    "Unknown-cost IDs",
+                    "Known USD",
+                ],
+                [
+                    [
+                        r["scope"],
+                        LABELS[r["model"]],
+                        r["generation_ids"],
+                        r["unknown_cost_ids"],
+                        money(r["known_usd"]),
+                    ]
+                    for r in amendment["costs"]
+                ],
+            ),
+            f"The replacement corpus phase took {amendment['replacement_seconds'] / 60:.2f} minutes including closure. The operational time table below describes only the original execution. There is no single elapsed duration for the composite corpus.",
+        ]
+    )
+    text = text.replace("## Main findings", notice + "\n\n## Main findings", 1)
+    text = text.replace(
+        "All 108 tasks completed.",
+        "The principal results cover 108 model/dataset combinations; the correction used 12 replacement tasks.",
+    )
+    text = text.replace(
+        "Across this run's corpus and six-call preflight",
+        "Across both executions, including superseded calls and both preflights",
+    )
+    text = text.replace(
+        "Amounts from earlier runs are excluded.",
+        "The superseded phase is historical cost only and is excluded from current outcome measures.",
+    )
+    text = text.replace(
+        "## Operational appendix: time and concurrency",
+        "## Operational appendix: original execution time and concurrency",
+    )
+    text = text.replace(
+        "The report uses only the closed full-corpus run and its separate preflight.",
+        "The report combines the original closed run with the verified correction and records both preflights separately.",
+    )
+    return text

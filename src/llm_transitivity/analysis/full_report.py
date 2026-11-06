@@ -19,7 +19,7 @@ from llm_transitivity.analysis.full_summary import (
 )
 
 
-def report(root: Path, run: Path, output: Path) -> Path:
+def report(root: Path, run: Path, output: Path, correction: Path | None = None) -> Path:
     root, run, output = root.resolve(), run.resolve(), output.resolve()
     require(run.is_relative_to(root), "Run must be in the repository")
     require(not output.exists(), "Report output already exists")
@@ -67,7 +67,33 @@ def report(root: Path, run: Path, output: Path) -> Path:
         tasks = []
         for phase in ("preflight", "corpus"):
             tasks += ingest_phase(db, root, run, phase, system, config, provenance)
+        amendment = None
+        if correction is not None:
+            from llm_transitivity.analysis.correction import apply_correction
+
+            amendment = apply_correction(
+                db, root, correction.resolve(), config, system, provenance
+            )
         summary = build_summary(db, run, config, tasks)
+        if amendment:
+            summary["correction"] = amendment
+            for row in amendment["costs"]:
+                if row["scope"] == "superseded_original_corpus":
+                    summary["costs"].append(
+                        {
+                            "phase": "superseded",
+                            "model": row["model"],
+                            "kind": "historical replaced calls",
+                            "generations": row["generation_ids"],
+                            "known_cost_ids": row["generation_ids"]
+                            - row["unknown_cost_ids"],
+                            "unknown_cost_ids": row["unknown_cost_ids"],
+                            "known_usd": row["known_usd"],
+                        }
+                    )
+            summary["timing"]["scope"] = (
+                "original execution only; replacement execution is separate"
+            )
         summary["system_prompt"] = system
         summary["analysis_version"] = VERSION
         summary["source_run"] = str(run.relative_to(root))
@@ -85,6 +111,15 @@ def report(root: Path, run: Path, output: Path) -> Path:
             "scope": "closed full-corpus run only; preflight kept separate",
         }
         export_tables(db, output, summary)
+        if amendment:
+            from llm_transitivity.analysis.full_summary import query, write_csv
+
+            write_csv(
+                output / "tables/replacements.csv",
+                query(db, "SELECT * FROM replacements ORDER BY model,original_uid"),
+            )
+            write_csv(output / "tables/correction_costs.csv", amendment["costs"])
+            write_csv(output / "tables/correction_changes.csv", amendment["changes"])
         from llm_transitivity.analysis.full_render import render
 
         render(db, root, run, output, summary)

@@ -431,4 +431,26 @@ def narrative(data):
     text(
         "The output directory must not exist. The command performs no provider API calls. Open index.html directly: it needs no server, JavaScript, or external assets. Original logs, scores, source records, and the earlier report remain unchanged."
     )
+    if source.get("correction"):
+        correction = source["correction"]
+        blocks.insert(
+            1,
+            {
+                "kind": "text",
+                "text": "Corrected principal corpus: 320,328 original responses and 3,672 replacement responses for 612 corrected questions. Only eate changed to ate. This combines two executions. Source labels are unchanged. Response changes do not isolate the causal effect of the text correction.",
+            },
+        )
+        for block in blocks:
+            if block["kind"] == "text":
+                block["text"] = block["text"].replace("analysis-v1", "analysis-v3")
+                if "The evaluation interval was" in block["text"]:
+                    block["text"] = (
+                        "Original execution only. "
+                        + block["text"]
+                        + f" The separate replacement corpus phase took {correction['replacement_seconds'] / 60:.2f} minutes including closure. The composite has no continuous execution duration."
+                    )
+                if "Known corpus charges total" in block["text"]:
+                    block["text"] = (
+                        f"Known costs for retained and replacement corpus responses total USD {corpus_cost:.8f}. The original preflight adds USD {preflight_cost:.9f}. The cost table separately records superseded calls and the correction preflight. Unknown charges remain unknown; these totals are not a complete bill."
+                    )
     return blocks

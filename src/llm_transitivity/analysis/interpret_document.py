@@ -25,7 +25,11 @@ def render(output, blocks):
             case "heading":
                 markdown_parts.append("#" * b["level"] + " " + b["text"])
             case "text":
-                markdown_parts.append(escape(b["text"]))
+                markdown_parts.append(
+                    f"[{escape(b['text'])}](#{b['link']})"
+                    if b.get("link")
+                    else escape(b["text"])
+                )
             case "literal":
                 markdown_parts.append("<pre>" + html.escape(b["text"]) + "</pre>")
             case "figure":
@@ -39,7 +43,12 @@ def render(output, blocks):
                 markdown_parts.append("\n".join(lines))
     text = "\n\n".join(markdown_parts) + "\n"
     (output / "report.md").write_text(text, encoding="utf-8")
-    article = markdown.markdown(text, extensions=["tables"])
+    article = markdown.markdown(
+        text,
+        extensions=["tables", "toc"]
+        if any(b.get("link") for b in blocks)
+        else ["tables"],
+    )
     css = """body{font:18px/1.65 system-ui,sans-serif;color:#183044;background:#f7f9fb;margin:0}main{max-width:1100px;margin:auto;padding:50px;background:white}h1{font-size:40px;line-height:1.2}h2{margin-top:54px;border-top:2px solid #d7e6ed;padding-top:24px}h3{margin-top:32px}img{max-width:100%;height:auto}table{width:100%;border-collapse:collapse;font-size:13px;margin:24px 0}th,td{padding:9px;border:1px solid #d7e6ed;text-align:left;overflow-wrap:anywhere}th{background:#eaf1f5}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.6 monospace;background:#f0f5f8;padding:16px}a{color:#006b95}@media print{body{background:white}main{padding:0}}"""
     (output / "index.html").write_text(
         '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Full-corpus interpretation</title><style>'

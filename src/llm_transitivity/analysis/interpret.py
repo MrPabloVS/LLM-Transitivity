@@ -35,7 +35,19 @@ def interpret(root: Path, source: Path, output: Path):
     output.mkdir(parents=True)
     write_tables(output / "tables", data["tables"])
     make_figures(output / "figures", data)
-    render(output, narrative(data))
+    blocks = narrative(data)
+    if data["source"].get("correction"):
+        from markdown.extensions.toc import slugify
+
+        toc = [{"kind": "heading", "level": 2, "text": "Table of contents"}]
+        for block in blocks:
+            if block["kind"] == "heading" and block["level"] > 1:
+                block["anchor"] = slugify(block["text"], "-")
+                toc.append(
+                    {"kind": "text", "text": block["text"], "link": block["anchor"]}
+                )
+        blocks[2:2] = toc
+    render(output, blocks)
     (output / "summary.json").write_text(
         json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
     )

@@ -179,9 +179,15 @@ def load_cases(db, root: Path, run: Path) -> tuple[dict, dict]:
     for entry in manifest["datasets"]:
         verified = verify_dataset(root, manifest["baseline_revision"], entry["dataset"])
         frozen = read_json(snapshot / entry["working_path"])
-        require(frozen == verified.records, "Frozen input differs from verified source")
+        expected = [row.copy() for row in verified.originals]
+        for row in expected:
+            row[6] = {"valido": "valid"}.get(row[6], row[6])
+            row[7] = {"canonico": "canonic"}.get(row[7], row[7])
         require(
-            verified.working_sha256 == entry["working_sha256"],
+            frozen == expected, "Frozen input differs from verified original source"
+        )
+        require(
+            file_hash(snapshot / entry["working_path"]) == entry["working_sha256"],
             "Working input hash differs",
         )
         for number, (row, original) in enumerate(
@@ -444,9 +450,10 @@ def ingest_phase(
     system_prompt: str,
     config: dict,
     provenance: dict,
+    index_path: Path | None = None,
 ) -> list[dict]:
     directory = run / phase
-    index = read_json(directory / "summary/log_index.json")
+    index = read_json(index_path or directory / "summary/log_index.json")
     tasks = []
     for position, entry in enumerate(index["logs"], 1):
         path = directory / entry["path"]
