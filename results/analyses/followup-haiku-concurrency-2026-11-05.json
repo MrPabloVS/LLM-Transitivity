@@ -1,0 +1,126 @@
+{
+  "note": "Follow-up scenarios, not a change to executed models or measured concurrency. Haiku latency and output lengths are unmeasured.",
+  "haiku_assumptions": {
+    "earlier_input_proxy": "52992 Sonnet 4.5 pilot input tokens, not observed Haiku usage",
+    "later_input_proxy": "same input proxy multiplied by 1.3 for the documented approximate tokenizer change",
+    "output_tokens_per_case": [
+      1,
+      4
+    ],
+    "provider_only": [
+      "anthropic"
+    ],
+    "tier": "default",
+    "reasoning": "must be explicitly disabled and verified",
+    "full_pass_cases_per_model": 54000,
+    "failed_attempt_charges": "not included; 14 historical Flex error costs remain unknown"
+  },
+  "haiku_models": {
+    "4.5": {
+      "input_token_proxy_per_540": 52992,
+      "input_usd_per_token": 1e-06,
+      "output_usd_per_token": 5e-06,
+      "full_cost_usd_at_1_output_tokens": 5.5691999999999995,
+      "full_cost_usd_at_4_output_tokens": 6.3792
+    },
+    "5.5": {
+      "input_token_proxy_per_540": 68889.6,
+      "input_usd_per_token": 1e-07,
+      "output_usd_per_token": 5e-07,
+      "full_cost_usd_at_1_output_tokens": 0.7158960000000001,
+      "full_cost_usd_at_4_output_tokens": 0.796896
+    }
+  },
+  "haiku_full_group_costs": {
+    "earlier": {
+      "full_cost_usd_at_1_output_tokens": 6.613969999999999,
+      "full_cost_usd_at_4_output_tokens": 7.42397
+    },
+    "later": {
+      "full_cost_usd_at_1_output_tokens": 1.6532010000000001,
+      "full_cost_usd_at_4_output_tokens": 1.734201
+    },
+    "all": {
+      "full_cost_usd_at_1_output_tokens": 8.267171,
+      "full_cost_usd_at_4_output_tokens": 9.158171
+    }
+  },
+  "unchanged_sonnet_profile_time_scenarios": {
+    "16": {
+      "earlier": {
+        "central_hours": 12.263324111111109,
+        "slow_hours": 13.46903744444445
+      },
+      "later": {
+        "central_hours": 11.80564144444444,
+        "slow_hours": 14.48858955555555
+      },
+      "all": {
+        "central_hours": 24.068965555555547,
+        "slow_hours": 27.957627
+      }
+    },
+    "32": {
+      "earlier": {
+        "central_hours": 6.151016666666667,
+        "slow_hours": 6.7561735
+      },
+      "later": {
+        "central_hours": 5.918916333333334,
+        "slow_hours": 7.262331277777779
+      },
+      "all": {
+        "central_hours": 12.069932999999999,
+        "slow_hours": 14.018504777777776
+      }
+    },
+    "64": {
+      "earlier": {
+        "central_hours": 3.103658388888889,
+        "slow_hours": 3.4095862777777772
+      },
+      "later": {
+        "central_hours": 2.9852749999999997,
+        "slow_hours": 3.6578437777777784
+      },
+      "all": {
+        "central_hours": 6.088933388888888,
+        "slow_hours": 7.067430055555555
+      }
+    }
+  },
+  "time_assumptions": {
+    "max_tasks": 1,
+    "capacities_change_samples_and_connections_together": true,
+    "per_stratum_latencies": "unchanged mean and interpolated p90 from concurrency-16 pilot",
+    "task_overhead": "same measured per-model median from clean tasks",
+    "not_a_haiku_time_estimate": true,
+    "capacity_above_16_measured": false
+  },
+  "inputs_sha256": {
+    "results/analyses/pilot-2026-11-05-scoring-v3-verified/summary.json": "ec27f4ecf7d61cc6fcd39748e80afd4137de0df604a34114c91ad4eba3bc0c00",
+    "results/analyses/pilot-2026-11-05-scoring-v3-verified/samples.jsonl": "ee44c8653aa93b862af115290efd9068e8c73a2492e357a7a9ec6e846bb915db",
+    "datasets/pilot/manifest.json": "ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9",
+    "docs/model_cards/haiku-candidates-manifest.json": "f82004f35e916d730c69d6438209d475ab7d1ec3281128b288a23d368a85c06f",
+    "datasets/HS_HF_FU_2000.json": "2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562",
+    "datasets/HS_HF_PA_2000.json": "71e54f372e0661810d069b260c236af1b85652900807a6eb3260d5be6bad3896",
+    "datasets/HS_HF_PR_2000.json": "374adf9e3556d02d13f2fa6e562d52995bfc96290456dadd7d04a159e0737950",
+    "datasets/HS_LF_FU_2000.json": "6c0a85b8a05056b9d19862e26f3f83db6cfaf9fdbfcd251235dfdb317ecbbe90",
+    "datasets/HS_LF_PA_2000.json": "a3dabdf630ea2a585d0fa959dd7d1471c179868ff5ae09f9874267fa3625cc86",
+    "datasets/HS_LF_PR_2000.json": "4245334d29fcf50540d694ab7728304c32feb24454337435b775653b3656371b",
+    "datasets/HS_NS_FU_2000.json": "59c2c8f73f0d0a44e3702d2f801bc571db209792c8f4cb0b52437acace1a7deb",
+    "datasets/HS_NS_PA_2000.json": "e7bedf3f0db13c1fac3694ab41db50086a26e69c6f47d17ff218db284733dff0",
+    "datasets/HS_NS_PR_2000.json": "4c0e88dbfb0425cd1ad451df7b543034cdee798f3d2f4e4848be851307decb18",
+    "datasets/mHS_HF_FU_4000.json": "aa4730232b5bfd1ab659337dc4e3893ccb07ff67e93a529f7817226d1527dfab",
+    "datasets/mHS_HF_PA_4000.json": "e30299772abf5075725a98bf3e8697f16d42658a991465c59c5b76532b1c5bbe",
+    "datasets/mHS_HF_PR_4000.json": "a73e70f6f54e6dd8d1908376fe76ea84dd58b90842777e5558e0009bfa540b54",
+    "datasets/mHS_LF_FU_4000.json": "474a7a8e0b8ce67bdb12caaf73541a95cca2ed564fbfe6fb0aadc7103cc84b5b",
+    "datasets/mHS_LF_PA_4000.json": "25a94a562100043d10bd4a61dbff71c44f7b0d9d80528eeb27d336b8f51e3558",
+    "datasets/mHS_LF_PR_4000.json": "0e426a9f784ed17c0086470ac26a43760f8911b4bbc629ea64ec2dd3dbdae144",
+    "datasets/mHS_NS_FU_4000.json": "4920ba2bafc41afc269d7a40df239167c5f4274737db2321c7bb2f596b04ca24",
+    "datasets/mHS_NS_PA_4000.json": "54cd339d4a8cd059350c6a6dca307a2e839ed0ad5772c7d618d229a7becd1b09",
+    "datasets/mHS_NS_PR_4000.json": "86c81b1cc362c17ed479066a4c4c405d11db5a0610ccd1e5d7762191b91a4cae",
+    "docs/model_cards/anthropic--claude-haiku-4.5/endpoints.json": "11946b71e5c759b99bac92339cbfb52568d6cd91bf526cd2ef9b67bc8eff7fac",
+    "docs/model_cards/anthropic--claude-haiku-5.5/endpoints.json": "8eeba3c35da24724076814739da76f26e504b736097fb4858e095a45d13a940d"
+  }
+}

@@ -6,6 +6,55 @@ Results below use a derived reevaluation. The decision to run the full experimen
 remains with the researcher.
 Scope tables below describe the planned experiment.
 
+## Decision summary: models, costs, concurrency, and next steps
+
+**Recommended next step: pilot Haiku 4.5 and Haiku 5.5 before choosing the
+Anthropic pair for the full six-model run.** Preserve the completed Sonnet
+pilot as the measured baseline. Do not treat candidate prices or higher
+concurrency as measured outcomes.
+
+| Group | OpenAI, unchanged | Anthropic in completed pilot | Proposed Anthropic replacement | Google, unchanged |
+| --- | --- | --- | --- | --- |
+| `earlier` | GPT-4o mini | Sonnet 4.5 | [Haiku 4.5](model_cards/anthropic--claude-haiku-4.5/card.md) | Gemini 2.5 Flash-Lite |
+| `later` | GPT-6 Luna | Sonnet 5 | [Haiku 5.5](model_cards/anthropic--claude-haiku-5.5/card.md) | Gemini 3.1 Flash-Lite |
+
+Every full model pass contains 54,000 questions. Either group produces 162,000
+responses; both produce 324,000. The two options below each retain six models.
+
+| Full-pass scope | Sonnet design: observed pilot usage projected | Haiku design: short-answer assumption only |
+| --- | ---: | ---: |
+| `earlier` | USD 144.14 | USD 6.61–7.42 |
+| `later` | USD 16.61 | USD 1.65–1.73 |
+| Both groups | **USD 160.75** | **USD 8.27–9.16** |
+
+The Haiku column assumes 1–4 output tokens per answer, input-token proxies,
+and the prices in the saved cards. It is **not an observed Haiku cost** and does
+not establish comparable quality, verbosity, or latency. The Sonnet column
+uses actual captured final-response charges. Both exclude unknown failed-attempt
+charges. See [Haiku assumptions](#candidate-haiku-follow-up).
+
+| Concurrent samples and connections; one active task | Six-model full pass, unchanged Sonnet latency profile | Evidence status |
+| ---: | ---: | --- |
+| 16 | 24.07–27.96 hours | Pilot measured concurrency 16; full-pass time is projected |
+| 32 | 12.07–14.02 hours | Unmeasured concurrency; fixed-latency queue scenario |
+| 64 | 6.09–7.07 hours | Unmeasured concurrency; fixed-latency queue scenario |
+
+These higher-capacity scenarios hold latencies constant. They are not measured
+speedups, capacity guarantees, or Haiku runtime estimates. A new Haiku pilot
+must supply Haiku latencies. See [concurrency validation](#concurrency-16-32-and-64).
+
+1. Run a separate 540-question pilot per Haiku candidate, using the same case
+   IDs, fixed Anthropic provider, no fallback, and verified reasoning disabled.
+2. Validate load at 16, then 32, then 64 on the selected model design. Use
+   tasks large enough to reach each limit and retain metadata collection.
+3. Choose the Anthropic pair and a verified concurrency level from those results.
+   Keep all three developers and both comparison groups if the scientific goal
+   remains the cross-version comparison. Do not silently combine Sonnet and
+   Haiku as one experimental condition.
+
+No candidate replacement, concurrency increase, or paid run is executed by this
+report. The executable catalog and policy still use Sonnet and concurrency 16.
+
 ## What we test
 
 We ask six language models to answer reasoning questions with `yes` or `no`.
@@ -322,34 +371,78 @@ rate limits, local interruptions, and different lookup availability can change
 completion time. The slow scenario does not add a second retry multiplier:
 observed sample times already include their retry behavior.
 
+## Concurrency 16, 32, and 64
+
+The [follow-up scenario calculation](../results/analyses/followup-haiku-concurrency-2026-11-05.json)
+uses the same per-stratum means and interpolated p90 sample durations as the
+16-slot projection. It reruns the source-order queue with 32 and 64 slots,
+retains one active task, and adds the same measured overhead once per dataset.
+It does not divide the 16-slot total mechanically by two or four. However,
+constant latencies still make these optimistic capacity scenarios.
+
+| Slots | `earlier` hours | `later` hours | Both groups hours |
+| ---: | ---: | ---: | ---: |
+| 16 | 12.26–13.47 | 11.81–14.49 | 24.07–27.96 |
+| 32 | 6.15–6.76 | 5.92–7.26 | 12.07–14.02 |
+| 64 | 3.10–3.41 | 2.99–3.66 | 6.09–7.07 |
+
+All rows use the completed **Sonnet design's** latency profile. None predicts
+Haiku speed. The larger full datasets can fill 32 or 64 slots, unlike the pilot:
+its HS tasks contain only 20 cases and its mHS tasks only 40. Setting a cap of
+64 on those tasks cannot demonstrate 64 simultaneous samples.
+
+Validate 16 → 32 → 64 with separate load runs and at least 128 selected cases
+per task for each model under test. Use the same selected cases at every load
+level, preserve their source text and IDs, and label these as load-validation
+runs. Keep them separate from the coverage pilot and historical answer metrics.
+Change sample and connection caps together; retain one active task and metadata
+lookups. Advance only when measured throughput improves without a material
+increase in failures, retries, or stalled requests.
+
+At each level, compare achieved concurrency, cases per minute, request and
+sample p50/p90 latency, HTTP 429/402/5xx, HTTP-200 bodies with provider errors,
+retry count, timeouts, metadata lookup latency, and reported cost. The 16-slot
+pilot already had 14 temporary Flex errors on Luna. Greater concurrency may
+increase queueing instead of improving throughput. Immediate metadata lookups
+were usually unavailable and add work and waiting to the sample lifecycle.
+
+[OpenRouter limits](https://openrouter.ai/docs/api_reference/limits) depend on
+request rate, credit and budget limits, and in-flight spending. Published endpoint
+availability does not certify account-specific throughput at 32 or 64. Check
+current key limits and response headers before a load run; no account capacity
+at those levels has been verified here.
+
 ## Recommendation and next steps
 
-**Keep all six models for the full comparison, after the following checks.**
-The pilot covers all intended conditions and shows useful differences in
-source-label agreement, format adherence, and output cost. Removing a version
-would remove its paired earlier/later comparison. No new generation run is
-started or authorized by this report.
+**Evaluate the Haiku pair first; select the full-run design after that pilot.**
+The completed pilot establishes workflow coverage and useful differences across
+conditions. Sonnet 4.5 contributes about 89% of the measured design's projected
+cost and violates strict formatting in 467 of 540 responses. Its interpretable
+answers all agree with the source labels, so replacing it trades an observed
+result for an unmeasured candidate, not an equivalent result at a lower price.
 
-1. Review the derived scoring correction and its 48 changed cases. Use the new
-   version consistently for future runs. Keep the historical scores visible.
-2. Review the disagreement examples and a small set of source labels manually,
-   including non-canonical and mHS cases. Three models matched every pilot label;
-   check the interpretation of that result before claiming reasoning accuracy.
-3. Plan for approximately **USD 161 of final-response charges and 24–28 hours**
-   for all six models under the stated scenarios. Resolve or explicitly accept
-   the unknown charges for failed attempts and select an operational reserve.
-   The existing runner does not enforce a spending limit.
-4. Use a durable launch and verified recovery procedure. Review completed
-   dataset blocks, provider errors, and costs as the full run progresses. Point
-   Inspect only at its native log directory so exported JSON does not block it.
-5. Keep models, prompts, providers, and output limits unchanged for this
-   comparison. A shorter Sonnet prompt or a different endpoint would be a new
-   experimental condition and would require a separate pilot.
+1. Keep the corrected extraction rule and strict format metric separate. Review
+   the 48 derived scoring changes and the original disagreement examples.
+2. Pilot both Haiku versions on the same 540 questions each. Verify routing,
+   reasoning controls, actual output length, agreement, and format adherence.
+3. Validate concurrency in steps, using the load procedure above. Choose 32
+   only if it improves throughput; consider 64 only after a successful 32-slot
+   check. Until then, 16 is the sole measured setting.
+4. Recalculate costs and times from the new pilot before selecting the full run.
+   If the original Sonnet design is retained, plan for about USD 161 in
+   final-response charges and 24–28 hours at 16 slots. If Haiku meets the
+   short-output assumption, its cost scenario is about USD 8–9, but its runtime
+   and answer quality still require measurement.
+5. Review a small set of source labels, especially non-canonical and mHS cases,
+   before interpreting perfect pilot agreement as reasoning accuracy. Use a
+   durable launch and verified recovery, review completed blocks, and select
+   an operational reserve for unknown or additional charges. The runner does
+   not enforce a spending limit.
 
-If execution must be staged, the `later` group is the lower-cost first stage
-(about USD 16.61), followed by `earlier` (about USD 144.14), preserving the plan
-to compare both. Running only `earlier` would retain most of the expense while
-removing half the responses and all cross-version comparisons.
+If the original Sonnet run must be staged, `later` is the lower-cost first stage
+(about USD 16.61), followed by `earlier` (about USD 144.14). With the proposed
+Haiku design, both groups are low-cost under the stated assumptions. In either
+case, completing only one group removes the paired cross-version comparison.
 
 ## Candidate Haiku follow-up
 
@@ -359,6 +452,38 @@ The proposed Anthropic alternatives have saved cards:
 Each capture includes the complete catalog record, endpoint response, and
 manufacturer system-card PDF. These are candidates, not models evaluated in
 the results above. The executable catalog remains unchanged.
+
+
+### Haiku price and token assumptions
+
+The saved `anthropic` endpoints quote USD 1/M input and USD 5/M output for
+Haiku 4.5, and USD 0.10/M input and USD 0.50/M output for Haiku 5.5 at short
+prompt lengths. Prices describe the saved capture, not observed Haiku usage.
+
+For 540 cases, use the Sonnet 4.5 pilot's 52,992 input tokens as an explicit
+proxy for Haiku 4.5. For Haiku 5.5, multiply that proxy by 1.3 to reflect the
+manufacturer's approximate tokenizer increase for the same text. Actual token
+counts and message overhead may differ. Assume 1 or 4 output tokens per case;
+those are scenarios, not guaranteed yes/no token counts. The four unchanged
+models keep their observed pilot-based cost projections.
+
+| Anthropic candidate | Full 54,000-case cost at 1 output token | At 4 output tokens |
+| --- | ---: | ---: |
+| Haiku 4.5 | USD 5.5692 | USD 6.3792 |
+| Haiku 5.5 | USD 0.7159 | USD 0.7969 |
+
+The corresponding additional 1,080-response Haiku pilot would cost about
+USD 0.063–0.072 under these short-output assumptions, before retries. If Haiku
+4.5 instead reproduced Sonnet 4.5's 84,797 pilot output tokens, its full-pass
+cost would be **USD 47.6977 for that model alone**. Short output must therefore
+be measured, not inferred from the requested yes/no format.
+
+[Native thinking controls](https://platform.claude.com/docs/en/build-with-claude/thinking#configuring-thinking)
+allow reasoning to be disabled for both candidates. Haiku 5.5 enables adaptive
+thinking by default and accepts `thinking.type: disabled` only at `high` effort
+or below. Low effort alone does not disable thinking. Verify the actual
+OpenRouter request mapping and returned usage before claiming no-reasoning
+compatibility. The endpoint parameter listing alone is insufficient.
 
 ## Evidence and reproduction
 
