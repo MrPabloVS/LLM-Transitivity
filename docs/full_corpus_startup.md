@@ -1,5 +1,10 @@
 # Full-corpus startup analysis
 
+Archive status: the user requested removal of this unused partial run on
+2026-11-06. Its local directory was moved to the system Trash. The paths below
+describe the evidence available when this historical analysis was written.
+The partial responses are not part of the published corpus results.
+
 The adaptive attempt `2026-11-06_01-05-10-8879bdd9` stopped at the user's request.
 It used 108 active tasks, 32 sample slots per task, and adaptive connections
 with minimum 10, start 20, and maximum 576 per model. Its six-call preflight

@@ -227,3 +227,6 @@ __marimo__/
 
 # Local DuckDB UI databases and state
 /.local/duckdb/
+
+# Local temporary files and review outputs
+/tmp/
