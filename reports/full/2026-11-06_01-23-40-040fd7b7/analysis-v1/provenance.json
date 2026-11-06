@@ -346,7 +346,7 @@
     "src/llm_transitivity/inspect/full.py": "fce4f4d950bc7ac90737af30322745d093296b2b4fca35e3024a178baba25ae0",
     "src/llm_transitivity/inspect/samples.py": "63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5",
     "src/llm_transitivity/analysis/pilot.py": "b33df00ff7411da93718df83db9024dd514b8247c90c8a9db5e1748393063ead",
-    "src/llm_transitivity/analysis/full_render.py": "14a703d273972be987a702edd6680f9e7816d3472b3d5165d8ce5ebb9a4e97cf",
+    "src/llm_transitivity/analysis/full_render.py": "0ab945227925c666f4331082e4c48f801f7975f0eb11f5c3e9be77152d927f3d",
     "src/llm_transitivity/analysis/followup_report.py": "4b1084b0e06469c07e686eb8518450e30849baa483030fb42d559b61c9b19fe9",
     "src/llm_transitivity/analysis/__init__.py": "26241fca0fab026f736a98d262a6860bcd4bf60e08b8776a91321e50efc68bac",
     "src/llm_transitivity/analysis/calculations.py": "dc1dfa1212f2a12bb0d0122473a5dfb31ab27c5dd9e16cf4ae110fc77c684ccd",
@@ -387,10 +387,11 @@
     "src/llm_transitivity/runs/full.py": "c4181091914fa1fb2e4327ee56b9b25c166c41183110dee879808ad3526d5e9d",
     "src/llm_transitivity/runs/followup.py": "511a0fc57cd6f49b16c22007a4f604006e3d1d67069a2fe10b7b0f9a14cfbc0e",
     "src/llm_transitivity/runs/archive.py": "6759ea78587f2380eb9038df42f39ad72830b11801c20a82e032e12a09bb056e",
-    "src/llm_transitivity/analysis/report_assets/index.html": "4791c8d89ff8a68171babef0337a0e068ae369ab155a5a0b94a49cb4b726c557",
+    "src/llm_transitivity/analysis/report_assets/index.html": "ce9c9db52903a2c04ae18c10008bcc16bb98d8e9ed9cdce8d772fbf61f40bd64",
     "src/llm_transitivity/analysis/report_assets/report.css": "48f5706b8b165c54c266599cd6dad5bb26cf5b38b4f0ab4695bce3d6ef1b6021",
     "src/llm_transitivity/analysis/report_assets/report.js": "b541c5d428f6574d9095d06613bd525ac0972b3aafc4360b8b6b4d8504979c1e",
     "pyproject.toml": "a692c6baa08093b813a31f6691c1e9202e0f8317d476665e9e625574459d91e0",
-    "uv.lock": "f69b26e1c31b3993059ee1281272abc61cf8278fc99084411a8e1eb5e4b84092"
+    "uv.lock": "f69b26e1c31b3993059ee1281272abc61cf8278fc99084411a8e1eb5e4b84092",
+    "src/llm_transitivity/analysis/report_assets/explorer.html": "a11394c2a3c56920a3c66a97f2e905f0d7b43271a523b003a0d9e9b5d40d4c09"
   }
 }

@@ -204,6 +204,8 @@ def narrative(db, summary, card_links):
         "",
         f"Run: `{summary['run_id']}`. Analysis: `{summary['analysis_version']}`.",
         "",
+        "[Interactive tables](explorer.html#aggregate) · [Case explorer](explorer.html#explorer)",
+        "",
         "## Main findings",
         "",
         "Six models answered the same 54,000 distinct questions. All 108 tasks completed. The corpus has 324,000 saved responses and zero final sample execution errors.",
@@ -748,5 +750,6 @@ def render(db, root: Path, run: Path, output: Path, summary: dict):
     for path in assets.iterdir():
         if path.suffix in {".css", ".js"}:
             shutil.copyfile(path, output / path.name)
+    shutil.copyfile(assets / "explorer.html", output / "explorer.html")
     template = (assets / "index.html").read_text()
     (output / "index.html").write_text(template.replace("{{REPORT}}", article))

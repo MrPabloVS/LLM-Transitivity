@@ -2,6 +2,8 @@
 
 Run: `2026-11-06_01-23-40-040fd7b7`. Analysis: `full-corpus-report-v1`.
 
+[Interactive tables](explorer.html#aggregate) · [Case explorer](explorer.html#explorer)
+
 ## Main findings
 
 Six models answered the same 54,000 distinct questions. All 108 tasks completed. The corpus has 324,000 saved responses and zero final sample execution errors.

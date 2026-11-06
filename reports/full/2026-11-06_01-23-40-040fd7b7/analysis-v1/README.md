@@ -1,7 +1,7 @@
 # Report bundle
 
-Read [the report](report.md). Serve this directory through a local HTTP server
-and open [the case explorer](index.html) to compare all six saved responses.
+Read [the Markdown report](report.md) or [the HTML report](index.html). Serve this directory through a local HTTP server
+and open [the case explorer](explorer.html) to compare all six saved responses.
 
 Git contains the report, figures, aggregate tables, case files, model cards,
 summary, and validation records. Git LFS tracks `analysis.sqlite.gz` and

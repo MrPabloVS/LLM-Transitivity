@@ -264,7 +264,10 @@ record hashes, scorer versions, and native aggregate scores before publication.
 `analysis.full_summary` derives all tables from this database. It keeps unknown
 costs separate from zero and retains conflicting observations with their sources.
 `analysis.full_render` produces Markdown, HTML, and SVG figures from the same
-summary. Local case files load one dataset at a time in the HTML explorer.
+summary. `index.html` contains the report without data-loading scripts.
+`explorer.html` contains interactive tables and the case explorer. Both the HTML
+and Markdown reports link to this page. Local case files load one dataset at a
+time in the explorer.
 
 Agreement means source-label matches divided by interpretable responses.
 Coverage and strict format use all planned cases as their denominator. The report
