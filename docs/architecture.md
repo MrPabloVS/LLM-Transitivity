@@ -233,3 +233,7 @@ includes the new model-card manifest and effective JSON cards.
 The follow-up runner can prepare both Pilot 2.0 phases without model calls.
 Its offline reviewer uses the frozen profile to select expected model settings.
 The separate Pilot 2.0 report retains unknown costs, filters, and observed peaks.
+
+The phase reviewer checks for response choices before reading the stop reason.
+An HTTP rejection with no model output remains a technical failure; it does not
+crash the closing review or become a filtered response.

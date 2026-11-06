@@ -102,7 +102,7 @@ def test_haiku_reasoning_disabled_reaches_real_sdk_wire(
 
 
 @pytest.mark.parametrize(
-    "filtered_mode", [None, "missing", "empty", "wrong_tier", "reasoning"]
+    "filtered_mode", [None, "missing", "empty", "wrong_tier", "reasoning", "http_error"]
 )
 def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
     tmp_path, monkeypatch, filtered_mode
@@ -123,6 +123,10 @@ def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
     async def handle(request):
         body = json.loads(request.content)
         identifier = body["model"]
+        if filtered_mode == "http_error" and identifier.endswith("haiku-5.5"):
+            return httpx2.Response(
+                400, json={"error": {"code": 400, "message": "Reasoning is mandatory"}}
+            )
         provider = {
             "openai": "OpenAI",
             "anthropic": "Anthropic",
@@ -203,6 +207,7 @@ def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
                 limit=1,
                 log_dir=str(phase / "inspect"),
                 display="none",
+                fail_on_error=False,
             )[0].status
             == "success"
         )
@@ -215,6 +220,12 @@ def test_preflight_auditor_accepts_complete_sdk_captures_for_six_models(
     )
 
     haiku = report["models"]["anthropic/claude-haiku-5.5"]
+    if filtered_mode == "http_error":
+        assert haiku["faults"]
+        assert haiku["failed_attempts"] == 1
+        assert haiku["unidentified_attempts"] == 1
+        assert not haiku["filtered_uids"]
+        return
     if filtered_mode:
         assert len(haiku["filtered_uids"]) == 1
         assert haiku["missing_cost_ids"]

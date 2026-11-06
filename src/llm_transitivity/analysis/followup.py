@@ -209,7 +209,8 @@ def review_phase(root: Path, phase: Path, spec: dict) -> dict:
                     "final reported cost": usage.get("cost") is not None,
                 }
                 filtered = (
-                    sample.output.stop_reason == "content_filter"
+                    bool(sample.output.choices)
+                    and sample.output.stop_reason == "content_filter"
                     and score is not None
                     and score.metadata.get("status") == "content_filter"
                     and any(
