@@ -1,6 +1,6 @@
 # Six-model pilot
 
-Status: the full coverage pilot resumed after an interrupted process.
+Status: the full coverage pilot completed after recovery from an interruption.
 The user authorized its launch with 16 concurrent samples and one active task.
 Earlier estimates and preflight reports are outside the active preparation.
 Saved model availability and price references were captured on November 5, 2026, through the
@@ -9,11 +9,13 @@ endpoint listings. A catalog entry does not establish access through our account
 
 ## Current preparation status
 
-The active run is `2026-11-05_20-46-51-b3f8bb12`. Its
+The completed run is `2026-11-05_20-46-51-b3f8bb12`. Its
 [frozen run configuration](../results/pilot/2026-11-05_20-46-51-b3f8bb12/provenance/run.json)
-records 108 tasks and 3,240 planned responses. Open the Inspect viewer to follow
-progress. Final coverage, execution errors, and cost must be reviewed after
-completion. The saved preflight below remains a separate run.
+records 108 tasks and 3,240 planned responses. All 108 final tasks succeeded,
+with 540 saved responses per model and no final sample errors. The
+[closure index](../results/pilot/2026-11-05_20-46-51-b3f8bb12/summary/log_index.json)
+confirms successful finalization and call export. Response quality, format,
+routing, and cost analysis remain pending. The preflight is a separate run.
 
 The original process stopped before finalization; the cause is unknown.
 Recovery found 29 complete tasks and 830 saved samples. The
@@ -51,7 +53,7 @@ Sonnet 4.5 returned an explanation ending with a separate `Yes`. Both agree with
 the source label but fail strict formatting. These are model outcomes; no response,
 score, or prompt was changed. Immediate generation lookups were unavailable;
 a read-only refresh returned HTTP 200 for all six generation IDs.
-The full pilot is now running. Native task metadata retains configuration-time
+The full pilot has completed. Native task metadata retains configuration-time
 verification placeholders; observed verification is recorded in the review.
 
 ## Goal
@@ -312,9 +314,11 @@ provides the managed archive and finalization behavior for paid runs.
 Start the viewer before launching a run from another terminal:
 
 ```sh
-uv run --locked inspect view --recursive --log-dir results/pilot --host 127.0.0.1 --port 7575
+uv run --locked inspect view --log-dir results/pilot/2026-11-05_20-46-51-b3f8bb12/inspect --host 127.0.0.1 --port 7575
 ```
 
-Open `http://127.0.0.1:7575` in the browser. The viewer reads native Inspect logs
-across run directories. It does not request model generations. Review the saved
+Open `http://127.0.0.1:7575` in the browser. For another run, replace the run
+directory in the command. Point the viewer at its native `inspect/` directory.
+A recursive scan of the archive root can try to parse call exports as Inspect
+logs and prevent loading. The viewer does not request model generations. Review the saved
 requests, responses, scores, sample metadata, and errors there.

@@ -1,7 +1,9 @@
 # Pilot scope and decision report
 
-Status: the scope is verified. Pilot results and the decision to run the full
-experiment are pending. Counts below describe the planned experiment.
+Status: the scope is verified and pilot execution is complete. All 108 final
+tasks succeeded, with 3,240 saved responses and no final sample errors.
+Analysis of the answers and the decision to run the full experiment are pending.
+Scope tables below describe the planned experiment.
 
 ## What we test
 
@@ -21,12 +23,12 @@ Each comparison group contains one model from each developer.
 
 | Group | Developer | Exact model ID | Pilot questions | Requested provider | Tier |
 | --- | --- | --- | ---: | --- | --- |
-| `earlier` | OpenAI | `openai/gpt-4o-mini` | 540 | `openai` | default |
-| `earlier` | Anthropic | `anthropic/claude-sonnet-4.5` | 540 | `anthropic` | default |
-| `earlier` | Google | `google/gemini-2.5-flash-lite` | 540 | `google-ai-studio/flex` | flex |
-| `later` | OpenAI | `openai/gpt-6-luna` | 540 | `openai/flex` | flex |
-| `later` | Anthropic | `anthropic/claude-sonnet-5` | 540 | `anthropic` | default |
-| `later` | Google | `google/gemini-3.1-flash-lite` | 540 | `google-ai-studio/flex` | flex |
+| `earlier` | OpenAI | [openai/gpt-4o-mini](model_cards/openai--gpt-4o-mini/card.md) | 540 | `openai` | default |
+| `earlier` | Anthropic | [anthropic/claude-sonnet-4.5](model_cards/anthropic--claude-sonnet-4.5/card.md) | 540 | `anthropic` | default |
+| `earlier` | Google | [google/gemini-2.5-flash-lite](model_cards/google--gemini-2.5-flash-lite/card.md) | 540 | `google-ai-studio/flex` | flex |
+| `later` | OpenAI | [openai/gpt-6-luna](model_cards/openai--gpt-6-luna/card.md) | 540 | `openai/flex` | flex |
+| `later` | Anthropic | [anthropic/claude-sonnet-5](model_cards/anthropic--claude-sonnet-5/card.md) | 540 | `anthropic` | default |
+| `later` | Google | [google/gemini-3.1-flash-lite](model_cards/google--gemini-3.1-flash-lite/card.md) | 540 | `google-ai-studio/flex` | flex |
 | **Total** | **3 developers** | **6 models** | **3,240 responses** | | |
 
 `earlier` and `later` name the two groups in this comparison. They do not imply
