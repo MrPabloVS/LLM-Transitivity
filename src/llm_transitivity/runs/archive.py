@@ -115,7 +115,11 @@ def _export_status(archive: Path, logs: list[Path]) -> tuple[str, Exception | No
 
 
 def finalize_archive(
-    archive: Path, *, flow_success: bool | None, error_type: str | None = None
+    archive: Path,
+    *,
+    flow_success: bool | None,
+    error_type: str | None = None,
+    index_name: str = "log_index.json",
 ) -> None:
     """Write the index before propagating a failed export."""
     logs = sorted((archive / "inspect").rglob("*.eval"))
@@ -128,7 +132,7 @@ def finalize_archive(
         "logs": entries,
         "note": "Log index only; metrics and billing need a separate analysis.",
     }
-    with (archive / "summary" / "log_index.json").open("x", encoding="utf-8") as file:
+    with (archive / "summary" / index_name).open("x", encoding="utf-8") as file:
         json.dump(report, file, ensure_ascii=False, indent=2)
         file.write("\n")
 

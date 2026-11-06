@@ -174,3 +174,11 @@ Guadalupe Fernández Fagioli
 Nadia Belén Martínez Szego  
 Sofia de Arias Vargas  
 Lourdes Nazarena Toneatti
+
+## Haiku follow-up
+
+The [Haiku follow-up](docs/haiku_followup.md) prepares two 540-case Haiku pilots
+and a separate 216-case load selection. It uses a six-model preflight, coverage
+at 16, and direct load at 64 with one active task. The default Sonnet experiment
+is unchanged. Use `uv run --locked transitivity followup --dry-run` to preview
+all 48 tasks and 2,382 planned responses without API calls.

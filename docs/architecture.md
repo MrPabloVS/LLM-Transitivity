@@ -195,3 +195,17 @@ uv run --locked --project /path/to/repository transitivity --root /path/to/repos
 Only the historical `runBenchmark.py` remains as Python code in the root.
 Historical generated inventories, logs and reports keep their original command
 text and source paths. Use the installed commands above for new work.
+
+## Follow-up campaigns
+
+The immutable model catalog exposes explicit Sonnet and Haiku profiles; the
+historical default aliases retain Sonnet. `datasets.load_pool` derives a separate
+216-case selection from the verified pilot. Inspect pools those cases with global
+UIDs while retaining per-case source metadata. Profile and concurrency overrides
+are local to each spec and do not mutate shared configuration.
+
+`runs.followup` freezes phase specifications, launches a detached local worker,
+verifies frozen sources on resume, and records phase status in an event journal.
+`analysis.followup` reviews requests, responses, usage, and load metrics without
+network calls. `analysis.followup_report` keeps load throughput separate from
+coverage agreement. See [the authorized follow-up procedure](haiku_followup.md).
