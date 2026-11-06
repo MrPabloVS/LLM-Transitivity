@@ -20,6 +20,14 @@ texts remain unchanged. The saved files are
 [manifest.json](../datasets/load/manifest.json). Global sample UIDs distinguish
 source row numbers that overlap between datasets.
 
+## Latest execution
+
+The [follow-up results](haiku_followup_results.md) record the completed preflight
+and 1,080 Haiku coverage responses. Six filtered Haiku 5.5 responses omit tier,
+usage, and cost; the program therefore omitted the direct 64-slot load. The
+known reported campaign cost is USD 0.073634125. Review the unresolved fields
+before deciding whether to change the protocol or launch further calls.
+
 ## Commands
 
 ```sh

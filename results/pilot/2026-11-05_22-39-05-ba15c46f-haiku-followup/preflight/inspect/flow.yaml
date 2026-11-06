@@ -1,0 +1,778 @@
+store: null
+log_dir: /Users/andrestobelem/ws/at/LLM-Transitivity/results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight/inspect
+log_dir_create_unique: false
+python_version: 3.14.8
+options:
+  retry_attempts: 1
+  retry_cleanup: false
+  tags:
+  - experiment:llm-transitivity-coverage-pilot-v1
+  - phase:preflight
+  - campaign:ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  - profile:haiku
+  - concurrency:16
+  metadata:
+    metadata_version: 1
+    experiment_id: llm-transitivity-coverage-pilot-v1
+    experiment_run_id: c0dbdf30-dc44-4215-810f-676afdd8e596
+    configuration_created_utc: '2026-11-06T01:38:50.334573+00:00'
+    phase: preflight
+    protocol: zeroShot
+    scoring_version: source-label-deterministic-v3
+    label_basis: source-label agreement; logical validity not audited
+    logical_validity_audited: false
+    openrouter_capture:
+      http_attempts: true
+      full_response_json: true
+      generation_lookup: automatic, up to three read-only lookup attempts per id
+      stored_content_lookup: optional exporter flag; permissions may be restricted
+      streaming: false
+      credentials: redacted
+    pilot_manifest_sha256: ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9
+    original_revision: 000a6bda314da9bdc318ca4411d76dc41161ca1e
+    selection: sha256 of compact UTF-8 JSON row, then source row; preserve source
+      order
+    cases_per_stratum: 5
+    pilot_case_count: 540
+    git:
+      revision: f48b3c2e06bd63b8fc8216fa52f82811efdd8c74
+      branch: tobe/runs-2026-11-05
+      dirty: true
+    source_sha256:
+      .python-version: a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135
+      pyproject.toml: 25c72d5b6da0d24618d80f45e28716b398051e704518d902d99638c0d38d08e4
+      uv.lock: 4eb21b0f77c7ed52578007e73f44a506fb9f34e36dfdd9fbfef60e4063f6add1
+      src/llm_transitivity/__init__.py: 9d3b06ab811d7d31e628aa683f7c3ebe8f6325a32f620635c84158ad20864c2e
+      src/llm_transitivity/analysis/__init__.py: 26241fca0fab026f736a98d262a6860bcd4bf60e08b8776a91321e50efc68bac
+      src/llm_transitivity/analysis/calculations.py: dc1dfa1212f2a12bb0d0122473a5dfb31ab27c5dd9e16cf4ae110fc77c684ccd
+      src/llm_transitivity/analysis/followup.py: b0fc78b222cb6c5cfca021fa03b12558b1f0f1fc007fcb14f37486ae46ad398b
+      src/llm_transitivity/analysis/followup_report.py: 82e0c8130447ca776261cc090ee30b1867314f4356aca16769a6145a5bb3f494
+      src/llm_transitivity/analysis/pilot.py: b33df00ff7411da93718df83db9024dd514b8247c90c8a9db5e1748393063ead
+      src/llm_transitivity/cli/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/cli/app.py: 578ea68a83af63a4a902f26d952a8cfdd9e95a5063aa6a197503effa4541ce78
+      src/llm_transitivity/cli/costs.py: 2e8807c3ad340cb11d6704d045b0ecbb66f43150200561fcb58c1c718ce97a46
+      src/llm_transitivity/cli/datasets.py: b725c491827d670670da0f25cfc69a69874f4a512370a151ead15c871c696ad5
+      src/llm_transitivity/cli/export.py: 9e26be3e84eca50066325fbe6b57af56af16e5ed04f15ff237313c2929ef3bb3
+      src/llm_transitivity/cli/followup.py: 0c8ae4e614267364e2092ec21612f803cd4d51a37b7f76e0ca78f217dd3ec6ae
+      src/llm_transitivity/cli/pilot.py: f98e492fc63fcfff2d569c3d6e26015dc34ded7ea4b688f88ab2f1ea10653215
+      src/llm_transitivity/costs/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/costs/archive.py: 745794c3de02aa78a6ffad278eae13b094c69bd577806dd0b19558cd27975906
+      src/llm_transitivity/costs/calculation.py: df6ee2d6c4031e735688adbce52a88299adf47158bbd43c5e51b5a28721b4c6d
+      src/llm_transitivity/costs/estimate.py: 44f2295bc69eb398971bf03ea92641819b17e63544da84d0bd22f13b112fc72e
+      src/llm_transitivity/costs/pricing.py: 7de5516be51f99299b091bba38243c8ab05f4232773ad0acabb483d03a20cdd9
+      src/llm_transitivity/datasets/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/datasets/corpus.py: 4bc9d9e4af0451868e089daca2cace5df68e7afd03382391c61b2e382d635afd
+      src/llm_transitivity/datasets/inputs.py: 706337025e82aa473eadd512b2c519cd16a2dfeb76dc74d9858ee62ca7c6d009
+      src/llm_transitivity/datasets/load_pool.py: 8a925f26ce544a5aab258b07e1b14cef5c700d2ca17cfa4eca9fbdec84e3a860
+      src/llm_transitivity/datasets/pilot.py: d39427817ab2ac10fb45c7e271fce4263f4c460d1230ac0c6348b920f5b405f6
+      src/llm_transitivity/datasets/validation.py: 295e5d36004149700ddfc9cb3254769efcb2e1c29152cabd9a15e3d95b4d35ab
+      src/llm_transitivity/domain/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/domain/cases.py: 47e266ed1c39a3db2c87af90fb4cbdcc5a6c56e1ceb116e0b3236e2380254e0a
+      src/llm_transitivity/domain/config.py: 5e68b9182f68b7b4d96d67c972d1ac10a3c358f572b8e2f1279c3b1f4681da83
+      src/llm_transitivity/domain/scoring.py: cc2335a1310a11b70c385d36a0f68f5fe806c2f87ee60f8baa46af0d99b713a2
+      src/llm_transitivity/domain/selection.py: 67349e9d80b7a62b0c80c942bbdf8b5e9377b11d52eaf475c3a12ab33a5d9b30
+      src/llm_transitivity/evidence/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/evidence/metadata.py: a84bafb27804da22b5f902e817720272235d1c69f1c258cf50f02060f71cf74c
+      src/llm_transitivity/evidence/serialization.py: b6e0e4382f4302a4f9ad78e01b5ecc32b497b19fbdd1bfd8b2cc59895e7822d5
+      src/llm_transitivity/inspect/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/inspect/flow.py: 9d5afe2667f84d79c5388e79d93da358bade82d1c2f7f31f5aa4c0f355b45af9
+      src/llm_transitivity/inspect/samples.py: 63477118bb0cb9e423013366deac3182411abd6500cf4b2cca35a03c0132fbb5
+      src/llm_transitivity/inspect/scoring.py: b8270453746ea823552f89ce64024a6503d7bfb332130cc11071d56d0efc031f
+      src/llm_transitivity/inspect/tasks.py: f398bdb6c2e39440760d7b7c2e2c666a7426052ad20dec84d81af11d327d967a
+      src/llm_transitivity/inspect/telemetry.py: c6224da8d442b9b424ef031119add52fb15b1cb3c8bd06f94862e7935edcd356
+      src/llm_transitivity/openrouter/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/openrouter/capture.py: 5069468159e59ba31c19c66d9355cdc10254c6bea1948f859a0184a5156e5afe
+      src/llm_transitivity/openrouter/client.py: efe417c1b627b86819b5a0ccc4f2e9e0207ecc81054a44e834744e95c9e92657
+      src/llm_transitivity/runs/__init__.py: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      src/llm_transitivity/runs/archive.py: 6759ea78587f2380eb9038df42f39ad72830b11801c20a82e032e12a09bb056e
+      src/llm_transitivity/runs/export.py: 31f6202b3e9c7e4b799a4349cfe1491e5c1458e33f203b06a00116120ab27294
+      src/llm_transitivity/runs/followup.py: ebe2dbb5ab517c709889648dba42255474f08836b5bf914eebf43ae9ff0cf71b
+      src/llm_transitivity/runs/runner.py: ffbf764328c8f98f26eae8c9190d9f64489ca20add6e5a932c0ecf86b1a649fc
+    runtime:
+      python: 3.14.8
+      uv: uv 0.13.7 (Homebrew 2026-11-03 aarch64-apple-darwin)
+      platform: Darwin
+      packages:
+        inspect-ai: 0.3.286
+        inspect-flow: 0.14.0
+        openai: 3.41.0
+        python-dotenv: 1.2.4
+        requests: 2.34.2
+        tiktoken: 0.14.0
+    generation_policy:
+      max_output_tokens: 1024
+      reasoning: disabled where supported
+      provider_fallback: false
+      cache_prompt: false
+      temperature: provider default; omitted
+      top_p: provider default; omitted
+      seed: omitted; outputs are not deterministic
+      request_timeout_seconds: 60
+      request_max_retries: 2
+      sdk_max_retries: 0
+      max_tasks: 1
+      max_samples: 16
+    profile: haiku
+    concurrency: 16
+    planned_responses: 6
+    selected_cases_per_model: 1
+    results_root: results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight
+    results_folder_timezone: America/Argentina/Buenos_Aires
+    generation_groups:
+      openai/gpt-4o-mini: earlier
+      openai/gpt-6-luna: later
+      anthropic/claude-haiku-4.5: earlier
+      anthropic/claude-haiku-5.5: later
+      google/gemini-2.5-flash-lite: earlier
+      google/gemini-3.1-flash-lite: later
+    requested_routing:
+      openai/gpt-4o-mini:
+        provider_only:
+        - openai
+        service_tier: default
+        allow_fallbacks: false
+        require_parameters: true
+      openai/gpt-6-luna:
+        provider_only:
+        - openai/flex
+        service_tier: flex
+        allow_fallbacks: false
+        require_parameters: true
+      anthropic/claude-haiku-4.5:
+        provider_only:
+        - anthropic
+        service_tier: default
+        allow_fallbacks: false
+        require_parameters: true
+      anthropic/claude-haiku-5.5:
+        provider_only:
+        - anthropic
+        service_tier: default
+        allow_fallbacks: false
+        require_parameters: true
+      google/gemini-2.5-flash-lite:
+        provider_only:
+        - google-ai-studio/flex
+        service_tier: flex
+        allow_fallbacks: false
+        require_parameters: true
+      google/gemini-3.1-flash-lite:
+        provider_only:
+        - google-ai-studio/flex
+        service_tier: flex
+        allow_fallbacks: false
+        require_parameters: true
+    campaign_id: ba15c46f-5b76-48a1-b804-5f1f830c20ff
+    archive_mode: managed
+  max_samples: 16
+  max_tasks: 1
+  log_samples: true
+  log_model_api: true
+tasks:
+- factory: llm_transitivity/hs_zero_shot
+  args:
+    dataset: pilot/HS_HF_FU_20
+    root: /Users/andrestobelem/ws/at/LLM-Transitivity
+  model:
+    name: openrouter/openai/gpt-4o-mini
+    config:
+      max_retries: 2
+      timeout: 60
+      max_connections: 16
+      max_tokens: 1024
+      cache_prompt: false
+      extra_headers:
+        X-OpenRouter-Metadata: enabled
+      extra_body:
+        service_tier: default
+    model_args:
+      stream: false
+      max_retries: 0
+      provider:
+        only:
+        - openai
+        allow_fallbacks: false
+        require_parameters: true
+  config:
+    max_retries: 2
+    timeout: 60
+    max_connections: 16
+    max_tokens: 1024
+    cache_prompt: false
+    extra_headers:
+      X-OpenRouter-Metadata: enabled
+    extra_body:
+      service_tier: default
+  fail_on_error: false
+  tags:
+  - project:llm-transitivity
+  - protocol:zeroShot
+  - dataset:HS_HF_FU_20
+  - family:HS
+  - frequency:HF
+  - tense:FU
+  - connectors:if then / therefore
+  - phase:preflight
+  - model:openai/gpt-4o-mini
+  - model_family:openai
+  - provider:openai
+  - service_tier:default
+  - generation_group:earlier
+  - reasoning:not-supported
+  - campaign:ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  - profile:haiku
+  - concurrency:16
+  metadata:
+    experiment_id: llm-transitivity-coverage-pilot-v1
+    system_prompt: zeroShot
+    system_prompt_sha256: 589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282
+    scoring: source-label agreement
+    scoring_version: source-label-deterministic-v3
+    dataset_name: HS_HF_FU_20
+    dataset_family: HS
+    dataset_path: datasets/pilot/HS_HF_FU_20.json
+    dataset_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    sample_count: 20
+    frequency:
+    - HF
+    verbal_time:
+    - FU
+    connectors:
+    - if then / therefore
+    source_validity:
+    - invalid
+    - valid
+    canonical_form:
+    - canonic
+    - non-canonic
+    provenance:
+      dataset: HS_HF_FU_2000
+      original_path: prompts/userPrompts/HS_HF_FU_500_complete.json
+      original_sha256: 9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71
+      working_path: datasets/HS_HF_FU_2000.json
+      working_sha256: 2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562
+      case_count: 2000
+      pilot_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    phase: preflight
+    selected_case_count: 1
+    pilot_manifest_sha256: ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9
+    original_revision: 000a6bda314da9bdc318ca4411d76dc41161ca1e
+    requested_model: openai/gpt-4o-mini
+    generation_group: earlier
+    requested_provider: openai
+    requested_service_tier: default
+    actual_service_tier: null
+    service_tier_verified: false
+    actual_provider: null
+    reasoning_verified: false
+    reasoning_policy: not supported
+    campaign_id: ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  sample_id:
+  - 20
+- factory: llm_transitivity/hs_zero_shot
+  args:
+    dataset: pilot/HS_HF_FU_20
+    root: /Users/andrestobelem/ws/at/LLM-Transitivity
+  model:
+    name: openrouter/openai/gpt-6-luna
+    config:
+      max_retries: 2
+      timeout: 60
+      max_connections: 16
+      max_tokens: 1024
+      cache_prompt: false
+      extra_headers:
+        X-OpenRouter-Metadata: enabled
+      extra_body:
+        service_tier: flex
+    model_args:
+      stream: false
+      max_retries: 0
+      provider:
+        only:
+        - openai/flex
+        allow_fallbacks: false
+        require_parameters: true
+      reasoning_enabled: false
+  config:
+    max_retries: 2
+    timeout: 60
+    max_connections: 16
+    max_tokens: 1024
+    cache_prompt: false
+    extra_headers:
+      X-OpenRouter-Metadata: enabled
+    extra_body:
+      service_tier: flex
+  fail_on_error: false
+  tags:
+  - project:llm-transitivity
+  - protocol:zeroShot
+  - dataset:HS_HF_FU_20
+  - family:HS
+  - frequency:HF
+  - tense:FU
+  - connectors:if then / therefore
+  - phase:preflight
+  - model:openai/gpt-6-luna
+  - model_family:openai
+  - provider:openai/flex
+  - service_tier:flex
+  - generation_group:later
+  - reasoning:disabled
+  - campaign:ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  - profile:haiku
+  - concurrency:16
+  metadata:
+    experiment_id: llm-transitivity-coverage-pilot-v1
+    system_prompt: zeroShot
+    system_prompt_sha256: 589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282
+    scoring: source-label agreement
+    scoring_version: source-label-deterministic-v3
+    dataset_name: HS_HF_FU_20
+    dataset_family: HS
+    dataset_path: datasets/pilot/HS_HF_FU_20.json
+    dataset_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    sample_count: 20
+    frequency:
+    - HF
+    verbal_time:
+    - FU
+    connectors:
+    - if then / therefore
+    source_validity:
+    - invalid
+    - valid
+    canonical_form:
+    - canonic
+    - non-canonic
+    provenance:
+      dataset: HS_HF_FU_2000
+      original_path: prompts/userPrompts/HS_HF_FU_500_complete.json
+      original_sha256: 9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71
+      working_path: datasets/HS_HF_FU_2000.json
+      working_sha256: 2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562
+      case_count: 2000
+      pilot_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    phase: preflight
+    selected_case_count: 1
+    pilot_manifest_sha256: ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9
+    original_revision: 000a6bda314da9bdc318ca4411d76dc41161ca1e
+    requested_model: openai/gpt-6-luna
+    generation_group: later
+    requested_provider: openai/flex
+    requested_service_tier: flex
+    actual_service_tier: null
+    service_tier_verified: false
+    actual_provider: null
+    reasoning_verified: false
+    reasoning_policy: disabled
+    campaign_id: ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  sample_id:
+  - 20
+- factory: llm_transitivity/hs_zero_shot
+  args:
+    dataset: pilot/HS_HF_FU_20
+    root: /Users/andrestobelem/ws/at/LLM-Transitivity
+  model:
+    name: openrouter/anthropic/claude-haiku-4.5
+    config:
+      max_retries: 2
+      timeout: 60
+      max_connections: 16
+      max_tokens: 1024
+      cache_prompt: false
+      extra_headers:
+        X-OpenRouter-Metadata: enabled
+      extra_body:
+        service_tier: default
+    model_args:
+      stream: false
+      max_retries: 0
+      provider:
+        only:
+        - anthropic
+        allow_fallbacks: false
+        require_parameters: true
+      reasoning_enabled: false
+  config:
+    max_retries: 2
+    timeout: 60
+    max_connections: 16
+    max_tokens: 1024
+    cache_prompt: false
+    extra_headers:
+      X-OpenRouter-Metadata: enabled
+    extra_body:
+      service_tier: default
+  fail_on_error: false
+  tags:
+  - project:llm-transitivity
+  - protocol:zeroShot
+  - dataset:HS_HF_FU_20
+  - family:HS
+  - frequency:HF
+  - tense:FU
+  - connectors:if then / therefore
+  - phase:preflight
+  - model:anthropic/claude-haiku-4.5
+  - model_family:anthropic
+  - provider:anthropic
+  - service_tier:default
+  - generation_group:earlier
+  - reasoning:disabled
+  - campaign:ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  - profile:haiku
+  - concurrency:16
+  metadata:
+    experiment_id: llm-transitivity-coverage-pilot-v1
+    system_prompt: zeroShot
+    system_prompt_sha256: 589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282
+    scoring: source-label agreement
+    scoring_version: source-label-deterministic-v3
+    dataset_name: HS_HF_FU_20
+    dataset_family: HS
+    dataset_path: datasets/pilot/HS_HF_FU_20.json
+    dataset_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    sample_count: 20
+    frequency:
+    - HF
+    verbal_time:
+    - FU
+    connectors:
+    - if then / therefore
+    source_validity:
+    - invalid
+    - valid
+    canonical_form:
+    - canonic
+    - non-canonic
+    provenance:
+      dataset: HS_HF_FU_2000
+      original_path: prompts/userPrompts/HS_HF_FU_500_complete.json
+      original_sha256: 9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71
+      working_path: datasets/HS_HF_FU_2000.json
+      working_sha256: 2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562
+      case_count: 2000
+      pilot_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    phase: preflight
+    selected_case_count: 1
+    pilot_manifest_sha256: ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9
+    original_revision: 000a6bda314da9bdc318ca4411d76dc41161ca1e
+    requested_model: anthropic/claude-haiku-4.5
+    generation_group: earlier
+    requested_provider: anthropic
+    requested_service_tier: default
+    actual_service_tier: null
+    service_tier_verified: false
+    actual_provider: null
+    reasoning_verified: false
+    reasoning_policy: disabled
+    campaign_id: ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  sample_id:
+  - 20
+- factory: llm_transitivity/hs_zero_shot
+  args:
+    dataset: pilot/HS_HF_FU_20
+    root: /Users/andrestobelem/ws/at/LLM-Transitivity
+  model:
+    name: openrouter/anthropic/claude-haiku-5.5
+    config:
+      max_retries: 2
+      timeout: 60
+      max_connections: 16
+      max_tokens: 1024
+      cache_prompt: false
+      reasoning_effort: medium
+      extra_headers:
+        X-OpenRouter-Metadata: enabled
+      extra_body:
+        service_tier: default
+    model_args:
+      stream: false
+      max_retries: 0
+      provider:
+        only:
+        - anthropic
+        allow_fallbacks: false
+        require_parameters: true
+      reasoning_enabled: false
+  config:
+    max_retries: 2
+    timeout: 60
+    max_connections: 16
+    max_tokens: 1024
+    cache_prompt: false
+    reasoning_effort: medium
+    extra_headers:
+      X-OpenRouter-Metadata: enabled
+    extra_body:
+      service_tier: default
+  fail_on_error: false
+  tags:
+  - project:llm-transitivity
+  - protocol:zeroShot
+  - dataset:HS_HF_FU_20
+  - family:HS
+  - frequency:HF
+  - tense:FU
+  - connectors:if then / therefore
+  - phase:preflight
+  - model:anthropic/claude-haiku-5.5
+  - model_family:anthropic
+  - provider:anthropic
+  - service_tier:default
+  - generation_group:later
+  - reasoning:disabled
+  - campaign:ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  - profile:haiku
+  - concurrency:16
+  metadata:
+    experiment_id: llm-transitivity-coverage-pilot-v1
+    system_prompt: zeroShot
+    system_prompt_sha256: 589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282
+    scoring: source-label agreement
+    scoring_version: source-label-deterministic-v3
+    dataset_name: HS_HF_FU_20
+    dataset_family: HS
+    dataset_path: datasets/pilot/HS_HF_FU_20.json
+    dataset_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    sample_count: 20
+    frequency:
+    - HF
+    verbal_time:
+    - FU
+    connectors:
+    - if then / therefore
+    source_validity:
+    - invalid
+    - valid
+    canonical_form:
+    - canonic
+    - non-canonic
+    provenance:
+      dataset: HS_HF_FU_2000
+      original_path: prompts/userPrompts/HS_HF_FU_500_complete.json
+      original_sha256: 9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71
+      working_path: datasets/HS_HF_FU_2000.json
+      working_sha256: 2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562
+      case_count: 2000
+      pilot_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    phase: preflight
+    selected_case_count: 1
+    pilot_manifest_sha256: ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9
+    original_revision: 000a6bda314da9bdc318ca4411d76dc41161ca1e
+    requested_model: anthropic/claude-haiku-5.5
+    generation_group: later
+    requested_provider: anthropic
+    requested_service_tier: default
+    actual_service_tier: null
+    service_tier_verified: false
+    actual_provider: null
+    reasoning_verified: false
+    reasoning_policy: disabled
+    campaign_id: ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  sample_id:
+  - 20
+- factory: llm_transitivity/hs_zero_shot
+  args:
+    dataset: pilot/HS_HF_FU_20
+    root: /Users/andrestobelem/ws/at/LLM-Transitivity
+  model:
+    name: openrouter/google/gemini-2.5-flash-lite
+    config:
+      max_retries: 2
+      timeout: 60
+      max_connections: 16
+      max_tokens: 1024
+      cache_prompt: false
+      extra_headers:
+        X-OpenRouter-Metadata: enabled
+      extra_body:
+        service_tier: flex
+    model_args:
+      stream: false
+      max_retries: 0
+      provider:
+        only:
+        - google-ai-studio/flex
+        allow_fallbacks: false
+        require_parameters: true
+      reasoning_enabled: false
+  config:
+    max_retries: 2
+    timeout: 60
+    max_connections: 16
+    max_tokens: 1024
+    cache_prompt: false
+    extra_headers:
+      X-OpenRouter-Metadata: enabled
+    extra_body:
+      service_tier: flex
+  fail_on_error: false
+  tags:
+  - project:llm-transitivity
+  - protocol:zeroShot
+  - dataset:HS_HF_FU_20
+  - family:HS
+  - frequency:HF
+  - tense:FU
+  - connectors:if then / therefore
+  - phase:preflight
+  - model:google/gemini-2.5-flash-lite
+  - model_family:google
+  - provider:google-ai-studio/flex
+  - service_tier:flex
+  - generation_group:earlier
+  - reasoning:disabled
+  - campaign:ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  - profile:haiku
+  - concurrency:16
+  metadata:
+    experiment_id: llm-transitivity-coverage-pilot-v1
+    system_prompt: zeroShot
+    system_prompt_sha256: 589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282
+    scoring: source-label agreement
+    scoring_version: source-label-deterministic-v3
+    dataset_name: HS_HF_FU_20
+    dataset_family: HS
+    dataset_path: datasets/pilot/HS_HF_FU_20.json
+    dataset_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    sample_count: 20
+    frequency:
+    - HF
+    verbal_time:
+    - FU
+    connectors:
+    - if then / therefore
+    source_validity:
+    - invalid
+    - valid
+    canonical_form:
+    - canonic
+    - non-canonic
+    provenance:
+      dataset: HS_HF_FU_2000
+      original_path: prompts/userPrompts/HS_HF_FU_500_complete.json
+      original_sha256: 9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71
+      working_path: datasets/HS_HF_FU_2000.json
+      working_sha256: 2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562
+      case_count: 2000
+      pilot_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    phase: preflight
+    selected_case_count: 1
+    pilot_manifest_sha256: ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9
+    original_revision: 000a6bda314da9bdc318ca4411d76dc41161ca1e
+    requested_model: google/gemini-2.5-flash-lite
+    generation_group: earlier
+    requested_provider: google-ai-studio/flex
+    requested_service_tier: flex
+    actual_service_tier: null
+    service_tier_verified: false
+    actual_provider: null
+    reasoning_verified: false
+    reasoning_policy: disabled
+    campaign_id: ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  sample_id:
+  - 20
+- factory: llm_transitivity/hs_zero_shot
+  args:
+    dataset: pilot/HS_HF_FU_20
+    root: /Users/andrestobelem/ws/at/LLM-Transitivity
+  model:
+    name: openrouter/google/gemini-3.1-flash-lite
+    config:
+      max_retries: 2
+      timeout: 60
+      max_connections: 16
+      max_tokens: 1024
+      cache_prompt: false
+      extra_headers:
+        X-OpenRouter-Metadata: enabled
+      extra_body:
+        service_tier: flex
+    model_args:
+      stream: false
+      max_retries: 0
+      provider:
+        only:
+        - google-ai-studio/flex
+        allow_fallbacks: false
+        require_parameters: true
+      reasoning_enabled: false
+  config:
+    max_retries: 2
+    timeout: 60
+    max_connections: 16
+    max_tokens: 1024
+    cache_prompt: false
+    extra_headers:
+      X-OpenRouter-Metadata: enabled
+    extra_body:
+      service_tier: flex
+  fail_on_error: false
+  tags:
+  - project:llm-transitivity
+  - protocol:zeroShot
+  - dataset:HS_HF_FU_20
+  - family:HS
+  - frequency:HF
+  - tense:FU
+  - connectors:if then / therefore
+  - phase:preflight
+  - model:google/gemini-3.1-flash-lite
+  - model_family:google
+  - provider:google-ai-studio/flex
+  - service_tier:flex
+  - generation_group:later
+  - reasoning:disabled
+  - campaign:ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  - profile:haiku
+  - concurrency:16
+  metadata:
+    experiment_id: llm-transitivity-coverage-pilot-v1
+    system_prompt: zeroShot
+    system_prompt_sha256: 589eb1451864a294d095bdc75f7f0b0399cab9724b5a1528a891c57ae4a38282
+    scoring: source-label agreement
+    scoring_version: source-label-deterministic-v3
+    dataset_name: HS_HF_FU_20
+    dataset_family: HS
+    dataset_path: datasets/pilot/HS_HF_FU_20.json
+    dataset_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    sample_count: 20
+    frequency:
+    - HF
+    verbal_time:
+    - FU
+    connectors:
+    - if then / therefore
+    source_validity:
+    - invalid
+    - valid
+    canonical_form:
+    - canonic
+    - non-canonic
+    provenance:
+      dataset: HS_HF_FU_2000
+      original_path: prompts/userPrompts/HS_HF_FU_500_complete.json
+      original_sha256: 9ce1105aeb62d6c11522286533169f89f6d475c86a7000e5c80e85c6a50d3c71
+      working_path: datasets/HS_HF_FU_2000.json
+      working_sha256: 2c11c77db3492434d2b1d49ea1b6681b47f604e5dfa6051734775634462a2562
+      case_count: 2000
+      pilot_sha256: 8438c0a4fc563fbcf32afa25d33a4fa40cb10d52e77b77d645dcd3086c81054b
+    phase: preflight
+    selected_case_count: 1
+    pilot_manifest_sha256: ed4ba9c65025d8746d6d83468f53f09ce7916a2b399c185363b52e3b2177a9f9
+    original_revision: 000a6bda314da9bdc318ca4411d76dc41161ca1e
+    requested_model: google/gemini-3.1-flash-lite
+    generation_group: later
+    requested_provider: google-ai-studio/flex
+    requested_service_tier: flex
+    actual_service_tier: null
+    service_tier_verified: false
+    actual_provider: null
+    reasoning_verified: false
+    reasoning_policy: disabled
+    campaign_id: ba15c46f-5b76-48a1-b804-5f1f830c20ff
+  sample_id:
+  - 20

@@ -1,0 +1,92 @@
+{
+  "campaign_id": "ba15c46f-5b76-48a1-b804-5f1f830c20ff",
+  "known_cost_usd": 0.073634125,
+  "missing_cost_ids": [
+    "gen-1793929367-lxLvEEskVct5sqa83W2Q",
+    "gen-1793929390-gM6EF1gPD51j2TV3wwBP",
+    "gen-1793929405-1AcASXRYlcDnM2NxpOql",
+    "gen-1793929446-oo0FjEuhXyMZ3iY0lWSy",
+    "gen-1793929482-u4Hhw73Wi0t1xGOEWMP8",
+    "gen-1793929494-DYwU8pf8ZG9WwtOS63UB"
+  ],
+  "comparisons": {
+    "anthropic/claude-haiku-4.5": {
+      "baseline_model": "openrouter/anthropic/claude-sonnet-4.5",
+      "paired_cases": 540,
+      "complete_pairing": true,
+      "paired_agreement": {
+        "(True, True)": 540
+      }
+    },
+    "anthropic/claude-haiku-5.5": {
+      "baseline_model": "openrouter/anthropic/claude-sonnet-5",
+      "paired_cases": 540,
+      "complete_pairing": true,
+      "paired_agreement": {
+        "(True, False)": 137,
+        "(True, True)": 403
+      }
+    }
+  },
+  "projections": {
+    "google/gemini-2.5-flash-lite": {
+      "group": "earlier",
+      "cost_usd": 0.24086,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    },
+    "google/gemini-3.1-flash-lite": {
+      "group": "later",
+      "cost_usd": 0.615725,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    },
+    "openai/gpt-4o-mini": {
+      "group": "earlier",
+      "cost_usd": 0.80391,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    },
+    "openai/gpt-6-luna": {
+      "group": "later",
+      "cost_usd": 0.32158,
+      "cost_basis": "original 540-case pilot",
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    },
+    "anthropic/claude-haiku-4.5": {
+      "group": "earlier",
+      "cost_usd": 6.563199999999999,
+      "cost_basis": "Haiku 540-case coverage pilot",
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    }
+  },
+  "groups": {
+    "earlier": {
+      "cost_usd": 7.607969999999999,
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    },
+    "later": {
+      "cost_usd": null,
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    },
+    "all": {
+      "cost_usd": null,
+      "central_hours_at64": null,
+      "slow_hours_at64": null
+    }
+  },
+  "load64_validated": false,
+  "load_reasons": {},
+  "executed_stages": [
+    "preflight",
+    "coverage"
+  ],
+  "note": "No 16/32 matched load exists. No measured speedup or model replacement is claimed."
+}

@@ -182,3 +182,6 @@ and a separate 216-case load selection. It uses a six-model preflight, coverage
 at 16, and direct load at 64 with one active task. The default Sonnet experiment
 is unchanged. Use `uv run --locked transitivity followup --dry-run` to preview
 all 48 tasks and 2,382 planned responses without API calls.
+
+The [latest follow-up results](docs/haiku_followup_results.md) include the Haiku
+comparison and the reason the 64-slot load was not executed.

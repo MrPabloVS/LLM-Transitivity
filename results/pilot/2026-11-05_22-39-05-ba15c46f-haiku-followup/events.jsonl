@@ -1,0 +1,5 @@
+{"at_utc": "2026-11-06T01:39:10.799247+00:00", "stage": "preflight", "status": "started"}
+{"at_utc": "2026-11-06T01:39:37.241226+00:00", "stage": "preflight", "status": "passed", "review": "preflight/summary/review-3c817a9b.json", "review_sha256": "45f5dc2b87b4eebb3f425386f60b4649cb44b092725d400c8ce2db860ac29ccb"}
+{"at_utc": "2026-11-06T01:39:37.286742+00:00", "stage": "coverage", "status": "started"}
+{"at_utc": "2026-11-06T01:45:21.735722+00:00", "stage": "coverage", "status": "stopped", "review": "coverage/summary/review-44c59cb9.json", "review_sha256": "f69fe70eea6c1bbc87d9954b45ede57e06df84a6e47abc22230302d1a67d849f"}
+{"at_utc": "2026-11-06T01:45:21.736188+00:00", "stage": "load-64", "status": "omitted", "reason": "Previous stage failed technical verification"}

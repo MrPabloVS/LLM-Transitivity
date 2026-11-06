@@ -1,0 +1,638 @@
+[
+  {
+    "generation_id": "gen-1793929367-lxLvEEskVct5sqa83W2Q",
+    "lookup_status": "unavailable",
+    "generation": {
+      "endpoint": "generation",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "fetched_at_utc": "2026-11-06T01:47:13.648312+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:14 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dd45acbe9ac-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929367-lxLvEEskVct5sqa83W2Q not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 1.0134503330045845
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:14.916778+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:15 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606ddacb793ec2-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929367-lxLvEEskVct5sqa83W2Q not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.12706758300191723
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:15.545711+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:15 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606ddebedbe53a-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929367-lxLvEEskVct5sqa83W2Q not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.12248074999661185
+        }
+      ]
+    },
+    "stored_content": {
+      "status": "not requested; may require management-key access and stored content"
+    }
+  },
+  {
+    "generation_id": "gen-1793929390-gM6EF1gPD51j2TV3wwBP",
+    "lookup_status": "unavailable",
+    "generation": {
+      "endpoint": "generation",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "fetched_at_utc": "2026-11-06T01:47:13.648671+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:14 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dd45a14f3b5-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929390-gM6EF1gPD51j2TV3wwBP not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.8992832080039079
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:14.802803+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:14 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dda3c03b491-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929390-gM6EF1gPD51j2TV3wwBP not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.15069008299906272
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:15.457491+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:15 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dde2fa63179-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929390-gM6EF1gPD51j2TV3wwBP not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.12128429099539062
+        }
+      ]
+    },
+    "stored_content": {
+      "status": "not requested; may require management-key access and stored content"
+    }
+  },
+  {
+    "generation_id": "gen-1793929405-1AcASXRYlcDnM2NxpOql",
+    "lookup_status": "unavailable",
+    "generation": {
+      "endpoint": "generation",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "fetched_at_utc": "2026-11-06T01:47:13.648765+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:14 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dd45a89c732-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929405-1AcASXRYlcDnM2NxpOql not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.8650754160044016
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:14.765849+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:14 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dd9dcf6e7a8-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929405-1AcASXRYlcDnM2NxpOql not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.12530891700589564
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:15.396164+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:15 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dddca720cdd-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929405-1AcASXRYlcDnM2NxpOql not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.12016212500020629
+        }
+      ]
+    },
+    "stored_content": {
+      "status": "not requested; may require management-key access and stored content"
+    }
+  },
+  {
+    "generation_id": "gen-1793929446-oo0FjEuhXyMZ3iY0lWSy",
+    "lookup_status": "unavailable",
+    "generation": {
+      "endpoint": "generation",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "fetched_at_utc": "2026-11-06T01:47:15.516648+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:15 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dde9a036339-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929446-oo0FjEuhXyMZ3iY0lWSy not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.3669659579973086
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:16.138713+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:16 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606de27f33e9b0-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929446-oo0FjEuhXyMZ3iY0lWSy not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.1279754170027445
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:16.771003+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:16 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606de67874b4fb-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929446-oo0FjEuhXyMZ3iY0lWSy not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.1449259169967263
+        }
+      ]
+    },
+    "stored_content": {
+      "status": "not requested; may require management-key access and stored content"
+    }
+  },
+  {
+    "generation_id": "gen-1793929482-u4Hhw73Wi0t1xGOEWMP8",
+    "lookup_status": "unavailable",
+    "generation": {
+      "endpoint": "generation",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "fetched_at_utc": "2026-11-06T01:47:15.579124+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:17 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606ddefcd0c828-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929482-u4Hhw73Wi0t1xGOEWMP8 not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 1.911768915997527
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:17.743788+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:18 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606dedcbda800e-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929482-u4Hhw73Wi0t1xGOEWMP8 not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.4450077080036863
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:18.691252+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:19 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606df3b9ceb4f5-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929482-u4Hhw73Wi0t1xGOEWMP8 not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.4369089579995489
+        }
+      ]
+    },
+    "stored_content": {
+      "status": "not requested; may require management-key access and stored content"
+    }
+  },
+  {
+    "generation_id": "gen-1793929494-DYwU8pf8ZG9WwtOS63UB",
+    "lookup_status": "unavailable",
+    "generation": {
+      "endpoint": "generation",
+      "status": "unavailable",
+      "attempts": [
+        {
+          "fetched_at_utc": "2026-11-06T01:47:15.668629+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:16 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606ddf88170cdd-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929494-DYwU8pf8ZG9WwtOS63UB not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.3903397909962223
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:16.312446+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:16 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606de3b8a1e7ad-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929494-DYwU8pf8ZG9WwtOS63UB not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.1569743340005516
+        },
+        {
+          "fetched_at_utc": "2026-11-06T01:47:16.974469+00:00",
+          "http_status": 404,
+          "response_headers": {
+            "Date": "Fri, 06 Nov 2026 01:47:17 GMT",
+            "Content-Type": "application/json",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "CF-Cache-Status": "BYPASS",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "private, no-store",
+            "Access-Control-Expose-Headers": "X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray",
+            "x-openrouter-error-origin": "client",
+            "x-openrouter-release": "public-api;7cc551d9-ed3b-4056-9de5-031ee1b542e2",
+            "set-cookie": "[REDACTED]",
+            "Permissions-Policy": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
+            "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+            "X-Content-Type-Options": "nosniff",
+            "Content-Encoding": "gzip",
+            "Server": "cloudflare",
+            "CF-RAY": "a5606de7c8300cdd-SCL",
+            "alt-svc": "h3=\":443\"; ma=86400"
+          },
+          "response_json": {
+            "error": {
+              "message": "Generation gen-1793929494-DYwU8pf8ZG9WwtOS63UB not found",
+              "code": 404
+            }
+          },
+          "lookup_seconds": 0.1395073330058949
+        }
+      ]
+    },
+    "stored_content": {
+      "status": "not requested; may require management-key access and stored content"
+    }
+  }
+]

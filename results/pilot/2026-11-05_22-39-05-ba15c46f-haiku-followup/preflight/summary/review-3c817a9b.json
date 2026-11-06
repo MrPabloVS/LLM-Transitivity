@@ -1,0 +1,530 @@
+{
+  "phase": "preflight",
+  "technical_pass": true,
+  "models": {
+    "openai/gpt-4o-mini": {
+      "samples": 1,
+      "expected_samples": 1,
+      "faults": [],
+      "measures": {
+        "samples": 1,
+        "categories": {
+          "answered": 1
+        },
+        "correct": 1,
+        "incorrect": 0,
+        "answered": 1,
+        "agreement": 1.0,
+        "coverage": 1.0,
+        "format_compliant": 1,
+        "format_rate": 1.0
+      },
+      "attempts": 1,
+      "failed_attempts": 0,
+      "unidentified_attempts": 0,
+      "failed_attempt_rate": 0.0,
+      "peak_samples": 1,
+      "peak_http_requests": 1,
+      "sample_p50_seconds": 2.993,
+      "sample_p90_seconds": 2.993,
+      "task_window_seconds": 2.9935460090637207,
+      "cases_per_minute": 20.04311937025012,
+      "known_cost_usd": 1.17e-05,
+      "missing_cost_ids": [],
+      "generation_ids": [
+        "gen-1793929153-ztKY9OELjvGuxdesE3oN"
+      ],
+      "final_generation_ids": [
+        "gen-1793929153-ztKY9OELjvGuxdesE3oN"
+      ],
+      "provider_errors": {}
+    },
+    "openai/gpt-6-luna": {
+      "samples": 1,
+      "expected_samples": 1,
+      "faults": [],
+      "measures": {
+        "samples": 1,
+        "categories": {
+          "answered": 1
+        },
+        "correct": 1,
+        "incorrect": 0,
+        "answered": 1,
+        "agreement": 1.0,
+        "coverage": 1.0,
+        "format_compliant": 1,
+        "format_rate": 1.0
+      },
+      "attempts": 1,
+      "failed_attempts": 0,
+      "unidentified_attempts": 0,
+      "failed_attempt_rate": 0.0,
+      "peak_samples": 1,
+      "peak_http_requests": 1,
+      "sample_p50_seconds": 4.264,
+      "sample_p90_seconds": 4.264,
+      "task_window_seconds": 4.264064073562622,
+      "cases_per_minute": 14.071083118099125,
+      "known_cost_usd": 4.9e-06,
+      "missing_cost_ids": [],
+      "generation_ids": [
+        "gen-1793929156-13RarE6jIGnbG5OTSlzt"
+      ],
+      "final_generation_ids": [
+        "gen-1793929156-13RarE6jIGnbG5OTSlzt"
+      ],
+      "provider_errors": {}
+    },
+    "anthropic/claude-haiku-4.5": {
+      "samples": 1,
+      "expected_samples": 1,
+      "faults": [],
+      "measures": {
+        "samples": 1,
+        "categories": {
+          "answered": 1
+        },
+        "correct": 1,
+        "incorrect": 0,
+        "answered": 1,
+        "agreement": 1.0,
+        "coverage": 1.0,
+        "format_compliant": 0,
+        "format_rate": 0.0
+      },
+      "attempts": 1,
+      "failed_attempts": 0,
+      "unidentified_attempts": 0,
+      "failed_attempt_rate": 0.0,
+      "peak_samples": 1,
+      "peak_http_requests": 1,
+      "sample_p50_seconds": 4.982,
+      "sample_p90_seconds": 4.982,
+      "task_window_seconds": 4.981964111328125,
+      "cases_per_minute": 12.043442838853531,
+      "known_cost_usd": 9.7e-05,
+      "missing_cost_ids": [],
+      "generation_ids": [
+        "gen-1793929160-lqtA9AP7BsolZtHkhMEl"
+      ],
+      "final_generation_ids": [
+        "gen-1793929160-lqtA9AP7BsolZtHkhMEl"
+      ],
+      "provider_errors": {}
+    },
+    "anthropic/claude-haiku-5.5": {
+      "samples": 1,
+      "expected_samples": 1,
+      "faults": [],
+      "measures": {
+        "samples": 1,
+        "categories": {
+          "answered": 1
+        },
+        "correct": 1,
+        "incorrect": 0,
+        "answered": 1,
+        "agreement": 1.0,
+        "coverage": 1.0,
+        "format_compliant": 1,
+        "format_rate": 1.0
+      },
+      "attempts": 1,
+      "failed_attempts": 0,
+      "unidentified_attempts": 0,
+      "failed_attempt_rate": 0.0,
+      "peak_samples": 1,
+      "peak_http_requests": 1,
+      "sample_p50_seconds": 3.811,
+      "sample_p90_seconds": 3.811,
+      "task_window_seconds": 3.810900926589966,
+      "cases_per_minute": 15.74430853905421,
+      "known_cost_usd": 1.16e-05,
+      "missing_cost_ids": [],
+      "generation_ids": [
+        "gen-1793929165-ax9a7syyoScUMHPLzSkD"
+      ],
+      "final_generation_ids": [
+        "gen-1793929165-ax9a7syyoScUMHPLzSkD"
+      ],
+      "provider_errors": {}
+    },
+    "google/gemini-2.5-flash-lite": {
+      "samples": 1,
+      "expected_samples": 1,
+      "faults": [],
+      "measures": {
+        "samples": 1,
+        "categories": {
+          "answered": 1
+        },
+        "correct": 1,
+        "incorrect": 0,
+        "answered": 1,
+        "agreement": 1.0,
+        "coverage": 1.0,
+        "format_compliant": 1,
+        "format_rate": 1.0
+      },
+      "attempts": 1,
+      "failed_attempts": 0,
+      "unidentified_attempts": 0,
+      "failed_attempt_rate": 0.0,
+      "peak_samples": 1,
+      "peak_http_requests": 1,
+      "sample_p50_seconds": 3.919,
+      "sample_p90_seconds": 3.919,
+      "task_window_seconds": 3.9194209575653076,
+      "cases_per_minute": 15.308383725454998,
+      "known_cost_usd": 3.45e-06,
+      "missing_cost_ids": [],
+      "generation_ids": [
+        "gen-1793929169-EfENO1B1Q9ALVwEybfL5"
+      ],
+      "final_generation_ids": [
+        "gen-1793929169-EfENO1B1Q9ALVwEybfL5"
+      ],
+      "provider_errors": {}
+    },
+    "google/gemini-3.1-flash-lite": {
+      "samples": 1,
+      "expected_samples": 1,
+      "faults": [],
+      "measures": {
+        "samples": 1,
+        "categories": {
+          "answered": 1
+        },
+        "correct": 1,
+        "incorrect": 0,
+        "answered": 1,
+        "agreement": 1.0,
+        "coverage": 1.0,
+        "format_compliant": 1,
+        "format_rate": 1.0
+      },
+      "attempts": 1,
+      "failed_attempts": 0,
+      "unidentified_attempts": 0,
+      "failed_attempt_rate": 0.0,
+      "peak_samples": 1,
+      "peak_http_requests": 1,
+      "sample_p50_seconds": 4.298,
+      "sample_p90_seconds": 4.298,
+      "task_window_seconds": 4.2984938621521,
+      "cases_per_minute": 13.958377497824362,
+      "known_cost_usd": 8.875e-06,
+      "missing_cost_ids": [],
+      "generation_ids": [
+        "gen-1793929173-euGuzsuyPJkh7TEFmF21"
+      ],
+      "final_generation_ids": [
+        "gen-1793929173-euGuzsuyPJkh7TEFmF21"
+      ],
+      "provider_errors": {}
+    }
+  },
+  "load64_validated": false,
+  "load_reasons": {},
+  "samples": [
+    {
+      "model": "openai/gpt-4o-mini",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "phase": "preflight",
+      "conditions": {
+        "dataset_family": "HS",
+        "frequency": "HF",
+        "verbal_time": "FU",
+        "canonical_form": "canonic",
+        "connectors": "if then / therefore",
+        "source_validity": "valid",
+        "stratum_id": "aae97441d1c88703"
+      },
+      "prompt": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?",
+      "raw_response": "Yes",
+      "target": "yes",
+      "after": {
+        "value": "C",
+        "status": "answered",
+        "extraction_rule": "initial_or_final_line_v2",
+        "extraction_position": "initial",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "source_log": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight/inspect/2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_HGvpnbb4akdU4hs6nCqe9i.eval",
+      "source_log_sha256": "94cdf1281361645d1c2a51d48748b270ecf1392aecae56c37136925c94d2cdde",
+      "seconds": 2.993,
+      "generation_id": "gen-1793929153-ztKY9OELjvGuxdesE3oN"
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "phase": "preflight",
+      "conditions": {
+        "dataset_family": "HS",
+        "frequency": "HF",
+        "verbal_time": "FU",
+        "canonical_form": "canonic",
+        "connectors": "if then / therefore",
+        "source_validity": "valid",
+        "stratum_id": "aae97441d1c88703"
+      },
+      "prompt": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?",
+      "raw_response": "yes",
+      "target": "yes",
+      "after": {
+        "value": "C",
+        "status": "answered",
+        "extraction_rule": "initial_or_final_line_v2",
+        "extraction_position": "initial",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "source_log": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight/inspect/2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_PEftoiQjvGGEuQbhc3QcW4.eval",
+      "source_log_sha256": "164d3401aa463e3ff3be418a9ea8acf0b3de64d7f010c848ef06ab7b130c3864",
+      "seconds": 4.264,
+      "generation_id": "gen-1793929156-13RarE6jIGnbG5OTSlzt"
+    },
+    {
+      "model": "anthropic/claude-haiku-4.5",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "phase": "preflight",
+      "conditions": {
+        "dataset_family": "HS",
+        "frequency": "HF",
+        "verbal_time": "FU",
+        "canonical_form": "canonic",
+        "connectors": "if then / therefore",
+        "source_validity": "valid",
+        "stratum_id": "aae97441d1c88703"
+      },
+      "prompt": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?",
+      "raw_response": "Yes.",
+      "target": "yes",
+      "after": {
+        "value": "C",
+        "status": "answered",
+        "extraction_rule": "initial_or_final_line_v2",
+        "extraction_position": "initial",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": false
+      },
+      "source_log": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight/inspect/2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_LQc5zrDgv6yzVsKyUUkF38.eval",
+      "source_log_sha256": "e9815a1548c10b0d5ef1c45a0fb0623e0a9f3986bc0d3400cb926b3c752241ea",
+      "seconds": 4.982,
+      "generation_id": "gen-1793929160-lqtA9AP7BsolZtHkhMEl"
+    },
+    {
+      "model": "anthropic/claude-haiku-5.5",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "phase": "preflight",
+      "conditions": {
+        "dataset_family": "HS",
+        "frequency": "HF",
+        "verbal_time": "FU",
+        "canonical_form": "canonic",
+        "connectors": "if then / therefore",
+        "source_validity": "valid",
+        "stratum_id": "aae97441d1c88703"
+      },
+      "prompt": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?",
+      "raw_response": "yes",
+      "target": "yes",
+      "after": {
+        "value": "C",
+        "status": "answered",
+        "extraction_rule": "initial_or_final_line_v2",
+        "extraction_position": "initial",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "source_log": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight/inspect/2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_DQuawiwGerj2uah4t4uiqx.eval",
+      "source_log_sha256": "75e3f1e73ff87a997ddbb90da0559f0a6e830bbd157d78fdb4ab15f01c6781de",
+      "seconds": 3.811,
+      "generation_id": "gen-1793929165-ax9a7syyoScUMHPLzSkD"
+    },
+    {
+      "model": "google/gemini-2.5-flash-lite",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "phase": "preflight",
+      "conditions": {
+        "dataset_family": "HS",
+        "frequency": "HF",
+        "verbal_time": "FU",
+        "canonical_form": "canonic",
+        "connectors": "if then / therefore",
+        "source_validity": "valid",
+        "stratum_id": "aae97441d1c88703"
+      },
+      "prompt": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?",
+      "raw_response": "yes",
+      "target": "yes",
+      "after": {
+        "value": "C",
+        "status": "answered",
+        "extraction_rule": "initial_or_final_line_v2",
+        "extraction_position": "initial",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "source_log": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight/inspect/2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_T8BhZZ3RDB2H5faS8KSNc4.eval",
+      "source_log_sha256": "ebb70615f7d3ebe9ad1a554a84a6e66c95bc2b003854da155d24e8024215745d",
+      "seconds": 3.919,
+      "generation_id": "gen-1793929169-EfENO1B1Q9ALVwEybfL5"
+    },
+    {
+      "model": "google/gemini-3.1-flash-lite",
+      "sample_uid": "HS_HF_FU_2000:20:ed6b8640592546b4",
+      "phase": "preflight",
+      "conditions": {
+        "dataset_family": "HS",
+        "frequency": "HF",
+        "verbal_time": "FU",
+        "canonical_form": "canonic",
+        "connectors": "if then / therefore",
+        "source_validity": "valid",
+        "stratum_id": "aae97441d1c88703"
+      },
+      "prompt": "If the man will love the school, then the teacher will lose the newspaper; if the teacher will lose the newspaper, then the woman will see the chair; therefore if the man will love the school, then the woman will see the chair?",
+      "raw_response": "yes",
+      "target": "yes",
+      "after": {
+        "value": "C",
+        "status": "answered",
+        "extraction_rule": "initial_or_final_line_v2",
+        "extraction_position": "initial",
+        "expected": "yes",
+        "extracted_answer": "yes",
+        "format_compliant": true
+      },
+      "source_log": "results/pilot/2026-11-05_22-39-05-ba15c46f-haiku-followup/preflight/inspect/2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_gjDxMssVSGos4cGBbfTCXt.eval",
+      "source_log_sha256": "b5c77cb1444d75a7f0326a5ad53d60b9e89f9a41ef589f51dbb4678ceb6aad2b",
+      "seconds": 4.298,
+      "generation_id": "gen-1793929173-euGuzsuyPJkh7TEFmF21"
+    }
+  ],
+  "generations": {
+    "gen-1793929165-ax9a7syyoScUMHPLzSkD": {
+      "generation_id": "gen-1793929165-ax9a7syyoScUMHPLzSkD",
+      "model": "openrouter/anthropic/claude-haiku-5.5",
+      "cost_usd": 1.16e-05,
+      "cost_source": "captured_response",
+      "observations": [
+        {
+          "model": "openrouter/anthropic/claude-haiku-5.5",
+          "source": "captured_response",
+          "log": "2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_DQuawiwGerj2uah4t4uiqx.eval",
+          "request_started_utc": "2026-11-06T01:39:25.082277+00:00",
+          "cost_usd": 1.16e-05,
+          "http_status": 200,
+          "provider_error_code": null
+        }
+      ],
+      "cost_conflicts": [],
+      "provider_error_codes": []
+    },
+    "gen-1793929153-ztKY9OELjvGuxdesE3oN": {
+      "generation_id": "gen-1793929153-ztKY9OELjvGuxdesE3oN",
+      "model": "openrouter/openai/gpt-4o-mini",
+      "cost_usd": 1.17e-05,
+      "cost_source": "captured_response",
+      "observations": [
+        {
+          "model": "openrouter/openai/gpt-4o-mini",
+          "source": "captured_response",
+          "log": "2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_HGvpnbb4akdU4hs6nCqe9i.eval",
+          "request_started_utc": "2026-11-06T01:39:12.883348+00:00",
+          "cost_usd": 1.17e-05,
+          "http_status": 200,
+          "provider_error_code": null
+        }
+      ],
+      "cost_conflicts": [],
+      "provider_error_codes": []
+    },
+    "gen-1793929160-lqtA9AP7BsolZtHkhMEl": {
+      "generation_id": "gen-1793929160-lqtA9AP7BsolZtHkhMEl",
+      "model": "openrouter/anthropic/claude-haiku-4.5",
+      "cost_usd": 9.7e-05,
+      "cost_source": "captured_response",
+      "observations": [
+        {
+          "model": "openrouter/anthropic/claude-haiku-4.5",
+          "source": "captured_response",
+          "log": "2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_LQc5zrDgv6yzVsKyUUkF38.eval",
+          "request_started_utc": "2026-11-06T01:39:20.080221+00:00",
+          "cost_usd": 9.7e-05,
+          "http_status": 200,
+          "provider_error_code": null
+        }
+      ],
+      "cost_conflicts": [],
+      "provider_error_codes": []
+    },
+    "gen-1793929156-13RarE6jIGnbG5OTSlzt": {
+      "generation_id": "gen-1793929156-13RarE6jIGnbG5OTSlzt",
+      "model": "openrouter/openai/gpt-6-luna",
+      "cost_usd": 4.9e-06,
+      "cost_source": "captured_response",
+      "observations": [
+        {
+          "model": "openrouter/openai/gpt-6-luna",
+          "source": "captured_response",
+          "log": "2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_PEftoiQjvGGEuQbhc3QcW4.eval",
+          "request_started_utc": "2026-11-06T01:39:15.792102+00:00",
+          "cost_usd": 4.9e-06,
+          "http_status": 200,
+          "provider_error_code": null
+        }
+      ],
+      "cost_conflicts": [],
+      "provider_error_codes": []
+    },
+    "gen-1793929169-EfENO1B1Q9ALVwEybfL5": {
+      "generation_id": "gen-1793929169-EfENO1B1Q9ALVwEybfL5",
+      "model": "openrouter/google/gemini-2.5-flash-lite",
+      "cost_usd": 3.45e-06,
+      "cost_source": "captured_response",
+      "observations": [
+        {
+          "model": "openrouter/google/gemini-2.5-flash-lite",
+          "source": "captured_response",
+          "log": "2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_T8BhZZ3RDB2H5faS8KSNc4.eval",
+          "request_started_utc": "2026-11-06T01:39:28.918479+00:00",
+          "cost_usd": 3.45e-06,
+          "http_status": 200,
+          "provider_error_code": null
+        }
+      ],
+      "cost_conflicts": [],
+      "provider_error_codes": []
+    },
+    "gen-1793929173-euGuzsuyPJkh7TEFmF21": {
+      "generation_id": "gen-1793929173-euGuzsuyPJkh7TEFmF21",
+      "model": "openrouter/google/gemini-3.1-flash-lite",
+      "cost_usd": 8.875e-06,
+      "cost_source": "captured_response",
+      "observations": [
+        {
+          "model": "openrouter/google/gemini-3.1-flash-lite",
+          "source": "captured_response",
+          "log": "2026-11-06T01-39-12-00-00_zeroShot-HS-HF-FU-20_gjDxMssVSGos4cGBbfTCXt.eval",
+          "request_started_utc": "2026-11-06T01:39:32.863519+00:00",
+          "cost_usd": 8.875e-06,
+          "http_status": 200,
+          "provider_error_code": null
+        }
+      ],
+      "cost_conflicts": [],
+      "provider_error_codes": []
+    }
+  },
+  "note": "Direct 64-slot load; no matched 16/32 load or measured speedup is claimed.",
+  "runner_error_type": null
+}

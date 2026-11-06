@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "campaign_id": "ba15c46f-5b76-48a1-b804-5f1f830c20ff",
+  "created_at_utc": "2026-11-06T01:39:05.582622+00:00",
+  "profile": "haiku",
+  "direct_load_concurrency": 64,
+  "coverage_concurrency": 16,
+  "no_spend_pause": true,
+  "full_corpus_run": false,
+  "planned_responses": 2382,
+  "planned_tasks": 48,
+  "omitted_load_levels": {
+    "16": "User requested direct 64-slot load",
+    "32": "User requested direct 64-slot load"
+  },
+  "price_estimate": "results/cost_estimates/2026-11-05_22-39-05-84b9f125/estimate.json",
+  "price_estimate_sha256": "24098e06bc92724ded00e6462393a5c15ce01c2be1db743e2811fc7c9b3672a0",
+  "stages": [
+    {
+      "name": "preflight",
+      "spec": "preflight/provenance/flow_spec.json",
+      "spec_sha256": "4867f69f3e6f695496ee83a4ebfffa6f87d004db6c29077f5ccff7edaeb52042"
+    },
+    {
+      "name": "coverage",
+      "spec": "coverage/provenance/flow_spec.json",
+      "spec_sha256": "766f1a55839c899d35bba64434e855e34d709cda3772b1684cbac8dc1bff8db8"
+    },
+    {
+      "name": "load-64",
+      "spec": "load-64/provenance/flow_spec.json",
+      "spec_sha256": "29ac04b8c20c598c4aefeca79c91d37b4038c72af4eb247a77a4d1af0c4ed088"
+    }
+  ]
+}
