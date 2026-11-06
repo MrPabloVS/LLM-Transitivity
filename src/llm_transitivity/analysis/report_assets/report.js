@@ -1,7 +1,7 @@
 "use strict";
 const byId = id => document.getElementById(id);
 const state = {summary: null, cases: [], page: 0, request: 0};
-const metrics = ["samples","matched","disagreed","strict","answered","content_filter","empty","ambiguous","invalid_format","error"];
+const metrics = ["samples","matched","disagreed","strict","answered","content_filter","empty","ambiguous","invalid_format","error","tp","tn","fp","fn","positive_samples","negative_samples","positive_answered","negative_answered"];
 function element(tag, text) { const el=document.createElement(tag); if(text!==undefined) el.textContent=String(text); return el; }
 function fraction(n,d) { return `${n.toLocaleString()}/${d.toLocaleString()} (${d ? (100*n/d).toFixed(2)+"%" : "undefined"})`; }
 async function jsonFile(path) { const response=await fetch(path); if(!response.ok) throw new Error(`Cannot load ${path} (${response.status})`); return response.json(); }
@@ -11,20 +11,22 @@ function aggregate() {
  const totals=new Map(s.models.map(m=>[m,Object.fromEntries(metrics.map(k=>[k,0]))]));
  for(const row of s.breakdowns.stratum){const d=definitions.get(row.condition); if(fields.some(k=>byId(`agg-${k}`).value!=="all"&&byId(`agg-${k}`).value!==d[k])) continue; const sum=totals.get(row.model);metrics.forEach(k=>sum[k]+=row[k]);}
  const body=byId("aggregate-rows");body.replaceChildren();let count=0;
- for(const [model,r] of totals){if(byId("agg-model").value!=="all"&&byId("agg-model").value!==model)continue;const tr=element("tr");[model,fraction(r.matched,r.answered),fraction(r.answered,r.samples),fraction(r.strict,r.samples),fraction(r.matched,r.samples),r.content_filter,r.samples-r.answered-r.content_filter].forEach(v=>tr.append(element("td",v)));body.append(tr);count+=r.samples;}
+ for(const [model,r] of totals){if(byId("agg-model").value!=="all"&&byId("agg-model").value!==model)continue;const tr=element("tr");[model,fraction(r.matched,r.answered),fraction(r.answered,r.samples),fraction(r.strict,r.samples),fraction(r.matched,r.samples),r.content_filter,r.samples-r.answered-r.content_filter,r.tp,r.tn,r.fp,r.fn,fraction(r.fp,r.negative_answered),fraction(r.fn,r.positive_answered),fraction(r.negative_answered,r.negative_samples),fraction(r.positive_answered,r.positive_samples)].forEach(v=>tr.append(element("td",v)));body.append(tr);count+=r.samples;}
  byId("aggregate-status").textContent=`${count.toLocaleString()} model/case results in this selection. Each row has its own explicit denominator.`;
 }
 function filteredCases(){const outcome=byId("case-outcome").value;const validity=byId("case-validity").value;const canonical=byId("case-canonical").value;const uid=byId("case-uid").value.trim();return state.cases.filter(c=>{
  if(validity!=="all"&&c.validity!==validity)return false;if(canonical!=="all"&&c.canonical!==canonical)return false;if(uid&&!c.uid.includes(uid))return false;
+ if(outcome==="fp"||outcome==="fn")return c.responses.some(r=>responseClass(c,r)===outcome.toUpperCase());
  if(outcome==="different")return new Set(c.responses.filter(r=>r.status==="answered").map(r=>r.answer)).size>1;
  if(outcome==="content_filter")return c.responses.some(r=>r.status==="content_filter");
  if(outcome==="non-strict")return c.responses.some(r=>r.status==="answered"&&!r.strict);
  if(outcome==="uninterpretable")return c.responses.some(r=>r.status!=="answered");
  if(outcome==="all-match")return c.responses.every(r=>r.matched===1);return true;
 });}
+function responseClass(c,r){if(r.status!=="answered")return r.status;return c.target==="yes"?(r.answer==="yes"?"TP":"FN"):(r.answer==="yes"?"FP":"TN");}
 function caseBody(c){const div=element("div");div.className="case-body";div.append(element("p",`Source label: ${c.validity}; target: ${c.target}. ${c.family} / ${c.frequency} / ${c.tense} / ${c.canonical}. ${c.formulation}`),element("pre",c.prompt),element("p",`Original: ${c.original_path}, row ${c.row_number}. Source identifiers: ${JSON.stringify(c.source_id)}`));
  const table=element("table"),head=element("tr");["Model","Interpreted answer","Outcome","Strict format"].forEach(v=>head.append(element("th",v)));table.append(head);
- for(const r of c.responses){const tr=element("tr");[r.model,r.answer===null?"not interpreted":r.answer,r.status==="answered"?(r.matched?"match":"disagreement"):r.status,Boolean(r.strict)].forEach(v=>tr.append(element("td",v)));table.append(tr);}div.append(table);
+ for(const r of c.responses){const tr=element("tr");[r.model,r.answer===null?"not interpreted":r.answer,responseClass(c,r),Boolean(r.strict)].forEach(v=>tr.append(element("td",v)));table.append(tr);}div.append(table);
  for(const r of c.responses){const details=element("details");details.append(element("summary",`${r.model} — original response`),element("pre",r.raw),element("p",`Native log: ${r.log}; SHA-256: ${r.log_hash}`));div.append(details);}div.append(element("p",`Sentence SHA-256: ${c.sentence_hash}. Original record SHA-256: ${c.original_hash}.`));return div;
 }
 function showCases(){const rows=filteredCases(),pages=Math.max(1,Math.ceil(rows.length/50));state.page=Math.min(state.page,pages-1);byId("case-list").replaceChildren();

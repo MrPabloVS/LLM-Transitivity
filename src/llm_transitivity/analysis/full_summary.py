@@ -34,6 +34,12 @@ def aggregate(db, dimension=None) -> list[dict]:
         SUM(r.matched) AS matched,
         SUM(r.status='answered' AND NOT r.matched) AS disagreed,
         SUM(r.strict) AS strict,
+        SUM(r.status='answered' AND c.target='yes' AND r.answer='yes') AS tp,
+        SUM(r.status='answered' AND c.target='no' AND r.answer='no') AS tn,
+        SUM(r.status='answered' AND c.target='no' AND r.answer='yes') AS fp,
+        SUM(r.status='answered' AND c.target='yes' AND r.answer='no') AS fn,
+        SUM(c.target='yes') AS positive_samples,
+        SUM(c.target='no') AS negative_samples,
         {",".join(f"SUM(r.status='{s}') AS {s}" for s in STATUSES)}
         FROM results r JOIN cases c USING(uid) WHERE r.phase='corpus'
         GROUP BY r.model{by} ORDER BY r.model{by}""",
@@ -46,7 +52,30 @@ def aggregate(db, dimension=None) -> list[dict]:
             r["matched"] + r["disagreed"] == r["answered"],
             "Agreement counts do not sum",
         )
+        require(r["tp"] + r["tn"] == r["matched"], "TP + TN differs from matches")
+        require(
+            r["fp"] + r["fn"] == r["disagreed"], "FP + FN differs from disagreements"
+        )
+        require(
+            r["positive_samples"] + r["negative_samples"] == r["samples"],
+            "Source class counts differ",
+        )
+        positive = r["tp"] + r["fn"]
+        negative = r["tn"] + r["fp"]
+        require(
+            positive + negative == r["answered"], "Interpretable class counts differ"
+        )
         r.update(
+            positive_answered=positive,
+            negative_answered=negative,
+            fpr=r["fp"] / negative if negative else None,
+            fnr=r["fn"] / positive if positive else None,
+            positive_coverage=positive / r["positive_samples"]
+            if r["positive_samples"]
+            else None,
+            negative_coverage=negative / r["negative_samples"]
+            if r["negative_samples"]
+            else None,
             agreement=r["matched"] / r["answered"] if r["answered"] else None,
             coverage=r["answered"] / r["samples"] if r["samples"] else None,
             format_rate=r["strict"] / r["samples"] if r["samples"] else None,

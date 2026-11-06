@@ -285,3 +285,64 @@ def test_response_markup_is_escaped():
     rendered = literal('<script>alert("x")</script><img src=x onerror=alert(1)>')
     assert "<script>" not in rendered and "<img" not in rendered
     assert "&lt;script&gt;" in rendered
+
+
+def test_source_confusion_counts_class_coverage_and_format(db):
+    samples = [
+        ("yes", "answered", "yes", 1, 1),
+        ("yes", "answered", "no", 0, 0),
+        ("yes", "ambiguous", None, 0, 0),
+        ("no", "answered", "no", 1, 1),
+        ("no", "answered", "yes", 0, 0),
+        ("no", "content_filter", None, 0, 0),
+        ("no", "empty", None, 0, 0),
+    ]
+    for i, (target, status, answer, matched, strict) in enumerate(samples, 1):
+        case = add_case(db, i)
+        db.execute(
+            "UPDATE cases SET target=?, validity=? WHERE uid=?",
+            (target, "valid" if target == "yes" else "invalid", case["uid"]),
+        )
+        add_result(db, "a", case["uid"], status, answer, matched, strict)
+    result = aggregate(db)[0]
+    assert (result["tp"], result["tn"], result["fp"], result["fn"]) == (1, 1, 1, 1)
+    assert result["fpr"] == result["fnr"] == 0.5
+    assert result["negative_coverage"] == 0.5
+    assert result["positive_coverage"] == pytest.approx(2 / 3)
+    groups = aggregate(db, "validity")
+    positive = next(r for r in groups if r["condition"] == "valid")
+    negative = next(r for r in groups if r["condition"] == "invalid")
+    assert positive["fpr"] is positive["negative_coverage"] is None
+    assert negative["fnr"] is negative["positive_coverage"] is None
+    assert sum(r["fp"] for r in groups) == result["fp"]
+    assert sum(r["fn"] for r in groups) == result["fn"]
+    db.execute("UPDATE results SET strict=1 WHERE status='answered'")
+    after = aggregate(db)[0]
+    assert after["fpr"] == result["fpr"]
+    assert after["fnr"] == result["fnr"]
+    assert after["strict"] == 4
+
+
+def test_no_interpretable_class_is_not_zero_error(db):
+    add_result(db, "a", add_case(db)["uid"], "content_filter", None, 0, 0)
+    result = aggregate(db)[0]
+    assert result["fn"] == result["fp"] == 0
+    assert result["fnr"] is result["fpr"] is None
+    assert result["positive_coverage"] == 0
+    assert result["negative_coverage"] is None
+
+
+def test_pdf_article_blocks_preserve_tables_literals_and_images():
+    from llm_transitivity.analysis.full_pdf import ArticleBlocks
+
+    parser = ArticleBlocks()
+    parser.feed(
+        '<h1>Report</h1><div class="toc"><ul><li>Contents</li></ul></div><p>FP &amp; FN <code>yes</code></p><pre>&lt;script&gt;\nno</pre><table><thead><tr><th>FP</th></tr></thead><tbody><tr><td>0/0 (undefined)</td></tr></tbody></table><p><img src="figures/false_rates.svg" alt="Rates"></p>'
+    )
+    assert parser.blocks == [
+        {"kind": "heading", "level": 1, "text": "Report"},
+        {"kind": "text", "text": "FP & FN yes"},
+        {"kind": "literal", "text": "<script>\nno"},
+        {"kind": "table", "headers": ["FP"], "rows": [["0/0 (undefined)"]]},
+        {"kind": "figure", "name": "false_rates", "alt": "Rates"},
+    ]

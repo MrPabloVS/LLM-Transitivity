@@ -14,7 +14,7 @@ from llm_transitivity.domain.scoring import EXTRACTION_RULE, interpret_response
 from llm_transitivity.domain.selection import stratum
 from llm_transitivity.evidence.serialization import digest, record_digest
 
-VERSION = "full-corpus-report-v1"
+VERSION = "full-corpus-report-v2"
 STATUSES = (
     "answered",
     "content_filter",

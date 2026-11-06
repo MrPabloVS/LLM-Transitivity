@@ -308,3 +308,17 @@ Markdown, static HTML, and one continuous PDF with embedded fonts. The command
 saves the shared blocks and tables, input and analysis hashes, and a final
 validation record. A failed render has no complete validation record. Existing
 destinations are rejected. Inputs are hashed again before completion.
+
+## Source-label confusion measures
+
+Full-corpus report v2 preserves the existing aggregate fields and adds TP, TN,
+FP, FN, source-class counts, interpreted class counts, error rates, and class
+coverage. Positive means `yes`. Only interpreted responses enter confusion
+counts. FPR uses FP + TN; FNR uses FN + TP. Class coverage uses every planned
+case in the corresponding source class. A zero denominator produces null.
+
+The explorer adds integer counts from selected strata before it calculates
+rates. It does not average stratum percentages. Case outcomes use the saved
+interpretation and source target, not raw-text matching. The report creates a
+continuous PDF from the same rendered article, with PNG companions for its SVG
+figures. Previous bundles and their assets retain their original bytes.

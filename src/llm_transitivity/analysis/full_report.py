@@ -76,6 +76,11 @@ def report(root: Path, run: Path, output: Path) -> Path:
             "coverage": "interpretable responses / planned cases",
             "strict_format": "strict yes/no responses / planned cases",
             "matched_total": "source-label matches / planned cases",
+            "positive": "yes; compared with the source target, not audited logical validity",
+            "fpr": "FP / (FP + TN); interpretable source-negative responses",
+            "fnr": "FN / (FN + TP); interpretable source-positive responses",
+            "positive_coverage": "(TP + FN) / all source-positive cases",
+            "negative_coverage": "(TN + FP) / all source-negative cases",
             "cost": "deduplicated reported generation costs; missing values remain unknown",
             "scope": "closed full-corpus run only; preflight kept separate",
         }

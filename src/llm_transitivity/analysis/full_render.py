@@ -64,13 +64,18 @@ def figures(output, summary):
     )
     models = summary["models"]
     rows = {r["model"]: r for r in summary["totals"]}
-    fig, ax = plt.subplots(figsize=(10, 4.6), layout="constrained")
+    fig, ax = plt.subplots(figsize=(12, 6.5), layout="constrained")
     left = np.zeros(len(models))
     for key, label, color in (
-        ("matched", "Matches source label", "#257b72"),
-        ("disagreed", "Disagrees with source label", "#b64b38"),
+        ("tp", "True positive (source yes)", "#0072B2"),
+        ("tn", "True negative (source no)", "#009E73"),
+        ("fp", "False positive (source no)", "#D55E00"),
+        ("fn", "False negative (source yes)", "#6A51A3"),
         ("content_filter", "Content filter", "#bd8a24"),
-        ("other", "Other non-interpretable", "#777b85"),
+        ("ambiguous", "Ambiguous", "#777b85"),
+        ("empty", "Empty", "#aaaaaa"),
+        ("invalid_format", "Unsupported format", "#bbaacc"),
+        ("error", "Output error", "#444444"),
     ):
         values = np.array(
             [
@@ -98,6 +103,9 @@ def figures(output, summary):
     )
     ax.legend(loc="upper center", bbox_to_anchor=(0.35, -0.17), ncols=2, frameon=False)
     fig.savefig(dest / "outcomes.svg", metadata={"Date": None})
+    fig.savefig(
+        (dest / "outcomes.svg").with_suffix(".png"), dpi=150, bbox_inches="tight"
+    )
     plt.close(fig)
     datasets = [r["dataset"] for r in summary["cases"]]
     for dimension, conditions, title in (
@@ -139,6 +147,11 @@ def figures(output, summary):
         ax.set_title(title + "\nDenominator: interpretable answers in each cell")
         fig.colorbar(heat, ax=ax, label="Percent")
         fig.savefig(dest / f"{dimension}_agreement.svg", metadata={"Date": None})
+        fig.savefig(
+            (dest / f"{dimension}_agreement.svg").with_suffix(".png"),
+            dpi=150,
+            bbox_inches="tight",
+        )
         plt.close(fig)
     fig, ax = plt.subplots(figsize=(10, 4), layout="constrained")
     start = summary["timing"]["corpus_started"]
@@ -160,6 +173,9 @@ def figures(output, summary):
     )
     ax.legend(fontsize=7, loc="lower right")
     fig.savefig(dest / "adaptive_limits.svg", metadata={"Date": None})
+    fig.savefig(
+        (dest / "adaptive_limits.svg").with_suffix(".png"), dpi=150, bbox_inches="tight"
+    )
     plt.close(fig)
 
 
@@ -206,7 +222,7 @@ def narrative(db, summary, card_links):
         "",
         "[Interactive tables](explorer.html#aggregate) · [Case explorer](explorer.html#explorer)",
         "",
-        "[Continuous PDF](https://github.com/MrPabloVS/LLM-Transitivity/blob/tobe/runs-2026-11-05/output/pdf/full-corpus-report-continuous.pdf) \u00b7 [Detailed setup guide (Spanish)](https://github.com/MrPabloVS/LLM-Transitivity/blob/tobe/runs-2026-11-05/docs/guia_informe_es.md)",
+        "[Continuous PDF](report.pdf) \u00b7 [Detailed setup guide (Spanish)](https://github.com/MrPabloVS/LLM-Transitivity/blob/tobe/runs-2026-11-05/docs/guia_informe_es.md)",
         "",
         "## Main findings",
         "",
@@ -359,6 +375,8 @@ def narrative(db, summary, card_links):
                 "Model",
                 "Matches",
                 "Disagreements",
+                "FP",
+                "FN",
                 "Filters",
                 "Empty",
                 "Ambiguous",
@@ -373,6 +391,8 @@ def narrative(db, summary, card_links):
                         for k in (
                             "matched",
                             "disagreed",
+                            "fp",
+                            "fn",
                             "content_filter",
                             "empty",
                             "ambiguous",
@@ -386,6 +406,18 @@ def narrative(db, summary, card_links):
         ),
         "",
         "![Outcomes over all cases](figures/outcomes.svg)",
+        "",
+        "### False positives and false negatives",
+        "",
+        "Positive means yes. FP is an interpreted yes when the source target is no; FN is an interpreted no when the source target is yes. TP and TN match the source target. These terms refer to source labels, not audited logical truth. Filters and other non-interpretable outcomes remain separate.",
+        "",
+        "FPR = FP / (FP + TN), among interpreted source-negative cases. FNR = FN / (FN + TP), among interpreted source-positive cases. Class coverage uses every planned case of that source class. Undefined means that the denominator is zero; it does not mean a zero error rate.",
+        "",
+        error_table(summary["totals"]),
+        "",
+        "![False positive and negative rates](figures/false_rates.svg)",
+        "",
+        "Haiku and Luna have more false positives than false negatives in this run. GPT-4o mini has more false negatives. Sonnet and Gemini 3.1 have no false positives among their interpreted responses; their disagreements are false negatives. This describes the direction of source-label disagreement, not its cause.",
         "",
         "### Yes and no answers",
         "",
@@ -454,12 +486,25 @@ def narrative(db, summary, card_links):
             ),
             "",
         ]
+        lines += [error_table(values, condition=True), ""]
+        for figure in summary["error_figures"][dimension]:
+            lines += [f"![FPR and FNR by {dimension}](figures/{figure}.svg)", ""]
     lines += [
         "### Datasets and complete strata",
         "",
         "![Agreement by dataset](figures/dataset_agreement.svg)",
         "",
         "The [dataset table](tables/by_dataset.csv) contains all 108 model/dataset cells. The [stratum results](tables/by_stratum.csv) contain all 648 model/stratum cells. Join them to the [stratum definitions](tables/stratum_definitions.csv) by stratum. The HTML report supports combined condition filters.",
+        "",
+        error_table(summary["breakdowns"]["dataset"], condition=True),
+        "",
+        *[
+            item
+            for dimension in ("dataset", "stratum")
+            for figure in summary["error_figures"][dimension]
+            for item in (f"![FPR and FNR by {dimension}](figures/{figure}.svg)", "")
+        ],
+        "Every heatmap uses the same 0-100% scale and prints its numerator and denominator. Gray cells are undefined, not zero. Stratum IDs map to tables/stratum_definitions.csv. The condition CSVs retain all counts and class coverage values. The separate explorer recomputes rates from counts when filters are combined.",
         "",
         "## Do models disagree on the same cases?",
         "",
@@ -744,6 +789,10 @@ def narrative(db, summary, card_links):
 
 def render(db, root: Path, run: Path, output: Path, summary: dict):
     figures(output, summary)
+    from llm_transitivity.analysis.full_error_figures import error_figures
+
+    summary["error_figures"] = error_figures(output, summary, LABELS)
+    write_json(output / "summary.json", summary)
     links = copy_cards(root, run, output)
     text = narrative(db, summary, links)
     (output / "report.md").write_text(text)
@@ -755,3 +804,41 @@ def render(db, root: Path, run: Path, output: Path, summary: dict):
     shutil.copyfile(assets / "explorer.html", output / "explorer.html")
     template = (assets / "index.html").read_text()
     (output / "index.html").write_text(template.replace("{{REPORT}}", article))
+    from llm_transitivity.analysis.full_pdf import render_pdf
+
+    render_pdf(output, article)
+
+
+def error_table(records, condition=False):
+    headers = (
+        ["Model"]
+        + (["Condition"] if condition else [])
+        + [
+            "TP",
+            "TN",
+            "FP",
+            "FN",
+            "FPR: FP / negatives interpreted",
+            "FNR: FN / positives interpreted",
+            "Negative coverage",
+            "Positive coverage",
+        ]
+    )
+    return table(
+        headers,
+        [
+            [LABELS[r["model"]]]
+            + ([r["condition"]] if condition else [])
+            + [
+                r["tp"],
+                r["tn"],
+                r["fp"],
+                r["fn"],
+                ratio(r["fp"], r["negative_answered"]),
+                ratio(r["fn"], r["positive_answered"]),
+                ratio(r["negative_answered"], r["negative_samples"]),
+                ratio(r["positive_answered"], r["positive_samples"]),
+            ]
+            for r in records
+        ],
+    )
