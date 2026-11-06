@@ -7,6 +7,7 @@ import tomllib
 from pathlib import Path
 
 COMMANDS = {
+    "interpret": "Create static analysis, figures, and a continuous PDF from a saved report",
     "explore": "Open DuckDB UI for saved report tables and cases",
     "report": "Build a full-corpus report from saved evidence without API requests",
     "full": "Prepare and run the verified full corpus with Pilot 3 controls",

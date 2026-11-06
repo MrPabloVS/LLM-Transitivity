@@ -286,3 +286,25 @@ an existing report. It does not build a report or change archived evidence.
 The CLI owns the local UI lifetime and closes its server on `Ctrl+C`.
 Each report path has a separate local database under `.local/duckdb/`.
 The UI requires downloaded extension and web assets; queries run locally.
+
+## Static interpretation
+
+`transitivity interpret --report <analysis-directory> --output <new-directory>`
+reads the validated November 6 full-corpus report. It does not read API credentials
+or change the source bundle. Its fixed editorial interpretation requires this
+run and scorer version; it rejects other runs rather than reusing these claims.
+
+`analysis.interpret_data` joins case JSON and response CSV data through DuckDB.
+It checks UID coverage, prompt hashes, response equality, totals, strata, pairs,
+and the source generation ledger. Explicit string types preserve yes/no answers
+when CSV inference would otherwise treat them as booleans. Missing costs are
+not converted to zero. Observed condition groups remain separate from absent
+groups. The original source report owns native-log verification.
+
+`analysis.interpret_figures` produces static SVG and PNG charts.
+`analysis.interpret_narrative` defines the editorial reading and inserts derived
+values. `analysis.interpret_document` renders one sequence of blocks into
+Markdown, static HTML, and one continuous PDF with embedded fonts. The command
+saves the shared blocks and tables, input and analysis hashes, and a final
+validation record. A failed render has no complete validation record. Existing
+destinations are rejected. Inputs are hashed again before completion.
