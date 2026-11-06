@@ -14,6 +14,7 @@ The historical runner and benchmark inputs remain outside the package.
 - `runs`: result archives, exports and run execution.
 - `costs`: price queries and estimates from verified inputs.
 - `cli`: argument parsing and application composition.
+- `analysis`: offline reevaluation, report arithmetic, and full-corpus projections.
 
 Domain imports have no filesystem, Git, HTTP or Inspect dependencies. JSON
 serialization and hashes use the same representations as the original manifest.
@@ -109,6 +110,23 @@ The cost archive component saves each complete estimate under a new
 collision fails instead of replacing a previous capture. The CLI prints the new
 snapshot path. Use [the cost procedure](pilot_costs.md) for new estimates.
 
+## Derived pilot analysis
+
+`analysis.calculations` owns pure measures, cost deduplication, and fixed-capacity
+queue calculations. `analysis.pilot` reads verified inputs and native logs,
+selects the latest successful task for each model and dataset, and validates
+the paired sample IDs against the manifest. It applies the domain interpreter
+to saved outputs and records old and new scores separately. It makes no HTTP
+or model requests. An optional saved lookup file can supply extra cost evidence.
+
+The analyzer receives an explicit repository root, run path, and new output
+directory. It refuses to replace an existing output directory. Its summary,
+sample JSONL, and generation ledger retain source hashes, analysis source
+hashes, scoring versions, missing costs, and projection assumptions described
+in the pilot report. Native logs, manifests, snapshots, and source responses
+remain unchanged. The domain extraction version and scoring version change
+together for new runs; prior run metadata retains the historical versions.
+
 ## Verification
 
 Use `uv sync --locked` to install the editable package. Build distributions with
@@ -135,6 +153,8 @@ The test folders follow the component boundaries:
 - `tests/inspect`: sample adaptation, source fidelity, scoring, Flow, and SDK capture.
 - `tests/openrouter`: generation lookups, retry records, and credential redaction.
 - `tests/runs`: result archives, finalization, and error precedence.
+- `tests/analysis`: offline reevaluation, unique charges, and time projections.
+- `tests/domain`: bounded response extraction and strict format separation.
 - `tests/costs`: arithmetic, fixed endpoint quotes, estimates, and estimate archives.
 - `tests/cli`: command dispatch, help, and repository selection.
 - `tests/test_package.py`: import boundaries and execution outside the repository.

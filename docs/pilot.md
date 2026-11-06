@@ -14,8 +14,10 @@ The completed run is `2026-11-05_20-46-51-b3f8bb12`. Its
 records 108 tasks and 3,240 planned responses. All 108 final tasks succeeded,
 with 540 saved responses per model and no final sample errors. The
 [closure index](../results/pilot/2026-11-05_20-46-51-b3f8bb12/summary/log_index.json)
-confirms successful finalization and call export. Response quality, format,
-routing, and cost analysis remain pending. The preflight is a separate run.
+confirms successful finalization and call export. The
+[pilot results report](pilot_report.md) now records the derived scoring
+correction, observed results, and full-corpus cost and time scenarios.
+The preflight is a separate run.
 
 The original process stopped before finalization; the cause is unknown.
 Recovery found 29 complete tasks and 830 saved samples. The
@@ -24,8 +26,8 @@ records hashes and preserves the interrupted Inspect files in a ZIP archive.
 The detached recovery process uses the frozen Flow configuration and existing
 logs. It retains completed responses and runs pending samples. Original logs
 remain unchanged. Review recovered and retry logs without counting reused
-responses twice. The [pilot report draft](pilot_report.md) records methods;
-aggregate results and full-experiment projections remain pending.
+responses twice. The [pilot report](pilot_report.md) records scope, results,
+and full-experiment projections. Its v3 reevaluation preserves native v2 scores.
 
 Local checks passed again on November 5, 2026: 54,000 full records, 108 strata,
 and 540 selected cases; 190 tests; and both dry-runs (108 pilot tasks and six
