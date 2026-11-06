@@ -202,5 +202,5 @@ schedule at 64 samples per task. The full corpus is not part of this run.
 ## Full corpus
 
 The [full-corpus procedure](docs/full_corpus.md) uses all 54,000 cases for each
-of the six Pilot 3 models, with 108 active tasks and 64 samples per task.
+of the six Pilot 3 models, with 108 active tasks, 32 samples per task, and adaptive model connections.
 Use `transitivity full --dry-run` to check the 324,000-response configuration.

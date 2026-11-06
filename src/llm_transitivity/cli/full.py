@@ -25,6 +25,7 @@ def main(root: Path, argv: list[str] | None = None) -> None:
                 "responses": spec.options.metadata["planned_responses"],
                 "max_tasks": spec.options.max_tasks,
                 "max_samples": spec.options.max_samples,
+                "adaptive_connections": spec.options.metadata["adaptive_connections"],
                 "max_connections_per_model": spec.options.metadata[
                     "max_connections_per_model"
                 ],

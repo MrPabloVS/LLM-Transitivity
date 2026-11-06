@@ -14,21 +14,36 @@ def test_full_spec_uses_every_case_and_preserves_model_controls():
     spec = build_full_spec(PROJECT_ROOT)
     assert len(spec.tasks) == 108
     assert spec.options.max_tasks == 108
-    assert spec.options.max_samples == 64
+    assert spec.options.max_samples == 32
     assert spec.options.metadata["planned_responses"] == 324000
-    assert spec.options.metadata["effective_sample_ceiling"] == 6912
+    assert spec.options.metadata["effective_sample_ceiling"] == 3456
     counts = Counter()
     expected = {"openrouter/" + m.identifier: m for m in profile_models("pilot3")}
     for task in spec.tasks:
         assert not task.args["dataset"].startswith("pilot/")
         assert task.metadata["phase"] == "full-corpus"
         assert task.metadata["selected_case_count"] in {2000, 4000}
-        assert task.model.config.max_connections == 1152
+        assert task.model.config.max_connections is None
+        assert task.model.config.adaptive_connections.model_dump() == {
+            "min": 10,
+            "start": 20,
+            "max": 576,
+            "cooldown_seconds": 15.0,
+            "decrease_factor": 0.8,
+            "scale_up_percent": 0.05,
+        }
+        assert (
+            task.model.config.adaptive_connections.model_dump()
+            == (spec.options.metadata["adaptive_connections"])
+        )
         assert task.model.model_args["provider"]["only"] == [
             expected[task.model.name].provider
         ]
         assert task.model.model_args["provider"]["allow_fallbacks"] is False
         counts[task.model.name] += task.metadata["selected_case_count"]
+    assert len({id(t.model.config.adaptive_connections) for t in spec.tasks}) == 108
+    assert spec.options.metadata["generation_policy"]["max_samples"] == 32
+    assert spec.options.metadata["generation_policy"]["max_connections"] is None
     assert set(counts.values()) == {54000}
     assert len(counts) == 6
 
