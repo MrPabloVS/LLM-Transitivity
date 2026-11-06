@@ -142,6 +142,14 @@ def prepare(root: Path) -> Path:
         phase = directory / name
         spec.log_dir = str(phase / "inspect")
         spec.options.metadata["results_root"] = str(phase.relative_to(root))
+        spec.options.metadata["source_experiment_run_id"] = spec.options.metadata[
+            "experiment_run_id"
+        ]
+        spec.options.metadata["experiment_run_id"] = directory.name
+        spec.options.metadata["configuration_created_utc"] = datetime.now(
+            UTC
+        ).isoformat()
+        spec.options.metadata["full_run_root"] = str(directory.relative_to(root))
         prepare_archive(spec, root)
         path = phase / "provenance/flow_spec.json"
         manifest["stages"].append(
