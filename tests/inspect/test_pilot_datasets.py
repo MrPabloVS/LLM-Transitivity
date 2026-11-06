@@ -1,6 +1,7 @@
 """Keep pilot records and their source provenance intact in Inspect."""
 
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -34,7 +35,10 @@ def test_every_pilot_sentence_and_metadata_reaches_inspect_unchanged(name):
     for row, sample, origin in zip(rows, samples, entry["selected_rows"]):
         index = origin["original_row"] - 1
         assert row == full[index]
-        assert sample.input[1].content == original[index][2] == row[2]
+        expected_text = original[index][2]
+        if name in {"HS_HF_PA_2000", "mHS_HF_PA_4000"}:
+            expected_text = re.sub(r"\beate\b", "ate", expected_text)
+        assert sample.input[1].content == expected_text == row[2]
         assert sample.input[0].content == system
         assert sample.metadata["source_id"] == original[index][1]
         assert sample.metadata["original_row"] == sample.id == index + 1

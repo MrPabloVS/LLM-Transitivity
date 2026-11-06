@@ -20,7 +20,6 @@ from llm_transitivity.analysis.calculations import (
     queue_seconds,
     task_overhead,
 )
-from llm_transitivity.datasets.pilot import verify
 from llm_transitivity.domain.scoring import EXTRACTION_RULE, interpret_response
 from llm_transitivity.domain.selection import stratum
 from llm_transitivity.evidence.metadata import SCORING_VERSION, package_sources
@@ -378,7 +377,12 @@ def analyze(
     """Validate before writing a new, exclusive analysis directory."""
     if output.exists():
         raise FileExistsError(output)
-    manifest = verify(root)
+    snapshot = run / "provenance/snapshot"
+    hashes = json.loads((run / "provenance/snapshot_hashes.json").read_text())
+    for relative, expected in hashes.items():
+        if digest((snapshot / relative).read_bytes()) != expected:
+            raise ValueError("Historical pilot snapshot changed: " + relative)
+    manifest = json.loads((snapshot / "datasets/pilot/manifest.json").read_text())
     logs, latest = _read_logs(run)
     if len(latest) != 108:
         raise ValueError("Expected 108 successful final tasks")
@@ -419,7 +423,7 @@ def analyze(
         for _, path, log in latest.values()
         for sample in log.samples or []
     ]
-    _validate_selection(rows, manifest, root)
+    _validate_selection(rows, manifest, snapshot)
     models = {
         model: _model_summary(
             root, [r for r in rows if r["model"] == model], ledger, latest, manifest

@@ -88,13 +88,18 @@ def verify_dataset(root: Path, revision: str, name: str) -> VerifiedDataset:
         raise ValueError(
             f"{working_path}: case count differs from baseline or filename"
         )
+    from llm_transitivity.datasets.correction import approved_changes
+
+    corrections = approved_changes(root, name, original)
     groups = defaultdict(list)
     for number, (before, after) in enumerate(zip(original, working), start=1):
         expected = before.copy()
         if name in TRANSLATED:
             expected[6] = {"valido": "valid"}.get(before[6], before[6])
             expected[7] = {"canonico": "canonic"}.get(before[7], before[7])
-        if before[2] != after[2]:
+        if number in corrections:
+            expected[2] = corrections[number]["corrected_text"]
+        if expected[2] != after[2]:
             raise ValueError(
                 f"{working_path}: case {number}: sentence differs from original"
             )

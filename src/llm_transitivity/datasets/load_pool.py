@@ -13,6 +13,23 @@ LOAD_DIRECTORY = Path("datasets/load")
 
 def derive_load_pool(root: Path) -> tuple[list, dict]:
     manifest = verify(root)
+    from llm_transitivity.datasets.correction import MANIFEST as CORRECTIONS
+
+    changes = (
+        json.loads((root / CORRECTIONS).read_text())["cases"]
+        if (root / CORRECTIONS).exists()
+        else []
+    )
+    original_text = {
+        (r["dataset"], r["original_row"]): r["original_text"] for r in changes
+    }
+
+    def selection_hash(pair, dataset):
+        row, origin = pair
+        before = row.copy()
+        before[2] = original_text.get((dataset, origin["original_row"]), row[2])
+        return record_digest(before)
+
     records, selected = [], []
     for entry in manifest["datasets"]:
         source = json.loads((root / entry["pilot_path"]).read_text())
@@ -24,7 +41,10 @@ def derive_load_pool(root: Path) -> tuple[list, dict]:
             for group in groups.values()
             for choice in sorted(
                 group,
-                key=lambda pair: (record_digest(pair[0]), pair[1]["original_row"]),
+                key=lambda pair: (
+                    selection_hash(pair, entry["dataset"]),
+                    pair[1]["original_row"],
+                ),
             )[:2]
         ]
         for row, origin in sorted(choices, key=lambda pair: pair[1]["original_row"]):

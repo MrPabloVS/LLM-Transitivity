@@ -38,10 +38,10 @@ condition, not a lower frequency category.
 **Original dataset**: A versioned input file preserved as research evidence.
 
 **Working dataset**: A copy used for execution. Its sentences and records match
-the original except for the explicitly approved label translations.
+the original except for explicitly approved label translations and text corrections.
 
 **Verified dataset**: A working dataset checked against its original, with the
-same cases, sentences, order, and labels except for approved label translations.
+same cases, sentences, order, and labels except for approved label translations and text corrections.
 This verification does not establish logical validity.
 
 **Stratum**: A group within one dataset with the same case type, frequency,
@@ -77,3 +77,10 @@ and explicit assumptions about token usage and attempts. It is not a spending li
 
 **Reported cost**: An amount returned by OpenRouter for a generation. It is
 observed cost evidence, not an independent confirmation of the final bill.
+
+**Corpus correction**: An approved change to specified case texts. It preserves
+their source identities, labels, and experimental conditions.
+
+**Corrected principal corpus**: The current set of cases and model responses,
+with complete replacement responses for corrected cases and unchanged responses
+for all other cases. It can combine more than one execution.

@@ -1,6 +1,7 @@
 """Preserve every complete source record through the Inspect adapter."""
 
 import json
+import re
 from unittest.mock import Mock
 
 import pytest
@@ -26,6 +27,8 @@ def test_all_full_records_reach_inspect_from_main(name):
         if name in pilot.TRANSLATED:
             expected[6] = {"valido": "valid"}.get(before[6], before[6])
             expected[7] = {"canonico": "canonic"}.get(before[7], before[7])
+        if name in {"HS_HF_PA_2000", "mHS_HF_PA_4000"}:
+            expected[2] = re.sub(r"\beate\b", "ate", expected[2])
         md = sample.metadata
         restored = [
             md["case_type"],

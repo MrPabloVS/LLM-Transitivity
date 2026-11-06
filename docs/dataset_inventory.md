@@ -33,8 +33,8 @@ This pilot covers all observed metadata combinations. It is not a statistical ac
 
 ## Integrity
 
-The manifest records file hashes, selected original row numbers, sentence hashes, record hashes, and every stratum. Selection ranks rows by SHA-256 and takes the specified count per stratum. Ties use source row numbers. Output keeps source order.
+The manifest records file hashes, selected original row numbers, sentence hashes, record hashes, and every stratum. Selection ranks rows with original text by SHA-256 and takes the specified count per stratum. Ties use source row numbers. Output keeps source order.
 
-Verification compares all full records with the Git baseline. Only `valido` to `valid` and `canonico` to `canonic` are allowed in the two LF/PR copies. It then reproduces every selection and checks the pilot bytes and system prompt. No Unicode, case, whitespace, or punctuation normalization is applied to sentences.
+Verification compares all full records with the Git baseline. Only `valido` to `valid` and `canonico` to `canonic` are allowed in the two LF/PR copies. The registered eate-to-ate-v1 manifest also permits its exact text replacements. It then reproduces every selection and checks the pilot bytes and system prompt. No Unicode, case, whitespace, or punctuation normalization is applied to sentences.
 
 The Git revision anchors the originals; the manifest detects accidental changes. It is not an independent signature against coordinated changes to code and evidence.

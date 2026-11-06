@@ -5,6 +5,7 @@ import subprocess
 from pathlib import Path
 
 from llm_transitivity.datasets import corpus
+from llm_transitivity.datasets.correction import selection_records
 from llm_transitivity.domain.selection import select_rows
 from llm_transitivity.evidence.serialization import digest, json_bytes
 
@@ -38,7 +39,7 @@ def _describe_selection(
     dataset: corpus.VerifiedDataset, count: int
 ) -> tuple[dict, bytes]:
     name = dataset.name
-    selected = select_rows(dataset.records, dataset.groups, count)
+    selected = select_rows(selection_records(dataset), dataset.groups, count)
     payload = json_bytes([dataset.records[number - 1] for number in selected])
     entry = dataset.provenance(selected, count)
     # Keep the existing manifest field order and serialized representation.
@@ -114,13 +115,14 @@ def inventory(manifest: dict) -> str:
         "",
         (
             "The manifest records file hashes, selected original row numbers, sentence hashes, "
-            "record hashes, and every stratum. Selection ranks rows by SHA-256 and takes the "
+            "record hashes, and every stratum. Selection ranks rows with original text by SHA-256 and takes the "
             "specified count per stratum. Ties use source row numbers. Output keeps source order."
         ),
         "",
         (
             "Verification compares all full records with the Git baseline. Only `valido` to "
             "`valid` and `canonico` to `canonic` are allowed in the two LF/PR copies. "
+            "The registered eate-to-ate-v1 manifest also permits its exact text replacements. "
             "It then reproduces every selection and checks the pilot bytes and system prompt. "
             "No Unicode, case, whitespace, or punctuation normalization is applied to sentences."
         ),

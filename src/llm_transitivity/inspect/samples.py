@@ -44,6 +44,17 @@ def build_samples(data: DatasetInput) -> list[Sample]:
                     },
                 }
             )
+        if (
+            data.originals is not None
+            and case.prompt != data.originals[sample_id - 1][2]
+        ):
+            from llm_transitivity.datasets.correction import CORRECTION_ID
+
+            metadata.update(
+                correction_id=CORRECTION_ID,
+                source_identity=f"{metadata['working_dataset']}:{sample_id}",
+                original_sample_uid=f"{metadata['working_dataset']}:{sample_id}:{digest(data.originals[sample_id - 1][2].encode())[:16]}",
+            )
         metadata.update(
             {
                 "experiment_id": EXPERIMENT_ID,
