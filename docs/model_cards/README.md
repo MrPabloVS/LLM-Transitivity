@@ -44,3 +44,25 @@ OpenRouter transport behavior, account access, and live usage remain unverified.
 
 [haiku-candidates-manifest.json](haiku-candidates-manifest.json) records this
 new capture. The original six-model manifest and snapshots retain their bytes.
+
+## Pilot 2.0
+
+The [Pilot 2.0 manifest](pilot-2.0-manifest.json) references the shared files
+below. There are no per-pilot model-card copies. Each model has one shared
+directory. Identical files are reused. Changed captures have content-hash
+filenames, so historical files retain their bytes.
+
+| Group | Model | Selected card | Provider | Tier |
+| --- | --- | --- | --- | --- |
+| earlier | `openai/gpt-4o-mini` | [Card](openai--gpt-4o-mini/card-6c7e5c7c37f6.md) | `openai` | `default` |
+| later | `openai/gpt-6-luna` | [Card](openai--gpt-6-luna/card-c92cf782bf12.md) | `openai/flex` | `flex` |
+| earlier | `anthropic/claude-sonnet-4.6` | [Card](anthropic--claude-sonnet-4.6/card.md) | `anthropic` | `default` |
+| later | `anthropic/claude-sonnet-5.5` | [Card](anthropic--claude-sonnet-5.5/card.md) | `anthropic` | `default` |
+| earlier | `google/gemini-3.1-flash-lite` | [Card](google--gemini-3.1-flash-lite/card-118a223e4e22.md) | `google-ai-studio/flex` | `flex` |
+| later | `google/gemini-3.5-flash-lite` | [Card](google--gemini-3.5-flash-lite/card.md) | `google-ai-studio/flex` | `flex` |
+
+The manifest records all local file paths, source URLs, capture times, byte
+counts, and SHA-256 hashes. It includes manufacturer PDFs and HTML documents.
+The GPT-4o system card is a family document, not a dedicated mini card. Luna
+documents describe their own release scope and do not prove the API revision.
+Preflight and runtime checks for Pilot 2.0 remain pending.
